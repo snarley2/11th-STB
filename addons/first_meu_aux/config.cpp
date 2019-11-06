@@ -1,10 +1,11 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
+#define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 class cfgPatches
 {
     class first_meu_aux
     {
-		units[] = {"OPTRE_Ammo_SupplyPod_Launcher","OPTRE_Ammo_SupplyPod_Medical"};
+		units[] = {"OPTRE_Ammo_SupplyPod_Launcher","OPTRE_Ammo_SupplyPod_Medical","OPTRE_Ammo_SupplyPod_LMG"};
         requiredVersion = 0.1;
 		requiredAddons[] = {"OPTRE_Core","OPTRE_Weapons","OPTRE_UNSC_Units","OPTRE_Ins_Units","A3_Data_F","OPTRE_Misc", "OPTRE_Misc_Crates"};
     };
@@ -56,6 +57,28 @@ class CfgVehicles
 			item_xx(adv_aceSplint_splint, 40);
 			item_xx(ACE_Banana, 40);
 			item_xx(OPTRE_MedKit, 10);
+		};
+	};
+	class OPTRE_Ammo_SupplyPod_LMG: OPTRE_Ammo_SupplyPod_Empty
+	{
+		dlc = "OPTRE";
+		displayName = "[UNSC] Supply Pod (M247)";
+		model = "\OPTRE_misc\crates\Supply_pod.p3d";
+		author = "Article 2 Studios";
+		class TransportMagazines
+		{
+			delete xx_OPTRE_200Rnd_95x40_Box;
+			delete xx_OPTRE_200Rnd_95x40_Box_tracer;
+			mag_xx(OPTRE_400Rnd_762x51_Box_Tracer, 3);
+			mag_xx(OPTRE_100Rnd_762x51_Box_Tracer, 6);
+		};
+		class TransportWeapons
+		{
+			delete xx_OPTRE_M73;
+			weap_xx(OPTRE_M247, 1);
+		};
+		class TransportItems{
+			item_xx(optic_arco_blk_f, 1)
 		};
 	};
 	
