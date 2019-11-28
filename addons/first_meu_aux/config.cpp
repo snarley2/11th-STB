@@ -90,16 +90,17 @@ class CfgVehicles
 			delete xx_OPTRE_M73;
 			weap_xx(OPTRE_M247, 1);
 		};
-		class TransportItems{
+		class TransportItems
+		{
 			item_xx(optic_arco_blk_f, 1)
 		};
 	};
 
 	class OPTRE_Ammo_SupplyPod_ARC: OPTRE_Ammo_SupplyPod_Empty
 	{
-		dlc = "OPTRE";
-		displayName = "[UNSC] Supply Pod (Mortars)";
-		author = "Article 2 Studios";
+		dlc 				= "OPTRE";
+		displayName 		= "[UNSC] Supply Pod (Mortars)";
+		author 				= "Article 2 Studios";
         
 		class TransportMagazines
 		{
@@ -109,7 +110,8 @@ class CfgVehicles
 			mag_xx(ACE_1Rnd_82mm_Mo_Smoke,8);
 			mag_xx(ACE_1Rnd_82mm_Mo_Illum,8);
 		};
-		class TransportWeapons{
+		class TransportWeapons
+		{
 			delete xx_OPTRE_MA5C;
 		};
 		class TransportItems{};
