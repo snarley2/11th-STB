@@ -12,10 +12,10 @@ class CfgWeapons
             "OPTRE_6rnd_8gauge_HumblerSlugs",
             "OPTRE_12Rnd_8Gauge_Flechettes",
             "OPTRE_6Rnd_8Gauge_Flechettes",
-             "OPTRE_12Rnd_8Gauge_Pellets",
-             "OPTRE_6Rnd_8Gauge_Pellets",
-             "OPTRE_12Rnd_8Gauge_Slugs",
-             "OPTRE_6Rnd_8Gauge_Slugs"
+            "OPTRE_12Rnd_8Gauge_Pellets" ,
+            "OPTRE_6Rnd_8Gauge_Pellets" ,
+            "OPTRE_12Rnd_8Gauge_Slugs" ,
+            "OPTRE_6Rnd_8Gauge_Slugs"
         };
     };
 
