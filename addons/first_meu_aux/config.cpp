@@ -22,7 +22,8 @@ class cfgPatches
 			"OPTRE_Core",
 			"OPTRE_Misc",
 			"A3_Data_F",
-			"OPTRE_Misc_Crates"
+			"OPTRE_Misc_Crates",
+            "OPTRE_Vehicles"
 			};
     };
 };
