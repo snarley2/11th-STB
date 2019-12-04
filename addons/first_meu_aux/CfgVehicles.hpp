@@ -85,9 +85,9 @@ class CfgVehicles
 			delete xx_OPTRE_32Rnd_762x51_Mag_tracer;
 			delete xx_OPTRE_32Rnd_762x51_Mag;
 			
-			mag_xx(ACE_1Rnd_82mm_Mo_Smoke,8);
-			mag_xx(ACE_1Rnd_82mm_Mo_Illum,8);
-			mag_xx(ACE_1Rnd_82mm_Mo_HE,32);
+			mag_xx(ACE_1Rnd_82mm_Mo_Smoke, 3);
+			mag_xx(ACE_1Rnd_82mm_Mo_Illum, 3);
+			mag_xx(ACE_1Rnd_82mm_Mo_HE, 18);
 		};
 		class TransportWeapons
 		{
