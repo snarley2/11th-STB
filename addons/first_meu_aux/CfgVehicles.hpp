@@ -40,42 +40,18 @@ class CfgVehicles
 			delete xx_OPTRE_Biofoam;
 			delete xx_OPTRE_MedKit; 
 
-			item_xx(adv_aceSplint_splint, 40);
 			item_xx(ACE_elasticBandage, 40);
 			item_xx(ACE_packingBandage, 40);
 			item_xx(ACE_plasmaIV_500, 20);
 			item_xx(ACE_epinephrine, 40);
 			item_xx(ACE_tourniquet, 40);
-			item_xx(OPTRE_Biofoam, 10);
-			item_xx(OPTRE_Medigel, 10);
 			item_xx(ACE_quickclot, 40);
 			item_xx(ACE_morphine, 40);
 			item_xx(ACE_plasmaIV, 20);
 			item_xx(OPTRE_MedKit, 10);
 			item_xx(ACE_Banana, 40);
+			item_xx(ACE_splint, 40);
 			
-		};
-	};
-
-	class OPTRE_Ammo_SupplyPod_LMG: OPTRE_Ammo_SupplyPod_Empty
-	{
-		class TransportMagazines
-		{
-			delete xx_OPTRE_200Rnd_95x40_Box_tracer;
-			delete xx_OPTRE_200Rnd_95x40_Box;
-			
-			mag_xx(OPTRE_400Rnd_762x51_Box_Tracer, 3);
-			mag_xx(OPTRE_100Rnd_762x51_Box_Tracer, 6);
-		};
-		class TransportWeapons
-		{
-			delete xx_OPTRE_M73;
-
-			weap_xx(OPTRE_M247, 1);
-		};
-		class TransportItems
-		{
-			item_xx(optic_arco_blk_f, 1)
 		};
 	};
 
