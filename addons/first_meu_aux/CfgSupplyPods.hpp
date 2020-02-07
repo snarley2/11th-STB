@@ -20,19 +20,19 @@ class OPTRE_Ammo_SupplyPod_Launcher_Guided: OPTRE_Ammo_SupplyPod_Empty
 //Ace medical 
 class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 {
-	displayName 		= "[UNSC] Supply Pod (ACE Medical)";
+	displayName 		= "[UNSC] Supply Pod (New ACE Medical)";
 	class TransportItems
 	{
-		item_xx(ACE_elasticBandage, 40);
-		item_xx(ACE_packingBandage, 40);
-		item_xx(ACE_plasmaIV_500, 20);
-		item_xx(ACE_epinephrine, 40);
-		item_xx(ACE_tourniquet, 40);
-		item_xx(ACE_quickclot, 40);
-		item_xx(ACE_morphine, 40);
-		item_xx(ACE_plasmaIV, 20);
+		item_xx(ACE_elasticBandage, 100);
+		item_xx(ACE_packingBandage, 80);
+		item_xx(ACE_plasmaIV_500, 40);
+		item_xx(ACE_epinephrine, 80);
+		item_xx(ACE_tourniquet, 80);
+		item_xx(ACE_quickclot, 80);
+		item_xx(ACE_morphine, 80);
+		item_xx(ACE_plasmaIV, 40);
 		item_xx(ACE_Banana, 40);
-		item_xx(ACE_splint, 40);
+		item_xx(ACE_splint, 100);
 		
 	};
 };
@@ -272,9 +272,9 @@ class OPTRE_Ammo_SupplyPod_ShotgunM45X: OPTRE_Ammo_SupplyPod_Empty
 	displayName 		= "[UNSC] Supply Pod (M45X Shotgun)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_12Rnd_8guage_Pellets, 35);
-        mag_xx(OPTRE_12Rnd_8guage_Slugs, 35);
-        mag_xx(OPTRE_12Rnd_8guage_Beanbags, 35);
+        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 35);
+        mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 35);
+        mag_xx(OPTRE_12Rnd_8Gauge_Beanbags, 35);
 	};
 	class TransportWeapons
 	{
@@ -347,7 +347,7 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 	{
 		class box1
 		{
-			defaultValue = "OPTRE_Ammo_SupplyPod_Medical";
+			defaultValue = "OPTRE_Ammo_SupplyPod_NEWACE_Medical";
 			class values
 			{
 				class n1
@@ -397,12 +397,12 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				};
                 class n10
 				{
-					name = "M7 SMG Supply Pod";
+					name = "M7X SMG Supply Pod";
 					value = "OPTRE_Ammo_SupplyPod_M7XTardis";
 				};
 				class n11
                 {
-					name = "M45 Shotgun Supply Pod";
+					name = "M45X Shotgun Supply Pod";
 					value = "OPTRE_Ammo_SupplyPod_ShotgunM45X";
 				};
 				class n12
