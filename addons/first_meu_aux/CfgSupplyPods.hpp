@@ -358,7 +358,7 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				class n2
 				{
 					name = "ACE Medical Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_Medical";
+					value = "OPTRE_Ammo_SupplyPod_ACE_Medical";
 				};
 				class n3
 				{
