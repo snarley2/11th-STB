@@ -357,8 +357,7 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				};
 				class n2
 				{
-					name = "ACE Medical Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_NEWACE_Medical";
+					name = "Random Supply Pod";
 				};
 				class n3
 				{
@@ -480,6 +479,11 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
                 {
 					name = "1-4 Vehicle Refuel";
 					value = "OPTRE_SupplyPod_VehicleRefuel";
+				};
+                class n27
+                {
+					name = "ACE Medical Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_NEWACE_Medical";
 				};
 			};
 		};
