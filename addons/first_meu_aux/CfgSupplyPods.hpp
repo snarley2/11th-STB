@@ -18,7 +18,7 @@ class OPTRE_Ammo_SupplyPod_Launcher_Guided: OPTRE_Ammo_SupplyPod_Empty
 	};
 };
 //Ace medical 
-class OPTRE_Ammo_SupplyPod_ACE_Medical: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 {
 	displayName 		= "[UNSC] Supply Pod (ACE Medical)";
 	class TransportItems
@@ -272,9 +272,9 @@ class OPTRE_Ammo_SupplyPod_ShotgunM45X: OPTRE_Ammo_SupplyPod_Empty
 	displayName 		= "[UNSC] Supply Pod (M45X Shotgun)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_12Rnd_8guage_Beanbags, 35);
         mag_xx(OPTRE_12Rnd_8guage_Pellets, 35);
         mag_xx(OPTRE_12Rnd_8guage_Slugs, 35);
+        mag_xx(OPTRE_12Rnd_8guage_Beanbags, 35);
 	};
 	class TransportWeapons
 	{
@@ -358,7 +358,7 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				class n2
 				{
 					name = "ACE Medical Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_ACE_Medical";
+					value = "OPTRE_Ammo_SupplyPod_NEWACE_Medical";
 				};
 				class n3
 				{
