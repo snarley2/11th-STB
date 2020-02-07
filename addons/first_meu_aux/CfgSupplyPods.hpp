@@ -31,8 +31,8 @@ class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 		item_xx(ACE_quickclot, 80);
 		item_xx(ACE_morphine, 80);
 		item_xx(ACE_plasmaIV, 40);
-		item_xx(ACE_Banana, 40);
-		item_xx(ACE_splint, 100);
+		item_xx(ACE_Banana, 5);
+		item_xx(ACE_splint, 80);
 		
 	};
 };
@@ -272,9 +272,9 @@ class OPTRE_Ammo_SupplyPod_ShotgunM45X: OPTRE_Ammo_SupplyPod_Empty
 	displayName 		= "[UNSC] Supply Pod (M45X Shotgun)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 35);
-        mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 35);
-        mag_xx(OPTRE_12Rnd_8Gauge_Beanbags, 35);
+        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 25);
+        mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 25);
+        mag_xx(OPTRE_12Rnd_8Gauge_Beanbags, 25);
 	};
 	class TransportWeapons
 	{
