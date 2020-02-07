@@ -272,9 +272,10 @@ class OPTRE_Ammo_SupplyPod_ShotgunM45X: OPTRE_Ammo_SupplyPod_Empty
 	displayName 		= "[UNSC] Supply Pod (M45X Shotgun)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 25);
+        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 15);
         mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 25);
-        mag_xx(OPTRE_12Rnd_8Gauge_Beanbags, 25);
+        mag_xx(OPTRE_12Rnd_8Gauge_Beanbags, 15);
+        mag_xx(AMP_Breaching_Charge_Mag, 20);
 	};
 	class TransportWeapons
 	{
@@ -338,6 +339,46 @@ class OPTRE_Ammo_SupplyPod_SR99CSniper: OPTRE_Ammo_SupplyPod_Empty
 	{
 		item_xx(optre_srs99c_scope_v2, 1);
         item_xx(optre_srs99d_suppressor, 1);
+	};
+};
+// Cricket Launcher
+class OPTRE_Ammo_SupplyPod_CricketLauncher: OPTRE_Ammo_SupplyPod_Empty
+{
+	displayName 		= "[UNSC] Supply Pod (Cricket Launcher)";
+	class TransportMagazines
+	{	
+        mag_xx(OPTRE_1Rnd_50x137_HE, 3);
+        mag_xx(OPTRE_1Rnd_50x137_HEAT, 10);
+        mag_xx(OPTRE_1Rnd_50x137_PEN, 5);
+        mag_xx(OPTRE_1Rnd_50x137_THERMO, 5);
+	};
+	class TransportWeapons
+	{
+		weap_xx(OPTRE_M48_PAW, 1);
+	};
+	class TransportItems
+	{
+		
+	};
+};
+// Explosives
+class OPTRE_Ammo_SupplyPod_ExplosivesPack: OPTRE_Ammo_SupplyPod_Empty
+{
+	displayName 		= "[UNSC] Supply Pod (Explosives)";
+	class TransportMagazines
+	{	
+        mag_xx(AMP_Breaching_Charge_Mag, 11);
+        mag_xx(UNSCMine_Range_Mag, 2);
+        mag_xx(C12_Remote_Mag, 9);
+        mag_xx(M168_Remote_Mag, 1);
+	};
+	class TransportWeapons
+	{
+		
+	};
+	class TransportItems
+	{
+		
 	};
 };
 ////////////////////////Pelican Resupply Module (Override this to change supply pod dropdown list.)
@@ -484,6 +525,16 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
                 {
 					name = "ACE Medical Supply Pod";
 					value = "OPTRE_Ammo_SupplyPod_NEWACE_Medical";
+				};
+                class n28
+                {
+					name = "Cricket Launcher Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_CricketLauncher";
+				};
+                class n29
+                {
+					name = "Explosives Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_ExplosivesPack";
 				};
 			};
 		};
