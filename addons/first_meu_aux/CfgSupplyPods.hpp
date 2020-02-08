@@ -279,7 +279,7 @@ class OPTRE_Ammo_SupplyPod_ShotgunM45X: OPTRE_Ammo_SupplyPod_Empty
 	};
 	class TransportWeapons
 	{
-		weap_xx(OPTRE_M45X, 1);
+		weap_xx(OPTRE_M45XTAC, 1);
 	};
 	class TransportItems
 	{
@@ -321,23 +321,23 @@ class OPTRE_Ammo_SupplyPod_BR55X: OPTRE_Ammo_SupplyPod_Empty
 	};
 };
 //sniper, who the hell ordered this?
-class OPTRE_Ammo_SupplyPod_SR99CSniper: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_SupplyPod_SR99DXSniper: OPTRE_Ammo_SupplyPod_Empty
 {
-	displayName 		= "[UNSC] Supply Pod (SR99C Sniper)";
+	displayName 		= "[UNSC] Supply Pod (SR99DX Sniper)";
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 20);
         mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag, 10);
         mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 10);
-        mag_xx(OPTRE_4Rnd_145x114_Mag_SS, 10);
+        mag_xx(OPTRE_4Rnd_145x114_HVAP_Mag, 10);
 	};
 	class TransportWeapons
 	{
-		weap_xx(OPTRE_SRS99CX, 1);
+		weap_xx(OPTRE_SRS99DX, 1);
 	};
 	class TransportItems
 	{
-		item_xx(optre_srs99c_scope_v2, 1);
+		item_xx(optre_srs99_scope_v2, 1);
         item_xx(optre_srs99d_suppressor, 1);
 	};
 };
@@ -457,8 +457,8 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				};
 				class n14
                 {
-					name = "SR99CX Sniper Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_SR99CSniper";
+					name = "SR99DX Sniper Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_SR99DXSniper";
 				};
 				class n15
                 {
