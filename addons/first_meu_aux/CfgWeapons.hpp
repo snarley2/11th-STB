@@ -7,10 +7,8 @@ class CfgWeapons
     {
         magazines[] =
         {
-            "OPTRE_12rnd_8gauge_humblerslugs",
-            "OPTRE_6rnd_8gauge_HumblerSlugs",
-            "OPTRE_12Rnd_8Gauge_Flechettes",
-            "OPTRE_6Rnd_8Gauge_Flechettes",
+            "OPTRE_12Rnd_8Gauge_Beanbags",
+            "OPTRE_6Rnd_8Gauge_Beanbags",
              "OPTRE_12Rnd_8Gauge_Pellets",
              "OPTRE_6Rnd_8Gauge_Pellets",
              "OPTRE_12Rnd_8Gauge_Slugs",
@@ -23,10 +21,8 @@ class CfgWeapons
     {
         magazines[] =
         {
-            "OPTRE_12rnd_8gauge_humblerslugs",
-            "OPTRE_6rnd_8gauge_HumblerSlugs",
-            "OPTRE_12Rnd_8Gauge_Flechettes",
-            "OPTRE_6Rnd_8Gauge_Flechettes",
+            "OPTRE_12Rnd_8Gauge_Beanbags",
+            "OPTRE_6Rnd_8Gauge_Beanbags",
             "OPTRE_12Rnd_8Gauge_Pellets" ,
             "OPTRE_6Rnd_8Gauge_Pellets" ,
             "OPTRE_12Rnd_8Gauge_Slugs" ,
@@ -39,10 +35,8 @@ class CfgWeapons
     {
         magazines[] =
         {
-            "OPTRE_12rnd_8gauge_humblerslugs",
-            "OPTRE_6rnd_8gauge_HumblerSlugs",
-            "OPTRE_12Rnd_8Gauge_Flechettes",
-            "OPTRE_6Rnd_8Gauge_Flechettes",
+            "OPTRE_12Rnd_8Gauge_Beanbags",
+            "OPTRE_6Rnd_8Gauge_Beanbags",
             "OPTRE_12Rnd_8Gauge_Pellets" ,
             "OPTRE_6Rnd_8Gauge_Pellets" ,
             "OPTRE_12Rnd_8Gauge_Slugs" ,
