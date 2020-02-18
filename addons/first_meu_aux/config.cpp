@@ -25,7 +25,8 @@ class cfgPatches
 			"A3_Data_F",
 			"OPTRE_Misc_Crates",
             "OPTRE_Vehicles",
-			"OPTRE_Modules"
+			"OPTRE_Modules",
+            "V_FZ_Core"
 			};
     };
 };
@@ -39,7 +40,6 @@ class CfgFunctions
 			file = "first_meu_aux\Functions";
 			class PelicanLoadValidate{};
 			class PelicanUnLoadValidate{};
-			class SlipspaceRuptureDetected{};
         };
     }
 }
