@@ -29,3 +29,17 @@ class cfgPatches
 			};
     };
 };
+
+class CfgFunctions
+{
+    class V_FZ
+    {
+        class PelicanMagLiftSystem
+		{
+			file = "first_meu_aux\Functions";
+			class PelicanLoadValidate{};
+			class PelicanUnLoadValidate{};
+			class SlipspaceRuptureDetected{};
+        };
+    }
+}
