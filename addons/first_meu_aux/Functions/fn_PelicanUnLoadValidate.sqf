@@ -21,16 +21,14 @@ if (
                 (_x isKindOf "I_APC_Wheeled_03_cannon_F") OR
                 (_x isKindOf "B_TMBT_01_arty_F") OR
                 (_x isKindOf "B_MBT_01_arty_F") OR
-                (_x isKindOf "B_UGV_01_F") OR
-                (_x isKindOf "B_UGV_01_rcws_F") OR
                 (_x isKindOf "B_T_APC_Tracked_01_AA_F") OR
                 (_x isKindOf "B_APC_Tracked_01_AA_F") OR
-				(_x isKindOf "Land_Device_slingloadable_F") OR
+				(_x isKindOf "Land_Device_slingloadable_F")
 			} count _vehicles > 0
 		)
 ) then {
-
-	 if ((((getPos (_this select 0)) select 2) < 2) and ((_this animationPhase "rearleftgear") == 1) and ({(_x isKindOf "OPTRE_M808B_base") OR (_x isKindOf "optre_hornet_base")} count _vehicles > 0)) then {
+//and ((_this "LandGearUp") == 0)
+	 if ((((getPos (_this select 0)) select 2) < 2) and ({(_x isKindOf "OPTRE_M808B_base") OR (_x isKindOf "optre_hornet_base")} count _vehicles > 0)) then {
 		
 		titleText ["-------------------------------------------<br/><t color='#ff0000' size='1.5'>RELEASE FAILED!</t><br/>-------------------------------------------<br/>Your landing gears must be raised to unload larger vehicles!", "PLAIN DOWN", -1, true, true];
 		playSound "FD_CP_Not_Clear_F";

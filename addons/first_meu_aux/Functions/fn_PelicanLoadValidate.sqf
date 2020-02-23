@@ -59,22 +59,18 @@ switch true do {
     //memes start here
     case (_veh isKindOf "I_APC_Wheeled_03_cannon_F"):
 	{
-		_veh attachTo [_pelican,[0,-5,-0.8]];  
+		_veh attachTo [_pelican,[0,-3.5,-0.3]];  
 		_loaded = true;  
 	};
     case (_veh isKindOf "B_TMBT_01_arty_F" or _veh isKindOf "B_MBT_01_arty_F"):
 	{
-		_veh attachTo [_pelican,[0,-5,-0.8]];  
-		_loaded = true;  
-	};
-    case (_veh isKindOf "B_UGV_01_F" or -veh isKindOf "B_UGV_01_rcws_F"):
-    {
-		_veh attachTo [_pelican,[0,-5,-0.8]];  
+		_veh attachTo [_pelican,[0,-7,-0.6]];
+        _veh setDir 180;
 		_loaded = true;  
 	};
     case (_veh isKindOf "B_T_APC_Tracked_01_AA_F" or _veh isKindOf "B_APC_Tracked_01_AA_F"):
     {
-		_veh attachTo [_pelican,[0,-5,-0.8]];  
+		_veh attachTo [_pelican,[0,-3.5,-0.6]];  
 		_loaded = true;  
 	};
 };
