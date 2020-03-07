@@ -6,7 +6,7 @@ switch true do {
 		
 	case (_veh isKindOf "OPTRE_M808B_base"):
 	{
-		_veh attachTo [_pelican,[0,-7.2, -0.4]];
+		_veh attachTo [_pelican,[-0,-7.6,-0.935527]];
 		_veh setDir 180; 
 		_loaded = true; 
 	};
@@ -70,9 +70,35 @@ switch true do {
 	};
     case (_veh isKindOf "B_T_APC_Tracked_01_AA_F" or _veh isKindOf "B_APC_Tracked_01_AA_F"):
     {
+		_veh attachTo [_pelican,[-0.0311756,-6.65556,-0.90342]];  
+		_loaded = true;  
+	};
+    case (_veh isKindOf "Pandur2_AA_E" or _veh isKindOf "Pandur2_AA_D" or _veh isKindOf "Pandur2_AA_WD"):
+    {
+		_veh attachTo [_pelican,[-0.414768,-4.70731,-0.554724]];  
+		_loaded = true;  
+	};
+    case (_veh isKindOf "Pandur2_E" or _veh isKindOf "Pandur2_D" or _veh isKindOf "Pandur2_WD"):
+    {
 		_veh attachTo [_pelican,[0,-3.5,-0.6]];  
 		_loaded = true;  
 	};
+    case (_veh isKindOf "Pandur2_medical_E" or _veh isKindOf "Pandur2_medical_D" or _veh isKindOf "Pandur2_medical_WD"):
+    {
+		_veh attachTo [_pelican,[-0.414768,-4.70731,-0.554724]];  
+		_loaded = true;  
+	};
+    case (_veh isKindOf "Pandur2_unarmed_E" or _veh isKindOf "Pandur2_unarmed_D" or _veh isKindOf "Pandur2_unarmed_WD"):
+    {
+		_veh attachTo [_pelican,[-0.414768,-4.70731,-0.554724]];  
+		_loaded = true;  
+	};
+    case (_veh isKindOf "itc_land_b_SPH_Sholef2" or _veh isKindOf "itc_land_b_t_SPH_Sholef2"):
+    {
+		_veh attachTo [_pelican,[-0.0311756,-6.65556,-0.90342]];
+        _veh setDir 180;
+		_loaded = true;
+    };
 };
 	
 if (_loaded) then 
