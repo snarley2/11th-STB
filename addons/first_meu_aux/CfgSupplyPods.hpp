@@ -28,7 +28,7 @@ class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 		item_xx(ACE_plasmaIV_500, 40);
 		item_xx(ACE_epinephrine, 80);
 		item_xx(ACE_tourniquet, 80);
-		item_xx(ACE_quickclot, 80);
+		item_xx(ACE_quikclot, 80);
 		item_xx(ACE_morphine, 80);
 		item_xx(ACE_plasmaIV, 40);
 		item_xx(ACE_Banana, 5);
