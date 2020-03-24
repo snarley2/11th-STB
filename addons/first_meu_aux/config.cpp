@@ -25,7 +25,24 @@ class cfgPatches
 			"A3_Data_F",
 			"OPTRE_Misc_Crates",
             "OPTRE_Vehicles",
-			"OPTRE_Modules"
+			"OPTRE_Modules",
+            "V_FZ_Core"
 			};
+    };
+};
+
+class CfgFunctions
+{
+    class V_FZ
+    {
+        class PelicanMagLiftSystem
+		{
+            class PelicanLoadValidate{
+                file = "first_meu_aux\Functions\fn_PelicanLoadValidate.sqf";
+            };
+            class PelicanUnLoadValidate{
+                file = "first_meu_aux\Functions\fn_PelicanUnLoadValidate.sqf";
+            };
+        };
     };
 };
