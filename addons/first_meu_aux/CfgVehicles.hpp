@@ -102,13 +102,13 @@ class CfgVehicles
         
     class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
     {
-        displayname = "Vulkan Repair APC"
+        displayname = "Vulkan Repair APC";
         ace_repair_canRepair = 1; 
     };
         
     class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
     {
-        displayname = "Vulkan Repair APC (Pacific)"
+        displayname = "Vulkan Repair APC (Pacific)";
         ace_repair_canRepair = 1; 
     };
     
