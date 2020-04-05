@@ -99,6 +99,16 @@ switch true do {
         _veh setDir 180;
 		_loaded = true;
     };
+    case (_veh isKindOf "B_APC_Tracked_01_CRV_F" or _veh isKindOf "B_T_APC_Tracked_01_CRV_F"):
+    {
+		_veh attachTo [_pelican,[0.0430558,-4.81432,-0.456545]];
+		_loaded = true;
+    };
+    case (_veh isKindOf "B_Lifeboat"):
+    {
+		_veh attachTo [_pelican,[0.0181665,-3.41999,0.530018]];
+		_loaded = true;
+    };
 };
 	
 if (_loaded) then 
