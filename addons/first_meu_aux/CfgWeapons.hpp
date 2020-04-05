@@ -1,55 +1,15 @@
 class CfgWeapons
 {
     class ItemCore;
-    class ACE_ItemCore;
-    class CBA_MiscItem_ItemInfo;
-    class InventoryFirstAidKitItem_Base_F;
-    class MedikitItem;
+    class OPTRE_S12_SOLA_Jetpack;
 
-    class Rifle_Base_F;
-    
-    class OPTRE_M45: Rifle_Base_F
-    {
-        magazines[]=
+    class JetPack_LR: OPTRE_S12_SOLA_Jetpack
         {
-            "OPTRE_6Rnd_8Gauge_Pellets",
-            "OPTRE_6Rnd_8Gauge_Slugs",
-            "OPTRE_6Rnd_8Gauge_HEDP",
-            "OPTRE_6Rnd_8Gauge_Beanbags",
-            "OPTRE_12Rnd_8Gauge_Pellets",
-            "OPTRE_12Rnd_8Gauge_Slugs",
-            "OPTRE_12Rnd_8Gauge_HEDP",
-            "OPTRE_12Rnd_8Gauge_Beanbags"
+            displayname = "S12 SOLA LR"
+            tf_hasLRradio=1;
+            tf_encryptionCode="tf_west_radio_code";
+            tf_dialog="rt1523g_radio_dialog";
+            tf_subtype="digital_lr";
+            tf_range=25000;
         };
-    };
-    
-    class OPTRE_M45E: OPTRE_M45
-    {
-        magazines[]=
-        {
-            "OPTRE_6Rnd_8Gauge_Pellets",
-            "OPTRE_6Rnd_8Gauge_Slugs",
-            "OPTRE_6Rnd_8Gauge_HEDP",
-            "OPTRE_6Rnd_8Gauge_Beanbags",
-            "OPTRE_12Rnd_8Gauge_Pellets",
-            "OPTRE_12Rnd_8Gauge_Slugs",
-            "OPTRE_12Rnd_8Gauge_HEDP",
-            "OPTRE_12Rnd_8Gauge_Beanbags"
-        };
-    };
-
-    class OPTRE_M45X: OPTRE_M45E 
-    {
-        magazines[]=
-        {
-            "OPTRE_6Rnd_8Gauge_Pellets",
-            "OPTRE_6Rnd_8Gauge_Slugs",
-            "OPTRE_6Rnd_8Gauge_HEDP",
-            "OPTRE_6Rnd_8Gauge_Beanbags",
-            "OPTRE_12Rnd_8Gauge_Pellets",
-            "OPTRE_12Rnd_8Gauge_Slugs",
-            "OPTRE_12Rnd_8Gauge_HEDP",
-            "OPTRE_12Rnd_8Gauge_Beanbags"
-        };
-    };
 };

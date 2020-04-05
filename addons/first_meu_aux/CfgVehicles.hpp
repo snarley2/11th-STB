@@ -10,6 +10,7 @@ class CfgVehicles
     class OPTRE_Pelican_unarmed;
     class B_APC_Tracked_01_CRV_F;
     class B_T_APC_Tracked_01_CRV_F;
+    class OPTRE_S12_SOLA_Jetpack;
 
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
@@ -110,5 +111,6 @@ class CfgVehicles
         displayname = "Vulkan Repair APC (Pacific)"
         ace_repair_canRepair = 1; 
     };
-        
+    
+    
 };
