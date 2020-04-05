@@ -2,7 +2,6 @@
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 #include "CfgVehicles.hpp"
-//#include "CfgWeapons.hpp" - leaving this commented out because shotgun's have been bean'd 
 #include "CfgEventHandlers.hpp"
 
 class cfgPatches
