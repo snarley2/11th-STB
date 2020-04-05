@@ -23,7 +23,10 @@ if (
                 (_x isKindOf "B_MBT_01_arty_F") OR
                 (_x isKindOf "B_T_APC_Tracked_01_AA_F") OR
                 (_x isKindOf "B_APC_Tracked_01_AA_F") OR
-				(_x isKindOf "Land_Device_slingloadable_F")
+				(_x isKindOf "Land_Device_slingloadable_F") OR
+                (_x isKindOf "B_APC_Tracked_01_CRV_F") OR
+                (_x isKindOf "B_T_APC_Tracked_01_CRV_F") OR
+                (_x isKindOf "B_Lifeboat")
 			} count _vehicles > 0
 		)
 ) then {
