@@ -9,6 +9,7 @@ class CfgVehicles
     class OPTRE_Pelican_armed;
     class OPTRE_Pelican_unarmed;
     class B_APC_Tracked_01_CRV_F;
+    class B_T_APC_Tracked_01_CRV_F;
 
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
@@ -96,13 +97,18 @@ class CfgVehicles
 	class VES_D77HTCI: OPTRE_Pelican_unarmed
     {
         tf_range=30000;
-    ];
-    class B_APC_Tracked_01_CRV_F;
-    [
+    };
+        
+    class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
+    {
+        displayname = "Vulkan Repair APC"
         ace_repair_canRepair = 1; 
-    ];
-    class B_T_APC_Tracked_01_CRV_F: B_APC_Tracked_01_CRV_F
-    [
+    };
+        
+    class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
+    {
+        displayname = "Vulkan Repair APC (Pacific)"
         ace_repair_canRepair = 1; 
-    ];
+    };
+        
 };

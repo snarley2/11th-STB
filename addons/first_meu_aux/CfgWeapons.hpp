@@ -53,14 +53,3 @@ class CfgWeapons
         };
     };
 };
-class ACE_Painkiller: ACE_ItemCore {
-        scope = 2;
-        displayName = "Adpil";
-        picture = ;
-        model = ;
-        descriptionShort = "don't sue us big pharma";
-        descriptionUse = "Dont take too many at once";
-        class ItemInfo: CBA_MiscItem_ItemInfo {
-            mass = .1;
-        };
-    };
