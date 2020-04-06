@@ -8,6 +8,7 @@ class CfgVehicles
     class OPTRE_UNSC_falcon_unarmed;
     class OPTRE_Pelican_armed;
     class OPTRE_Pelican_unarmed;
+    class B_APC_Tracked_01_base_F;
 
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
@@ -96,7 +97,6 @@ class CfgVehicles
     {
         tf_range=30000;
     };
-    class B_APC_Tracked_01_base_F;
     class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
 	ace_cargo_space = 8;
