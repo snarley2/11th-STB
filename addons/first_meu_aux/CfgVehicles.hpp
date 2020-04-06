@@ -100,13 +100,72 @@ class CfgVehicles
     class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
 	ace_cargo_space = 8;
-	ace_cargo_hasCargo = 1;		
+	ace_cargo_hasCargo = 1;	
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			item_xx(ToolKit, 1);	
+		};	
     };
         
     class B_T_APC_Tracked_01_CRV_F: B_APC_Tracked_01_CRV_F
     {
 	ace_cargo_space = 8;
 	ace_cargo_hasCargo = 1;		
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_khaki_mag;
+			delete _xx_100Rnd_65x39_caseless_khaki_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_khk_F;
+			delete _xx_arifle_MX_SW_khk_F;
+			delete _xx_launch_NLAW_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;	
+			item_xx(ToolKit, 1);
+		};
     };
     class Pandur2_Medical_F;
 	class Pandur2_Medical_E: Pandur2_Medical_F
