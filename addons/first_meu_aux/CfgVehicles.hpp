@@ -120,6 +120,12 @@ class CfgVehicles
 			delete _xx_Titan_AT;
 			delete _xx_Titan_AP;
 			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
 		};
 		class TransportWeapons
 		{
@@ -154,6 +160,12 @@ class CfgVehicles
 			delete _xx_Titan_AT;
 			delete _xx_Titan_AP;
 			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
 		};
 		class TransportWeapons
 		{
