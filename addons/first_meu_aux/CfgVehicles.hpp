@@ -11,6 +11,7 @@ class CfgVehicles
     class B_APC_Tracked_01_CRV_F;
     class B_T_APC_Tracked_01_CRV_F;
     class OPTRE_S12_SOLA_Jetpack;
+    class StaticMGWeapon;
 
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
@@ -112,5 +113,48 @@ class CfgVehicles
         ace_repair_canRepair = 1; 
     };
     
-    
+    class OPTRE_HEV: StaticMGWeapon
+	{
+        class TransportBackpacks
+        {
+            class xx_OPTRE_OPTRE_ILCS_HEAVY
+			{
+				backpack = "OPTRE_ILCS_Rucksack_Heavy";
+				count = 1;
+			};
+        }
+		class TransportMagazines
+		{
+			mag_xx(OPTRE_M9_Frag, 3);
+            mag_xx(ACE_M84, 2);
+            mag_xx(OPTRE_M2_Smoke_Orange, 1);
+            mag_xx(SmokeShell, 5);
+            mag_xx(C7_Remote_Mag, 1);
+            mag_xx(OPTRE_200Rnd_95x40_Box_HPSAPT, 1);
+            mag_xx(OPTRE_1Rnd_50x137_HEAT, 1);
+            mag_xx(OPTRE_16Rnd_127x40_Mag_NARQT, 1);
+            mag_xx(OPTRE_16Rnd_127x40_Mag_APT, 2);
+            mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+            mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+            mag_xx(3Rnd_HE_Grenade_shell, 2);
+            delete _xx_OPTRE_ELB47_Strobe;
+            delete _xx_OPTRE_M8_Flare;
+            delete _xx_OPTRE_M2_Smoke_Purple;
+		};
+		class TransportWeapons{};
+		class TransportItems
+		{
+            item_xx(ACE_elasticBandage, 8);
+            item_xx(ACE_packingBandage, 14);
+            item_xx(ACE_plasmaIV_500, 2);
+            item_xx(ACE_epinephrine, 3);
+            item_xx(ACE_adenosine, 2);
+            item_xx(ACE_tourniquet, 2);
+            item_xx(ACE_quickclot, 8);
+            item_xx(ACE_morphine, 1);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 2);
+            delete _xx_OPTRE_Biofoam;
+        };
+    };
 };
