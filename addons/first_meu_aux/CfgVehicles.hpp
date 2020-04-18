@@ -150,7 +150,7 @@ class CfgVehicles
             item_xx(ACE_epinephrine, 3);
             item_xx(ACE_adenosine, 2);
             item_xx(ACE_tourniquet, 2);
-            item_xx(ACE_quickclot, 8);
+            item_xx(ACE_quikclot, 8);
             item_xx(ACE_morphine, 1);
             item_xx(ACE_Banana, 5);
             item_xx(ACE_splint, 2);
