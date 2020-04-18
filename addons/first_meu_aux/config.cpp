@@ -37,10 +37,10 @@ class CfgFunctions
         class PelicanMagLiftSystem
 		{
             class PelicanLoadValidate{
-                file = "first_meu_aux\Functions\fn_PelicanLoadValidate.sqf";
+                file = "\hob\first_meu_aux\Functions\fn_PelicanLoadValidate.sqf";
             };
             class PelicanUnLoadValidate{
-                file = "first_meu_aux\Functions\fn_PelicanUnLoadValidate.sqf";
+                file = "\hob\first_meu_aux\Functions\fn_PelicanUnLoadValidate.sqf";
             };
         };
     };

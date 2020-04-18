@@ -10,7 +10,7 @@ class CfgVehicles
     class OPTRE_Pelican_unarmed;
     class B_APC_Tracked_01_base_F;
 	class StaticMGWeapon;
-	
+
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
         tf_range=30000;
@@ -322,7 +322,7 @@ class CfgVehicles
 				backpack = "OPTRE_ILCS_Rucksack_Heavy";
 				count = 1;
 			};
-        }
+        };
 		class TransportMagazines
 		{
 			mag_xx(OPTRE_M9_Frag, 3);
@@ -337,9 +337,9 @@ class CfgVehicles
             mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
             mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
             mag_xx(3Rnd_HE_Grenade_shell, 2);
-            delete _xx_OPTRE_ELB47_Strobe;
-            delete _xx_OPTRE_M8_Flare;
-            delete _xx_OPTRE_M2_Smoke_Purple;
+            delete xx_OPTRE_OPTRE_ELB47_Strobe;
+            delete xx_OPTRE_OPTRE_OPTRE_M8_Flare;
+            delete xx_OPTRE_M2_Smoke_Purple;
 		};
 		class TransportWeapons{};
 		class TransportItems
@@ -354,7 +354,19 @@ class CfgVehicles
             item_xx(ACE_morphine, 1);
             item_xx(ACE_Banana, 5);
             item_xx(ACE_splint, 2);
-            delete _xx_OPTRE_Biofoam;
+            delete _xx_Biofoam;
+        };
+		class userActions
+        {
+            class door_EmergencyEject
+            {
+                displayName = "!!Emergency Eject!!";
+                position = "";
+                radius = 4;
+                condition = "gunner this == player";
+                statement = "0 = [this, 0, true] spawn OPTRE_Fnc_HEVDoor; this setVariable [""OPTRE_HEV_DoorEjectedWanted"",false,true]; resetCamShake; moveOut player; player allowDamage true;";
+                onlyforplayer = 1;
+            };
         };
     };
 };
