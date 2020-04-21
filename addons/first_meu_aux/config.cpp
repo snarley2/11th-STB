@@ -45,3 +45,11 @@ class CfgFunctions
         };
     };
 };
+class ace_medical_treatment_actions 
+{
+    class BasicBandage;
+    class PersonalAidKit: BasicBandage 
+    {
+        condition = "true";
+    };
+};

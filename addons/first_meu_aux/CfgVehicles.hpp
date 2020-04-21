@@ -369,4 +369,18 @@ class CfgVehicles
             };
         };
     };
+	class OPTRE_Static_M41: StaticMGWeapon
+	{
+		armor = 1000;
+	};
+	class StaticATWeapon;
+	class OPTRE_Static_ATGM: StaticATWeapon
+	{
+		armor = 1000;
+	};
+	class StaticAAWeapon;
+	class OPTRE_Static_AA: StaticAAWeapon
+	{
+		armor = 1000;
+	};
 };
