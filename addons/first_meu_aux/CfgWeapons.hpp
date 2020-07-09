@@ -1,5 +1,6 @@
 class CfgWeapons
 {
+// holy import
     class LM_OPCAN_CGC;
     class ItemCore;
 	class HeadgearItem;
@@ -56,6 +57,68 @@ class CfgWeapons
     class VES_CH252_SNO_Radio;
     class VES_CH252_URB_Radio;
     class VES_CH252_WDL_Radio;
+    class VES_M52A_DES_Vest_A;
+    class VES_M52A_CEA_Vest_A;
+    class VES_M52A_MAR_Vest_A;
+    class VES_M52A_SNO_Vest_A;
+    class VES_M52A_WDL_Vest_A;
+    class VES_M52A_DES_Security_B;
+    class VES_M52A_CEA_Security_B;
+    class VES_M52A_MAR_Security_B;
+    class VES_M52A_SNO_Security_B;
+    class VES_M52A_URB_Security_B;
+    class VES_M52A_WDL_Security_B;
+    class VES_M52A_DES_Security_A;
+    class VES_M52A_CEA_Security_A;
+    class VES_M52A_MAR_Security_A;
+    class VES_M52A_SNO_Security_A;
+    class VES_M52A_WDL_Security_A;
+    class VES_M52A_DES_Rifleman_A;
+    class VES_M52A_CEA_Rifleman_A;
+    class VES_M52A_MAR_Rifleman_A;
+    class VES_M52A_SNO_Rifleman_A;
+    class VES_M52A_URB_Rifleman_A;
+    class VES_M52A_WDL_Rifleman_A;
+    class VES_M52A_DES_Corpsman_B;
+    class VES_M52A_CEA_Corpsman_B;
+    class VES_M52A_MAR_Corpsman_B;
+    class VES_M52A_SNO_Corpsman_B;
+    class VES_M52A_URB_Corpsman_B;
+    class VES_M52A_WDL_Corpsman_B;
+    class VES_M52A_DES_Corpsman_A;
+    class VES_M52A_CEA_Corpsman_A;
+    class VES_M52A_MAR_Corpsman_A;
+    class VES_M52A_SNO_Corpsman_A;
+    class VES_M52A_URB_Corpsman_A;
+    class VES_M52A_WDL_Corpsman_A;
+    class VES_M52A_DES_Radio_B;
+    class VES_M52A_CEA_Radio_B;
+    class VES_M52A_MAR_Radio_B;
+    class VES_M52A_SNO_Radio_B;
+    class VES_M52A_WDL_Radio_B;
+    class VES_M52A_DES_Radio_A;
+    class VES_M52A_CEA_Radio_A;
+    class VES_M52A_MAR_Radio_A;
+    class VES_M52A_SNO_Radio_A;
+    class VES_M52A_WDL_Radio_A;
+    class VES_M52A_DES_Breacher_B;
+    class VES_M52A_CEA_Breacher_B;
+    class VES_M52A_MAR_Breacher_B;
+    class VES_M52A_SNO_Breacher_B;
+    class VES_M52A_URB_Breacher_B;
+    class VES_M52A_WDL_Breacher_B;
+    class VES_M52A_DES_Grenadier_B;
+    class VES_M52A_CEA_Grenadier_B;
+    class VES_M52A_MAR_Grenadier_B;
+    class VES_M52A_SNO_Grenadier_B;
+    class VES_M52A_URB_Grenadier_B;
+    class VES_M52A_WDL_Grenadier_B;
+    class VES_M52A_DES_Grenadier_A;
+    class VES_M52A_CEA_Grenadier_A;
+    class VES_M52A_MAR_Grenadier_A;
+    class VES_M52A_SNO_Grenadier_A;
+    class VES_M52A_URB_Grenadier_A;
+    class VES_M52A_WDL_Grenadier_A;
 
 // centurion gear start   
 // centurion headgear
@@ -568,13 +631,257 @@ class CfgWeapons
 		ace_hearing_protection = 1.0;
 		ace_hearing_lowerVolume = 0.25;
     };
-// end centurion headgear
+// end centurion headgear start vest
+
+
+
+
+//all the cent vests left to fully do
+//VES_M52A_WDL_Security_A
+//VES_M52A_DES_Rifleman_A
+//VES_M52A_CEA_Rifleman_A
+//VES_M52A_MAR_Rifleman_A
+//VES_M52A_SNO_Rifleman_A
+//VES_M52A_URB_Rifleman_A
+//VES_M52A_WDL_Rifleman_A
+//VES_M52A_DES_Corpsman_B
+//VES_M52A_CEA_Corpsman_B
+//VES_M52A_MAR_Corpsman_B
+//VES_M52A_SNO_Corpsman_B
+//VES_M52A_URB_Corpsman_B
+//VES_M52A_WDL_Corpsman_B
+//VES_M52A_DES_Corpsman_A
+//VES_M52A_CEA_Corpsman_A
+//VES_M52A_MAR_Corpsman_A
+//VES_M52A_SNO_Corpsman_A
+//VES_M52A_URB_Corpsman_A
+//VES_M52A_WDL_Corpsman_A
+//VES_M52A_DES_Radio_B
+//VES_M52A_CEA_Radio_B
+//VES_M52A_MAR_Radio_B
+//VES_M52A_SNO_Radio_B
+//VES_M52A_WDL_Radio_B
+//VES_M52A_DES_Radio_A
+//VES_M52A_CEA_Radio_A
+//VES_M52A_MAR_Radio_A
+//VES_M52A_SNO_Radio_A
+//VES_M52A_WDL_Radio_A
+//VES_M52A_DES_Breacher_B
+//VES_M52A_CEA_Breacher_B
+//VES_M52A_MAR_Breacher_B
+//VES_M52A_SNO_Breacher_B
+//VES_M52A_URB_Breacher_B
+//VES_M52A_WDL_Breacher_B
+//VES_M52A_DES_Grenadier_B
+//VES_M52A_CEA_Grenadier_B
+//VES_M52A_MAR_Grenadier_B
+//VES_M52A_SNO_Grenadier_B
+//VES_M52A_URB_Grenadier_B
+//VES_M52A_WDL_Grenadier_B
+//VES_M52A_DES_Grenadier_A
+//VES_M52A_CEA_Grenadier_A
+//VES_M52A_MAR_Grenadier_A
+//VES_M52A_SNO_Grenadier_A
+//VES_M52A_URB_Grenadier_A
+//VES_M52A_WDL_Grenadier_A
+    // base
+    class MEU_MAR_Vest: VES_M52A_MAR_Vest_A
+	{
+		displayName = "[1st MEU] Marine Armor";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_KneesLeft","A_KneesRight","A_KneesMarLeft","A_KneesMarRight","A_ODST","A_ShinArmorLeft","A_ShinArmorRight","A_TacPad","A_ThighArmorLeft","A_ThighArmorRight","AS_BaseLeft","AS_BaseRight","AS_LargeLeft","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AS_SmallLeft","AS_SmallRight","AP_Canteen","AP_GL","AP_Knife","AP_MGThigh","AP_AR","AP_BR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","AP_Frag","AP_Smoke","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
+		};
+	};
+    class MEU_MAR_Vest_DES: VES_M52A_DES_Vest_A
+	{
+		displayName = "[1st MEU] Marine Armor (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    class MEU_MAR_Vest_CEA: VES_M52A_CEA_Vest_A
+	{
+		displayName = "[1st MEU] Marine Armor (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    class MEU_MAR_Vest_SNO: VES_M52A_SNO_Vest_A
+	{
+		displayName = "[1st MEU] Marine Armor (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    class MEU_MAR_Vest_WDL: VES_M52A_WDL_Vest_A
+	{
+		displayName = "[1st MEU] Marine Armor (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    // security B
+    class MEU_MAR_Vest_SECB: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Marine Security Armor B";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_ODST","A_ShinArmorLeft","A_ShinArmorRight","A_TacPad","AS_LargeLeft","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AP_Canteen","AP_GL","AP_Knife","AP_MGThigh","AP_BR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
+		};
+	};
+    class MEU_MAR_Vest_SECBDES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Marine Security Armor B (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    class MEU_MAR_Vest_SECBCEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Marine Security Armor B (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    class MEU_MAR_Vest_SECBSNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Marine Security Armor B (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    class MEU_MAR_Vest_SECBURB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Marine Security Armor B (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_M_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    class MEU_MAR_Vest_SECBWDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Marine Security Armor B (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+	};
+    // Security A
+    class MEU_MAR_Vest_SECA : VES_M52A_MAR_Security_A
+    {
+        displayName = "[1st MEU] Marine Security Armor A";
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_M_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_KneesMarLeft","A_KneesMarRight","A_ODST","A_TacPad","AS_LargeLeft","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AP_GL","AP_MGThigh","AP_AR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","AP_Smoke","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
+		};
+    };
+    class MEU_MAR_Vest_SECA_DES : VES_M52A_DES_Security_A
+    {
+        displayName = "[1st MEU] Marine Security Armor A (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+    };
+    class MEU_MAR_Vest_SECA_CEA : VES_M52A_CEA_Security_A
+    {
+        displayName = "[1st MEU] Marine Security Armor A (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+    };
+    class MEU_MAR_Vest_SECA_SNO : VES_M52A_SNO_Security_A
+    {
+        displayName = "[1st MEU] Marine Security Armor A (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+    };
+    class MEU_MAR_Vest_SECA_WDL : VES_M52A_WDL_Security_A
+    {
+        displayName = "[1st MEU] Marine Security Armor A (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		};
+    };
+    //Rifleman
+    class MEU_MAR_Vest_R_A : VES_M52A_MAR_Rifleman_A
+    {
+        displayName = "[1st MEU] Marine Rifleman Armor A (Woodland)";
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Vests\Materials\V_M52_V.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat","",""};
+		class ItemInfo: VestItem
+		{
+			mass = 75;
+			containerClass = "Supply250";
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor";
+			class HitpointsProtectionInfo
+			{
+				class Abdomen
+				{
+					armor = 35;
+					hitpointName = "HitAbdomen";
+					passThrough = 0.1;
+				};
+				class Arms: Abdomen
+				{
+					hitpointName = "HitArms";
+				};
+				class Body: Abdomen
+				{
+					hitpointName = "HitBody";
+				};
+				class Chest: Abdomen
+				{
+					hitpointName = "HitChest";
+				};
+				class Diaphragm: Abdomen
+				{
+					hitpointName = "HitDiaphragm";
+				};
+				class Hands: Abdomen
+				{
+					hitpointName = "HitHands";
+				};
+				class Legs: Abdomen
+				{
+					hitpointName = "HitLegs";
+				};
+				class Neck: Abdomen
+				{
+					hitpointName = "HitNeck";
+				};
+			};
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_KneesMarLeft","A_KneesMarRight","A_ODST","A_TacPad","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AS_SmallLeft","AP_GL","AP_MGThigh","AP_BR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","AP_Smoke","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
+		};
+    };
+    
+    //Corpsman
+    
+    //Radio
+    
+    //Breacher
+    
+    //Grenadier
+    
 // end centurion gear start praetorian gear
 // praetorian vests
     class Prae37: LM_OPCAN_Vest_ODST_Red
 	{
 		author="1st MEU Mark";
-		displayName="[1st MEU] Praetorian 3-7";
+		displayName="[1st MEU] Praetorian 3-7 (Mark)";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -725,7 +1032,7 @@ class CfgWeapons
     class Prae36: LM_OPCAN_Vest_ODST_Red
 	{
 		author="1st MEU Oneill";
-		displayName="[1st MEU] Praetorian 3-6";
+		displayName="[1st MEU] Praetorian 3-6 (Oneill)";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -881,7 +1188,7 @@ class CfgWeapons
     class Prae3M : Prae37
 	{
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Praetorian 3-M";
+		displayName = "[1st MEU] Praetorian 3-M (FloodedMac)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -987,7 +1294,7 @@ class CfgWeapons
     class Prae3R: LM_OPCAN_Vest_ODST_Red
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Praetorian 3-R";
+		displayName = "[1st MEU] Praetorian 3-R (Dimitri)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -4349,39 +4656,39 @@ class CfgWeapons
 		hiddenSelections[] = 
 		{
 			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
-			"A_Ghillie",
-			"AS_LargeLeft",
-			"AS_LargeRight",
-			"AS_MediumLeft",
-			"AS_MediumRight",
-			"AS_ODSTLeft",
-			"AS_ODSTRight",
-			"AS_ODSTSniperLeft",
-			"AS_ODSTSniperRight",
-			"AS_SmallLeft",
-			"AS_SmallRight",
-			"AP_AR",
-			"AP_BR",
-			"AP_Canteen",
-			"AP_Knife",
-			"AP_MGThigh",
-			"AP_GL",
-			"AP_AR",
-			"AP_Pack",
-			"AP_Pistol",
-			"AP_Rounds",
-			"AP_SG",
-			"AP_SMG",
-			"AP_Sniper",
-			"APO_BR",
-			"APO_Sniper",
-			"CustomKit_Scorch"
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_Ghillie",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_GL",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "APO_BR",
+            "APO_Sniper",
+            "CustomKit_Scorch"
 		};
 		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
@@ -4411,39 +4718,39 @@ class CfgWeapons
 			hiddenSelections[] = 
 			{
 				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_Ghillie",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AS_SmallLeft",
-				"AS_SmallRight",
-				"AP_AR",
-				"AP_BR",
-				"AP_Canteen",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_GL",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_BR",
-				"APO_Sniper",
-				"CustomKit_Scorch"
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_Ghillie",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_GL",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "APO_BR",
+            "APO_Sniper",
+            "CustomKit_Scorch"
 			};
 			containerClass = "Supply120";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
@@ -4626,4 +4933,42 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
+    // cent vest hitpoints fix later lol
+    //class HitpointsProtectionInfo
+	//		{
+	//			class Abdomen
+	//			{
+	//				armor = 35;
+	//				hitpointName = "HitAbdomen";
+	//				passThrough = 0.1;
+	//			};
+	//			class Arms: Abdomen
+	//			{
+	//				hitpointName = "HitArms";
+	//			};
+	//			class Body: Abdomen
+	//			{
+	//				hitpointName = "HitBody";
+	//			};
+	//			class Chest: Abdomen
+	//			{
+	//				hitpointName = "HitChest";
+	//			};
+	//			class Diaphragm: Abdomen
+	//			{
+	//				hitpointName = "HitDiaphragm";
+	//			};
+	//			class Hands: Abdomen
+	//			{
+	//			hitpointName = "HitHands";
+	//			};
+	//			class Legs: Abdomen
+	//			{
+	//				hitpointName = "HitLegs";
+	//			};
+	//			class Neck: Abdomen
+	//			{
+	//				hitpointName = "HitNeck";
+	//			};
+	//		};
 };

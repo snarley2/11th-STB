@@ -4,6 +4,7 @@
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgGroups.hpp"
 
 class cfgPatches
 {
@@ -30,7 +31,8 @@ class cfgPatches
             "LM_OPCAN_UNSC",
             "V_SO_Core",
             "V_SO_Magazines",
-            "V_SO_Weapons"
+            "V_SO_Weapons",
+            "OPTRE_FC_Units"
 			};
     };
 };
