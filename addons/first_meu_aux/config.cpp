@@ -5,6 +5,11 @@
 #include "CfgWeapons.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgGroups.hpp"
+#include "script.hpp"
+#include "script.hpp"
+#include "CfgMagazines.hpp"
+#include "Cfgtreatment.hpp"
+#include "Cfgtreatmentactions.hpp"
 
 class cfgPatches
 {
@@ -17,7 +22,8 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_LMG"
 			};
         requiredVersion = 0.1;
-		requiredAddons[] = {
+		requiredAddons[] = 
+        {
 			"OPTRE_UNSC_Units",
 			"OPTRE_Ins_Units",
 			"OPTRE_Weapons",
@@ -32,8 +38,11 @@ class cfgPatches
             "V_SO_Core",
             "V_SO_Magazines",
             "V_SO_Weapons",
-            "OPTRE_FC_Units"
-			};
+            "OPTRE_FC_Units",
+            "ace_medical_engine",
+            "ace_medical_treatment",
+            "ace_common",
+        };
     };
 };
 
@@ -43,20 +52,29 @@ class CfgFunctions
     {
         class PelicanMagLiftSystem
 		{
-            class PelicanLoadValidate{
+            class PelicanLoadValidate
+            {
                 file = "first_meu_aux\Functions\fn_PelicanLoadValidate.sqf";
             };
-            class PelicanUnLoadValidate{
+            class PelicanUnLoadValidate
+            {
                 file = "first_meu_aux\Functions\fn_PelicanUnLoadValidate.sqf";
             };
         };
     };
-};
-class ace_medical_treatment_actions 
-{
-    class BasicBandage;
-    class PersonalAidKit: BasicBandage 
+    class MEU
     {
-        condition = "true";
+        class compat
+        {
+            class fn_meuPainReduce
+            {
+                file = "first_meu_aux\Functions\fn_meuPainReduce.sqf";
+            };
+            class fn_meuPainReduceLocal
+            {
+                file = "first_meu_aux\Functions\fn_meuPainReduceLocal.sqf";
+            };
+            
+        };
     };
 };

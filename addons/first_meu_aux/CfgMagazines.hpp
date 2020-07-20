@@ -2,7 +2,13 @@ class CfgMagazines
 {
 	
     class OPTRE_60Rnd_762x51_Mag;
+    class B_127x99_Ball;
     class 150Rnd_762x51_Box;
+    class 8Rnd_82mm_Mo_shells;
+	class 8Rnd_82mm_Mo_Smoke_white;
+	class 8Rnd_82mm_Mo_Flare_white;
+	class 8Rnd_82mm_Mo_guided;
+	class 8Rnd_82mm_Mo_LG;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -44,13 +50,28 @@ class CfgMagazines
 	{
 		ace_isbelt = 1;
 	};
-
-	class 8Rnd_82mm_Mo_shells;
-	class 8Rnd_82mm_Mo_Smoke_white;
-	class 8Rnd_82mm_Mo_Flare_white;
-	class 8Rnd_82mm_Mo_guided;
-	class 8Rnd_82mm_Mo_LG;
-
+    // this is your stuff to use as a basis to fix the rest of the tracers and types
+    class OPTRE_100Rnd_127x99_M247HMG : OPTRE_100Rnd_762x51_Box
+	{
+		dlc = "OPTRE";
+        author = "[1stMEU] Oneill";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        ace_isbelt = 1;
+		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
+		displayname = "100Rnd 12.7x99mm Box Magazine";
+		displaynameshort = "12.7x99mm";
+		ammo = "B_127x99_Ball";
+		count = 100;
+		initspeed = 900;
+		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
+		descriptionshort = "100 Round Box Magazine<br>12.7x99mm";
+		mass = 100;
+		tracersEvery = 2;
+		lastRoundsTracer = 1;
+	};
+    //ends here
 	class ACE_1Rnd_82mm_Mo_HE: 8Rnd_82mm_Mo_shells 
 	{
 		mass = 35;

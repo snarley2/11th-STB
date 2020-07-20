@@ -40,7 +40,22 @@ class CfgVehicles
     class OPTRE_FC_Elite_Undersuit;
     class UniformItem;
     class Land;
+    class Item_Base_F;
+    class ace_medical_treatment;
+    class ACE_morphineItem;
     
+    class MEU_compat_IbuprophenItem: ACE_morphineItem 
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Ibuprophen";
+        author = "1st MEU Mark";
+        vehicleClass = "Items";
+        class TransportItems 
+        {
+            item_xx(MEU_Ibuprophen,1);
+        };
+    };
 	class Man: Land
 	{
 		class EventHandlers;
@@ -354,17 +369,7 @@ class CfgVehicles
     {
         armor = 1000;
     };
-    class Praetor_LR_backpack: OPTRE_ANPRC_515
-    {
-        displayName = "[1stMEU] Reconnaissance LR";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_dialog = "anarc210_radio_dialog";
-        tf_subtype = "digital_lr";
-        tf_range = 30000;
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio = 1;
-        maximumLoad = 160;
-    };
+    
     class Praetor_Jumpack: OPTRE_S12_SOLA_Jetpack	
     {
         displayName = "[1stMEU] ODST Advanced Reconnaissance Jumpack";
@@ -376,18 +381,8 @@ class CfgVehicles
         tf_hasLRradio = 1;
         maximumLoad = 200;
     };
-    class Praetor_LR_backpack_big: OPTRE_ANPRC_521_Black
-    {
-        displayName = "[1stMEU] LR Rucksack";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_dialog = "anarc210_radio_dialog";
-        tf_subtype = "digital_lr";
-        tf_range = 30000;
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio = 1;
-        maximumLoad = 180;
-    };
-    class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black
+	
+	class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black
     {
         displayName = "[1stMEU] Zeus LR";
         tf_encryptionCode = "tf_west_radio_code";
@@ -398,21 +393,72 @@ class CfgVehicles
         tf_hasLRradio = 1;
         maximumLoad = 180;
     };
-    class MEU_Prae_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
+	
+    class Praetor_LR_backpack_big: OPTRE_ANPRC_521_Black
     {
-        dlc = "OPTRE";
-        author = "1st MEU Mark";
-        displayName = "[1stMEU] ODST Rucksack";
-        tf_hasLRradio = 1;
+        displayName = "[1stMEU] ODST LR Rucksack";
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 220;
+    };
+    
+	class Praetor_LR_backpack: OPTRE_ANPRC_515
+    {
+        displayName = "[1stMEU] ODST NCO Rucksack";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 320;
+    };
+	
+    class MEU_Prae_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ODST Trooper Rucksack";
+        maximumLoad = 320;
+		mass = 50;
+		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
+    };
+	
+	class MEU_Prae_Ruck_Base_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
         maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
     };
+	
+	class MEU_Prae_Corpsman_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ODST Corpsman Rucksack";
+		tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+		hiddenSelections[] = {"camo1","AP_Heavy"};
+		maximumLoad = 320;
+    };
+	
+	class MEU_Prae_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ODST Corpsman Heavy Rucksack";
+		maximumLoad = 400;
+		mass = 50;
+		hiddenSelections[] = {"camo1"};
+    };
+	
     class Praetor_CU_INF : MEU_Soldier_Base
 	{
 		author = "1stMEU Kestrel";

@@ -1,5 +1,8 @@
 class CfgWeapons
 {
+//
+    
+	
 // holy import
     class LM_OPCAN_CGC;
     class ItemCore;
@@ -57,71 +60,49 @@ class CfgWeapons
     class VES_CH252_SNO_Radio;
     class VES_CH252_URB_Radio;
     class VES_CH252_WDL_Radio;
-    class VES_M52A_DES_Vest_A;
-    class VES_M52A_CEA_Vest_A;
-    class VES_M52A_MAR_Vest_A;
-    class VES_M52A_SNO_Vest_A;
-    class VES_M52A_WDL_Vest_A;
     class VES_M52A_DES_Security_B;
     class VES_M52A_CEA_Security_B;
     class VES_M52A_MAR_Security_B;
     class VES_M52A_SNO_Security_B;
     class VES_M52A_URB_Security_B;
     class VES_M52A_WDL_Security_B;
-    class VES_M52A_DES_Security_A;
-    class VES_M52A_CEA_Security_A;
-    class VES_M52A_MAR_Security_A;
-    class VES_M52A_SNO_Security_A;
-    class VES_M52A_WDL_Security_A;
-    class VES_M52A_DES_Rifleman_A;
-    class VES_M52A_CEA_Rifleman_A;
-    class VES_M52A_MAR_Rifleman_A;
-    class VES_M52A_SNO_Rifleman_A;
-    class VES_M52A_URB_Rifleman_A;
-    class VES_M52A_WDL_Rifleman_A;
     class VES_M52A_DES_Corpsman_B;
     class VES_M52A_CEA_Corpsman_B;
     class VES_M52A_MAR_Corpsman_B;
     class VES_M52A_SNO_Corpsman_B;
     class VES_M52A_URB_Corpsman_B;
     class VES_M52A_WDL_Corpsman_B;
-    class VES_M52A_DES_Corpsman_A;
-    class VES_M52A_CEA_Corpsman_A;
-    class VES_M52A_MAR_Corpsman_A;
-    class VES_M52A_SNO_Corpsman_A;
-    class VES_M52A_URB_Corpsman_A;
-    class VES_M52A_WDL_Corpsman_A;
     class VES_M52A_DES_Radio_B;
     class VES_M52A_CEA_Radio_B;
     class VES_M52A_MAR_Radio_B;
     class VES_M52A_SNO_Radio_B;
     class VES_M52A_WDL_Radio_B;
-    class VES_M52A_DES_Radio_A;
-    class VES_M52A_CEA_Radio_A;
-    class VES_M52A_MAR_Radio_A;
-    class VES_M52A_SNO_Radio_A;
-    class VES_M52A_WDL_Radio_A;
-    class VES_M52A_DES_Breacher_B;
-    class VES_M52A_CEA_Breacher_B;
-    class VES_M52A_MAR_Breacher_B;
-    class VES_M52A_SNO_Breacher_B;
-    class VES_M52A_URB_Breacher_B;
-    class VES_M52A_WDL_Breacher_B;
-    class VES_M52A_DES_Grenadier_B;
-    class VES_M52A_CEA_Grenadier_B;
-    class VES_M52A_MAR_Grenadier_B;
-    class VES_M52A_SNO_Grenadier_B;
-    class VES_M52A_URB_Grenadier_B;
-    class VES_M52A_WDL_Grenadier_B;
-    class VES_M52A_DES_Grenadier_A;
-    class VES_M52A_CEA_Grenadier_A;
-    class VES_M52A_MAR_Grenadier_A;
-    class VES_M52A_SNO_Grenadier_A;
-    class VES_M52A_URB_Grenadier_A;
-    class VES_M52A_WDL_Grenadier_A;
+	class VES_M52A_URB_Radio_B;
+	class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class InventoryFirstAidKitItem_Base_F;
+	class MedikitItem;
+    class ace_medical_treatment;
+    class ACE_Morphine;
 
+    class MEU_compat_Ibuprophen: ACE_Morphine
+	{
+		scope = 2;
+		author = "1st MEU Mark";
+		displayName = "Ibuprophen";
+		picture = "\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
+		model = "\z\ace\addons\medical_treatment\data\morphine.p3d";
+		descriptionShort = "Drink some water and Rest";
+		descriptionUse = "use instead of morphine";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass = 0.1;
+		};
+	};
+	
 // centurion gear start   
 // centurion headgear
+    
     class first_plt_Beret: LM_OPCAN_Beret_CGC
 	{
 		scope = 2;
@@ -141,14 +122,16 @@ class CfgWeapons
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Centurion1BeretV4.paa"};
     };
+	
 // centurion heavy helmets
-    class MEU_Mar_Helm_base : VES_CH252_MAR_Heavy
+
+    class MEU_Mar_Helm_MAR : VES_CH252_MAR_Heavy
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Heavy Marine Helmet";
+		displayName = "[1st MEU] Centurion Heavy Helmet";
         hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
@@ -165,16 +148,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_DES : VES_CH252_DES_Heavy
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Heavy Marine Helmet (Desert)";
+		displayName = "[1st MEU] Centurion Heavy Helmet (Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -185,16 +169,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_CEA : VES_CH252_CEA_Heavy
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Heavy Marine Helmet (Evolved)";
+		displayName = "[1st MEU] Centurion Heavy Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -205,16 +190,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_SNO : VES_CH252_SNO_Heavy
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Heavy Marine Helmet (Snow)";
+		displayName = "[1st MEU] Centurion Heavy Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -225,10 +211,11 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
-    class MEU_Mar_Helm_URB : VES_CH252_URB_Heavy
+   
+	class MEU_Mar_Helm_URB : VES_CH252_URB_Heavy
     {
         scope = 2;
         scopeCurator = 2;
@@ -245,16 +232,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_WDL : VES_CH252_WDL_Heavy
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Heavy Marine Helmet (Woodland)";
+		displayName = "[1st MEU] Centurion Heavy Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -265,17 +253,19 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
 // centurion light helmets
+
     class MEU_Mar_Helm_base_L : VES_CH252_MAR_Light
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Light Marine Helmet";
+		displayName = "[1st MEU] Centurion Light Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -286,16 +276,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_DES_L : VES_CH252_DES_Light
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Light Marine Helmet (Desert)";
+		displayName = "[1st MEU] Centurion Light Helmet(Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -306,16 +297,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_CEA_L : VES_CH252_CEA_Light
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Light Marine Helmet (Evolved)";
+		displayName = "[1st MEU] Centurion Light Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -326,16 +318,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_SNO_L : VES_CH252_SNO_Light
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Light Marine Helmet (Snow)";
+		displayName = "[1st MEU] Centurion Light Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -346,10 +339,11 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
-    class MEU_Mar_Helm_URB_L : VES_CH252_URB_Light
+	
+	class MEU_Mar_Helm_URB_L : VES_CH252_URB_Light
     {
         scope = 2;
         scopeCurator = 2;
@@ -366,16 +360,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_Helm_WDL_L : VES_CH252_WDL_Light
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Light Marine Helmet (Woodland)";
+		displayName = "[1st MEU] Centurion Light Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -386,17 +381,19 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
 // Centurion MOS Helmets
+
     class MEU_Mar_MOS_Helm_BASE : VES_CH252_MAR_Medical
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Medical Marine Helmet";
+		displayName = "[1st MEU] Centurion Medical Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -407,16 +404,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_MOS_Helm_DES : VES_CH252_DES_Medical
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine Medical Helmet (Desert)";
+		displayName = "[1st MEU] Centurion Medical Helmet (Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -427,16 +425,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_MOS_Helm_CEA : VES_CH252_CEA_Medical
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine Medical Helmet (Evolved)";
+		displayName = "[1st MEU] Centurion Medical Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -447,16 +446,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_MOS_Helm_SNO : VES_CH252_SNO_Medical
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine Medical Helmet (Snow)";
+		displayName = "[1st MEU] Centurion Medical Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -467,10 +467,11 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
-    class MEU_Mar_MOS_Helm_URB : VES_CH252_URB_Medical
+	
+	class MEU_Mar_MOS_Helm_URB : VES_CH252_URB_Medical
     {
         scope = 2;
         scopeCurator = 2;
@@ -487,16 +488,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_Mar_MOS_Helm_WDL : VES_CH252_WDL_Medical
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine Medical Helmet (Woodland)";
+		displayName = "[1st MEU] Centurion Medical Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -507,17 +509,19 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
 // end Medical Helmets start RTO Helmets
+
     class MEU_RTO_Helm_base : VES_CH252_MAR_Radio
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine RTO Helmet";
+		displayName = "[1st MEU] Centurion RTO Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -528,16 +532,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_RTO_Helm_DES : VES_CH252_DES_Radio
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine RTO Helmet (Desert)";
+		displayName = "[1st MEU] Centurion RTO Helmet (Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -548,16 +553,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_RTO_Helm_CEA : VES_CH252_CEA_Radio
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine RTO Helmet (Evolved)";
+		displayName = "[1st MEU] Centurion RTO Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -568,16 +574,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_RTO_Helm_SNO : VES_CH252_SNO_Radio
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine RTO Helmet (Snow)";
+		displayName = "[1st MEU] Centurion RTO Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -588,10 +595,11 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
-    class MEU_RTO_Helm_URB : VES_CH252_URB_Radio
+    
+	class MEU_RTO_Helm_URB : VES_CH252_URB_Radio
     {
         scope = 2;
         scopeCurator = 2;
@@ -608,16 +616,17 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
     class MEU_RTO_Helm_WDL : VES_CH252_WDL_Radio
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine RTO Helmet (Woodland)";
+		displayName = "[1st MEU] Centurion RTO Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -628,256 +637,4815 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
     };
+	
 // end centurion headgear start vest
 
+//Centurion Armor
 
-
-
-//all the cent vests left to fully do
-//VES_M52A_WDL_Security_A
-//VES_M52A_DES_Rifleman_A
-//VES_M52A_CEA_Rifleman_A
-//VES_M52A_MAR_Rifleman_A
-//VES_M52A_SNO_Rifleman_A
-//VES_M52A_URB_Rifleman_A
-//VES_M52A_WDL_Rifleman_A
-//VES_M52A_DES_Corpsman_B
-//VES_M52A_CEA_Corpsman_B
-//VES_M52A_MAR_Corpsman_B
-//VES_M52A_SNO_Corpsman_B
-//VES_M52A_URB_Corpsman_B
-//VES_M52A_WDL_Corpsman_B
-//VES_M52A_DES_Corpsman_A
-//VES_M52A_CEA_Corpsman_A
-//VES_M52A_MAR_Corpsman_A
-//VES_M52A_SNO_Corpsman_A
-//VES_M52A_URB_Corpsman_A
-//VES_M52A_WDL_Corpsman_A
-//VES_M52A_DES_Radio_B
-//VES_M52A_CEA_Radio_B
-//VES_M52A_MAR_Radio_B
-//VES_M52A_SNO_Radio_B
-//VES_M52A_WDL_Radio_B
-//VES_M52A_DES_Radio_A
-//VES_M52A_CEA_Radio_A
-//VES_M52A_MAR_Radio_A
-//VES_M52A_SNO_Radio_A
-//VES_M52A_WDL_Radio_A
-//VES_M52A_DES_Breacher_B
-//VES_M52A_CEA_Breacher_B
-//VES_M52A_MAR_Breacher_B
-//VES_M52A_SNO_Breacher_B
-//VES_M52A_URB_Breacher_B
-//VES_M52A_WDL_Breacher_B
-//VES_M52A_DES_Grenadier_B
-//VES_M52A_CEA_Grenadier_B
-//VES_M52A_MAR_Grenadier_B
-//VES_M52A_SNO_Grenadier_B
-//VES_M52A_URB_Grenadier_B
-//VES_M52A_WDL_Grenadier_B
-//VES_M52A_DES_Grenadier_A
-//VES_M52A_CEA_Grenadier_A
-//VES_M52A_MAR_Grenadier_A
-//VES_M52A_SNO_Grenadier_A
-//VES_M52A_URB_Grenadier_A
-//VES_M52A_WDL_Grenadier_A
-    // base
-    class MEU_MAR_Vest: VES_M52A_MAR_Vest_A
+    // Rifleman
+	
+    class MEU_CENT_Rifleman: VES_M52A_MAR_Security_B
 	{
-		displayName = "[1st MEU] Marine Armor";
+		displayName = "[1st MEU] Centurion Rifleman";
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_KneesLeft","A_KneesRight","A_KneesMarLeft","A_KneesMarRight","A_ODST","A_ShinArmorLeft","A_ShinArmorRight","A_TacPad","A_ThighArmorLeft","A_ThighArmorRight","AS_BaseLeft","AS_BaseRight","AS_LargeLeft","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AS_SmallLeft","AS_SmallRight","AP_Canteen","AP_GL","AP_Knife","AP_MGThigh","AP_AR","AP_BR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","AP_Frag","AP_Smoke","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
-		};
-	};
-    class MEU_MAR_Vest_DES: VES_M52A_DES_Vest_A
-	{
-		displayName = "[1st MEU] Marine Armor (Desert)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    class MEU_MAR_Vest_CEA: VES_M52A_CEA_Vest_A
-	{
-		displayName = "[1st MEU] Marine Armor (Evolved)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    class MEU_MAR_Vest_SNO: VES_M52A_SNO_Vest_A
-	{
-		displayName = "[1st MEU] Marine Armor (Snow)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    class MEU_MAR_Vest_WDL: VES_M52A_WDL_Vest_A
-	{
-		displayName = "[1st MEU] Marine Armor (Woodland)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    // security B
-    class MEU_MAR_Vest_SECB: VES_M52A_MAR_Security_B
-	{
-		displayName = "[1st MEU] Marine Security Armor B";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_ODST","A_ShinArmorLeft","A_ShinArmorRight","A_TacPad","AS_LargeLeft","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AP_Canteen","AP_GL","AP_Knife","AP_MGThigh","AP_BR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
-		};
-	};
-    class MEU_MAR_Vest_SECBDES: VES_M52A_DES_Security_B
-	{
-		displayName = "[1st MEU] Marine Security Armor B (Desert)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    class MEU_MAR_Vest_SECBCEA: VES_M52A_CEA_Security_B
-	{
-		displayName = "[1st MEU] Marine Security Armor B (Evolved)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    class MEU_MAR_Vest_SECBSNO: VES_M52A_SNO_Security_B
-	{
-		displayName = "[1st MEU] Marine Security Armor B (Snow)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    class MEU_MAR_Vest_SECBURB: VES_M52A_URB_Security_B
-	{
-		displayName = "[1st MEU] Marine Security Armor B (Urban)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO","V_FZ_Armor\Data\Vests\V_M52_M_URB_CO","V_FZ_Armor\Data\Vests\V_M52_L_URB_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    class MEU_MAR_Vest_SECBWDL: VES_M52A_WDL_Security_B
-	{
-		displayName = "[1st MEU] Marine Security Armor B (Woodland)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-	};
-    // Security A
-    class MEU_MAR_Vest_SECA : VES_M52A_MAR_Security_A
-    {
-        displayName = "[1st MEU] Marine Security Armor A";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_M_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_KneesMarLeft","A_KneesMarRight","A_ODST","A_TacPad","AS_LargeLeft","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AP_GL","AP_MGThigh","AP_AR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","AP_Smoke","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
-		};
-    };
-    class MEU_MAR_Vest_SECA_DES : VES_M52A_DES_Security_A
-    {
-        displayName = "[1st MEU] Marine Security Armor A (Desert)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO","V_FZ_Armor\Data\Vests\V_M52_M_DES_CO","V_FZ_Armor\Data\Vests\V_M52_L_DES_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-    };
-    class MEU_MAR_Vest_SECA_CEA : VES_M52A_CEA_Security_A
-    {
-        displayName = "[1st MEU] Marine Security Armor A (Evolved)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO","V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-    };
-    class MEU_MAR_Vest_SECA_SNO : VES_M52A_SNO_Security_A
-    {
-        displayName = "[1st MEU] Marine Security Armor A (Snow)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO","V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO","optre_unsc_units\army\data\ghillie_desert_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-    };
-    class MEU_MAR_Vest_SECA_WDL : VES_M52A_WDL_Security_A
-    {
-        displayName = "[1st MEU] Marine Security Armor A (Woodland)";
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO","V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		};
-    };
-    //Rifleman
-    class MEU_MAR_Vest_R_A : VES_M52A_MAR_Rifleman_A
-    {
-        displayName = "[1st MEU] Marine Rifleman Armor A (Woodland)";
-        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_MAR_CO","V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO","optre_unsc_units\army\data\ghillie_woodland_co","optre_unsc_units\army\data\odst_armor_co"};
-		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Vests\Materials\V_M52_V.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52.rvmat","V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat","",""};
-		class ItemInfo: VestItem
-		{
-			mass = 75;
-			containerClass = "Supply250";
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor";
-			class HitpointsProtectionInfo
+			hiddenSelections[] = 
 			{
-				class Abdomen
-				{
-					armor = 35;
-					hitpointName = "HitAbdomen";
-					passThrough = 0.1;
-				};
-				class Arms: Abdomen
-				{
-					hitpointName = "HitArms";
-				};
-				class Body: Abdomen
-				{
-					hitpointName = "HitBody";
-				};
-				class Chest: Abdomen
-				{
-					hitpointName = "HitChest";
-				};
-				class Diaphragm: Abdomen
-				{
-					hitpointName = "HitDiaphragm";
-				};
-				class Hands: Abdomen
-				{
-					hitpointName = "HitHands";
-				};
-				class Legs: Abdomen
-				{
-					hitpointName = "HitLegs";
-				};
-				class Neck: Abdomen
-				{
-					hitpointName = "HitNeck";
-				};
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
 			};
-			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Ghillie","A_KneesMarLeft","A_KneesMarRight","A_ODST","A_TacPad","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AS_SmallLeft","AP_GL","AP_MGThigh","AP_BR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","AP_Smoke","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
+			vestType = "Rebreather";
 		};
-    };
-    
-    //Corpsman
-    
-    //Radio
-    
-    //Breacher
-    
-    //Grenadier
-    
+	};
+	
+    class MEU_CENT_Rifleman_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Rifleman_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Rifleman_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_Rifleman_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Rifleman_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	 class MEU_CENT_NCO_Rifleman: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Rifleman_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Rifleman_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Rifleman_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_Rifleman_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Rifleman_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Rifleman NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    // Grenadier
+	
+    class MEU_CENT_Grenadier: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Grenadier_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Grenadier_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Grenadier_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Grenadier_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Grenadier_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_Grenadier: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Grenadier NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	// Autorifleman
+	
+    class MEU_CENT_Autorifleman: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Autorifleman_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Autorifleman_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Autorifleman_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_Autorifleman_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Autorifleman_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	 class MEU_CENT_NCO_Autorifleman: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Autorifleman_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Autorifleman_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Autorifleman_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_Autorifleman_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Autorifleman_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Autorifleman NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_BR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	//Marksman
+	
+	class MEU_CENT_Marksman: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Marksman_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Marksman_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Marksman_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_Marksman_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Marksman_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	 class MEU_CENT_NCO_Marksman: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Marksman_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Marksman_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Marksman_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_Marksman_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Marksman_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Marksman NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    // Breacher
+	
+    class MEU_CENT_Breacher: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Breacher_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Breacher_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Breacher_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_Breacher_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Breacher_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	 class MEU_CENT_NCO_Breacher: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Breacher_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Breacher_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Breacher_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_Breacher_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Breacher_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Breacher NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	//Sniper
+	
+	class MEU_CENT_Sniper: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Sniper_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Sniper_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Sniper_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_Sniper_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Sniper_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	 class MEU_CENT_NCO_Sniper: VES_M52A_MAR_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Sniper_DES: VES_M52A_DES_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Sniper_CEA: VES_M52A_CEA_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Sniper_SNO: VES_M52A_SNO_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_Sniper_URB: VES_M52A_URB_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Sniper_WDL: VES_M52A_WDL_Security_B
+	{
+		displayName = "[1st MEU] Centurion Sniper NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Frag",
+				"AP_SG",
+				"AP_SMG",
+				"AP_BR",
+				"AP_Rounds",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	// Corpsman
+	
+    class MEU_CENT_Corpsman: VES_M52A_MAR_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+		
+    class MEU_CENT_Corpsman_DES: VES_M52A_DES_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Corpsman_CEA: VES_M52A_CEA_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Corpsman_SNO: VES_M52A_SNO_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_Corpsman_URB: VES_M52A_URB_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_Corpsman_WDL: VES_M52A_WDL_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	 class MEU_CENT_NCO_Corpsman: VES_M52A_MAR_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Corpsman_DES: VES_M52A_DES_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Corpsman_CEA: VES_M52A_CEA_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Corpsman_SNO: VES_M52A_SNO_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_Corpsman_URB: VES_M52A_URB_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_Corpsman_WDL: VES_M52A_WDL_Corpsman_B
+	{
+		displayName = "[1st MEU] Centurion Corpsman NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_BR",
+				"AP_AR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	// RTO
+	
+    class MEU_CENT_RTO: VES_M52A_MAR_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_RTO_DES: VES_M52A_DES_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_RTO_CEA: VES_M52A_CEA_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_RTO_SNO: VES_M52A_SNO_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_RTO_URB: VES_M52A_URB_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_RTO_WDL: VES_M52A_WDL_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+	class MEU_CENT_NCO_RTO: VES_M52A_MAR_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO NCO";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_RTO_DES: VES_M52A_DES_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO NCO (Desert)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_RTO_CEA: VES_M52A_CEA_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO NCO (Evolved)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_RTO_SNO: VES_M52A_SNO_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO NCO (Snow)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_RTO_URB: VES_M52A_URB_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO NCO (Urban)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
+    class MEU_CENT_NCO_RTO_WDL: VES_M52A_WDL_Radio_B
+	{
+		displayName = "[1st MEU] Centurion RTO NCO (Woodland)";
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Canteen",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+			vestType = "Rebreather";
+		};
+	};
+	
 // end centurion gear start praetorian gear
 // praetorian vests
+
     class Prae37: LM_OPCAN_Vest_ODST_Red
 	{
 		author="1st MEU Mark";
@@ -910,6 +5478,7 @@ class CfgWeapons
 			"AP_BR",
 			"AP_Canteen",
 			"AP_Knife",
+			"AP_GL",
 			"AP_MGThigh",
 			"AP_AR",
 			"AP_Pack",
@@ -919,9 +5488,10 @@ class CfgWeapons
 			"AP_SMG",
 			"AP_Sniper",
 			"APO_AR",
+			"APO_BR",
 			"APO_SMG",
 			"APO_Sniper",
-			"CustomKit_Scorch"
+			"APO_Knife"
 		};
 		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
@@ -965,6 +5535,7 @@ class CfgWeapons
 				"AP_BR",
 				"AP_Canteen",
 				"AP_Knife",
+				"AP_GL",
 				"AP_MGThigh",
 				"AP_AR",
 				"AP_Pack",
@@ -974,11 +5545,12 @@ class CfgWeapons
 				"AP_SMG",
 				"AP_Sniper",
 				"APO_AR",
+				"APO_BR",
 				"APO_SMG",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APO_Knife"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -1029,6 +5601,7 @@ class CfgWeapons
 			};
 		};
     };
+	
     class Prae36: LM_OPCAN_Vest_ODST_Red
 	{
 		author="1st MEU Oneill";
@@ -1070,8 +5643,9 @@ class CfgWeapons
 			"AP_SMG",
 			"AP_Sniper",
 			"APO_BR",
+			"APO_AR",
 			"APO_Sniper",
-			"CustomKit_Scorch"
+			"APO_Knife"
 		};
 		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
@@ -1131,10 +5705,11 @@ class CfgWeapons
 				"AP_SMG",
 				"AP_Sniper",
 				"APO_BR",
+				"APO_AR",
 				"APO_Sniper",
-				"CustomKit_Scorch"
+				"APO_Knife"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -1185,6 +5760,7 @@ class CfgWeapons
 			};
 		};
     };
+	
     class Prae3M : Prae37
 	{
 		author = "1st MEU Mark";
@@ -1285,12 +5861,13 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
         };
     };
+	
     class Prae3R: LM_OPCAN_Vest_ODST_Red
 	{
 		author = "1st MEU Oneill";
@@ -1398,12 +5975,13 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
         };
     };
+	
     class PraetorianRifleman: LM_OPCAN_Vest_ODST_REACH
     {
 		author = "1stMEU Oneill";
@@ -1517,7 +6095,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -1674,7 +6252,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -1784,7 +6362,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -1894,7 +6472,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2010,7 +6588,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2165,7 +6743,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2273,7 +6851,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2381,7 +6959,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2497,7 +7075,7 @@ class CfgWeapons
 				"APO_SMG",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2652,7 +7230,7 @@ class CfgWeapons
 				"APO_BR",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2760,7 +7338,7 @@ class CfgWeapons
 				"APO_BR",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2868,7 +7446,7 @@ class CfgWeapons
 				"APO_AR",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -2984,7 +7562,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3137,7 +7715,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3243,7 +7821,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3349,7 +7927,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3467,7 +8045,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3622,7 +8200,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3730,7 +8308,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3838,7 +8416,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -3952,7 +8530,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -4105,7 +8683,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -4211,7 +8789,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -4317,7 +8895,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply120";
+            containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -4431,7 +9009,7 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -4594,7 +9172,7 @@ class CfgWeapons
 				"APO_Knife",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -4717,7 +9295,7 @@ class CfgWeapons
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 
 			{
-				"camo",
+			"camo",
             "camo2",
             "camo3",
             "camo4",
@@ -4752,7 +9330,7 @@ class CfgWeapons
             "APO_Sniper",
             "CustomKit_Scorch"
 			};
-			containerClass = "Supply120";
+			containerClass = "Supply200";
 			overlaySelectionsInfo[] = {"Ghillie_hide"};
 			vestType = "Rebreather";
 			mass = 20;
@@ -4811,6 +9389,14 @@ class CfgWeapons
     {
         
     };
+    class Praetor_Helmet_Ride_dp : LM_OPCAN_CH252D_H3_dp
+    {
+        
+    };
+    class Praetor_Helmet_Ride_broken : LM_OPCAN_CH252D_H3_broken
+    {
+        
+    };
     class Praetor_Helmet_Yellow_dp : LM_OPCAN_CH252D_H3_Yellow_dp
     {
         
@@ -4835,6 +9421,140 @@ class CfgWeapons
     {
         
     };
+    class Praetor_Helmet_Black_dp : LM_OPCAN_CH252D_H3_dp
+    {
+        
+    };
+    class Praetor_Helmet_Black_31_dp : LM_OPCAN_CH252D_H3_dp
+    {
+        
+    };
+    class Praetor_Helmet_Black_32_dp : LM_OPCAN_CH252D_H3_dp
+    {
+        
+    };
+    class Praetor_Helmet_Black_33_dp : LM_OPCAN_CH252D_H3_dp
+    {
+        
+    };
+    class Praetor_Helmet_Black_broken : LM_OPCAN_CH252D_H3_broken
+    {
+        
+    };
+    class Praetor_Helmet_Black_31_broken : LM_OPCAN_CH252D_H3_broken
+    {
+        
+    };
+    class Praetor_Helmet_Black_32_broken : LM_OPCAN_CH252D_H3_broken
+    {
+        
+    };
+    class Praetor_Helmet_Black_33_broken : LM_OPCAN_CH252D_H3_broken
+    {
+        
+    };
+    class Praetor_Helmet_Ride_dp : LM_OPCAN_CH252D_H3_dp
+    {
+        
+    };
+    class Praetor_Helmet_Ride_broken : LM_OPCAN_CH252D_H3_broken
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_dp : LM_OPCAN_CH252D_H3_Yellow_dp
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_31_dp : LM_OPCAN_CH252D_H3_Yellow_dp
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_32_dp : LM_OPCAN_CH252D_H3_Yellow_dp
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_33_dp : LM_OPCAN_CH252D_H3_Yellow_dp
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_broken : LM_OPCAN_CH252D_H3_Yellow_broken
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_31_broken : LM_OPCAN_CH252D_H3_Yellow_broken
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_32_broken : LM_OPCAN_CH252D_H3_Yellow_broken
+    {
+        
+    };
+    class Praetor_Helmet_Yellow_33_broken : LM_OPCAN_CH252D_H3_Yellow_broken
+    {
+        
+    };
+    class Praetor_Helmet_Blue_dp : LM_OPCAN_CH252D_H3_Blue_dp
+    {
+        
+    };
+    class Praetor_Helmet_Blue_31_dp : LM_OPCAN_CH252D_H3_Blue_dp
+    {
+        
+    };
+    class Praetor_Helmet_Blue_32_dp : LM_OPCAN_CH252D_H3_Blue_dp
+    {
+        
+    };
+    class Praetor_Helmet_Blue_33_dp : LM_OPCAN_CH252D_H3_Blue_dp
+    {
+        
+    };
+    class Praetor_Helmet_Blue_broken : LM_OPCAN_CH252D_H3_Blue_broken
+    {
+        
+    };
+    class Praetor_Helmet_Blue_31_broken : LM_OPCAN_CH252D_H3_Blue_broken
+    {
+        
+    };
+    class Praetor_Helmet_Blue_32_broken : LM_OPCAN_CH252D_H3_Blue_broken
+    {
+        
+    };
+    class Praetor_Helmet_Blue_33_broken : LM_OPCAN_CH252D_H3_Blue_broken
+    {
+        
+    };
+    class Praetor_Helmet_Green_dp : LM_OPCAN_CH252D_H3_Green_dp
+    {
+        
+    };
+    class Praetor_Helmet_Green_31_dp : LM_OPCAN_CH252D_H3_Green_dp
+    {
+        
+    };
+    class Praetor_Helmet_Green_32_dp : LM_OPCAN_CH252D_H3_Green_dp
+    {
+        
+    };
+    class Praetor_Helmet_Green_33_dp : LM_OPCAN_CH252D_H3_Green_dp
+    {
+        
+    };
+    class Praetor_Helmet_Green_broken : LM_OPCAN_CH252D_H3_Green_broken
+    {
+        
+    };
+    class Praetor_Helmet_Green_31_broken : LM_OPCAN_CH252D_H3_Green_broken
+    {
+        
+    };class Praetor_Helmet_Green_32_broken : LM_OPCAN_CH252D_H3_Green_broken
+    {
+        
+    };class Praetor_Helmet_Green_33_broken : LM_OPCAN_CH252D_H3_Green_broken
+    {
+        
+    };
     class Praetor_Helmet_Red_dp : LM_OPCAN_CH252D_H3_Red_dp
     {
         
@@ -4842,6 +9562,25 @@ class CfgWeapons
     class Praetor_Helmet_Red_broken : LM_OPCAN_CH252D_H3_Red_broken
     {
         
+    };
+    class Praetor_Helmet_Ride: LM_OPCAN_CH252D_H3
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Kestrel";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Ride Along Helmet";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Ride.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
     class Praetor_Helmet_Black: LM_OPCAN_CH252D_H3
 	{
@@ -4856,11 +9595,68 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] Praetorian Helmet (Black)";
+		displayName = "[1stMEU] Praetorian Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+     class Praetor_Helmet_Black_31: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (3-1)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Black_32: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (3-2)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Black_33: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (3-3)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
     class Praetor_Helmet_Yellow:Praetor_Helmet_Black
 	{
@@ -4875,6 +9671,63 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Yellow.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
+    class Praetor_Helmet_Yellow_31: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-1)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Yellow_32: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-2)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Yellow_33: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-3)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
 	class Praetor_Helmet_Blue:Praetor_Helmet_Black
 	{
         scope = 2;
@@ -4888,6 +9741,63 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Blue.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
+    class Praetor_Helmet_Blue_31: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-1)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Blue_32: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-2)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Blue_33: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-3)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
 	class Praetor_Helmet_Green:Praetor_Helmet_Black
 	{
         scope = 2;
@@ -4901,6 +9811,63 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Green.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
+    class Praetor_Helmet_Green_31: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Green) (3-1)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Green_32: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Green) (3-2)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Green_33: Praetor_Helmet_Black
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Green) (3-3)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
 	class Praetor_Helmet_Red:Praetor_Helmet_Black
 	{
         scope = 2;
@@ -4927,48 +9894,73 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.50;
-		displayName = "[1stMEU] Praetorian Soundproof Helmet (Black)";
+		displayName = "[1stMEU] Praetorian Soundproof Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    // cent vest hitpoints fix later lol
-    //class HitpointsProtectionInfo
-	//		{
-	//			class Abdomen
-	//			{
-	//				armor = 35;
-	//				hitpointName = "HitAbdomen";
-	//				passThrough = 0.1;
-	//			};
-	//			class Arms: Abdomen
-	//			{
-	//				hitpointName = "HitArms";
-	//			};
-	//			class Body: Abdomen
-	//			{
-	//				hitpointName = "HitBody";
-	//			};
-	//			class Chest: Abdomen
-	//			{
-	//				hitpointName = "HitChest";
-	//			};
-	//			class Diaphragm: Abdomen
-	//			{
-	//				hitpointName = "HitDiaphragm";
-	//			};
-	//			class Hands: Abdomen
-	//			{
-	//			hitpointName = "HitHands";
-	//			};
-	//			class Legs: Abdomen
-	//			{
-	//				hitpointName = "HitLegs";
-	//			};
-	//			class Neck: Abdomen
-	//			{
-	//				hitpointName = "HitNeck";
-	//			};
-	//		};
+	
+	//Praetorian Helmet End
+	//Weapons Start
+	
+	class OPTRE_100Rnd_127x99_M247HMG;
+	class WeaponSlotsInfo;
+	class StandardSound;
+	class CowsSlot;
+	class MuzzleSlot;
+	class Single;
+	class FullAuto;
+	class OPTRE_M247;
+	
+	class M247HMG: OPTRE_M247
+	{
+		dlc = "OPTRE";
+		author = "[1stMEU] Oneill";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\MG\data\anim\OPTRE_M247_handanim.rtm","Spartan_ManSkeleton","\OPTRE_Weapons\MG\data\anim\M247_Spartan.rtm"};
+		model = "\OPTRE_Weapons\MG\M247.p3d";
+		displayName = "M247 Heavy Machine Gun";
+		descriptionShort = "UNSC Heavy Machine Gun (man portable)";
+		magazines[] = {"OPTRE_100Rnd_127x99_M247HMG"};
+		recoil = "recoil_mk200";
+		baseWeapon = "M247HMG";
+		HUD_BulletInARows = 2;
+		HUD_TotalPosibleBullet = 100;
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 150;
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH"};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+		class Single: Single
+		{
+			class StandardSound: StandardSound
+			{
+				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
+				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
+			};
+			reloadTime = 0.095;
+			dispersion = 0.000065;
+		};
+		class FullAuto: FullAuto
+		{
+			class StandardSound: StandardSound
+			{
+				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
+				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
+			};
+			reloadTime = 0.095;
+			dispersion = 0.000065;
+		};
+	};
+    //weapon end
 };
