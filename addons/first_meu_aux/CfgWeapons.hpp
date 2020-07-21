@@ -85,11 +85,11 @@ class CfgWeapons
     class ace_medical_treatment;
     class ACE_Morphine;
 
-    class MEU_compat_Ibuprophen: ACE_Morphine
+    class MEU_compat_Ibuprofen: ACE_Morphine
 	{
 		scope = 2;
 		author = "1st MEU Mark";
-		displayName = "Ibuprophen";
+		displayName = "Ibuprofen";
 		picture = "\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
 		model = "\z\ace\addons\medical_treatment\data\morphine.p3d";
 		descriptionShort = "Drink some water and Rest";

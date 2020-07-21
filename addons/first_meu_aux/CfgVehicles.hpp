@@ -43,11 +43,11 @@ class CfgVehicles
     class ace_medical_treatment;
     class ACE_morphineItem;
     
-    class MEU_compat_IbuprophenItem: ACE_morphineItem 
+    class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
         scope = 2;
         scopeCurator = 2;
-        displayName = "Ibuprophen";
+        displayName = "Ibuprofen";
         author = "1st MEU Mark";
         vehicleClass = "Items";
         class TransportItems 
