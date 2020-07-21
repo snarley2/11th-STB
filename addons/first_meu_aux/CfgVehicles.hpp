@@ -39,7 +39,6 @@ class CfgVehicles
     class B_fieldpack_blk;
     class OPTRE_FC_Elite_Undersuit;
     class UniformItem;
-    class Land;
     class Item_Base_F;
     class ace_medical_treatment;
     class ACE_morphineItem;
@@ -56,70 +55,7 @@ class CfgVehicles
             item_xx(MEU_Ibuprophen,1);
         };
     };
-	class Man: Land
-	{
-		class EventHandlers;
-	};
-	class CAManBase: Man
-	{
-		class HitPoints;
-	};
-	class SoldierWB: CAManBase
-	{
-		class HitPoints: HitPoints
-		{
-			class HitFace;
-			class HitNeck;
-			class HitHead;
-			class HitPelvis;
-			class HitAbdomen;
-			class HitDiaphragm;
-			class HitChest;
-			class HitBody;
-			class HitArms;
-			class HitHands;
-			class HitLegs;
-		};
-	};
-	class MEU_Soldier_Base: SoldierWB
-	{
-		dlc = "OPTRE";
-		scope = 1;
-		scopeCurator = 0;
-		side = 1;
-		faction = "OPTRE_UNSC";
-		genericNames = "NATOMen";
-		identityTypes[] = {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO","G_IRAN_default"};
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		modelSides[] = {6};
-		displayName = "-";
-		canCarryBackPack = 1;
-		oxygenCapacity = 80;
-		portrait = "";
-		picture = "";
-		icon = "iconMan";
-		accuracy = 2.3;
-		sensitivity = 3;
-		camouflage = 1.4;
-		minFireTime = 7;
-		primaryAmmoCoef = 0.4;
-		secondaryAmmoCoef = 0.2;
-		handgunAmmoCoef = 0.1;
-		cost = 100000;
-		class EventHandlers;
-		author = "Article 2 Studios";
-		editorPreview = "OPTRE_Core\data\logo_ca.paa";
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
-		};
-		armor = 2;
-		armorStructural = 0.5;
-		explosionShielding = 0.05;
-	};
-
+	
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
         tf_range=30000;
@@ -370,6 +306,8 @@ class CfgVehicles
         armor = 1000;
     };
     
+	//Start Backpacks
+	
     class Praetor_Jumpack: OPTRE_S12_SOLA_Jetpack	
     {
         displayName = "[1stMEU] ODST Advanced Reconnaissance Jumpack";
@@ -459,7 +397,324 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
     };
 	
-    class Praetor_CU_INF : MEU_Soldier_Base
+	//End Backpacks
+	//Start Uniforms
+	
+	class Land;
+	class Man: Land
+	{
+		class EventHandlers;
+	};
+	class CAManBase: Man
+	{
+		class HitPoints;
+	};
+	class SoldierMEU: CAManBase
+	{
+		class HitPoints: HitPoints
+		{
+			class HitFace;
+			class HitNeck;
+			class HitHead;
+			class HitPelvis;
+			class HitAbdomen;
+			class HitDiaphragm;
+			class HitChest;
+			class HitBody;
+			class HitArms;
+			class HitHands;
+			class HitLegs;
+		};
+	};
+	
+	class MEU_Base_Uniform: SoldierMEU
+	{
+		class HitPoints: HitPoints
+		{
+			class HitFace
+			{
+				armor = 1;
+				material = -1;
+				name = "face_hub";
+				passThrough = 0.1;
+				radius = 0.08;
+				explosionShielding = 0.1;
+				minimalHit = 0.01;
+			};
+			class HitNeck: HitFace
+			{
+				armor = 1;
+				material = -1;
+				name = "neck";
+				passThrough = 0.1;
+				radius = 0.1;
+				explosionShielding = 0.1;
+				minimalHit = 0.01;
+			};
+			class HitHead: HitNeck
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 0.1;
+				radius = 0.2;
+				explosionShielding = 0.1;
+				minimalHit = 0.01;
+				depends = "HitFace max HitNeck";
+			};
+			class HitPelvis
+			{
+				armor = 1;
+				material = -1;
+				name = "pelvis";
+				passThrough = 0.1;
+				radius = 0.2;
+				explosionShielding = 0.25;
+				visual = "injury_body";
+				minimalHit = 0.01;
+			};
+			class HitAbdomen: HitPelvis
+			{
+				armor = 1;
+				material = -1;
+				name = "spine1";
+				passThrough = 0.1;
+				radius = 0.15;
+				explosionShielding = 0.25;
+				visual = "injury_body";
+				minimalHit = 0.01;
+			};
+			class HitDiaphragm: HitAbdomen
+			{
+				armor = 1;
+				material = -1;
+				name = "spine2";
+				passThrough = 0.1;
+				radius = 0.15;
+				explosionShielding = 2;
+				visual = "injury_body";
+				minimalHit = 0.01;
+			};
+			class HitChest: HitDiaphragm
+			{
+				armor = 1;
+				material = -1;
+				name = "spine3";
+				passThrough = 0.1;
+				radius = 0.15;
+				explosionShielding = 2;
+				visual = "injury_body";
+				minimalHit = 0.01;
+			};
+			class HitBody: HitChest
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 0.1;
+				radius = 0.16;
+				explosionShielding = 2;
+				visual = "injury_body";
+				minimalHit = 0.01;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms
+			{
+				armor = 1;
+				material = -1;
+				name = "arms";
+				passThrough = 0.1;
+				radius = 0.1;
+				explosionShielding = 0.25;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+			};
+			class HitHands: HitArms
+			{
+				armor = 1;
+				material = -1;
+				name = "hands";
+				passThrough = 0.1;
+				radius = 0.1;
+				explosionShielding = 0.25;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+				depends = "HitArms";
+			};
+			class HitLegs
+			{
+				armor = 1;
+				material = -1;
+				name = "legs";
+				passThrough = 0.1;
+				radius = 0.12;
+				explosionShielding = 0.25;
+				visual = "injury_legs";
+				minimalHit = 0.01;
+			};
+			class HitLeftArm
+			{
+				armor = 1;
+				material = -1;
+				name = "hand_l";
+				passThrough = 0.1;
+				radius = 0.1;
+				explosionShielding = 0.25;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+			};
+			class HitRightArm: HitLeftArm
+			{
+				name = "hand_r";
+			};
+			class HitLeftLeg
+			{
+				armor = 1;
+				material = -1;
+				name = "leg_l";
+				passThrough = 0.1;
+				radius = 0.1;
+				explosionShielding = 0.25;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+			};
+			class HitRightLeg: HitLeftLeg
+			{
+				name = "leg_r";
+			};
+		};
+	};
+	
+	class 1stMEU_BDU: MEU_Base_Uniform
+	{
+		dlc = "1st MEU";
+		scope = 1;
+		scopeCurator = 0;
+		author = "1st MEU Oneill";
+		vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
+		uniformClass = "OPTRE_UNSC_Army_Uniform_WDL";
+		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
+		weapons[] = {"Throw","Put"};
+		respawnWeapons[] = {"Throw","Put"};
+		Items[] = {};
+		RespawnItems[] = {};
+		magazines[] = {};
+		respawnMagazines[] = {};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_SlimLeg"};
+		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"OPTRE_UNSC_Units\Army\data\uniform_a.rvmat","OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat","OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat","OPTRE_UNSC_Units\Army\data\uniform_b.rvmat","OPTRE_UNSC_Units\Army\data\uniform_b_injury.rvmat","OPTRE_UNSC_Units\Army\data\uniform_b_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat"};
+		};
+		class HitPoints: HitPoints
+		{
+			class HitNeck: HitNeck
+			{
+				armor = 4;
+			};
+			class HitPelvis: HitPelvis
+			{
+				armor = 4;
+			};
+			class HitAbdomen: HitAbdomen
+			{
+				armor = 4;
+			};
+			class HitDiaphragm: HitDiaphragm
+			{
+				armor = 4;
+			};
+			class HitChest: HitChest
+			{
+				armor = 4;
+			};
+			class HitArms: HitArms
+			{
+				armor = 4;
+			};
+			class HitHands: HitHands
+			{
+				armor = 4;
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 4;
+			};
+			class HitLeftArm: HitLeftArm
+			{
+				armor = 4;
+			};
+			class HitRightArm: HitRightArm
+			{
+				armor = 4;
+			};
+			class HitLeftLeg: HitLeftLeg
+			{
+				armor = 4;
+			};
+			class HitRightLeg: HitRightLeg
+			{
+				armor = 4;
+			};
+		};
+		editorSubcategory = "OPTRE_EditorSubcategory_MenWDL";
+	};
+	
+	class BDU_V_Urban_Slim: 1stMEU_BDU
+	{
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO"};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		uniformclass = "BDU_Urban_Slim";
+	};
+	
+	class BDU_V_Centurion_Slim: 1stMEU_BDU
+	{
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO"};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		uniformclass = "BDU_Centurion_Slim";
+	};
+	
+	/* class MEU_Soldier_Base: SoldierWB
+	{
+		dlc = "OPTRE";
+		scope = 1;
+		scopeCurator = 0;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		genericNames = "NATOMen";
+		identityTypes[] = {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO","G_IRAN_default"};
+		uniformAccessories[] = {};
+		nakedUniform = "U_BasicBody";
+		modelSides[] = {6};
+		displayName = "-";
+		canCarryBackPack = 1;
+		oxygenCapacity = 80;
+		portrait = "";
+		picture = "";
+		icon = "iconMan";
+		accuracy = 2.3;
+		sensitivity = 3;
+		camouflage = 1.4;
+		minFireTime = 7;
+		primaryAmmoCoef = 0.4;
+		secondaryAmmoCoef = 0.2;
+		handgunAmmoCoef = 0.1;
+		cost = 100000;
+		class EventHandlers;
+		author = "Article 2 Studios";
+		editorPreview = "OPTRE_Core\data\logo_ca.paa";
+		class Wounds
+		{
+			tex[] = {};
+			mat[] = {"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
+		};
+		armor = 2;
+		armorStructural = 0.5;
+		explosionShielding = 0.05;
+	}; */
+	
+    /* class Praetorian_CBU : 1stMEU_CBU
 	{
 		author = "1stMEU Kestrel";
 		scope = 2;
@@ -478,25 +733,29 @@ class CfgVehicles
 			mass = 40;
         };
     };
-    class Centuniform : MEU_Soldier_Base
+    class Centurion_CBU : 1stMEU_CBU
     {
         author = "1st MEU Mark";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform (Black)";
+        displayName = "[1stMEU] Centurion Combat Uniform";
         armor = 100;
-        armorStructural = 4;
-        explosionShielding = 0.04;
+        armorStructural = 0.6;
+        explosionShielding = 0.06;
         impactDamageMultiplier = -100;
         class ItemInfo: UniformItem
         {
-			uniformClass = "VES_BDU_V_MulticamBlack";
+			uniformClass = "VES_BDU_V_MulticamBlack_Slim";
 			uniformType = "Neopren";
-			containerClass = "Supply100";
+			containerClass = "Supply120";
 			mass = 40;
         };
-    };
+    }; */
+	
+	//End Uniforms
+	//Start AI Compositions
+	
     class OPTRE_Ins_URF_Soldier_Base: OPTRE_UNSC_Soldier_Base
 	{
 		dlc = "OPTRE";

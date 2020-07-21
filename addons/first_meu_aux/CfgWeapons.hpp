@@ -9381,46 +9381,7 @@ class CfgWeapons
 			};
 		};
     };
-    class Praetor_Helmet_Black_dp : LM_OPCAN_CH252D_H3_dp
-    {
-        
-    };
-    class Praetor_Helmet_Black_broken : LM_OPCAN_CH252D_H3_broken
-    {
-        
-    };
-    class Praetor_Helmet_Ride_dp : LM_OPCAN_CH252D_H3_dp
-    {
-        
-    };
-    class Praetor_Helmet_Ride_broken : LM_OPCAN_CH252D_H3_broken
-    {
-        
-    };
-    class Praetor_Helmet_Yellow_dp : LM_OPCAN_CH252D_H3_Yellow_dp
-    {
-        
-    };
-    class Praetor_Helmet_Yellow_broken : LM_OPCAN_CH252D_H3_Yellow_broken
-    {
-        
-    };
-    class Praetor_Helmet_Blue_dp : LM_OPCAN_CH252D_H3_Blue_dp
-    {
-        
-    };
-    class Praetor_Helmet_Blue_broken : LM_OPCAN_CH252D_H3_Blue_broken
-    {
-        
-    };
-    class Praetor_Helmet_Green_dp : LM_OPCAN_CH252D_H3_Green_dp
-    {
-        
-    };
-    class Praetor_Helmet_Green_broken : LM_OPCAN_CH252D_H3_Green_broken
-    {
-        
-    };
+    
     class Praetor_Helmet_Black_dp : LM_OPCAN_CH252D_H3_dp
     {
         
@@ -9902,6 +9863,49 @@ class CfgWeapons
     };
 	
 	//Praetorian Helmet End
+	//BDU Start
+	
+	class BDU_V_Urban_Slim;
+	class BDU_V_Centurion_Slim;
+	class 1stMEU_BDU;
+	
+	class Praetorian_BDU : 1stMEU_BDU
+	{
+		author = "1stMEU Oneill";
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] Praetorian Combat Uniform";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "BDU_V_Urban_Slim";
+			uniformType = "Neopren";
+			containerClass = "Supply100";
+			uniformModel = "";
+			mass = 40;
+        };
+    };
+	
+    class Centurion_BDU : 1stMEU_BDU
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Slim";
+			uniformType = "Neopren";
+			containerClass = "Supply100";
+			uniformModel = "";
+			mass = 40;
+        };
+    };
+	
+	//BDU End
 	//Weapons Start
 	
 	class OPTRE_100Rnd_127x99_M247HMG;
@@ -9924,7 +9928,7 @@ class CfgWeapons
 		model = "\OPTRE_Weapons\MG\M247.p3d";
 		displayName = "M247 Heavy Machine Gun";
 		descriptionShort = "UNSC Heavy Machine Gun (man portable)";
-		magazines[] = {"OPTRE_100Rnd_127x99_M247HMG"};
+		magazines[] = {"OPTRE_100Rnd_127x99_M247HMG", "OPTRE_100Rnd_127x99_HE_M247HMG"};
 		recoil = "recoil_mk200";
 		baseWeapon = "M247HMG";
 		HUD_BulletInARows = 2;

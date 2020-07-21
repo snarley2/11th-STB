@@ -11,7 +11,7 @@ class ACE_Medical_Treatment
         maxDose = 4;
 	   onOverDose = "";
 	   viscosityChange = 0;
-        class MEU_Ibuprophen
+        class MEU_compat_Ibuprophen
         {
             painReduce = 0.4;
             hrIncreaseLow[] = {0};

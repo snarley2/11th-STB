@@ -3,6 +3,7 @@ class CfgMagazines
 	
     class OPTRE_60Rnd_762x51_Mag;
     class B_127x99_Ball;
+	class OPTRE_B_127x99_HE;
     class 150Rnd_762x51_Box;
     class 8Rnd_82mm_Mo_shells;
 	class 8Rnd_82mm_Mo_Smoke_white;
@@ -63,6 +64,27 @@ class CfgMagazines
 		displayname = "100Rnd 12.7x99mm Box Magazine";
 		displaynameshort = "12.7x99mm";
 		ammo = "B_127x99_Ball";
+		count = 100;
+		initspeed = 900;
+		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
+		descriptionshort = "100 Round Box Magazine<br>12.7x99mm";
+		mass = 100;
+		tracersEvery = 2;
+		lastRoundsTracer = 1;
+	};
+	
+	class OPTRE_100Rnd_127x99_HE_M247HMG : OPTRE_100Rnd_762x51_Box
+	{
+		dlc = "OPTRE";
+        author = "[1stMEU] Oneill";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        ace_isbelt = 1;
+		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
+		displayname = "100Rnd 12.7x99mm HE Box Magazine";
+		displaynameshort = "12.7x99mm HE";
+		ammo = "OPTRE_B_127x99_HE";
 		count = 100;
 		initspeed = 900;
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
