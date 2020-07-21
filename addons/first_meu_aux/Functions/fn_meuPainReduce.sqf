@@ -21,4 +21,4 @@ params ["_caller", "_target", "_selection", "_className"];
 _this call ace_medical_treatment_fnc_bandage;
 
 // execute local function to manage pain
-[_target, _className] remoteExecCall ["meutreatmentBandageAndPainReductionLocal", _target];
+[_target, _className] remoteExecCall ["meuPainReduceLocal", _target];
