@@ -1,5 +1,7 @@
 class ACE_Medical_Treatment
 {
+    class Morphine;
+    
     class Medication
     {
 	   painReduce = 0;
@@ -11,7 +13,7 @@ class ACE_Medical_Treatment
         maxDose = 4;
 	   onOverDose = "";
 	   viscosityChange = 0;
-        class MEU_compat_Ibuprofen
+        class MEU_compat_Ibuprofen : Morphine
         {
             painReduce = 0.4;
             hrIncreaseLow[] = {0};
