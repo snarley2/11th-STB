@@ -400,189 +400,193 @@ class CfgVehicles
 	//End Backpacks
 	//Start Uniforms
 	
-	class Land;
-	class Man: Land
+	class OPTRE_UNSC_Army_Soldier_WDL;
+	
+	class MEU_Base_Uniform: OPTRE_UNSC_Army_Soldier_WDL
 	{
 		class EventHandlers;
-	};
-	class CAManBase: Man
-	{
-		class HitPoints;
-	};
-	class SoldierMEU: CAManBase
-	{
-		class HitPoints: HitPoints
+		class HitPoints
 		{
-			class HitFace;
-			class HitNeck;
-			class HitHead;
-			class HitPelvis;
-			class HitAbdomen;
-			class HitDiaphragm;
-			class HitChest;
-			class HitBody;
-			class HitArms;
-			class HitHands;
-			class HitLegs;
-		};
-	};
-	
-	class MEU_Base_Uniform: SoldierMEU
-	{
-		class HitPoints: HitPoints
-		{
-			class HitFace
-			{
-				armor = 1;
-				material = -1;
-				name = "face_hub";
-				passThrough = 0.1;
-				radius = 0.08;
-				explosionShielding = 0.1;
-				minimalHit = 0.01;
-			};
-			class HitNeck: HitFace
-			{
-				armor = 1;
-				material = -1;
-				name = "neck";
-				passThrough = 0.1;
-				radius = 0.1;
-				explosionShielding = 0.1;
-				minimalHit = 0.01;
-			};
-			class HitHead: HitNeck
-			{
-				armor = 1;
-				material = -1;
-				name = "head";
-				passThrough = 0.1;
-				radius = 0.2;
-				explosionShielding = 0.1;
-				minimalHit = 0.01;
-				depends = "HitFace max HitNeck";
-			};
-			class HitPelvis
-			{
-				armor = 1;
-				material = -1;
-				name = "pelvis";
-				passThrough = 0.1;
-				radius = 0.2;
-				explosionShielding = 0.25;
-				visual = "injury_body";
-				minimalHit = 0.01;
-			};
-			class HitAbdomen: HitPelvis
-			{
-				armor = 1;
-				material = -1;
-				name = "spine1";
-				passThrough = 0.1;
-				radius = 0.15;
-				explosionShielding = 0.25;
-				visual = "injury_body";
-				minimalHit = 0.01;
-			};
-			class HitDiaphragm: HitAbdomen
-			{
-				armor = 1;
-				material = -1;
-				name = "spine2";
-				passThrough = 0.1;
-				radius = 0.15;
-				explosionShielding = 2;
-				visual = "injury_body";
-				minimalHit = 0.01;
-			};
-			class HitChest: HitDiaphragm
-			{
-				armor = 1;
-				material = -1;
-				name = "spine3";
-				passThrough = 0.1;
-				radius = 0.15;
-				explosionShielding = 2;
-				visual = "injury_body";
-				minimalHit = 0.01;
-			};
-			class HitBody: HitChest
-			{
-				armor = 1000;
-				material = -1;
-				name = "body";
-				passThrough = 0.1;
-				radius = 0.16;
-				explosionShielding = 2;
-				visual = "injury_body";
-				minimalHit = 0.01;
-				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-			};
-			class HitArms
-			{
-				armor = 1;
-				material = -1;
-				name = "arms";
-				passThrough = 0.1;
-				radius = 0.1;
-				explosionShielding = 0.25;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-			};
-			class HitHands: HitArms
-			{
-				armor = 1;
-				material = -1;
-				name = "hands";
-				passThrough = 0.1;
-				radius = 0.1;
-				explosionShielding = 0.25;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-				depends = "HitArms";
-			};
-			class HitLegs
-			{
-				armor = 1;
-				material = -1;
-				name = "legs";
-				passThrough = 0.1;
-				radius = 0.12;
-				explosionShielding = 0.25;
-				visual = "injury_legs";
-				minimalHit = 0.01;
-			};
-			class HitLeftArm
-			{
-				armor = 1;
-				material = -1;
-				name = "hand_l";
-				passThrough = 0.1;
-				radius = 0.1;
-				explosionShielding = 0.25;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-			};
-			class HitRightArm: HitLeftArm
-			{
-				name = "hand_r";
-			};
-			class HitLeftLeg
-			{
-				armor = 1;
-				material = -1;
-				name = "leg_l";
-				passThrough = 0.1;
-				radius = 0.1;
-				explosionShielding = 0.25;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-			};
-			class HitRightLeg: HitLeftLeg
-			{
-				name = "leg_r";
-			};
-		};
+            class HitFace
+            {
+                armor = 1; //Default Value
+                material = -1;
+                name = "face_hub";
+                passThrough = 0.8;
+                radius = 0.08;
+                explosionShielding = 0.1;
+                minimalHit = 0.01;
+            };
+            class HitNeck: HitFace
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "neck";
+                passThrough = 0.8;
+                radius = 0.1;
+                explosionShielding = 0.5;
+                minimalHit = 0.01;
+            };
+            class HitHead: HitNeck
+            {
+                armor = 1; //Default Value
+                material = -1;
+                name = "head";
+                passThrough = 0.8;
+                radius = 0.2;
+                explosionShielding = 0.5;
+                minimalHit = 0.01;
+                depends = "HitFace max HitNeck";
+            };
+            class HitPelvis: HitHead
+            {
+                armor = 8; //OPTRE Value //Default=6
+                material = -1;
+                name = "pelvis";
+                passThrough = 0.8;
+                radius = 0.24;
+                explosionShielding = 1;
+                visual = "injury_body";
+                minimalHit = 0.01;
+                depends = "0";
+            };
+            class HitAbdomen: HitPelvis
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "spine1";
+                passThrough = 0.8;
+                radius = 0.16;
+                explosionShielding = 1;
+                visual = "injury_body";
+                minimalHit = 0.01;
+            };
+            class HitDiaphragm: HitAbdomen
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "spine2";
+                passThrough = 0.8;
+                radius = 0.18;
+                explosionShielding = 2.4;
+                visual = "injury_body";
+                minimalHit = 0.01;
+            };
+            class HitChest: HitDiaphragm
+            {
+                armor = 4; //OPTRE Value //Default=1
+                material = -1;
+                name = "spine3";
+                passThrough = 0.8;
+                radius = 0.18;
+                explosionShielding = 2.4;
+                visual = "injury_body";
+                minimalHit = 0.01;
+            };
+            class HitBody: HitChest
+            {
+                armor = 1000; // Default value, do not change
+                material = -1;
+                name = "body";
+                passThrough = 1;
+                radius = 0;
+                explosionShielding = 2.4;
+                visual = "injury_body";
+                minimalHit = 0.01;
+                depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+            };
+            class HitArms: HitBody
+            {
+                armor = 6; //OPTRE Value //Default=3
+                material = -1;
+                name = "arms";
+                passThrough = 1;
+                radius = 0.1;
+                explosionShielding = 0.3;
+                visual = "injury_hands";
+                minimalHit = 0.01;
+                depends = "0";
+            };
+            class HitHands: HitArms
+            {
+                armor = 6; //OPTRE Value //Default=3
+                material = -1;
+                name = "hands";
+                passThrough = 1;
+                radius = 0.1;
+                explosionShielding = 0.3;
+                visual = "injury_hands";
+                minimalHit = 0.01;
+                depends = "HitArms";
+            };
+            class HitLegs: HitHands
+            {
+                armor = 6; //OPTRE Value //Default=3
+                material = -1;
+                name = "legs";
+                passThrough = 1;
+                radius = 0.14;
+                explosionShielding = 0.3;
+                visual = "injury_legs";
+                minimalHit = 0.01;
+                depends = "0";
+            };
+            class Incapacitated: HitLegs
+            {
+                armor = 1000; //Default value, Do not change
+                material = -1;
+                name = "body";
+                passThrough = 1;
+                radius = 0;
+                explosionShielding = 1;
+                visual = "";
+                minimalHit = 0;
+                depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+            };
+            //----------------------------Ace Hitpoints---------------------------
+            class HitLeftArm
+            {
+                armor = 2; //OPTRE Value //Default=1
+                material = -1;
+                name = "hand_l";
+                passThrough = 1;
+                radius = 0.08;
+                explosionShielding = 1;
+                visual = "injury_hands";
+                minimalHit = 0.01;
+            };
+            class HitRightArm: HitLeftArm
+            {
+                name = "hand_r";
+            };
+            class HitLeftLeg
+            {
+                armor = 2; //OPTRE Value //Default=1
+                material = -1;
+                name = "leg_l";
+                passThrough = 1;
+                radius = 0.1;
+                explosionShielding = 1;
+                visual = "injury_legs";
+                minimalHit = 0.01;
+            };
+            class HitRightLeg: HitLeftLeg
+            {
+                name = "leg_r";
+            };
+            class ACE_HDBracket
+            {
+                armor = 1; //Default Value, Do not Change
+                material = -1;
+                name = "head";
+                passThrough = 0;
+                radius = 1;
+                explosionShielding = 1;
+                visual = "";
+                minimalHit = 0;
+                depends = "HitHead";
+            };
+        };
 	};
 	
 	class 1stMEU_BDU: MEU_Base_Uniform
@@ -602,156 +606,50 @@ class CfgVehicles
 		respawnMagazines[] = {};
 		hiddenSelections[] = {"camo","camo2","insignia","clan","A_SlimLeg"};
 		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {"OPTRE_UNSC_Units\Army\data\uniform_a.rvmat","OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat","OPTRE_UNSC_Units\Army\data\uniform_a_injury.rvmat","OPTRE_UNSC_Units\Army\data\uniform_b.rvmat","OPTRE_UNSC_Units\Army\data\uniform_b_injury.rvmat","OPTRE_UNSC_Units\Army\data\uniform_b_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat","A3\Characters_F_Exp\Heads\Data\hl_tanoan_bald_muscular_injury.rvmat"};
-		};
-		class HitPoints: HitPoints
-		{
-			class HitNeck: HitNeck
-			{
-				armor = 4;
-			};
-			class HitPelvis: HitPelvis
-			{
-				armor = 4;
-			};
-			class HitAbdomen: HitAbdomen
-			{
-				armor = 4;
-			};
-			class HitDiaphragm: HitDiaphragm
-			{
-				armor = 4;
-			};
-			class HitChest: HitChest
-			{
-				armor = 4;
-			};
-			class HitArms: HitArms
-			{
-				armor = 4;
-			};
-			class HitHands: HitHands
-			{
-				armor = 4;
-			};
-			class HitLegs: HitLegs
-			{
-				armor = 4;
-			};
-			class HitLeftArm: HitLeftArm
-			{
-				armor = 4;
-			};
-			class HitRightArm: HitRightArm
-			{
-				armor = 4;
-			};
-			class HitLeftLeg: HitLeftLeg
-			{
-				armor = 4;
-			};
-			class HitRightLeg: HitRightLeg
-			{
-				armor = 4;
-			};
-		};
 		editorSubcategory = "OPTRE_EditorSubcategory_MenWDL";
 	};
 	
-	class BDU_V_Urban_Slim: 1stMEU_BDU
+	class BDU_V_Praetorian_Slim: 1stMEU_BDU
 	{
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO"};
 		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		uniformclass = "BDU_Urban_Slim";
+		uniformclass = "Praetorian_BDU";
 	};
 	
 	class BDU_V_Centurion_Slim: 1stMEU_BDU
 	{
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO"};
 		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		uniformclass = "BDU_Centurion_Slim";
+		uniformclass = "Centurion_BDU";
 	};
 	
-	/* class MEU_Soldier_Base: SoldierWB
+	class BDU_V_Centurion_Urban_Evolved_Slim: 1stMEU_BDU
 	{
-		dlc = "OPTRE";
-		scope = 1;
-		scopeCurator = 0;
-		side = 1;
-		faction = "OPTRE_UNSC";
-		genericNames = "NATOMen";
-		identityTypes[] = {"LanguageENG_F","Miller","Kerry","EPA_B_Northgate","EPA_B_Hardy","EPA_B_James","EPA_B_McKay","LanguageGRE_F","Head_Greek","Head_African","Head_Euro","Head_Asian","Head_NATO","G_IRAN_default"};
-		uniformAccessories[] = {};
-		nakedUniform = "U_BasicBody";
-		modelSides[] = {6};
-		displayName = "-";
-		canCarryBackPack = 1;
-		oxygenCapacity = 80;
-		portrait = "";
-		picture = "";
-		icon = "iconMan";
-		accuracy = 2.3;
-		sensitivity = 3;
-		camouflage = 1.4;
-		minFireTime = 7;
-		primaryAmmoCoef = 0.4;
-		secondaryAmmoCoef = 0.2;
-		handgunAmmoCoef = 0.1;
-		cost = 100000;
-		class EventHandlers;
-		author = "Article 2 Studios";
-		editorPreview = "OPTRE_Core\data\logo_ca.paa";
-		class Wounds
-		{
-			tex[] = {};
-			mat[] = {"A3\Characters_F\Heads\Data\hl_white_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_black_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_hairy_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_white_old_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat","A3\Characters_F\Heads\Data\hl_asian_bald_muscular_injury.rvmat"};
-		};
-		armor = 2;
-		armorStructural = 0.5;
-		explosionShielding = 0.05;
-	}; */
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO"};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		uniformclass = "Centurion_BDU_Urban_Evolved";
+	};
 	
-    /* class Praetorian_CBU : 1stMEU_CBU
+	class BDU_V_Centurion_Desert_Slim: 1stMEU_BDU
 	{
-		author = "1stMEU Kestrel";
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Combat Uniform";
-        armor = 100;
-        armorStructural = 0.6;
-        explosionShielding = 0.06;
-        impactDamageMultiplier = -100;
-		class ItemInfo: UniformItem
-		{
-			uniformClass = "VES_BDU_V_Urban_Slim";
-			uniformType = "Neopren";
-			containerClass = "Supply120";
-			mass = 40;
-        };
-    };
-    class Centurion_CBU : 1stMEU_CBU
-    {
-        author = "1st MEU Mark";
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform";
-        armor = 100;
-        armorStructural = 0.6;
-        explosionShielding = 0.06;
-        impactDamageMultiplier = -100;
-        class ItemInfo: UniformItem
-        {
-			uniformClass = "VES_BDU_V_MulticamBlack_Slim";
-			uniformType = "Neopren";
-			containerClass = "Supply120";
-			mass = 40;
-        };
-    }; */
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO"};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		uniformclass = "Centurion_BDU_Desert";
+	};
+	
+	class BDU_V_Centurion_Snow_Slim: 1stMEU_BDU
+	{
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO"};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		uniformclass = "Centurion_BDU_Snow";
+	};
+	
+	class BDU_V_Centurion_Woodland_Slim: 1stMEU_BDU
+	{
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO"};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		uniformclass = "Centurion_BDU_Woodland";
+	};
 	
 	//End Uniforms
 	//Start AI Compositions
