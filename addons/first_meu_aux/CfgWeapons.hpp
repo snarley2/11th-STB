@@ -33,6 +33,9 @@ class CfgWeapons
     class LM_OPCAN_CH252D_H3_Green_broken;
     class LM_OPCAN_CH252D_H3_Red_dp;
     class LM_OPCAN_CH252D_H3_Red_broken;
+    class OPTRE_UNSC_VX16_Helmet_Mask_blk_med;
+    class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_dp;
+    class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken;
     class VES_BDU_MulticamBlack;
     class HitpointsProtectionInfo;
     class MEU_Soldier_Base;
@@ -9528,12 +9531,6 @@ class CfgWeapons
     {
         
     };
-    class Praetor_Helmet_Mike_dp : Praetor_Helmet_Green_dp
-    {
-        hiddenSelections[] = {"camo"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom.paa"};
-    };
     class Praetor_Helmet_Green_31_dp : LM_OPCAN_CH252D_H3_Green_dp
     {
         hiddenSelections[] = {"camo"};
@@ -9580,23 +9577,71 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Red_Custom.paa"};
     };
-    class Praetor_Helmet_Com_dp : Praetor_Helmet_Red_dp
-    {
-        hiddenSelections[] = {"camo"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom.paa"};
-    };
     class Praetor_Helmet_Red_broken : LM_OPCAN_CH252D_H3_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Red_Custom.paa"};
     };
+    class Praetor_Helmet_Black_baseplate_dp : Praetor_Helmet_Red_dp
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32_baseplate.paa"};
+    }
+    class Praetor_Helmet_Black_baseplate_broken : Praetor_Helmet_Red_broken
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32_baseplate.paa"};
+    }
+    class Praetor_Helmet_Com_dp : Praetor_Helmet_Red_dp
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Oneill.paa"};
+    };
     class Praetor_Helmet_Com_broken : Praetor_Helmet_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Oneill.paa"};
+    };
+    class Praetor_Helmet_Com2_dp :Praetor_Helmet_Red_dp
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Mark.paa"};
+    };
+    class Praetor_Helmet_Com2_broken : Praetor_Helmet_Red_broken
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Mark.paa"};
+    };
+    class Praetor_Helmet_Com3_dp : Praetor_Helmet_Red_dp
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Dimitri.paa"};
+    };
+    class Praetor_Helmet_Com3_broken : Praetor_Helmet_Red_broken
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Dimitri.paa"};
+    };
+    class Praetor_Helmet_Mike_dp : Praetor_Helmet_Red_dp
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa"};
+    };
+    class Praetor_Helmet_Mike_broken : Praetor_Helmet_Red_broken
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa"};
     };
     class Praetor_Helmet_Ride: LM_OPCAN_CH252D_H3
 	{
@@ -9673,6 +9718,25 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Praetor_Helmet_Black_baseplate: Praetor_Helmet_Black_32
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Baseplate)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32_baseplate.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
     class Praetor_Helmet_Black_33: Praetor_Helmet_Black
 	{
@@ -9913,7 +9977,7 @@ class CfgWeapons
 		displayName = "[1stMEU] Praetorian Helmet (Red)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\3ODST_HALO3.rvmat"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Red.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
     class Praetor_Helmet_Com:Praetor_Helmet_Red
@@ -9923,11 +9987,37 @@ class CfgWeapons
         scopeArsenal = 2;
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] Praetorian Command Helmet";
+		displayName = "[1stMEU] Praetorian Helmet (Oneill)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\3ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Oneill.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+	};
+    class Praetor_Helmet_Com2:Praetor_Helmet_Com
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Mark)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Mark.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+	};
+    class Praetor_Helmet_Com3:Praetor_Helmet_Com
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Praetorian Helmet (Dimitri)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Dimitri.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
     class Praetor_Helmet_Mike:Praetor_Helmet_Green
 	{
@@ -9936,11 +10026,11 @@ class CfgWeapons
         scopeArsenal = 2;
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] Praetorian Platoon Corpsman Helmet";
+		displayName = "[1stMEU] Praetorian Helmet (FloodedMac)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
     class Praetor_Sound_Protec: Praetor_Helmet_Black
 	{
@@ -9963,10 +10053,32 @@ class CfgWeapons
     };
 	
 	//Praetorian Helmet End
+    // pilot helmet time
+    class MEU_UNSC_VX16_Helmet_Mask_blk_med : OPTRE_UNSC_VX16_Helmet_Mask_blk_med
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+        displayName = "[1stMEU] Basic Pilot Helmet";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
+    }
+    class MEU_UNSC_VX16_Helmet_Mask_blk_med_dp : OPTRE_UNSC_VX16_Helmet_Mask_blk_med_dp
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
+    };
+    class MEU_UNSC_VX16_Helmet_Mask_blk_med_broken :OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken
+    {
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
+    };
+    //pilot helmet end
 	//BDU Start
 	
 	class U_B_CombatUniform_mcam;
-	class UniformItem;
 	
 
 	class Praetorian_BDU : U_B_CombatUniform_mcam
