@@ -5,7 +5,7 @@ class ACE_Medical_Treatment_Actions
     
     class MEU_compat_Ibuprofen: Morphine
     {
-        displayName = "Ibuprophen";
+        displayName = "Ibuprofen";
         allowedSelections[] = {"Head"};
         items[] = {"MEU_compat_Ibuprofen"};
         treatmentTime = 1;
