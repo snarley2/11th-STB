@@ -26,7 +26,15 @@ if (
 				(_x isKindOf "Land_Device_slingloadable_F") OR
                 (_x isKindOf "B_APC_Tracked_01_CRV_F") OR
                 (_x isKindOf "B_T_APC_Tracked_01_CRV_F") OR
-                (_x isKindOf "B_Lifeboat")
+                (_x isKindOf "B_Lifeboat") OR
+				(_x isKindOf "LM_OPCAN_MGS_AR_DES") OR
+				(_x isKindOf "LM_OPCAN_MGS_AR_MIX") OR
+				(_x isKindOf "LM_OPCAN_MGS_AR_WDL") OR
+				(_x isKindOf "LM_OPCAN_MGS_MC_WDL") OR
+				(_x isKindOf "B_AFV_Wheeled_01_cannon_F") OR
+				(_x isKindOf "B_AFV_Wheeled_01_up_cannon_F") OR
+				(_x isKindOf "B_T_AFV_Wheeled_01_cannon_F") OR
+				(_x isKindOf "B_T_AFV_Wheeled_01_up_cannon_F")
 			} count _vehicles > 0
 		)
 ) then {
