@@ -87,6 +87,9 @@ class CfgWeapons
 	class MedikitItem;
     class ace_medical_treatment;
     class ACE_Morphine;
+    class OPTRE_UNSC_VX16_Helmet_MaskS;
+    class OPTRE_UNSC_VX16_Helmet_MaskS_dp;
+    class OPTRE_UNSC_VX16_Helmet_MaskS_broken;
 
     class MEU_compat_Ibuprofen: ACE_Morphine
 	{
@@ -102,7 +105,38 @@ class CfgWeapons
 			mass = 0.1;
 		};
 	};
-	
+
+// Pilot stuff
+    class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
+    {
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Siffys Helmet";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+    };
+    class Siffy_Helmet_dp : OPTRE_UNSC_VX16_Helmet_MaskS_dp
+    {
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa"};
+    };
+    class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
+    {
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa"};
+    };
+// Pilot stuff end
 // centurion gear start   
 // centurion headgear
     
@@ -9437,7 +9471,9 @@ class CfgWeapons
     };
     class Praetor_Helmet_Ride_broken : LM_OPCAN_CH252D_H3_broken
     {
-        
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Ride.paa"};
     };
     class Praetor_Helmet_Yellow_dp : LM_OPCAN_CH252D_H3_Yellow_dp
     {
@@ -9535,19 +9571,19 @@ class CfgWeapons
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_31.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_31.paa"};
     };
     class Praetor_Helmet_Green_32_dp : LM_OPCAN_CH252D_H3_Green_dp
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_32.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_32.paa"};
     };
     class Praetor_Helmet_Green_33_dp : LM_OPCAN_CH252D_H3_Green_dp
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_33.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_33.paa"};
     };
     class Praetor_Helmet_Green_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
@@ -9557,19 +9593,19 @@ class CfgWeapons
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_31.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_31.paa"};
     };
     class Praetor_Helmet_Green_32_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_32.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_32.paa"};
     };
     class Praetor_Helmet_Green_33_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Green_33.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_33.paa"};
     };
     class Praetor_Helmet_Red_dp : LM_OPCAN_CH252D_H3_Red_dp
     {
