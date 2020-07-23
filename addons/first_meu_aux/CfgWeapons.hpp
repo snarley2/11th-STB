@@ -8,7 +8,6 @@ class CfgWeapons
     class ItemCore;
 	class HeadgearItem;
 	class Uniform_Base;
-	class UniformItem;
     class ItemInfo;
 	class H_HelmetB;
 	class VestItem;
@@ -17,11 +16,21 @@ class CfgWeapons
     class G_B_Diving;
 	class ItemcTabHCam;
 	class A3_TVG_S_F6;
-	class LM_OPCAN_CH252D_H3;
-    class LM_OPCAN_Vest_ODST_REACH;
     class v_rebreatherB;
 	class MRH_BluForTransponder;
-    class VES_BDU_Urban_Slim;
+	class OPTRE_UNSC_CH252D_Helmet;
+	class OPTRE_UNSC_CH252_Helmet2_MAR;
+	class OPTRE_UNSC_M52D_Armor;
+	class OPTRE_UNSC_M52A_Armor;
+	class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class InventoryFirstAidKitItem_Base_F;
+	class MedikitItem;
+    class ace_medical_treatment;
+    class ACE_Morphine;
+	
+	class LM_OPCAN_CH252D_H3;
+    class LM_OPCAN_Vest_ODST_REACH;
     class LM_OPCAN_Vest_ODST_Green;
     class LM_OPCAN_CH252D_H3_dp;
     class LM_OPCAN_CH252D_H3_broken;
@@ -33,12 +42,6 @@ class CfgWeapons
     class LM_OPCAN_CH252D_H3_Green_broken;
     class LM_OPCAN_CH252D_H3_Red_dp;
     class LM_OPCAN_CH252D_H3_Red_broken;
-    class OPTRE_UNSC_VX16_Helmet_Mask_blk_med;
-    class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_dp;
-    class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken;
-    class VES_BDU_MulticamBlack;
-    class HitpointsProtectionInfo;
-    class MEU_Soldier_Base;
     class VES_CH252_DES_Heavy;
     class VES_CH252_CEA_Heavy;
     class VES_CH252_MAR_Heavy;
@@ -105,6 +108,490 @@ class CfgWeapons
 			mass = 0.1;
 		};
 	};
+	
+	// Armor Base Values
+		
+	class 1stMEU_Base_Praetorian_Helmet: OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1st MEU] Praetorian Helmet";
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};CBRN_protection = 1;
+		class ItemInfo: HeadgearItem
+		{
+			mass = 30;
+			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet";
+			picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
+			hiddenSelections[] = {"camo","camo2"};
+			hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+			hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 50;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 50;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 50;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		allowedFacewear[] = {};
+	};
+
+	class 1MEU_BASE_Praetorian_Armor: OPTRE_UNSC_M52D_Armor 
+	{	
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1MEU] M52D Body Armor (BASE)";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper"
+			"CustomKit_Scorch",
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		
+		class ItemInfo: VestItem 
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass = "Supply200";
+			mass = 20;
+			modelSides[] = {6};
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Base",
+				"A_ChestArmor",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
+				"A_TacPad",
+				"A_ThighArmorLeft",
+				"A_ThighArmorRight",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper"
+				"CustomKit_Scorch",
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+				"optre_unsc_units\army\data\armor_odst_co.paa",
+				"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+				"optre_unsc_units\army\data\ghillie_desert_co.paa",
+				"LM_OPCAN3.0\BLU\UNSC\V\ODST_HR.paa"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 60;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 50;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 60;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 50;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 50;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+					armor = 50;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 50;
+					passThrough = 0.1;
+				};
+			};
+		};
+	}; 
+	
+	class 1MEU_Base_Centurion_Helmet: OPTRE_UNSC_CH252_Helmet2_MAR
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1st MEU] Centurion Helmet Base";
+		hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 30;
+			uniformModel = "OPTRE_UNSC_Units\Army\helmet";
+			picture = "\OPTRE_UNSC_Units\Army\icons\army_helmet_DES";
+			hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
+			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 40;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 40;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 40;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+		allowedFacewear[] = {"",0.05,"VES_HUD_Balaclava_Black",2,"VES_HUD_Balaclava_Beast",0.025,"VES_HUD_Balaclava_Punisher",0.025,"VES_HUD_Balaclava_Joker",0.025,"OPTRE_EyePiece",0.25,"OPTRE_HUD_Glasses",0.5,"OPTRE_HUD_w_Glasses",0.5,"murshuncigs_cig_0",0.1,"murshuncigs_cig_1",0.1,"murshuncigs_cig_2",0.1,"murshuncigs_cig_3",0.1,"murshuncigs_cig_4",0.1,"immersion_cigs_cigar0",0.1,"immersion_cigs_cigar1",0.1,"immersion_cigs_cigar2",0.1,"immersion_cigs_cigar3",0.1,"immersion_cigs_cigar4",0.1};
+	};
+	
+	class 1MEU_BASE_Centurion_Armor: OPTRE_UNSC_M52A_Armor 
+	{	
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1MEU] M52A Body Armor (BASE)";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Base",
+			"A_ChestArmor",
+			"A_Ghillie",
+			"A_KneesLeft",
+			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"A_ThighArmorLeft",
+			"A_ThighArmorRight",
+			"AS_BaseLeft",
+			"AS_BaseRight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"AP_Smoke",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper"
+			"CustomKit_Scorch",
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"V_FZ_Armor\Data\Vests\Materials\V_M52_V.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat",
+			"",
+			""
+		};
+		class ItemInfo: VestItem 
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass = "Supply250";
+			mass = 20;
+			modelSides[] = {6};
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Base",
+				"A_ChestArmor",
+				"A_Ghillie",
+				"A_KneesLeft",
+				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
+				"A_TacPad",
+				"A_ThighArmorLeft",
+				"A_ThighArmorRight",
+				"AS_BaseLeft",
+				"AS_BaseRight",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper"
+				"CustomKit_Scorch",
+			};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 40;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 40;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 40;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+					armor = 40;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 45;
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	
 
 // Pilot stuff
     class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
