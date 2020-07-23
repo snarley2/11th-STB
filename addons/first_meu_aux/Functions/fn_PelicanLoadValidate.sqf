@@ -109,6 +109,19 @@ switch true do {
 		_veh attachTo [_pelican,[0.0181665,-3.41999,0.530018]];
 		_loaded = true;
     };
+	case (_veh isKindOf "LM_OPCAN_MGS_AR_DES" 
+	or _veh isKindOf "LM_OPCAN_MGS_AR_MIX" 
+	or _veh isKindOf "LM_OPCAN_MGS_AR_WDL" 
+	or _veh isKindOf "LM_OPCAN_MGS_MC_WDL" 
+	or _veh isKindOf "B_AFV_Wheeled_01_cannon_F" 
+	or _veh isKindOf "B_AFV_Wheeled_01_up_cannon_F" 
+	or _veh isKindOf "B_T_AFV_Wheeled_01_cannon_F" 
+	or _veh isKindOf "B_T_AFV_Wheeled_01_up_cannon_F"):
+	{
+		_veh attachTo [_pelican,[0,-6,-0.20]]; 
+		_veh setDir 180;
+		_loaded = true;  
+	};
 };
 	
 if (_loaded) then 
