@@ -460,7 +460,7 @@ class CfgWeapons
 			"",
 			""
 		};
-		class ItemInfo: ItemInfo 
+		class ItemInfo: VestItem 
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply250";
@@ -986,7 +986,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1040,7 +1040,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1094,7 +1094,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1148,7 +1148,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1202,7 +1202,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1256,7 +1256,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1310,7 +1310,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1363,7 +1363,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1416,7 +1416,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1469,7 +1469,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1522,7 +1522,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1575,7 +1575,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1630,7 +1630,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1684,7 +1684,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1738,7 +1738,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1792,7 +1792,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1846,7 +1846,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1900,7 +1900,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -1954,7 +1954,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2007,7 +2007,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2060,7 +2060,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2113,7 +2113,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2166,7 +2166,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2219,7 +2219,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2274,7 +2274,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2327,7 +2327,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2380,7 +2380,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2433,7 +2433,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2486,7 +2486,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2539,7 +2539,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2592,7 +2592,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2644,7 +2644,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2696,7 +2696,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2748,7 +2748,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2800,7 +2800,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2852,7 +2852,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2906,7 +2906,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -2961,7 +2961,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3016,7 +3016,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3071,7 +3071,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3126,7 +3126,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3181,7 +3181,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3236,7 +3236,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3289,7 +3289,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3342,7 +3342,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3395,7 +3395,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3448,7 +3448,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3501,7 +3501,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3556,7 +3556,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3608,7 +3608,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3660,7 +3660,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3712,7 +3712,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3764,7 +3764,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3816,7 +3816,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3868,7 +3868,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3919,7 +3919,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -3970,7 +3970,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4021,7 +4021,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4072,7 +4072,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4123,7 +4123,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4176,7 +4176,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4230,7 +4230,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4284,7 +4284,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4338,7 +4338,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4392,7 +4392,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4446,7 +4446,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4500,7 +4500,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4553,7 +4553,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4606,7 +4606,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4659,7 +4659,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4712,7 +4712,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4765,7 +4765,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4820,7 +4820,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4872,7 +4872,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4924,7 +4924,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -4976,7 +4976,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5028,7 +5028,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5080,7 +5080,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5132,7 +5132,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5183,7 +5183,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5234,7 +5234,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5285,7 +5285,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5336,7 +5336,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5387,7 +5387,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5440,7 +5440,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5493,7 +5493,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5546,7 +5546,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5599,7 +5599,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5652,7 +5652,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5705,7 +5705,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5758,7 +5758,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5810,7 +5810,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Desert)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5862,7 +5862,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5914,7 +5914,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Snow)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -5966,7 +5966,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Urban)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
@@ -6018,7 +6018,7 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		class ItemInfo: VestItem
 		{
 			hiddenSelections[] = 
 			{
