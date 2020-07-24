@@ -58,6 +58,11 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
+        weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1st MEU] Praetorian Helmet";
@@ -302,6 +307,11 @@ class CfgWeapons
 		scopeCurator = 1;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
+        weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1st MEU] Centurion Helmet Base";
@@ -543,7 +553,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
+        weaponPoolAvailable = 1;
 		subItems[]=
 		{
 			"ItemcTabHCam"
@@ -583,7 +593,7 @@ class CfgWeapons
 		{
 			"ItemcTabHCam"
 		};
-		ace_hearing_protection = 1.0;
+		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
         picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
 		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
@@ -611,7 +621,6 @@ class CfgWeapons
 			hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
         };
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_Helm_DES : 1MEU_Base_Centurion_Helmet
@@ -640,13 +649,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
     class MEU_Mar_Helm_SNO : 1MEU_Base_Centurion_Helmet
@@ -661,7 +663,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
    
 	class MEU_Mar_Helm_URB : 1MEU_Base_Centurion_Helmet
@@ -676,7 +677,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_Helm_WDL : 1MEU_Base_Centurion_Helmet
@@ -691,7 +691,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
 // centurion light helmets
@@ -708,7 +707,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_Helm_DES_L : 1MEU_Base_Centurion_Helmet
@@ -723,7 +721,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_Helm_CEA_L : 1MEU_Base_Centurion_Helmet
@@ -738,7 +735,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_Helm_SNO_L : 1MEU_Base_Centurion_Helmet
@@ -753,7 +749,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
 	class MEU_Mar_Helm_URB_L : 1MEU_Base_Centurion_Helmet
@@ -768,7 +763,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_Helm_WDL_L : 1MEU_Base_Centurion_Helmet
@@ -783,7 +777,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
 // Centurion MOS Helmets
@@ -800,7 +793,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_MOS_Helm_DES : 1MEU_Base_Centurion_Helmet
@@ -815,7 +807,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_MOS_Helm_CEA : 1MEU_Base_Centurion_Helmet
@@ -830,7 +821,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_MOS_Helm_SNO : 1MEU_Base_Centurion_Helmet
@@ -845,7 +835,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
 	class MEU_Mar_MOS_Helm_URB : 1MEU_Base_Centurion_Helmet
@@ -860,7 +849,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_Mar_MOS_Helm_WDL : 1MEU_Base_Centurion_Helmet
@@ -875,7 +863,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
 // end Medical Helmets start RTO Helmets
@@ -892,7 +879,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_RTO_Helm_DES : 1MEU_Base_Centurion_Helmet
@@ -907,7 +893,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_RTO_Helm_CEA : 1MEU_Base_Centurion_Helmet
@@ -922,7 +907,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_RTO_Helm_SNO : 1MEU_Base_Centurion_Helmet
@@ -937,7 +921,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
     
 	class MEU_RTO_Helm_URB : 1MEU_Base_Centurion_Helmet
@@ -952,7 +935,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
     class MEU_RTO_Helm_WDL : 1MEU_Base_Centurion_Helmet
@@ -967,7 +949,6 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
     };
 	
 // end centurion headgear start vest
@@ -9976,14 +9957,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Kestrel";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU Kes
 		displayName = "[1stMEU] Praetorian Ride Along Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -9995,14 +9969,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Kestrel";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU Kes
 		displayName = "[1stMEU] Praetorian Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10014,14 +9981,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10033,14 +9993,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10052,14 +10005,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Baseplate)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10071,14 +10017,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10103,14 +10042,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10122,14 +10054,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10141,14 +10066,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10173,14 +10091,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10192,14 +10103,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10211,14 +10115,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10243,14 +10140,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10262,14 +10152,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10281,14 +10164,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
-		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
+		author = "1stMEU 
 		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
