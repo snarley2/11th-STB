@@ -21,15 +21,30 @@ class CfgWeapons
 	class OPTRE_UNSC_CH252_Helmet2_MAR;
 	class OPTRE_UNSC_M52D_Armor;
 	class OPTRE_UNSC_M52A_Armor;
+	class UniformItem;
 	class ACE_ItemCore;
 	class CBA_MiscItem_ItemInfo;
 	class InventoryFirstAidKitItem_Base_F;
 	class MedikitItem;
     class ace_medical_treatment;
     class ACE_Morphine;
+	class U_B_CombatUniform_mcam;
     class OPTRE_UNSC_VX16_Helmet_MaskS;
     class OPTRE_UNSC_VX16_Helmet_MaskS_dp;
     class OPTRE_UNSC_VX16_Helmet_MaskS_broken;
+	class LM_OPCAN_CH252D_H3_dp;
+	class LM_OPCAN_CH252D_H3_Green_dp;
+	class LM_OPCAN_CH252D_H3_Red_dp;
+	class LM_OPCAN_CH252D_H3_Yellow_dp;
+	class LM_OPCAN_CH252D_H3_Blue_dp;
+	class LM_OPCAN_CH252D_H3_broken;
+	class LM_OPCAN_CH252D_H3_Green_broken;
+	class LM_OPCAN_CH252D_H3_Red_broken;
+	class LM_OPCAN_CH252D_H3_Yellow_broken;
+	class LM_OPCAN_CH252D_H3_Blue_broken;
+	class OPTRE_UNSC_VX16_Helmet_Mask_blk_med;
+	class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_dp;
+	class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken;
 	
 // Medical Items Start
 	
@@ -41,7 +56,7 @@ class CfgWeapons
 		picture = "\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
 		model = "\z\ace\addons\medical_treatment\data\morphine.p3d";
 		descriptionShort = "Drink some water and Rest";
-		descriptionUse = "use instead of morphine";
+		descriptionUse = "Use instead of morphine";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 0.1;
@@ -59,10 +74,6 @@ class CfgWeapons
 		scopeArsenal = 1;
 		scopeCurator = 1;
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1st MEU] Praetorian Helmet";
@@ -168,9 +179,10 @@ class CfgWeapons
 			"APO_BR",
 			"APO_Knife",
 			"APO_SMG",
-			"APO_Sniper"
-			"CustomKit_Scorch",
+			"APO_Sniper",
+			"CustomKit_Scorch"
 		};
+		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -240,8 +252,8 @@ class CfgWeapons
 				"APO_BR",
 				"APO_Knife",
 				"APO_SMG",
-				"APO_Sniper"
-				"CustomKit_Scorch",
+				"APO_Sniper",
+				"CustomKit_Scorch"
 			};
 			hiddenSelectionsTextures[] = 
 			{
@@ -308,10 +320,6 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1st MEU] Centurion Helmet Base";
@@ -348,6 +356,10 @@ class CfgWeapons
 			};
 		};
 		allowedFacewear[] = {"",0.05,"VES_HUD_Balaclava_Black",2,"VES_HUD_Balaclava_Beast",0.025,"VES_HUD_Balaclava_Punisher",0.025,"VES_HUD_Balaclava_Joker",0.025,"OPTRE_EyePiece",0.25,"OPTRE_HUD_Glasses",0.5,"OPTRE_HUD_w_Glasses",0.5,"murshuncigs_cig_0",0.1,"murshuncigs_cig_1",0.1,"murshuncigs_cig_2",0.1,"murshuncigs_cig_3",0.1,"murshuncigs_cig_4",0.1,"immersion_cigs_cigar0",0.1,"immersion_cigs_cigar1",0.1,"immersion_cigs_cigar2",0.1,"immersion_cigs_cigar3",0.1,"immersion_cigs_cigar4",0.1};
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
 	};
 	
 	class 1MEU_BASE_Centurion_Armor: OPTRE_UNSC_M52A_Armor 
@@ -413,9 +425,10 @@ class CfgWeapons
 			"APO_BR",
 			"APO_Knife",
 			"APO_SMG",
-			"APO_Sniper"
-			"CustomKit_Scorch",
+			"APO_Sniper",
+			"CustomKit_Scorch"
 		};
+		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
@@ -492,8 +505,8 @@ class CfgWeapons
 				"APO_BR",
 				"APO_Knife",
 				"APO_SMG",
-				"APO_Sniper"
-				"CustomKit_Scorch",
+				"APO_Sniper",
+				"CustomKit_Scorch"
 			};
 			class HitpointsProtectionInfo
 			{
@@ -610,15 +623,9 @@ class CfgWeapons
         scopeArsenal = 2;
 		author = "1st MEU Mark";
 		displayName = "[1st MEU] Centurion Heavy Helmet";
-        hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
-		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
-		class ItemInfo: HeadgearItem
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+		class ItemInfo: ItemInfo
 		{
-			mass = 30;
-			uniformModel = "OPTRE_UNSC_Units\Army\helmet";
-			picture = "\OPTRE_UNSC_Units\Army\icons\army_helmet_DES";
-			hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
         };
     };
@@ -671,7 +678,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Heavy Marine Helmet (Urban)";
+		displayName = "[1st MEU] Centurion Heavy Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -757,7 +764,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Light Marine Helmet (Urban)";
+		displayName = "[1st MEU] Centurion Light Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -843,7 +850,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine Medical Helmet (Urban)";
+		displayName = "[1st MEU] Centurion Medical Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -929,7 +936,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Marine RTO Helmet (Urban)";
+		displayName = "[1st MEU] Centurion RTO Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -955,10 +962,15 @@ class CfgWeapons
 
 //Centurion Armor
 
-    // Rifleman
+// Rifleman
 	
     class MEU_CENT_Rifleman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman";
 		class ItemInfo: ItemInfo
 		{
@@ -1010,6 +1022,11 @@ class CfgWeapons
 	
     class MEU_CENT_Rifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -1061,6 +1078,11 @@ class CfgWeapons
 	
     class MEU_CENT_Rifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -1112,6 +1134,11 @@ class CfgWeapons
 	
     class MEU_CENT_Rifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -1163,6 +1190,11 @@ class CfgWeapons
 	
 	class MEU_CENT_Rifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -1214,6 +1246,11 @@ class CfgWeapons
 	
     class MEU_CENT_Rifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -1265,6 +1302,11 @@ class CfgWeapons
 	
 	 class MEU_CENT_NCO_Rifleman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -1315,6 +1357,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Rifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -1365,6 +1412,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Rifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -1415,6 +1467,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Rifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -1465,6 +1522,11 @@ class CfgWeapons
 	
 	class MEU_CENT_NCO_Rifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -1515,6 +1577,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Rifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Rifleman NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -1567,6 +1634,11 @@ class CfgWeapons
 	
     class MEU_CENT_Grenadier: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier";
 		class ItemInfo: ItemInfo
 		{
@@ -1618,6 +1690,11 @@ class CfgWeapons
 	
     class MEU_CENT_Grenadier_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -1669,6 +1746,11 @@ class CfgWeapons
 	
     class MEU_CENT_Grenadier_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -1720,6 +1802,11 @@ class CfgWeapons
 	
     class MEU_CENT_Grenadier_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -1771,6 +1858,11 @@ class CfgWeapons
 	
     class MEU_CENT_Grenadier_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -1822,6 +1914,11 @@ class CfgWeapons
 	
     class MEU_CENT_Grenadier_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -1873,6 +1970,11 @@ class CfgWeapons
 	
 	class MEU_CENT_NCO_Grenadier: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -1923,6 +2025,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Grenadier_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -1973,6 +2080,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Grenadier_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -2023,6 +2135,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Grenadier_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -2073,6 +2190,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Grenadier_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -2123,6 +2245,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Grenadier_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Grenadier NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -2175,6 +2302,11 @@ class CfgWeapons
 	
     class MEU_CENT_Autorifleman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman";
 		class ItemInfo: ItemInfo
 		{
@@ -2225,6 +2357,11 @@ class CfgWeapons
 	
     class MEU_CENT_Autorifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -2275,6 +2412,11 @@ class CfgWeapons
 	
     class MEU_CENT_Autorifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -2325,6 +2467,11 @@ class CfgWeapons
 	
     class MEU_CENT_Autorifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -2375,6 +2522,11 @@ class CfgWeapons
 	
 	class MEU_CENT_Autorifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -2425,6 +2577,11 @@ class CfgWeapons
 	
     class MEU_CENT_Autorifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -2475,6 +2632,11 @@ class CfgWeapons
 	
 	 class MEU_CENT_NCO_Autorifleman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -2524,6 +2686,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Autorifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -2573,6 +2740,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Autorifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -2622,6 +2794,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Autorifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -2671,6 +2848,11 @@ class CfgWeapons
 	
 	class MEU_CENT_NCO_Autorifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -2720,6 +2902,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Autorifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -2771,6 +2958,11 @@ class CfgWeapons
 	
 	class MEU_CENT_Marksman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman";
 		class ItemInfo: ItemInfo
 		{
@@ -2823,6 +3015,11 @@ class CfgWeapons
 	
     class MEU_CENT_Marksman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -2875,6 +3072,11 @@ class CfgWeapons
 	
     class MEU_CENT_Marksman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -2927,6 +3129,11 @@ class CfgWeapons
 	
     class MEU_CENT_Marksman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -2979,6 +3186,11 @@ class CfgWeapons
 	
 	class MEU_CENT_Marksman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -3031,6 +3243,11 @@ class CfgWeapons
 	
     class MEU_CENT_Marksman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -3083,6 +3300,11 @@ class CfgWeapons
 	
 	 class MEU_CENT_NCO_Marksman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -3133,6 +3355,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Marksman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -3183,6 +3410,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Marksman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -3233,6 +3465,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Marksman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -3283,6 +3520,11 @@ class CfgWeapons
 	
 	class MEU_CENT_NCO_Marksman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -3333,6 +3575,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Marksman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Marksman NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -3385,6 +3632,11 @@ class CfgWeapons
 	
     class MEU_CENT_Breacher: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher";
 		class ItemInfo: ItemInfo
 		{
@@ -3434,6 +3686,11 @@ class CfgWeapons
 	
     class MEU_CENT_Breacher_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -3483,6 +3740,11 @@ class CfgWeapons
 	
     class MEU_CENT_Breacher_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -3532,6 +3794,11 @@ class CfgWeapons
 	
     class MEU_CENT_Breacher_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -3581,6 +3848,11 @@ class CfgWeapons
 	
 	class MEU_CENT_Breacher_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -3630,6 +3902,11 @@ class CfgWeapons
 	
     class MEU_CENT_Breacher_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -3679,6 +3956,11 @@ class CfgWeapons
 	
 	 class MEU_CENT_NCO_Breacher: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -3727,6 +4009,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Breacher_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -3775,6 +4062,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Breacher_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -3823,6 +4115,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Breacher_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -3871,6 +4168,11 @@ class CfgWeapons
 	
 	class MEU_CENT_NCO_Breacher_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -3919,6 +4221,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Breacher_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Breacher NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -3969,6 +4276,11 @@ class CfgWeapons
 	
 	class MEU_CENT_Sniper: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper";
 		class ItemInfo: ItemInfo
 		{
@@ -4020,6 +4332,11 @@ class CfgWeapons
 	
     class MEU_CENT_Sniper_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -4071,6 +4388,11 @@ class CfgWeapons
 	
     class MEU_CENT_Sniper_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -4122,6 +4444,11 @@ class CfgWeapons
 	
     class MEU_CENT_Sniper_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -4173,6 +4500,11 @@ class CfgWeapons
 	
 	class MEU_CENT_Sniper_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -4224,6 +4556,11 @@ class CfgWeapons
 	
     class MEU_CENT_Sniper_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -4275,6 +4612,11 @@ class CfgWeapons
 	
 	 class MEU_CENT_NCO_Sniper: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -4325,6 +4667,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Sniper_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -4375,6 +4722,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Sniper_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -4425,6 +4777,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Sniper_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -4475,6 +4832,11 @@ class CfgWeapons
 	
 	class MEU_CENT_NCO_Sniper_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -4525,6 +4887,11 @@ class CfgWeapons
 	
     class MEU_CENT_NCO_Sniper_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Sniper NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -4575,8 +4942,13 @@ class CfgWeapons
 	
 	// Corpsman
 	
-    class MEU_CENT_Corpsman: VES_M52A_MAR_Corpsman_B
+    class MEU_CENT_Corpsman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman";
 		class ItemInfo: ItemInfo
 		{
@@ -4624,8 +4996,13 @@ class CfgWeapons
 		};
 	};
 		
-    class MEU_CENT_Corpsman_DES: VES_M52A_DES_Corpsman_B
+    class MEU_CENT_Corpsman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -4673,8 +5050,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_CEA: VES_M52A_CEA_Corpsman_B
+    class MEU_CENT_Corpsman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -4722,8 +5104,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_SNO: VES_M52A_SNO_Corpsman_B
+    class MEU_CENT_Corpsman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -4771,8 +5158,13 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Corpsman_URB: VES_M52A_URB_Corpsman_B
+	class MEU_CENT_Corpsman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -4820,8 +5212,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_WDL: VES_M52A_WDL_Corpsman_B
+    class MEU_CENT_Corpsman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -4869,8 +5266,13 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Corpsman: VES_M52A_MAR_Corpsman_B
+	 class MEU_CENT_NCO_Corpsman: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -4917,8 +5319,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_DES: VES_M52A_DES_Corpsman_B
+    class MEU_CENT_NCO_Corpsman_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -4965,8 +5372,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_CEA: VES_M52A_CEA_Corpsman_B
+    class MEU_CENT_NCO_Corpsman_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -5013,8 +5425,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_SNO: VES_M52A_SNO_Corpsman_B
+    class MEU_CENT_NCO_Corpsman_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -5061,8 +5478,13 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Corpsman_URB: VES_M52A_URB_Corpsman_B
+	class MEU_CENT_NCO_Corpsman_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -5109,8 +5531,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_WDL: VES_M52A_WDL_Corpsman_B
+    class MEU_CENT_NCO_Corpsman_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion Corpsman NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -5159,8 +5586,13 @@ class CfgWeapons
 	
 	// RTO
 	
-    class MEU_CENT_RTO: VES_M52A_MAR_Radio_B
+    class MEU_CENT_RTO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO";
 		class ItemInfo: ItemInfo
 		{
@@ -5209,8 +5641,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_DES: VES_M52A_DES_Radio_B
+    class MEU_CENT_RTO_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -5259,8 +5696,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_CEA: VES_M52A_CEA_Radio_B
+    class MEU_CENT_RTO_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -5309,8 +5751,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_SNO: VES_M52A_SNO_Radio_B
+    class MEU_CENT_RTO_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -5359,8 +5806,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_URB: VES_M52A_URB_Radio_B
+    class MEU_CENT_RTO_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -5409,8 +5861,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_WDL: VES_M52A_WDL_Radio_B
+    class MEU_CENT_RTO_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -5459,8 +5916,13 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_RTO: VES_M52A_MAR_Radio_B
+	class MEU_CENT_NCO_RTO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO";
 		class ItemInfo: ItemInfo
 		{
@@ -5508,8 +5970,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_DES: VES_M52A_DES_Radio_B
+    class MEU_CENT_NCO_RTO_DES: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Desert)";
 		class ItemInfo: ItemInfo
 		{
@@ -5557,8 +6024,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_CEA: VES_M52A_CEA_Radio_B
+    class MEU_CENT_NCO_RTO_CEA: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Evolved)";
 		class ItemInfo: ItemInfo
 		{
@@ -5606,8 +6078,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_SNO: VES_M52A_SNO_Radio_B
+    class MEU_CENT_NCO_RTO_SNO: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Snow)";
 		class ItemInfo: ItemInfo
 		{
@@ -5655,8 +6132,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_URB: VES_M52A_URB_Radio_B
+    class MEU_CENT_NCO_RTO_URB: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Urban)";
 		class ItemInfo: ItemInfo
 		{
@@ -5704,8 +6186,13 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_WDL: VES_M52A_WDL_Radio_B
+    class MEU_CENT_NCO_RTO_WDL: 1MEU_BASE_Centurion_Armor
 	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Centurion RTO NCO (Woodland)";
 		class ItemInfo: ItemInfo
 		{
@@ -5756,7 +6243,7 @@ class CfgWeapons
 // end centurion gear start praetorian gear
 // praetorian vests
 
-    class Prae37: LM_OPCAN_Vest_ODST_Red
+    class Prae37: 1MEU_BASE_Praetorian_Armor
 	{
 		author="1st MEU Mark";
 		displayName="[1st MEU] Praetorian 3-7 (Mark)";
@@ -5860,59 +6347,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"APO_Knife"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
     };
 	
-    class Prae36: LM_OPCAN_Vest_ODST_Red
+    class Prae36: 1MEU_BASE_Praetorian_Armor
 	{
 		author="1st MEU Oneill";
 		displayName="[1st MEU] Praetorian 3-6 (Oneill)";
@@ -6019,59 +6457,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"APO_Knife"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
     };
 	
-    class Prae3M : Prae37
+    class Prae3M : 1MEU_BASE_Praetorian_Armor
 	{
 		author = "1st MEU Mark";
 		displayName = "[1st MEU] Praetorian 3-M (FloodedMac)";
@@ -6171,14 +6560,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
         };
     };
 	
-    class Prae3R: LM_OPCAN_Vest_ODST_Red
+    class Prae3R: 1MEU_BASE_Praetorian_Armor
 	{
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Praetorian 3-R (Dimitri)";
@@ -6285,14 +6670,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
         };
     };
 	
-    class PraetorianRifleman: LM_OPCAN_Vest_ODST_REACH
+    class PraetorianRifleman: 1MEU_BASE_Praetorian_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
@@ -6405,59 +6786,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
 	};
 	
-	class PraetorianRiflemanBlue:PraetorianRifleman
+	class PraetorianRiflemanBlue:1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -6562,14 +6894,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianRiflemanYellow:PraetorianRifleman
+	class PraetorianRiflemanYellow:1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -6672,14 +7000,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianRiflemanRed:PraetorianRifleman
+	class PraetorianRiflemanRed:1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -6782,14 +7106,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 
-	class PraetorianMarksman: LM_OPCAN_Vest_ODST_REACH
+	class PraetorianMarksman: 1MEU_BASE_Praetorian_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
@@ -6898,59 +7218,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
 	};	
 	
-	class PraetorianMarksmanBlue:PraetorianMarksman
+	class PraetorianMarksmanBlue:1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -7053,14 +7324,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianMarksmanYellow:PraetorianMarksman
+	class PraetorianMarksmanYellow:1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -7161,14 +7428,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianMarksmanRed:PraetorianMarksman
+	class PraetorianMarksmanRed:1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -7269,14 +7532,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianSniper: LM_OPCAN_Vest_ODST_REACH
+	class PraetorianSniper: 1MEU_BASE_Praetorian_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
@@ -7385,59 +7644,10 @@ class CfgWeapons
 				"APO_SMG",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
 	};	
 	
-	class PraetorianSniperBlue:PraetorianSniper
+	class PraetorianSniperBlue: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -7540,14 +7750,10 @@ class CfgWeapons
 				"APO_BR",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianSniperYellow:PraetorianSniper
+	class PraetorianSniperYellow: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -7648,14 +7854,10 @@ class CfgWeapons
 				"APO_BR",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianSniperRed:PraetorianSniper
+	class PraetorianSniperRed: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -7756,14 +7958,10 @@ class CfgWeapons
 				"APO_AR",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianAutoRifleman: LM_OPCAN_Vest_ODST_REACH
+	class PraetorianAutoRifleman: 1MEU_BASE_Praetorian_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
@@ -7872,59 +8070,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
 	};
 	
-	class PraetorianAutoRiflemanBlue:PraetorianAutoRifleman
+	class PraetorianAutoRiflemanBlue: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -8025,14 +8174,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianAutoRiflemanYellow:PraetorianAutoRifleman
+	class PraetorianAutoRiflemanYellow: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -8131,14 +8276,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianAutoRiflemanRed:PraetorianAutoRifleman
+	class PraetorianAutoRiflemanRed: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -8237,14 +8378,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianGrenadier: LM_OPCAN_Vest_ODST_REACH
+	class PraetorianGrenadier: 1MEU_BASE_Praetorian_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
@@ -8355,59 +8492,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
 	};
 	
-	class PraetorianGrenadierBlue:PraetorianGrenadier
+	class PraetorianGrenadierBlue: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -8510,14 +8598,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianGrenadierYellow:PraetorianGrenadier
+	class PraetorianGrenadierYellow: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -8618,14 +8702,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianGrenadierRed:PraetorianGrenadier
+	class PraetorianGrenadierRed: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -8726,14 +8806,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianBreacher: LM_OPCAN_Vest_ODST_REACH
+	class PraetorianBreacher: 1MEU_BASE_Praetorian_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
@@ -8840,59 +8916,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
 	};
 	
-	class PraetorianBreacherBlue:PraetorianBreacher
+	class PraetorianBreacherBlue: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -8993,14 +9020,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianBreacherYellow:PraetorianBreacher
+	class PraetorianBreacherYellow: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -9099,14 +9122,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianBreacherRed:PraetorianBreacher
+	class PraetorianBreacherRed: 1MEU_BASE_Praetorian_Armor
 	{
         scope = 2;
         scopeCurator = 2;
@@ -9205,14 +9224,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-            containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
 		};
 	};
 	
-	class PraetorianPlatoonCorpsman: LM_OPCAN_Vest_ODST_Green
+	class PraetorianPlatoonCorpsman: 1MEU_BASE_Praetorian_Armor
 	{
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Praetorian Platoon Corpsman";
@@ -9319,59 +9334,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
     };
 	
-	class PraetorianCorpsman: LM_OPCAN_Vest_ODST_Green
+	class PraetorianCorpsman: 1MEU_BASE_Praetorian_Armor
 	{
 		author = "1st MEU Oneill";
 		displayName = "[1st MEU] Praetorian Corpsman";
@@ -9482,58 +9448,9 @@ class CfgWeapons
 				"APO_Knife",
 				"CustomKit_Scorch"
 			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
 		};
     };
-    class Hokage: LM_OPCAN_Vest_ODST_Red
+    class Hokage: 1MEU_BASE_Praetorian_Armor
 	{
 		author="1st MEU Oneill";
 		displayName="[1st MEU] Hokage";
@@ -9639,55 +9556,6 @@ class CfgWeapons
             "APO_BR",
             "APO_Sniper",
             "CustomKit_Scorch"
-			};
-			containerClass = "Supply200";
-			overlaySelectionsInfo[] = {"Ghillie_hide"};
-			vestType = "Rebreather";
-			mass = 20;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 60;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
 			};
 		};
     };
@@ -9952,303 +9820,281 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa"};
     };
-    class Praetor_Helmet_Ride: LM_OPCAN_CH252D_H3
+    class Praetor_Helmet_Ride: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Kes
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Ride Along Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Ride.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Black: LM_OPCAN_CH252D_H3
+    class Praetor_Helmet_Black: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Kes
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-     class Praetor_Helmet_Black_31: Praetor_Helmet_Black
+     class Praetor_Helmet_Black_31: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill"; 
 		displayName = "[1stMEU] Praetorian Helmet (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Black_32: Praetor_Helmet_Black
+    class Praetor_Helmet_Black_32: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill"; 
 		displayName = "[1stMEU] Praetorian Helmet (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Black_baseplate: Praetor_Helmet_Black_32
+    class Praetor_Helmet_Black_baseplate: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill"; 
 		displayName = "[1stMEU] Praetorian Helmet (Baseplate)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32_baseplate.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Black_33: Praetor_Helmet_Black
+    class Praetor_Helmet_Black_33: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill"; 
 		displayName = "[1stMEU] Praetorian Helmet (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Yellow:Praetor_Helmet_Black
+    class Praetor_Helmet_Yellow: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Yellow.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Yellow_31: Praetor_Helmet_Black
+    class Praetor_Helmet_Yellow_31: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Yellow_32: Praetor_Helmet_Black
+    class Praetor_Helmet_Yellow_32: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Yellow_33: Praetor_Helmet_Black
+    class Praetor_Helmet_Yellow_33: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-	class Praetor_Helmet_Blue:Praetor_Helmet_Black
+	class Praetor_Helmet_Blue: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Blue.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Blue_31: Praetor_Helmet_Black
+    class Praetor_Helmet_Blue_31: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill"; 
 		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Blue_32: Praetor_Helmet_Black
+    class Praetor_Helmet_Blue_32: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill"; 
 		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Blue_33: Praetor_Helmet_Black
+    class Praetor_Helmet_Blue_33: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill"; 
 		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-	class Praetor_Helmet_Green:Praetor_Helmet_Black
+	class Praetor_Helmet_Green: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (Green)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_green.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Green_31: Praetor_Helmet_Black
+    class Praetor_Helmet_Green_31: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_green_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Green_32: Praetor_Helmet_Black
+    class Praetor_Helmet_Green_32: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_green_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Green_33: Praetor_Helmet_Black
+    class Praetor_Helmet_Green_33: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU 
+		author = "1stMEU Oneill";
 		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_green_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-	class Praetor_Helmet_Red:Praetor_Helmet_Black
+	class Praetor_Helmet_Red: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (Red)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Red.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Com:Praetor_Helmet_Red
+    class Praetor_Helmet_Com: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (Oneill)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Oneill.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Com2:Praetor_Helmet_Com
+    class Praetor_Helmet_Com2: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (Mark)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Mark.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Com3:Praetor_Helmet_Com
+    class Praetor_Helmet_Com3: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (Dimitri)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Dimitri.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Mike:Praetor_Helmet_Green
+    class Praetor_Helmet_Mike: 1stMEU_Base_Praetorian_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Praetorian Helmet (FloodedMac)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Sound_Protec: Praetor_Helmet_Black
+    class Praetor_Sound_Protec: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
 		weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.50;
 		displayName = "[1stMEU] Praetorian Soundproof Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -10256,8 +10102,9 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
 	
-	//Praetorian Helmet End
-    // pilot helmet time
+// Praetorian Helmet End
+// pilot helmet Start
+	
     class MEU_UNSC_VX16_Helmet_Mask_blk_med : OPTRE_UNSC_VX16_Helmet_Mask_blk_med
     {
         scope = 2;
@@ -10274,17 +10121,15 @@ class CfgWeapons
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
     };
-    class MEU_UNSC_VX16_Helmet_Mask_blk_med_broken :OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken
+    class MEU_UNSC_VX16_Helmet_Mask_blk_med_broken : OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
     };
-    //pilot helmet end
-	//BDU Start
 	
-	class U_B_CombatUniform_mcam;
+// Pilot helmet end
+// BDU Start
 	
-
 	class Praetorian_BDU : U_B_CombatUniform_mcam
 	{
 		author = "1stMEU Oneill";
@@ -10393,8 +10238,8 @@ class CfgWeapons
         };
     };
 	
-	//BDU End
-	//Weapons Start
+// BDU End
+// Weapons Start
 	
 	class OPTRE_100Rnd_127x99_M247HMG;
 	class WeaponSlotsInfo;
@@ -10454,5 +10299,5 @@ class CfgWeapons
 			dispersion = 0.000065;
 		};
 	};
-    //weapon end
+// Weapon end
 };
