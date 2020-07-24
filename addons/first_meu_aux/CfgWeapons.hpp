@@ -1,9 +1,8 @@
 class CfgWeapons
 {
-//
-    
+
+// Imports
 	
-// holy import
     class LM_OPCAN_CGC;
     class ItemCore;
 	class HeadgearItem;
@@ -28,72 +27,12 @@ class CfgWeapons
 	class MedikitItem;
     class ace_medical_treatment;
     class ACE_Morphine;
-	
-	class LM_OPCAN_CH252D_H3;
-    class LM_OPCAN_Vest_ODST_REACH;
-    class LM_OPCAN_Vest_ODST_Green;
-    class LM_OPCAN_CH252D_H3_dp;
-    class LM_OPCAN_CH252D_H3_broken;
-    class LM_OPCAN_CH252D_H3_Yellow_dp;
-    class LM_OPCAN_CH252D_H3_Yellow_broken;
-    class LM_OPCAN_CH252D_H3_Blue_dp;
-    class LM_OPCAN_CH252D_H3_Blue_broken;
-    class LM_OPCAN_CH252D_H3_Green_dp;
-    class LM_OPCAN_CH252D_H3_Green_broken;
-    class LM_OPCAN_CH252D_H3_Red_dp;
-    class LM_OPCAN_CH252D_H3_Red_broken;
-    class VES_CH252_DES_Heavy;
-    class VES_CH252_CEA_Heavy;
-    class VES_CH252_MAR_Heavy;
-    class VES_CH252_SNO_Heavy;
-    class VES_CH252_URB_Heavy;
-    class VES_CH252_WDL_Heavy;
-    class VES_CH252_DES_Light;
-    class VES_CH252_CEA_Light;
-    class VES_CH252_MAR_Light;
-    class VES_CH252_SNO_Light;
-    class VES_CH252_URB_Light;
-    class VES_CH252_WDL_Light;
-    class VES_CH252_DES_Medical;
-    class VES_CH252_CEA_Medical;
-    class VES_CH252_MAR_Medical;
-    class VES_CH252_SNO_Medical;
-    class VES_CH252_URB_Medical;
-    class VES_CH252_WDL_Medical;
-    class VES_CH252_DES_Radio;
-    class VES_CH252_CEA_Radio;
-    class VES_CH252_MAR_Radio;
-    class VES_CH252_SNO_Radio;
-    class VES_CH252_URB_Radio;
-    class VES_CH252_WDL_Radio;
-    class VES_M52A_DES_Security_B;
-    class VES_M52A_CEA_Security_B;
-    class VES_M52A_MAR_Security_B;
-    class VES_M52A_SNO_Security_B;
-    class VES_M52A_URB_Security_B;
-    class VES_M52A_WDL_Security_B;
-    class VES_M52A_DES_Corpsman_B;
-    class VES_M52A_CEA_Corpsman_B;
-    class VES_M52A_MAR_Corpsman_B;
-    class VES_M52A_SNO_Corpsman_B;
-    class VES_M52A_URB_Corpsman_B;
-    class VES_M52A_WDL_Corpsman_B;
-    class VES_M52A_DES_Radio_B;
-    class VES_M52A_CEA_Radio_B;
-    class VES_M52A_MAR_Radio_B;
-    class VES_M52A_SNO_Radio_B;
-    class VES_M52A_WDL_Radio_B;
-	class VES_M52A_URB_Radio_B;
-	class ACE_ItemCore;
-	class CBA_MiscItem_ItemInfo;
-	class InventoryFirstAidKitItem_Base_F;
-	class MedikitItem;
-    class ace_medical_treatment;
-    class ACE_Morphine;
     class OPTRE_UNSC_VX16_Helmet_MaskS;
     class OPTRE_UNSC_VX16_Helmet_MaskS_dp;
     class OPTRE_UNSC_VX16_Helmet_MaskS_broken;
-
+	
+// Medical Items Start
+	
     class MEU_compat_Ibuprofen: ACE_Morphine
 	{
 		scope = 2;
@@ -109,7 +48,8 @@ class CfgWeapons
 		};
 	};
 	
-	// Armor Base Values
+// Medical Items End
+// Armor Base Values
 		
 	class 1stMEU_Base_Praetorian_Helmet: OPTRE_UNSC_CH252D_Helmet
 	{
@@ -351,6 +291,7 @@ class CfgWeapons
 					passThrough = 0.1;
 				};
 			};
+			vestType = "Rebreather";
 		};
 	}; 
 	
@@ -589,11 +530,13 @@ class CfgWeapons
 					passThrough = 0.1;
 				};
 			};
+			vestType = "Rebreather";
 		};
 	};
 	
 
 // Pilot stuff
+
     class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
     {
 		scope = 2;
@@ -623,6 +566,7 @@ class CfgWeapons
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa"};
     };
+	
 // Pilot stuff end
 // centurion gear start   
 // centurion headgear
@@ -649,7 +593,7 @@ class CfgWeapons
 	
 // centurion heavy helmets
 
-    class MEU_Mar_Helm_MAR : VES_CH252_MAR_Heavy
+    class MEU_Mar_Helm_MAR : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -668,15 +612,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
         };
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_DES : VES_CH252_DES_Heavy
+    class MEU_Mar_Helm_DES : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -688,16 +626,9 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
-        weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_CEA : VES_CH252_CEA_Heavy
+    class MEU_Mar_Helm_CEA : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -718,7 +649,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_SNO : VES_CH252_SNO_Heavy
+    class MEU_Mar_Helm_SNO : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -731,15 +662,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
    
-	class MEU_Mar_Helm_URB : VES_CH252_URB_Heavy
+	class MEU_Mar_Helm_URB : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -752,15 +677,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_WDL : VES_CH252_WDL_Heavy
+    class MEU_Mar_Helm_WDL : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -773,17 +692,11 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
 // centurion light helmets
 
-    class MEU_Mar_Helm_base_L : VES_CH252_MAR_Light
+    class MEU_Mar_Helm_base_L : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -796,15 +709,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_DES_L : VES_CH252_DES_Light
+    class MEU_Mar_Helm_DES_L : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -817,15 +724,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_CEA_L : VES_CH252_CEA_Light
+    class MEU_Mar_Helm_CEA_L : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -838,15 +739,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_SNO_L : VES_CH252_SNO_Light
+    class MEU_Mar_Helm_SNO_L : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -859,15 +754,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-	class MEU_Mar_Helm_URB_L : VES_CH252_URB_Light
+	class MEU_Mar_Helm_URB_L : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -880,15 +769,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_Helm_WDL_L : VES_CH252_WDL_Light
+    class MEU_Mar_Helm_WDL_L : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -901,17 +784,11 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
 // Centurion MOS Helmets
 
-    class MEU_Mar_MOS_Helm_BASE : VES_CH252_MAR_Medical
+    class MEU_Mar_MOS_Helm_BASE : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -924,15 +801,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_MOS_Helm_DES : VES_CH252_DES_Medical
+    class MEU_Mar_MOS_Helm_DES : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -945,15 +816,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_MOS_Helm_CEA : VES_CH252_CEA_Medical
+    class MEU_Mar_MOS_Helm_CEA : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -966,15 +831,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_MOS_Helm_SNO : VES_CH252_SNO_Medical
+    class MEU_Mar_MOS_Helm_SNO : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -987,15 +846,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-	class MEU_Mar_MOS_Helm_URB : VES_CH252_URB_Medical
+	class MEU_Mar_MOS_Helm_URB : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1008,15 +861,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_Mar_MOS_Helm_WDL : VES_CH252_WDL_Medical
+    class MEU_Mar_MOS_Helm_WDL : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1029,17 +876,11 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
 // end Medical Helmets start RTO Helmets
 
-    class MEU_RTO_Helm_base : VES_CH252_MAR_Radio
+    class MEU_RTO_Helm_base : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1052,15 +893,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_RTO_Helm_DES : VES_CH252_DES_Radio
+    class MEU_RTO_Helm_DES : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1073,15 +908,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_RTO_Helm_CEA : VES_CH252_CEA_Radio
+    class MEU_RTO_Helm_CEA : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1094,15 +923,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_RTO_Helm_SNO : VES_CH252_SNO_Radio
+    class MEU_RTO_Helm_SNO : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1115,15 +938,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
     
-	class MEU_RTO_Helm_URB : VES_CH252_URB_Radio
+	class MEU_RTO_Helm_URB : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1136,15 +953,9 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
-    class MEU_RTO_Helm_WDL : VES_CH252_WDL_Radio
+    class MEU_RTO_Helm_WDL : 1MEU_Base_Centurion_Helmet
     {
         scope = 2;
         scopeCurator = 2;
@@ -1157,12 +968,6 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
         weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
     };
 	
 // end centurion headgear start vest
@@ -1171,7 +976,7 @@ class CfgWeapons
 
     // Rifleman
 	
-    class MEU_CENT_Rifleman: VES_M52A_MAR_Security_B
+    class MEU_CENT_Rifleman: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman";
 		class ItemInfo: ItemInfo
@@ -1222,7 +1027,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_Rifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman (Desert)";
 		class ItemInfo: ItemInfo
@@ -1273,7 +1078,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_Rifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman (Evolved)";
 		class ItemInfo: ItemInfo
@@ -1324,7 +1129,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_Rifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman (Snow)";
 		class ItemInfo: ItemInfo
@@ -1375,7 +1180,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Rifleman_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_Rifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman (Urban)";
 		class ItemInfo: ItemInfo
@@ -1426,7 +1231,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_Rifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman (Woodland)";
 		class ItemInfo: ItemInfo
@@ -1477,7 +1282,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Rifleman: VES_M52A_MAR_Security_B
+	 class MEU_CENT_NCO_Rifleman: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman NCO";
 		class ItemInfo: ItemInfo
@@ -1527,7 +1332,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_NCO_Rifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman NCO (Desert)";
 		class ItemInfo: ItemInfo
@@ -1577,7 +1382,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_NCO_Rifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman NCO (Evolved)";
 		class ItemInfo: ItemInfo
@@ -1627,7 +1432,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_NCO_Rifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman NCO (Snow)";
 		class ItemInfo: ItemInfo
@@ -1677,7 +1482,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Rifleman_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_NCO_Rifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman NCO (Urban)";
 		class ItemInfo: ItemInfo
@@ -1727,7 +1532,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_NCO_Rifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Rifleman NCO (Woodland)";
 		class ItemInfo: ItemInfo
@@ -1779,7 +1584,7 @@ class CfgWeapons
 	
     // Grenadier
 	
-    class MEU_CENT_Grenadier: VES_M52A_MAR_Security_B
+    class MEU_CENT_Grenadier: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier";
 		class ItemInfo: ItemInfo
@@ -1830,7 +1635,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_Grenadier_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier (Desert)";
 		class ItemInfo: ItemInfo
@@ -1881,7 +1686,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_Grenadier_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier (Evolved)";
 		class ItemInfo: ItemInfo
@@ -1932,7 +1737,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_Grenadier_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier (Snow)";
 		class ItemInfo: ItemInfo
@@ -1983,7 +1788,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_URB: VES_M52A_URB_Security_B
+    class MEU_CENT_Grenadier_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier (Urban)";
 		class ItemInfo: ItemInfo
@@ -2034,7 +1839,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_Grenadier_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier (Woodland)";
 		class ItemInfo: ItemInfo
@@ -2085,7 +1890,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Grenadier: VES_M52A_MAR_Security_B
+	class MEU_CENT_NCO_Grenadier: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier NCO";
 		class ItemInfo: ItemInfo
@@ -2135,7 +1940,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_NCO_Grenadier_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier NCO (Desert)";
 		class ItemInfo: ItemInfo
@@ -2185,7 +1990,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_NCO_Grenadier_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier NCO (Evolved)";
 		class ItemInfo: ItemInfo
@@ -2235,7 +2040,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_NCO_Grenadier_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier NCO (Snow)";
 		class ItemInfo: ItemInfo
@@ -2285,7 +2090,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_URB: VES_M52A_URB_Security_B
+    class MEU_CENT_NCO_Grenadier_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier NCO (Urban)";
 		class ItemInfo: ItemInfo
@@ -2335,7 +2140,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_NCO_Grenadier_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Grenadier NCO (Woodland)";
 		class ItemInfo: ItemInfo
@@ -2387,7 +2192,7 @@ class CfgWeapons
 	
 	// Autorifleman
 	
-    class MEU_CENT_Autorifleman: VES_M52A_MAR_Security_B
+    class MEU_CENT_Autorifleman: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman";
 		class ItemInfo: ItemInfo
@@ -2437,7 +2242,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Autorifleman_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_Autorifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman (Desert)";
 		class ItemInfo: ItemInfo
@@ -2487,7 +2292,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Autorifleman_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_Autorifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman (Evolved)";
 		class ItemInfo: ItemInfo
@@ -2537,7 +2342,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Autorifleman_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_Autorifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman (Snow)";
 		class ItemInfo: ItemInfo
@@ -2587,7 +2392,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Autorifleman_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_Autorifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman (Urban)";
 		class ItemInfo: ItemInfo
@@ -2637,7 +2442,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Autorifleman_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_Autorifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman (Woodland)";
 		class ItemInfo: ItemInfo
@@ -2687,7 +2492,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Autorifleman: VES_M52A_MAR_Security_B
+	 class MEU_CENT_NCO_Autorifleman: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman NCO";
 		class ItemInfo: ItemInfo
@@ -2736,7 +2541,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_NCO_Autorifleman_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Desert)";
 		class ItemInfo: ItemInfo
@@ -2785,7 +2590,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_NCO_Autorifleman_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Evolved)";
 		class ItemInfo: ItemInfo
@@ -2834,7 +2639,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_NCO_Autorifleman_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Snow)";
 		class ItemInfo: ItemInfo
@@ -2883,7 +2688,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Autorifleman_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_NCO_Autorifleman_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Urban)";
 		class ItemInfo: ItemInfo
@@ -2932,7 +2737,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_NCO_Autorifleman_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Autorifleman NCO (Woodland)";
 		class ItemInfo: ItemInfo
@@ -2983,7 +2788,7 @@ class CfgWeapons
 	
 	//Marksman
 	
-	class MEU_CENT_Marksman: VES_M52A_MAR_Security_B
+	class MEU_CENT_Marksman: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman";
 		class ItemInfo: ItemInfo
@@ -3035,7 +2840,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_Marksman_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman (Desert)";
 		class ItemInfo: ItemInfo
@@ -3087,7 +2892,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_Marksman_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman (Evolved)";
 		class ItemInfo: ItemInfo
@@ -3139,7 +2944,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_Marksman_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman (Snow)";
 		class ItemInfo: ItemInfo
@@ -3191,7 +2996,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Marksman_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_Marksman_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman (Urban)";
 		class ItemInfo: ItemInfo
@@ -3243,7 +3048,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_Marksman_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman (Woodland)";
 		class ItemInfo: ItemInfo
@@ -3295,7 +3100,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Marksman: VES_M52A_MAR_Security_B
+	 class MEU_CENT_NCO_Marksman: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman NCO";
 		class ItemInfo: ItemInfo
@@ -3345,7 +3150,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_NCO_Marksman_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman NCO (Desert)";
 		class ItemInfo: ItemInfo
@@ -3395,7 +3200,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_NCO_Marksman_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman NCO (Evolved)";
 		class ItemInfo: ItemInfo
@@ -3445,7 +3250,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_NCO_Marksman_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman NCO (Snow)";
 		class ItemInfo: ItemInfo
@@ -3495,7 +3300,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Marksman_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_NCO_Marksman_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman NCO (Urban)";
 		class ItemInfo: ItemInfo
@@ -3545,7 +3350,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_NCO_Marksman_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Marksman NCO (Woodland)";
 		class ItemInfo: ItemInfo
@@ -3597,7 +3402,7 @@ class CfgWeapons
 	
     // Breacher
 	
-    class MEU_CENT_Breacher: VES_M52A_MAR_Security_B
+    class MEU_CENT_Breacher: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher";
 		class ItemInfo: ItemInfo
@@ -3646,7 +3451,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_Breacher_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher (Desert)";
 		class ItemInfo: ItemInfo
@@ -3695,7 +3500,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_Breacher_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher (Evolved)";
 		class ItemInfo: ItemInfo
@@ -3744,7 +3549,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_Breacher_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher (Snow)";
 		class ItemInfo: ItemInfo
@@ -3793,7 +3598,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Breacher_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_Breacher_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher (Urban)";
 		class ItemInfo: ItemInfo
@@ -3842,7 +3647,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_Breacher_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher (Woodland)";
 		class ItemInfo: ItemInfo
@@ -3891,7 +3696,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Breacher: VES_M52A_MAR_Security_B
+	 class MEU_CENT_NCO_Breacher: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher NCO";
 		class ItemInfo: ItemInfo
@@ -3939,7 +3744,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_NCO_Breacher_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher NCO (Desert)";
 		class ItemInfo: ItemInfo
@@ -3987,7 +3792,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_NCO_Breacher_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher NCO (Evolved)";
 		class ItemInfo: ItemInfo
@@ -4035,7 +3840,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_NCO_Breacher_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher NCO (Snow)";
 		class ItemInfo: ItemInfo
@@ -4083,7 +3888,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Breacher_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_NCO_Breacher_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher NCO (Urban)";
 		class ItemInfo: ItemInfo
@@ -4131,7 +3936,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_NCO_Breacher_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Breacher NCO (Woodland)";
 		class ItemInfo: ItemInfo
@@ -4181,7 +3986,7 @@ class CfgWeapons
 	
 	//Sniper
 	
-	class MEU_CENT_Sniper: VES_M52A_MAR_Security_B
+	class MEU_CENT_Sniper: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper";
 		class ItemInfo: ItemInfo
@@ -4232,7 +4037,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_Sniper_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper (Desert)";
 		class ItemInfo: ItemInfo
@@ -4283,7 +4088,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_Sniper_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper (Evolved)";
 		class ItemInfo: ItemInfo
@@ -4334,7 +4139,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_Sniper_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper (Snow)";
 		class ItemInfo: ItemInfo
@@ -4385,7 +4190,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Sniper_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_Sniper_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper (Urban)";
 		class ItemInfo: ItemInfo
@@ -4436,7 +4241,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_Sniper_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper (Woodland)";
 		class ItemInfo: ItemInfo
@@ -4487,7 +4292,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Sniper: VES_M52A_MAR_Security_B
+	 class MEU_CENT_NCO_Sniper: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper NCO";
 		class ItemInfo: ItemInfo
@@ -4537,7 +4342,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_DES: VES_M52A_DES_Security_B
+    class MEU_CENT_NCO_Sniper_DES: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper NCO (Desert)";
 		class ItemInfo: ItemInfo
@@ -4587,7 +4392,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_CEA: VES_M52A_CEA_Security_B
+    class MEU_CENT_NCO_Sniper_CEA: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper NCO (Evolved)";
 		class ItemInfo: ItemInfo
@@ -4637,7 +4442,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_SNO: VES_M52A_SNO_Security_B
+    class MEU_CENT_NCO_Sniper_SNO: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper NCO (Snow)";
 		class ItemInfo: ItemInfo
@@ -4687,7 +4492,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Sniper_URB: VES_M52A_URB_Security_B
+	class MEU_CENT_NCO_Sniper_URB: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper NCO (Urban)";
 		class ItemInfo: ItemInfo
@@ -4737,7 +4542,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_WDL: VES_M52A_WDL_Security_B
+    class MEU_CENT_NCO_Sniper_WDL: 1MEU_BASE_Centurion_Armor
 	{
 		displayName = "[1st MEU] Centurion Sniper NCO (Woodland)";
 		class ItemInfo: ItemInfo
