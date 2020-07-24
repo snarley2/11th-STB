@@ -78,8 +78,8 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1st MEU] Praetorian Helmet";
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};CBRN_protection = 1;
-		class ItemInfo: HeadgearItem
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+		class ItemInfo: ItemInfo
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet";
@@ -183,6 +183,14 @@ class CfgWeapons
 			"CustomKit_Scorch"
 		};
 		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+			"optre_unsc_units\army\data\armor_odst_co.paa",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_HR.paa"
+		};
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -191,12 +199,11 @@ class CfgWeapons
 			"",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
 		};
-		
-		class ItemInfo: VestItem 
+		class ItemInfo: ItemInfo 
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply200";
-			mass = 20;
+			mass = 75;
 			modelSides[] = {6};
 			hiddenSelections[] = 
 			{
@@ -263,6 +270,14 @@ class CfgWeapons
 				"optre_unsc_units\army\data\ghillie_desert_co.paa",
 				"LM_OPCAN3.0\BLU\UNSC\V\ODST_HR.paa"
 			};
+				hiddenSelectionsMaterials[] = 
+			{
+				"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+				"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+				"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+				"",
+				"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+			};
 			class HitpointsProtectionInfo
 			{
 				class Neck
@@ -326,7 +341,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
-		class ItemInfo: HeadgearItem
+		class ItemInfo: ItemInfo
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\helmet";
@@ -445,11 +460,11 @@ class CfgWeapons
 			"",
 			""
 		};
-		class ItemInfo: VestItem 
+		class ItemInfo: ItemInfo 
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply250";
-			mass = 20;
+			mass = 75;
 			modelSides[] = {6};
 			hiddenSelections[] = 
 			{
@@ -557,7 +572,6 @@ class CfgWeapons
 		};
 	};
 	
-
 // Pilot stuff
 
     class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
@@ -986,8 +1000,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1042,8 +1054,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1098,8 +1108,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1154,8 +1162,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1210,8 +1216,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1266,8 +1270,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1322,8 +1324,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1377,8 +1377,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1432,8 +1430,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1487,8 +1483,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1542,8 +1536,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1597,8 +1589,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1654,8 +1644,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1710,8 +1698,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1766,8 +1752,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1822,8 +1806,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1878,8 +1860,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1934,8 +1914,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -1990,8 +1968,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2045,8 +2021,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2100,8 +2074,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2155,8 +2127,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2210,8 +2180,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2265,8 +2233,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2322,8 +2288,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2377,8 +2341,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2432,8 +2394,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2487,8 +2447,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2542,8 +2500,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2597,8 +2553,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2652,8 +2606,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2706,8 +2658,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2760,8 +2710,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2814,8 +2762,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2868,8 +2814,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2922,8 +2866,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -2978,8 +2920,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3035,8 +2975,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3092,8 +3030,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3149,8 +3085,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3206,8 +3140,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3263,8 +3195,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3320,8 +3250,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3375,8 +3303,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3430,8 +3356,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3485,8 +3409,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3540,8 +3462,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3595,8 +3515,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3652,8 +3570,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3706,8 +3622,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3760,8 +3674,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3814,8 +3726,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3868,8 +3778,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3922,8 +3830,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -3976,8 +3882,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4029,8 +3933,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4082,8 +3984,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4135,8 +4035,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4188,8 +4086,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4241,8 +4137,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4296,8 +4190,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4352,8 +4244,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4408,8 +4298,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4464,8 +4352,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4520,8 +4406,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4576,8 +4460,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4632,8 +4514,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4687,8 +4567,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4742,8 +4620,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4797,8 +4673,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4852,8 +4726,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4907,8 +4779,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -4964,8 +4834,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5018,8 +4886,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5072,8 +4938,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5126,8 +4990,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5180,8 +5042,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5234,8 +5094,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5288,8 +5146,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5341,8 +5197,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5394,8 +5248,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5447,8 +5299,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5500,8 +5350,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5553,8 +5401,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5608,8 +5454,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5663,8 +5507,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5718,8 +5560,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5773,8 +5613,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5828,8 +5666,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5883,8 +5719,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5938,8 +5772,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -5992,8 +5824,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -6046,8 +5876,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -6100,8 +5928,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -6154,8 +5980,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -6208,8 +6032,6 @@ class CfgWeapons
 				"A_KneesRight",
 				"A_ODST",
 				"A_TacPad",
-				"AS_BaseLeft",
-				"AS_BaseRight",
 				"AS_SmallLeft",
 				"AS_SmallRight",
 				"AS_MediumLeft",
@@ -6305,7 +6127,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -6417,7 +6239,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 
@@ -6519,7 +6341,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -6629,7 +6451,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -6742,7 +6564,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -6851,7 +6673,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Blue.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -6958,7 +6780,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Yellow.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7064,7 +6886,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7176,7 +6998,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7282,7 +7104,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Blue.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7387,7 +7209,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Yellow.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7491,7 +7313,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7602,7 +7424,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7708,7 +7530,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Blue.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7813,7 +7635,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Yellow.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -7917,7 +7739,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8028,7 +7850,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8133,7 +7955,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Blue.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8236,7 +8058,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Yellow.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8338,7 +8160,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8449,7 +8271,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8556,7 +8378,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Blue.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8661,7 +8483,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Yellow.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8765,7 +8587,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8875,7 +8697,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -8979,7 +8801,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Blue.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -9082,7 +8904,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Yellow.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -9184,7 +9006,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -9293,7 +9115,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -9405,7 +9227,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-		class ItemInfo: VestItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
@@ -9517,7 +9339,7 @@ class CfgWeapons
 		{
 			"MRH_BluForTransponder"
 		};
-        class ItemInfo: VestItem
+        class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 
@@ -9855,7 +9677,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
-    };
+	};
     class Praetor_Helmet_Black_32: 1stMEU_Base_Praetorian_Helmet
 	{
 		scope = 2;
@@ -10242,6 +10064,7 @@ class CfgWeapons
 // Weapons Start
 	
 	class OPTRE_100Rnd_127x99_M247HMG;
+	class OPTRE_100Rnd_127x99_HE_M247HMG;
 	class WeaponSlotsInfo;
 	class StandardSound;
 	class CowsSlot;
