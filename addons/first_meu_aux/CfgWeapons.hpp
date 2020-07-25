@@ -589,19 +589,18 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] Siffys Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
     };
     class Siffy_Helmet_dp : OPTRE_UNSC_VX16_Helmet_MaskS_dp
     {
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
     };
     class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
     {
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
     };
 	
 // Pilot stuff end
