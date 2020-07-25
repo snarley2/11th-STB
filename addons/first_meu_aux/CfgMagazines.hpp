@@ -72,7 +72,6 @@ class CfgMagazines
 		tracersEvery = 2;
 		lastRoundsTracer = 1;
 	};
-	
 	class OPTRE_100Rnd_127x99_HE_M247HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";
