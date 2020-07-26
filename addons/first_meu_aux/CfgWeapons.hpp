@@ -3230,11 +3230,12 @@ class CfgWeapons
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Sniper NCO (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
-			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
