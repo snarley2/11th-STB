@@ -2127,6 +2127,55 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Frag",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
@@ -2170,11 +2219,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_M52A_Marksman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_DES: MEU_M52A_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2182,54 +2230,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman (Desert)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Marksman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_CEA: MEU_M52A_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2237,54 +2248,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman (Evolved)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Marksman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_SNO: MEU_M52A_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2292,54 +2266,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman (Snow)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_M52A_Marksman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Marksman_URB: MEU_M52A_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2347,54 +2284,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman (Urban)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Marksman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_WDL: MEU_M52A_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2402,50 +2302,13 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman (Woodland)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
@@ -2457,6 +2320,54 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman NCO";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Frag",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
@@ -2494,15 +2405,15 @@ class CfgWeapons
 				"AP_Thigh",
 				"APO_AR",
 				"APO_BR",
+				"APO_Knife",
 				"APO_SMG",
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_M52A_NCO_Marksman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_DES: MEU_M52A_NCO_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2510,52 +2421,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman NCO (Desert)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Marksman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_CEA: MEU_M52A_NCO_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2563,52 +2439,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Marksman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_SNO: MEU_M52A_NCO_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2616,52 +2457,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman NCO (Snow)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_M52A_NCO_Marksman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Marksman_URB: MEU_M52A_NCO_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2669,52 +2475,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman NCO (Urban)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Marksman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_WDL: MEU_M52A_NCO_Marksman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2722,48 +2493,13 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Marksman NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
@@ -2777,6 +2513,52 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
@@ -2817,11 +2599,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_M52A_Breacher_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_DES: MEU_M52A_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2829,51 +2610,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher (Desert)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Breacher_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_CEA: MEU_M52A_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2881,51 +2628,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher (Evolved)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Breacher_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_SNO: MEU_M52A_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2933,51 +2646,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher (Snow)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_M52A_Breacher_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Breacher_URB: MEU_M52A_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2985,51 +2664,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher (Urban)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Breacher_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_WDL: MEU_M52A_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3037,47 +2682,13 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher (Woodland)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
@@ -3089,6 +2700,51 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher NCO";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
@@ -3128,11 +2784,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_M52A_NCO_Breacher_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_DES: MEU_M52A_NCO_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3140,50 +2795,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher NCO (Desert)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Breacher_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_CEA: MEU_M52A_NCO_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3191,50 +2813,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Breacher_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_SNO: MEU_M52A_NCO_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3242,50 +2831,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher NCO (Snow)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_M52A_NCO_Breacher_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Breacher_URB: MEU_M52A_NCO_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3293,50 +2849,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher NCO (Urban)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Breacher_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_WDL: MEU_M52A_NCO_Breacher
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3344,46 +2867,13 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Breacher NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
@@ -3397,6 +2887,54 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Frag",
+			"AP_SG",
+			"AP_SMG",
+			"AP_BR",
+			"AP_Rounds",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
@@ -3439,11 +2977,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_M52A_Sniper_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_DES: MEU_M52A_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3451,53 +2988,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper (Desert)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Sniper_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_CEA: MEU_M52A_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3505,53 +3006,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper (Evolved)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Sniper_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_SNO: MEU_M52A_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3559,53 +3024,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper (Snow)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_M52A_Sniper_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Sniper_URB: MEU_M52A_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3613,53 +3042,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper (Urban)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_Sniper_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_WDL: MEU_M52A_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3667,49 +3060,13 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper (Woodland)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
@@ -3721,6 +3078,53 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper NCO";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Frag",
+			"AP_SG",
+			"AP_SMG",
+			"AP_BR",
+			"AP_Rounds",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
@@ -3762,11 +3166,10 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_M52A_NCO_Sniper_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_DES: MEU_M52A_NCO_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3774,52 +3177,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper NCO (Desert)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Sniper_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_CEA: MEU_M52A_NCO_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3827,52 +3195,17 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper NCO (Evolved)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Sniper_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_SNO: MEU_M52A_NCO_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3880,105 +3213,34 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper NCO (Snow)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_M52A_NCO_Sniper_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Sniper_URB: MEU_M52A_NCO_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper NCO (Urban)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_M52A_NCO_Sniper_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_WDL: MEU_M52A_NCO_Sniper
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3986,48 +3248,13 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Sniper NCO (Woodland)";
-		class ItemInfo: ItemInfo
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Frag",
-				"AP_SG",
-				"AP_SMG",
-				"AP_BR",
-				"AP_Rounds",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
@@ -4085,7 +3312,7 @@ class CfgWeapons
 		};
 	};
 		
-    class MEU_M52A_Corpsman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_DES: MEU_M52A_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4137,7 +3364,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_Corpsman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_CEA: MEU_M52A_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4189,7 +3416,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_Corpsman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_SNO: MEU_M52A_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4241,7 +3468,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_M52A_Corpsman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Corpsman_URB: MEU_M52A_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4293,7 +3520,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_Corpsman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_WDL: MEU_M52A_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4396,7 +3623,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_Corpsman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_DES: MEU_M52A_NCO_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4447,7 +3674,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_Corpsman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_CEA: MEU_M52A_NCO_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4498,7 +3725,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_Corpsman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_SNO: MEU_M52A_NCO_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4549,7 +3776,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_M52A_NCO_Corpsman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Corpsman_URB: MEU_M52A_NCO_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4600,7 +3827,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_Corpsman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_WDL: MEU_M52A_NCO_Corpsman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4706,7 +3933,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_RTO_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_DES: MEU_M52A_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4759,7 +3986,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_RTO_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_CEA: MEU_M52A_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4812,7 +4039,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_RTO_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_SNO: MEU_M52A_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4865,7 +4092,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_RTO_URB: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_URB: MEU_M52A_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4918,7 +4145,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_RTO_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_WDL: MEU_M52A_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5023,7 +4250,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_RTO_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_DES: MEU_M52A_NCO_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5075,7 +4302,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_RTO_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_CEA: MEU_M52A_NCO_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5127,7 +4354,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_RTO_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_SNO: MEU_M52A_NCO_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5179,7 +4406,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_RTO_URB: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_URB: MEU_M52A_NCO_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5231,7 +4458,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_M52A_NCO_RTO_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_WDL: MEU_M52A_NCO_RTO
 	{
 		scope = 2;
         scopeCurator = 2;
