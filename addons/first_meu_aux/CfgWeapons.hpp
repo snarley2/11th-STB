@@ -600,7 +600,7 @@ class CfgWeapons
     class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
     {
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa-"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
     };
 	
 // Pilot stuff end
