@@ -3268,58 +3268,52 @@ class CfgWeapons
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
 		displayName = "[1stMEU] M52A Corpsman";
-		class ItemInfo: ItemInfo
+        hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_SmallLeft",
-				"AS_SmallRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Smoke",
-				"AP_GL",
-				"AP_Knife",
-				"AP_BR",
-				"AP_AR",
-				"AP_Frag",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
-	};
-		
-    class MEU_M52A_Corpsman_DES: MEU_M52A_Corpsman
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman (Desert)";
+        hiddenSelections[] = 
+        {
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Ghillie",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_TacPad",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AP_Smoke",
+            "AP_GL",
+            "AP_Knife",
+            "AP_BR",
+            "AP_AR",
+            "AP_Frag",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_Sniper",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+        };
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
@@ -3374,9 +3368,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman (Desert)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_DES",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_DES",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_DES",
+            "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3392,9 +3386,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman (Evolved)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_CEA",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_CEA",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_CEA",
+            "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3410,9 +3404,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman (Snow)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_SNO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_SNO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_SNO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3428,9 +3422,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman (Urban)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_URB",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_URB",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_URB",
+            "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3446,9 +3440,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_WDL",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_WDL",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_WDL",
+            "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L__WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3560,9 +3554,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman NCO (Desert)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3578,9 +3572,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3596,9 +3590,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman NCO (Snow)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_SN_COO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3614,9 +3608,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman NCO (Urban)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3632,9 +3626,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A Corpsman NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3752,9 +3746,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO (Desert)";
         hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_DES",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_DES",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_DES",
+            "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3770,9 +3764,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO (Evolved)";
         hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_CEA",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_CEA",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_CEA",
+            "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3788,9 +3782,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO (Snow)";
         hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_SNO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_SNO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_SNO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3806,9 +3800,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO (Urban)";
         hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_URB",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_URB",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_URB",
+            "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3824,9 +3818,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_WDL",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_WDL",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_WDL",
+            "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3940,9 +3934,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO NCO (Desert)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_DES",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_DES",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_DES",
+            "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3958,9 +3952,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_CEA",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_CEA",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_CEA",
+            "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3976,9 +3970,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO NCO (Snow)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_SNO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_SNO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_SNO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -3994,9 +3988,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO NCO (Urban)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_URB",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_URB",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_URB",
+            "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4012,9 +4006,9 @@ class CfgWeapons
 		displayName = "[1stMEU] M52A RTO NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
-            "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO_WDL",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO_WDL",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO_WDL",
+            "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
