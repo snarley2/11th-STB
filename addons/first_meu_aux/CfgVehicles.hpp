@@ -410,7 +410,7 @@ class CfgVehicles
 		{
             class HitFace
             {
-                armor = 10; //Default Value
+                armor = 5; //Default Value
                 material = -1;
                 name = "face_hub";
                 passThrough = 0.8;
