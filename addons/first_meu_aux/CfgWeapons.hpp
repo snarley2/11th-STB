@@ -698,7 +698,6 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
-	
     class MEU_Mar_Helm_WDL : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -711,6 +710,65 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
+    };
+	class MEU_Mar_Helm_MAR2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT M52A Heavy Helmet";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_Helm_DES2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Heavy Helmet (Desert)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_DES_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_Helm_CEA2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Heavy Helmet (Evolved)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_CEA_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_Helm_SNO2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Heavy Helmet (Snow)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_SNO_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+   
+	class MEU_Mar_Helm_URB2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Heavy Helmet (Urban)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
+    class MEU_Mar_Helm_WDL2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Heavy Helmet (Woodland)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 	
 // CH252 light helmets
@@ -798,6 +856,65 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    class MEU_Mar_Helm_base_L2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Light Helmet";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\L\V_CH252_MAR_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_Helm_DES_L2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Light Helmet(Desert)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\L\V_CH252_DES_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_Helm_CEA_L2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Light Helmet (Evolved)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\L\V_CH252_CEA_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_Helm_SNO_L2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Light Helmet (Snow)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\L\V_CH252_SNO_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+	class MEU_Mar_Helm_URB_L2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Light Helmet (Urban)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\L\V_CH252_URB_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_Helm_WDL_L2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Light Helmet (Woodland)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\L\V_CH252_WDL_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
 	
 // CH252 MOS Helmets
 
@@ -884,6 +1001,65 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+     class MEU_Mar_MOS_Helm_BASE2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_MAR_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_MOS_Helm_DES2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet (Desert)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_DES_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_MOS_Helm_CEA2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet (Evolved)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_CEA_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_MOS_Helm_SNO2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet (Snow)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_SNO_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+	class MEU_Mar_MOS_Helm_URB2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet (Urban)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_URB_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_Mar_MOS_Helm_WDL2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet (Woodland)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
 	
 // end Medical Helmets start RTO Helmets
 
@@ -969,6 +1145,65 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
+    };
+    class MEU_RTO_Helm_base2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 RTO Helmet";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_MAR_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_RTO_Helm_DES2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 RTO Helmet (Desert)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_DES_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_RTO_Helm_CEA2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 RTO Helmet (Evolved)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_CEA_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_RTO_Helm_SNO2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 RTO Helmet (Snow)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_SNO_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
+	class MEU_RTO_Helm_URB2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 RTO Helmet (Urban)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_URB_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+	
+    class MEU_RTO_Helm_WDL2 : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] 2nd PLT CH252 RTO Helmet (Woodland)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 	
 // end CH252 headgear start vest
@@ -3442,7 +3677,7 @@ class CfgWeapons
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
             "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L__WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
