@@ -66,7 +66,7 @@ class CfgWeapons
 // Medical Items End
 // Armor Base Values
 		
-	class 1stMEU_Base_Praetorian_Helmet: OPTRE_UNSC_CH252D_Helmet
+	class 1stMEU_Base_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
@@ -76,7 +76,7 @@ class CfgWeapons
         weaponPoolAvailable = 1;
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1st MEU] Praetorian Helmet";
+		displayName = "[1stMEU] CH252D Helmet";
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 		class ItemInfo: ItemInfo
@@ -91,19 +91,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 50;
+					armor = 30;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 50;
+					armor = 30;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 50;
+					armor = 30;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -116,7 +116,7 @@ class CfgWeapons
 		allowedFacewear[] = {};
 	};
 
-	class 1MEU_BASE_Praetorian_Armor: OPTRE_UNSC_M52D_Armor 
+	class 1MEU_BASE_M52D_Armor: OPTRE_UNSC_M52D_Armor 
 	{	
 		scope = 1;
 		scopeArsenal = 1;
@@ -135,8 +135,8 @@ class CfgWeapons
 			"A_Base",
 			"A_ChestArmor",
 			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
 			"A_KneesMarLeft",
 			"A_KneesMarRight",
 			"A_ODST",
@@ -199,12 +199,13 @@ class CfgWeapons
 			"",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
 		};
-		class ItemInfo: ItemInfo 
+		class ItemInfo: VestItem 
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply200";
 			mass = 75;
 			modelSides[] = {6};
+			vestType = "Rebreather";
 			hiddenSelections[] = 
 			{
 				"camo",
@@ -215,8 +216,8 @@ class CfgWeapons
 				"A_Base",
 				"A_ChestArmor",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 				"A_ODST",
@@ -283,7 +284,7 @@ class CfgWeapons
 				class Neck
 				{
 					hitpointName = "HitNeck";
-					armor = 60;
+					armor = 50;
 					passThrough = 0.1;
 				};
 				class Arms
@@ -323,11 +324,10 @@ class CfgWeapons
 					passThrough = 0.1;
 				};
 			};
-			vestType = "Rebreather";
 		};
 	}; 
 	
-	class 1MEU_Base_Centurion_Helmet: OPTRE_UNSC_CH252_Helmet2_MAR
+	class 1MEU_Base_CH252_Helmet: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 1;
 		scopeArsenal = 1;
@@ -337,7 +337,7 @@ class CfgWeapons
         weaponPoolAvailable = 1;
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1st MEU] Centurion Helmet Base";
+		displayName = "[1stMEU] CH252 Helmet Base";
 		hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
@@ -352,19 +352,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 40;
+					armor = 20;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 40;
+					armor = 20;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 40;
+					armor = 20;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -377,7 +377,7 @@ class CfgWeapons
 		};
 	};
 	
-	class 1MEU_BASE_Centurion_Armor: OPTRE_UNSC_M52A_Armor 
+	class 1MEU_BASE_M52A_Armor: 1MEU_BASE_M52D_Armor 
 	{	
 		scope = 1;
 		scopeArsenal = 1;
@@ -396,8 +396,8 @@ class CfgWeapons
 			"A_Base",
 			"A_ChestArmor",
 			"A_Ghillie",
-			"A_KneesLeft",
-			"A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
 			"A_KneesMarLeft",
 			"A_KneesMarRight",
 			"A_ODST",
@@ -466,6 +466,7 @@ class CfgWeapons
 			containerClass = "Supply250";
 			mass = 75;
 			modelSides[] = {6};
+			vestType = "Rebreather";
 			hiddenSelections[] = 
 			{
 				"camo",
@@ -476,8 +477,8 @@ class CfgWeapons
 				"A_Base",
 				"A_ChestArmor",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 				"A_ODST",
@@ -568,18 +569,17 @@ class CfgWeapons
 					passThrough = 0.1;
 				};
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-// Pilot stuff
+// Pegasus
 
     class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
     {
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "1stMEU Mark";
+		author = "1st MEU Mark";
         weaponPoolAvailable = 1;
 		subItems[]=
 		{
@@ -604,7 +604,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa"};
     };
 	
-// Pilot stuff end
+// Pegasus end
 // centurion gear start   
 // centurion headgear
     
@@ -614,7 +614,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] 1st Plt Beret";
+		displayName = "[1stMEU] 1st Plt Beret";
         weaponPoolAvailable = 1;
 		subItems[]=
 		{
@@ -630,13 +630,13 @@ class CfgWeapons
 	
 // centurion heavy helmets
 
-    class MEU_Mar_Helm_MAR : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_MAR : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Heavy Helmet";
+		displayName = "[1stMEU] M52A Heavy Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -644,13 +644,13 @@ class CfgWeapons
         };
     };
 	
-    class MEU_Mar_Helm_DES : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_DES : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Heavy Helmet (Desert)";
+		displayName = "[1stMEU] CH252 Heavy Helmet (Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -658,13 +658,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_Helm_CEA : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_CEA : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Heavy Helmet (Evolved)";
+		displayName = "[1stMEU] CH252 Heavy Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -672,13 +672,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_Helm_SNO : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_SNO : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Heavy Helmet (Snow)";
+		displayName = "[1stMEU] CH252 Heavy Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -686,13 +686,13 @@ class CfgWeapons
 		};
     };
    
-	class MEU_Mar_Helm_URB : 1MEU_Base_Centurion_Helmet
+	class MEU_Mar_Helm_URB : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Heavy Helmet (Urban)";
+		displayName = "[1stMEU] CH252 Heavy Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -700,13 +700,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_Helm_WDL : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_WDL : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Heavy Helmet (Woodland)";
+		displayName = "[1stMEU] CH252 Heavy Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -714,15 +714,15 @@ class CfgWeapons
 		};
     };
 	
-// centurion light helmets
+// CH252 light helmets
 
-    class MEU_Mar_Helm_base_L : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_base_L : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Light Helmet";
+		displayName = "[1stMEU] CH252 Light Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -730,13 +730,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_Helm_DES_L : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_DES_L : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Light Helmet(Desert)";
+		displayName = "[1stMEU] CH252 Light Helmet(Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -744,13 +744,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_Helm_CEA_L : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_CEA_L : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Light Helmet (Evolved)";
+		displayName = "[1stMEU] CH252 Light Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -758,13 +758,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_Helm_SNO_L : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_SNO_L : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Light Helmet (Snow)";
+		displayName = "[1stMEU] CH252 Light Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -772,13 +772,13 @@ class CfgWeapons
 		};
     };
 	
-	class MEU_Mar_Helm_URB_L : 1MEU_Base_Centurion_Helmet
+	class MEU_Mar_Helm_URB_L : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Light Helmet (Urban)";
+		displayName = "[1stMEU] CH252 Light Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -786,13 +786,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_Helm_WDL_L : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_Helm_WDL_L : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Light Helmet (Woodland)";
+		displayName = "[1stMEU] CH252 Light Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -800,15 +800,15 @@ class CfgWeapons
 		};
     };
 	
-// Centurion MOS Helmets
+// CH252 MOS Helmets
 
-    class MEU_Mar_MOS_Helm_BASE : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_MOS_Helm_BASE : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Medical Helmet";
+		displayName = "[1stMEU] CH252 Medical Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -816,13 +816,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_MOS_Helm_DES : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_MOS_Helm_DES : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Medical Helmet (Desert)";
+		displayName = "[1stMEU] CH252 Medical Helmet (Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -830,13 +830,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_MOS_Helm_CEA : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_MOS_Helm_CEA : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Medical Helmet (Evolved)";
+		displayName = "[1stMEU] CH252 Medical Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -844,13 +844,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_MOS_Helm_SNO : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_MOS_Helm_SNO : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Medical Helmet (Snow)";
+		displayName = "[1stMEU] CH252 Medical Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -858,13 +858,13 @@ class CfgWeapons
 		};
     };
 	
-	class MEU_Mar_MOS_Helm_URB : 1MEU_Base_Centurion_Helmet
+	class MEU_Mar_MOS_Helm_URB : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Medical Helmet (Urban)";
+		displayName = "[1stMEU] CH252 Medical Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -872,13 +872,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_Mar_MOS_Helm_WDL : 1MEU_Base_Centurion_Helmet
+    class MEU_Mar_MOS_Helm_WDL : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion Medical Helmet (Woodland)";
+		displayName = "[1stMEU] CH252 Medical Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -888,13 +888,13 @@ class CfgWeapons
 	
 // end Medical Helmets start RTO Helmets
 
-    class MEU_RTO_Helm_base : 1MEU_Base_Centurion_Helmet
+    class MEU_RTO_Helm_base : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion RTO Helmet";
+		displayName = "[1stMEU] CH252 RTO Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -902,13 +902,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_RTO_Helm_DES : 1MEU_Base_Centurion_Helmet
+    class MEU_RTO_Helm_DES : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion RTO Helmet (Desert)";
+		displayName = "[1stMEU] CH252 RTO Helmet (Desert)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -916,13 +916,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_RTO_Helm_CEA : 1MEU_Base_Centurion_Helmet
+    class MEU_RTO_Helm_CEA : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion RTO Helmet (Evolved)";
+		displayName = "[1stMEU] CH252 RTO Helmet (Evolved)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -930,13 +930,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_RTO_Helm_SNO : 1MEU_Base_Centurion_Helmet
+    class MEU_RTO_Helm_SNO : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion RTO Helmet (Snow)";
+		displayName = "[1stMEU] CH252 RTO Helmet (Snow)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -944,13 +944,13 @@ class CfgWeapons
 		};
     };
     
-	class MEU_RTO_Helm_URB : 1MEU_Base_Centurion_Helmet
+	class MEU_RTO_Helm_URB : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion RTO Helmet (Urban)";
+		displayName = "[1stMEU] CH252 RTO Helmet (Urban)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -958,13 +958,13 @@ class CfgWeapons
 		};
     };
 	
-    class MEU_RTO_Helm_WDL : 1MEU_Base_Centurion_Helmet
+    class MEU_RTO_Helm_WDL : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Centurion RTO Helmet (Woodland)";
+		displayName = "[1stMEU] CH252 RTO Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -972,21 +972,69 @@ class CfgWeapons
 		};
     };
 	
-// end centurion headgear start vest
+// end CH252 headgear start vest
 
-//Centurion Armor
+//M52A Armor
 
 // Rifleman
 	
-    class MEU_CENT_Rifleman: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Rifleman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Rifleman";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -996,8 +1044,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -1028,19 +1076,155 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_CENT_Rifleman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Rifleman_DES: MEU_CENT_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Rifleman (Desert)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_Rifleman_CEA: MEU_CENT_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Rifleman (Evolved)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_Rifleman_SNO: MEU_CENT_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Rifleman (Snow)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	class MEU_CENT_Rifleman_URB: MEU_CENT_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Rifleman (Urban)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_Rifleman_WDL: MEU_CENT_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Rifleman (Woodland)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	 class MEU_CENT_NCO_Rifleman: 1MEU_BASE_M52A_Armor
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Rifleman NCO";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -1050,278 +1234,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Rifleman_CEA: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman (Evolved)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Rifleman_SNO: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman (Snow)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-	class MEU_CENT_Rifleman_URB: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman (Urban)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Rifleman_WDL: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman (Woodland)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-	 class MEU_CENT_NCO_Rifleman: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman NCO";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -1351,286 +1265,158 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Rifleman_DES: MEU_CENT_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Rifleman NCO (Desert)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Rifleman_CEA: MEU_CENT_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman NCO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Rifleman NCO (Evolved)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Rifleman_SNO: MEU_CENT_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman NCO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Rifleman NCO (Snow)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_CENT_NCO_Rifleman_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_NCO_Rifleman_URB: MEU_CENT_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman NCO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Rifleman NCO (Urban)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Rifleman_WDL: MEU_CENT_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Rifleman NCO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Rifleman NCO (Woodland)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
     // Grenadier
 	
-    class MEU_CENT_Grenadier: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Grenadier: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Grenadier";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -1640,8 +1426,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -1672,19 +1458,155 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_CENT_Grenadier_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Grenadier_DES: MEU_CENT_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Grenadier (Desert)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_Grenadier_CEA: MEU_CENT_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier (Evolved)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_Grenadier_SNO: MEU_CENT_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier (Snow)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_SNO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_Grenadier_URB: MEU_CENT_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier (Urban)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_Grenadier_WDL: MEU_CENT_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier (Woodland)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	class MEU_CENT_NCO_Grenadier: 1MEU_BASE_M52A_Armor
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier NCO";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -1694,278 +1616,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Grenadier_CEA: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier (Evolved)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Grenadier_SNO: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier (Snow)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Grenadier_URB: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier (Urban)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Grenadier_WDL: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier (Woodland)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-	class MEU_CENT_NCO_Grenadier: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier NCO";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -1995,19 +1647,157 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Grenadier_DES: MEU_CENT_NCO_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Grenadier NCO (Desert)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_CEA: MEU_CENT_NCO_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier NCO (Evolved)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_SNO: MEU_CENT_NCO_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier NCO (Snow)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_URB: MEU_CENT_NCO_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier NCO (Urban)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_NCO_Grenadier_WDL: MEU_CENT_NCO_Grenadier
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Grenadier NCO (Woodland)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	// AutoRifleman
+	
+    class MEU_CENT_AutoRifleman: 1MEU_BASE_M52A_Armor
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A AutoRifleman";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_BR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -2017,275 +1807,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_NCO_Grenadier_CEA: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier NCO (Evolved)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_NCO_Grenadier_SNO: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier NCO (Snow)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_NCO_Grenadier_URB: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier NCO (Urban)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_NCO_Grenadier_WDL: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Grenadier NCO (Woodland)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_MGThigh",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"AP_Thigh",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-	// Autorifleman
-	
-    class MEU_CENT_Autorifleman: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -2315,19 +1838,154 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_CENT_Autorifleman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_AutoRifleman_DES: MEU_CENT_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A AutoRifleman (Desert)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_AutoRifleman_CEA: MEU_CENT_AutoRifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A AutoRifleman (Evolved)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_AutoRifleman_SNO: MEU_CENT_AutoRifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A AutoRifleman (Snow)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	class MEU_CENT_AutoRifleman_URB: MEU_CENT_AutoRifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A AutoRifleman (Urban)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_CENT_AutoRifleman_WDL: MEU_CENT_AutoRifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A AutoRifleman (Woodland)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	 class MEU_CENT_NCO_AutoRifleman: 1MEU_BASE_M52A_Armor
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A AutoRifleman NCO";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_BR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -2337,273 +1995,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Autorifleman_CEA: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman (Evolved)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Autorifleman_SNO: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman (Snow)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-	class MEU_CENT_Autorifleman_URB: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman (Urban)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-    class MEU_CENT_Autorifleman_WDL: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman (Woodland)";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
-		};
-	};
-	
-	 class MEU_CENT_NCO_Autorifleman: 1MEU_BASE_Centurion_Armor
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman NCO";
-		class ItemInfo: VestItem
-		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -2632,281 +2025,110 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_AutoRifleman_DES: MEU_CENT_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A AutoRifleman NCO (Desert)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_AutoRifleman_CEA: MEU_CENT_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman NCO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A AutoRifleman NCO (Evolved)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_AutoRifleman_SNO: MEU_CENT_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman NCO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A AutoRifleman NCO (Snow)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-	class MEU_CENT_NCO_Autorifleman_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_NCO_AutoRifleman_URB: MEU_CENT_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman NCO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A AutoRifleman NCO (Urban)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
-    class MEU_CENT_NCO_Autorifleman_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_AutoRifleman_WDL: MEU_CENT_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Autorifleman NCO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A AutoRifleman NCO (Woodland)";
+		hiddenSelectionsTextures[] = 
 		{
-			hiddenSelections[] = 
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
-				"A_ODST",
-				"A_TacPad",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_BR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_SMG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_Knife",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
-			};
-			vestType = "Rebreather";
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
 	
 	//Marksman
 	
-	class MEU_CENT_Marksman: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_Marksman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -2916,8 +2138,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -2953,15 +2175,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Marksman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -2971,8 +2193,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3008,15 +2230,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Marksman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3026,8 +2248,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3063,15 +2285,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Marksman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3081,8 +2303,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3118,15 +2340,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Marksman_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_Marksman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3136,8 +2358,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3173,15 +2395,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Marksman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3191,8 +2413,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3228,15 +2450,15 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Marksman: 1MEU_BASE_Centurion_Armor
+	 class MEU_CENT_NCO_Marksman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman NCO";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman NCO";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3246,8 +2468,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3281,15 +2503,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Marksman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman NCO (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3299,8 +2521,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3334,15 +2556,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Marksman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman NCO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman NCO (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3352,8 +2574,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3387,15 +2609,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Marksman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman NCO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman NCO (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3405,8 +2627,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3440,15 +2662,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Marksman_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_NCO_Marksman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman NCO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman NCO (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3458,8 +2680,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3493,15 +2715,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Marksman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Marksman NCO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Marksman NCO (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3511,8 +2733,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3548,15 +2770,15 @@ class CfgWeapons
 	
     // Breacher
 	
-    class MEU_CENT_Breacher: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Breacher: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3566,8 +2788,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3600,15 +2822,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Breacher_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3618,8 +2840,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3652,15 +2874,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Breacher_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3670,8 +2892,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3704,15 +2926,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Breacher_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3722,8 +2944,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3756,15 +2978,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Breacher_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_Breacher_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3774,8 +2996,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3808,15 +3030,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Breacher_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3826,8 +3048,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3860,15 +3082,15 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Breacher: 1MEU_BASE_Centurion_Armor
+	 class MEU_CENT_NCO_Breacher: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher NCO";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher NCO";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3878,8 +3100,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3911,15 +3133,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Breacher_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher NCO (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3929,8 +3151,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -3962,15 +3184,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Breacher_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher NCO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher NCO (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -3980,8 +3202,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4013,15 +3235,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Breacher_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher NCO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher NCO (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4031,8 +3253,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4064,15 +3286,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Breacher_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_NCO_Breacher_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher NCO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher NCO (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4082,8 +3304,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4115,15 +3337,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Breacher_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Breacher NCO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Breacher NCO (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4133,8 +3355,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4168,15 +3390,15 @@ class CfgWeapons
 	
 	//Sniper
 	
-	class MEU_CENT_Sniper: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_Sniper: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4186,8 +3408,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4222,15 +3444,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Sniper_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4240,8 +3462,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4276,15 +3498,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Sniper_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4294,8 +3516,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4330,15 +3552,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Sniper_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4348,8 +3570,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4384,15 +3606,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Sniper_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_Sniper_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4402,8 +3624,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4438,15 +3660,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Sniper_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4456,8 +3678,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4492,15 +3714,15 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Sniper: 1MEU_BASE_Centurion_Armor
+	 class MEU_CENT_NCO_Sniper: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper NCO";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper NCO";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4510,8 +3732,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4545,15 +3767,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Sniper_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper NCO (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4563,8 +3785,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4598,15 +3820,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Sniper_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper NCO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper NCO (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4616,8 +3838,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4651,15 +3873,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Sniper_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper NCO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper NCO (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4669,8 +3891,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4704,15 +3926,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Sniper_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_NCO_Sniper_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper NCO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper NCO (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4722,8 +3944,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4757,15 +3979,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Sniper_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Sniper NCO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Sniper NCO (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4775,8 +3997,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4812,15 +4034,15 @@ class CfgWeapons
 	
 	// Corpsman
 	
-    class MEU_CENT_Corpsman: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Corpsman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4830,8 +4052,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -4864,15 +4086,15 @@ class CfgWeapons
 		};
 	};
 		
-    class MEU_CENT_Corpsman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Corpsman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4882,8 +4104,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -4916,15 +4138,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Corpsman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4934,8 +4156,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -4968,15 +4190,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Corpsman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -4986,8 +4208,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5020,15 +4242,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Corpsman_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_Corpsman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5038,8 +4260,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5072,15 +4294,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_Corpsman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5090,8 +4312,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5124,15 +4346,15 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Corpsman: 1MEU_BASE_Centurion_Armor
+	 class MEU_CENT_NCO_Corpsman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman NCO";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman NCO";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5142,8 +4364,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5175,15 +4397,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Corpsman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman NCO (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5193,8 +4415,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5226,15 +4448,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Corpsman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman NCO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman NCO (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5244,8 +4466,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5277,15 +4499,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Corpsman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman NCO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman NCO (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5295,8 +4517,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5328,15 +4550,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Corpsman_URB: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_NCO_Corpsman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman NCO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman NCO (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5346,8 +4568,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5379,15 +4601,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_Corpsman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion Corpsman NCO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A Corpsman NCO (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5397,8 +4619,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5432,15 +4654,15 @@ class CfgWeapons
 	
 	// RTO
 	
-    class MEU_CENT_RTO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_RTO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5450,8 +4672,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5485,15 +4707,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_RTO_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5503,8 +4725,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5538,15 +4760,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_RTO_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5556,8 +4778,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5591,15 +4813,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_RTO_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5609,8 +4831,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5644,15 +4866,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_URB: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_RTO_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5662,8 +4884,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5697,15 +4919,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_RTO_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5715,8 +4937,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5750,15 +4972,15 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_RTO: 1MEU_BASE_Centurion_Armor
+	class MEU_CENT_NCO_RTO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO NCO";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO NCO";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5768,8 +4990,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5802,15 +5024,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_DES: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_RTO_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO NCO (Desert)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO NCO (Desert)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5820,8 +5042,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5854,15 +5076,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_CEA: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_RTO_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO NCO (Evolved)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO NCO (Evolved)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5872,8 +5094,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5906,15 +5128,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_SNO: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_RTO_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO NCO (Snow)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO NCO (Snow)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5924,8 +5146,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -5958,15 +5180,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_URB: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_RTO_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO NCO (Urban)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO NCO (Urban)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -5976,8 +5198,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -6010,15 +5232,15 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_WDL: 1MEU_BASE_Centurion_Armor
+    class MEU_CENT_NCO_RTO_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Centurion RTO NCO (Woodland)";
-		class ItemInfo: VestItem
+		displayName = "[1stMEU] M52A RTO NCO (Woodland)";
+		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = 
 			{
@@ -6028,8 +5250,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesLeft",
-				"A_KneesRight",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_SmallLeft",
@@ -6062,13 +5284,13 @@ class CfgWeapons
 		};
 	};
 	
-// end centurion gear start praetorian gear
+// end M52A gear start praetorian gear
 // praetorian vests
 
-    class Prae37: 1MEU_BASE_Praetorian_Armor
+    class Prae37: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Mark";
-		displayName="[1st MEU] Praetorian 3-7 (Mark)";
+		displayName="[1stMEU] M52D 3-7 (Mark)";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -6172,10 +5394,10 @@ class CfgWeapons
 		};
     };
 	
-    class Prae36: 1MEU_BASE_Praetorian_Armor
+    class Prae36: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Oneill";
-		displayName="[1st MEU] Praetorian 3-6 (Oneill)";
+		displayName="[1stMEU] M52D 3-6 (Oneill)";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -6282,10 +5504,10 @@ class CfgWeapons
 		};
     };
 	
-    class Prae3M : 1MEU_BASE_Praetorian_Armor
+    class Prae3M : 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Mark";
-		displayName = "[1st MEU] Praetorian 3-M (FloodedMac)";
+		displayName = "[1stMEU] M52D 3-M (FloodedMac)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -6385,10 +5607,10 @@ class CfgWeapons
         };
     };
 	
-    class Prae3R: 1MEU_BASE_Praetorian_Armor
+    class Prae3R: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Praetorian 3-R (Dimitri)";
+		displayName = "[1stMEU] M52D 3-R (Dimitri)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -6495,12 +5717,12 @@ class CfgWeapons
         };
     };
 	
-    class PraetorianRifleman: 1MEU_BASE_Praetorian_Armor
+    class M52DRifleman: 1MEU_BASE_M52D_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Rifleman";
+		displayName = "[1stMEU] M52D Rifleman";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -6611,12 +5833,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianRiflemanBlue:1MEU_BASE_Praetorian_Armor
+	class M52DRiflemanBlue:1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Rifleman (Blue)";
+		displayName = "[1stMEU] M52D Rifleman (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -6719,12 +5941,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianRiflemanYellow:1MEU_BASE_Praetorian_Armor
+	class M52DRiflemanYellow:1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Rifleman (Yellow)";
+		displayName = "[1stMEU] M52D Rifleman (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -6825,12 +6047,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianRiflemanRed:1MEU_BASE_Praetorian_Armor
+	class M52DRiflemanRed:1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Rifleman (Red)";
+		displayName = "[1stMEU] M52D Rifleman (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -6931,12 +6153,12 @@ class CfgWeapons
 		};
 	};
 
-	class PraetorianMarksman: 1MEU_BASE_Praetorian_Armor
+	class M52DMarksman: 1MEU_BASE_M52D_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Marksman";
+		displayName = "[1stMEU] M52D Marksman";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -7043,12 +6265,12 @@ class CfgWeapons
 		};
 	};	
 	
-	class PraetorianMarksmanBlue:1MEU_BASE_Praetorian_Armor
+	class M52DMarksmanBlue:1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Marksman (Blue)";
+		displayName = "[1stMEU] M52D Marksman (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -7149,12 +6371,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianMarksmanYellow:1MEU_BASE_Praetorian_Armor
+	class M52DMarksmanYellow:1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Marksman (Yellow)";
+		displayName = "[1stMEU] M52D Marksman (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -7253,12 +6475,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianMarksmanRed:1MEU_BASE_Praetorian_Armor
+	class M52DMarksmanRed:1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Marksman (Red)";
+		displayName = "[1stMEU] M52D Marksman (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -7357,12 +6579,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianSniper: 1MEU_BASE_Praetorian_Armor
+	class M52DSniper: 1MEU_BASE_M52D_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Sniper";
+		displayName = "[1stMEU] M52D Sniper";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -7469,12 +6691,12 @@ class CfgWeapons
 		};
 	};	
 	
-	class PraetorianSniperBlue: 1MEU_BASE_Praetorian_Armor
+	class M52DSniperBlue: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Sniper (Blue)";
+		displayName = "[1stMEU] M52D Sniper (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -7575,12 +6797,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianSniperYellow: 1MEU_BASE_Praetorian_Armor
+	class M52DSniperYellow: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Sniper (Yellow)";
+		displayName = "[1stMEU] M52D Sniper (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -7679,12 +6901,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianSniperRed: 1MEU_BASE_Praetorian_Armor
+	class M52DSniperRed: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Sniper (Red)";
+		displayName = "[1stMEU] M52D Sniper (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -7783,12 +7005,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianAutoRifleman: 1MEU_BASE_Praetorian_Armor
+	class M52DAutoRifleman: 1MEU_BASE_M52D_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Auto Rifleman";
+		displayName = "[1stMEU] M52D AutoRifleman";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -7895,12 +7117,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianAutoRiflemanBlue: 1MEU_BASE_Praetorian_Armor
+	class M52DAutoRiflemanBlue: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian AutoRifleman (Blue)";
+		displayName = "[1stMEU] M52D AutoRifleman (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -7999,12 +7221,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianAutoRiflemanYellow: 1MEU_BASE_Praetorian_Armor
+	class M52DAutoRiflemanYellow: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian AutoRifleman (Yellow)";
+		displayName = "[1stMEU] M52D AutoRifleman (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -8101,12 +7323,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianAutoRiflemanRed: 1MEU_BASE_Praetorian_Armor
+	class M52DAutoRiflemanRed: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian AutoRifleman (Red)";
+		displayName = "[1stMEU] M52D AutoRifleman (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -8203,12 +7425,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianGrenadier: 1MEU_BASE_Praetorian_Armor
+	class M52DGrenadier: 1MEU_BASE_M52D_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Grenadier";
+		displayName = "[1stMEU] M52D Grenadier";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -8317,12 +7539,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianGrenadierBlue: 1MEU_BASE_Praetorian_Armor
+	class M52DGrenadierBlue: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Grenadier (Blue)";
+		displayName = "[1stMEU] M52D Grenadier (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -8423,12 +7645,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianGrenadierYellow: 1MEU_BASE_Praetorian_Armor
+	class M52DGrenadierYellow: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Grenadier (Yellow)";
+		displayName = "[1stMEU] M52D Grenadier (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -8527,12 +7749,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianGrenadierRed: 1MEU_BASE_Praetorian_Armor
+	class M52DGrenadierRed: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Grenadier (Red)";
+		displayName = "[1stMEU] M52D Grenadier (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -8631,12 +7853,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianBreacher: 1MEU_BASE_Praetorian_Armor
+	class M52DBreacher: 1MEU_BASE_M52D_Armor
     {
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Breacher";
+		displayName = "[1stMEU] M52D Breacher";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -8741,12 +7963,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianBreacherBlue: 1MEU_BASE_Praetorian_Armor
+	class M52DBreacherBlue: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Breacher (Blue)";
+		displayName = "[1stMEU] M52D Breacher (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -8845,12 +8067,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianBreacherYellow: 1MEU_BASE_Praetorian_Armor
+	class M52DBreacherYellow: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Breacher (Yellow)";
+		displayName = "[1stMEU] M52D Breacher (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -8947,12 +8169,12 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianBreacherRed: 1MEU_BASE_Praetorian_Armor
+	class M52DBreacherRed: 1MEU_BASE_M52D_Armor
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Breacher (Red)";
+		displayName = "[1stMEU] M52D Breacher (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -9049,10 +8271,10 @@ class CfgWeapons
 		};
 	};
 	
-	class PraetorianPlatoonCorpsman: 1MEU_BASE_Praetorian_Armor
+	class M52DPlatoonCorpsman: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Praetorian Platoon Corpsman";
+		displayName = "[1stMEU] M52D Platoon Corpsman";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -9159,10 +8381,10 @@ class CfgWeapons
 		};
     };
 	
-	class PraetorianCorpsman: 1MEU_BASE_Praetorian_Armor
+	class M52DCorpsman: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1st MEU] Praetorian Corpsman";
+		displayName = "[1stMEU] M52D Corpsman";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -9272,10 +8494,10 @@ class CfgWeapons
 			};
 		};
     };
-    class Hokage: 1MEU_BASE_Praetorian_Armor
+    class Hokage: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Oneill";
-		displayName="[1st MEU] Hokage";
+		displayName="[1stMEU] Hokage";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -9642,282 +8864,282 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa"};
     };
-    class Praetor_Helmet_Ride: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Ride: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Ride Along Helmet";
+		displayName = "[1stMEU] CH252D Ride Along Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Ride.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Black: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Black: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Helmet";
+		displayName = "[1stMEU] CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-     class Praetor_Helmet_Black_31: 1stMEU_Base_Praetorian_Helmet
+     class Praetor_Helmet_Black_31: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] Praetorian Helmet (3-1)";
+		displayName = "[1stMEU] CH252D Helmet (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Black_32: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Black_32: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] Praetorian Helmet (3-2)";
+		displayName = "[1stMEU] CH252D Helmet (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Black_baseplate: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Black_baseplate: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] Praetorian Helmet (Baseplate)";
+		displayName = "[1stMEU] CH252D Helmet (Baseplate)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32_baseplate.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Black_33: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Black_33: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] Praetorian Helmet (3-3)";
+		displayName = "[1stMEU] CH252D Helmet (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Yellow: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Yellow: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (Yellow)";
+		displayName = "[1stMEU] CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Yellow.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Yellow_31: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Yellow_31: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-1)";
+		displayName = "[1stMEU] CH252D Helmet (Yellow) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Yellow_32: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Yellow_32: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-2)";
+		displayName = "[1stMEU] CH252D Helmet (Yellow) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Yellow_33: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Yellow_33: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Helmet (Yellow) (3-3)";
+		displayName = "[1stMEU] CH252D Helmet (Yellow) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-	class Praetor_Helmet_Blue: 1stMEU_Base_Praetorian_Helmet
+	class Praetor_Helmet_Blue: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (Blue)";
+		displayName = "[1stMEU] CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Blue.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Blue_31: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Blue_31: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-1)";
+		displayName = "[1stMEU] CH252D Helmet (Blue) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Blue_32: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Blue_32: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-2)";
+		displayName = "[1stMEU] CH252D Helmet (Blue) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Blue_33: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Blue_33: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] Praetorian Helmet (Blue) (3-3)";
+		displayName = "[1stMEU] CH252D Helmet (Blue) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-	class Praetor_Helmet_Green: 1stMEU_Base_Praetorian_Helmet
+	class Praetor_Helmet_Green: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (Green)";
+		displayName = "[1stMEU] CH252D Helmet (Green)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_green.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Green_31: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Green_31: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-1)";
+		displayName = "[1stMEU] CH252D Helmet (Corpsman) (3-1)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_green_31.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Green_32: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Green_32: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-2)";
+		displayName = "[1stMEU] CH252D Helmet (Corpsman) (3-2)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_green_32.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-    class Praetor_Helmet_Green_33: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Green_33: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] Praetorian Helmet (Corpsman) (3-3)";
+		displayName = "[1stMEU] CH252D Helmet (Corpsman) (3-3)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_green_33.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
     };
-	class Praetor_Helmet_Red: 1stMEU_Base_Praetorian_Helmet
+	class Praetor_Helmet_Red: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (Red)";
+		displayName = "[1stMEU] CH252D Helmet (Red)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_Red.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Com: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Com: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (Oneill)";
+		displayName = "[1stMEU] CH252D Helmet (Oneill)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Oneill.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Com2: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Com2: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (Mark)";
+		displayName = "[1stMEU] CH252D Helmet (Mark)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Mark.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Com3: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Com3: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (Dimitri)";
+		displayName = "[1stMEU] CH252D Helmet (Dimitri)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Dimitri.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Helmet_Mike: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Helmet_Mike: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Helmet (FloodedMac)";
+		displayName = "[1stMEU] CH252D Helmet (FloodedMac)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
-    class Praetor_Sound_Protec: 1stMEU_Base_Praetorian_Helmet
+    class Praetor_Sound_Protec: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
 		weaponPoolAvailable = 1;
-		displayName = "[1stMEU] Praetorian Soundproof Helmet";
+		displayName = "[1stMEU] CH252D Soundproof Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
