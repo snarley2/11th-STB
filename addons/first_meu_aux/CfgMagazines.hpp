@@ -51,7 +51,7 @@ class CfgMagazines
 	{
 		ace_isbelt = 1;
 	};
-    // this is your stuff to use as a basis to fix the rest of the tracers and types
+   
     class OPTRE_100Rnd_127x99_M247HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";

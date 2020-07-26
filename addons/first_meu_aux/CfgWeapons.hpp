@@ -8012,8 +8012,6 @@ class CfgWeapons
 // BDU End
 // Weapons Start
 	
-	class OPTRE_100Rnd_127x99_M247HMG;
-	class OPTRE_100Rnd_127x99_HE_M247HMG;
 	class WeaponSlotsInfo;
 	class StandardSound;
 	class CowsSlot;

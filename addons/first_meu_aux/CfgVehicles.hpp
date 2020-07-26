@@ -42,7 +42,6 @@ class CfgVehicles
     class Item_Base_F;
     class ace_medical_treatment;
     class ACE_morphineItem;
-	class ACE_Banana;
     
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {

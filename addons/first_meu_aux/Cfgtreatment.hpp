@@ -32,8 +32,8 @@ class ACE_Medical_Treatment
             hrIncreaseNormal[] = {0};
             hrIncreaseHigh[] = {0};
             timeInSystem = 600;
-            timeTillMaxEffect = 1;
-            maxDose = 1;
+            timeTillMaxEffect = .11;
+            maxDose = .1;
             incompatibleMedication[] = {};
             viscosityChange = -1;
         };
