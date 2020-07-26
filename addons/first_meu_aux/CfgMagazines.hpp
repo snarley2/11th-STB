@@ -56,9 +56,6 @@ class CfgMagazines
 	{
 		dlc = "OPTRE";
         author = "[1stMEU] Oneill";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
         ace_isbelt = 1;
 		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname = "100Rnd 12.7x99mm Box Magazine";
@@ -76,9 +73,6 @@ class CfgMagazines
 	{
 		dlc = "OPTRE";
         author = "[1stMEU] Oneill";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
         ace_isbelt = 1;
 		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname = "100Rnd 12.7x99mm HE Box Magazine";

@@ -42,6 +42,7 @@ class CfgVehicles
     class Item_Base_F;
     class ace_medical_treatment;
     class ACE_morphineItem;
+	class ACE_Banana;
     
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
@@ -55,7 +56,7 @@ class CfgVehicles
             item_xx(MEU_Ibuprophen,1);
         };
     };
-	
+		
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
         tf_range=30000;
@@ -419,7 +420,7 @@ class CfgVehicles
             };
             class HitNeck: HitFace
             {
-                armor = 10; //OPTRE Value //Default=1
+                armor = 5; //OPTRE Value //Default=1
                 material = -1;
                 name = "neck";
                 passThrough = 0.8;
@@ -429,7 +430,7 @@ class CfgVehicles
             };
             class HitHead: HitNeck
             {
-                armor = 10; //Default Value
+                armor = 5; //Default Value
                 material = -1;
                 name = "head";
                 passThrough = 0.8;
@@ -438,7 +439,7 @@ class CfgVehicles
                 minimalHit = 0.01;
                 depends = "HitFace max HitNeck";
             };
-            class HitPelvis: HitHead
+            class HitPelvis
             {
                 armor = 10; //OPTRE Value //Default=6
                 material = -1;

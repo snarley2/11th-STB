@@ -3354,7 +3354,6 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 		
@@ -3540,7 +3539,6 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
@@ -3732,7 +3730,6 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather"; 
 		};
 	};
 	
@@ -3833,6 +3830,7 @@ class CfgWeapons
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A RTO NCO";
         hiddenSelections[] = 
         {
             "camo",
@@ -3870,8 +3868,7 @@ class CfgWeapons
             "APO_SMG",
             "APO_Sniper",
             "CustomKit_Scorch"
-			};
-		displayName = "[1stMEU] M52A RTO NCO";
+		};
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
@@ -3920,7 +3917,6 @@ class CfgWeapons
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
-			vestType = "Rebreather";
 		};
 	};
 	
