@@ -977,7 +977,7 @@ class CfgWeapons
 
 // Rifleman
 	
-    class MEU_CENT_Rifleman: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Rifleman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1078,7 +1078,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_DES: MEU_CENT_Rifleman
+    class MEU_M52A_Rifleman_DES: MEU_M52A_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1096,7 +1096,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_CEA: MEU_CENT_Rifleman
+    class MEU_M52A_Rifleman_CEA: MEU_M52A_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1114,7 +1114,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_SNO: MEU_CENT_Rifleman
+    class MEU_M52A_Rifleman_SNO: MEU_M52A_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1132,7 +1132,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Rifleman_URB: MEU_CENT_Rifleman
+	class MEU_M52A_Rifleman_URB: MEU_M52A_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1150,7 +1150,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Rifleman_WDL: MEU_CENT_Rifleman
+    class MEU_M52A_Rifleman_WDL: MEU_M52A_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1168,7 +1168,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Rifleman: 1MEU_BASE_M52A_Armor
+	 class MEU_M52A_NCO_Rifleman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1267,7 +1267,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_DES: MEU_CENT_NCO_Rifleman
+    class MEU_M52A_NCO_Rifleman_DES: MEU_M52A_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1285,7 +1285,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_CEA: MEU_CENT_NCO_Rifleman
+    class MEU_M52A_NCO_Rifleman_CEA: MEU_M52A_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1303,7 +1303,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_SNO: MEU_CENT_NCO_Rifleman
+    class MEU_M52A_NCO_Rifleman_SNO: MEU_M52A_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1321,7 +1321,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Rifleman_URB: MEU_CENT_NCO_Rifleman
+	class MEU_M52A_NCO_Rifleman_URB: MEU_M52A_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1339,7 +1339,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Rifleman_WDL: MEU_CENT_NCO_Rifleman
+    class MEU_M52A_NCO_Rifleman_WDL: MEU_M52A_NCO_Rifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1359,7 +1359,7 @@ class CfgWeapons
 	
     // Grenadier
 	
-    class MEU_CENT_Grenadier: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Grenadier: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1460,7 +1460,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_DES: MEU_CENT_Grenadier
+    class MEU_M52A_Grenadier_DES: MEU_M52A_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1478,7 +1478,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_CEA: MEU_CENT_Grenadier
+    class MEU_M52A_Grenadier_CEA: MEU_M52A_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1496,7 +1496,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_SNO: MEU_CENT_Grenadier
+    class MEU_M52A_Grenadier_SNO: MEU_M52A_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1514,7 +1514,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_URB: MEU_CENT_Grenadier
+    class MEU_M52A_Grenadier_URB: MEU_M52A_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1532,7 +1532,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Grenadier_WDL: MEU_CENT_Grenadier
+    class MEU_M52A_Grenadier_WDL: MEU_M52A_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1550,7 +1550,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Grenadier: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Grenadier: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1649,7 +1649,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_DES: MEU_CENT_NCO_Grenadier
+    class MEU_M52A_NCO_Grenadier_DES: MEU_M52A_NCO_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1667,7 +1667,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_CEA: MEU_CENT_NCO_Grenadier
+    class MEU_M52A_NCO_Grenadier_CEA: MEU_M52A_NCO_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1685,7 +1685,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_SNO: MEU_CENT_NCO_Grenadier
+    class MEU_M52A_NCO_Grenadier_SNO: MEU_M52A_NCO_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1703,7 +1703,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_URB: MEU_CENT_NCO_Grenadier
+    class MEU_M52A_NCO_Grenadier_URB: MEU_M52A_NCO_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1721,7 +1721,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Grenadier_WDL: MEU_CENT_NCO_Grenadier
+    class MEU_M52A_NCO_Grenadier_WDL: MEU_M52A_NCO_Grenadier
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1741,7 +1741,7 @@ class CfgWeapons
 	
 	// AutoRifleman
 	
-    class MEU_CENT_AutoRifleman: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_AutoRifleman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1840,7 +1840,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_AutoRifleman_DES: MEU_CENT_AutoRifleman
+    class MEU_M52A_AutoRifleman_DES: MEU_M52A_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1858,7 +1858,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_AutoRifleman_CEA: MEU_CENT_AutoRifleman
+    class MEU_M52A_AutoRifleman_CEA: MEU_M52A_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1876,7 +1876,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_AutoRifleman_SNO: MEU_CENT_AutoRifleman
+    class MEU_M52A_AutoRifleman_SNO: MEU_M52A_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1894,7 +1894,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_AutoRifleman_URB: MEU_CENT_AutoRifleman
+	class MEU_M52A_AutoRifleman_URB: MEU_M52A_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1912,7 +1912,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_AutoRifleman_WDL: MEU_CENT_AutoRifleman
+    class MEU_M52A_AutoRifleman_WDL: MEU_M52A_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -1930,7 +1930,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_AutoRifleman: 1MEU_BASE_M52A_Armor
+	 class MEU_M52A_NCO_AutoRifleman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2027,7 +2027,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_AutoRifleman_DES: MEU_CENT_NCO_AutoRifleman
+    class MEU_M52A_NCO_AutoRifleman_DES: MEU_M52A_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2045,7 +2045,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_AutoRifleman_CEA: MEU_CENT_NCO_AutoRifleman
+    class MEU_M52A_NCO_AutoRifleman_CEA: MEU_M52A_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2063,7 +2063,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_AutoRifleman_SNO: MEU_CENT_NCO_AutoRifleman
+    class MEU_M52A_NCO_AutoRifleman_SNO: MEU_M52A_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2081,7 +2081,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_AutoRifleman_URB: MEU_CENT_NCO_AutoRifleman
+	class MEU_M52A_NCO_AutoRifleman_URB: MEU_M52A_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2099,7 +2099,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_AutoRifleman_WDL: MEU_CENT_NCO_AutoRifleman
+    class MEU_M52A_NCO_AutoRifleman_WDL: MEU_M52A_NCO_AutoRifleman
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2119,7 +2119,7 @@ class CfgWeapons
 	
 	//Marksman
 	
-	class MEU_CENT_Marksman: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Marksman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2174,7 +2174,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2229,7 +2229,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2284,7 +2284,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2339,7 +2339,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Marksman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Marksman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2394,7 +2394,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Marksman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Marksman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2449,7 +2449,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Marksman: 1MEU_BASE_M52A_Armor
+	 class MEU_M52A_NCO_Marksman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2502,7 +2502,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2555,7 +2555,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2608,7 +2608,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2661,7 +2661,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Marksman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Marksman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2714,7 +2714,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Marksman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Marksman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2769,7 +2769,7 @@ class CfgWeapons
 	
     // Breacher
 	
-    class MEU_CENT_Breacher: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2821,7 +2821,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2873,7 +2873,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2925,7 +2925,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -2977,7 +2977,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Breacher_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Breacher_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3029,7 +3029,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Breacher_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Breacher_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3081,7 +3081,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Breacher: 1MEU_BASE_M52A_Armor
+	 class MEU_M52A_NCO_Breacher: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3132,7 +3132,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3183,7 +3183,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3234,7 +3234,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3285,7 +3285,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Breacher_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Breacher_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3336,7 +3336,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Breacher_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Breacher_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3389,7 +3389,7 @@ class CfgWeapons
 	
 	//Sniper
 	
-	class MEU_CENT_Sniper: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Sniper: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3443,7 +3443,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3497,7 +3497,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3551,7 +3551,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3605,7 +3605,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Sniper_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Sniper_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3659,7 +3659,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Sniper_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Sniper_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3713,7 +3713,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Sniper: 1MEU_BASE_M52A_Armor
+	 class MEU_M52A_NCO_Sniper: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3766,7 +3766,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3819,7 +3819,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3872,7 +3872,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3925,7 +3925,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Sniper_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Sniper_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -3978,7 +3978,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Sniper_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Sniper_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4033,7 +4033,7 @@ class CfgWeapons
 	
 	// Corpsman
 	
-    class MEU_CENT_Corpsman: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4085,7 +4085,7 @@ class CfgWeapons
 		};
 	};
 		
-    class MEU_CENT_Corpsman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4137,7 +4137,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4189,7 +4189,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4241,7 +4241,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_Corpsman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_Corpsman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4293,7 +4293,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_Corpsman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_Corpsman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4345,7 +4345,7 @@ class CfgWeapons
 		};
 	};
 	
-	 class MEU_CENT_NCO_Corpsman: 1MEU_BASE_M52A_Armor
+	 class MEU_M52A_NCO_Corpsman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4396,7 +4396,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4447,7 +4447,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4498,7 +4498,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4549,7 +4549,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_Corpsman_URB: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_Corpsman_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4600,7 +4600,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_Corpsman_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_Corpsman_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4653,7 +4653,7 @@ class CfgWeapons
 	
 	// RTO
 	
-    class MEU_CENT_RTO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4706,7 +4706,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4759,7 +4759,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4812,7 +4812,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4865,7 +4865,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_URB: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4918,7 +4918,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_RTO_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_RTO_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -4971,7 +4971,7 @@ class CfgWeapons
 		};
 	};
 	
-	class MEU_CENT_NCO_RTO: 1MEU_BASE_M52A_Armor
+	class MEU_M52A_NCO_RTO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5023,7 +5023,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_DES: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_DES: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5075,7 +5075,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_CEA: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_CEA: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5127,7 +5127,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_SNO: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_SNO: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5179,7 +5179,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_URB: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_URB: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -5231,7 +5231,7 @@ class CfgWeapons
 		};
 	};
 	
-    class MEU_CENT_NCO_RTO_WDL: 1MEU_BASE_M52A_Armor
+    class MEU_M52A_NCO_RTO_WDL: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -9197,7 +9197,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform";
+        displayName = "[1stMEU] M52Aurion Combat Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         class ItemInfo: UniformItem
         {
