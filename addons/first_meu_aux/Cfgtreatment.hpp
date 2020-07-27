@@ -31,7 +31,7 @@ class ACE_Medical_Treatment
             hrIncreaseLow[] = {-200,-200};
             hrIncreaseNormal[] = {-200,-200};
             hrIncreaseHigh[] = {-200,-200};
-            timeInSystem = 600;
+            timeInSystem = 60;
             timeTillMaxEffect = 1;
             maxDose = .1;
             incompatibleMedication[] = {};
