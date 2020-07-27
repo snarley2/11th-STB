@@ -571,39 +571,8 @@ class CfgWeapons
 			};
 		};
 	};
-	
-// Pegasus
 
-    class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
-    {
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		author = "1st MEU Mark";
-        weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] Siffys Helmet";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
-    };
-    class Siffy_Helmet_dp : OPTRE_UNSC_VX16_Helmet_MaskS_dp
-    {
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
-    };
-    class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
-    {
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
-    };
-	
-// Pegasus end
+//Base Armor End
 // centurion gear start   
 // centurion headgear
     
@@ -8229,6 +8198,35 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
     };
 	
+    class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
+    {
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+        weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Siffys Helmet";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+    };
+    class Siffy_Helmet_dp : OPTRE_UNSC_VX16_Helmet_MaskS_dp
+    {
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+    };
+    class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
+    {
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+    };
+	
 // Pilot helmet end
 // BDU Start
 	
@@ -8333,6 +8331,25 @@ class CfgWeapons
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Woodland_Slim";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Pegasus_Pilot_Uniform : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Pegasus Pilot Uniform";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+		ACE_GForceCoef = 0.1;
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Pegasus_Slim";
 			containerClass = "Supply100";
 			uniformModel = "-";
 			uniformType = "Neopren";
