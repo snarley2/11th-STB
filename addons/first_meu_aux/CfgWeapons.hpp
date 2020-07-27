@@ -8256,7 +8256,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] M52Aurion Combat Uniform";
+        displayName = "[1stMEU] Centurion Combat Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         class ItemInfo: UniformItem
         {
