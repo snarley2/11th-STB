@@ -358,7 +358,7 @@ class OPTRE_Ammo_Supplypod_50calMG: OPTRE_Ammo_SupplyPod_Empty
     displayname = "[UNSC] Supply Pod (50cal LMG)";
     class TransportMagazines
     {
-        mag_xx(OPTRE_100Rnd_127x99_M247HMG, 20);
+        mag_xx(OPTRE_100Rnd_127x99_M247HMG, 10);
     };
 };
 // Cricket Launcher
@@ -579,6 +579,11 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 					name = "UAV Supply Pod";
 					value = "OPTRE_Ammo_SupplyPod_UAVResupply";
 				};
+                class n32
+                {
+                    name = "50cal LMG Pod"
+                    value = "OPTRE_Ammo_Supplypod_50calMG"
+                };
 			};
 		};
 	};
