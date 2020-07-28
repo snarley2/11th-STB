@@ -249,16 +249,22 @@ class CfgVehicles
 		{
 			mag_xx(OPTRE_M9_Frag, 3);
             mag_xx(ACE_M84, 2);
-            mag_xx(OPTRE_M2_Smoke_Orange, 1);
+            mag_xx(OPTRE_M2_Smoke_Orange, 3);
             mag_xx(SmokeShell, 5);
-            mag_xx(C7_Remote_Mag, 1);
+            mag_xx(C7_Remote_Mag, 2);
             mag_xx(OPTRE_200Rnd_95x40_Box_HPSAPT, 1);
             mag_xx(OPTRE_1Rnd_50x137_HEAT, 1);
             mag_xx(OPTRE_16Rnd_127x40_Mag_NARQT, 1);
             mag_xx(OPTRE_16Rnd_127x40_Mag_JHPT, 2);
-            mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+            mag_xx(OPTRE_60Rnd_5x23mm_Mag_JHPT, 5);
             mag_xx(OPTRE_60Rnd_762x51_Mag_JHPT, 5);
+            mag_XX(OPTRE_15Rnd_762x51_Mag_JHPT, 5);
             mag_xx(3Rnd_HE_Grenade_shell, 2);
+            mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 4);
+            mag_xx(rhs_charge_tnt_x2_mag, 2);
+            mag_xx(OPTRE_M41_Twin_HEAT, 1);
+            mag_xx(OPTRE_100Rnd_95x40_Box_JHPT, 2);
+            mag_xx(OPTRE_100Rnd_127x99_M247HMG, 1);
             delete _xx_OPTRE_ELB47_Strobe;
             delete _xx_OPTRE_M8_Flare;
             delete _xx_OPTRE_M2_Smoke_Purple;
@@ -276,6 +282,7 @@ class CfgVehicles
             item_xx(ACE_morphine, 1);
             item_xx(ACE_Banana, 5);
             item_xx(ACE_splint, 2);
+            item_xx(MEU_compat_Ibuprofen, 4);
             delete _xx_OPTRE_Biofoam;
         };
         class userActions
