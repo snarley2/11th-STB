@@ -352,6 +352,15 @@ class OPTRE_Ammo_SupplyPod_SR99DXSniper: OPTRE_Ammo_SupplyPod_Empty
         item_xx(optre_srs99d_suppressor, 1);
 	};
 };
+//Oneills monster
+class OPTRE_Ammo_Supplypod_50calMG: OPTRE_Ammo_SupplyPod_Empty
+{
+    displayname = "[UNSC] Supply Pod (50cal LMG)";
+    class TransportMagazines
+    {
+        mag_xx(OPTRE_100Rnd_127x99_M247HMG, 20);
+    };
+};
 // Cricket Launcher
 class OPTRE_Ammo_SupplyPod_CricketLauncher: OPTRE_Ammo_SupplyPod_Empty
 {
