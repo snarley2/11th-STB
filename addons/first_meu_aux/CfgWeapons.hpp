@@ -541,19 +541,19 @@ class CfgWeapons
 				class Chest
 				{
 					hitpointName = "HitChest";
-					armor = 45;
+					armor = 40;
 					passThrough = 0.1;
 				};
 				class Diaphragm
 				{
 					hitpointName = "HitDiaphragm";
-					armor = 45;
+					armor = 40;
 					passThrough = 0.1;
 				};
 				class Abdomen
 				{
 					hitpointName = "HitAbdomen";
-					armor = 45;
+					armor = 40;
 					passThrough = 0.1;
 				};
 				class Body
