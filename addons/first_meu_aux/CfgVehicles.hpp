@@ -42,6 +42,10 @@ class CfgVehicles
     class Item_Base_F;
     class ace_medical_treatment;
     class ACE_morphineItem;
+    class OPTRE_UNSC_hornet_CAP;
+    class OPTRE_UNSC_hornet_CAS;
+    class OPTRE_UNSC_hornet;
+    class RampOpen;
     
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
@@ -122,18 +126,592 @@ class CfgVehicles
     class OPTRE_Hornet_base: Helicopter_Base_H
     {
         tf_range=30000;
+        class useractions
+        {
+            class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburnerss600Engage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners600Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+        };
     };
     
 	class VES_UH144_A: OPTRE_UNSC_falcon
     {
         tf_range=30000;
+        class useractions
+        {
+            class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburnerss600Engage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners600Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+        };
     };
-    
+    //lol hornet memes
+    class VES_AV14_AIM : OPTRE_UNSC_hornet_CAP
+    {
+        tf_range=30000;
+        class useractions
+        {
+            class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburnerss600Engage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners600Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+        };
+    };
+    class VES_AV14_AGM : OPTRE_UNSC_hornet_CAS
+    {
+        tf_range=30000;
+        class useractions
+        {
+            class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburnerss600Engage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners600Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+        };
+    };
+    class VES_AV14_Rockets : OPTRE_UNSC_hornet
+    {
+        tf_range=30000;
+        class useractions
+        {
+            class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburnerss600Engage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners600Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+        };
+    };
+    class VES_AV14 : OPTRE_UNSC_hornet
+    {
+        tf_range=30000;
+        class useractions
+        {
+            class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburnerss600Engage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners600Disengage
+			{
+				animPeriod = 5;
+				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+        };
+    };
+    //no more hornet memes
 	class VES_UH144: OPTRE_UNSC_falcon_unarmed
     {
         tf_range=30000;
     };
-    
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
     {
         tf_range=30000;
@@ -258,7 +836,7 @@ class CfgVehicles
             mag_xx(OPTRE_16Rnd_127x40_Mag_JHPT, 2);
             mag_xx(OPTRE_60Rnd_5x23mm_Mag_JHPT, 5);
             mag_xx(OPTRE_60Rnd_762x51_Mag_JHPT, 5);
-            mag_XX(OPTRE_15Rnd_762x51_Mag_JHPT, 5);
+            mag_xx(OPTRE_15Rnd_762x51_Mag_JHPT, 5);
             mag_xx(3Rnd_HE_Grenade_shell, 2);
             mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 4);
             mag_xx(rhs_charge_tnt_x2_mag, 2);
