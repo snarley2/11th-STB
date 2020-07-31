@@ -45,7 +45,7 @@ class CfgVehicles
     class OPTRE_UNSC_hornet_CAP;
     class OPTRE_UNSC_hornet_CAS;
     class OPTRE_UNSC_hornet;
-    class RampOpen;
+    class B_parachute;
     
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
@@ -980,6 +980,17 @@ class CfgVehicles
 		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
+    };
+    class MEU_Parachute : B_parachute
+    {
+        author = "1st MEU Mark";
+        displayName = "[1stMEU] Parachute";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 70000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
     };
 	
 	//End Backpacks
