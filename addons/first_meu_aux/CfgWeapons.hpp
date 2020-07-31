@@ -541,19 +541,19 @@ class CfgWeapons
 				class Chest
 				{
 					hitpointName = "HitChest";
-					armor = 45;
+					armor = 40;
 					passThrough = 0.1;
 				};
 				class Diaphragm
 				{
 					hitpointName = "HitDiaphragm";
-					armor = 45;
+					armor = 40;
 					passThrough = 0.1;
 				};
 				class Abdomen
 				{
 					hitpointName = "HitAbdomen";
-					armor = 45;
+					armor = 40;
 					passThrough = 0.1;
 				};
 				class Body
@@ -571,41 +571,10 @@ class CfgWeapons
 			};
 		};
 	};
-	
-// Pegasus
 
-    class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
-    {
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		author = "1st MEU Mark";
-        weaponPoolAvailable = 1;
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
-		ace_hearing_protection = 5.0;
-		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] Siffys Helmet";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
-    };
-    class Siffy_Helmet_dp : OPTRE_UNSC_VX16_Helmet_MaskS_dp
-    {
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
-    };
-    class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
-    {
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
-    };
-	
-// Pegasus end
-// centurion gear start   
-// centurion headgear
+// Base Armor End
+// Centurion Gear Start   
+// Centurion Headgear
     
     class first_plt_Beret: LM_OPCAN_Beret_CGC
 	{
@@ -1304,7 +1273,7 @@ class CfgWeapons
 	
 // end CH252 headgear start vest
 
-//M52A Armor
+// M52A Armor
 
 // Rifleman
 	
@@ -1839,7 +1808,7 @@ class CfgWeapons
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
 			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_SNO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
@@ -2636,8 +2605,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
@@ -3603,7 +3572,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_M_MAR_CO",
 			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
@@ -3700,7 +3669,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_DES_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3718,7 +3687,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3736,7 +3705,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3754,7 +3723,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_URB_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3772,7 +3741,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3827,7 +3796,7 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_MAR_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3885,7 +3854,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_DES_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3903,7 +3872,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_CEA_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3921,7 +3890,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_SN_COO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_SNO_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3939,7 +3908,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_URB_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -3957,7 +3926,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_M_WDL_CO",
             "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
@@ -4016,8 +3985,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
             {
                 "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-                "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-                "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+                "V_FZ_Armor\Data\Vests\V_M52_R_MAR_CO",
+                "V_FZ_Armor\Data\Vests\V_M52_L2_MAR_CO",
                 "optre_unsc_units\army\data\ghillie_woodland_co",
                 "optre_unsc_units\army\data\odst_armor_co"
             };
@@ -4076,8 +4045,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4094,8 +4063,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4112,8 +4081,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4130,8 +4099,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4148,8 +4117,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4204,8 +4173,8 @@ class CfgWeapons
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_MAR_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_MAR_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4263,8 +4232,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_DES_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_DES_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_DES_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4281,8 +4250,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_CEA_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_CEA_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4299,8 +4268,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_SNO_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_SNO_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4317,8 +4286,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_URB_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_URB_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -4335,8 +4304,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
-            "V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_R_WDL_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_L2_WDL_CO",
             "optre_unsc_units\army\data\ghillie_woodland_co",
             "optre_unsc_units\army\data\odst_armor_co"
         };
@@ -8229,6 +8198,35 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
     };
 	
+    class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
+    {
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+        weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[1stMEU] Siffys Helmet";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+    };
+    class Siffy_Helmet_dp : OPTRE_UNSC_VX16_Helmet_MaskS_dp
+    {
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+    };
+    class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
+    {
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+    };
+	
 // Pilot helmet end
 // BDU Start
 	
@@ -8333,6 +8331,25 @@ class CfgWeapons
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Woodland_Slim";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Pegasus_Pilot_Uniform : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Pegasus Pilot Uniform";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+		ACE_GForceCoef = 0.1;
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Pegasus_Slim";
 			containerClass = "Supply100";
 			uniformModel = "-";
 			uniformType = "Neopren";

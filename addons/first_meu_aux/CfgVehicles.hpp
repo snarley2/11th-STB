@@ -1236,6 +1236,13 @@ class CfgVehicles
 		uniformclass = "Centurion_BDU_Woodland";
 	};
 	
+	class BDU_V_Pegasus_Slim: 1stMEU_BDU
+	{
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO"};
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		uniformclass = "Centurion_BDU_Urban_Evolved";
+	};
+	
 	//End Uniforms
 	//Start AI Compositions
 	
