@@ -686,7 +686,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] 2nd PLT M52A Heavy Helmet";
+		displayName = "[1stMEU] 2nd PLT CH252 Heavy Helmet";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 	
