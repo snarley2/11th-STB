@@ -77,13 +77,13 @@ class CfgWeapons
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] CH252D Helmet";
+		picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 		class ItemInfo: ItemInfo
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet";
-			picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
 			hiddenSelections[] = {"camo","camo2"};
 			hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 			hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
@@ -182,7 +182,7 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		picture = "\OPTRE_UNSC_Units\Army\icons\ODST_Vest";
 		hiddenSelectionsTextures[] = 
 		{
 			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
@@ -338,6 +338,7 @@ class CfgWeapons
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] CH252 Helmet Base";
+		picture = "\OPTRE_UNSC_Units\Army\icons\army_helmet_des";
 		hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
@@ -345,7 +346,6 @@ class CfgWeapons
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\helmet";
-			picture = "\OPTRE_UNSC_Units\Army\icons\army_helmet_DES";
 			hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 			class HitpointsProtectionInfo
@@ -443,7 +443,7 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
+		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_des";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
@@ -604,7 +604,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] M52A Heavy Helmet";
+		displayName = "[1stMEU] CH252 Heavy Helmet";
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		class ItemInfo: ItemInfo
 		{
@@ -4505,7 +4505,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"APO_Knife"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -4610,7 +4609,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"APO_Knife"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -4720,7 +4718,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -4823,7 +4820,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -4936,7 +4932,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -5370,7 +5365,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -5796,7 +5790,6 @@ class CfgWeapons
 			"APO_SMG",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -6222,7 +6215,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -6643,7 +6635,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -7069,7 +7060,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -7487,7 +7477,6 @@ class CfgWeapons
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -7599,7 +7588,6 @@ class CfgWeapons
 			"APO_Knife",
 			"CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -7710,7 +7698,6 @@ class CfgWeapons
             "APO_Sniper",
             "CustomKit_Scorch"
 		};
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl.paa";
 		hiddenSelectionsMaterials[] = 
 		{
 			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
@@ -8337,7 +8324,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-        displayName = "[1stMEU] Basic Pilot Helmet";
+        displayName = "[1stMEU] Pilot Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
@@ -8366,7 +8353,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] Siffys Helmet";
+		displayName = "[1stMEU] Pilot Helmet (Siffy)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
