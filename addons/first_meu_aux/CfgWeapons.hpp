@@ -740,29 +740,65 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\H\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
     class MEU_Mar_Helm_MAR_dp : MEU_Mar_Helm_MAR
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_DES_dp : MEU_Mar_Helm_DES
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_CEA_dp : MEU_Mar_Helm_CEA
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_SNO_dp : MEU_Mar_Helm_SNO
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_URB_dp : MEU_Mar_Helm_URB
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_WDL_dp : MEU_Mar_Helm_WDL
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_MAR2_dp : MEU_Mar_Helm_MAR2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_DES2_dp : MEU_Mar_Helm_DES2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_CEA2_dp : MEU_Mar_Helm_CEA2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_SNO2_dp : MEU_Mar_Helm_SNO2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_URB2_dp : MEU_Mar_Helm_URB2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_WDL2_dp : MEU_Mar_Helm_WDL2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
 	
 // CH252 light helmets
 
@@ -909,29 +945,65 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\L\V_CH252_WDL_L_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
     class MEU_Mar_Helm_base_L_dp : MEU_Mar_Helm_base_L
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_DES_L_dp : MEU_Mar_Helm_DES_L
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_CEA_L_dp : MEU_Mar_Helm_CEA_L
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_SNO_L_dp : MEU_Mar_Helm_SNO_L
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_URB_L_dp : MEU_Mar_Helm_URB_L
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_Helm_WDL_L_dp : MEU_Mar_Helm_WDL_L
-        {scope = 1;};
-    class MEU_Mar_Helm_base2_L2_dp : MEU_Mar_Helm_base_L2
-        {scope = 1;};
-    class MEU_Mar_Helm_DES2_L2_dp : MEU_Mar_Helm_DES_L2
-        {scope = 1;};
-    class MEU_Mar_Helm_CEA2_L2_dp : MEU_Mar_Helm_CEA_L2
-        {scope = 1;};
-    class MEU_Mar_Helm_SNO2_L2_dp : MEU_Mar_Helm_SNO_L2
-        {scope = 1;};
-    class MEU_Mar_Helm_URB2_L2_dp : MEU_Mar_Helm_URB_L2
-        {scope = 1;};
-    class MEU_Mar_Helm_WDL2_L2_dp : MEU_Mar_Helm_WDL_L2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
+    class MEU_Mar_Helm_base_L2_dp : MEU_Mar_Helm_base_L2
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
+    class MEU_Mar_Helm_DES_L2_dp : MEU_Mar_Helm_DES_L2
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
+    class MEU_Mar_Helm_CEA_L2_dp : MEU_Mar_Helm_CEA_L2
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
+    class MEU_Mar_Helm_SNO_L2_dp : MEU_Mar_Helm_SNO_L2
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
+    class MEU_Mar_Helm_URB_L2_dp : MEU_Mar_Helm_URB_L2
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
+    class MEU_Mar_Helm_WDL_L2_dp : MEU_Mar_Helm_WDL_L2
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
 	
 // CH252 MOS Helmets
 
@@ -1077,30 +1149,66 @@ class CfgWeapons
 		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
-     class MEU_Mar_MOS_Helm_BASE_dp : MEU_Mar_MOS_Helm_BASE
-        {scope = 1;};
+    class MEU_Mar_MOS_Helm_BASE_dp : MEU_Mar_MOS_Helm_BASE
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_DES_dp : MEU_Mar_MOS_Helm_DES
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_CEA_dp : MEU_Mar_MOS_Helm_CEA
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_SNO_dp : MEU_Mar_MOS_Helm_SNO
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_URB_dp : MEU_Mar_MOS_Helm_URB
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_WDL_dp : MEU_Mar_MOS_Helm_WDL
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_BASE2_dp : MEU_Mar_MOS_Helm_BASE2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_DES2_dp : MEU_Mar_MOS_Helm_DES2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_CEA2_dp : MEU_Mar_MOS_Helm_CEA2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_SNO2_dp : MEU_Mar_MOS_Helm_SNO2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_URB2_dp : MEU_Mar_MOS_Helm_URB2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_Mar_MOS_Helm_WDL2_dp : MEU_Mar_MOS_Helm_WDL2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
 	
 // end Medical Helmets start RTO Helmets
 
@@ -1247,29 +1355,65 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
     class MEU_RTO_Helm_base_dp : MEU_rto_Helm_base
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_DES_dp : MEU_rto_Helm_DES
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_CEA_dp : MEU_rto_Helm_CEA
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_SNO_dp : MEU_rto_Helm_SNO
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_URB_dp : MEU_rto_Helm_URB
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_WDL_dp : MEU_rto_Helm_WDL
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_base2_dp : MEU_rto_Helm_base2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_DES2_dp : MEU_rto_Helm_DES2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_CEA2_dp : MEU_rto_Helm_CEA2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_SNO2_dp : MEU_rto_Helm_SNO2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_URB2_dp : MEU_rto_Helm_URB2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
     class MEU_RTO_Helm_WDL2_dp : MEU_rto_Helm_WDL2
-        {scope = 1;};
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
 	
 // end CH252 headgear start vest
 
@@ -7633,7 +7777,8 @@ class CfgWeapons
     
     class Praetor_Helmet_Black_dp : LM_OPCAN_CH252D_H3_dp
     {
-        
+        scopeArsenal = 0;
+        scope = 0;
     };
     class Praetor_Helmet_Black_31_dp : LM_OPCAN_CH252D_H3_dp
     {
@@ -7689,7 +7834,8 @@ class CfgWeapons
     };
     class Praetor_Helmet_Yellow_dp : LM_OPCAN_CH252D_H3_Yellow_dp
     {
-        
+        scopeArsenal = 0;
+        scope = 0;
     };
     class Praetor_Helmet_Yellow_31_dp : LM_OPCAN_CH252D_H3_Yellow_dp
     {
@@ -7711,7 +7857,8 @@ class CfgWeapons
     };
     class Praetor_Helmet_Yellow_broken : LM_OPCAN_CH252D_H3_Yellow_broken
     {
-        
+        scopeArsenal = 0;
+        scope = 0;
     };
     class Praetor_Helmet_Yellow_31_broken : LM_OPCAN_CH252D_H3_Yellow_broken
     {
@@ -7733,7 +7880,8 @@ class CfgWeapons
     };
     class Praetor_Helmet_Blue_dp : LM_OPCAN_CH252D_H3_Blue_dp
     {
-        
+        scopeArsenal = 0;
+        scope = 0;
     };
     class Praetor_Helmet_Blue_31_dp : LM_OPCAN_CH252D_H3_Blue_dp
     {
@@ -7755,7 +7903,8 @@ class CfgWeapons
     };
     class Praetor_Helmet_Blue_broken : LM_OPCAN_CH252D_H3_Blue_broken
     {
-        
+        scopeArsenal = 0;
+        scope = 0;
     };
     class Praetor_Helmet_Blue_31_broken : LM_OPCAN_CH252D_H3_Blue_broken
     {
@@ -7777,7 +7926,8 @@ class CfgWeapons
     };
     class Praetor_Helmet_Green_dp : LM_OPCAN_CH252D_H3_Green_dp
     {
-        
+        scopeArsenal = 0;
+        scope = 0;
     };
     class Praetor_Helmet_Green_31_dp : LM_OPCAN_CH252D_H3_Green_dp
     {
@@ -7799,7 +7949,8 @@ class CfgWeapons
     };
     class Praetor_Helmet_Green_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
-        
+        scopeArsenal = 0;
+        scope = 0;
     };
     class Praetor_Helmet_Green_31_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
@@ -7890,6 +8041,10 @@ class CfgWeapons
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa"};
+    };
+    class Praetor_Sound_Protec_dp : Praetor_Helmet_Black_dp
+    {
+        
     };
     class Praetor_Helmet_Ride: 1stMEU_Base_CH252D_Helmet
 	{
