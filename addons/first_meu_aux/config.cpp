@@ -44,6 +44,43 @@ class cfgPatches
             "ace_common",
         };
     };
+    class MEU_Vehicles_Elephant
+	{
+		units[] = 
+        {
+            "1stMEU_M313_Elephant",
+            "Vulkan_Repair_APC",
+            "Vulkan_Repair_APC_P",
+        };
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
+		magazines[] = {};
+		ammo[] = {};
+	};
+};
+
+class CfgFactionClasses
+{
+	class MEU_UNSC
+	{
+		displayName = "MEU-NSCDF";
+		priority = 1;
+		side = 1;
+		primaryLanguage = "EN";
+		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
+	};
+};
+
+class CfgVehicleClasses
+{
+	class MEU_UNSC_Armored_class
+	{
+		displayName = "MEU Armored";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+	};
 };
 
 class CfgFunctions
