@@ -1278,11 +1278,7 @@ class CfgVehicles
 //  End Uniforms
 //  Ground Vehicles Start
 
-<<<<<<< HEAD
-	class 1stMEU_Elephant: OPTRE_M313_Base
-=======
 	class 1stMEU_M313_Elephant: OPTRE_M313_UNSC
->>>>>>> master
 	{
         scope = 2;
 		scopeCurator = 2;
