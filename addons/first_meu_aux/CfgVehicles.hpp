@@ -1263,9 +1263,8 @@ class CfgVehicles
 //  End Uniforms
 //  Ground Vehicles Start
 
-	class 1stMEU_M313_Elephant: OPTRE_M313_Base
+	class 1stMEU_M313_Elephant: OPTRE_M313_UNSC
 	{
-        dlc = "MEU Custom shop";
         scope = 2;
 		displayName = "[1stMEU] M313 HRV Elephant";
 		enginePower = 4000;
