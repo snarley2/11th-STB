@@ -238,7 +238,7 @@ class CfgVehicles
 				priority = 10;
 				radius = 100000;
 				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast";
 				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
 				userActionID = 57;
 			};
@@ -253,7 +253,7 @@ class CfgVehicles
 				priority = 10;
 				radius = 100000;
 				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast";
 				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
 				userActionID = 58;
 			};
@@ -268,7 +268,7 @@ class CfgVehicles
 				priority = 10;
 				radius = 100000;
 				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage";
 				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
 				userActionID = 52;
 			};
@@ -283,7 +283,7 @@ class CfgVehicles
 				priority = 10;
 				radius = 100000;
 				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage";
 				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
 				userActionID = 53;
 			};
@@ -1265,6 +1265,8 @@ class CfgVehicles
 
 	class 1stMEU_M313_Elephant: OPTRE_M313_Base
 	{
+        dlc = "MEU Custom shop";
+        scope = 2;
 		displayName = "[1stMEU] M313 HRV Elephant";
 		enginePower = 4000;
 		maxOmega = 400;
