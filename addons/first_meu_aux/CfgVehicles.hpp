@@ -45,6 +45,7 @@ class CfgVehicles
     class OPTRE_UNSC_hornet_CAP;
     class OPTRE_UNSC_hornet_CAS;
     class OPTRE_UNSC_hornet;
+	class OPTRE_M313_Base;
     class B_parachute;
     
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
@@ -318,7 +319,9 @@ class CfgVehicles
 			};
         };
     };
-    //lol hornet memes
+	
+// Hornet
+
     class VES_AV14_AIM : OPTRE_UNSC_hornet_CAP
     {
         tf_range=30000;
@@ -707,7 +710,10 @@ class CfgVehicles
 			};
         };
     };
-    //no more hornet memes
+	
+//  Hornet End
+//  Falcon Start
+
 	class VES_UH144: OPTRE_UNSC_falcon_unarmed
     {
         tf_range=30000;
@@ -891,7 +897,7 @@ class CfgVehicles
         armor = 1000;
     };
     
-	//Start Backpacks
+//  Start Backpacks
 	
     class Praetor_Jumpack: OPTRE_S12_SOLA_Jetpack	
     {
@@ -993,8 +999,8 @@ class CfgVehicles
         tf_hasLRradio = 1;
     };
 	
-	//End Backpacks
-	//Start Uniforms
+//  End Backpacks
+//  Start Uniforms
 	
 	class OPTRE_UNSC_Army_Soldier_WDL;
 	
@@ -1254,8 +1260,30 @@ class CfgVehicles
 		uniformclass = "Centurion_BDU_Urban_Evolved";
 	};
 	
-	//End Uniforms
-	//Start AI Compositions
+//  End Uniforms
+//  Ground Vehicles Start
+
+	class 1stMEU_M313_Elephant: OPTRE_M313_Base
+	{
+		displayName = "[1stMEU] M313 HRV Elephant";
+		enginePower = 4000;
+		maxOmega = 400;
+		peakTorque = 10000;
+		torqueCurve[] = {{0,0},{"(3000/4000)","(2650/2850)"},{"(3200/4000)","(2800/2850)"},{"(3400/4000)","(2850/2850)"},{"(3600/4000)","(2800/2850)"},{"(3800/4000)","(2750/2850)"},{"(4000/4000)","(2600/2850)"},{"(4000/4000)","(2350/2850)"}};
+		thrustDelay = 0.01;
+		clutchStrength = 180.0;
+		fuelCapacity = 2000;
+		brakeIdleSpeed = 1.78;
+		latency = 0.1;
+		tankTurnForce = 22550000;
+		idleRpm = 1000;
+		redRpm = 4000;
+		engineLosses = 25;
+		transmissionLosses = 15;
+	};		
+			
+//  Ground Vehicles End
+//  Start AI Compositions
 	
     class OPTRE_Ins_URF_Soldier_Base: OPTRE_UNSC_Soldier_Base
 	{
