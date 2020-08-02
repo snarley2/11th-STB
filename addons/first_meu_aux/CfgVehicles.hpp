@@ -1301,7 +1301,7 @@ class CfgVehicles
 		fuelCapacity = 2000;
 		brakeIdleSpeed = 1.78;
 		latency = 0.1;
-		tankTurnForce = 22550000;
+		tankTurnForce = 4000000;
 		idleRpm = 1000;
 		redRpm = 4000;
 		engineLosses = 25;
