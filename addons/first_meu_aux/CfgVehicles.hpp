@@ -1,5 +1,6 @@
     #define _ARMA_	
 class CBA_Extended_EventHandlers;
+				
 class CfgVehicles
 {
 	#include "CfgSupplyPods.hpp"
@@ -1263,7 +1264,7 @@ class CfgVehicles
 //  End Uniforms
 //  Ground Vehicles Start
 
-	class 1stMEU_M313_Elephant: OPTRE_M313_Base
+	class 1stMEU_Elephant: OPTRE_M313_Base
 	{
 		displayName = "[1stMEU] M313 HRV Elephant";
 		enginePower = 4000;
