@@ -812,12 +812,26 @@ class CfgVehicles
     {
         displayname = "Vulkan Repair APC";
         ace_repair_canRepair = 1; 
+        scope = 2;
+		scopeCurator = 2;
+		accuracy = 1000;
+		faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
     };
         
     class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
     {
         displayname = "Vulkan Repair APC (Pacific)";
-        ace_repair_canRepair = 1; 
+        ace_repair_canRepair = 1;
+        scope = 2;
+		scopeCurator = 2;
+		accuracy = 1000;
+		faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
     };
     class OPTRE_HEV: StaticMGWeapon
 	{
@@ -1266,6 +1280,12 @@ class CfgVehicles
 	class 1stMEU_M313_Elephant: OPTRE_M313_UNSC
 	{
         scope = 2;
+		scopeCurator = 2;
+		accuracy = 1000;
+		faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
 		displayName = "[1stMEU] M313 HRV Elephant";
 		enginePower = 4000;
 		maxOmega = 400;
