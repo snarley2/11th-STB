@@ -142,6 +142,17 @@ class CfgMagazines
 		descriptionShort = "6 Rounds<br>8 Gauge<br>Beanbags";
 	};
 	
+	class OPTRE_12Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Beanbags
+	{
+		dlc	= "SO";
+		author = "Fireteam Zulu";
+		
+		count = 12;
+		mass = 20;
+		displayname = "12Rnd 8 Gauge Beanbags";
+		descriptionShort = "12 Rounds<br>8 Gauge<br>Beanbags";
+	};
+	
 	class ACE_1Rnd_82mm_Mo_HE: 8Rnd_82mm_Mo_shells 
 	{
 		mass = 35;
