@@ -199,13 +199,13 @@ class CfgWeapons
 			"",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
 		};
+        vestType = "Rebreather";
 		class ItemInfo: VestItem 
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply200";
 			mass = 75;
 			modelSides[] = {6};
-			vestType = "Rebreather";
 			hiddenSelections[] = 
 			{
 				"camo",
@@ -460,13 +460,13 @@ class CfgWeapons
 			"",
 			""
 		};
+        vestType = "Rebreather";
 		class ItemInfo: VestItem 
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply250";
 			mass = 75;
 			modelSides[] = {6};
-			vestType = "Rebreather";
 			hiddenSelections[] = 
 			{
 				"camo",
@@ -655,13 +655,13 @@ class CfgWeapons
 			"",
 			""
 		};
+        vestType = "Rebreather";
 		class ItemInfo: VestItem 
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply250";
 			mass = 75;
 			modelSides[] = {6};
-			vestType = "Rebreather";
 			hiddenSelections[] = 
 			{
 				"camo",
