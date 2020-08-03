@@ -21,6 +21,8 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Mortars",
 			"OPTRE_Ammo_SupplyPod_LMG"
 			};
+        magazines[] = {};
+		ammo[] = {};
         requiredVersion = 0.1;
 		requiredAddons[] = 
         {
@@ -55,8 +57,6 @@ class cfgPatches
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
-		magazines[] = {};
-		ammo[] = {};
 	};
 };
 
