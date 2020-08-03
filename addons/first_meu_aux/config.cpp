@@ -64,7 +64,7 @@ class CfgFactionClasses
 {
 	class MEU_UNSC
 	{
-		displayName = "MEU-NSCDF";
+		displayName = "1st MEU BLUFOR";
 		priority = 1;
 		side = 1;
 		primaryLanguage = "EN";
@@ -77,6 +77,14 @@ class CfgVehicleClasses
 	class MEU_UNSC_Armored_class
 	{
 		displayName = "MEU Armored";
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+	};
+    class OPTRE_UNSC_Air_class
+	{
+		displayName = "MEU Air Assets";
+		author = "Article 2 Studios";
 		scope = 2;
 		scopeArsenal = 2;
 		scopeCurator = 2;
