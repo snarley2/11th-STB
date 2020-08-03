@@ -11,7 +11,7 @@ class CfgMagazines
 	class 8Rnd_82mm_Mo_guided;
 	class 8Rnd_82mm_Mo_LG;
 	class 2Rnd_12Gauge_Pellets;
-	class OPTRE_6Rnd_8Gauge_Slugs;
+	class OPTRE_6Rnd_8Gauge_Slug;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -99,58 +99,47 @@ class CfgMagazines
 		lastRoundsTracer = 1;
 	};
 	
-	class OPTRE_6Rnd_8Gauge_Pellets: 2Rnd_12Gauge_Pellets
+	class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
 	{
-		dlc = "SO";
-		author = "Fireteam Zulu";
 		scope = 2;
 		scopeArsenal = 2;
-		
-		ammo = "OPTRE_B_8Gauge_Pellet";
+		ammo = "MEU_B_8Gauge_Pellet";
 		displayname = "6Rnd 8 Gauge Pellets";
 		displayNameShort = "8 Gauge Pellets";
-		descriptionShort = "6 Rounds<br>8 Gauge<br>Pellets";
-		
+		descriptionShort = "6 Rounds<br>8 Gauge test<br>Pellets";
 		// Overwriting of the OPTRE classes back to the inherited...
 		initSpeed = 500;
-		
 		model = "\OPTRE_Weapons\Shotgun\Shell_mag_S";
 		picture = "\a3\weapons_F\data\ui\m_12gauge_ca";
 	};
 	
-	class OPTRE_12Rnd_8Gauge_Pellets: OPTRE_6Rnd_8Gauge_Pellets
+	class OPTRE_12Rnd_8Gauge_Pellet: OPTRE_6Rnd_8Gauge_Pellet
 	{
-		dlc = "SO";
-		author = "Fireteam Zulu";
-		
+        scope = 2;
+		scopeArsenal = 2;
 		count = 12;
 		mass = 20;
 		displayname = "12Rnd 8 Gauge Pellets";
-		descriptionShort = "12 Rounds<br>8 Gauge<br>Pellets";
+		descriptionShort = "12 Rounds<br>8 Gauge test<br>Pellets";
 	};
 	
-	class OPTRE_6Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Slugs
+	class OPTRE_6Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Slug
 	{
-		dlc = "SO";
-		author = "Fireteam Zulu";
 		scope = 2;
 		scopeArsenal = 2;
-		
 		ammo = "OPTRE_B_8Gauge_Beanbags";
 		displayname = "6Rnd 8 Gauge Beanbags";
 		displayNameShort = "8 Gauge Beanbags";
-		descriptionShort = "6 Rounds<br>8 Gauge<br>Beanbags";
+		descriptionShort = "6 Rounds<br>8 Gauge test<br>Beanbags";
 	};
-	
-	class OPTRE_12Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Beanbags
+	class OPTRE_12Rnd_8Gauge_Beanbag: OPTRE_6Rnd_8Gauge_Beanbag
 	{
-		dlc	= "SO";
-		author = "Fireteam Zulu";
-		
+        scope = 2;
+		scopeArsenal = 2;
 		count = 12;
 		mass = 20;
 		displayname = "12Rnd 8 Gauge Beanbags";
-		descriptionShort = "12 Rounds<br>8 Gauge<br>Beanbags";
+		descriptionShort = "12 Rounds<br>8 Gauge test<br>Beanbags";
 	};
 	
 	class ACE_1Rnd_82mm_Mo_HE: 8Rnd_82mm_Mo_shells 
@@ -212,9 +201,9 @@ class CfgAmmo
 		typicalSpeed = 1000;
 	};
 	
-	class OPTRE_B_8Gauge_Pellet: B_12Gauge_Pellets_Submunition
+	class MEU_B_8Gauge_Pellet: B_12Gauge_Pellets_Submunition
 	{
-		submunitionAmmo = "OPTRE_B_8Gauge_Pellet_Submunition";
+		submunitionAmmo = "MEU_B_8Gauge_Pellet_Submunition";
 		thrust = 20;
 		triggerTime = 0.001;
 	};
@@ -225,7 +214,7 @@ class CfgAmmo
 		typicalspeed = 350;
 	};
 
-	class OPTRE_B_8Gauge_Pellet_Submunition: B_12Gauge_Pellets_Submunition_Deploy
+	class MEU_B_8Gauge_Pellet_Submunition: B_12Gauge_Pellets_Submunition_Deploy
 	{
 		hit = 8;
 	};

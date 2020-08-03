@@ -21,8 +21,21 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Mortars",
 			"OPTRE_Ammo_SupplyPod_LMG"
 			};
-        magazines[] = {};
-		ammo[] = {};
+        magazines[] = {
+            "OPTRE_6Rnd_8Gauge_Pellet",
+            "OPTRE_12Rnd_8Gauge_Pellet",
+            "OPTRE_6Rnd_8Gauge_Beanbag",
+            "OPTRE_12Rnd_8Gauge_Beanbag",
+            };
+		ammo[] = {
+            "OPTRE_B_5x23_Caseless_JHP",
+            "OPTRE_B_762x51_JHP",
+            "OPTRE_B_95x40_JHP",
+            "OPTRE_B_8Gauge_Beanbags",
+            "MEU_B_8Gauge_Pellet",
+            "MEU_B_8Gauge_Pellet_Submunition",
+            };
+		weapons[] = {};
         requiredVersion = 0.1;
 		requiredAddons[] = 
         {
@@ -54,7 +67,6 @@ class cfgPatches
             "Vulkan_Repair_APC",
             "Vulkan_Repair_APC_P",
         };
-		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
 	};
