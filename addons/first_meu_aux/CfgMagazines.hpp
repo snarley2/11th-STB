@@ -10,6 +10,8 @@ class CfgMagazines
 	class 8Rnd_82mm_Mo_Flare_white;
 	class 8Rnd_82mm_Mo_guided;
 	class 8Rnd_82mm_Mo_LG;
+	class 2Rnd_12Gauge_Pellets;
+	class OPTRE_6Rnd_8Gauge_Slugs;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -61,7 +63,7 @@ class CfgMagazines
 		ace_isbelt = 1;
 	};
    
-    class OPTRE_100Rnd_127x99_M247HMG: OPTRE_100Rnd_762x51_Box
+    class OPTRE_100Rnd_127x99_M250HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";
         author = "[1stMEU] Oneill";
@@ -79,7 +81,7 @@ class CfgMagazines
 		lastRoundsTracer = 1;
 	};
 	
-	class OPTRE_100Rnd_127x99_HE_M247HMG: OPTRE_100Rnd_762x51_Box
+	class OPTRE_100Rnd_127x99_HE_M250HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";
         author = "[1stMEU] Oneill";
@@ -96,7 +98,50 @@ class CfgMagazines
 		tracersEvery = 2;
 		lastRoundsTracer = 1;
 	};
- 
+	
+	class OPTRE_6Rnd_8Gauge_Pellets: 2Rnd_12Gauge_Pellets
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ammo = "OPTRE_B_8Gauge_Pellet";
+		displayname = "6Rnd 8 Gauge Pellets";
+		displayNameShort = "8 Gauge Pellets";
+		descriptionShort = "6 Rounds<br>8 Gauge<br>Pellets";
+		
+		// Overwriting of the OPTRE classes back to the inherited...
+		initSpeed = 500;
+		
+		model = "\OPTRE_Weapons\Shotgun\Shell_mag_S";
+		picture = "\a3\weapons_F\data\ui\m_12gauge_ca";
+	};
+	
+	class OPTRE_12Rnd_8Gauge_Pellets: OPTRE_6Rnd_8Gauge_Pellets
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		count = 12;
+		mass = 20;
+		displayname = "12Rnd 8 Gauge Pellets";
+		descriptionShort = "12 Rounds<br>8 Gauge<br>Pellets";
+	};
+	
+	class OPTRE_6Rnd_8Gauge_Beanbags: OPTRE_6Rnd_8Gauge_Slugs
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ammo = "OPTRE_B_8Gauge_Beanbags";
+		displayname = "6Rnd 8 Gauge Beanbags";
+		displayNameShort = "8 Gauge Beanbags";
+		descriptionShort = "6 Rounds<br>8 Gauge<br>Beanbags";
+	};
+	
 	class ACE_1Rnd_82mm_Mo_HE: 8Rnd_82mm_Mo_shells 
 	{
 		mass = 35;
@@ -122,3 +167,57 @@ class CfgMagazines
 		mass = 35;
 	};
 };
+	
+// Ammo Reballance
+	
+class CfgAmmo
+{
+	class OPTRE_B_5x23_Caseless;
+	class OPTRE_B_762x51_Ball;
+	class B_12Gauge_Pellets_Submunition;
+	class B_12Gauge_Pellets_Submunition_Deploy;
+	class OPTRE_B_95x40_Ball;
+	class OPTRE_B_127x40_Ball;
+	class OPTRE_B_8Gauge_Slug;
+	
+	class OPTRE_B_5x23_Caseless_JHP: OPTRE_B_5x23_Caseless
+	{
+		caliber	= 0.25;
+		hit = 14;
+		typicalSpeed = 380;
+	};
+	
+	class OPTRE_B_762x51_JHP: OPTRE_B_762x51_Ball
+	{
+		caliber = 0.4;
+		hit = 18;
+		typicalSpeed = 860;
+	};
+	
+	class OPTRE_B_95x40_JHP: OPTRE_B_95x40_Ball
+	{
+		caliber = .75;
+		hit = 20;
+		typicalSpeed = 1000;
+	};
+	
+	class OPTRE_B_8Gauge_Pellet: B_12Gauge_Pellets_Submunition
+	{
+		submunitionAmmo = "OPTRE_B_8Gauge_Pellet_Submunition";
+		thrust = 20;
+		triggerTime = 0.001;
+	};
+
+	class OPTRE_B_8Gauge_Beanbags: OPTRE_B_8Gauge_Slug
+	{
+		hit = 0.1;
+		typicalspeed = 350;
+	};
+
+	class OPTRE_B_8Gauge_Pellet_Submunition: B_12Gauge_Pellets_Submunition_Deploy
+	{
+		hit = 8;
+	};
+};
+ 
+	

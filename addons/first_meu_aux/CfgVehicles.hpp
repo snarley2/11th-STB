@@ -1278,11 +1278,7 @@ class CfgVehicles
 //  End Uniforms
 //  Ground Vehicles Start
 
-<<<<<<< HEAD
-	class 1stMEU_Elephant: OPTRE_M313_Base
-=======
 	class 1stMEU_M313_Elephant: OPTRE_M313_UNSC
->>>>>>> master
 	{
         scope = 2;
 		scopeCurator = 2;
@@ -1292,12 +1288,12 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
 		displayName = "[1stMEU] M313 HRV Elephant";
-		enginePower = 4000;
-		maxOmega = 400;
+		enginePower = 8000;
+		maxOmega = 800;
 		peakTorque = 10000;
 		torqueCurve[] = {{0,0},{"(3000/4000)","(2650/2850)"},{"(3200/4000)","(2800/2850)"},{"(3400/4000)","(2850/2850)"},{"(3600/4000)","(2800/2850)"},{"(3800/4000)","(2750/2850)"},{"(4000/4000)","(2600/2850)"},{"(4000/4000)","(2350/2850)"}};
 		thrustDelay = 0.01;
-		clutchStrength = 180.0;
+		clutchStrength = 500.0;
 		fuelCapacity = 2000;
 		brakeIdleSpeed = 1.78;
 		latency = 0.1;
@@ -1306,6 +1302,7 @@ class CfgVehicles
 		redRpm = 4000;
 		engineLosses = 25;
 		transmissionLosses = 15;
+		ace_repair_canRepair = 1;
 	};		
 			
 //  Ground Vehicles End

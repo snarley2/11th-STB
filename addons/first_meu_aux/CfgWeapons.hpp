@@ -9440,7 +9440,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	class FullAuto;
 	class OPTRE_M247;
 	
-	class M247HMG: OPTRE_M247
+	class M250HMG: OPTRE_M247
 	{
 		dlc = "OPTRE";
 		author = "[1stMEU] Oneill";
@@ -9449,11 +9449,11 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		scopeArsenal = 2;
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\MG\data\anim\OPTRE_M247_handanim.rtm","Spartan_ManSkeleton","\OPTRE_Weapons\MG\data\anim\M247_Spartan.rtm"};
 		model = "\OPTRE_Weapons\MG\M247.p3d";
-		displayName = "M247 Heavy Machine Gun";
+		displayName = "M250 Heavy Machine Gun";
 		descriptionShort = "UNSC Heavy Machine Gun (man portable)";
-		magazines[] = {"OPTRE_100Rnd_127x99_M247HMG", "OPTRE_100Rnd_127x99_HE_M247HMG"};
+		magazines[] = {"OPTRE_100Rnd_127x99_M250HMG", "OPTRE_100Rnd_127x99_HE_M250HMG"};
 		recoil = "recoil_mk200";
-		baseWeapon = "M247HMG";
+		baseWeapon = "M250HMG";
 		HUD_BulletInARows = 2;
 		HUD_TotalPosibleBullet = 100;
 		class WeaponSlotsInfo: WeaponSlotsInfo

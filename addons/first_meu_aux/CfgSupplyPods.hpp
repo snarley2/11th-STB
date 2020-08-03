@@ -353,16 +353,16 @@ class OPTRE_Ammo_SupplyPod_SR99DXSniper: OPTRE_Ammo_SupplyPod_Empty
 	};
 };
 //Oneills monster
-class OPTRE_Ammo_Supplypod_M247HMG: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_Supplypod_M250HMG: OPTRE_Ammo_SupplyPod_Empty
 {
-    displayname = "[UNSC] Supply Pod (M247HMG)";
+    displayname = "[UNSC] Supply Pod (M250HMG)";
     class TransportMagazines
     {
         mag_xx(OPTRE_100Rnd_127x99_M247HMG, 10);
     };
 	class TransportWeapons
 	{
-		weap_xx(M247HMG, 2);
+		weap_xx(M250HMG, 2);
 	};
 	class TransportItems
 	{
@@ -589,8 +589,8 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				};
 				class n32
                 {
-                    name = "M247HMG"
-                    value = "OPTRE_Ammo_Supplypod_M247HMG"
+                    name = "M250HMG Supply Pod"
+                    value = "OPTRE_Ammo_Supplypod_M250HMG"
                 };
 			};
 		};
