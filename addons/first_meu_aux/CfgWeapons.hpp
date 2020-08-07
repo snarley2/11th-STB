@@ -777,7 +777,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] 1st Plt Beret";
+		displayName = "[1stMEU] Beret (1st Plt)";
         weaponPoolAvailable = 1;
 		subItems[]=
 		{
@@ -789,6 +789,25 @@ class CfgWeapons
 		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Centurion1BeretV4.paa"};
+    };
+    class fourth_plt_beret : first_plt_Beret
+    {
+       scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] Beret (4th Plt)";
+        weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\VulcanBeretV2.paa"}; 
     };
 	
 // centurion heavy helmets

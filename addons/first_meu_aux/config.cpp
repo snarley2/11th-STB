@@ -66,6 +66,19 @@ class cfgPatches
             "1stMEU_M313_Elephant",
             "Vulkan_Repair_APC",
             "Vulkan_Repair_APC_P",
+            "VES_AV22_Sparrowhawk_Base",
+            "OPTRE_UNSC_falcon",
+            "OPTRE_Pelican_F",
+            "OPTRE_Hornet_base",
+            "VES_UH144_A",
+            "VES_AV14_AIM",
+            "VES_AV14_AGM",
+            "VES_AV14_Rockets",
+            "VES_AV14",
+            "VES_UH144",
+            "VES_D77HTCI_A",
+            "VES_D77HTCI",
+            "OPTRE_HEV",
         };
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
