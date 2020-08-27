@@ -29,9 +29,9 @@ class CfgWeapons
     class ace_medical_treatment;
     class ACE_Morphine;
 	class U_B_CombatUniform_mcam;
-    class OPTRE_UNSC_VX16_Helmet_MaskS;
-    class OPTRE_UNSC_VX16_Helmet_MaskS_dp;
-    class OPTRE_UNSC_VX16_Helmet_MaskS_broken;
+    class OPTRE_UNSC_VX16_Helmet_base;
+    class OPTRE_UNSC_VX16_Helmet_base_broken;
+    class OPTRE_UNSC_VX16_Helmet_base_dp;
 	class LM_OPCAN_CH252D_H3_dp;
 	class LM_OPCAN_CH252D_H3_Green_dp;
 	class LM_OPCAN_CH252D_H3_Red_dp;
@@ -42,9 +42,6 @@ class CfgWeapons
 	class LM_OPCAN_CH252D_H3_Red_broken;
 	class LM_OPCAN_CH252D_H3_Yellow_broken;
 	class LM_OPCAN_CH252D_H3_Blue_broken;
-	class OPTRE_UNSC_VX16_Helmet_Mask_blk_med;
-	class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_dp;
-	class OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken;
 	
 // Medical Items Start
 	
@@ -202,6 +199,7 @@ class CfgWeapons
         vestType = "Rebreather";
 		class ItemInfo: VestItem 
 		{
+            vestType = "Rebreather";
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply200";
 			mass = 75;
@@ -463,6 +461,7 @@ class CfgWeapons
         vestType = "Rebreather";
 		class ItemInfo: VestItem 
 		{
+            vestType = "Rebreather";
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply250";
 			mass = 75;
@@ -658,6 +657,7 @@ class CfgWeapons
         vestType = "Rebreather";
 		class ItemInfo: VestItem 
 		{
+            vestType = "Rebreather";
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			containerClass = "Supply250";
 			mass = 75;
@@ -8531,30 +8531,7 @@ class CfgWeapons
 	
 // Praetorian Helmet End
 // pilot helmet Start
-	
-    class MEU_UNSC_VX16_Helmet_Mask_blk_med : OPTRE_UNSC_VX16_Helmet_Mask_blk_med
-    {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		author = "1stMEU Mark";
-        displayName = "[1stMEU] Pilot Helmet";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
-    }
-    class MEU_UNSC_VX16_Helmet_Mask_blk_med_dp : OPTRE_UNSC_VX16_Helmet_Mask_blk_med_dp
-    {
-        hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
-    };
-    class MEU_UNSC_VX16_Helmet_Mask_blk_med_broken : OPTRE_UNSC_VX16_Helmet_Mask_blk_med_broken
-    {
-        hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\PegBasicPilot.paa"};
-    };
-	
-    class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_MaskS
+    class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_base
     {
 		scope = 2;
         scopeCurator = 2;
@@ -8567,22 +8544,391 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] Pilot Helmet (Siffy)";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+		displayName = "[1stMEU] Siffys Helmet";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Custom_Siffy.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Custom_Siffy.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
     };
-    class Siffy_Helmet_dp : OPTRE_UNSC_VX16_Helmet_MaskS_dp
+    class peg_flight : Siffy_Helmet
     {
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+        displayName = "[1stMEU] Pegasus Flight Commander";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
     };
-    class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_MaskS_broken
+    class Peg_Axios_section : Siffy_Helmet
     {
-        hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\helm_black_CO_Testing.paa"};
+        displayName = "[1stMEU] Pegasus Axios Section Lead";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
     };
-	
+    class Peg_Helios_section : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Helios Section Lead";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_Paladios_section : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Paladios Section Lead";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_ilithios_section : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Ilithios Section Lead";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_Axios : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Axios Helmet";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_Helios : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Helios Helmet";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_Paladios : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Paladios Helmet";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_ilithios : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Ilithios Helmet";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_Base : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Helmet";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_Deck : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Pegasus Deck Officer Helmet";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
+		};
+    };
+    //dp and broken shit for pilots
+    class Siffy_Helmet_dp : Siffy_Helmet
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP1";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Custom_Siffy.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Custom_Siffy.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_Deck_dp : Siffy_Helmet
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
+		};
+    };
+    class peg_flight_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP2";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    }
+    class Peg_Axios_section_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP3";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_Helios_section_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP4";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_Paladios_section_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP5";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+            hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_ilithios_section_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP6";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+            hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+		};
+    };
+    class Peg_Axios_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP7";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_Helios_dp : Siffy_Helmet_dp
+    {
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP8";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_Paladios_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP9";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_ilithios_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP10";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    class Peg_Base_dp : Siffy_Helmet_dp
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Helmet DP11";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+		};
+    };
+    //broken stuff
+    class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Custom_Siffy.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+    };
+    class peg_flight_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+    }
+    class Peg_Axios_section_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+    };
+    class Peg_Helios_section_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+    };
+    class Peg_Paladios_section_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+    };
+    class Peg_ilithios_section_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_skull_co.paa"};
+    };
+    class Peg_Axios_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+    };
+    class Peg_Helios_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+    };
+    class Peg_Paladios_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Paladios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+    };
+    class Peg_ilithios_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+    };
+    class Peg_Base_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_black_co.paa"};
+    };
+	class Peg_Deck_broken : OPTRE_UNSC_VX16_Helmet_base_broken
+    {
+        scopeArsenal = 0;
+        scope = 0;
+        displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
+    };
 // Pilot Helmet End
 // Pilot Armor Start
 
