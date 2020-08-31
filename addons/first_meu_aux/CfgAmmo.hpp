@@ -9,9 +9,10 @@ class CfgAmmo
 		flightProfiles[] = {"TopDown"};
 		class TopDown
 		{
-			ascendHeight = 1500;
-			descendDistance = 3000;
+			ascendHeight = 1600;
+			descendDistance = 3200;
 			minDistance = 800;
 			ascendAngle = 20;
 		};
 	};
+};

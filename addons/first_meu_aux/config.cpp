@@ -6,10 +6,10 @@
 #include "CfgEventHandlers.hpp"
 #include "CfgGroups.hpp"
 #include "script.hpp"
-#include "script.hpp"
 #include "CfgMagazines.hpp"
 #include "Cfgtreatment.hpp"
 #include "Cfgtreatmentactions.hpp"
+#include "CfgFunctions.hpp"
 
 class cfgPatches
 {
@@ -57,6 +57,7 @@ class cfgPatches
             "ace_medical_engine",
             "ace_medical_treatment",
             "ace_common",
+            "task_force_radio",
         };
     };
     class MEU_Vehicles_Elephant
@@ -116,35 +117,3 @@ class CfgVehicleClasses
 	};
 };
 
-class CfgFunctions
-{
-    class V_FZ
-    {
-        class PelicanMagLiftSystem
-		{
-            class PelicanLoadValidate
-            {
-                file = "first_meu_aux\Functions\fn_PelicanLoadValidate.sqf";
-            };
-            class PelicanUnLoadValidate
-            {
-                file = "first_meu_aux\Functions\fn_PelicanUnLoadValidate.sqf";
-            };
-        };
-    };
-    class MEU
-    {
-        class compat
-        {
-            class fn_meuPainReduce
-            {
-                file = "first_meu_aux\Functions\fn_meuPainReduce.sqf";
-            };
-            class fn_meuPainReduceLocal
-            {
-                file = "first_meu_aux\Functions\fn_meuPainReduceLocal.sqf";
-            };
-            
-        };
-    };
-};

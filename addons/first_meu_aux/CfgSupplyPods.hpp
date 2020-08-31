@@ -358,7 +358,8 @@ class OPTRE_Ammo_Supplypod_M250HMG: OPTRE_Ammo_SupplyPod_Empty
     displayname = "[UNSC] Supply Pod (M250HMG)";
     class TransportMagazines
     {
-        mag_xx(OPTRE_100Rnd_127x99_M247HMG, 10);
+        mag_xx(OPTRE_100Rnd_127x99_M250HMG, 5);
+        mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 5);
     };
 	class TransportWeapons
 	{
