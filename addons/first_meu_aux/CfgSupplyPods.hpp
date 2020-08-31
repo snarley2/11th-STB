@@ -304,6 +304,8 @@ class OPTRE_Ammo_SupplyPod_DMRM395X: OPTRE_Ammo_SupplyPod_Empty
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_15Rnd_762x51_Mag_AP, 40);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_JHPT, 20);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_APT, 20);
 	};
 	class TransportWeapons
 	{
