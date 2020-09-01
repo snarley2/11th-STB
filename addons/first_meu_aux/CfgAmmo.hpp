@@ -67,7 +67,7 @@ class CfgAmmo
 	class OPTRE_B_762x51_DMR_AP: OPTRE_B_762x51_Ball
 	{
 		caliber						= 4;
-		hit 						= 20;
+		hit 						= 22;
 		typicalSpeed				= 1150;
 	};
 
@@ -93,7 +93,7 @@ class CfgAmmo
 	class OPTRE_B_762x51_DMR_JHP: OPTRE_B_762x51_Ball
 	{
 		caliber						= 1;
-		hit 						= 24;
+		hit 						= 26;
 		typicalSpeed				= 1050;
 	};
 
