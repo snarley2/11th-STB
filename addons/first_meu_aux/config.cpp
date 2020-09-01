@@ -36,7 +36,10 @@ class cfgPatches
             "MEU_B_8Gauge_Pellet",
             "MEU_B_8Gauge_Pellet_Submunition",
             };
-		weapons[] = {};
+		weapons[] = {
+            "OPTRE_M392_DMR",
+            "OPTRE_BR55HB",
+        };
         requiredVersion = 0.1;
 		requiredAddons[] = 
         {
