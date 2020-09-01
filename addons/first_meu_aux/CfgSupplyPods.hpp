@@ -39,7 +39,7 @@ class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 //M247 LMG (the shitty one)
 class OPTRE_Ammo_SupplyPod_M247: OPTRE_Ammo_SupplyPod_Empty
 {
-	displayName = "[UNSC] HMG Supply Pod (M247)";
+	displayName = "[UNSC] GPMG Supply Pod (M247)";
 	class TransportMagazines
 	{			
 		mag_xx(OPTRE_400Rnd_762x51_Box_Tracer, 3);
@@ -229,7 +229,9 @@ class OPTRE_Ammo_SupplyPod_MA5BXARGL: OPTRE_Ammo_SupplyPod_Empty
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 54);
-		mag_xx(1Rnd_HE_Grenade_shell, 20);
+		mag_xx(1Rnd_HE_MEU_shell, 30);
+		mag_xx(3Rnd_HE_MEU_shell, 10);
+		mag_xx(1Rnd_HEDP_MEU_shell, 10);
 	};
 	class TransportWeapons
 	{
@@ -303,7 +305,8 @@ class OPTRE_Ammo_SupplyPod_DMRM395X: OPTRE_Ammo_SupplyPod_Empty
 	displayName = "[UNSC] Supply Pod (M395X DMR)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_15Rnd_762x51_Mag_AP, 40);
+        mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
+		mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
         mag_xx(OPTRE_20Rnd_86x70_Mag_JHPT, 20);
         mag_xx(OPTRE_20Rnd_86x70_Mag_APT, 20);
 	};
@@ -360,8 +363,8 @@ class OPTRE_Ammo_Supplypod_M250HMG: OPTRE_Ammo_SupplyPod_Empty
     displayname = "[UNSC] Supply Pod (M250HMG)";
     class TransportMagazines
     {
-        mag_xx(OPTRE_100Rnd_127x99_M250HMG, 5);
-        mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 5);
+        mag_xx(OPTRE_100Rnd_127x99_M250HMG, 10);
+		mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
     };
 	class TransportWeapons
 	{
@@ -451,7 +454,7 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				};
 				class n4
 				{
-					name = "M247 HMG Supply Pod";
+					name = "M247 GPMG Supply Pod";
 					value = "OPTRE_Ammo_SupplyPod_M247";
 				};
 				class n5

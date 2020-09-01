@@ -108,10 +108,6 @@ class CfgWeapons
 				};
 			};
 		};
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
 		allowedFacewear[] = {};
 	};
     class 1stMEU_Base_CH252D_Helmet_dp : VES_CH252D_dp
@@ -248,6 +244,11 @@ class CfgWeapons
 			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
 			"",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		subItems[]=
+		{
+			"ItemcTabHCam",
+			"MRH_BluForTransponder"
 		};
         vestType = "Rebreather";
 		class ItemInfo: VestItem 
@@ -422,10 +423,6 @@ class CfgWeapons
 			};
 		};
 		allowedFacewear[] = {"",0.05,"VES_HUD_Balaclava_Black",2,"VES_HUD_Balaclava_Beast",0.025,"VES_HUD_Balaclava_Punisher",0.025,"VES_HUD_Balaclava_Joker",0.025,"OPTRE_EyePiece",0.25,"OPTRE_HUD_Glasses",0.5,"OPTRE_HUD_w_Glasses",0.5,"murshuncigs_cig_0",0.1,"murshuncigs_cig_1",0.1,"murshuncigs_cig_2",0.1,"murshuncigs_cig_3",0.1,"murshuncigs_cig_4",0.1,"immersion_cigs_cigar0",0.1,"immersion_cigs_cigar1",0.1,"immersion_cigs_cigar2",0.1,"immersion_cigs_cigar3",0.1,"immersion_cigs_cigar4",0.1};
-		subItems[]=
-		{
-			"ItemcTabHCam"
-		};
 	};
 	
 	class 1MEU_BASE_M52A_Armor: 1MEU_BASE_M52D_Armor 
@@ -510,6 +507,10 @@ class CfgWeapons
 			"V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat",
 			"",
 			""
+		};
+		subItems[]=
+		{
+			"ItemcTabHCam"
 		};
         vestType = "Rebreather";
 		class ItemInfo: VestItem 
@@ -4722,6 +4723,388 @@ class CfgWeapons
         };
 	};
 	
+	// Crewman
+	
+    class MEU_M52A_Crewman: 1MEU_BASE_M52A_Armor
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_Frag",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	
+    class MEU_M52A_Crewman_DES: MEU_M52A_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman (Desert)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_M52A_Crewman_CEA: MEU_M52A_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman (Evolved)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_M52A_Crewman_SNO: MEU_M52A_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman (Snow)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	class MEU_M52A_Crewman_URB: MEU_M52A_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman (Urban)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_M52A_Crewman_WDL: MEU_M52A_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman (Woodland)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	 class MEU_M52A_NCO_Crewman: 1MEU_BASE_M52A_Armor
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman NCO";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_MGThigh",
+			"AP_BR",
+			"AP_Frag",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Knife",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_ODST",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_Smoke",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_BR",
+				"AP_Frag",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	
+    class MEU_M52A_NCO_Crewman_DES: MEU_M52A_NCO_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman NCO (Desert)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_DES_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_DES_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_M52A_NCO_Crewman_CEA: MEU_M52A_NCO_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman NCO (Evolved)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_CEA_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_CEA_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_M52A_NCO_Crewman_SNO: MEU_M52A_NCO_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman NCO (Snow)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_SNO_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_SNO_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+	class MEU_M52A_NCO_Crewman_URB: MEU_M52A_NCO_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman NCO (Urban)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
+    class MEU_M52A_NCO_Crewman_WDL: MEU_M52A_NCO_Crewman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52A Crewman NCO (Woodland)";
+		hiddenSelectionsTextures[] = 
+		{
+			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_WDL_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_WDL_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	
 // end M52A gear start praetorian gear
 // praetorian vests
 
@@ -4780,12 +5163,15 @@ class CfgWeapons
 			"",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
 		};
-		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa","optre_unsc_units\army\data\armor_odst_co.paa","LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa","optre_unsc_units\army\data\ghillie_desert_co.paa","first_meu_aux\Data\red37.paa"};
-        
-        subItems[] =
+		hiddenSelectionsTextures[] = 
 		{
-			"MRH_BluForTransponder"
+			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+			"optre_unsc_units\army\data\armor_odst_co.paa",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\Data\red37.paa"
 		};
+        
         class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -4892,11 +5278,7 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
-        
-		subItems[] =
-		{
-			"MRH_BluForTransponder"
-		};
+       
         class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -4993,10 +5375,13 @@ class CfgWeapons
 			"",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
 		};
-		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa","optre_unsc_units\army\data\armor_odst_co.paa","LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa","optre_unsc_units\army\data\ghillie_desert_co.paa","first_meu_aux\Data\Green3M.paa"};
-        subItems[] =
+		hiddenSelectionsTextures[] = 
 		{
-			"MRH_BluForTransponder"
+			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+			"optre_unsc_units\army\data\armor_odst_co.paa",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\Data\Green3M.paa"
 		};
         class ItemInfo: ItemInfo
 		{
@@ -5102,10 +5487,6 @@ class CfgWeapons
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
-		};
-        subItems[] =
-		{
-			"MRH_BluForTransponder"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5214,10 +5595,6 @@ class CfgWeapons
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_HR.paa"
-		};
-		subItems[] =
-		{
-			"MRH_BluForTransponder"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5647,10 +6024,6 @@ class CfgWeapons
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_HR.paa"
-		};
-		subItems[] =
-		{
-			"MRH_BluForTransponder"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -9670,7 +10043,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"AP_Canteen",
 			"AP_GL",
 			"AP_MGThigh",
-			"AP_AR",
 			"AP_Rounds",
 			"AP_SMG",
 			"AP_Sniper",
@@ -9711,7 +10083,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				"AP_Canteen",
 				"AP_GL",
 				"AP_MGThigh",
-				"AP_AR",
 				"AP_Rounds",
 				"AP_SG",
 				"AP_Sniper",
@@ -9863,9 +10234,19 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	class StandardSound;
 	class CowsSlot;
 	class MuzzleSlot;
+	class PointerSlot;
+	class UnderBarrelSlot;
 	class Single;
 	class FullAuto;
 	class OPTRE_M247;
+	class OPTRE_Rifle_Base;
+	class OPTRE_LongRifle_Base;
+	class UGL_F;
+	
+	class OPTRE_M301X: UGL_F
+	{
+		magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
+	};
 	
 	class M250HMG: OPTRE_M247
 	{
@@ -9879,7 +10260,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		displayName = "M250 Heavy Machine Gun";
 		descriptionShort = "UNSC Heavy Machine Gun (man portable)";
 		magazines[] = {"OPTRE_100Rnd_127x99_M250HMG", "OPTRE_100Rnd_127x99_HE_M250HMG"};
-		recoil = "recoil_mk200";
+		recoil = "recoil_trg21";
 		baseWeapon = "M250HMG";
 		HUD_BulletInARows = 2;
 		HUD_TotalPosibleBullet = 100;
@@ -9903,7 +10284,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
 			};
 			reloadTime = 0.095;
-			dispersion = 0.000065;
+			dispersion = 0.0065;
 		};
 		class FullAuto: FullAuto
 		{
@@ -9913,7 +10294,255 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
 			};
 			reloadTime = 0.095;
-			dispersion = 0.000065;
+			dispersion = 0.0065;
+		};
+	};
+	
+	class OPTRE_BR55HB: OPTRE_Rifle_Base
+	{
+		dlc							= "SO";
+		author						= "Fireteam Zulu";
+		scope						= 2;
+		scopeArsenal				= 2;
+		
+		displayName					= "BR55XHB Battle Rifle";
+		baseWeapon 					= "OPTRE_BR55XHB";
+		model                       = "\OPTRE_Weapons\BR\BRHB";
+		
+		modes[] = 
+		{
+			"Single",
+			"Burst"
+		};
+		
+		magazines[]=
+		{
+			"OPTRE_36Rnd_95x40_Mag",
+			"OPTRE_36Rnd_95x40_Mag_Tracer",
+			"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
+			"OPTRE_36Rnd_95x40_Mag_JHP",
+			"OPTRE_36Rnd_95x40_Mag_JHPT",
+			"OPTRE_36Rnd_95x40_Mag_HPSAP",
+			"OPTRE_36Rnd_95x40_Mag_HPSAPT",
+			"OPTRE_36Rnd_95x40_Mag_SAPHE",
+			"OPTRE_36Rnd_95x40_Mag_SAPHET",
+			"OPTRE_36Rnd_95x40_Mag_SS"
+		};
+		
+		class WeaponSlotsInfo
+		{
+			mass = 85;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[]=
+				{
+					"muzzle_snds_h_mg_blk_f",
+					"muzzle_snds_l",
+
+					"optre_ma5suppressor",
+					"optre_m7_silencer",
+					"optre_m6_silencer"
+				};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]=
+				{
+					"optic_arco_ak_blk_f",
+					"optic_dms",
+					"optic_aco_grn",
+					"optic_aco",
+					"optic_arco_blk_f",
+					"optic_holosight_blk_f",
+					"optic_mrco",
+					"optic_khs_blk",
+					"optic_hamr",
+					"optic_sos",
+					"optic_lrps",
+					"optic_nightstalker",
+					"optic_erco_blk_f",
+					"optic_ams",
+					"ace_optic_lrps_2d",
+					"ace_optic_lrps_pip",
+					"ace_optic_sos_2d",
+					"ace_optic_sos_pip",
+					"ace_optic_mrco_2d",
+					"ace_optic_hamr_2d",
+					"ace_optic_hamr_pip",
+					"optic_aco_smg",
+					"optic_aco_grn_smg",
+					"optic_holosight_smg_blk_f",
+
+					"optre_srs99_scope",
+					"optre_srs99c_scope",
+					"optre_ma5_buis",
+					"optre_m393_eotech",
+					"optre_m73_smartlink",
+					"optre_m7_sight",
+					"optre_m393_acog",
+					"optre_m393_scope",
+					"optre_m392_scope",
+					"optre_br55hb_scope",
+					"OPTRE_BMR_Scope",
+					
+					"OPTRE_SRS99_Scope_v2",
+					"OPTRE_SRS99C_Scope_v2",
+					"OPTRE_M73_Smartlink_v2",
+					"OPTRE_M6S_Scope",
+					"OPTRE_M7_Sight_v2",
+					"OPTRE_M392_Scope_v2",
+					"OPTRE_M393_Scope_v2",
+					"OPTRE_M393_ACOG_v2",
+					"OPTRE_M393_EOTECH_v2",
+					"OPTRE_BR55HB_Scope_v2",
+					"OPTRE_BMR_Scope_v2"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[]=
+				{
+					"acc_pointer_ir",
+					"ace_acc_pointer_green",
+					"acc_flashlight",
+
+					"optre_m45_flashlight",
+					"optre_m45_flashlight_red",
+					"OPTRE_BMR_Laser"
+				};
+			};
+		};
+	};
+	
+	class OPTRE_M392_DMR: OPTRE_LongRifle_Base
+	{
+		dlc							= "SO";
+		author						= "Fireteam Zulu";
+		scope						= 2;
+		scopeArsenal				= 2;
+		
+		displayName					= "M392X DMR";
+		model						= "v_so_weapons\data\m392\m392";
+		
+		magazines[]=
+		{
+			"OPTRE_15Rnd_762x51_Mag",
+			"OPTRE_15Rnd_762x51_Mag_Tracer",
+			"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_15Rnd_762x51_Mag_AP",
+			"OPTRE_15Rnd_762x51_Mag_APT",
+			"OPTRE_15Rnd_762x51_Mag_JHP",
+			"OPTRE_15Rnd_762x51_Mag_JHPT",
+			"OPTRE_15Rnd_762x51_Mag_SS",
+			"OPTRE_15Rnd_762x51_Mag_SST",
+			"OPTRE_15Rnd_762x51_Mag_FS",
+			"OPTRE_15Rnd_762x51_Mag_FST",
+			"OPTRE_15Rnd_DMR_762x51_Mag_AP",
+			"OPTRE_15Rnd_DMR_762x51_Mag_APT",
+			"OPTRE_15Rnd_DMR_762x51_Mag_JHP",
+			"OPTRE_15Rnd_DMR_762x51_Mag_JHPT",
+			"OPTRE_15Rnd_DMR_762x51_Mag_SS",
+			"OPTRE_15Rnd_DMR_762x51_Mag_SST",
+			"OPTRE_15Rnd_DMR_762x51_Mag_FS",
+			"OPTRE_15Rnd_DMR_762x51_Mag_FST"
+		};
+		magazineWell[] = {};
+		
+		modes[] = 
+		{
+			"Single"
+		};
+		
+		class WeaponSlotsInfo
+		{
+			mass = 126;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[]=
+				{
+					"muzzle_snds_b",
+					"muzzle_snds_h_mg_blk_f",
+					"ace_muzzle_mzls_b",
+
+					"optre_ma5suppressor",
+					"optre_m7_silencer",
+					"optre_m6_silencer"
+				};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[]=
+				{
+					"optic_arco_ak_blk_f",
+					"optic_dms",
+					"optic_aco_grn",
+					"optic_aco",
+					"optic_arco_blk_f",
+					"optic_holosight_blk_f",
+					"optic_mrco",
+					"optic_khs_blk",
+					"optic_hamr",
+					"optic_sos",
+					"optic_lrps",
+					"optic_nightstalker",
+					"optic_erco_blk_f",
+					"optic_ams",
+					"ace_optic_lrps_2d",
+					"ace_optic_lrps_pip",
+					"optic_yorris",
+					"ace_optic_sos_2d",
+					"ace_optic_sos_pip",
+					"ace_optic_mrco_2d",
+					"ace_optic_hamr_2d",
+					"ace_optic_hamr_pip",
+					"optic_aco_smg",
+					"optic_aco_grn_smg",
+					"optic_holosight_smg_blk_f",
+					"optic_mrd_black",
+
+					"optre_srs99_scope",
+					"optre_srs99c_scope",
+					"optre_ma5_buis",
+					"optre_m393_eotech",
+					"optre_m7_sight",
+					"optre_m393_acog",
+					"optre_m392_scope",
+					"optre_br55hb_scope",
+					"optre_m6c_scope",
+					"OPTRE_BMR_Scope",
+					
+					"OPTRE_SRS99_Scope_v2",
+					"OPTRE_SRS99C_Scope_v2",
+					"OPTRE_M73_Smartlink_v2",
+					"OPTRE_M6S_Scope",
+					"OPTRE_M7_Sight_v2",
+					"OPTRE_M392_Scope_v2",
+					"OPTRE_M393_ACOG_v2",
+					"OPTRE_M393_EOTECH_v2",
+					"OPTRE_BR55HB_Scope_v2",
+					"OPTRE_BMR_Scope_v2"
+				};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[]=
+				{
+					"acc_pointer_ir",
+					"ace_acc_pointer_green",
+					"acc_flashlight",
+					
+					"OPTRE_BMR_Laser"
+				};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleitems[]=
+				{
+					"bipod_01_f_blk",
+					"bipod_02_f_blk",
+					"bipod_03_f_blk"
+				};
+			};
 		};
 	};
 // Weapon end

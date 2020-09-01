@@ -1119,7 +1119,7 @@ class CfgVehicles
             };
             class HitPelvis
             {
-                armor = 7; //OPTRE Value //Default=6
+                armor = 6; //OPTRE Value //Default=6
                 material = -1;
                 name = "pelvis";
                 passThrough = 0.8;
@@ -1131,7 +1131,7 @@ class CfgVehicles
             };
             class HitAbdomen: HitPelvis
             {
-                armor = 7; //OPTRE Value //Default=1
+                armor = 6; //OPTRE Value //Default=1
                 material = -1;
                 name = "spine1";
                 passThrough = 0.8;
@@ -1142,7 +1142,7 @@ class CfgVehicles
             };
             class HitDiaphragm: HitAbdomen
             {
-                armor = 7; //OPTRE Value //Default=1
+                armor = 6; //OPTRE Value //Default=1
                 material = -1;
                 name = "spine2";
                 passThrough = 0.8;
@@ -1153,7 +1153,7 @@ class CfgVehicles
             };
             class HitChest: HitDiaphragm
             {
-                armor = 7; //OPTRE Value //Default=1
+                armor = 6; //OPTRE Value //Default=1
                 material = -1;
                 name = "spine3";
                 passThrough = 0.8;
@@ -1176,7 +1176,7 @@ class CfgVehicles
             };
             class HitArms: HitBody
             {
-                armor = 7; //OPTRE Value //Default=3
+                armor = 6; //OPTRE Value //Default=3
                 material = -1;
                 name = "arms";
                 passThrough = 1;
@@ -1188,7 +1188,7 @@ class CfgVehicles
             };
             class HitHands: HitArms
             {
-                armor = 7; //OPTRE Value //Default=3
+                armor = 6; //OPTRE Value //Default=3
                 material = -1;
                 name = "hands";
                 passThrough = 1;
@@ -1200,7 +1200,7 @@ class CfgVehicles
             };
             class HitLegs: HitHands
             {
-                armor = 7; //OPTRE Value //Default=3
+                armor = 6; //OPTRE Value //Default=3
                 material = -1;
                 name = "legs";
                 passThrough = 1;
@@ -1225,7 +1225,7 @@ class CfgVehicles
             //----------------------------Ace Hitpoints---------------------------
             class HitLeftArm
             {
-                armor = 7; //OPTRE Value //Default=1
+                armor = 6; //OPTRE Value //Default=1
                 material = -1;
                 name = "hand_l";
                 passThrough = 1;
@@ -1240,7 +1240,7 @@ class CfgVehicles
             };
             class HitLeftLeg
             {
-                armor = 7; //OPTRE Value //Default=1
+                armor = 6; //OPTRE Value //Default=1
                 material = -1;
                 name = "leg_l";
                 passThrough = 1;
@@ -1359,7 +1359,7 @@ class CfgVehicles
 		fuelCapacity = 20000;
 		brakeIdleSpeed = 1.78;
 		latency = 0.1;
-		tankTurnForce = 4000000;
+		tankTurnForce = 3200000;
 		idleRpm = 1000;
 		redRpm = 4000;
 		engineLosses = 25;
