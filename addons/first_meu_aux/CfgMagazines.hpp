@@ -14,6 +14,8 @@ class CfgMagazines
 	class OPTRE_6Rnd_8Gauge_Slug;
 	class OPTRE_15Rnd_762x51_Mag;
 	class 1Rnd_HE_Grenade_shell;
+    class CA_Magazine;
+    class ACE_SatchelCharge_Remote_Mag_Throwable;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -308,6 +310,72 @@ class CfgMagazines
 		ammo = "MEU_40mm_HEDP";
 		mass = 21;
 	};
+    class MEU_c7_remote_ammo_throwable : ACE_SatchelCharge_Remote_Mag_Throwable
+    {
+        author = "1st MEU Mark"
+        scope = 1;
+        displayName = "C-7 Explosive Foam";
+		displayNameShort = "C7 Explosive Foam";
+		descriptionShort = "Compact explosive Foam";
+		descriptionUse = "Use: Set Charge";
+		type = "2* 256";
+		allowedSlots[] = {901,701};
+		ammo = "MEU_c7_remote_ammo_thrown";
+		model = "\OPTRE_Weapons\charges\C7Can.p3d";
+		picture = "\OPTRE_weapons\charges\icons\c7.paa";
+		mass = 7;
+		count = 1;
+		maxLeadSpeed = 0;
+		nameSoundWeapon = "satchelcharge";
+		nameSound = "satchelcharge";
+		weaponPoolAvailable = 1;
+		useActionTitle = "Put %1 (%2 left)";
+		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
+    };
+    class MEU_c12_remote_ammo_throwable : ACE_SatchelCharge_Remote_Mag_Throwable
+    {
+        author = "1st MEU Mark"
+        scope = 1;
+        displayName = "C12 Demolition Charge";
+		displayNameShort = "C12 Demo Charge";
+		descriptionShort = "Compact explosive charge";
+		descriptionUse = "Use: Set Charge";
+		type = "2* 256";
+		allowedSlots[] = {901,701};
+		ammo = "MEU_c12_remote_ammo_thrown";
+		model = "\OPTRE_Weapons\charges\c12G.p3d";
+		picture = "\OPTRE_weapons\charges\icons\c12.paa";
+		mass = 110;
+		count = 1;
+		maxLeadSpeed = 0;
+		nameSoundWeapon = "satchelcharge";
+		nameSound = "satchelcharge";
+		weaponPoolAvailable = 1;
+		useActionTitle = "Put %1 (%2 left)";
+		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
+    };
+    class MEU_m168_remote_ammo_throwable : ACE_SatchelCharge_Remote_Mag_Throwable
+    {
+        author = "1st MEU Mark"
+        scope = 1;
+        displayName = "M168 Demolition Pack";
+		displayNameShort = "M168 Demo Charge";
+		descriptionShort = "Compact explosive block";
+		descriptionUse = "Use: Set Charge";
+		type = "2* 256";
+		allowedSlots[] = {901,701};
+		ammo = "MEU_c168_remote_ammo_thrown";
+		model = "\OPTRE_Weapons\charges\m168g.p3d";
+		picture = "\OPTRE_weapons\charges\icons\m168.paa";
+		mass = 395;
+		count = 1;
+		maxLeadSpeed = 0;
+		nameSoundWeapon = "satchelcharge";
+		nameSound = "satchelcharge";
+		weaponPoolAvailable = 1;
+		useActionTitle = "Put %1 (%2 left)";
+		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
+    };
 };
 
  
