@@ -4741,8 +4741,8 @@ class CfgWeapons
 			"camo4",
 			"camo5",
 			"A_Ghillie",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
 			"A_ODST",
 			"A_TacPad",
 			"AS_LargeLeft",
@@ -4791,8 +4791,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -4932,8 +4932,8 @@ class CfgWeapons
 			"camo4",
 			"camo5",
 			"A_Ghillie",
-			"A_KneesMarLeft",
-			"A_KneesMarRight",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
 			"A_ODST",
 			"A_TacPad",
 			"AS_LargeLeft",
@@ -4981,8 +4981,8 @@ class CfgWeapons
 				"camo4",
 				"camo5",
 				"A_Ghillie",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
 				"A_ODST",
 				"A_TacPad",
 				"AS_LargeLeft",
@@ -10284,8 +10284,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
 			};
-			reloadTime = 0.095;
-			dispersion = 0.0065;
+			reloadTime = 0.1;
+			dispersion = 0.0030;
 		};
 		class FullAuto: FullAuto
 		{
@@ -10294,8 +10294,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
 			};
-			reloadTime = 0.095;
-			dispersion = 0.0065;
+			reloadTime = 0.1;
+			dispersion = 0.0030;
 		};
 	};
 	
