@@ -3,6 +3,7 @@
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgAmmo.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgGroups.hpp"
 #include "script.hpp"
