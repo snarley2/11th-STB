@@ -10239,6 +10239,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	class Single;
 	class FullAuto;
 	class OPTRE_M247;
+	class OPTRE_M393_DMR;
 	class OPTRE_Rifle_Base;
 	class OPTRE_LongRifle_Base;
 	class UGL_F;
@@ -10338,5 +10339,46 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"Single"
 		};
 	};
+	
+	class OPTRE_M295_BMR: OPTRE_M393_DMR
+    {
+        magazines[] = 
+		{
+			"OPTRE_15Rnd_762x51_Mag",
+			"OPTRE_15Rnd_762x51_Mag_Tracer",
+			"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_15Rnd_762x51_Mag_AP",
+			"OPTRE_15Rnd_762x51_Mag_APT",
+			"OPTRE_15Rnd_762x51_Mag_JHP",
+			"OPTRE_15Rnd_762x51_Mag_JHPT",
+			"OPTRE_15Rnd_762x51_Mag_SS",
+			"OPTRE_15Rnd_762x51_Mag_FS",
+			"OPTRE_15Rnd_762x51_Mag_FST",
+			"OPTRE_32Rnd_762x51_Mag",
+			"OPTRE_32Rnd_762x51_Mag_Tracer",
+			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
+			"OPTRE_32Rnd_762x51_Mag_AP",
+			"OPTRE_32Rnd_762x51_Mag_APT",
+			"OPTRE_32Rnd_762x51_Mag_JHP",
+			"OPTRE_32Rnd_762x51_Mag_JHPT",
+			"OPTRE_32Rnd_762x51_Mag_SS",
+			"OPTRE_32Rnd_762x51_Mag_SST",
+			"OPTRE_15Rnd_DMR_762x51_Mag_AP",
+			"OPTRE_15Rnd_DMR_762x51_Mag_APT",
+			"OPTRE_15Rnd_DMR_762x51_Mag_JHP",
+			"OPTRE_15Rnd_DMR_762x51_Mag_JHPT",
+			"OPTRE_15Rnd_DMR_762x51_Mag_SS",
+			"OPTRE_15Rnd_DMR_762x51_Mag_SST",
+			"OPTRE_15Rnd_DMR_762x51_Mag_FS",
+			"OPTRE_15Rnd_DMR_762x51_Mag_FST"
+		};
+		magazineWell[] = {};
+		
+		modes[] = 
+		{
+			"Single",
+			"FullAuto"
+		};
+    };
 // Weapon end
 };
