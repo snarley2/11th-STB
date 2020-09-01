@@ -78,7 +78,7 @@ class CfgMagazines
 		initspeed = 900;
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort = "100 Round Box Magazine<br>12.7x99mm";
-		mass = 100;
+		mass = 80;
 		tracersEvery = 4;
 		lastRoundsTracer = 5;
 	};
@@ -96,7 +96,7 @@ class CfgMagazines
 		initspeed = 900;
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort = "100 Round Box Magazine<br>12.7x99mm";
-		mass = 100;
+		mass = 80;
 		tracersEvery = 4;
 		lastRoundsTracer = 5;
 	};
