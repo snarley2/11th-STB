@@ -16,6 +16,7 @@ class CfgMagazines
 	class 1Rnd_HE_Grenade_shell;
     class CA_Magazine;
     class ACE_SatchelCharge_Remote_Mag_Throwable;
+    class grenade;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -310,12 +311,13 @@ class CfgMagazines
 		ammo = "MEU_40mm_HEDP";
 		mass = 21;
 	};
-    class MEU_c7_remote_ammo_throwable : ACE_SatchelCharge_Remote_Mag_Throwable
+    class MEU_c7_remote_mag_throwable : grenade
     {
         author = "1st MEU Mark"
-        scope = 1;
-        displayName = "C-7 Explosive Foam";
-		displayNameShort = "C7 Explosive Foam";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Throwable C7";
+		displayNameShort = "Throwable C7";
 		descriptionShort = "Compact explosive Foam";
 		descriptionUse = "Use: Set Charge";
 		type = "2* 256";
@@ -332,12 +334,13 @@ class CfgMagazines
 		useActionTitle = "Put %1 (%2 left)";
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
     };
-    class MEU_c12_remote_ammo_throwable : ACE_SatchelCharge_Remote_Mag_Throwable
+    class MEU_c12_remote_mag_throwable : grenade
     {
         author = "1st MEU Mark"
-        scope = 1;
-        displayName = "C12 Demolition Charge";
-		displayNameShort = "C12 Demo Charge";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Throwable C12";
+		displayNameShort = "Throwable C12";
 		descriptionShort = "Compact explosive charge";
 		descriptionUse = "Use: Set Charge";
 		type = "2* 256";
@@ -354,12 +357,13 @@ class CfgMagazines
 		useActionTitle = "Put %1 (%2 left)";
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
     };
-    class MEU_m168_remote_ammo_throwable : ACE_SatchelCharge_Remote_Mag_Throwable
+    class MEU_m168_remote_mag_throwable : grenade
     {
         author = "1st MEU Mark"
-        scope = 1;
-        displayName = "M168 Demolition Pack";
-		displayNameShort = "M168 Demo Charge";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Throwable M168";
+		displayNameShort = "Throwable M168";
 		descriptionShort = "Compact explosive block";
 		descriptionUse = "Use: Set Charge";
 		type = "2* 256";

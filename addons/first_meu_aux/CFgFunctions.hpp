@@ -26,7 +26,12 @@ class CfgFunctions
             {
                 file = "first_meu_aux\Functions\fn_meuPainReduceLocal.sqf";
             };
-            
+            class fn_addChangeFuseItemContextMenuOptions
+            {
+                file = "first_meu_aux\Functions\fnc_addChangeFuseItemContextMenuOptions.sqf";
+                preInit = 1;
+                postInit = 1;
+            };
         };
     };
 };

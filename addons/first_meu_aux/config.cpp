@@ -6,11 +6,11 @@
 #include "CfgAmmo.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgGroups.hpp"
-#include "script.hpp"
 #include "CfgMagazines.hpp"
 #include "Cfgtreatment.hpp"
 #include "Cfgtreatmentactions.hpp"
 #include "CfgFunctions.hpp"
+#include "first_meu_aux\Functions\fnc_addChangeFuseItemContextMenuOptions.sqf"
 
 class cfgPatches
 {
@@ -41,6 +41,9 @@ class cfgPatches
             "OPTRE_BR55HB",
             "OPTRE_M295_BMR",
             "OPTRE_M393_DMR",
+            "MEU_c7_remote_mag_throwable",
+            "MEU_c12_remote_mag_throwable",
+            "MEU_m168_remote_mag_throwable",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
