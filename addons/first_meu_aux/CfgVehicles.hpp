@@ -49,11 +49,63 @@ class CfgVehicles
 	class OPTRE_M313_UNSC;
     class B_parachute;
     class OPTRE_AV22_Sparrowhawk_Base;
+    class VES_IFV76;
+    class VES_IFV76_A;
+    class VES_M12_APC;
     
+    class MEU_IFV : VES_IFV76
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[MEU] APC-76 Honeybadger";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        transportSoldier = 16;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc";
+    }	
+    class MEU_IFV_A : VES_IFV76_A
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[MEU] IFV-76 Honeybadger";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        transportSoldier = 12;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_ifv";
+    }
+    class MEU_M12_AP : VES_M12_APC
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[MEU] M12 AP Warthog";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        ace_cargo_size = 10;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_car";
+    }
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
         scope = 2;
         scopeCurator = 2;
+        scopeArsenal = 2;
         displayName = "Ibuprofen";
         author = "1st MEU Mark";
         vehicleClass = "Items";
@@ -182,6 +234,59 @@ class CfgVehicles
 	class OPTRE_Pelican_F: Helicopter_Base_H
     {
         tf_range=30000;
+         class pilotCamera
+        {
+            class OpticsIn
+            {
+                class Wide
+                {
+                    opticsDisplayName = "WFOV";
+                    initAngleX = 0;
+                    minAngleX = 0;
+                    maxAngleX = 0;
+                    initAngleY = 0;
+                    minAngleY = 0;
+                    maxAngleY = 0;
+                    initFov = "(75 / 120)";
+                    minFov = "(75 / 120)";
+                    maxFov = "(75 / 120)";
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                    opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+                };
+                class Medium: Wide
+                {
+                    opticsDisplayName = "MFOV";
+                    initFov = "(14.4 / 120)";
+                    minFov = "(14.4 / 120)";
+                    maxFov = "(14.4 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+                };
+                class Narrow: Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(4.8 / 120)";
+                    minFov = "0.01";
+                    maxFov = "(4.8 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+            };
+            minTurn = -90;
+            maxTurn = 90;
+            initTurn = 0;
+            minElev = -10;
+            maxElev = 90;
+            initElev = 25;
+            maxXRotSpeed = 1;
+            maxYRotSpeed = 1;
+            maxMouseXRotSpeed = 0.5;
+            maxMouseYRotSpeed = 0.5;
+            pilotOpticsShowCursor = 1;
+            controllable = 1;
+        };
+        memoryPointDriverOptics = "gunnerview";
     };
     
     class OPTRE_Hornet_base: Helicopter_Base_H
@@ -781,6 +886,59 @@ class CfgVehicles
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
     {
         tf_range=30000;
+         class pilotCamera
+        {
+            class OpticsIn
+            {
+                class Wide
+                {
+                    opticsDisplayName = "WFOV";
+                    initAngleX = 0;
+                    minAngleX = 0;
+                    maxAngleX = 0;
+                    initAngleY = 0;
+                    minAngleY = 0;
+                    maxAngleY = 0;
+                    initFov = "(75 / 120)";
+                    minFov = "(75 / 120)";
+                    maxFov = "(75 / 120)";
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                    opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+                };
+                class Medium: Wide
+                {
+                    opticsDisplayName = "MFOV";
+                    initFov = "(14.4 / 120)";
+                    minFov = "(14.4 / 120)";
+                    maxFov = "(14.4 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+                };
+                class Narrow: Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(4.8 / 120)";
+                    minFov = "0.01";
+                    maxFov = "(4.8 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+            };
+            minTurn = -90;
+            maxTurn = 90;
+            initTurn = 0;
+            minElev = -10;
+            maxElev = 90;
+            initElev = 25;
+            maxXRotSpeed = 1;
+            maxYRotSpeed = 1;
+            maxMouseXRotSpeed = 0.5;
+            maxMouseYRotSpeed = 0.5;
+            pilotOpticsShowCursor = 1;
+            controllable = 1;
+        };
+        memoryPointDriverOptics = "gunnerview";
     };
     
 	class VES_D77HTCI: OPTRE_Pelican_unarmed
@@ -879,6 +1037,8 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc";
     };
         
     class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
@@ -892,6 +1052,8 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc";
     };
     class OPTRE_HEV: StaticMGWeapon
 	{
@@ -1366,6 +1528,8 @@ class CfgVehicles
 		transmissionLosses = 15;
 		ace_repair_canRepair = 1;
         mass = 50000;
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_WIP";
 	};		
 			
 //  Ground Vehicles End

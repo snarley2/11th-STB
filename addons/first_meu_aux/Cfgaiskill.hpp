@@ -9,7 +9,4 @@ CfgAISkill
     reloadSpeed[] = {0, 0, 1, 1};
     spotDistance[] = {0, 0, 1, 1};
     spotTime[] = {0, 0, 1, 1};
-
-
-
 };

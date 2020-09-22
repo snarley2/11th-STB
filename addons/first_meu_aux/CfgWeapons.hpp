@@ -1623,65 +1623,65 @@ class CfgWeapons
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\R\V_CH252_WDL_R_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
     class MEU_RTO_Helm_base_dp : MEU_rto_Helm_base
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_DES_dp : MEU_rto_Helm_DES
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_CEA_dp : MEU_rto_Helm_CEA
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_SNO_dp : MEU_rto_Helm_SNO
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_URB_dp : MEU_rto_Helm_URB
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_WDL_dp : MEU_rto_Helm_WDL
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_base2_dp : MEU_rto_Helm_base2
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_DES2_dp : MEU_rto_Helm_DES2
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_CEA2_dp : MEU_rto_Helm_CEA2
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_SNO2_dp : MEU_rto_Helm_SNO2
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_URB2_dp : MEU_rto_Helm_URB2
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
     class MEU_RTO_Helm_WDL2_dp : MEU_rto_Helm_WDL2
-        {
-            scopeArsenal = 0;
-            scope = 0;
-        };
+    {
+        scopeArsenal = 0;
+        scope = 0;
+    };
 	
 // end CH252 headgear start vest
 
@@ -10441,6 +10441,15 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		magazineWell[] = {};
 		
 		modes[] = 
+		{
+			"Single",
+			"FullAuto"
+		};
+    };
+    
+    class OPTRE_CR77: OPTRE_M393_DMR
+    {
+        modes[] = 
 		{
 			"Single",
 			"FullAuto"

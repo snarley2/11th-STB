@@ -10,7 +10,6 @@
 #include "Cfgtreatment.hpp"
 #include "Cfgtreatmentactions.hpp"
 #include "CfgFunctions.hpp"
-#include "first_meu_aux\Functions\fnc_addChangeFuseItemContextMenuOptions.sqf"
 
 class cfgPatches
 {
@@ -20,7 +19,7 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Launcher",
 			"OPTRE_Ammo_SupplyPod_Medical",
 			"OPTRE_Ammo_SupplyPod_Mortars",
-			"OPTRE_Ammo_SupplyPod_LMG"
+			"OPTRE_Ammo_SupplyPod_LMG",
 			};
         magazines[] = {
             "OPTRE_6Rnd_8Gauge_Pellet",
@@ -44,6 +43,7 @@ class cfgPatches
             "MEU_c7_remote_mag_throwable",
             "MEU_c12_remote_mag_throwable",
             "MEU_m168_remote_mag_throwable",
+            "OPTRE_CR77",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -67,15 +67,33 @@ class cfgPatches
             "ace_medical_treatment",
             "ace_common",
             "task_force_radio",
+            "A3_Map_Altis",
+            "A3_Map_Stratis",
+            "A3_Map_Stratis_Scenes",
+            "A3_Map_Altis_Scenes",
         };
     };
-    class MEU_Vehicles_Elephant
-	{
+    class MEU_Vehicles
+    {
+        editorCategory = "MEU_cat_gnd";
 		units[] = 
         {
             "1stMEU_M313_Elephant",
             "Vulkan_Repair_APC",
             "Vulkan_Repair_APC_P",
+            "OPTRE_HEV",
+            "MEU_IFV",
+            "MEU_IFV_A",
+            "MEU_M12_AP",
+        };
+		requiredVersion = 0.1;
+		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
+	};
+    class MEU_Air
+    {
+        editorCategory = "MEU_cat_air";
+		units[] = 
+        {
             "VES_AV22_Sparrowhawk_Base",
             "OPTRE_UNSC_falcon",
             "OPTRE_Pelican_F",
@@ -88,7 +106,6 @@ class cfgPatches
             "VES_UH144",
             "VES_D77HTCI_A",
             "VES_D77HTCI",
-            "OPTRE_HEV",
         };
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
@@ -106,23 +123,51 @@ class CfgFactionClasses
 		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
 	};
 };
-
-class CfgVehicleClasses
+class CfgEditorCategories
 {
-	class MEU_UNSC_Armored_class
-	{
-		displayName = "MEU Armored";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
+    class MEU_cat_air
+    {   
+        displayName = "1st MEU Air Assets";
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_cat_gnd
+    {   
+        displayName = "1st MEU Ground Assets";
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+};
+class CfgEditorSubcategories
+{
+    class MEU_sub_apc
+    {
+		displayName = "APC";
+        scopeCurator = 2;
+        scopeeditor = 2;
 	};
-    class OPTRE_UNSC_Air_class
-	{
-		displayName = "MEU Air Assets";
-		author = "Article 2 Studios";
-		scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
+    class MEU_sub_ifv
+    {
+		displayName = "IFV";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+    class MEU_sub_arm
+    {
+		displayName = "Tanks";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+    class MEU_sub_WIP
+    {
+		displayName = "WIP";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+    class MEU_sub_car
+    {
+		displayName = "Warthogs";
+        scopeCurator = 2;
+        scopeeditor = 2;
 	};
 };
-

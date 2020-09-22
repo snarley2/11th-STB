@@ -381,6 +381,3 @@ class CfgMagazines
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
     };
 };
-
- 
-	
