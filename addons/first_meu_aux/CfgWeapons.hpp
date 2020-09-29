@@ -10309,7 +10309,29 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	class OPTRE_Rifle_Base;
 	class OPTRE_LongRifle_Base;
 	class UGL_F;
+    class OPTRE_M7;
 	
+    class MEU_M7: OPTRE_M7
+    {
+        dlc = "OPTRE";
+        author = "1st MEU Mark";
+        scope = 2;
+		scopeArsenal = 2;
+        displayName = "M7X-T1";
+		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\smg\data\anim\m7_handpos.rtm","Spartan_ManSkeleton","\OPTRE_Weapons\smg\data\anim\smg_handanim_Spartan.rtm"};
+		//reloadAction = "OPTRE_GestureReloadM7";
+        reloadAction = "GestureReloadSMG_03";
+		descriptionShort = "UNSC M7 SMG";
+		magazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer_yellow","OPTRE_48Rnd_5x23mm_Mag","OPTRE_48Rnd_5x23mm_Mag_tracer","OPTRE_48Rnd_5x23mm_Mag_tracer_yellow","OPTRE_48Rnd_5x23mm_JHP_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag"};
+		magazineWell[] = {};
+        //magazineReloadTime = 0.1;
+		recoil = "recoil_pdw";
+		ODST_1 = "OPTRE_ODST_HUD_AmmoCount_SMG";
+		Glasses = "OPTRE_GLASS_HUD_AmmoCount_SMG";
+		Eye = "OPTRE_EYE_HUD_AmmoCount_SMG";
+		HUD_BulletInARows = 3;
+		HUD_TotalPosibleBullet = 60;
+    };
 	class OPTRE_M301X: UGL_F
 	{
 		magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};

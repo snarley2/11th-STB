@@ -52,6 +52,7 @@ class CfgVehicles
     class VES_IFV76;
     class VES_IFV76_A;
     class VES_M12_APC;
+    class textureSources;
     
     class MEU_IFV : VES_IFV76
     {
@@ -287,6 +288,36 @@ class CfgVehicles
             controllable = 1;
         };
         memoryPointDriverOptics = "gunnerview";
+        class textureSources
+        {
+            class Peg_CWO2
+            {
+                displayName="CWO2";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
+                };
+            };
+            class Peg_CWO3
+            {
+                displayName="CWO3";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
+                };
+            };
+            class Peg_CWO4
+            {
+                displayName="CWO4";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
+                };
+            };
+        };
     };
     
     class OPTRE_Hornet_base: Helicopter_Base_H
@@ -939,11 +970,124 @@ class CfgVehicles
             controllable = 1;
         };
         memoryPointDriverOptics = "gunnerview";
+        class textureSources
+        {
+            class Peg_CWO2
+            {
+                displayName="CWO2";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
+                };
+            };
+            class Peg_CWO3
+            {
+                displayName="CWO3";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
+                };
+            };
+            class Peg_CWO4
+            {
+                displayName="CWO4";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
+                };
+            };
+        };
     };
     
 	class VES_D77HTCI: OPTRE_Pelican_unarmed
     {
         tf_range=30000;
+        class pilotCamera
+        {
+            class OpticsIn
+            {
+                class Wide
+                {
+                    opticsDisplayName = "WFOV";
+                    initAngleX = 0;
+                    minAngleX = 0;
+                    maxAngleX = 0;
+                    initAngleY = 0;
+                    minAngleY = 0;
+                    maxAngleY = 0;
+                    initFov = "(75 / 120)";
+                    minFov = "(75 / 120)";
+                    maxFov = "(75 / 120)";
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                    opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+                };
+                class Medium: Wide
+                {
+                    opticsDisplayName = "MFOV";
+                    initFov = "(14.4 / 120)";
+                    minFov = "(14.4 / 120)";
+                    maxFov = "(14.4 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+                };
+                class Narrow: Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(4.8 / 120)";
+                    minFov = "0.01";
+                    maxFov = "(4.8 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+            };
+            minTurn = -90;
+            maxTurn = 90;
+            initTurn = 0;
+            minElev = -10;
+            maxElev = 90;
+            initElev = 25;
+            maxXRotSpeed = 1;
+            maxYRotSpeed = 1;
+            maxMouseXRotSpeed = 0.5;
+            maxMouseYRotSpeed = 0.5;
+            pilotOpticsShowCursor = 1;
+            controllable = 1;
+        };
+        memoryPointDriverOptics = "gunnerview";
+        class textureSources
+        {
+            class Peg_CWO2
+            {
+                displayName="CWO2";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
+                };
+            };
+            class Peg_CWO3
+            {
+                displayName="CWO3";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
+                };
+            };
+            class Peg_CWO4
+            {
+                displayName="CWO4";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
+                };
+            };
+        };
     };
     class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
@@ -1087,7 +1231,7 @@ class CfgVehicles
             mag_xx(rhs_charge_tnt_x2_mag, 2);
             mag_xx(OPTRE_M41_Twin_HEAT, 1);
             mag_xx(OPTRE_100Rnd_95x40_Box_JHPT, 2);
-            mag_xx(OPTRE_100Rnd_127x99_M247HMG, 1);
+            mag_xx(OPTRE_100Rnd_127x99_M250HMG, 1);
             delete _xx_OPTRE_ELB47_Strobe;
             delete _xx_OPTRE_M8_Flare;
             delete _xx_OPTRE_M2_Smoke_Purple;

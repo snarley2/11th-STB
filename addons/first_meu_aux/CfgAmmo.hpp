@@ -39,7 +39,7 @@ class CfgAmmo
         hit = 2500;
 		indirectHit = 2400;
 		indirectHitRange = 0.7;
-		defaultMagazine = "MEU_c7_remote_mag_throwable";
+		defaultMagazine = "MEU_c7_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\C7.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
 		explosionType = "bomb";
@@ -63,7 +63,7 @@ class CfgAmmo
         hit = 6500;
 		indirectHit = 4500;
 		indirectHitRange = 3;
-		defaultMagazine = "MEU_c12_remote_mag_throwable";
+		defaultMagazine = "MEU_c12_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\c12.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
 		explosionType = "bomb";
@@ -87,7 +87,7 @@ class CfgAmmo
         hit = 9500;
 		indirectHit = 6500;
 		indirectHitRange = 10;
-		defaultMagazine = "MEU_m168_remote_mag_throwable";
+		defaultMagazine = "MEU_m168_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\m168.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
 		explosionType = "bomb";

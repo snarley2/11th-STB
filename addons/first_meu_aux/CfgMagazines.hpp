@@ -311,7 +311,7 @@ class CfgMagazines
 		ammo = "MEU_40mm_HEDP";
 		mass = 21;
 	};
-    class MEU_c7_remote_mag_throwable : grenade
+    class MEU_c7_remote_throwableMag : grenade
     {
         author = "1st MEU Mark"
         scope = 2;
@@ -320,12 +320,10 @@ class CfgMagazines
 		displayNameShort = "Throwable C7";
 		descriptionShort = "Compact explosive Foam";
 		descriptionUse = "Use: Set Charge";
-		type = "2* 256";
-		allowedSlots[] = {901,701};
 		ammo = "MEU_c7_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\C7Can.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c7.paa";
-		mass = 7;
+		mass = 10;
 		count = 1;
 		maxLeadSpeed = 0;
 		nameSoundWeapon = "satchelcharge";
@@ -334,7 +332,7 @@ class CfgMagazines
 		useActionTitle = "Put %1 (%2 left)";
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
     };
-    class MEU_c12_remote_mag_throwable : grenade
+    class MEU_c12_remote_throwableMag : grenade
     {
         author = "1st MEU Mark"
         scope = 2;
@@ -343,12 +341,10 @@ class CfgMagazines
 		displayNameShort = "Throwable C12";
 		descriptionShort = "Compact explosive charge";
 		descriptionUse = "Use: Set Charge";
-		type = "2* 256";
-		allowedSlots[] = {901,701};
 		ammo = "MEU_c12_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\c12G.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		mass = 110;
+		mass = 15;
 		count = 1;
 		maxLeadSpeed = 0;
 		nameSoundWeapon = "satchelcharge";
@@ -357,7 +353,7 @@ class CfgMagazines
 		useActionTitle = "Put %1 (%2 left)";
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
     };
-    class MEU_m168_remote_mag_throwable : grenade
+    class MEU_m168_remote_throwableMag : grenade
     {
         author = "1st MEU Mark"
         scope = 2;
@@ -366,12 +362,10 @@ class CfgMagazines
 		displayNameShort = "Throwable M168";
 		descriptionShort = "Compact explosive block";
 		descriptionUse = "Use: Set Charge";
-		type = "2* 256";
-		allowedSlots[] = {901,701};
 		ammo = "MEU_c168_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
 		picture = "\OPTRE_weapons\charges\icons\m168.paa";
-		mass = 395;
+		mass = 20;
 		count = 1;
 		maxLeadSpeed = 0;
 		nameSoundWeapon = "satchelcharge";

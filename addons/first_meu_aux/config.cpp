@@ -26,6 +26,9 @@ class cfgPatches
             "OPTRE_12Rnd_8Gauge_Pellet",
             "OPTRE_6Rnd_8Gauge_Beanbag",
             "OPTRE_12Rnd_8Gauge_Beanbag",
+            "MEU_c7_remote_throwableMag",
+            "MEU_c12_remote_throwableMag",
+            "MEU_m168_remote_throwableMag",
             };
 		ammo[] = {
             "OPTRE_B_5x23_Caseless_JHP",
@@ -44,6 +47,7 @@ class cfgPatches
             "MEU_c12_remote_mag_throwable",
             "MEU_m168_remote_mag_throwable",
             "OPTRE_CR77",
+            "MEU_M7",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
