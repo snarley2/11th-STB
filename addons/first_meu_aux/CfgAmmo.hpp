@@ -17,7 +17,7 @@ class CfgAmmo
     class M168_Remote_Mag;
     class ACE_SatchelCharge_Remote_Ammo_Thrown;
 	
-    //code name LMAO
+    // code name LMAO
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
 	{
 		cameraViewAvailable = 1;
@@ -33,7 +33,8 @@ class CfgAmmo
 		};
 	};
     // end codename LMAO
-    //throwable stuff dont forget the ace funtion numb nuts
+	
+    // throwable stuff dont forget the ace funtion numb nuts
     class MEU_c7_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
         hit = 2500;
@@ -106,6 +107,16 @@ class CfgAmmo
         deflectionSlowDown = 0.1;
         ACE_damageType = "explosive";
     };
+	// end throwable explosives
+	
+	// start ammo reballance
+	
+	class OPTRE_B_8Gauge_Slug: B_12Gauge_Slug
+	{
+		caliber	= 6;
+		hit = 36;
+	};
+
 	class OPTRE_B_5x23_Caseless_JHP: OPTRE_B_5x23_Caseless
 	{
 		caliber	= 0.25;
@@ -130,7 +141,7 @@ class CfgAmmo
 	class MEU_B_8Gauge_Pellet: B_12Gauge_Pellets_Submunition
 	{
 		submunitionAmmo = "MEU_B_8Gauge_Pellet_Submunition";
-		thrust = 20;
+		thrust = 30;
 		triggerTime = 0.001;
 	};
 
@@ -142,7 +153,21 @@ class CfgAmmo
 
 	class MEU_B_8Gauge_Pellet_Submunition: B_12Gauge_Pellets_Submunition_Deploy
 	{
-		hit = 8;
+		hit = 12;
+	};
+	
+	class OPTRE_B_8Gauge_Incendiary_Submunition: B_12Gauge_Pellets_Submunition_Deploy
+	{
+		caliber = 4;
+		hit = 16;
+		
+		deflecting = 0;
+		thrust = 75;
+		model = "\V_SO_Core\data\Effects\fire_effect";
+		timeToLive = 1;
+		tracerEndTime = 1;
+		tracerStartTime = 0;
+		tracerScale = 0.75;
 	};
 	
 	class OPTRE_B_762x51_DMR_AP: OPTRE_B_762x51_Ball
@@ -194,7 +219,7 @@ class CfgAmmo
 		model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	
-	class MEU_40mm_HE:G_40mm_HE
+	class MEU_40mm_HE: G_40mm_HE
 	{
 		hit = 80;
 		indirecthit = 60;
@@ -202,7 +227,7 @@ class CfgAmmo
 		timeToLive = 4;
 	};
 	
-	class MEU_40mm_HEDP:MEU_40mm_HE
+	class MEU_40mm_HEDP: MEU_40mm_HE
 	{
 		hit = 220;
 		indirectHit = 100;
