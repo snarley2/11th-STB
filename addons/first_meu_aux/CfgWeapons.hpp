@@ -10426,23 +10426,14 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     class MEU_M7: OPTRE_M7
     {
         dlc = "OPTRE";
-        author = "1st MEU Mark";
-        scope = 2;
+		author = "1st MEU Mark";
+		scope = 2;
+        scopeCurator = 2;
 		scopeArsenal = 2;
-        displayName = "M7X-T1";
-		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\smg\data\anim\m7_handpos.rtm","Spartan_ManSkeleton","\OPTRE_Weapons\smg\data\anim\smg_handanim_Spartan.rtm"};
-		//reloadAction = "OPTRE_GestureReloadM7";
         reloadAction = "GestureReloadSMG_03";
-		descriptionShort = "UNSC M7 SMG";
-		magazines[] = {"OPTRE_60Rnd_5x23mm_Mag","OPTRE_60Rnd_5x23mm_Mag_tracer","OPTRE_60Rnd_5x23mm_Mag_tracer_yellow","OPTRE_48Rnd_5x23mm_Mag","OPTRE_48Rnd_5x23mm_Mag_tracer","OPTRE_48Rnd_5x23mm_Mag_tracer_yellow","OPTRE_48Rnd_5x23mm_JHP_Mag","OPTRE_48Rnd_5x23mm_FMJ_Mag"};
-		magazineWell[] = {};
-        //magazineReloadTime = 0.1;
-		recoil = "recoil_pdw";
-		ODST_1 = "OPTRE_ODST_HUD_AmmoCount_SMG";
-		Glasses = "OPTRE_GLASS_HUD_AmmoCount_SMG";
-		Eye = "OPTRE_EYE_HUD_AmmoCount_SMG";
-		HUD_BulletInARows = 3;
-		HUD_TotalPosibleBullet = 60;
+        magazineReloadTime = 0.1;
+        displayName = "M7X-T1";
+        descriptionShort = "UNSC M7X-T1 SMG";
     };
 	class OPTRE_M301X: UGL_F
 	{

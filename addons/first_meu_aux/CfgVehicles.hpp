@@ -52,6 +52,7 @@ class CfgVehicles
     class VES_IFV76;
     class VES_IFV76_A;
     class VES_M12_APC;
+    class OPTRE_ILCS_Rucksack_Black;
     class textureSources;
     
     class MEU_IFV : VES_IFV76
@@ -1282,16 +1283,37 @@ class CfgVehicles
     
 //  Start Backpacks
 	
-    class Praetor_Jumpack: OPTRE_S12_SOLA_Jetpack	
+    class Praetor_Jumpack : OPTRE_ILCS_Rucksack_Black	
     {
+        author = "NSM & Oneill & Mark";
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
         displayName = "[1stMEU] ODST Advanced Reconnaissance Jumpack";
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 35000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 200;
+        maximumLoad = 300;
+        picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
+		model="\OPTRE_weapons\backpacks\jetpack.p3d";
+		NSM_jumppack_is_jumppack = 1;
+		NSM_jumppack_spam_delay = 1;
+		NSM_jumppack_energy_capacity = 200;
+		NSM_jumppack_recharge = 5;
+		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
+		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
+		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
+		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
+		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}}};
+		model = "NSM_Objects\Data\XD_1_Jumppack.p3d";
+		maximumload = 100;
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
+		picture = "NSM_Objects\icon.paa";
     };
 	
 	class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black

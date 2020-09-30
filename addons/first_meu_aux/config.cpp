@@ -10,6 +10,10 @@
 #include "Cfgtreatment.hpp"
 #include "Cfgtreatmentactions.hpp"
 #include "CfgFunctions.hpp"
+#include "NSM_End.pbo"
+#include "NSM_Main.pbo"
+#include "NSM_Objects.pbo"
+#include "NSM_Particle_Effects.pbo"
 
 class cfgPatches
 {
@@ -47,7 +51,6 @@ class cfgPatches
             "MEU_c12_remote_mag_throwable",
             "MEU_m168_remote_mag_throwable",
             "OPTRE_CR77",
-            "MEU_M7",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -75,6 +78,10 @@ class cfgPatches
             "A3_Map_Stratis",
             "A3_Map_Stratis_Scenes",
             "A3_Map_Altis_Scenes",
+            "NSM_End",
+            "NSM_Main",
+            "NSM_Objects",
+            "NSM_Particle_Effects",
         };
     };
     class MEU_Vehicles
