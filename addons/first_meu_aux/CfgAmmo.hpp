@@ -7,7 +7,7 @@ class CfgAmmo
 	class B_12Gauge_Pellets_Submunition_Deploy;
 	class OPTRE_B_95x40_Ball;
 	class OPTRE_B_127x40_Ball;
-	class OPTRE_B_8Gauge_Slug;
+    class B_12Gauge_Slug;
 	class G_40mm_HE;
     class CA_Magazine;
 	class SatchelCharge_Remote_Mag;
@@ -16,6 +16,7 @@ class CfgAmmo
     class C7_Remote_Mag;
     class M168_Remote_Mag;
     class ACE_SatchelCharge_Remote_Ammo_Thrown;
+    class OPTRE_G_M9_Frag;
 	
     // code name LMAO
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
@@ -43,7 +44,6 @@ class CfgAmmo
 		defaultMagazine = "MEU_c7_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\C7.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		explosionType = "bomb";
 		mineModelDisabled = "\OPTRE_Weapons\charges\C7Can.p3d";
 		ExplosionEffects = "DirectionalMineExplosion";
 		CraterEffects = "MineNondirectionalCrater";
@@ -67,7 +67,6 @@ class CfgAmmo
 		defaultMagazine = "MEU_c12_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\c12.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		explosionType = "bomb";
 		mineModelDisabled = "\OPTRE_Weapons\charges\c12G.p3d";
 		ExplosionEffects = "MineNondirectionalExplosion";
 		CraterEffects = "MineNondirectionalCrater";
@@ -76,7 +75,6 @@ class CfgAmmo
 		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
 		soundDeactivation[] = {"A3\Sounds_F\weapons\mines\deactivate_mine_3a",0.56234133,1,50};
 		whistleDist = 10;
-		mineInconspicuousness = 3;
 		timeToLive = 8;
         fuseDistance = 0;
         explosionTime = 15;
@@ -91,7 +89,6 @@ class CfgAmmo
 		defaultMagazine = "MEU_m168_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\m168.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		explosionType = "bomb";
 		mineModelDisabled = "\OPTRE_Weapons\charges\m168g.p3d";
 		ExplosionEffects = "MineNondirectionalExplosion";
 		CraterEffects = "MineNondirectionalCrater";
@@ -100,7 +97,6 @@ class CfgAmmo
 		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
 		soundDeactivation[] = {"A3\Sounds_F\weapons\mines\deactivate_mine_3a",0.56234133,1,50};
 		whistleDist = 10;
-		mineInconspicuousness = 3;
         timeToLive = 8;
         fuseDistance = 0;
         explosionTime = 20;

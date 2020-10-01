@@ -10,10 +10,6 @@
 #include "Cfgtreatment.hpp"
 #include "Cfgtreatmentactions.hpp"
 #include "CfgFunctions.hpp"
-#include "NSM_End.pbo"
-#include "NSM_Main.pbo"
-#include "NSM_Objects.pbo"
-#include "NSM_Particle_Effects.pbo"
 
 class cfgPatches
 {
@@ -30,9 +26,6 @@ class cfgPatches
             "OPTRE_12Rnd_8Gauge_Pellet",
             "OPTRE_6Rnd_8Gauge_Beanbag",
             "OPTRE_12Rnd_8Gauge_Beanbag",
-            "MEU_c7_remote_throwableMag",
-            "MEU_c12_remote_throwableMag",
-            "MEU_m168_remote_throwableMag",
             };
 		ammo[] = {
             "OPTRE_B_5x23_Caseless_JHP",
@@ -47,9 +40,6 @@ class cfgPatches
             "OPTRE_BR55HB",
             "OPTRE_M295_BMR",
             "OPTRE_M393_DMR",
-            "MEU_c7_remote_mag_throwable",
-            "MEU_c12_remote_mag_throwable",
-            "MEU_m168_remote_mag_throwable",
             "OPTRE_CR77",
         };
         requiredVersion = 0.1;
@@ -78,10 +68,6 @@ class cfgPatches
             "A3_Map_Stratis",
             "A3_Map_Stratis_Scenes",
             "A3_Map_Altis_Scenes",
-            "NSM_End",
-            "NSM_Main",
-            "NSM_Objects",
-            "NSM_Particle_Effects",
         };
     };
     class MEU_Vehicles

@@ -1296,7 +1296,6 @@ class CfgVehicles
         tf_range = 35000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 300;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		model="\OPTRE_weapons\backpacks\jetpack.p3d";
 		NSM_jumppack_is_jumppack = 1;
@@ -1309,11 +1308,9 @@ class CfgVehicles
 		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
 		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
 		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}}};
-		model = "NSM_Objects\Data\XD_1_Jumppack.p3d";
 		maximumload = 100;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
-		picture = "NSM_Objects\icon.paa";
     };
 	
 	class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black

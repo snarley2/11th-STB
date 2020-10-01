@@ -1,4 +1,0 @@
-﻿//<'NSM_Objects.pbo' properties via Mikero's dos tools, dll version 7.46>
-prefix=NSM_Objects;
-PboType=Arma Addon;
-//</properties>

@@ -323,14 +323,11 @@ class CfgMagazines
 		ammo = "MEU_c7_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\C7Can.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c7.paa";
-		mass = 10;
+		mass = 5;
 		count = 1;
-		maxLeadSpeed = 0;
 		nameSoundWeapon = "satchelcharge";
 		nameSound = "satchelcharge";
-		weaponPoolAvailable = 1;
-		useActionTitle = "Put %1 (%2 left)";
-		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
+		initSpeed = 20;
     };
     class MEU_c12_remote_throwableMag : grenade
     {
@@ -339,19 +336,14 @@ class CfgMagazines
         scopeArsenal = 2;
         displayName = "Throwable C12";
 		displayNameShort = "Throwable C12";
-		descriptionShort = "Compact explosive charge";
-		descriptionUse = "Use: Set Charge";
 		ammo = "MEU_c12_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\c12G.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		mass = 15;
+		mass = 8;
 		count = 1;
-		maxLeadSpeed = 0;
 		nameSoundWeapon = "satchelcharge";
 		nameSound = "satchelcharge";
-		weaponPoolAvailable = 1;
-		useActionTitle = "Put %1 (%2 left)";
-		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
+		initSpeed = 20;
     };
     class MEU_m168_remote_throwableMag : grenade
     {
@@ -359,19 +351,13 @@ class CfgMagazines
         scope = 2;
         scopeArsenal = 2;
         displayName = "Throwable M168";
-		displayNameShort = "Throwable M168";
-		descriptionShort = "Compact explosive block";
-		descriptionUse = "Use: Set Charge";
 		ammo = "MEU_c168_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
 		picture = "\OPTRE_weapons\charges\icons\m168.paa";
-		mass = 20;
+		mass = 10;
 		count = 1;
-		maxLeadSpeed = 0;
 		nameSoundWeapon = "satchelcharge";
 		nameSound = "satchelcharge";
-		weaponPoolAvailable = 1;
-		useActionTitle = "Put %1 (%2 left)";
-		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
+		initSpeed = 20;
     };
 };

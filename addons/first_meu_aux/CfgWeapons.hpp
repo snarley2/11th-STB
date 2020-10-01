@@ -43,6 +43,22 @@ class CfgWeapons
 	class LM_OPCAN_CH252D_H3_Yellow_broken;
 	class LM_OPCAN_CH252D_H3_Blue_broken;
     class VES_CH252D_dp;
+    class WeaponSlotsInfo;
+	class StandardSound;
+	class CowsSlot;
+	class MuzzleSlot;
+	class PointerSlot;
+	class UnderBarrelSlot;
+	class Single;
+	class FullAuto;
+	class OPTRE_M247;
+	class OPTRE_M393_DMR;
+	class OPTRE_Rifle_Base;
+	class OPTRE_LongRifle_Base;
+	class UGL_F;
+    class OPTRE_M7S;
+    class VES_M7_I;
+    class OPTRE_SubMachineGun_Base;
 	
 // Medical Items Start
 	
@@ -10407,39 +10423,44 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	
 // BDU End
 // Weapons Start
-	
-	class WeaponSlotsInfo;
-	class StandardSound;
-	class CowsSlot;
-	class MuzzleSlot;
-	class PointerSlot;
-	class UnderBarrelSlot;
-	class Single;
-	class FullAuto;
-	class OPTRE_M247;
-	class OPTRE_M393_DMR;
-	class OPTRE_Rifle_Base;
-	class OPTRE_LongRifle_Base;
-	class UGL_F;
-    class OPTRE_M7;
-	
-    class MEU_M7: OPTRE_M7
+    
+    class MEU_M7v2: VES_M7_I
     {
-        dlc = "OPTRE";
-		author = "1st MEU Mark";
+        baseweapon = "MEU_M7v2";
+        dlc = "SO";
+        author = "1st MEU Mark"
 		scope = 2;
         scopeCurator = 2;
 		scopeArsenal = 2;
-        reloadAction = "GestureReloadSMG_03";
-        magazineReloadTime = 0.1;
-        displayName = "M7X-T1";
-        descriptionShort = "UNSC M7X-T1 SMG";
+        displayName = "M7X-T2";
+        magazineReloadTime = 2.0
+        reloadAction = ""
+        class LinkedItems
+		{
+            class WeaponSlotsInfo
+            {
+                mass = 29;
+                class MuzzleSlot: MuzzleSlot
+                {
+                    compatibleitems[] = {"muzzle_snds_b","muzzle_snds_h_mg_blk_f","ace_muzzle_mzls_b","optre_m7_silencer","optre_m6_silencer"};
+                };
+                class CowsSlot: CowsSlot
+                {
+                    compatibleitems[] ={"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","OPTRE_SRS99_Scope_v2","OPTRE_SRS99C_Scope_v2","OPTRE_M73_Smartlink_v2","OPTRE_M6S_Scope","OPTRE_M6GX_Scope","OPTRE_M6D_Smartlink","OPTRE_MA5_SmartLink","OPTRE_MA5_SmartLink_v2","OPTRE_MA5C_SmartLink_v2","OPTRE_MA5_SmartLink_legacy","OPTRE_MA5C_SmartLink_legacy","OPTRE_M7_Sight_v2","OPTRE_M392_Scope_v2","OPTRE_BMR_Scope_v2","OPTRE_M393_Scope_v2","OPTRE_M393_ACOG_v2","OPTRE_M393_EOTECH_v2","OPTRE_BR55HB_Scope_v2"};
+                };
+                class PointerSlot: PointerSlot
+                {
+				    compatibleitems[] = {"acc_pointer_ir","ace_acc_pointer_green","acc_flashlight","optre_m45_flashlight","optre_m45_flashlight_red","optre_m7_laser","optre_m7_flashlight","OPTRE_BMR_Laser"};
+                };
+            };
+		};
     };
+    
 	class OPTRE_M301X: UGL_F
 	{
 		magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareCIR_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
 	};
-	
+    
 	class M250HMG: OPTRE_M247
 	{
 		dlc = "OPTRE";
@@ -10461,7 +10482,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			mass = 150;
 			class CowsSlot: CowsSlot
 			{
-				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH"};
+				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","OPTRE_SRS99_Scope_v2","OPTRE_SRS99C_Scope_v2","OPTRE_M73_Smartlink_v2","OPTRE_M6S_Scope","OPTRE_M6GX_Scope","OPTRE_M6D_Smartlink","OPTRE_MA5_SmartLink","OPTRE_MA5_SmartLink_v2","OPTRE_MA5C_SmartLink_v2","OPTRE_MA5_SmartLink_legacy","OPTRE_MA5C_SmartLink_legacy","OPTRE_M7_Sight_v2","OPTRE_M392_Scope_v2","OPTRE_BMR_Scope_v2","OPTRE_M393_Scope_v2","OPTRE_M393_ACOG_v2","OPTRE_M393_EOTECH_v2","OPTRE_BR55HB_Scope_v2"};
 			};
 			class MuzzleSlot: MuzzleSlot
 			{
