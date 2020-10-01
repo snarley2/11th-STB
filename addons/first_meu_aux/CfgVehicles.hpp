@@ -1,10 +1,6 @@
-    #define _ARMA_	
-class CBA_Extended_EventHandlers;
-				
 class CfgVehicles
 {
-	#include "CfgSupplyPods.hpp"
-
+    
     class Helicopter_Base_H;
     class OPTRE_falcon_base;
     class OPTRE_UNSC_falcon_unarmed;
@@ -41,7 +37,6 @@ class CfgVehicles
     class OPTRE_FC_Elite_Undersuit;
     class UniformItem;
     class Item_Base_F;
-    class ace_medical_treatment;
     class ACE_morphineItem;
     class OPTRE_UNSC_hornet_CAP;
     class OPTRE_UNSC_hornet_CAS;
@@ -54,7 +49,7 @@ class CfgVehicles
     class VES_M12_APC;
     class OPTRE_ILCS_Rucksack_Black;
     class textureSources;
-    
+
     class MEU_IFV : VES_IFV76
     {
         scope = 2;
@@ -70,7 +65,7 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_apc";
-    }	
+    };
     class MEU_IFV_A : VES_IFV76_A
     {
         scope = 2;
@@ -86,7 +81,7 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_ifv";
-    }
+    };
     class MEU_M12_AP : VES_M12_APC
     {
         scope = 2;
@@ -102,7 +97,7 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_car";
-    }
+    };
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
         scope = 2;
@@ -116,7 +111,6 @@ class CfgVehicles
             item_xx(MEU_Ibuprophen,1);
         };
     };
-    
 	class VES_AV22_Sparrowhawk_Base: OPTRE_AV22_Sparrowhawk_Base
 	{
         tf_range=30000;
@@ -124,6 +118,18 @@ class CfgVehicles
         {
             class OpticsIn
             {
+                minTurn = -90;
+                maxTurn = 90;
+                initTurn = 0;
+                minElev = -10;
+                maxElev = 90;
+                initElev = 25;
+                maxXRotSpeed = 1;
+                maxYRotSpeed = 1;
+                maxMouseXRotSpeed = 0.5;
+                maxMouseYRotSpeed = 0.5;
+                pilotOpticsShowCursor = 1;
+                controllable = 1;
                 class Wide
                 {
                     opticsDisplayName = "WFOV";
@@ -159,26 +165,13 @@ class CfgVehicles
                     gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
                 };
             };
-            minTurn = -90;
-            maxTurn = 90;
-            initTurn = 0;
-            minElev = -10;
-            maxElev = 90;
-            initElev = 25;
-            maxXRotSpeed = 1;
-            maxYRotSpeed = 1;
-            maxMouseXRotSpeed = 0.5;
-            maxMouseYRotSpeed = 0.5;
-            pilotOpticsShowCursor = 1;
-            controllable = 1;
         };
         memoryPointDriverOptics = "gunnerview";
     };
-    
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
-        tf_range=30000;
-         class pilotCamera
+        tf_range = 30000;
+        class pilotCamera
         {
             class OpticsIn
             {
@@ -232,7 +225,6 @@ class CfgVehicles
         };
         memoryPointDriverOptics = "gunnerview";
     };
-    
 	class OPTRE_Pelican_F: Helicopter_Base_H
     {
         tf_range=30000;
@@ -1282,14 +1274,13 @@ class CfgVehicles
     };
     
 //  Start Backpacks
-	
-    class Praetor_Jumpack : OPTRE_ILCS_Rucksack_Black	
+	class Praetor_Jumpack : OPTRE_ILCS_Rucksack_Black	
     {
         author = "NSM & Oneill & Mark";
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] ODST Advanced Reconnaissance Jumpack";
+        displayName = "[1stMEU] ODST Reconnaissance Jumpack";
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -1312,7 +1303,64 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
     };
-	
+    class MEU_Cent_RTO_Pack : Praetor_Jumpack
+    {
+        author = "NSM & Oneill & Mark";
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurian Reconnaissance RTO/NCO Jumpack";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 35000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
+		model="\OPTRE_weapons\backpacks\jetpack.p3d";
+		NSM_jumppack_is_jumppack = 1;
+		NSM_jumppack_spam_delay = 1;
+		NSM_jumppack_energy_capacity = 200;
+		NSM_jumppack_recharge = 0;
+		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
+		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
+		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
+		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
+		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}}};
+		maximumload = 200;
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
+    };
+    class MEU_Cent_Pack : Praetor_Jumpack
+    {
+        author = "NSM (Namenai) & Oneill & Mark";
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurian Reconnaissance Jumpack";
+        picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
+		model="\OPTRE_weapons\backpacks\jetpack.p3d";
+		NSM_jumppack_is_jumppack = 1;
+		NSM_jumppack_spam_delay = 1;
+		NSM_jumppack_energy_capacity = 200;
+		NSM_jumppack_recharge = 0;
+		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
+		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
+		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
+		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
+		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}}};
+		maximumload = 200;
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
+    };
+    class MEU_Testpack : Praetor_Jumpack
+    {
+        displayName = "[1stMEU] Test Pack";
+        NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}},{"Full Power",{30,5,1,0,1,0}}};
+    };
+      
 	class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black
     {
         displayName = "[1stMEU] Zeus LR";
@@ -1322,7 +1370,7 @@ class CfgVehicles
         tf_range = 100000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 180;
+        maximumLoad = 1000;
     };
 	
     class Praetor_LR_backpack_big: OPTRE_ANPRC_521_Black
@@ -1615,51 +1663,51 @@ class CfgVehicles
 	
 	class BDU_V_Praetorian_Slim: 1stMEU_BDU
 	{
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO"};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		uniformclass = "Praetorian_BDU";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO.paa"};
 	};
 	
 	class BDU_V_Centurion_Slim: 1stMEU_BDU
 	{
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO"};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		uniformclass = "Centurion_BDU";
+        uniformclass = "Centurion_BDU";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa"};
 	};
 	
 	class BDU_V_Centurion_Urban_Evolved_Slim: 1stMEU_BDU
 	{
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO"};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		uniformclass = "Centurion_BDU_Urban_Evolved";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
 	};
 	
 	class BDU_V_Centurion_Desert_Slim: 1stMEU_BDU
 	{
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO"};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		uniformclass = "Centurion_BDU_Desert";
+        uniformclass = "Centurion_BDU_Desert";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa"};
 	};
 	
 	class BDU_V_Centurion_Snow_Slim: 1stMEU_BDU
 	{
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO"};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		uniformclass = "Centurion_BDU_Snow";
+        uniformclass = "Centurion_BDU_Snow";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa"};
 	};
 	
 	class BDU_V_Centurion_Woodland_Slim: 1stMEU_BDU
 	{
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO"};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		uniformclass = "Centurion_BDU_Woodland";
+        uniformclass = "Centurion_BDU_Woodland";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa"};
 	};
 	
 	class BDU_V_Pegasus_Slim: 1stMEU_BDU
 	{
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO"};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		uniformclass = "Centurion_BDU_Urban_Evolved";
+        uniformclass = "Centurion_BDU_Urban_Evolved";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
 	};
 	
 //  End Uniforms

@@ -1,6 +1,8 @@
+#define _ARMA_
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
+#include "CfgSupplyPods.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgAmmo.hpp"
@@ -41,6 +43,7 @@ class cfgPatches
             "OPTRE_M295_BMR",
             "OPTRE_M393_DMR",
             "OPTRE_CR77",
+            "Throw",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -48,6 +51,7 @@ class cfgPatches
 			"OPTRE_UNSC_Units",
 			"OPTRE_Ins_Units",
 			"OPTRE_Weapons",
+            "V_FZ_Armor",
 			"OPTRE_Core",
 			"OPTRE_Misc",
 			"A3_Data_F",
@@ -68,6 +72,8 @@ class cfgPatches
             "A3_Map_Stratis",
             "A3_Map_Stratis_Scenes",
             "A3_Map_Altis_Scenes",
+            "NSM_patch_main",
+            "NSM_patch_particle_effects",
         };
     };
     class MEU_Vehicles
@@ -108,7 +114,6 @@ class cfgPatches
 		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
 	};
 };
-
 class CfgFactionClasses
 {
 	class MEU_UNSC
@@ -167,4 +172,8 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         scopeeditor = 2;
 	};
+};
+class CfgMods
+{
+    
 };

@@ -15,7 +15,6 @@ class CfgAmmo
 	class C12_Remote_Mag;
     class C7_Remote_Mag;
     class M168_Remote_Mag;
-    class ACE_SatchelCharge_Remote_Ammo_Thrown;
     class OPTRE_G_M9_Frag;
 	
     // code name LMAO
@@ -36,72 +35,65 @@ class CfgAmmo
     // end codename LMAO
 	
     // throwable stuff dont forget the ace funtion numb nuts
-    class MEU_c7_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
+    class MEU_c7_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
+        scope = 1;
         hit = 2500;
 		indirectHit = 2400;
 		indirectHitRange = 0.7;
 		defaultMagazine = "MEU_c7_remote_throwableMag";
-		model = "\OPTRE_Weapons\charges\C7.p3d";
-		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		mineModelDisabled = "\OPTRE_Weapons\charges\C7Can.p3d";
-		ExplosionEffects = "DirectionalMineExplosion";
-		CraterEffects = "MineNondirectionalCrater";
+		model = "\OPTRE_Weapons\charges\C7Can.p3d";
+        timeToLive = 20;
+        fuseDistance = 0;
+        explosionTime = 7;
+        ExplosionEffects = "DirectionalMineExplosion";
+		CraterEffects = "";
 		craterShape = "\A3\weapons_f\empty.p3d";
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
 		soundTrigger[] = {"A3\Sounds_F\weapons\mines\electron_trigger_1",0.56234133,1,50};
 		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
-		soundDeactivation[] = {"A3\Sounds_F\weapons\mines\deactivate_mine_3a",0.56234133,1,50};
 		whistleDist = 10;
-		timeToLive = 8;
-        fuseDistance = 0;
-        explosionTime = 7;
-        deflectionSlowDown = 0.1;
-        ACE_damageType = "explosive";
+        initSpeed = 25;
     };
-    class MEU_c12_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
+    class MEU_c12_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
+        scope = 1;
         hit = 6500;
-		indirectHit = 4500;
+		indirectHit = 6000;
 		indirectHitRange = 3;
 		defaultMagazine = "MEU_c12_remote_throwableMag";
-		model = "\OPTRE_Weapons\charges\c12.p3d";
-		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		mineModelDisabled = "\OPTRE_Weapons\charges\c12G.p3d";
-		ExplosionEffects = "MineNondirectionalExplosion";
+		model = "\OPTRE_Weapons\charges\c12g.p3d";
+        timeToLive = 20;
+        fuseDistance = 0;
+        explosionTime = 12;
+        deflectionSlowDown = 0.1;
+        //start testing
+        ExplosionEffects = "MineNondirectionalExplosion";
 		CraterEffects = "MineNondirectionalCrater";
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
 		soundTrigger[] = {"A3\Sounds_F\weapons\mines\electron_trigger_1",0.56234133,1,50};
 		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
-		soundDeactivation[] = {"A3\Sounds_F\weapons\mines\deactivate_mine_3a",0.56234133,1,50};
-		whistleDist = 10;
-		timeToLive = 8;
-        fuseDistance = 0;
-        explosionTime = 15;
-        deflectionSlowDown = 0.1;
-        ACE_damageType = "explosive";
+        whistleDist = 10;
+        initSpeed = 15;
     };
-    class MEU_m168_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
+    class MEU_m168_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
+        scope = 1;
         hit = 9500;
-		indirectHit = 6500;
+		indirectHit = 8500;
 		indirectHitRange = 10;
 		defaultMagazine = "MEU_m168_remote_throwableMag";
-		model = "\OPTRE_Weapons\charges\m168.p3d";
-		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		mineModelDisabled = "\OPTRE_Weapons\charges\m168g.p3d";
-		ExplosionEffects = "MineNondirectionalExplosion";
+		model = "\OPTRE_Weapons\charges\m168g.p3d";
+        timeToLive = 20;
+        fuseDistance = 0;
+        explosionTime = 15;
+        ExplosionEffects = "MineNondirectionalExplosion";
 		CraterEffects = "MineNondirectionalCrater";
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
 		soundTrigger[] = {"A3\Sounds_F\weapons\mines\electron_trigger_1",0.56234133,1,50};
 		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
-		soundDeactivation[] = {"A3\Sounds_F\weapons\mines\deactivate_mine_3a",0.56234133,1,50};
-		whistleDist = 10;
-        timeToLive = 8;
-        fuseDistance = 0;
-        explosionTime = 20;
-        deflectionSlowDown = 0.1;
-        ACE_damageType = "explosive";
+        whistleDist = 10;
+        initSpeed = 10;
     };
 	// end throwable explosives
 	

@@ -26,7 +26,6 @@ class CfgWeapons
 	class CBA_MiscItem_ItemInfo;
 	class InventoryFirstAidKitItem_Base_F;
 	class MedikitItem;
-    class ace_medical_treatment;
     class ACE_Morphine;
 	class U_B_CombatUniform_mcam;
     class OPTRE_UNSC_VX16_Helmet_base;
@@ -59,6 +58,8 @@ class CfgWeapons
     class OPTRE_M7S;
     class VES_M7_I;
     class OPTRE_SubMachineGun_Base;
+    class GrenadeLauncher;
+    class HUDMonitors;
 	
 // Medical Items Start
 	
@@ -142,6 +143,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		CBRN_protection = 1;
+        optreHUDStyle = "HudLoad_ODST1";
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -410,6 +412,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
+        optreHUDStyle = "HudLoad_MarrineGlass1";
 		class ItemInfo: ItemInfo
 		{
 			mass = 30;
@@ -10424,6 +10427,23 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 // BDU End
 // Weapons Start
     
+    class Throw: GrenadeLauncher
+	{
+		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_M168_Muzzle"};
+        class ThrowMuzzle;
+		class MEU_C7_Muzzle : ThrowMuzzle
+		{
+			magazines[] = {"MEU_c7_remote_throwable_Mag"};
+		};
+        class MEU_C12_Muzzle : ThrowMuzzle
+		{
+			magazines[] = {"MEU_c12_remote_throwable_Mag"};
+		};
+        class MEU_M168_Muzzle : ThrowMuzzle
+		{
+			magazines[] = {"MEU_m168_remote_throwable_Mag"};
+		};
+    };
     class MEU_M7v2: VES_M7_I
     {
         baseweapon = "MEU_M7v2";

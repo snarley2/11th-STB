@@ -15,8 +15,7 @@ class CfgMagazines
 	class OPTRE_15Rnd_762x51_Mag;
 	class 1Rnd_HE_Grenade_shell;
     class CA_Magazine;
-    class ACE_SatchelCharge_Remote_Mag_Throwable;
-    class grenade;
+    class OPTRE_M9_Frag;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -311,53 +310,46 @@ class CfgMagazines
 		ammo = "MEU_40mm_HEDP";
 		mass = 21;
 	};
-    class MEU_c7_remote_throwableMag : grenade
+    class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark"
         scope = 2;
         scopeArsenal = 2;
         displayName = "Throwable C7";
-		displayNameShort = "Throwable C7";
-		descriptionShort = "Compact explosive Foam";
-		descriptionUse = "Use: Set Charge";
 		ammo = "MEU_c7_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\C7Can.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c7.paa";
-		mass = 5;
-		count = 1;
-		nameSoundWeapon = "satchelcharge";
-		nameSound = "satchelcharge";
-		initSpeed = 20;
+		mass = 6;
+        descriptionShort = "An explosive and a detonator stuck together with gum";
+		displayNameShort = "C7";
+        initSpeed = 25;
     };
-    class MEU_c12_remote_throwableMag : grenade
+    class MEU_c12_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark"
         scope = 2;
         scopeArsenal = 2;
         displayName = "Throwable C12";
-		displayNameShort = "Throwable C12";
 		ammo = "MEU_c12_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\c12G.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		mass = 8;
-		count = 1;
-		nameSoundWeapon = "satchelcharge";
-		nameSound = "satchelcharge";
-		initSpeed = 20;
+		mass = 10;
+        descriptionShort = "An explosive wand a detonator stuck together with gum";
+		displayNameShort = "C12";
+        initSpeed = 15;
     };
-    class MEU_m168_remote_throwableMag : grenade
+    class MEU_m168_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark"
-        scope = 2;
-        scopeArsenal = 2;
+        scope = 1;
+        scopeArsenal = 1;
         displayName = "Throwable M168";
 		ammo = "MEU_c168_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
 		picture = "\OPTRE_weapons\charges\icons\m168.paa";
 		mass = 10;
-		count = 1;
-		nameSoundWeapon = "satchelcharge";
-		nameSound = "satchelcharge";
-		initSpeed = 20;
+        descriptionShort = "An explosive and a detonator stuck together with gum";
+		displayNameShort = "M168";
+        initSpeed = 10;
     };
 };
