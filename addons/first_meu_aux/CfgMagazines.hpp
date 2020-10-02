@@ -319,10 +319,10 @@ class CfgMagazines
 		ammo = "MEU_c7_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\C7Can.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c7.paa";
-		mass = 6;
+		mass = 8;
         descriptionShort = "An explosive and a detonator stuck together with gum";
 		displayNameShort = "C7";
-        initSpeed = 25;
+        initSpeed = 15;
     };
     class MEU_c12_remote_throwable_Mag : OPTRE_M9_Frag
     {
@@ -333,21 +333,21 @@ class CfgMagazines
 		ammo = "MEU_c12_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\c12G.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
-		mass = 10;
+		mass = 12;
         descriptionShort = "An explosive wand a detonator stuck together with gum";
 		displayNameShort = "C12";
-        initSpeed = 15;
+        initSpeed = 9;
     };
     class MEU_m168_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark"
-        scope = 1;
-        scopeArsenal = 1;
+        scope = 2;
+        scopeArsenal = 2;
         displayName = "Throwable M168";
 		ammo = "MEU_c168_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
 		picture = "\OPTRE_weapons\charges\icons\m168.paa";
-		mass = 10;
+		mass = 20;
         descriptionShort = "An explosive and a detonator stuck together with gum";
 		displayNameShort = "M168";
         initSpeed = 10;

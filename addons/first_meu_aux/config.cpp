@@ -22,6 +22,7 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Medical",
 			"OPTRE_Ammo_SupplyPod_Mortars",
 			"OPTRE_Ammo_SupplyPod_LMG",
+            "B_APC_Wheeled_01_cannon_F",
 			};
         magazines[] = {
             "OPTRE_6Rnd_8Gauge_Pellet",
@@ -43,7 +44,7 @@ class cfgPatches
             "OPTRE_M295_BMR",
             "OPTRE_M393_DMR",
             "OPTRE_CR77",
-            "Throw",
+            "throw",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -172,8 +173,4 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         scopeeditor = 2;
 	};
-};
-class CfgMods
-{
-    
 };

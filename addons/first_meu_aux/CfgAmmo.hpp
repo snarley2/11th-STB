@@ -38,43 +38,40 @@ class CfgAmmo
     class MEU_c7_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
         scope = 1;
-        hit = 2500;
-		indirectHit = 2400;
+        hit = 3000;
+		indirectHit = 2500;
 		indirectHitRange = 0.7;
 		defaultMagazine = "MEU_c7_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\C7Can.p3d";
-        timeToLive = 20;
+        timeToLive = 15;
         fuseDistance = 0;
         explosionTime = 7;
         ExplosionEffects = "DirectionalMineExplosion";
 		CraterEffects = "";
 		craterShape = "\A3\weapons_f\empty.p3d";
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
-		soundTrigger[] = {"A3\Sounds_F\weapons\mines\electron_trigger_1",0.56234133,1,50};
-		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
 		whistleDist = 10;
-        initSpeed = 25;
+        initSpeed = 15;
+        pullPinSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
     };
     class MEU_c12_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
         scope = 1;
         hit = 6500;
 		indirectHit = 6000;
-		indirectHitRange = 3;
+		indirectHitRange = 5;
 		defaultMagazine = "MEU_c12_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\c12g.p3d";
-        timeToLive = 20;
+        timeToLive = 15;
         fuseDistance = 0;
         explosionTime = 12;
         deflectionSlowDown = 0.1;
-        //start testing
         ExplosionEffects = "MineNondirectionalExplosion";
 		CraterEffects = "MineNondirectionalCrater";
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
-		soundTrigger[] = {"A3\Sounds_F\weapons\mines\electron_trigger_1",0.56234133,1,50};
-		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
         whistleDist = 10;
-        initSpeed = 15;
+        initSpeed = 9;
+        pullPinSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
     };
     class MEU_m168_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
@@ -82,18 +79,18 @@ class CfgAmmo
         hit = 9500;
 		indirectHit = 8500;
 		indirectHitRange = 10;
-		defaultMagazine = "MEU_m168_remote_throwableMag";
+		defaultMagazine = "MEU_m168_remote_throwableMag"; 
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
-        timeToLive = 20;
+        timeToLive = 17;
         fuseDistance = 0;
         explosionTime = 15;
+        deflectionSlowDown = 0.1;
         ExplosionEffects = "MineNondirectionalExplosion";
 		CraterEffects = "MineNondirectionalCrater";
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
-		soundTrigger[] = {"A3\Sounds_F\weapons\mines\electron_trigger_1",0.56234133,1,50};
-		soundActivation[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
         whistleDist = 10;
         initSpeed = 10;
+        pullPinSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
     };
 	// end throwable explosives
 	
@@ -212,7 +209,7 @@ class CfgAmmo
 		hit = 80;
 		indirecthit = 60;
 		indirecthitrange = 8;
-		timeToLive = 4;
+		timeToLive = 30;
 	};
 	
 	class MEU_40mm_HEDP: MEU_40mm_HE
@@ -222,5 +219,6 @@ class CfgAmmo
 		indirectHitRange = 10;
 		caliber = 4;
 		warheadName = "HEAT";
+        timeToLive = 30;
 	};
 };

@@ -49,7 +49,25 @@ class CfgVehicles
     class VES_M12_APC;
     class OPTRE_ILCS_Rucksack_Black;
     class textureSources;
+    class Turrets;
+    class MainTurret;
+    class RCWSOptics;
+    class B_APC_Wheeled_01_base_F;
 
+    class B_APC_Wheeled_01_cannon_F : B_APC_Wheeled_01_base_F
+    {
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+                class Viewoptics
+                {
+                    visionMode[] = {"Normal","TI","NVG"};
+                    thermalMode[] = {0,1,2,3,4,5};
+                };
+            };
+        };
+    };
     class MEU_IFV : VES_IFV76
     {
         scope = 2;
@@ -64,7 +82,7 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+        editorsubCategory = "MEU_sub_apc";  
     };
     class MEU_IFV_A : VES_IFV76_A
     {
@@ -81,6 +99,18 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_ifv";
+        visionMode[] = {"Normal","TI","NVG"};
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+                class Viewoptics : RCWSOptics
+                {
+                    visionMode[] = {"Normal","TI","NVG"};
+                    thermalMode[] = {0,1,2,3,4,5};
+                };
+            };
+        };
     };
     class MEU_M12_AP : VES_M12_APC
     {
@@ -1281,6 +1311,7 @@ class CfgVehicles
 		scopeCurator = 2;
         scopeArsenal = 2;
         displayName = "[1stMEU] ODST Reconnaissance Jumpack";
+        tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -1309,7 +1340,8 @@ class CfgVehicles
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurian Reconnaissance RTO/NCO Jumpack";
+        displayName = "[1stMEU] Centurion Reconnaissance RTO/NCO Jumpack";
+        tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -1338,7 +1370,7 @@ class CfgVehicles
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurian Reconnaissance Jumpack";
+        displayName = "[1stMEU] Centurion Reconnaissance Jumpack";
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		model="\OPTRE_weapons\backpacks\jetpack.p3d";
 		NSM_jumppack_is_jumppack = 1;
@@ -1364,6 +1396,7 @@ class CfgVehicles
 	class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black
     {
         displayName = "[1stMEU] Zeus LR";
+        tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -1376,6 +1409,7 @@ class CfgVehicles
     class Praetor_LR_backpack_big: OPTRE_ANPRC_521_Black
     {
         displayName = "[1stMEU] ODST LR Rucksack";
+        tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -1388,6 +1422,7 @@ class CfgVehicles
 	class Praetor_LR_backpack: OPTRE_ANPRC_515
     {
         displayName = "[1stMEU] ODST NCO Rucksack";
+        tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -1414,7 +1449,23 @@ class CfgVehicles
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
     };
-	
+    class DataLinkSensorComponent;
+    class SensorTemplateDataLink;
+	class uplinkpack : MEU_Prae_Ruck_Base_Heavy
+    {
+        author = "1st MEU Mark";
+        displayName = "[1stMEU] ODST Uplink Rucksack";
+        maximumLoad = 250;
+        class components :  DataLinkSensorComponent
+        {
+            class SensorsManagerComponent : SensorTemplateDataLink
+            {
+                setVehicleReportRemoteTargets = 1;
+                setVehicleReportOwnPosition = 1;
+            };
+        };
+    };
+    //add this to binos?
 	class MEU_Prae_Corpsman_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
@@ -1444,6 +1495,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
+        tf_isolatedAmount = 0.65;
         tf_range = 70000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;

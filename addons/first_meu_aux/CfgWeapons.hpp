@@ -58,8 +58,9 @@ class CfgWeapons
     class OPTRE_M7S;
     class VES_M7_I;
     class OPTRE_SubMachineGun_Base;
-    class GrenadeLauncher;
+    class Grenadelauncher;
     class HUDMonitors;
+    class OPTRE_HUD_RscPicture;
 	
 // Medical Items Start
 	
@@ -415,6 +416,7 @@ class CfgWeapons
         optreHUDStyle = "HudLoad_MarrineGlass1";
 		class ItemInfo: ItemInfo
 		{
+            optreHUDStyle = "HudLoad_MarrineGlass1";
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\helmet";
 			hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
@@ -880,7 +882,9 @@ class CfgWeapons
         picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
 		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thplt\VulcanBeretV2.paa"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thplt\VulcanBeretV2.paa"};
+        visionMode[] = {"Normal","TI","NVG"};
+        thermalMode[] = {0,1,2,3,4,5};
     };
 	
 // centurion heavy helmets
@@ -8421,141 +8425,532 @@ class CfgWeapons
 		};
     };
     
-    //praetorian helmets
+    //praetorian helmets starts with broke shit
+    
     class Praetor_Helmet_Black_broken : LM_OPCAN_CH252D_H3_broken
     {
-        
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Black_31_broken : LM_OPCAN_CH252D_H3_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_31.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Black_32_broken : LM_OPCAN_CH252D_H3_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Black_33_broken : LM_OPCAN_CH252D_H3_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_33.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Ride_broken : LM_OPCAN_CH252D_H3_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Ride.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     
     class Praetor_Helmet_Yellow_broken : LM_OPCAN_CH252D_H3_Yellow_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Yellow_31_broken : LM_OPCAN_CH252D_H3_Yellow_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_31.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Yellow_32_broken : LM_OPCAN_CH252D_H3_Yellow_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_32.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Yellow_33_broken : LM_OPCAN_CH252D_H3_Yellow_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Yellow_33.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     
     class Praetor_Helmet_Blue_broken : LM_OPCAN_CH252D_H3_Blue_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Blue_31_broken : LM_OPCAN_CH252D_H3_Blue_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_31.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Blue_32_broken : LM_OPCAN_CH252D_H3_Blue_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_32.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Blue_33_broken : LM_OPCAN_CH252D_H3_Blue_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Blue_33.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Green_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Green_31_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_31.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Green_32_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_32.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Green_33_broken : LM_OPCAN_CH252D_H3_Green_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_Green_33.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Red_broken : LM_OPCAN_CH252D_H3_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_Red_Custom.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Black_baseplate_broken : Praetor_Helmet_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32_baseplate.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Com_broken : Praetor_Helmet_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Oneill.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Com2_broken : Praetor_Helmet_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Mark.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Com3_broken : Praetor_Helmet_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_red_custom_Dimitri.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     class Praetor_Helmet_Mike_broken : Praetor_Helmet_Red_broken
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "OPTRE_Hud\Data\Hud_ODST_1\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
     };
     // depolar
     class Praetor_Helmet_Ride_dp : 1stMEU_Base_CH252D_Helmet_dp
@@ -10427,20 +10822,23 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 // BDU End
 // Weapons Start
     
-    class Throw: GrenadeLauncher
+    class Throw : GrenadeLauncher
 	{
 		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_M168_Muzzle"};
         class ThrowMuzzle;
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
+            reloadtime = 0;
 			magazines[] = {"MEU_c7_remote_throwable_Mag"};
 		};
         class MEU_C12_Muzzle : ThrowMuzzle
 		{
+            reloadtime = 0;
 			magazines[] = {"MEU_c12_remote_throwable_Mag"};
 		};
         class MEU_M168_Muzzle : ThrowMuzzle
 		{
+            reloadtime = 0;
 			magazines[] = {"MEU_m168_remote_throwable_Mag"};
 		};
     };
