@@ -144,7 +144,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		CBRN_protection = 1;
-        optreHUDStyle = "HudLoad_ODST1";
 		class ItemInfo: HeadgearItem
 		{
 			mass = 30;
@@ -413,10 +412,8 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat",""};
-        optreHUDStyle = "HudLoad_MarrineGlass1";
 		class ItemInfo: ItemInfo
 		{
-            optreHUDStyle = "HudLoad_MarrineGlass1";
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\helmet";
 			hiddenSelections[] = {"camo","camo2","camo3","H_Neck","H_UNSCVacLower","H_Collar","H_UNSCVacVisor","H_VacCollar","H_Ghillie"};
