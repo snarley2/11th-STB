@@ -23,12 +23,13 @@ class RscDisplayStart: RscStandardDisplay {
     class controls {
         class LoadingStart: RscControlsGroup {
             class controls {
-                class BWPMC_Background: RscPicture {
-                    text = "first_meu_aux\Data\LoadingScreens\1stMEUInsignia.paa";
+                class MEU_Background: RscPicture {
+                    text = "first_meu_aux\Data\1stModDevInsig.paa";
                     x = POS_LEFT_CENTERED(LOGO_SIZE);
                     y = POS_TOP_CENTERED(LOGO_SIZE);
                     w = POS_WIDTH(LOGO_SIZE);
                     h = POS_HEIGHT(LOGO_SIZE);
+                    colorBackground[]={0,0,0,1};
                 };
             };
         };

@@ -10828,15 +10828,17 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         class ThrowMuzzle;
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
+            sound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.00031622776,1};
+			reloadSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.00031622776,1};
             reloadtime = 0;
 			magazines[] = {"MEU_c7_remote_throwable_Mag"};
-		};
-        class MEU_C12_Muzzle : ThrowMuzzle
+        };
+        class MEU_C12_Muzzle : MEU_C7_Muzzle
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_c12_remote_throwable_Mag"};
 		};
-        class MEU_M168_Muzzle : ThrowMuzzle
+        class MEU_M168_Muzzle : MEU_C7_Muzzle
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_m168_remote_throwable_Mag"};

@@ -52,7 +52,6 @@ class CfgAmmo
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
 		whistleDist = 10;
         initSpeed = 15;
-        pullPinSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
     };
     class MEU_c12_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
@@ -71,7 +70,6 @@ class CfgAmmo
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
         whistleDist = 10;
         initSpeed = 9;
-        pullPinSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
     };
     class MEU_m168_remote_ammo_thrown : OPTRE_G_M9_Frag
     {
@@ -90,7 +88,6 @@ class CfgAmmo
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
         whistleDist = 10;
         initSpeed = 10;
-        pullPinSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.56234133,1,50};
     };
 	// end throwable explosives
 	
