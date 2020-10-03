@@ -16,6 +16,7 @@ class CfgMagazines
 	class 1Rnd_HE_Grenade_shell;
     class CA_Magazine;
     class OPTRE_M9_Frag;
+    class ACE_CTS9;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -351,5 +352,12 @@ class CfgMagazines
         descriptionShort = "An explosive and a detonator stuck together with gum";
 		displayNameShort = "M168";
         initSpeed = 10;
+    };
+    class MEU_9bang_Mag : ACE_CTS9
+    {
+        author = "1st MEU Mark"
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "Praetorian 9 Bang";
     };
 };

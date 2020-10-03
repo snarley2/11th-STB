@@ -12,7 +12,6 @@
 #include "Cfgtreatment.hpp"
 #include "Cfgtreatmentactions.hpp"
 #include "CfgFunctions.hpp"
-#include "CfgLoadingscreens.hpp"
 
 class cfgPatches
 {

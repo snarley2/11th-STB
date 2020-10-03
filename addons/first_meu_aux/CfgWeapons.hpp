@@ -59,7 +59,7 @@ class CfgWeapons
     class VES_M7_I;
     class OPTRE_SubMachineGun_Base;
     class Grenadelauncher;
-    class HUDMonitors;
+    class ThrowMuzzle;
     class OPTRE_HUD_RscPicture;
 	
 // Medical Items Start
@@ -10821,24 +10821,26 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     
     class Throw : GrenadeLauncher
 	{
-		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_M168_Muzzle"};
-        class ThrowMuzzle;
+		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_M168_Muzzle","MEU_9bang_Muzzle",};
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
-            sound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.00031622776,1};
-			reloadSound[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",0.00031622776,1};
             reloadtime = 0;
 			magazines[] = {"MEU_c7_remote_throwable_Mag"};
         };
-        class MEU_C12_Muzzle : MEU_C7_Muzzle
+        class MEU_C12_Muzzle : ThrowMuzzle
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_c12_remote_throwable_Mag"};
 		};
-        class MEU_M168_Muzzle : MEU_C7_Muzzle
+        class MEU_M168_Muzzle : ThrowMuzzle
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_m168_remote_throwable_Mag"};
+		};
+        class MEU_9bang_Muzzle : ThrowMuzzle
+		{
+            reloadtime = 0;
+			magazines[] = {"MEU_9bang_Mag"};
 		};
     };
     class MEU_M7v2: VES_M7_I

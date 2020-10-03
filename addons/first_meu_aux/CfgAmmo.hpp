@@ -10,12 +10,8 @@ class CfgAmmo
     class B_12Gauge_Slug;
 	class G_40mm_HE;
     class CA_Magazine;
-	class SatchelCharge_Remote_Mag;
-	class ATMine_Range_Mag;
-	class C12_Remote_Mag;
-    class C7_Remote_Mag;
-    class M168_Remote_Mag;
-    class OPTRE_G_M9_Frag;
+    class ACE_SatchelCharge_Remote_Ammo_Thrown;
+    class ACE_G_CTS9;
 	
     // code name LMAO
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
@@ -35,7 +31,7 @@ class CfgAmmo
     // end codename LMAO
 	
     // throwable stuff dont forget the ace funtion numb nuts
-    class MEU_c7_remote_ammo_thrown : OPTRE_G_M9_Frag
+    class MEU_c7_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
         scope = 1;
         hit = 3000;
@@ -53,7 +49,7 @@ class CfgAmmo
 		whistleDist = 10;
         initSpeed = 15;
     };
-    class MEU_c12_remote_ammo_thrown : OPTRE_G_M9_Frag
+    class MEU_c12_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
         scope = 1;
         hit = 6500;
@@ -71,7 +67,7 @@ class CfgAmmo
         whistleDist = 10;
         initSpeed = 9;
     };
-    class MEU_m168_remote_ammo_thrown : OPTRE_G_M9_Frag
+    class MEU_m168_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
         scope = 1;
         hit = 9500;
@@ -88,6 +84,10 @@ class CfgAmmo
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
         whistleDist = 10;
         initSpeed = 10;
+    };
+    class MEU_9bang : ACE_G_CTS9
+    {
+        explosionTime = 0.5;
     };
 	// end throwable explosives
 	

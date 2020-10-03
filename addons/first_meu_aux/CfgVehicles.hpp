@@ -58,8 +58,12 @@ class CfgVehicles
     {
         class Turrets: Turrets
 		{
+            visionMode[] = {"Normal","TI","NVG"};
+            thermalMode[] = {0,1,2,3,4,5};
 			class MainTurret: MainTurret
 			{
+                visionMode[] = {"Normal","TI","NVG"};
+                thermalMode[] = {0,1,2,3,4,5};
                 class Viewoptics
                 {
                     visionMode[] = {"Normal","TI","NVG"};
@@ -100,10 +104,15 @@ class CfgVehicles
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_ifv";
         visionMode[] = {"Normal","TI","NVG"};
+        thermalMode[] = {0,1,2,3,4,5};
         class Turrets: Turrets
 		{
+            visionMode[] = {"Normal","TI","NVG"};
+            thermalMode[] = {0,1,2,3,4,5};
 			class MainTurret: MainTurret
 			{
+                visionMode[] = {"Normal","TI","NVG"};
+                thermalMode[] = {0,1,2,3,4,5};
                 class Viewoptics : RCWSOptics
                 {
                     visionMode[] = {"Normal","TI","NVG"};
