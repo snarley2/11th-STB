@@ -316,7 +316,7 @@ class CfgMagazines
         author = "1st MEU Mark"
         scope = 2;
         scopeArsenal = 2;
-        displayName = "Throwable C7";
+        displayName = "[1st MEU] Throwable C7";
 		ammo = "MEU_c7_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\C7Can.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c7.paa";
@@ -330,7 +330,7 @@ class CfgMagazines
         author = "1st MEU Mark"
         scope = 2;
         scopeArsenal = 2;
-        displayName = "Throwable C12";
+        displayName = "[1st MEU] Throwable C12";
 		ammo = "MEU_c12_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\c12G.p3d";
 		picture = "\OPTRE_weapons\charges\icons\c12.paa";
@@ -344,7 +344,7 @@ class CfgMagazines
         author = "1st MEU Mark"
         scope = 2;
         scopeArsenal = 2;
-        displayName = "Throwable M168";
+        displayName = "[1st MEU] Throwable M168";
 		ammo = "MEU_c168_remote_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
 		picture = "\OPTRE_weapons\charges\icons\m168.paa";
@@ -358,6 +358,8 @@ class CfgMagazines
         author = "1st MEU Mark"
         scope = 2;
         scopeArsenal = 2;
-        displayName = "Praetorian 9 Bang";
+        displayName = "[1st MEU] Praetorian 9 Bang";
+        descriptionShort = "ODSTs shouldn't play with grenades";
+		displayNameShort = "P9B";
     };
 };

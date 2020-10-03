@@ -87,7 +87,7 @@ class CfgAmmo
     };
     class MEU_9bang : ACE_G_CTS9
     {
-        explosionTime = 0.5;
+        explosionTime = 0.1;
     };
 	// end throwable explosives
 	
