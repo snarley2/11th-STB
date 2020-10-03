@@ -52,26 +52,7 @@ class CfgVehicles
     class Turrets;
     class MainTurret;
     class RCWSOptics;
-    class B_APC_Wheeled_01_base_F;
-
-    class B_APC_Wheeled_01_cannon_F : B_APC_Wheeled_01_base_F
-    {
-        class Turrets: Turrets
-		{
-            visionMode[] = {"Normal","TI","NVG"};
-            thermalMode[] = {0,1,2,3,4,5};
-			class MainTurret: MainTurret
-			{
-                visionMode[] = {"Normal","TI","NVG"};
-                thermalMode[] = {0,1,2,3,4,5};
-                class Viewoptics
-                {
-                    visionMode[] = {"Normal","TI","NVG"};
-                    thermalMode[] = {0,1,2,3,4,5};
-                };
-            };
-        };
-    };
+    
     class MEU_IFV : VES_IFV76
     {
         scope = 2;
@@ -1234,6 +1215,8 @@ class CfgVehicles
     class OPTRE_HEV: StaticMGWeapon
 	{
         faction = "MEU_UNSC";
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_trt";
         class TransportBackpacks
         {
             class xx_OPTRE_OPTRE_ILCS_HEAVY
@@ -1311,8 +1294,7 @@ class CfgVehicles
     {
         armor = 1000;
     };
-    
-//  Start Backpacks
+    //  Start Backpacks
 	class Praetor_Jumpack : OPTRE_ILCS_Rucksack_Black	
     {
         author = "NSM & Oneill & Mark";

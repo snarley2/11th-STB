@@ -339,20 +339,6 @@ class CfgMagazines
 		displayNameShort = "C12";
         initSpeed = 9;
     };
-    class MEU_m168_remote_throwable_Mag : OPTRE_M9_Frag
-    {
-        author = "1st MEU Mark"
-        scope = 2;
-        scopeArsenal = 2;
-        displayName = "[1st MEU] Throwable M168";
-		ammo = "MEU_c168_remote_ammo_thrown";
-		model = "\OPTRE_Weapons\charges\m168g.p3d";
-		picture = "\OPTRE_weapons\charges\icons\m168.paa";
-		mass = 20;
-        descriptionShort = "An explosive and a detonator stuck together with gum";
-		displayNameShort = "M168";
-        initSpeed = 10;
-    };
     class MEU_9bang_Mag : ACE_CTS9
     {
         author = "1st MEU Mark"
@@ -361,5 +347,19 @@ class CfgMagazines
         displayName = "[1st MEU] Praetorian 9 Bang";
         descriptionShort = "ODSTs shouldn't play with grenades";
 		displayNameShort = "P9B";
+    };
+    class MEU_C168_Mag : OPTRE_M9_Frag
+    {
+        author = "1st MEU Mark"
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[1st MEU] Throwable M168";
+		ammo = "MEU_C168_ammo_thrown";
+		model = "\OPTRE_Weapons\charges\c12G.p3d";
+		picture = "\OPTRE_weapons\charges\icons\m168.paa";
+		mass = 20;
+        descriptionShort = "An explosive and a detonator stuck together with gum";
+		displayNameShort = "M168";
+        initSpeed = 9;
     };
 };

@@ -22,7 +22,6 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Medical",
 			"OPTRE_Ammo_SupplyPod_Mortars",
 			"OPTRE_Ammo_SupplyPod_LMG",
-            "B_APC_Wheeled_01_cannon_F",
 			};
         magazines[] = {
             "OPTRE_6Rnd_8Gauge_Pellet",
@@ -173,20 +172,10 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         scopeeditor = 2;
 	};
-};
-class CfgSoundSets
-{
-    class Rifle_Shot_Base_SoundSet;
-    class Throw_Shot_SoundSet: Rifle_Shot_Base_SoundSet
+    class MEU_sub_trt
     {
-        soundShaders[] = {"Throw_pullPin_SoundShader"};
-    };
-    class Throw_pullPin_SoundShader
-    {
-        samples[] = {"A3\Sounds_F\weapons\mines\electron_activate_mine_1",1};
-        range = 5;
-        volume = 5;
-    };
-    range = 5;
-    volume = 5;
+		displayName = "Turrets";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
 };

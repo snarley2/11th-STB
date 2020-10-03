@@ -10821,7 +10821,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     
     class Throw : GrenadeLauncher
 	{
-		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_M168_Muzzle","MEU_9bang_Muzzle",};
+		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_M168_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle",};
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
             reloadtime = 0;
@@ -10841,6 +10841,11 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_9bang_Mag"};
+		};
+        class MEU_C168_Muzzle : ThrowMuzzle
+		{
+            reloadtime = 0;
+			magazines[] = {"MEU_C168_Mag"};
 		};
     };
     class MEU_M7v2: VES_M7_I
