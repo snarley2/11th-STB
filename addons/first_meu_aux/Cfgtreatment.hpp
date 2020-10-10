@@ -1,6 +1,9 @@
 class ACE_Medical_Treatment
 {
     class Morphine;
+    class PlasmaIV;
+    class OPTRE_Biofoam;
+    class OPTRE_Medigel;
     
     class Medication
     {
@@ -36,6 +39,24 @@ class ACE_Medical_Treatment
             maxDose = .1;
             incompatibleMedication[] = {};
             viscosityChange = -100;
+        };
+    };
+    class IV 
+    {
+        class MEU_PlasmaIV : PlasmaIV
+        {
+            volume = 2500;
+        };
+    };
+    class Bandaging 
+    {
+        class MEU_Biofoam: OPTRE_Biofoam
+        {
+            consumeItem = 0;
+        };
+        class MEU_Medigel: OPTRE_Medigel
+        {
+            consumeItem = 0;
         };
     };
 };

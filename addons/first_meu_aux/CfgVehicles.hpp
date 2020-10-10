@@ -1,6 +1,6 @@
 class CfgVehicles
 {
-    
+    #include "CfgSupplyPods.hpp"
     class Helicopter_Base_H;
     class OPTRE_falcon_base;
     class OPTRE_UNSC_falcon_unarmed;

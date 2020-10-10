@@ -61,6 +61,9 @@ class CfgWeapons
     class Grenadelauncher;
     class ThrowMuzzle;
     class OPTRE_HUD_RscPicture;
+    class ACE_plasmaIV;
+    class OPTRE_Biofoam;
+    class OPTRE_Medigel;
 	
 // Medical Items Start
 	
@@ -78,6 +81,38 @@ class CfgWeapons
 			mass = 0.1;
 		};
 	};
+    class MEU_PlasmaIV : ACE_plasmaIV
+    {
+        scope = 2;
+        displayName = "[1st MEU]Plasma 2.5L";
+        descriptionShort = "2.5L of Plasma";
+		descriptionUse = "Give Plasma (2.5L)";
+        class ItemInfo: CBA_MiscItem_ItemInfo {
+            mass = 25;
+        };
+    };
+    class MEU_Biofoam: OPTRE_Biofoam
+    {
+        scope = 2;
+        displayName = "[P] Biofoam Canister";
+        consumeItem = 0;
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass = 20;
+            consumeItem = 0;
+        };
+    };
+    class MEU_Medigel: OPTRE_Medigel
+    {
+        scope = 2;
+        displayName = "[P] Optican Medigel";
+        consumeItem = 0;
+        class ItemInfo: CBA_MiscItem_ItemInfo
+        {
+            mass = 10;
+            consumeItem = 0;
+        };
+    };
 	
 // Medical Items End
 // Armor Base Values
@@ -10821,7 +10856,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     
     class Throw : GrenadeLauncher
 	{
-		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_M168_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle",};
+		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle",};
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
             reloadtime = 0;
@@ -10831,11 +10866,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_c12_remote_throwable_Mag"};
-		};
-        class MEU_M168_Muzzle : ThrowMuzzle
-		{
-            reloadtime = 0;
-			magazines[] = {"MEU_m168_remote_throwable_Mag"};
 		};
         class MEU_9bang_Muzzle : ThrowMuzzle
 		{

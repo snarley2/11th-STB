@@ -36,7 +36,7 @@ class CfgAmmo
         scope = 1;
         hit = 3000;
 		indirectHit = 2500;
-		indirectHitRange = 0.7;
+		indirectHitRange = 2;
 		defaultMagazine = "MEU_c7_remote_throwableMag";
 		model = "\OPTRE_Weapons\charges\C7Can.p3d";
         timeToLive = 15;
@@ -72,11 +72,11 @@ class CfgAmmo
         explosionTime = 1.5;
         ace_flashbang_Interval = 0.1;
     };
-    class MEU_C168_ammo_thrown : MEU_m168_remote_ammo_thrown
+    class MEU_C168_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
         scope = 1;
         hit = 9500;
-		indirectHit = 8500;
+		indirectHit = 9000;
 		indirectHitRange = 10;
 		defaultMagazine = "MEU_C168_Mag"; 
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
@@ -88,7 +88,7 @@ class CfgAmmo
 		CraterEffects = "MineNondirectionalCrater";
 		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
         whistleDist = 10;
-        initSpeed = 10;
+        initSpeed = 9;
     };
 	// end throwable explosives
 	

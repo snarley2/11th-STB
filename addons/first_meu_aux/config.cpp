@@ -2,7 +2,6 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
-#include "CfgSupplyPods.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgAmmo.hpp"
@@ -113,6 +112,13 @@ class cfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
 	};
+    class meop_system
+    {
+        units[] += {};
+        magazines[] += {};
+        ammo[] += {};
+        weapons[] += {};
+    };
 };
 class CfgFactionClasses
 {

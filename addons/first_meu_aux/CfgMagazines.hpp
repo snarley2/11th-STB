@@ -17,6 +17,7 @@ class CfgMagazines
     class CA_Magazine;
     class OPTRE_M9_Frag;
     class ACE_CTS9;
+    class M168_Remote_Mag;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -357,7 +358,7 @@ class CfgMagazines
 		ammo = "MEU_C168_ammo_thrown";
 		model = "\OPTRE_Weapons\charges\c12G.p3d";
 		picture = "\OPTRE_weapons\charges\icons\m168.paa";
-		mass = 20;
+		mass = 40;
         descriptionShort = "An explosive and a detonator stuck together with gum";
 		displayNameShort = "M168";
         initSpeed = 9;
