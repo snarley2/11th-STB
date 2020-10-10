@@ -1,6 +1,7 @@
 class CfgVehicles
 {
     #include "CfgSupplyPods.hpp"
+    
     class Helicopter_Base_H;
     class OPTRE_falcon_base;
     class OPTRE_UNSC_falcon_unarmed;
@@ -52,6 +53,9 @@ class CfgVehicles
     class Turrets;
     class MainTurret;
     class RCWSOptics;
+    class OPTRE_BiofoamItem; 
+    class OPTRE_MediGelItem;
+    class ACE_tourniquetItem;
     
     class MEU_IFV : VES_IFV76
     {
@@ -118,6 +122,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_car";
     };
+    //more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
         scope = 2;
@@ -131,6 +136,47 @@ class CfgVehicles
             item_xx(MEU_Ibuprophen,1);
         };
     };
+    class MEU_BiofoamItem: OPTRE_BiofoamItem
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[P] Biofoam";
+        author = "Article 2 Studios edits by mark";
+        vehicleClass = "Items";
+        consumeItem = 0;
+        class TransportItems
+        {
+            item_xx(MEU_Biofoam,1);
+        };
+    };
+    class MEU_MediGelItem: OPTRE_MediGelItem
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[P] Medigel";
+        author = "Article 2 Studios edits by mark";
+        vehicleClass = "Items";
+        consumeItem = 0;
+        class TransportItems
+        {
+            item_xx(MEU_Medigel,1);
+        };
+    };
+    class MEU_tourniquetItem: ACE_tourniquetItem
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[P] Suit Constriction System";
+        vehicleClass = "Items";
+        class TransportItems 
+        {
+            item_xx(MEU_tourniquet,1);
+        };
+    };
+    // end meds
 	class VES_AV22_Sparrowhawk_Base: OPTRE_AV22_Sparrowhawk_Base
 	{
         tf_range=30000;

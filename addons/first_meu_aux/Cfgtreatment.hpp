@@ -23,7 +23,7 @@ class ACE_Medical_Treatment
             hrIncreaseNormal[] = {0};
             hrIncreaseHigh[] = {0};
             timeInSystem = 3000;
-            timeTillMaxEffect = 60;
+            timeTillMaxEffect = 120;
             maxDose = 12;
             incompatibleMedication[] = {};
             viscosityChange = -1;
@@ -31,12 +31,12 @@ class ACE_Medical_Treatment
 		class ACE_Banana : Morphine
         {
             painReduce = 0.4;
-            hrIncreaseLow[] = {-200,-200};
-            hrIncreaseNormal[] = {-200,-200};
-            hrIncreaseHigh[] = {-200,-200};
+            hrIncreaseLow[] = {+400,+400};
+            hrIncreaseNormal[] = {+400,+400};
+            hrIncreaseHigh[] = {+400,+400};
             timeInSystem = 60;
-            timeTillMaxEffect = 1;
-            maxDose = .1;
+            timeTillMaxEffect = 0.1;
+            maxDose = 0.1;
             incompatibleMedication[] = {};
             viscosityChange = -100;
         };
@@ -52,11 +52,9 @@ class ACE_Medical_Treatment
     {
         class MEU_Biofoam: OPTRE_Biofoam
         {
-            consumeItem = 0;
         };
         class MEU_Medigel: OPTRE_Medigel
         {
-            consumeItem = 0;
         };
     };
 };

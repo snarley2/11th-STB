@@ -1,8 +1,6 @@
 class CfgWeapons
 {
 
-// Imports
-	
     class LM_OPCAN_CGC;
     class ItemCore;
 	class HeadgearItem;
@@ -64,6 +62,7 @@ class CfgWeapons
     class ACE_plasmaIV;
     class OPTRE_Biofoam;
     class OPTRE_Medigel;
+    class ACE_tourniquet;
 	
 // Medical Items Start
 	
@@ -87,7 +86,8 @@ class CfgWeapons
         displayName = "[1st MEU]Plasma 2.5L";
         descriptionShort = "2.5L of Plasma";
 		descriptionUse = "Give Plasma (2.5L)";
-        class ItemInfo: CBA_MiscItem_ItemInfo {
+        class ItemInfo: CBA_MiscItem_ItemInfo 
+        {
             mass = 25;
         };
     };
@@ -95,25 +95,29 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[P] Biofoam Canister";
-        consumeItem = 0;
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
             mass = 20;
-            consumeItem = 0;
         };
     };
     class MEU_Medigel: OPTRE_Medigel
     {
         scope = 2;
         displayName = "[P] Optican Medigel";
-        consumeItem = 0;
         class ItemInfo: CBA_MiscItem_ItemInfo
         {
             mass = 10;
-            consumeItem = 0;
         };
     };
-	
+	class MEU_tourniquet : ACE_tourniquet 
+    {
+        scope = 2;
+        displayName = " [P] Suit Constrictor"; 
+        class ItemInfo: CBA_MiscItem_ItemInfo 
+        {
+            mass = 0.5;
+        };
+    };
 // Medical Items End
 // Armor Base Values
 		
