@@ -57,7 +57,7 @@ class CfgGroups
 		side = 0;
         class MEU_Zeus_Spacer
         {
-            name = "1st MEU OPFOR"
+            name = "1st MEU OPFOR";
             class LM_OPCAN_FRI_groups
             {
                 name = "(OPCAN)Fridens";

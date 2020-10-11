@@ -595,8 +595,8 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				};
 				class n32
                 {
-                    name = "M250HMG Supply Pod"
-                    value = "OPTRE_Ammo_Supplypod_M250HMG"
+                    name = "M250HMG Supply Pod";
+                    value = "OPTRE_Ammo_Supplypod_M250HMG";
                 };
 			};
 		};

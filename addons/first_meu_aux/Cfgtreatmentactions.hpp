@@ -3,14 +3,15 @@ class ACE_Medical_Treatment_Actions
 {
     class Morphine;
     class PlasmaIV;
-    class OPTRE_Biofoam;
     class OPTRE_Medigel;
+    class OPTRE_Biofoam;
     class ApplyTourniquet;
     class RemoveTourniquet;
+    class BasicBandage;
     
     class MEU_compat_Ibuprofen: Morphine
     {
-        displayName = "Ibuprofen";
+        displayName = "Ibuprofen Bottle";
         displayNameProgress = "Having some Water and rest...";
         allowedSelections[] = {"Head"};
         items[] = {"MEU_compat_Ibuprofen"};
@@ -26,24 +27,28 @@ class ACE_Medical_Treatment_Actions
     };
     class MEU_PlasmaIV : PlasmaIV
     {
-        displayName = "Plasma 2.5L"
+        displayName = "Plasma 2.5L";
         displayNameProgress = "Pushing 2 and a half litres";
         treatmentTime = 12;
         items[] = {"MEU_PlasmaIV"};
-    };    
-    class MEU_Biofoam : OPTRE_Biofoam
-    {
-        displayName = "Apply Medigel";
-        displayNameProgress = "Spreading Medigel...";
-        items[] = {"MEU_Biofoam"};
-        consumeItem = 0;
     };
     class MEU_Medigel: OPTRE_Medigel
     {
         displayName = "Apply Medigel";
-        displayNameProgress = "ASpreadin Medigel...";
+        displayNameProgress = "Spreadin Medigel...";
         items[] = {"MEU_Medigel"};
-        consumeItem = 0;
+        callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
+        //consumeItem = 0;
+        category = "bandage";
+    };
+    class MEU_Biofoam : OPTRE_Biofoam
+    {
+        displayName = "Inject Biofoam";
+        displayNameProgress = "Injecting Biofoam...";
+        items[] = {"MEU_Biofoam"};
+        callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
+        //consumeItem = 0;
+        category = "bandage";
     };
     class MEU_ApplyTourniquet: ApplyTourniquet
     {
@@ -52,12 +57,17 @@ class ACE_Medical_Treatment_Actions
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"MEU_tourniquet"};
         treatmentTime = 3;
+        consumeItem = 0;
+        category = "bandage";
     };
     class MEU_RemoveTourniquet: RemoveTourniquet
     {
         displayName = "Deconstrict";
         displayNameProgress = "Deconstrict";
-        items[] = {};
+        items[] = {"MEU_tourniquet"};
         treatmentTime = 3;
+        callbackSuccess = "MEU_fnc_tourniquetRemove";
+        consumeItem = 0;
+        category = "bandage";
     };
 };

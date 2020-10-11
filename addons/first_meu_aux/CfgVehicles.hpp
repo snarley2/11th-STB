@@ -56,6 +56,7 @@ class CfgVehicles
     class OPTRE_BiofoamItem; 
     class OPTRE_MediGelItem;
     class ACE_tourniquetItem;
+    class ItemInfo;
     
     class MEU_IFV : VES_IFV76
     {
@@ -135,6 +136,7 @@ class CfgVehicles
         {
             item_xx(MEU_Ibuprophen,1);
         };
+        mass = 20
     };
     class MEU_BiofoamItem: OPTRE_BiofoamItem
     {
@@ -144,11 +146,11 @@ class CfgVehicles
         displayName = "[P] Biofoam";
         author = "Article 2 Studios edits by mark";
         vehicleClass = "Items";
-        consumeItem = 0;
         class TransportItems
         {
             item_xx(MEU_Biofoam,1);
         };
+        mass = 20
     };
     class MEU_MediGelItem: OPTRE_MediGelItem
     {
@@ -158,23 +160,24 @@ class CfgVehicles
         displayName = "[P] Medigel";
         author = "Article 2 Studios edits by mark";
         vehicleClass = "Items";
-        consumeItem = 0;
         class TransportItems
         {
             item_xx(MEU_Medigel,1);
         };
+        mass = 20
     };
     class MEU_tourniquetItem: ACE_tourniquetItem
     {
-        scope = 2;
+        scope = 1;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[P] Suit Constriction System";
+        displayName = "[WIP] Suit Constriction System";
         vehicleClass = "Items";
         class TransportItems 
         {
             item_xx(MEU_tourniquet,1);
         };
+        mass = 20
     };
     // end meds
 	class VES_AV22_Sparrowhawk_Base: OPTRE_AV22_Sparrowhawk_Base

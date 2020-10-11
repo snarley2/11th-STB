@@ -314,7 +314,7 @@ class CfgMagazines
 	};
     class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
     {
-        author = "1st MEU Mark"
+        author = "1st MEU Mark";
         scope = 2;
         scopeArsenal = 2;
         displayName = "[1st MEU] Throwable C7";
@@ -328,7 +328,7 @@ class CfgMagazines
     };
     class MEU_c12_remote_throwable_Mag : OPTRE_M9_Frag
     {
-        author = "1st MEU Mark"
+        author = "1st MEU Mark";
         scope = 2;
         scopeArsenal = 2;
         displayName = "[1st MEU] Throwable C12";
@@ -342,7 +342,7 @@ class CfgMagazines
     };
     class MEU_9bang_Mag : ACE_CTS9
     {
-        author = "1st MEU Mark"
+        author = "1st MEU Mark";
         scope = 2;
         scopeArsenal = 2;
         displayName = "[1st MEU] Praetorian 9 Bang";
@@ -351,7 +351,7 @@ class CfgMagazines
     };
     class MEU_C168_Mag : OPTRE_M9_Frag
     {
-        author = "1st MEU Mark"
+        author = "1st MEU Mark";
         scope = 2;
         scopeArsenal = 2;
         displayName = "[1st MEU] Throwable M168";

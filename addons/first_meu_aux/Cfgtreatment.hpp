@@ -30,15 +30,15 @@ class ACE_Medical_Treatment
         };
 		class ACE_Banana : Morphine
         {
-            painReduce = 0.4;
-            hrIncreaseLow[] = {+400,+400};
-            hrIncreaseNormal[] = {+400,+400};
-            hrIncreaseHigh[] = {+400,+400};
+            painReduce = 0.0;
+            hrIncreaseLow[] = {+9000,+9000};
+            hrIncreaseNormal[] = {+9000,+9000};
+            hrIncreaseHigh[] = {+9000,+9000};
             timeInSystem = 60;
-            timeTillMaxEffect = 0.1;
+            timeTillMaxEffect = 1;
             maxDose = 0.1;
             incompatibleMedication[] = {};
-            viscosityChange = -100;
+            viscosityChange = -1000;
         };
     };
     class IV 

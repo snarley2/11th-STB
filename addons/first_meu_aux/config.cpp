@@ -50,6 +50,8 @@ class cfgPatches
 			"OPTRE_UNSC_Units",
 			"OPTRE_Ins_Units",
 			"OPTRE_Weapons",
+            "OPTRE_ACE_Compat",
+            "OPTRE_FC_ACE_Compat",
             "V_FZ_Armor",
 			"OPTRE_Core",
 			"OPTRE_Misc",
