@@ -1,54 +1,5 @@
 //Groups worksheet
 #define _ARMA_
-//class CfgPatches
-//{
-//    class LM_OPCAN_FRI_Groups
-//	{
-//		units[] = {};
-//		weapons[] = {};
-//		requiredVersion = 0.1;
-//		requiredAddons[] = {"A3_Characters_F"};
-//	};
-//    class LM_OPCAN_KOS_Groups
-//	{
-//		units[] = {};
-//		weapons[] = {};
-//		requiredVersion = 0.1;
-//		requiredAddons[] = {"A3_Characters_F"};
-//	};
-//    class LM_OPCAN_SU_Groups
-//	{
-//		units[] = {};
-//		weapons[] = {};
-//		requiredVersion = 0.1;
-//		requiredAddons[] = {"A3_Characters_F"};
-//	};
-//    class LM_OPCAN_URA_Groups
-//	{
-//		units[] = {};
-//		weapons[] = {};
-//		requiredVersion = 0.1;
-//		requiredAddons[] = {"A3_Characters_F"};
-//	};
-//    class OPTRE_FC_Units
-//	{
-//		units[] = {};
-//		weapons[] = {};
-//		requiredVersion = 0.1;
-//		requiredAddons[] = {"A3_Weapons_F","OPTRE_Core","OPTRE_FC_Core","OPTRE_UNSC_Units"};
-//		author[] = {"Article 2 Studios"};
-//		fileName = "OPTRE_FC_Units.pbo";
-//	};
-//    class OPTRE_Ins_Units
-//	{
-//		units[] = {};
-//		weapons[] = {};
-//		requiredVersion = 0.1;
-//		requiredAddons[] = {"OPTRE_Core"};
-//		author = "Article 2 Studios";
-//		fileName = "OPTRE_Ins_Units.pbo";
-//	};
-//};
 class CfgGroups
 {
 	class East

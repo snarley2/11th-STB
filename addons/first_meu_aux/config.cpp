@@ -43,6 +43,7 @@ class cfgPatches
             "OPTRE_M393_DMR",
             "OPTRE_CR77",
             "throw",
+            "OPTRE_M319",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
