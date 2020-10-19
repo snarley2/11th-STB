@@ -11600,7 +11600,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			mass = 40;
         };
     };
-	
+		
 	class Centurion_BDU_Urban_Evolved : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -11685,6 +11685,224 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Pegasus_Slim";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Rolled : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Slim_Rolled";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+		
+	class Centurion_BDU_Urban_Evolved_Rolled : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Urban/Evolved)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Urban_Evolved_Slim_Rolled";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Desert_Rolled : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Desert)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Desert_Slim_Rolled";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Snow_Rolled : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Snow)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Snow_Slim_Rolled";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Woodland_Rolled : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Woodland)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Woodland_Slim_Rolled";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Pegasus_Pilot_Uniform_Rolled : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Pegasus Pilot Uniform Rolled Sleeves";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+		ACE_GForceCoef = 0.1;
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Pegasus_Slim_Rolled";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Short : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Slim_Short";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+		
+	class Centurion_BDU_Urban_Evolved_Short : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Urban/Evolved)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Urban_Evolved_Slim_Short";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Desert_Short : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Desert)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Desert_Slim_Short";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Snow_Short : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Snow)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Snow_Slim_Short";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Centurion_BDU_Woodland_Short : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Woodland)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Centurion_Woodland_Slim_Short";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+	
+	class Pegasus_Pilot_Uniform_Short : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Pegasus Pilot Uniform Short Sleeves";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+		ACE_GForceCoef = 0.1;
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Pegasus_Slim_Short";
 			containerClass = "Supply100";
 			uniformModel = "-";
 			uniformType = "Neopren";

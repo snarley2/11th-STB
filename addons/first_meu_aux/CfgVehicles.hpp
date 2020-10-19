@@ -1802,6 +1802,102 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
 	};
 	
+	class BDU_V_Centurion_Slim_Rolled: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled";
+        uniformclass = "Centurion_BDU Rolled";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Urban_Evolved_Slim_Rolled: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled";
+		uniformclass = "Centurion_BDU_Urban_Evolved Rolled";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Desert_Slim_Rolled: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled";
+        uniformclass = "Centurion_BDU_Desert Rolled";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Snow_Slim_Rolled: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled";
+        uniformclass = "Centurion_BDU_Snow Rolled";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Woodland_Slim_Rolled: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled";
+        uniformclass = "Centurion_BDU_Woodland Rolled";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa"};
+	};
+	
+	class BDU_V_Pegasus_Slim_Rolled: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_rolled";
+        uniformclass = "Centurion_BDU_Urban_Evolved Rolled";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Slim_Short: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_short";
+        uniformclass = "Centurion_BDU Short";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Urban_Evolved_Slim_Short: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_short";
+		uniformclass = "Centurion_BDU_Urban_Evolved Short";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Desert_Slim_Short: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_short";
+        uniformclass = "Centurion_BDU_Desert Short";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Snow_Slim_Short: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_short";
+        uniformclass = "Centurion_BDU_Snow Short";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa"};
+	};
+	
+	class BDU_V_Centurion_Woodland_Slim_Short: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_short";
+        uniformclass = "Centurion_BDU_Woodland Short Short";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa"};
+	};
+	
+	class BDU_V_Pegasus_Slim_Short: 1stMEU_BDU
+	{
+		model="\OPTRE_UNSC_Units\Army\uniform_short";
+        uniformclass = "Centurion_BDU_Urban_Evolved Short";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
+	};
+	
 //  End Uniforms
 //  Ground Vehicles Start
 
