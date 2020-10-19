@@ -34,21 +34,23 @@ class ACE_Medical_Treatment_Actions
     };
     class MEU_Medigel: OPTRE_Medigel
     {
-        displayName = "Apply Medigel";
+        displayName = "Apply [P] Medigel";
         displayNameProgress = "Spreadin Medigel...";
         items[] = {"MEU_Medigel"};
         callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
-        //consumeItem = 0;
+        consumeItem = 0;
         category = "bandage";
+        medicRequired = 1;
     };
     class MEU_Biofoam : OPTRE_Biofoam
     {
-        displayName = "Inject Biofoam";
-        displayNameProgress = "Injecting Biofoam...";
+        displayName = "Inject [P] Biofoam";
+        displayNameProgress = "Injecting lots of Biofoam...";
         items[] = {"MEU_Biofoam"};
         callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
-        //consumeItem = 0;
+        consumeItem = 0;
         category = "bandage";
+        medicRequired = 1;
     };
     class MEU_ApplyTourniquet: ApplyTourniquet
     {

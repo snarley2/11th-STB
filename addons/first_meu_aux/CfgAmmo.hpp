@@ -206,17 +206,19 @@ class CfgAmmo
 	{
 		hit = 80;
 		indirecthit = 60;
-		indirecthitrange = 8;
+		indirecthitrange = 6;
 		timeToLive = 30;
+        fuseDistance = 6;
 	};
 	
 	class MEU_40mm_HEDP: MEU_40mm_HE
 	{
 		hit = 220;
 		indirectHit = 100;
-		indirectHitRange = 10;
+		indirectHitRange = 4;
 		caliber = 4;
 		warheadName = "HEAT";
         timeToLive = 30;
+        fuseDistance = 4;
 	};
 };

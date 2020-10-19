@@ -5816,7 +5816,7 @@ class CfgWeapons
 		};
 	};
 	
-// end M52A gear start praetorian gear
+// end M52A gear start praetorian gear          
 // praetorian vests
 
     class Prae37: 1MEU_BASE_M52D_Armor
@@ -11897,67 +11897,9 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
     };
 // Weapon end
-//weapon beta
+    //back to weapons
     class OPTRE_M319 : OPTRE_Rifle_Base
     {
         magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
     };
-    class OPTRE_M319N : OPTRE_M319
-    {
-		scope = 2;
-        scopeCurator = 2;
-		scopeArsenal = 2;
-        displayName = "M319-N Individual Grenade Launcher";
-        model = "\OPTRE_Weapons\GL\M319n.p3d";
-        magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
-    };
-	class OPTRE_M319M : OPTRE_Handgun_Base
-    {
-		scope = 2;
-        scopeCurator = 2;
-		scopeArsenal = 2;
-        displayName = "M319-M Individual Grenade Launcher";
-        model = "\OPTRE_Weapons\GL\M319m.p3d";
-        handAnim[] = {"OFP2_ManSkeleton","","Spartan_ManSkeleton","\OPTRE_Weapons\gl\data\anim\m319_Spartan_HandAnim.rtm"};
-        magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
-        recoil = "recoil_default";
-		reloadAction = "ReloadMagazine";
-		changeFiremodeSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Firemode_ugl",0.31622776,1,5};
-		reloadMagazineSound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Reload_UGL",0.56234133,1,10};
-		drySound[] = {"A3\Sounds_F\arsenal\weapons\UGL\Dry_ugl",0.56234133,1,10};
-		modes[] = {"Single"};
-        class Single
-		{
-			sounds[] = {"StandardSound"};
-			class BaseSoundModeType
-			{
-				closure1[] = {"A3\Sounds_F\arsenal\weapons\UGL\Closure_UGL",1,1,10};
-				soundClosure[] = {"closure1",1};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_01",0.70794576,1,200};
-				begin2[] = {"A3\Sounds_F\arsenal\weapons\UGL\UGL_02",0.70794576,1,200};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
-			};
-		};
-        class GunParticles{};
-        class LinkedItems
-		{
-            class WeaponSlotsInfo
-            {
-                mass = 29;
-            };
-		};
-    };
-    class OPTRE_M319S : OPTRE_M319M
-    {
-		scope = 2;
-        scopeCurator = 2;
-		scopeArsenal = 2;
-        displayName = "M319-S Flare Launcher";
-        model = "\OPTRE_Weapons\GL\M319s.p3d";
-        magazines[] = {"UGL_FlareIR_F","UGL_FlareBlue_F","UGL_FlareGreen_F","UGL_FlareYellow_F","UGL_FlareRed_F","UGL_FlareWhite_F","3Rnd_UGL_FlareBlue_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareYellow_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareWhite_F","ACE_40mm_Flare_ir","ACE_40mm_Flare_red","ACE_40mm_Flare_white","ACE_40mm_Flare_green"};
-    };
-    //weapon beta end
 };

@@ -290,7 +290,7 @@ class CfgMagazines
 		initSpeed = 100;
 		ammo = "MEU_40mm_HE";
 		fuseDistance = 3;
-		mass = 7;
+		mass = 6;
 	};
 		
 	class 3Rnd_HE_MEU_shell:1Rnd_HE_MEU_shell
@@ -299,7 +299,7 @@ class CfgMagazines
 		displayname = "M301 3 Rnd 40mm HE Shell";
 		displayNameShort = "3Rnd 40mm HE";
 		count = 3;
-		mass = 21;
+		mass = 18;
 	};
 	
 	class 1Rnd_HEDP_MEU_shell:1Rnd_HE_MEU_shell
@@ -310,7 +310,7 @@ class CfgMagazines
 		descriptionShort = "40mm Dual-Purpose Rifle Grenade";
 		initspeed = 100;
 		ammo = "MEU_40mm_HEDP";
-		mass = 21;
+		mass = 18;
 	};
     class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
     {
