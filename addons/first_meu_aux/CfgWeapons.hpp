@@ -10023,7 +10023,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] CH252D Helmet (Baseplate)";
+		displayName = "[1stMEU] CH252D Helmet (Romeo)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
