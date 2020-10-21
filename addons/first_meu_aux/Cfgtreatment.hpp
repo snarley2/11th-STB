@@ -285,6 +285,6 @@ class ACE_Medical_Treatment
             class punctureWoundLarge: punctureWound {
                 effectiveness = 0.5;
             };
-        }
+        };
     };
 };
