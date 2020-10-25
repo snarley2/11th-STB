@@ -28,7 +28,7 @@ class CfgFunctions
             };
         };
     };
-	class TFAR
+	/*class TFAR
 	{
 		class Radio
 		{
@@ -37,5 +37,5 @@ class CfgFunctions
 			class canUseLRRadio;
 			class canUseDDRadio;
 		};
-	};
+	};*/
 };
