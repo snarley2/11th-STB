@@ -61,75 +61,74 @@ class CfgVehicles
     class ACE_SelfActions;
     class Man;
     
-    //test trash
-    
-class CAManBase: Man 
-{
-    class ACE_SelfActions: ACE_SelfActions
+    /*test trash
+    class CAManBase: Man 
     {
-        class 1stMEU_Style_Changer
+        class ACE_SelfActions: ACE_SelfActions
         {
-        displayName="Change Style";
-        exceptions[]=
-        {
-            "isNotInside",
-            "isNotSwimming",
-            "isNotSitting"
-        };
-        condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-        showDisabled=0;
-        priority=2;
-    
-            class 1stMEU_NoseArt_None
+            class 1stMEU_Style_Changer
             {
-                displayName="None";
+                displayName="Change Style";
                 exceptions[]=
                 {
                     "isNotInside",
                     "isNotSwimming",
                     "isNotSitting"
                 };
-                condition="!(isNull objectParent player)";
-                statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
-                showDisabled=0;
-                runOnHover=0;
-                priority=2.5;
-            };
-            class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
-            {
                 condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-                displayName="CWO2";
-                statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
-            };
-            class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
-            {
-                displayName="CWO3";
-                statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
-            };
-            class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
-            {
-                displayName="CWO4";
-                statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
-            };
-            class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
-            {
-                displayName="Torres";
-                statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
-            };
-            class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
-            {
-                displayName="Chaotic";
-                statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
-            };
-            class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
-            {
-                displayName="Bloodbath";
-                statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                };
             };
         };
     };
-};
-    //end test trash
+    */end test trash
     
     class MEU_IFV : VES_IFV76
     {
@@ -542,6 +541,69 @@ class CAManBase: Man
                 textures[]=
                 {
                     "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                };
+            };
+        };
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
                 };
             };
         };
@@ -1269,6 +1331,69 @@ class CAManBase: Man
                 };
             };
         };
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                };
+            };
+        };
     };
     
 	class VES_D77HTCI: OPTRE_Pelican_unarmed
@@ -1384,6 +1509,69 @@ class CAManBase: Man
                 textures[]=
                 {
                     "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                };
+            };
+        };
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
                 };
             };
         };
