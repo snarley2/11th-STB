@@ -128,7 +128,7 @@ class CfgVehicles
             };
         };
     };
-    */end test trash
+    end test trash*/
     
     class MEU_IFV : VES_IFV76
     {
