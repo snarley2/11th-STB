@@ -7,6 +7,8 @@ class CfgVehicles
     class OPTRE_UNSC_falcon_unarmed;
     class OPTRE_Pelican_armed;
     class OPTRE_Pelican_unarmed;
+    class VES_AV22_Sparrowhawk_Base;
+    class VES_AV22_Sparrowhawk;
     class B_APC_Tracked_01_base_F;
     class OPTRE_S12_SOLA_Jetpack;
     class StaticMGWeapon;
@@ -44,7 +46,6 @@ class CfgVehicles
     class OPTRE_UNSC_hornet;
 	class OPTRE_M313_UNSC;
     class B_parachute;
-    class OPTRE_AV22_Sparrowhawk_Base;
     class VES_IFV76;
     class VES_IFV76_A;
     class VES_M12_APC;
@@ -57,7 +58,81 @@ class CfgVehicles
     class OPTRE_MediGelItem;
     class ACE_tourniquetItem;
     class ItemInfo;
+<<<<<<< HEAD
     class OPTRE_CTF_Flag_Base;
+=======
+    class ACE_SelfActions;
+    class Man;
+    
+    /*test trash
+    class CAManBase: Man 
+    {
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                };
+            };
+        };
+    };
+    end test trash*/
+>>>>>>> master
     
     class MEU_IFV : VES_IFV76
     {
@@ -181,10 +256,71 @@ class CfgVehicles
         mass = 20
     };
     // end meds
-	class VES_AV22_Sparrowhawk_Base: OPTRE_AV22_Sparrowhawk_Base
-	{
+    class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H
+    {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
-         class pilotCamera
+        class pilotCamera
+        {
+            class OpticsIn
+            {
+                minTurn = -90;
+                maxTurn = 90;
+                initTurn = 0;
+                minElev = -10;
+                maxElev = 90;
+                initElev = 25;
+                maxXRotSpeed = 1;
+                maxYRotSpeed = 1;
+                maxMouseXRotSpeed = 0.5;
+                maxMouseYRotSpeed = 0.5;
+                pilotOpticsShowCursor = 1;
+                controllable = 1;
+                class Wide
+                {
+                    opticsDisplayName = "WFOV";
+                    initAngleX = 0;
+                    minAngleX = 0;
+                    maxAngleX = 0;
+                    initAngleY = 0;
+                    minAngleY = 0;
+                    maxAngleY = 0;
+                    initFov = "(75 / 120)";
+                    minFov = "(75 / 120)";
+                    maxFov = "(75 / 120)";
+                    directionStabilized = 1;
+                    visionMode[] = {"Normal","NVG","Ti"};
+                    thermalMode[] = {0,1};
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+                    opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+                };
+                class Medium: Wide
+                {
+                    opticsDisplayName = "MFOV";
+                    initFov = "(14.4 / 120)";
+                    minFov = "(14.4 / 120)";
+                    maxFov = "(14.4 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+                };
+                class Narrow: Wide
+                {
+                    opticsDisplayName = "NFOV";
+                    initFov = "(4.8 / 120)";
+                    minFov = "0.01";
+                    maxFov = "(4.8 / 120)";
+                    gunnerOpticsModel = "\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+                };
+            };
+        };
+        memoryPointDriverOptics = "gunnerview";
+    };  
+    class VES_AV22_Sparrowhawk_Base_F: VES_AV22_Sparrowhawk_Base
+    {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
+        tf_range=30000;
+        class pilotCamera
         {
             class OpticsIn
             {
@@ -240,6 +376,8 @@ class CfgVehicles
     };
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range = 30000;
         class pilotCamera
         {
@@ -297,8 +435,10 @@ class CfgVehicles
     };
 	class OPTRE_Pelican_F: Helicopter_Base_H
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
-         class pilotCamera
+        class pilotCamera
         {
             class OpticsIn
             {
@@ -380,11 +520,102 @@ class CfgVehicles
                     "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
                 };
             };
+            class Peg_Torres
+                {
+                displayName="Torres";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
+                };
+            };
+            class Peg_Chaotic
+                {
+                displayName="Chaotic";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
+                };
+            };
+            class Peg_Bloodbath
+                {
+                displayName="Bloodbath";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                };
+            };
+        };
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                };
+            };
         };
     };
-    
     class OPTRE_Hornet_base: Helicopter_Base_H
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class useractions
         {
@@ -483,6 +714,8 @@ class CfgVehicles
     
 	class VES_UH144_A: OPTRE_UNSC_falcon
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class useractions
         {
@@ -583,6 +816,8 @@ class CfgVehicles
 
     class VES_AV14_AIM : OPTRE_UNSC_hornet_CAP
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class useractions
         {
@@ -680,6 +915,8 @@ class CfgVehicles
     };
     class VES_AV14_AGM : OPTRE_UNSC_hornet_CAS
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class useractions
         {
@@ -777,6 +1014,8 @@ class CfgVehicles
     };
     class VES_AV14_Rockets : OPTRE_UNSC_hornet
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class useractions
         {
@@ -874,6 +1113,8 @@ class CfgVehicles
     };
     class VES_AV14 : OPTRE_UNSC_hornet
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class useractions
         {
@@ -975,10 +1216,14 @@ class CfgVehicles
 
 	class VES_UH144: OPTRE_UNSC_falcon_unarmed
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
     };
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
          class pilotCamera
         {
@@ -1062,12 +1307,105 @@ class CfgVehicles
                     "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
                 };
             };
+            class Peg_Torres
+            {
+                displayName="Torres";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
+                };
+            };
+            class Peg_Chaotic
+            {
+                displayName="Chaotic";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
+                };
+            };
+            class Peg_Bloodbath
+                {
+                displayName="Bloodbath";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                };
+            };
+        };
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                };
+            };
         };
     };
     
 	class VES_D77HTCI: OPTRE_Pelican_unarmed
     {
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
+        transportsoldier = 20;
         class pilotCamera
         {
             class OpticsIn
@@ -1148,6 +1486,96 @@ class CfgVehicles
                 textures[]=
                 {
                     "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
+                };
+            };
+            class Peg_Torres
+            {
+                displayName="Torres";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
+                };
+            };
+            class Peg_Chaotic
+            {
+                displayName="Chaotic";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
+                };
+            };
+            class Peg_Bloodbath
+                {
+                displayName="Bloodbath";
+                author="Chaotic";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                };
+            };
+        };
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Pelican\V_D77HTCI_OD3_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+                class 1stMEU_Style_CWO2: 1stMEU_NoseArt_None
+                {
+                    condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                    displayName="CWO2";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                };
+                class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO3";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                };
+                class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
+                {
+                    displayName="CWO4";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                };
+                class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
+                {
+                    displayName="Torres";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                };
+                class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
+                {
+                    displayName="Chaotic";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                };
+                class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
+                {
+                    displayName="Bloodbath";
+                    statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
                 };
             };
         };

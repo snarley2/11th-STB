@@ -85,12 +85,12 @@ class CfgWeapons
     class MEU_PlasmaIV : ACE_plasmaIV
     {
         scope = 2;
-        displayName = "[1st MEU]Plasma 2.5L";
+        displayName = "[1st MEU] Plasma 2.5L";
         descriptionShort = "2.5L of Plasma";
 		descriptionUse = "Give Plasma (2.5L)";
         class ItemInfo: ItemInfo
 		{
-			mass = 25;
+			mass = 16;
         };
     };
     class MEU_Biofoam: OPTRE_Biofoam

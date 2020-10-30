@@ -21,6 +21,26 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Medical",
 			"OPTRE_Ammo_SupplyPod_Mortars",
 			"OPTRE_Ammo_SupplyPod_LMG",
+            "1stMEU_M313_Elephant",
+            "Vulkan_Repair_APC",
+            "Vulkan_Repair_APC_P",
+            "OPTRE_HEV",
+            "MEU_IFV",
+            "MEU_IFV_A",
+            "MEU_M12_AP",
+            "OPTRE_AV22_Sparrowhawk_Base",
+            "VES_AV22_Sparrowhawk_Base_F",
+            "OPTRE_UNSC_falcon",
+            "OPTRE_Pelican_F",
+            "OPTRE_Hornet_base",
+            "VES_UH144_A",
+            "VES_AV14_AIM",
+            "VES_AV14_AGM",
+            "VES_AV14_Rockets",
+            "VES_AV14",
+            "VES_UH144",
+            "VES_D77HTCI_A",
+            "VES_D77HTCI",
 			};
         magazines[] = {
             "OPTRE_6Rnd_8Gauge_Pellet",
@@ -76,51 +96,9 @@ class cfgPatches
             "A3_Map_Altis_Scenes",
             "NSM_patch_main",
             "NSM_patch_particle_effects",
+            "V_FZ_Vehicles",
+            "task_force_radio",
         };
-    };
-    class MEU_Vehicles
-    {
-        editorCategory = "MEU_cat_gnd";
-		units[] = 
-        {
-            "1stMEU_M313_Elephant",
-            "Vulkan_Repair_APC",
-            "Vulkan_Repair_APC_P",
-            "OPTRE_HEV",
-            "MEU_IFV",
-            "MEU_IFV_A",
-            "MEU_M12_AP",
-        };
-		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
-	};
-    class MEU_Air
-    {
-        editorCategory = "MEU_cat_air";
-		units[] = 
-        {
-            "VES_AV22_Sparrowhawk_Base",
-            "OPTRE_UNSC_falcon",
-            "OPTRE_Pelican_F",
-            "OPTRE_Hornet_base",
-            "VES_UH144_A",
-            "VES_AV14_AIM",
-            "VES_AV14_AGM",
-            "VES_AV14_Rockets",
-            "VES_AV14",
-            "VES_UH144",
-            "VES_D77HTCI_A",
-            "VES_D77HTCI",
-        };
-		requiredVersion = 0.1;
-		requiredAddons[] = {"A3_Air_F","A3_Air_F_Beta","A3_Weapons_F","OPTRE_Core","A3_Data_F","OPTRE_Weapons"};
-	};
-    class meop_system
-    {
-        units[] += {};
-        magazines[] += {};
-        ammo[] += {};
-        weapons[] += {};
     };
 };
 class CfgFactionClasses
@@ -184,6 +162,12 @@ class CfgEditorSubcategories
     class MEU_sub_trt
     {
 		displayName = "Turrets";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+    class MEU_sub_rot
+    {
+		displayName = "Rotary";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
