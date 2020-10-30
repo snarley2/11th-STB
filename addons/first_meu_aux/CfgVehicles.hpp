@@ -57,6 +57,7 @@ class CfgVehicles
     class OPTRE_MediGelItem;
     class ACE_tourniquetItem;
     class ItemInfo;
+    class OPTRE_CTF_Flag_Base;
     
     class MEU_IFV : VES_IFV76
     {
@@ -4860,4 +4861,66 @@ class CfgVehicles
 		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke"};
 		icon = "iconManOfficer";
 	};
+    class 1stMEU_CTF_Flag_Prae1 : OPTRE_CTF_Flag_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="Praetorian 3-1 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST31_co.paa"};
+    }; 
+
+    class 1stMEU_CTF_Flag_Prae2 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="Praetorian 3-2 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST32_co.paa"};
+    }; 
+
+    class 1stMEU_CTF_Flag_Prae3 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="Praetorian 3-3 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST33_co.paa"};
+    };
+    
+    class 1stMEU_CTF_Flag_1stMEU : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="1st MEU CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_red1stmeu_co.paa"};
+    };
+    
+    class 1stMEU_CTF_Flag_1stPlt : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="1st Platoon CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow1stplt_co.paa"};
+    };
+    
+    class 1stMEU_CTF_Flag_2ndPlt : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="2nd Platoon CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
+    };
+    
+     class 1stMEU_CTF_Flag_ForgeSection1 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="2nd Platoon CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleforge_co.paa"};
+    };
 };
