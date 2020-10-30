@@ -58,9 +58,7 @@ class CfgVehicles
     class OPTRE_MediGelItem;
     class ACE_tourniquetItem;
     class ItemInfo;
-<<<<<<< HEAD
     class OPTRE_CTF_Flag_Base;
-=======
     class ACE_SelfActions;
     class Man;
     
