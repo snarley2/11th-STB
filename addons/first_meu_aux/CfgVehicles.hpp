@@ -195,18 +195,6 @@ class CfgVehicles
         {
             class OpticsIn
             {
-                minTurn = -90;
-                maxTurn = 90;
-                initTurn = 0;
-                minElev = -10;
-                maxElev = 90;
-                initElev = 25;
-                maxXRotSpeed = 1;
-                maxYRotSpeed = 1;
-                maxMouseXRotSpeed = 0.5;
-                maxMouseYRotSpeed = 0.5;
-                pilotOpticsShowCursor = 1;
-                controllable = 1;
                 class Wide
                 {
                     opticsDisplayName = "WFOV";
@@ -256,18 +244,6 @@ class CfgVehicles
         {
             class OpticsIn
             {
-                minTurn = -90;
-                maxTurn = 90;
-                initTurn = 0;
-                minElev = -10;
-                maxElev = 90;
-                initElev = 25;
-                maxXRotSpeed = 1;
-                maxYRotSpeed = 1;
-                maxMouseXRotSpeed = 0.5;
-                maxMouseYRotSpeed = 0.5;
-                pilotOpticsShowCursor = 1;
-                controllable = 1;
                 class Wide
                 {
                     opticsDisplayName = "WFOV";
