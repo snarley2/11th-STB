@@ -126,6 +126,12 @@ class CfgEditorCategories
         scopeCurator = 2;
         scopeeditor = 2;
     };
+	class MEU_flags
+    {   
+        displayName = "1st MEU Flags";
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
 };
 class CfgEditorSubcategories
 {

@@ -61,7 +61,8 @@ class CfgVehicles
     class OPTRE_CTF_Flag_Base;
     class ACE_SelfActions;
     class Man;
-    
+
+   
     class MEU_IFV : VES_IFV76
     {
         scope = 2;
@@ -5378,6 +5379,7 @@ class CfgVehicles
         displayName ="Praetorian 3-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST31_co.paa"};
+		editorCategory = "MEU_flags";
     }; 
 
     class 1stMEU_CTF_Flag_Prae2 : OPTRE_CTF_Flag_Base
@@ -5387,6 +5389,7 @@ class CfgVehicles
         displayName ="Praetorian 3-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST32_co.paa"};
+		editorCategory = "MEU_flags";
     }; 
 
     class 1stMEU_CTF_Flag_Prae3 : OPTRE_CTF_Flag_Base
@@ -5396,6 +5399,7 @@ class CfgVehicles
         displayName ="Praetorian 3-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST33_co.paa"};
+		editorCategory = "MEU_flags";
     };
     
     class 1stMEU_CTF_Flag_1stMEU : OPTRE_CTF_Flag_Base
@@ -5405,6 +5409,7 @@ class CfgVehicles
         displayName ="1st MEU CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_red1stmeu_co.paa"};
+		editorCategory = "MEU_flags";
     };
     
     class 1stMEU_CTF_Flag_1stPlt : OPTRE_CTF_Flag_Base
@@ -5414,6 +5419,7 @@ class CfgVehicles
         displayName ="1st Platoon CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow1stplt_co.paa"};
+		editorCategory = "MEU_flags";
     };
     
     class 1stMEU_CTF_Flag_2ndPlt : OPTRE_CTF_Flag_Base
@@ -5423,14 +5429,16 @@ class CfgVehicles
         displayName ="2nd Platoon CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
+	editorCategory = "MEU_flags";
     };
     
      class 1stMEU_CTF_Flag_ForgeSection1 : OPTRE_CTF_Flag_Base
     {    
         scope = 2;
         scopeCurator = 2;
-        displayName ="2nd Platoon CTF Flag";
+        displayName ="Vulcan 4-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleforge_co.paa"};
+		editorCategory = "MEU_flags";
     };
 };
