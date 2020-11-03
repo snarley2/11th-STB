@@ -5436,7 +5436,11 @@ class CfgVehicles
     {    
         scope = 2;
         scopeCurator = 2;
+<<<<<<< Updated upstream
         displayName ="Vulcan 4-3 CTF Flag";
+=======
+        displayName ="4-3 Forge CTF Flag";
+>>>>>>> Stashed changes
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleforge_co.paa"};
 		editorCategory = "MEU_flags";
