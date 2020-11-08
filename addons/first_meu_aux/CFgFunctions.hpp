@@ -28,14 +28,4 @@ class CfgFunctions
             };
         };
     };
-	/*class TFAR
-	{
-		class Radio
-		{
-			file="first_meu_aux\Functions";
-			class canUseSWRadio;
-			class canUseLRRadio;
-			class canUseDDRadio;
-		};
-	};*/
 };
