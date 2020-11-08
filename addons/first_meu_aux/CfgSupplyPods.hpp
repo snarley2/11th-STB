@@ -248,7 +248,8 @@ class OPTRE_Ammo_SupplyPod_M73X: OPTRE_Ammo_SupplyPod_Empty
 	displayName = "[UNSC] Supply Pod (M73X LMG)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_200Rnd_95x40_Box, 20);
+        mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
+        mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
 	};
 	class TransportWeapons
 	{
