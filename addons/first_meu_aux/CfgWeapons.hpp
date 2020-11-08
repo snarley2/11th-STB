@@ -66,6 +66,7 @@ class CfgWeapons
     class BaseSoundModeType;
     class OPTRE_UNSC_M52A_Armor_Base;
     class VES_M52A_URB_Security_A;
+	class VES_CH252A;
 	
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
@@ -11911,6 +11912,21 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     };
 	
 // BDU End
+// Air Assault Helmet start
+	
+	class VES_CH252A_Rave: VES_CH252A
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		weaponPoolAvailable = 1;
+		author = "Rave";
+		displayName = "[1stMEU] CH252A Helmet (Rave)";
+		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_Rave.paa","V_FZ_Armor\Data\Helmets\V_CH252A_SLV_V_CO.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
+
 // Weapons Start
     
     class Throw : GrenadeLauncher
