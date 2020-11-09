@@ -66,11 +66,7 @@ class CfgWeapons
     class BaseSoundModeType;
     class OPTRE_UNSC_M52A_Armor_Base;
     class VES_M52A_URB_Security_A;
-<<<<<<< HEAD
-    class VES_CH252D;
-=======
 	class VES_CH252A;
->>>>>>> master
 	
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
@@ -176,7 +172,7 @@ class CfgWeapons
 	};
     class 1stMEU_Base_CH252D_Helmet_dp : VES_CH252D_dp
     {
-		dlc = "1st MEU";
+        dlc = "1st MEU";
 		author = "1st MEU Mark";
 		scope = 0;
 		scopeArsenal = 0;
@@ -11930,6 +11926,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_Rave.paa","V_FZ_Armor\Data\Helmets\V_CH252A_SLV_V_CO.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
+    };
 
 // Weapons Start
     
@@ -12140,21 +12137,4 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     {
         magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
     };
-    
-    class Vaccum_Seal_HelmetSilver: VES_CH252D
-	{
-		displayName = "4th Platoon Helmet (Silver) Marine";
-		model = "\OPTRE_UNSC_Units\Army\helmet_p";
-		picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
-		hiddenSelections[] = {"camo","camo2","camo3","H_Collar","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "OPTRE_UNSC_Units\Army\helmet_p";
-			picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
-			hiddenSelections[] = {"camo","camo2","camo3","H_Collar","H_Ghillie"};
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_L_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-			hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"};
-		};
 };
