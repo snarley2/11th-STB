@@ -1618,6 +1618,17 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    
+    class MEU_Mar_MOS_Helm_Crolter : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Crolter";
+		displayName = "[1stMEU] Crolter CH252 Medical Helmet";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252_MAR_M_CO_Crolter_Sucks","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
     class MEU_Mar_MOS_Helm_BASE1 : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
