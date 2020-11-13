@@ -1,66 +1,27 @@
-#include "\a3\ui_f\hpp\defineCommonGrids.inc"
+class RscPicture{}; //part of the background
+class RscStandardDisplay{};
+class RscActiveText{};
+class RscActivePicture: RscActiveText{};
 
-class RscStandardDisplay;
-class RscControlsGroup;
-class RscPicture;
-class CfgMissions;
-class Cutscenes;
-class OPTRE_Tanoa_Intro1;
-class OPTRE_Altis_Intro1;
-class OPTRE_Stratis_Intro1;
-class OPTRE_VR_Intro1;
-class CAWorld;
-
-class RscDisplayStart: RscStandardDisplay 
+/*class RscTitles //part of the background
 {
-    class controls {
-        class LoadingStart: RscControlsGroup {
-            class controls {
-                class MEU_Background: RscPicture {
-                    text = "first_meu_aux\Data\1stModDevInsig.paa";
-                    x = 10;
-                    y = 10;
-                    w = 15;
-                    h = 10;
-                    colorBackground[]={1,1,1,1};
-                };
-            };
-        };
-    };
-};
-class RscTitles
+	class SplashNoise //part of the background
+		{
+			class BackgroundNoise: RscPicture //part of the background
+			{
+				text = "****INSERT PAA HERE****";
+			};
+		};
+	};
+	
+class RscDisplayMain: RscStandardDisplay //this class changes the insignia on the top
 {
-    class controls {
-        class LoadingStart: RscControlsGroup {
-            class controls {
-                class MEU_Background: RscPicture {
-                    text = "first_meu_aux\Data\1stModDevInsig.paa";
-                    x = 10;
-                    y = 10;
-                    w = 15;
-                    h = 10;
-                    colorBackground[]={1,1,1,1};
-                };
-            };
-        };
-    };
-};
-class CfgWorlds
-{
-	class Stratis: CAWorld
+	class Controls //this class changes the insignia on the top
 	{
-		cutscenes[] = {"OPTRE_Stratis_Intro1"};
-	};
-	class Altis: CAWorld
-	{
-		cutscenes[] = {"OPTRE_Altis_Intro1"};
-	};
-	class Tanoa: CAWorld
-	{
-		cutscenes[] = {"OPTRE_Tanoa_Intro1"};
-	};
-	class VR: CAWorld
-	{
-		cutscenes[] = {"OPTRE_VR_Intro1"};
-	};
-};
+		class Logo: RscActivePicture //this class changes the insignia on the top
+		{
+			text = "****INSERT PAA HERE****";
+			
+		};
+	};	
+};*/
