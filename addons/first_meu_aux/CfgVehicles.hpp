@@ -110,7 +110,122 @@ class CfgVehicles
                     thermalMode[] = {0,1,2,3,4,5};
                 };
             };
+        
+        class textureSources
+        {
+            class Vul_WA1
+            {
+                displayName="Anvil 1 (Woodland)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_CLS_T_CO_A1.paa"
+                };
+            };
+            class Vul_DA1
+            {
+                displayName="Anvil 1 (Desert)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_DUN_T_CO_A1.paa"
+                };
+            };
+            class Vul_AA1
+            {
+                displayName="Anvil 1 (Arctic)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_TND_T_CO_A1.paa"
+                };
+            };
+            class Vul_WA2
+            {
+                displayName="Anvil 2 (Woodland)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_CLS_T_CO_A2.paa"
+                };
+            };
+            class Vul_DA2
+            {
+                displayName="Anvil 2 (Desert)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_DUN_T_CO_A2.paa"
+                };
+            };
+            class Vul_AA2
+            {
+                displayName="Anvil 2 (Arctic)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_TND_T_CO_A2.paa"
+                };
+            };
+            class Vul_WA3
+            {
+                displayName="Anvil 3 (Woodland)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_CLS_T_CO_A3.paa"
+                };
+            };
+            class Vul_DA3
+            {
+                displayName="Anvil 3 (Desert)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_DUN_T_CO_A3.paa"
+                };
+            };
+            class Vul_AA3
+            {
+                displayName="Anvil 3 (Arctic)";
+                author="Romeo";
+                textures[]=
+                {
+                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_TND_T_CO_A3.paa"
+                };
+            };
         };
+        class ACE_SelfActions: ACE_SelfActions
+        {
+            class 1stMEU_Style_Changer
+            {
+                displayName="Change Style";
+                exceptions[]=
+                {
+                    "isNotInside",
+                    "isNotSwimming",
+                    "isNotSitting"
+                };
+                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
+                showDisabled=0;
+                priority=2;
+                
+                class 1stMEU_NoseArt_None
+                {
+                    displayName="None";
+                    exceptions[]=
+                    {
+                        "isNotInside",
+                        "isNotSwimming",
+                        "isNotSitting"
+                    };
+                    condition="!(isNull objectParent player)";
+                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Honeybadger\V_IFV76_CLS_T_CO.paa']";
+                    showDisabled=0;
+                    runOnHover=0;
+                    priority=2.5;
+                };
+           };     
     };
     class MEU_M12_AP : VES_M12_APC
     {
