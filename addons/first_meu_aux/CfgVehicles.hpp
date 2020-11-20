@@ -48,6 +48,8 @@ class CfgVehicles
     class B_parachute;
     class VES_IFV76;
     class VES_IFV76_A;
+    class OPTRE_M808B_UNSC;
+    class VES_M808B_MBT;
     class VES_M12_APC;
     class OPTRE_ILCS_Rucksack_Black;
     class textureSources;
@@ -62,7 +64,23 @@ class CfgVehicles
     class ACE_SelfActions;
     class Man;
 
-   
+
+    class MEU_SCORPION: VES_M808B_MBT
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "1stMEU"
+        author = "Romeo";
+        displayName = "[MEU] M808B Scorpion"
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        faction = "MEU_UNSC";
+        side = 1;
+		editorCategory = "MEU_cat_gnd";
+		crew = "VES_Rifleman_MA5B_MAR";	
+	};
     class MEU_IFV : VES_IFV76
     {
         scope = 2;
@@ -110,122 +128,7 @@ class CfgVehicles
                     thermalMode[] = {0,1,2,3,4,5};
                 };
             };
-        
-        class textureSources
-        {
-            class Vul_WA1
-            {
-                displayName="Anvil 1 (Woodland)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_CLS_T_CO_A1.paa"
-                };
-            };
-            class Vul_DA1
-            {
-                displayName="Anvil 1 (Desert)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_DUN_T_CO_A1.paa"
-                };
-            };
-            class Vul_AA1
-            {
-                displayName="Anvil 1 (Arctic)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_TND_T_CO_A1.paa"
-                };
-            };
-            class Vul_WA2
-            {
-                displayName="Anvil 2 (Woodland)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_CLS_T_CO_A2.paa"
-                };
-            };
-            class Vul_DA2
-            {
-                displayName="Anvil 2 (Desert)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_DUN_T_CO_A2.paa"
-                };
-            };
-            class Vul_AA2
-            {
-                displayName="Anvil 2 (Arctic)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_TND_T_CO_A2.paa"
-                };
-            };
-            class Vul_WA3
-            {
-                displayName="Anvil 3 (Woodland)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_CLS_T_CO_A3.paa"
-                };
-            };
-            class Vul_DA3
-            {
-                displayName="Anvil 3 (Desert)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_DUN_T_CO_A3.paa"
-                };
-            };
-            class Vul_AA3
-            {
-                displayName="Anvil 3 (Arctic)";
-                author="Romeo";
-                textures[]=
-                {
-                    "first_meu_aux\Data\Vulcan\Vehicles\Anvil\V_IFV76_TND_T_CO_A3.paa"
-                };
-            };
         };
-        class ACE_SelfActions: ACE_SelfActions
-        {
-            class 1stMEU_Style_Changer
-            {
-                displayName="Change Style";
-                exceptions[]=
-                {
-                    "isNotInside",
-                    "isNotSwimming",
-                    "isNotSitting"
-                };
-                condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
-                showDisabled=0;
-                priority=2;
-                
-                class 1stMEU_NoseArt_None
-                {
-                    displayName="None";
-                    exceptions[]=
-                    {
-                        "isNotInside",
-                        "isNotSwimming",
-                        "isNotSitting"
-                    };
-                    condition="!(isNull objectParent player)";
-                    statement="_target setObjectTextureGlobal [0,'V_FZ_Vehicles\data\Honeybadger\V_IFV76_CLS_T_CO.paa']";
-                    showDisabled=0;
-                    runOnHover=0;
-                    priority=2.5;
-                };
-           };     
     };
     class MEU_M12_AP : VES_M12_APC
     {
@@ -5573,21 +5476,78 @@ class CfgVehicles
     
     class 1stMEU_CTF_Flag_2ndPlt : OPTRE_CTF_Flag_Base
     {    
+        author = "Romeo"
         scope = 2;
         scopeCurator = 2;
         displayName ="2nd Platoon CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
-	editorCategory = "MEU_flags";
+        editorCategory = "MEU_flags";
     };
     
-     class 1stMEU_CTF_Flag_ForgeSection1 : OPTRE_CTF_Flag_Base
-    {    
+    class 1stMEU_CTF_Flag_Hammer : OPTRE_CTF_Flag_Base
+        
+    {   author = "Romeo" 
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="Vulcan 4-1 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_hammer_co.paa"};
+		editorCategory = "MEU_flags";
+    };
+    
+     class 1stMEU_CTF_Flag_Anvil : OPTRE_CTF_Flag_Base
+         
+    {   author = "Romeo" 
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="Vulcan 4-2 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_anvil_co.paa"};
+		editorCategory = "MEU_flags";
+    };
+    
+    class 1stMEU_CTF_Flag_Forge : OPTRE_CTF_Flag_Base
+         
+    {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
         displayName ="Vulcan 4-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleforge_co.paa"};
+		editorCategory = "MEU_flags";
+    };
+    
+     class 1stMEU_CTF_Flag_Guardian : OPTRE_CTF_Flag_Base
+         
+    {   author = "Romeo" 
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="Vulcan 4-Mike CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_guardian_co.paa"};
+		editorCategory = "MEU_flags";
+    };
+    
+     class 1stMEU_CTF_Flag_Gladius : OPTRE_CTF_Flag_Base
+         
+    {   author = "Romeo" 
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="Vulcan 4-0 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_gladius_co.paa"};
+		editorCategory = "MEU_flags";
+    };
+    
+     class 1stMEU_CTF_Flag_VulcanHQ : OPTRE_CTF_Flag_Base
+         
+    {   author = "Romeo" 
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="4th Platoon CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_vulcanhq_co.paa"};
 		editorCategory = "MEU_flags";
     };
 };
