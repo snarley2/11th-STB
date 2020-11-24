@@ -2363,7 +2363,7 @@ class CfgVehicles
 	{
         uniformclass = "Centurion_BDU_Urban_Evolved";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"};
 	};
 	
 	class BDU_V_Centurion_Slim_Rolled: 1stMEU_BDU
@@ -2411,7 +2411,7 @@ class CfgVehicles
 		model="\OPTRE_UNSC_Units\Army\uniform_rolled";
         uniformclass = "Centurion_BDU_Urban_Evolved_Rolled";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"};
 	};
 	
 	class BDU_V_Centurion_Slim_Short: 1stMEU_BDU
@@ -2459,7 +2459,7 @@ class CfgVehicles
 		model="\OPTRE_UNSC_Units\Army\uniform_short";
         uniformclass = "Centurion_BDU_Urban_Evolved_Short";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"};
 	};
 	
 //  End Uniforms
