@@ -11,6 +11,7 @@
 #include "Cfgtreatment.hpp"
 #include "Cfgtreatmentactions.hpp"
 #include "CfgFunctions.hpp"
+#include "Cfgloadingscreens.hpp"
 class CAWorld;
 class cfgPatches
 {
@@ -183,8 +184,8 @@ class CfgWorlds
  	class Altis : CAWorld
 	{
 		description = "Altis";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -193,8 +194,8 @@ class CfgWorlds
  	class Anizay : CAWorld
 	{
 		description = "Anizay";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -203,8 +204,8 @@ class CfgWorlds
  	class Bariga : CAWorld
 	{
 		description = "Bariga";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -213,8 +214,8 @@ class CfgWorlds
  	class Blood_OPTRE : CAWorld
 	{
 		description = "Blood Gulch";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -223,8 +224,8 @@ class CfgWorlds
  	class bsoc_brasil : CAWorld
 	{
 		description = "BSOC Brasil";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -233,8 +234,8 @@ class CfgWorlds
  	class Bootcamp_ACR : CAWorld
 	{
 		description = "Bukovina";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -243,8 +244,8 @@ class CfgWorlds
  	class Woodland_ACR : CAWorld
 	{
 		description = "Bystrica";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -253,8 +254,8 @@ class CfgWorlds
  	class chernarus : CAWorld
 	{
 		description = "Chernarus (Autumn)";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -263,8 +264,8 @@ class CfgWorlds
  	class chernarus_summer : CAWorld
 	{
 		description = "Chernarus (Summer)";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -273,8 +274,8 @@ class CfgWorlds
  	class Chernarus_Winter : CAWorld
 	{
 		description = "Chernarus (Winter)";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -283,8 +284,8 @@ class CfgWorlds
  	class clafghan : CAWorld
 	{
 		description = "CLA Clafghan";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -293,8 +294,8 @@ class CfgWorlds
  	class Desert_E : CAWorld
 	{
 		description = "Desert";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -303,8 +304,8 @@ class CfgWorlds
  	class desert_island : CAWorld
 	{
 		description = "Desert Island";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -313,8 +314,8 @@ class CfgWorlds
  	class dingor : CAWorld
 	{
 		description = "Dingor v3.82";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -323,8 +324,8 @@ class CfgWorlds
  	class eladeen_terrain : CAWorld
 	{
 		description = "Eladeen";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -333,8 +334,8 @@ class CfgWorlds
  	class eden : CAWorld
 	{
 		description = "Everon";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -343,8 +344,8 @@ class CfgWorlds
  	class pja310 : CAWorld
 	{
 		description = "G.O.S Al Rayak";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -353,8 +354,8 @@ class CfgWorlds
  	class pja308 : CAWorld
 	{
 		description = "G.O.S Gunkizli";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -363,8 +364,8 @@ class CfgWorlds
  	class pja314 : CAWorld
 	{
 		description = "G.O.S Leskovets";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -373,8 +374,8 @@ class CfgWorlds
  	class pja319 : CAWorld
 	{
 		description = "G.O.S N'Djenahoud";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -383,8 +384,8 @@ class CfgWorlds
  	class pja305 : CAWorld
 	{
 		description = "G.O.S N'Ziwasogo";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -393,8 +394,8 @@ class CfgWorlds
  	class pja312 : CAWorld
 	{
 		description = "G.O.S Song Bin Tanh APEX";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -403,8 +404,8 @@ class CfgWorlds
  	class OPTRE_Gridlock : CAWorld
 	{
 		description = "Gridlock";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -413,8 +414,8 @@ class CfgWorlds
  	class hellanmaa : CAWorld
 	{
 		description = "Hellanmaa";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -423,8 +424,8 @@ class CfgWorlds
  	class hellanmaaw : CAWorld
 	{
 		description = "Hellanmaa winter";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -433,8 +434,8 @@ class CfgWorlds
  	class OPTRE_iberius : CAWorld
 	{
 		description = "Iberius";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -443,8 +444,8 @@ class CfgWorlds
  	class tem_ihantalaw : CAWorld
 	{
 		description = "Ihantala Winter";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -453,8 +454,8 @@ class CfgWorlds
  	class abramia : CAWorld
 	{
 		description = "Isla Abaramia v3.9";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -463,8 +464,8 @@ class CfgWorlds
  	class isladuala3 : CAWorld
 	{
 		description = "Isla Duala v3.9.5";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -473,8 +474,8 @@ class CfgWorlds
  	class OPTRE_Kholo : CAWorld
 	{
 		description = "Kholo";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -483,8 +484,8 @@ class CfgWorlds
  	class cain : CAWorld
 	{
 		description = "Kolgujev";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -493,8 +494,8 @@ class CfgWorlds
  	class Lingor_v3_9_5 : CAWorld
 	{
 		description = "Lingor v3.9.5";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -503,8 +504,8 @@ class CfgWorlds
  	class Enoch : CAWorld
 	{
 		description = "Livonia";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -513,8 +514,8 @@ class CfgWorlds
  	class OPTRE_Madrigal : CAWorld
 	{
 		description = "Madrigal";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -523,8 +524,8 @@ class CfgWorlds
  	class abel : CAWorld
 	{
 		description = "Malden";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -533,8 +534,8 @@ class CfgWorlds
  	class Malden : CAWorld
 	{
 		description = "Malden 2035";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -543,8 +544,8 @@ class CfgWorlds
  	class Mountain_Wilderness : CAWorld
 	{
 		description = "Mountain Wilderness";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -553,8 +554,8 @@ class CfgWorlds
  	class Nam2 : CAWorld
 	{
 		description = "Nam2";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -563,8 +564,8 @@ class CfgWorlds
  	class noe : CAWorld
 	{
 		description = "Nogova";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -573,8 +574,8 @@ class CfgWorlds
  	class Pandora : CAWorld
 	{
 		description = "Pandora";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -583,8 +584,8 @@ class CfgWorlds
  	class Winthera3 : CAWorld
 	{
 		description = "Panthera (Winter)v3.9";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -593,8 +594,8 @@ class CfgWorlds
  	class panthera3 : CAWorld
 	{
 		description = "Panthera v3.9";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -603,8 +604,8 @@ class CfgWorlds
  	class porto : CAWorld
 	{
 		description = "Porto";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -613,8 +614,8 @@ class CfgWorlds
  	class ProvingGrounds_PMC : CAWorld
 	{
 		description = "Proving Grounds";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -623,8 +624,8 @@ class CfgWorlds
  	class pulau : CAWorld
 	{
 		description = "Pulau";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -633,8 +634,8 @@ class CfgWorlds
  	class intro : CAWorld
 	{
 		description = "Rahmadi";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -643,8 +644,8 @@ class CfgWorlds
  	class ruha : CAWorld
 	{
 		description = "Ruha";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -653,8 +654,8 @@ class CfgWorlds
  	class sara : CAWorld
 	{
 		description = "Sahrani";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -663,8 +664,8 @@ class CfgWorlds
  	class Kapaulio : CAWorld
 	{
 		description = "Saint Kapaulio";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -673,8 +674,8 @@ class CfgWorlds
  	class OPTRE_Sandstorm : CAWorld
 	{
 		description = "Sandstorm";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -683,8 +684,8 @@ class CfgWorlds
  	class Shapur_BAF : CAWorld
 	{
 		description = "Shapur";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -693,8 +694,8 @@ class CfgWorlds
  	class saralite : CAWorld
 	{
 		description = "Southern Sahrani";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -703,8 +704,8 @@ class CfgWorlds
  	class Stratis : CAWorld
 	{
 		description = "Stratis";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -713,8 +714,8 @@ class CfgWorlds
  	class tem_summa : CAWorld
 	{
 		description = "Summa";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -723,8 +724,8 @@ class CfgWorlds
  	class tem_summawcup : CAWorld
 	{
 		description = "Summa winter";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -733,8 +734,8 @@ class CfgWorlds
  	class Takistan : CAWorld
 	{
 		description = "Takistan";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -743,8 +744,8 @@ class CfgWorlds
  	class Mountains_ACR : CAWorld
 	{
 		description = "Takistan Mountains";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -753,8 +754,8 @@ class CfgWorlds
  	class Tanoa : CAWorld
 	{
 		description = "Tanoa";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -763,8 +764,8 @@ class CfgWorlds
  	class Todt : CAWorld
 	{
 		description = "Todt";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -773,8 +774,8 @@ class CfgWorlds
  	class jns_tria : CAWorld
 	{
 		description = "Tria";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -783,8 +784,8 @@ class CfgWorlds
  	class United_Sahrani : CAWorld
 	{
 		description = "United Sahrani";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -793,8 +794,8 @@ class CfgWorlds
  	class utes : CAWorld
 	{
 		description = "Utes";
-		pictureMap = "first_meu_aux\Data\MEUPIC3.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC3.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -803,8 +804,8 @@ class CfgWorlds
  	class VR : CAWorld
 	{
 		description = "Virtual Reality";
-		pictureMap = "first_meu_aux\Data\MEUPIC2.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC2.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
@@ -813,8 +814,8 @@ class CfgWorlds
  	class zargabad : CAWorld
 	{
 		description = "Zargabad";
-		pictureMap = "first_meu_aux\Data\MEUPIC1.paa";
-		pictureShot = "first_meu_aux\Data\MEUPIC1.paa";
+		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
+		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you by it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"

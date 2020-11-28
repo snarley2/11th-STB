@@ -3,13 +3,13 @@ class RscStandardDisplay{};
 class RscActiveText{};
 class RscActivePicture: RscActiveText{};
 
-/*class RscTitles //part of the background
+class RscTitles //part of the background
 {
 	class SplashNoise //part of the background
 		{
 			class BackgroundNoise: RscPicture //part of the background
 			{
-				text = "****INSERT PAA HERE****";
+				text = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 			};
 		};
 	};
@@ -20,8 +20,8 @@ class RscDisplayMain: RscStandardDisplay //this class changes the insignia on th
 	{
 		class Logo: RscActivePicture //this class changes the insignia on the top
 		{
-			text = "****INSERT PAA HERE****";
+			text = "\first_meu_aux\Data\LoadingScreens\1stMEUInsignia.paa";
 			
 		};
 	};	
-};*/
+};
