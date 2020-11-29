@@ -63,6 +63,7 @@ class cfgPatches
             "OPTRE_M295_BMR",
             "OPTRE_M393_DMR",
             "OPTRE_CR77",
+			"OPTRE_M7",
             "throw",
             "OPTRE_M319",
         };

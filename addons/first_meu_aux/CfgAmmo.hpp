@@ -93,7 +93,6 @@ class CfgAmmo
 	// end throwable explosives
 	
 	// start ammo reballance
-	
 	class OPTRE_B_8Gauge_Slug: B_12Gauge_Slug
 	{
 		caliber	= 6;
@@ -155,51 +154,51 @@ class CfgAmmo
 	
 	class OPTRE_B_762x51_DMR_AP: OPTRE_B_762x51_Ball
 	{
-		caliber						= 4;
-		hit 						= 22;
-		typicalSpeed				= 1150;
+		caliber	= 4;
+		hit = 22;
+		typicalSpeed = 1150;
 	};
 
 	class OPTRE_B_762x51_DMR_APT: OPTRE_B_762x51_DMR_AP
 	{
-		model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 
 	class OPTRE_B_762x51_DMR_FS: OPTRE_B_762x51_Ball
 	{
-		airFriction					= 0;
-		caliber						= 3;
-		hit 						= 18;
-		typicalSpeed				= 1200;
-		sideairFriction				= 0;
+		airFriction = 0;
+		caliber = 3;
+		hit = 18;
+		typicalSpeed = 1200;
+		sideairFriction = 0;
 	};
 
 	class OPTRE_B_762x51_DMR_FST: OPTRE_B_762x51_Ball
 	{
-		model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 
 	class OPTRE_B_762x51_DMR_JHP: OPTRE_B_762x51_Ball
 	{
-		caliber						= 1;
-		hit 						= 26;
-		typicalSpeed				= 1050;
+		caliber = 1;
+		hit = 26;
+		typicalSpeed = 1050;
 	};
 
 	class OPTRE_B_762x51_DMR_JHPT: OPTRE_B_762x51_DMR_JHP
 	{
-		model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 
 	class OPTRE_B_762x51_DMR_SS: OPTRE_B_762x51_Ball
 	{
-		hit 						= 26;
-		typicalSpeed				= 343;
+		hit = 26;
+		typicalSpeed = 343;
 	};
 
 	class OPTRE_B_762x51_DMR_SST: OPTRE_B_762x51_DMR_SS
 	{
-		model						= "\A3\Weapons_f\Data\bullettracer\tracer_red";
+		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 	
 	class MEU_40mm_HE: G_40mm_HE

@@ -115,12 +115,13 @@ class CfgWeapons
 	class MEU_tourniquet : ACE_tourniquet 
     {
         scope = 1;
-        displayName = " [P] Suit Constrictor"; 
+        displayName = " [P] Armor Patch"; 
         class ItemInfo: CBA_MiscItem_ItemInfo 
         {
             mass = 0.5;
         };
     };
+	
 // Medical Items End
 // Armor Base Values
 		
@@ -2775,11 +2776,6 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     {
         scopeArsenal = 1;
         scope = 1;
-    };
-	class MEU_Mar_MOS_Helm_Crolter_dp	: 1MEU_Base_CH252_Helmet
-    {
-        scope = 1;
-        scopeArsenal = 1;
     };
     //2nd plt med
      class MEU_Mar_MOS_Helm_BASE2 : 1MEU_Base_CH252_Helmet
@@ -13269,7 +13265,45 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"FullAuto"
 		};
     };
-// Weapon end
+	
+	class OPTRE_M7: OPTRE_SubMachineGun_Base
+	{
+		magazines[]=
+		{
+			"OPTRE_60Rnd_5x23mm_Mag",
+			"OPTRE_60Rnd_5x23mm_Mag_Tracer",
+			"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_5x23mm_Mag_FMJ",
+			"OPTRE_60Rnd_5x23mm_Mag_FMJT",
+			"OPTRE_60Rnd_5x23mm_Mag_HV",
+			"OPTRE_60Rnd_5x23mm_Mag_HVT",
+			"OPTRE_60Rnd_5x23mm_Mag_JHP",
+			"OPTRE_60Rnd_5x23mm_Mag_JHPT",
+			"OPTRE_60Rnd_5x23mm_Mag_SS",
+			"OPTRE_60Rnd_5x23mm_Mag_SST",
+			"OPTRE_48Rnd_5x23mm_Mag",
+			"OPTRE_48Rnd_5x23mm_Mag_Tracer",
+			"OPTRE_48Rnd_5x23mm_Mag_Tracer_Yellow",
+			"OPTRE_48Rnd_5x23mm_Mag_FMJ",
+			"OPTRE_48Rnd_5x23mm_Mag_FMJT",
+			"OPTRE_48Rnd_5x23mm_Mag_HV",
+			"OPTRE_48Rnd_5x23mm_Mag_HVT",
+			"OPTRE_48Rnd_5x23mm_Mag_JHP",
+			"OPTRE_48Rnd_5x23mm_Mag_JHPT",
+			"OPTRE_48Rnd_5x23mm_Mag_SS",
+			"OPTRE_48Rnd_5x23mm_Mag_SST",
+			
+			"OPTRE_60Rnd_5x23mm_FMJ_Mag",
+			"OPTRE_60Rnd_5x23mm_JHP_Mag",
+			"OPTRE_48Rnd_5x23mm_FMJ_Mag",
+			"OPTRE_48Rnd_5x23mm_JHP_Mag",
+			"OPTRE_60Rnd_5x23mm_Mag_NARQ",
+			"OPTRE_60Rnd_5x23mm_Mag_NARQT"
+		};
+	};
+	
+	// Weapon end
+	
     //back to weapons
     class OPTRE_M319 : OPTRE_Rifle_Base
     {

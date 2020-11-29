@@ -1,6 +1,5 @@
 class CfgMagazines
 {
-	
     class OPTRE_60Rnd_762x51_Mag;
     class B_127x99_Ball;
 	class OPTRE_B_127x99_HE;
@@ -18,6 +17,7 @@ class CfgMagazines
     class OPTRE_M9_Frag;
     class ACE_CTS9;
     class M168_Remote_Mag;
+	class OPTRE_60Rnd_5x23mm_Mag;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -175,110 +175,110 @@ class CfgMagazines
 		
 	class OPTRE_15Rnd_DMR_762x51_Mag_AP: OPTRE_15Rnd_762x51_Mag
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
-		scope						= 2;
-		scopeArsenal				= 2;
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
 		
-		initspeed 					= 1150;
-		ammo 						= "OPTRE_B_762x51_DMR_AP";
-		displayname 				= "15Rnd 7.62x51mm DMR AP Magazine";
-		displaynameshort 			= "7.62x51mm AP";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Armor-Piercing";
+		initspeed = 1150;
+		ammo = "OPTRE_B_762x51_DMR_AP";
+		displayname = "15Rnd 7.62x51mm DMR AP Magazine";
+		displaynameshort = "7.62x51mm AP";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Armor-Piercing";
 	};
 
 	class OPTRE_15Rnd_DMR_762x51_Mag_APT: OPTRE_15Rnd_DMR_762x51_Mag_AP
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
+		dlc = "SO";
+		author = "Fireteam Zulu";
 		
-		tracersEvery				= 1;
+		tracersEvery = 1;
 		
-		ammo 						= "OPTRE_B_762x51_DMR_APT";
-		displayname 				= "15Rnd 7.62x51mm DMR AP Magazine (Tracer)";
-		displaynameshort 			= "7.62x51mm AP Tracer";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
+		ammo = "OPTRE_B_762x51_DMR_APT";
+		displayname = "15Rnd 7.62x51mm DMR AP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm AP Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
 	};
 
 	class OPTRE_15Rnd_DMR_762x51_Mag_JHP: OPTRE_15Rnd_762x51_Mag
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
-		scope						= 2;
-		scopeArsenal				= 2;
+		dlc	= "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
 		
-		initspeed 					= 1050;
-		ammo 						= "OPTRE_B_762x51_DMR_JHP";
-		displayname 				= "15Rnd 7.62x51mm DMR JHP Magazine";
-		displaynameshort 			= "7.62x51mm JHP";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point";
+		initspeed = 1050;
+		ammo = "OPTRE_B_762x51_DMR_JHP";
+		displayname = "15Rnd 7.62x51mm DMR JHP Magazine";
+		displaynameshort = "7.62x51mm JHP";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point";
 	};
 
 	class OPTRE_15Rnd_DMR_762x51_Mag_JHPT: OPTRE_15Rnd_DMR_762x51_Mag_JHP
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
+		dlc = "SO";
+		author = "Fireteam Zulu";
 		
-		tracersEvery				= 1;
+		tracersEvery = 1;
 		
-		ammo 						= "OPTRE_B_762x51_DMR_JHPT";
-		displayname 				= "15Rnd 7.62x51mm DMR JHP Magazine (Tracer)";
-		displaynameshort 			= "7.62x51mm JHP Tracer";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+		ammo = "OPTRE_B_762x51_DMR_JHPT";
+		displayname = "15Rnd 7.62x51mm DMR JHP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm JHP Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
 	};
 
 	class OPTRE_15Rnd_DMR_762x51_Mag_SS: OPTRE_15Rnd_762x51_Mag
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
-		scope						= 2;
-		scopeArsenal				= 2;
+		dlc	= "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
 		
-		initspeed 					= 340;
-		ammo 						= "OPTRE_B_762x51_DMR_SS";
-		displayname 				= "15Rnd 7.62x51mm DMR SS Magazine";
-		displaynameshort 			= "7.62x51mm SS";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Subsonic";
+		initspeed = 340;
+		ammo = "OPTRE_B_762x51_DMR_SS";
+		displayname = "15Rnd 7.62x51mm DMR SS Magazine";
+		displaynameshort = "7.62x51mm SS";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Subsonic";
 	};
 
 	class OPTRE_15Rnd_DMR_762x51_Mag_SST: OPTRE_15Rnd_DMR_762x51_Mag_SS
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
+		dlc = "SO";
+		author = "Fireteam Zulu";
 		
-		tracersEvery				= 1;
+		tracersEvery = 1;
 		
-		ammo 						= "OPTRE_B_762x51_DMR_SST";
-		displayname 				= "15Rnd 7.62x51mm DMR SS Magazine (Tracer)";
-		displaynameshort 			= "7.62x51mm SS Tracer";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
+		ammo = "OPTRE_B_762x51_DMR_SST";
+		displayname = "15Rnd 7.62x51mm DMR SS Magazine (Tracer)";
+		displaynameshort = "7.62x51mm SS Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
 	};
 
 	class OPTRE_15Rnd_DMR_762x51_Mag_FS: OPTRE_15Rnd_762x51_Mag
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
-		scope						= 2;
-		scopeArsenal				= 2;
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
 		
-		initspeed 					= 1200;
-		ammo 						= "OPTRE_B_762x51_DMR_FS";
-		displayname 				= "15Rnd 7.62x51mm DMR FS Magazine";
-		displaynameshort 			= "7.62x51mm FS";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized";
+		initspeed = 1200;
+		ammo = "OPTRE_B_762x51_DMR_FS";
+		displayname = "15Rnd 7.62x51mm DMR FS Magazine";
+		displaynameshort = "7.62x51mm FS";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized";
 	};
 
 	class OPTRE_15Rnd_DMR_762x51_Mag_FST: OPTRE_15Rnd_DMR_762x51_Mag_FS
 	{
-		dlc							= "SO";
-		author						= "Fireteam Zulu";
+		dlc	= "SO";
+		author = "Fireteam Zulu";
 		
-		tracersEvery				= 1;
+		tracersEvery = 1;
 		
-		ammo 						= "OPTRE_B_762x51_DMR_FST";
-		displayname 				= "15Rnd 7.62x51mm DMR FS Magazine (Tracer)";
-		displaynameshort 			= "7.62x51mm FS Tracer";
-		descriptionShort			= "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized<br>Tracers";
+		ammo = "OPTRE_B_762x51_DMR_FST";
+		displayname = "15Rnd 7.62x51mm DMR FS Magazine (Tracer)";
+		displaynameshort = "7.62x51mm FS Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized<br>Tracers";
 	};
 	
 	class 1Rnd_HE_MEU_shell:1Rnd_HE_Grenade_shell
@@ -312,6 +312,7 @@ class CfgMagazines
 		ammo = "MEU_40mm_HEDP";
 		mass = 18;
 	};
+	
     class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark";
@@ -326,6 +327,7 @@ class CfgMagazines
 		displayNameShort = "C7";
         initSpeed = 15;
     };
+	
     class MEU_c12_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark";
@@ -340,6 +342,7 @@ class CfgMagazines
 		displayNameShort = "C12";
         initSpeed = 9;
     };
+	
     class MEU_9bang_Mag : ACE_CTS9
     {
         author = "1st MEU Mark";
@@ -349,6 +352,7 @@ class CfgMagazines
         descriptionShort = "ODSTs shouldn't play with grenades";
 		displayNameShort = "P9B";
     };
+	
     class MEU_C168_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark";
@@ -363,4 +367,26 @@ class CfgMagazines
 		displayNameShort = "M168";
         initSpeed = 9;
     };
+	
+	class OPTRE_60Rnd_5x23mm_Mag_NARQ: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		initspeed = 900;
+		ammo = "OPTRE_B_127x40_NARQ";
+		displayname = "60Rnd 5x23mm NARQ Magazine";
+		displaynameshort = "5x23mm NARQ";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>Tranquilizer";
+	};
+	
+	class OPTRE_60Rnd_5x23mm_Mag_NARQT: OPTRE_60Rnd_5x23mm_Mag_NARQ
+	{
+		tracersEvery = 1;
+		displayname = "60Rnd 5x23mm NARQ Tracer Magazine";
+		displaynameshort = "5x23mm NARQ Tracer";
+		descriptionShort = "60 Round Magazine<br>5x23mm Tracer<br>Tranquilizer";
+	};
 };
