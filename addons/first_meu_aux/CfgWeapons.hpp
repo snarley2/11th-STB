@@ -13088,7 +13088,39 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			magazines[] = {"MEU_C168_Mag"};
 		};
     };
-    class MEU_M7v2: VES_M7_I
+	
+	class OPTRE_M7: OPTRE_SubMachineGun_Base
+	{
+		magazines[]=
+		{
+			"OPTRE_60Rnd_5x23mm_Mag",
+			"OPTRE_60Rnd_5x23mm_Mag_Tracer",
+			"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow",
+			"OPTRE_60Rnd_5x23mm_Mag_FMJ",
+			"OPTRE_60Rnd_5x23mm_Mag_FMJT",
+			"OPTRE_60Rnd_5x23mm_Mag_HV",
+			"OPTRE_60Rnd_5x23mm_Mag_HVT",
+			"OPTRE_60Rnd_5x23mm_Mag_JHP",
+			"OPTRE_60Rnd_5x23mm_Mag_JHPT",
+			"OPTRE_60Rnd_5x23mm_Mag_SS",
+			"OPTRE_60Rnd_5x23mm_Mag_SST",
+			"OPTRE_48Rnd_5x23mm_Mag",
+			"OPTRE_48Rnd_5x23mm_Mag_Tracer",
+			"OPTRE_48Rnd_5x23mm_Mag_Tracer_Yellow",
+			"OPTRE_48Rnd_5x23mm_Mag_FMJ",
+			"OPTRE_48Rnd_5x23mm_Mag_FMJT",
+			"OPTRE_48Rnd_5x23mm_Mag_HV",
+			"OPTRE_48Rnd_5x23mm_Mag_HVT",
+			"OPTRE_48Rnd_5x23mm_Mag_JHP",
+			"OPTRE_48Rnd_5x23mm_Mag_JHPT",
+			"OPTRE_48Rnd_5x23mm_Mag_SS",
+			"OPTRE_48Rnd_5x23mm_Mag_SST",
+			"OPTRE_60Rnd_5x23mm_Mag_NARQ",
+			"OPTRE_60Rnd_5x23mm_Mag_NARQT"
+		};
+	};
+	
+    class MEU_M7v2: OPTRE_M7
     {
         baseweapon = "MEU_M7v2";
         dlc = "SO";
@@ -13119,7 +13151,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
             };
 		};
     };
-    
+	
 	class OPTRE_M301X: UGL_F
 	{
 		magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
@@ -13265,42 +13297,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"FullAuto"
 		};
     };
-	
-	class OPTRE_M7: OPTRE_SubMachineGun_Base
-	{
-		magazines[]=
-		{
-			"OPTRE_60Rnd_5x23mm_Mag",
-			"OPTRE_60Rnd_5x23mm_Mag_Tracer",
-			"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow",
-			"OPTRE_60Rnd_5x23mm_Mag_FMJ",
-			"OPTRE_60Rnd_5x23mm_Mag_FMJT",
-			"OPTRE_60Rnd_5x23mm_Mag_HV",
-			"OPTRE_60Rnd_5x23mm_Mag_HVT",
-			"OPTRE_60Rnd_5x23mm_Mag_JHP",
-			"OPTRE_60Rnd_5x23mm_Mag_JHPT",
-			"OPTRE_60Rnd_5x23mm_Mag_SS",
-			"OPTRE_60Rnd_5x23mm_Mag_SST",
-			"OPTRE_48Rnd_5x23mm_Mag",
-			"OPTRE_48Rnd_5x23mm_Mag_Tracer",
-			"OPTRE_48Rnd_5x23mm_Mag_Tracer_Yellow",
-			"OPTRE_48Rnd_5x23mm_Mag_FMJ",
-			"OPTRE_48Rnd_5x23mm_Mag_FMJT",
-			"OPTRE_48Rnd_5x23mm_Mag_HV",
-			"OPTRE_48Rnd_5x23mm_Mag_HVT",
-			"OPTRE_48Rnd_5x23mm_Mag_JHP",
-			"OPTRE_48Rnd_5x23mm_Mag_JHPT",
-			"OPTRE_48Rnd_5x23mm_Mag_SS",
-			"OPTRE_48Rnd_5x23mm_Mag_SST",
-			
-			"OPTRE_60Rnd_5x23mm_FMJ_Mag",
-			"OPTRE_60Rnd_5x23mm_JHP_Mag",
-			"OPTRE_48Rnd_5x23mm_FMJ_Mag",
-			"OPTRE_48Rnd_5x23mm_JHP_Mag",
-			"OPTRE_60Rnd_5x23mm_Mag_NARQ",
-			"OPTRE_60Rnd_5x23mm_Mag_NARQT"
-		};
-	};
 	
 	// Weapon end
 	
