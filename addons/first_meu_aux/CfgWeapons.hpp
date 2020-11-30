@@ -2777,6 +2777,11 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
         scopeArsenal = 1;
         scope = 1;
     };
+	class MEU_Mar_MOS_Helm_Crolter_dp	: 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 1; 
+        scopeArsenal = 1; 
+    }; 
     //2nd plt med
      class MEU_Mar_MOS_Helm_BASE2 : 1MEU_Base_CH252_Helmet
     {

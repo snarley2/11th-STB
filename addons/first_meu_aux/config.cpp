@@ -134,6 +134,12 @@ class CfgEditorCategories
         scopeCurator = 2;
         scopeeditor = 2;
     };
+	class MEU_Objects
+    {   
+        displayName = "1st MEU Objects";
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
 };
 class CfgEditorSubcategories
 {
@@ -176,6 +182,18 @@ class CfgEditorSubcategories
     class MEU_sub_rot
     {
 		displayName = "Rotary";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+	class Objects
+    {
+		displayName = "Objects";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+	class MEU_Walls
+    {
+		displayName = "Walls";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
