@@ -99,11 +99,32 @@ class CfgAmmo
 		hit = 36;
 	};
 
+	class OPTRE_B_5x23_Caseless_FMJ: OPTRE_B_5x23_Caseless
+	{
+		caliber = 2;
+		hit = 14;
+		typicalSpeed = 500;
+	};
+
+	class OPTRE_B_5x23_Caseless_HV: OPTRE_B_5x23_Caseless
+	{
+		caliber = 1;
+		hit = 12;
+		typicalSpeed = 600;
+	};
+
 	class OPTRE_B_5x23_Caseless_JHP: OPTRE_B_5x23_Caseless
 	{
-		caliber	= 0.25;
-		hit = 14;
-		typicalSpeed = 380;
+		caliber = 0.25;
+		hit = 16;
+		typicalSpeed = 480;
+	};
+
+	class OPTRE_B_5x23_Caseless_SS: OPTRE_B_5x23_Caseless
+	{
+		caliber = 2;
+		hit = 18;
+		typicalSpeed = 340;
 	};
 	
 	class OPTRE_B_762x51_JHP: OPTRE_B_762x51_Ball

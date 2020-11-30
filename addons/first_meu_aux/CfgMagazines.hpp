@@ -368,6 +368,114 @@ class CfgMagazines
         initSpeed = 9;
     };
 	
+	class OPTRE_60Rnd_5x23mm_Mag_FMJ: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ammo = "OPTRE_B_5x23_Caseless_FMJ";
+		displayname = "60Rnd 5x23mm FMJ Magazine";
+		displaynameshort = "5x23mm FMJ";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>Full Metal Jacket";
+		initspeed = 500;
+	};
+	
+	class OPTRE_60Rnd_5x23mm_Mag_FMJT: OPTRE_60Rnd_5x23mm_Mag_FMJ
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_5x23_Caseless_FMJ";
+		displayname = "60Rnd 5x23mm FMJ Magazine (Tracer)";
+		displaynameshort = "5x23mm FMJ Tracer";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>Full Metal Jacket<br>Tracers";
+	};
+
+	class OPTRE_60Rnd_5x23mm_Mag_HV: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ammo = "OPTRE_B_5x23_Caseless_HV";
+		displayname = "60Rnd 5x23mm HV Magazine";
+		displaynameshort = "5x23mm HV";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>High-Velocity";
+		initspeed = 600;
+	};
+
+	class OPTRE_60Rnd_5x23mm_Mag_HVT: OPTRE_60Rnd_5x23mm_Mag_HV
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_5x23_Caseless_HV";
+		displayname = "60Rnd 5x23mm HV Magazine (Tracer)";
+		displaynameshort = "5x23mm HV Tracer";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>High-Velocity<br>Tracers";
+	};
+
+	class OPTRE_60Rnd_5x23mm_Mag_JHP: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ammo = "OPTRE_B_5x23_Caseless_JHPT";
+		displayname = "60Rnd 5x23mm JHP Magazine";
+		displaynameshort = "5x23mm JHP";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>Jacketed Hollow-Point";
+		initspeed = 480;
+	};
+	
+	class OPTRE_60Rnd_5x23mm_Mag_JHPT: OPTRE_60Rnd_5x23mm_Mag_JHP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_5x23_Caseless_JHP";
+		displayname = "60Rnd 5x23mm JHP Magazine (Tracer)";
+		displaynameshort = "5x23mm JHP Tracer";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>Jacketed Hollow-Point<br>Tracers";
+	};
+
+	class OPTRE_60Rnd_5x23mm_Mag_SS: OPTRE_60Rnd_5x23mm_Mag
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope						= 2;
+		scopeArsenal				= 2;
+		
+		ammo = "OPTRE_B_5x23_Caseless_SS";
+		displayname = "60Rnd 5x23mm SS Magazine";
+		displaynameshort = "5x23mm SS";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>Sub-sonic";
+		initspeed = 340;
+	};
+
+	class OPTRE_60Rnd_5x23mm_Mag_SST: OPTRE_60Rnd_5x23mm_Mag_SS
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_5x23_Caseless_SS";
+		displayname = "60Rnd 5x23mm SS Magazine (Tracer)";
+		displaynameshort = "5x23mm SS Tracer";
+		descriptionShort = "60 Round Magazine<br>5x23mm<br>Sub-sonic<br>Tracers";
+	};
+	
 	class OPTRE_60Rnd_5x23mm_Mag_NARQ: OPTRE_60Rnd_5x23mm_Mag
 	{
 		dlc = "1st MEU";
@@ -385,7 +493,7 @@ class CfgMagazines
 	class OPTRE_60Rnd_5x23mm_Mag_NARQT: OPTRE_60Rnd_5x23mm_Mag_NARQ
 	{
 		tracersEvery = 1;
-		displayname = "60Rnd 5x23mm NARQ Tracer Magazine";
+		displayname = "60Rnd 5x23mm NARQ Magazine (Tracer)";
 		displaynameshort = "5x23mm NARQ Tracer";
 		descriptionShort = "60 Round Magazine<br>5x23mm Tracer<br>Tranquilizer";
 	};
