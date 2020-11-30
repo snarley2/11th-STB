@@ -63,6 +63,7 @@ class CfgVehicles
     class OPTRE_CTF_Flag_Base;
     class ACE_SelfActions;
     class Man;
+	class House;
 
 
     class MEU_SCORPION: VES_M808B_MBT
@@ -5549,5 +5550,49 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_vulcanhq_co.paa"};
 		editorCategory = "MEU_flags";
+    };
+	class SuperWall_01: House
+    {
+        class SimpleObject
+        {
+            eden = 1;
+            animate[] = {};
+            hide[] = {};
+            verticalOffset = 1.361;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        displayName = "District Superwall";
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "MEU_Walls";
+        scope = 2;
+        scopeCurator = 2;
+        model = "OPTRE_Buildings\Walls\SuperWall_Straight.p3d";
+        destrType = "DestructTree";
+        selectionDamage = "zbytek";
+        simulation = "house";
+        side = 4;
+    };
+	class boomyboy: House
+    {
+        class SimpleObject
+        {
+            eden = 1;
+            animate[] = {};
+            hide[] = {};
+            verticalOffset = 1.361;
+            verticalOffsetWorld = 0;
+            init = "''";
+        };
+        displayName = "Big Shiva Boy";
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "Objects";
+        scope = 2;
+        scopeCurator = 2;
+        model = "OPTRE_Weapons\Aircraft\Shiva_missile_fly.p3d";
+        destrType = "DestructTree";
+        selectionDamage = "zbytek";
+        simulation = "house";
+        side = 4;
     };
 };
