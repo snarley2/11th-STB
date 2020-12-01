@@ -1989,11 +1989,11 @@ class CfgWeapons
 
 class MEU_Mar_DES_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (Desert)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_DES_L_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_DES_L_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_DES_A_dp  : MEU_Mar_DES_A
    {
@@ -2003,11 +2003,11 @@ class MEU_Mar_DES_A_dp  : MEU_Mar_DES_A
 
 class MEU_Mar_DES_R2_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (SR) RTO (Desert)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_DES_R2_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_DES_R2_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_DES_R2_A_dp  : MEU_Mar_DES_R2_A
    {
@@ -2017,11 +2017,11 @@ class MEU_Mar_DES_R2_A_dp  : MEU_Mar_DES_R2_A
 
 class MEU_Mar_DES_R1_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 RTO (Desert)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_DES_R1_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_DES_R1_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_DES_R1_A_dp  : MEU_Mar_DES_R1_A
    {
@@ -2031,11 +2031,11 @@ class MEU_Mar_DES_R1_A_dp  : MEU_Mar_DES_R1_A
    
 class MEU_Mar_URB_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (Urban)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_URB_L_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_URB_L_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_URB_A_dp  : MEU_Mar_URB_A
    {
@@ -2045,11 +2045,11 @@ class MEU_Mar_URB_A_dp  : MEU_Mar_URB_A
 
 class MEU_Mar_URB_R2_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (SR) RTO (Urban)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_URB_R2_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_URB_R2_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_URB_R2_A_dp  : MEU_Mar_URB_R2_A
    {
@@ -2059,11 +2059,11 @@ class MEU_Mar_URB_R2_A_dp  : MEU_Mar_URB_R2_A
 
 class MEU_Mar_URB_R1_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 RTO (Urban)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_URB_R1_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_URB_R1_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_URB_R1_A_dp  : MEU_Mar_URB_R1_A
    {
@@ -2074,11 +2074,11 @@ class MEU_Mar_URB_R1_A_dp  : MEU_Mar_URB_R1_A
 
 class MEU_Mar_MAR_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (Marine)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_MAR_L_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_MAR_L_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_MAR_A_dp  : MEU_Mar_MAR_A
    {
@@ -2088,11 +2088,11 @@ class MEU_Mar_MAR_A_dp  : MEU_Mar_MAR_A
 
 class MEU_Mar_MAR_R2_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (SR) RTO (Marine)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_MAR_R2_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_MAR_R2_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_MAR_R2_A_dp  : MEU_Mar_MAR_R2_A
    {
@@ -2102,11 +2102,11 @@ class MEU_Mar_MAR_R2_A_dp  : MEU_Mar_MAR_R2_A
 
 class MEU_Mar_MAR_R1_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 RTO (Marine)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_MAR_R1_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_MAR_R1_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_MAR_R1_A_dp  : MEU_Mar_MAR_A
    {
@@ -2116,11 +2116,11 @@ class MEU_Mar_MAR_R1_A_dp  : MEU_Mar_MAR_A
 	
 class MEU_Mar_SNO_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (Snow)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_SNO_L_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_SNO_L_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_SNO_A_dp  : MEU_Mar_SNO_A
    {
@@ -2130,11 +2130,11 @@ class MEU_Mar_SNO_A_dp  : MEU_Mar_SNO_A
 
 class MEU_Mar_SNO_R2_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (SR) RTO (Snow)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_SNO_R2_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_SNO_R2_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_SNO_R2_A_dp  : MEU_Mar_SNO_R2_A
    {
@@ -2144,11 +2144,11 @@ class MEU_Mar_SNO_R2_A_dp  : MEU_Mar_SNO_R2_A
 
 class MEU_Mar_SNO_R1_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 RTO (Snow)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_SNO_R1_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_SNO_R1_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_SNO_R1_A_dp  : MEU_Mar_SNO_R1_A
    {
@@ -2158,11 +2158,11 @@ class MEU_Mar_SNO_R1_A_dp  : MEU_Mar_SNO_R1_A
 
 class MEU_Mar_WDL_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (Woodland)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_WDL_L_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_WDL_L_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_WDL_A_dp  : MEU_Mar_WDL_A
    {
@@ -2172,11 +2172,11 @@ class MEU_Mar_WDL_A_dp  : MEU_Mar_WDL_A
 
 class MEU_Mar_WDL_R2_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 (SR) RTO (Woodland)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_WDL_R2_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_WDL_R2_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_WDL_R2_A_dp  : MEU_Mar_WDL_R2_A
    {
@@ -2186,11 +2186,11 @@ class MEU_Mar_WDL_R2_A_dp  : MEU_Mar_WDL_R2_A
 
 class MEU_Mar_WDL_R1_A : 1MEU_Base_CH252_Helmet
     {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
 		displayName = "[1stMEU] 4-3 CH252 RTO (Woodland)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_WDL_R1_CO_A.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_WDL_R1_CO_F.paa","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
    {
