@@ -13001,7 +13001,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 // BDU End
 // Air Assault Helmet start
 	
-	class VES_CH252A_Rave: VES_CH252A
+	class MEU_CH252A_Pararescue_Rave : VES_CH252A
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -13014,7 +13014,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_Rave.paa","V_FZ_Armor\Data\Helmets\V_CH252A_SLV_V_CO.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
     };
-	class VES_CH252A_Pararescue_Dino: VES_CH252A
+	class MEU_CH252A_Pararescue_Dino: VES_CH252A
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -13027,7 +13027,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_Dino","V_FZ_Armor\Data\Helmets\V_CH252A_GLD_V_CO.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
 	};	
-    class VES_CH252A_Pararescue_Blue: VES_CH252A
+    class MEU_CH252A_Pararescue_Blue: VES_CH252A
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -13040,7 +13040,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_BLU_V_CO.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
 	};
-	class VES_CH252A_Pararescue_Silver: VES_CH252A
+	class MEU_CH252A_Pararescue_Silver: VES_CH252A
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -13053,7 +13053,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_SLV_V_CO.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
 	};
-	class VES_CH252A_Pararescue_Gold: VES_CH252A
+	class MEU_CH252A_Pararescue_Gold: VES_CH252A
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -13066,7 +13066,71 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_GLD_V_CO.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
 	};
-
+	class MEU_CH252A_Pararescue_Rave_dp : VES_CH252A
+	{
+		scope = 0;
+		scopeArsenal = 0;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		author = "Rave";
+		displayName = "[1stMEU] CH252A Helmet (Rave)";
+		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_Rave.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
+    };
+	class MEU_CH252A_Pararescue_Dino_dp : VES_CH252A
+	{
+		scope = 0;
+		scopeArsenal = 0;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		author = "Rave";
+		displayName = "[1stMEU] CH252A Helmet (Dino)";
+		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_Dino","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
+	};	
+    class MEU_CH252A_Pararescue_Blue_dp : VES_CH252A
+	{
+		scope = 0;
+		scopeArsenal = 0;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		author = "Rave";
+		displayName = "[1stMEU] CH252A Helmet (Pararescue Blue)";
+		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
+	};
+	class MEU_CH252A_Pararescue_Silver_dp : VES_CH252A
+	{
+		scope = 0;
+		scopeArsenal = 0;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		author = "Rave";
+		displayName = "[1stMEU] CH252A Helmet (Pararescue Silver)";
+		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
+	};
+	class MEU_CH252A_Pararescue_Gold_dp : VES_CH252A
+	{
+		scope = 0;
+		scopeArsenal = 0;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		author = "Rave";
+		displayName = "[1stMEU] CH252A Helmet (Pararescue Gold)";
+		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
+		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
+	};
 // Weapons Start
     
     class Throw : GrenadeLauncher
