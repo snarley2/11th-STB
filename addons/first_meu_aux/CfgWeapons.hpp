@@ -1150,152 +1150,6 @@ class CfgWeapons
 			hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"};
 		};
 	};
-
-	class MEU_Mar_Helm_Red : MEU_Mar_MOS_Helm_Sealed_Base
-    {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		author = "Rave";
-		displayName = "[1stMEU] ECH252 Heavy Helmet (Red)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252_MAR_H_CO_Red.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
-	};
-	class MEU_Mar_Helm_Red_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252_MAR_H_CO_Red.paa","optre_unsc_units\army\data\helmet_visor_ca"};
-	};
-	class MEU_Mar_Sealed_ECH252_MAR_MED_SLV : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Silver)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_MAR_MED_SLV_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_MAR_MED_GLD : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Gold)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_MAR_MED_GLD_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_URB_MED_SLV : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Urban Silver)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_URB_MED_SLV_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_URB_MED_GLD : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Urban Gold)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_URB_MED_GLD_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_WDL_MED_SLV : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Woodland Silver)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_WDL_MED_SLV_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_WDL_MED_GLD : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Woodland Gold)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_WDL_MED_GLD_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_SNO_MED_SLV : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Snow Silver)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_SNO_MED_SLV_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_SNO_MED_GLD : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Snow Gold)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_SNO_MED_GLD_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_DES_MED_SLV : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Desert Silver)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_DES_MED_SLV_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
-	class MEU_Mar_Sealed_ECH252_DES_MED_GLD : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[1stMEU] ECH252 Medical Helmet (Desert Gold)";
-		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
-	};
-	class MEU_Mar_Sealed_ECH252_DES_MED_GLD_dp : MEU_Mar_MOS_Helm_Sealed_Base
-	{
-        scope = 1;
-		scopeArsenal = 1;
- 	    hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-	};
 	class MEU_Mar_Sealed_V_CH252_CEA_L_CO_GL : MEU_Mar_MOS_Helm_Sealed_Base
 	{
 		scope = 2;
@@ -2686,7 +2540,15 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		displayName = "[1stMEU] CH252 Medical Helmet (Crolter)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252_MAR_M_CO_Crolter_Sucks","optre_unsc_units\army\data\helmet_visor_ca"};
     };
-    
+    class MEU_Mar_Helm_Red : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Heavy Helmet (Red)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\V_CH252_MAR_H_CO_Red.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
     class MEU_Mar_MOS_Helm_BASE1 : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -2777,11 +2639,16 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
         scopeArsenal = 1;
         scope = 1;
     };
-	class MEU_Mar_MOS_Helm_Crolter_dp	: 1MEU_Base_CH252_Helmet 
+	class MEU_Mar_MOS_Helm_Crolter_dp: 1MEU_Base_CH252_Helmet 
     { 
         scope = 1; 
         scopeArsenal = 1; 
     }; 
+	class MEU_Mar_Helm_Red_dp: 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 1; 
+        scopeArsenal = 1; 
+    };
     //2nd plt med
      class MEU_Mar_MOS_Helm_BASE2 : 1MEU_Base_CH252_Helmet
     {
