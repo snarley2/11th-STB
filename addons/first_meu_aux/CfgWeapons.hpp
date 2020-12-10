@@ -1839,6 +1839,99 @@ class CfgWeapons
         scopeArsenal = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vulcan\Helmets\V_CH252_WDL_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
   };
+  //training helmets
+  class MEU_Mar_Helm_Training_Red : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Helmet (Red)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_RED_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Red_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_RED_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Blue : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Helmet (Blue)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_BLU_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Blue_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_BLU_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Green : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Helmet (Green)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_GRE_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Green_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_GRE_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+
+
+	class MEU_Mar_Helm_Training_Red_Med : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Medical Helmet (Red)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_RED_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Red_Med_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_RED_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Blue_Med : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Medical Helmet (Blue)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_BLU_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Blue_Med_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_BLU_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Green_Med : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Medical Helmet (Green)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_GRE_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Green_Med_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_GRE_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
   
 
 class MEU_Mar_DES_A : 1MEU_Base_CH252_Helmet
@@ -6770,6 +6863,58 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};
+	//training armor
+	class MEU_M52A_Training_Red : MEU_M52A_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "Rave";
+		displayName = "[1stMEU] M52A Training (Red)";
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_RED_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_R_RED_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_RED_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	class MEU_M52A_Training_Blue : MEU_M52A_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "Rave";
+		displayName = "[1stMEU] M52A Training (Blue)";
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_BLU_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_R_BLU_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_BLU_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
+	class MEU_M52A_Training_Green : MEU_M52A_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "Rave";
+		displayName = "[1stMEU] M52A Training (Green)";
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_GRE_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_R_GRE_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_GRE_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};	
 	
 // end M52A gear start praetorian gear          
 // praetorian vests
