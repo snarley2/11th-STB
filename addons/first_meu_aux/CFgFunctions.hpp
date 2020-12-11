@@ -51,7 +51,7 @@ class CfgFunctions
 			};
 		};
     };
-        
+        /*
         class MEU_2 //tag
 	{
 		class RLB
@@ -65,8 +65,8 @@ class CfgFunctions
 		{
 			class Afterburners_Disengage {file = "first_meu_aux\functions\fn_Afterburners_Disengage.sqf";};
 		};
-	};
-        class tcw_functions
+	};*/
+    class tcw_functions
 	{
 		tag = "tcw";
 		class afterburner_functions
