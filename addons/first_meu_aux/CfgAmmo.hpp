@@ -17,7 +17,7 @@ class CfgAmmo
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
 	{
 		cameraViewAvailable = 1;
-		model = "\A3\Weapons_F_Destroyer\Ammo\Missile_Cruise_01_Fly_F";
+		model = "OPTRE_Weapons\Aircraft\Shiva_missile_fly.p3d";
 		proxyShape = "\A3\Weapons_F_Destroyer\Ammo\Missile_Cruise_01_Fly_F";
 		flightProfiles[] = {"TopDown"};
 		class TopDown

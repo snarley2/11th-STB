@@ -44,7 +44,7 @@ class CfgVehicles
     class OPTRE_UNSC_hornet_CAP;
     class OPTRE_UNSC_hornet_CAS;
     class OPTRE_UNSC_hornet;
-	class OPTRE_M313_UNSC;
+    class OPTRE_M313_UNSC;
     class B_parachute;
     class VES_IFV76;
     class VES_IFV76_A;
@@ -63,7 +63,8 @@ class CfgVehicles
     class OPTRE_CTF_Flag_Base;
     class ACE_SelfActions;
     class Man;
-	class House;
+    class House;
+    class B_T_VTOL_01_armed_F;
 
 
     class MEU_SCORPION: VES_M808B_MBT
@@ -206,8 +207,6 @@ class CfgVehicles
     // end meds
     class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H
     {
-        editorCategory = "MEU_cat_air";
-        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         weapons[] = {"CMFlareLauncher_Singles"};
 		magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
@@ -302,10 +301,65 @@ class CfgVehicles
         };
         memoryPointDriverOptics = "gunnerview";
     };
-	class OPTRE_UNSC_falcon: OPTRE_falcon_base
+        class MEU_Blackfish: B_T_VTOL_01_armed_F
     {
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[MEU] Pegasus Blackfish";
+        armor = 1250;
+        damageResistance = 0.00055;
+        tf_range=30000;
+        faction = "MEU_UNSC";
+	side = 1;
+        hiddenSelections[] ={
+			"Camo_1",
+			"Camo_2",
+			"Camo_3", 
+			"Camo_4"
+		};
+        hiddenSelectionsTextures[] = 
+		{
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_1.paa",
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_2_ala31.paa", 
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_3.paa",
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_4.paa"
+		};
+        class useractions
+        {
+                        class Ramp_Open
+			{
+				userActionID = 60;
+				displayName = "$STR_ACTION_RAMP_OPEN0";
+				textToolTip = "$STR_ACTION_RAMP_OPEN0";
+				displayNameDefault = "<img image='\A3\Ui_f\data\IGUI\Cfg\Actions\open_door_ca.paa' size='2.5' />";
+				position = "";
+				condition = "this doorPhase ""Door_1_source"" < 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_1_source', 1]";
+				priority = 1.5;
+				radius = 15;
+				radiusView = 0.2;
+				showIn3D = 17;
+				available = 0;
+				showWindow = 0;
+				onlyForPlayer = 1;
+				shortcut = "";
+			};
+			class Ramp_Close: Ramp_Open
+			{
+				userActionID = 61;
+				displayName = "$STR_ACTION_RAMP_CLOSE0";
+				textToolTip = "$STR_ACTION_RAMP_CLOSE0";
+				condition = "this doorPhase ""Door_1_source"" > 0.5 AND Alive(this) && ({player == _x} count [driver this, this turretUnit [0], this turretUnit [3], this turretUnit [4]] > 0) && ((this getVariable ['bis_disabled_Ramp',0]) != 1)";
+				statement = "this animateDoor ['Door_1_source', 0]";
+			};
+        };
+    };
+    
+	class OPTRE_UNSC_falcon: OPTRE_falcon_base
+    {
         tf_range = 30000;
         class pilotCamera
         {
@@ -363,8 +417,6 @@ class CfgVehicles
     };
 	class OPTRE_Pelican_F: Helicopter_Base_H
     {
-        editorCategory = "MEU_cat_air";
-        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class pilotCamera
         {
@@ -596,8 +648,6 @@ class CfgVehicles
     };
     class OPTRE_Hornet_base: Helicopter_Base_H
     {
-        editorCategory = "MEU_cat_air";
-        editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
         class useractions
         {
@@ -698,6 +748,7 @@ class CfgVehicles
     {
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
+        radarTargetSize = 0.1;
         tf_range=30000;
         class useractions
         {
@@ -5432,7 +5483,8 @@ class CfgVehicles
         displayName ="Praetorian 3-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST31_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     }; 
 
     class 1stMEU_CTF_Flag_Prae2 : OPTRE_CTF_Flag_Base
@@ -5442,7 +5494,8 @@ class CfgVehicles
         displayName ="Praetorian 3-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST32_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     }; 
 
     class 1stMEU_CTF_Flag_Prae3 : OPTRE_CTF_Flag_Base
@@ -5452,7 +5505,8 @@ class CfgVehicles
         displayName ="Praetorian 3-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST33_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_1stMEU : OPTRE_CTF_Flag_Base
@@ -5462,7 +5516,8 @@ class CfgVehicles
         displayName ="1st MEU CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_red1stmeu_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_1stPlt : OPTRE_CTF_Flag_Base
@@ -5472,7 +5527,8 @@ class CfgVehicles
         displayName ="1st Platoon CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow1stplt_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_2ndPlt : OPTRE_CTF_Flag_Base
@@ -5483,7 +5539,8 @@ class CfgVehicles
         displayName ="2nd Platoon CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
-        editorCategory = "MEU_flags";
+        editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_Hammer : OPTRE_CTF_Flag_Base
@@ -5494,7 +5551,8 @@ class CfgVehicles
         displayName ="Vulcan 4-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_hammer_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_Anvil : OPTRE_CTF_Flag_Base
@@ -5505,7 +5563,8 @@ class CfgVehicles
         displayName ="Vulcan 4-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_anvil_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_Forge : OPTRE_CTF_Flag_Base
@@ -5516,7 +5575,8 @@ class CfgVehicles
         displayName ="Vulcan 4-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleforge_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_Guardian : OPTRE_CTF_Flag_Base
@@ -5527,7 +5587,8 @@ class CfgVehicles
         displayName ="Vulcan 4-Mike CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_guardian_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_Gladius : OPTRE_CTF_Flag_Base
@@ -5538,7 +5599,8 @@ class CfgVehicles
         displayName ="Vulcan 4-0 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_gladius_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_VulcanHQ : OPTRE_CTF_Flag_Base
@@ -5549,7 +5611,8 @@ class CfgVehicles
         displayName ="4th Platoon CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_vulcanhq_co.paa"};
-		editorCategory = "MEU_flags";
+		editorCategory = "MEU_Objects";
+                editorSubcategory = "Flags";
     };
 	class SuperWall_01: House
     {
@@ -5564,7 +5627,7 @@ class CfgVehicles
         };
         displayName = "District Superwall";
         editorCategory = "MEU_Objects";
-        editorSubcategory = "MEU_Walls";
+        editorSubcategory = "Objects";
         scope = 2;
         scopeCurator = 2;
         model = "OPTRE_Buildings\Walls\SuperWall_Straight.p3d";
@@ -5573,7 +5636,7 @@ class CfgVehicles
         simulation = "house";
         side = 4;
     };
-	class boomyboy: House
+	class shiva_uncovered: House
     {
         class SimpleObject
         {

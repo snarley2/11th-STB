@@ -1885,6 +1885,21 @@ class CfgWeapons
 		scopeCurator = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_GRE_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
+	 class MEU_Mar_Helm_Training_Purple : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Helmet (Purple)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_PUR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Purple_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_PUR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
 
 
 	class MEU_Mar_Helm_Training_Red_Med : 1MEU_Base_CH252_Helmet
@@ -1932,7 +1947,21 @@ class CfgWeapons
 		scopeCurator = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_GRE_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
-  
+  	class MEU_Mar_Helm_Training_Purple_Med : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Rave";
+		displayName = "[1stMEU] CH252 Training Medical Helmet (Purple)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_PUR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
+	class MEU_Mar_Helm_Training_Purple_Med_dp : 1MEU_Base_CH252_Helmet
+	{
+        scope = 1;
+		scopeCurator = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_PUR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+	};
 
 class MEU_Mar_DES_A : 1MEU_Base_CH252_Helmet
     {
@@ -6915,6 +6944,23 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
 	};	
+	class MEU_M52A_Training_Purple : MEU_M52A_Rifleman
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "Rave";
+		displayName = "[1stMEU] M52A Training (Purple)";
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_PUR_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_R_PUR_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_PUR_CO.paa",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+	};
 	
 // end M52A gear start praetorian gear          
 // praetorian vests
