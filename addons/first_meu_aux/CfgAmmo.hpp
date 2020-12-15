@@ -70,7 +70,7 @@ class CfgAmmo
     class MEU_9bang : ACE_G_CTS9
     {
         explosionTime = 1.5;
-        ace_flashbang_Interval = 0.1;
+        ace_flashbang_Interval = 0.05;
     };
     class MEU_C168_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
@@ -80,6 +80,24 @@ class CfgAmmo
 		indirectHitRange = 10;
 		defaultMagazine = "MEU_C168_Mag"; 
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
+        timeToLive = 15;
+        fuseDistance = 0;
+        explosionTime = 12;
+        deflectionSlowDown = 0.1;
+        ExplosionEffects = "MineNondirectionalExplosion";
+		CraterEffects = "MineNondirectionalCrater";
+		SoundSetExplosion[] = {"BigIED_Exp_SoundSet","BigIED_Tail_SoundSet","Explosion_Debris_SoundSet"};
+        whistleDist = 10;
+        initSpeed = 9;
+    };
+	class MEU_Fury_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
+    {
+        scope = 1;
+        hit = 100000;
+		indirectHit = 100000;
+		indirectHitRange = 10000;
+		defaultMagazine = "MEU_Fury_Mag"; 
+		model = "\OPTRE_weapons\backpacks\fury.p3d";
         timeToLive = 15;
         fuseDistance = 0;
         explosionTime = 12;
@@ -180,11 +198,6 @@ class CfgAmmo
 		typicalSpeed = 1150;
 	};
 
-	class OPTRE_B_762x51_DMR_APT: OPTRE_B_762x51_DMR_AP
-	{
-		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
-
 	class OPTRE_B_762x51_DMR_FS: OPTRE_B_762x51_Ball
 	{
 		airFriction = 0;
@@ -194,21 +207,11 @@ class CfgAmmo
 		sideairFriction = 0;
 	};
 
-	class OPTRE_B_762x51_DMR_FST: OPTRE_B_762x51_Ball
-	{
-		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
-
 	class OPTRE_B_762x51_DMR_JHP: OPTRE_B_762x51_Ball
 	{
 		caliber = 1;
 		hit = 26;
 		typicalSpeed = 1050;
-	};
-
-	class OPTRE_B_762x51_DMR_JHPT: OPTRE_B_762x51_DMR_JHP
-	{
-		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
 	};
 
 	class OPTRE_B_762x51_DMR_SS: OPTRE_B_762x51_Ball
@@ -217,10 +220,6 @@ class CfgAmmo
 		typicalSpeed = 343;
 	};
 
-	class OPTRE_B_762x51_DMR_SST: OPTRE_B_762x51_DMR_SS
-	{
-		model = "\A3\Weapons_f\Data\bullettracer\tracer_red";
-	};
 	
 	class MEU_40mm_HE: G_40mm_HE
 	{

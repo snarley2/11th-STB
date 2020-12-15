@@ -168,28 +168,56 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[P] Biofoam";
+        displayName = "Corpsman Biofoam";
         author = "Article 2 Studios edits by mark";
         vehicleClass = "Items";
         class TransportItems
         {
             item_xx(MEU_Biofoam,1);
         };
-        mass = 20
+        mass = 35
     };
     class MEU_MediGelItem: OPTRE_MediGelItem
     {
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[P] Medigel";
+        displayName = "Corpsman Medigel";
         author = "Article 2 Studios edits by mark";
         vehicleClass = "Items";
         class TransportItems
         {
             item_xx(MEU_Medigel,1);
         };
-        mass = 20
+        mass = 35
+    };
+	class MEU_BiofoamItem_Light: OPTRE_BiofoamItem
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "Biofoam";
+        author = "1stMEU Oneill";
+        vehicleClass = "Items";
+        class TransportItems
+        {
+            item_xx(MEU_Biofoam_Light,1);
+        };
+        mass = 2
+    };
+    class MEU_MediGelItem_Light: OPTRE_MediGelItem
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "Medigel";
+        author = "1stMEU Oneill";
+        vehicleClass = "Items";
+        class TransportItems
+        {
+            item_xx(MEU_Medigel_Light,1);
+        };
+        mass = 2
     };
     class MEU_tourniquetItem: ACE_tourniquetItem
     {
@@ -1945,7 +1973,7 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
-		model="\OPTRE_weapons\backpacks\jetpack.p3d";
+		model="\OPTRE_weapons\backpacks\jetpack_on.p3d";
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_spam_delay = 1;
 		NSM_jumppack_energy_capacity = 100;
@@ -1955,7 +1983,7 @@ class CfgVehicles
 		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
 		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
 		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
-		NSM_jumppack_jump_types[] = {{"Short Jump",{25,7,20,0,1,1}}};
+		NSM_jumppack_jump_types[] = {{"Short Jump",{14,7,20,0,1,1}}};
 		maximumload = 100;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
@@ -1979,13 +2007,13 @@ class CfgVehicles
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_spam_delay = 1;
 		NSM_jumppack_energy_capacity = 100;
-		NSM_jumppack_recharge = 3;
+		NSM_jumppack_recharge = .5;
 		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
 		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
 		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
 		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
 		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
-		NSM_jumppack_jump_types[] = {{"Short Jump",{25,7,20,0,1,1}}};
+		NSM_jumppack_jump_types[] = {{"Short Jump",{14,7,20,0,1,1}}};
 		maximumload = 300;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
@@ -2015,8 +2043,8 @@ class CfgVehicles
 		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
 		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
 		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
-		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}}};
-		maximumload = 200;
+		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,25,0,0,0}},{"Short Jump",{14,7,10,0,1,1}}};
+		maximumload = 100;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
     };
@@ -2038,13 +2066,16 @@ class CfgVehicles
 		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv21Start.ogg"};
 		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
 		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
-		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}}};
-		maximumload = 200;
+		NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,25,0,0,0}},{"Short Jump",{14,7,10,0,1,1}}};
+		maximumload = 100;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
     };
     class MEU_Testpack : Praetor_Jumpack
     {
+		scope = 1;
+		scopeCurator = 1;
+        scopeArsenal = 1;
         displayName = "[1stMEU] Test Pack";
         NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}},{"Full Power",{30,5,1,0,1,0}}};
     };
