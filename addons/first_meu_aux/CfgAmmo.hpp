@@ -95,7 +95,7 @@ class CfgAmmo
         scope = 1;
         hit = 100000;
 		indirectHit = 100000;
-		indirectHitRange = 10000;
+		indirectHitRange = 100000;
 		defaultMagazine = "MEU_Fury_Mag"; 
 		model = "\OPTRE_weapons\backpacks\fury.p3d";
         timeToLive = 15;
