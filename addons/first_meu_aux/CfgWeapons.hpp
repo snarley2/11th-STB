@@ -96,7 +96,7 @@ class CfgWeapons
     class MEU_Biofoam: OPTRE_Biofoam
     {
         scope = 2;
-        displayName = "[1st MEU] Corpsman Biofoam Canister";
+        displayName = "[C] Biofoam Canister";
         class ItemInfo: ItemInfo
 		{
 			mass = 35;
@@ -105,7 +105,7 @@ class CfgWeapons
     class MEU_Medigel: OPTRE_Medigel
     {
         scope = 2;
-        displayName = "[1st MEU] Corpsman Optican Medigel";
+        displayName = "[C] Optican Medigel";
         class ItemInfo: ItemInfo
 		{
 			mass = 35;

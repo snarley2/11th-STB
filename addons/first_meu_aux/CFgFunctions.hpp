@@ -27,6 +27,14 @@ class CfgFunctions
                 file = "first_meu_aux\Functions\fn_meuPainReduceLocal.sqf";
             };
         };
+        class fnc_tourniquetRemove
+        {
+                file = "first_meu_aux\Functions\fn_MEU_tourniquetRemove.sqf";
+        };
+        class fnc_necktourniquet
+        {
+                file = "first_meu_aux\Functions\fn_necktourniquet.sqf";
+        };
     };
     class TAS
 	{
@@ -51,21 +59,6 @@ class CfgFunctions
 			};
 		};
     };
-        /*
-        class MEU_2 //tag
-	{
-		class RLB
-		{
-			class Afterburners_Engage {file = "first_meu_aux\functions\fn_Afterburners_Engage.sqf";};
-		};
-	};
-	class MEU_3 //tag
-	{
-		class RLF
-		{
-			class Afterburners_Disengage {file = "first_meu_aux\functions\fn_Afterburners_Disengage.sqf";};
-		};
-	};*/
     class tcw_functions
 	{
 		tag = "tcw";

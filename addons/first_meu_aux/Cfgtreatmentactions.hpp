@@ -71,20 +71,32 @@ class ACE_Medical_Treatment_Actions
     class MEU_ApplyTourniquet: ApplyTourniquet
     {
         displayName = "Constrict Suit";
-        displayNameProgress = "Constrict Suit";
+        displayNameProgress = "Constricting Suit";
         allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg"};
         items[] = {"MEU_tourniquet"};
         treatmentTime = 3;
         consumeItem = 0;
         category = "bandage";
     };
-    class MEU_RemoveTourniquet: RemoveTourniquet
+    class MEU_RemoveTourniquet: MEU_ApplyTourniquet
     {
-        displayName = "Deconstrict";
-        displayNameProgress = "Deconstrict";
+        displayName = "Deconstrict Suit";
+        displayNameProgress = "Deconstricting Suit";
+        allowedSelections[] = {"LeftArm", "RightArm", "LeftLeg", "RightLeg", "Head"};
         items[] = {"MEU_tourniquet"};
         treatmentTime = 3;
         callbackSuccess = "MEU_fnc_tourniquetRemove";
+        consumeItem = 0;
+        category = "bandage";
+    };
+    class MEU_NeckTourniquet: MEU_ApplyTourniquet
+    {
+        displayName = "Constrict Suit";
+        displayNameProgress = "Constricting Suit";
+        allowedSelections[] = {"Head"};
+        items[] = {"MEU_tourniquet"};
+        treatmentTime = 3;
+        callbackSuccess = "MEU_fnc_necktourniquet";
         consumeItem = 0;
         category = "bandage";
     };

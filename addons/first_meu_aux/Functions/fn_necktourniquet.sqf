@@ -1,0 +1,1 @@
+player setOxygenRemaining 0;
