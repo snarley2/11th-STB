@@ -48,7 +48,6 @@ class CfgWeapons
 	class Single;
 	class FullAuto;
 	class OPTRE_M247;
-	class OPTRE_M393_DMR;
 	class OPTRE_Rifle_Base;
 	class OPTRE_LongRifle_Base;
 	class UGL_F;
@@ -97,7 +96,7 @@ class CfgWeapons
     class MEU_Biofoam: OPTRE_Biofoam
     {
         scope = 2;
-        displayName = "[P] Biofoam Canister";
+        displayName = "[1st MEU] Corpsman Biofoam Canister";
         class ItemInfo: ItemInfo
 		{
 			mass = 35;
@@ -106,10 +105,28 @@ class CfgWeapons
     class MEU_Medigel: OPTRE_Medigel
     {
         scope = 2;
-        displayName = "[P] Optican Medigel";
+        displayName = "[1st MEU] Corpsman Optican Medigel";
         class ItemInfo: ItemInfo
 		{
 			mass = 35;
+        };
+    };
+	class MEU_Biofoam_Light: OPTRE_Biofoam
+    {
+        scope = 2;
+        displayName = "[1st MEU] Biofoam Canister";
+        class ItemInfo: ItemInfo
+		{
+			mass = 2;
+        };
+    };
+    class MEU_Medigel_Light: OPTRE_Medigel
+    {
+        scope = 2;
+        displayName = "[1st MEU] Optican Medigel";
+        class ItemInfo: ItemInfo
+		{
+			mass = 2;
         };
     };
 	class MEU_tourniquet : ACE_tourniquet 
@@ -121,6 +138,7 @@ class CfgWeapons
             mass = 0.5;
         };
     };
+	
 	
 // Medical Items End
 // Armor Base Values
@@ -13193,7 +13211,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     
     class Throw : GrenadeLauncher
 	{
-		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle",};
+		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle","MEU_Fury_Muzzle"};
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
             reloadtime = 0;
@@ -13213,6 +13231,11 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_C168_Mag"};
+		};
+		class MEU_Fury_Muzzle : ThrowMuzzle
+		{
+            reloadtime = 0;
+			magazines[] = {"MEU_Fury_Mag"};
 		};
     };
 	
@@ -13295,7 +13318,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		model = "\OPTRE_Weapons\MG\M247.p3d";
 		displayName = "M250 Heavy Machine Gun";
 		descriptionShort = "UNSC Heavy Machine Gun (man portable)";
-		magazines[] = {"OPTRE_100Rnd_127x99_M250HMG", "OPTRE_100Rnd_127x99_HE_M250HMG"};
+		magazines[] = {"OPTRE_100Rnd_127x99_M250HMG", "OPTRE_100Rnd_127x99_HE_M250HMG", "OPTRE_100Rnd_127x99_Tracer_M250HMG", "OPTRE_100Rnd_127x99_Tracer_HE_M250HMG"};
 		recoil = "recoil_trg21";
 		baseWeapon = "M250HMG";
 		HUD_BulletInARows = 2;
@@ -13373,6 +13396,16 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		{
 			"Single"
 		};
+	};
+	
+	class OPTRE_M393_DMR: OPTRE_M392_DMR
+	{
+		displayName = "M393X DMR";
+	};
+	
+	class OPTRE_M393S_DMR: OPTRE_M393_DMR
+	{
+		displayName	= "M393X/S DMR";
 	};
 	
 	class OPTRE_M295_BMR: OPTRE_M393_DMR

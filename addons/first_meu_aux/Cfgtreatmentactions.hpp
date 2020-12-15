@@ -34,8 +34,8 @@ class ACE_Medical_Treatment_Actions
     };
     class MEU_Medigel: OPTRE_Medigel
     {
-        displayName = "Apply [P] Medigel";
-        displayNameProgress = "Spreadin Medigel...";
+        displayName = "Apply Corpsman Medigel";
+        displayNameProgress = "Spreading lots of Medigel...";
         items[] = {"MEU_Medigel"};
         callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
         consumeItem = 0;
@@ -44,13 +44,29 @@ class ACE_Medical_Treatment_Actions
     };
     class MEU_Biofoam : OPTRE_Biofoam
     {
-        displayName = "Inject [P] Biofoam";
+        displayName = "Inject Corpsman Biofoam";
         displayNameProgress = "Injecting lots of Biofoam...";
         items[] = {"MEU_Biofoam"};
         callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
         consumeItem = 0;
         category = "bandage";
         medicRequired = 1;
+    };
+	class MEU_Medigel_Light: OPTRE_Medigel
+    {
+        displayName = "Apply Medigel";
+        displayNameProgress = "Spreading Medigel";
+        items[] = {"MEU_Medigel_Light"};
+        callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
+        category = "bandage";
+    };
+    class MEU_Biofoam_Light : OPTRE_Biofoam
+    {
+        displayName = "Inject Biofoam";
+        displayNameProgress = "Injecting Biofoam";
+        items[] = {"MEU_Biofoam_Light"};
+        callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
+        category = "bandage";
     };
     class MEU_ApplyTourniquet: ApplyTourniquet
     {

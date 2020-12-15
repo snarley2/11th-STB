@@ -22,51 +22,71 @@ class CfgMagazines
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
 		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_100Rnd_762x51_Box_Tracer: OPTRE_100Rnd_762x51_Box
 	{
 		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_100Rnd_762x51_Box_Tracer_Yellow: OPTRE_100Rnd_762x51_Box_Tracer
 	{
 		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_400Rnd_762x51_Box_Tracer: OPTRE_100Rnd_762x51_Box_Tracer
 	{
 		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
 	};
 	
     class OPTRE_100Rnd_95x40_Box: 150Rnd_762x51_Box
 	{
 		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_100Rnd_95x40_Box_Tracer: OPTRE_100Rnd_95x40_Box
 	{
 		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_100Rnd_95x40_Box_Tracer_Yellow: OPTRE_100Rnd_95x40_Box_Tracer
 	{
 		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
 	{
 		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_200Rnd_95x40_Box_Tracer: OPTRE_200Rnd_95x40_Box
 	{
 		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
 	};
 	
 	class OPTRE_200Rnd_95x40_Box_Tracer_Yellow: OPTRE_200Rnd_95x40_Box_Tracer
 	{
 		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
 	};
    
     class OPTRE_100Rnd_127x99_M250HMG: OPTRE_100Rnd_762x51_Box
@@ -102,6 +122,42 @@ class CfgMagazines
 		descriptionshort = "100 Round Box Magazine<br>12.7x99mm";
 		mass = 80;
 		tracersEvery = 4;
+		lastRoundsTracer = 5;
+	};
+	
+	class OPTRE_100Rnd_127x99_TRACER_M250HMG: OPTRE_100Rnd_762x51_Box
+	{
+		dlc = "OPTRE";
+        author = "[1stMEU] Oneill";
+        ace_isbelt = 1;
+		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
+		displayname = "100Rnd 12.7x99mm Tracer Box Magazine";
+		displaynameshort = "12.7x99mm";
+		ammo = "B_127x99_Ball";
+		count = 100;
+		initspeed = 900;
+		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
+		descriptionshort = "100 Round Box Magazine<br>12.7x99mm";
+		mass = 80;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
+	};
+	
+	class OPTRE_100Rnd_127x99_TRACER_HE_M250HMG: OPTRE_100Rnd_762x51_Box
+	{
+		dlc = "OPTRE";
+        author = "[1stMEU] Oneill";
+        ace_isbelt = 1;
+		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
+		displayname = "100Rnd 12.7x99mm Tracer HE Box Magazine";
+		displaynameshort = "12.7x99mm HE";
+		ammo = "OPTRE_B_127x99_HE";
+		count = 100;
+		initspeed = 900;
+		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
+		descriptionshort = "100 Round Box Magazine<br>12.7x99mm";
+		mass = 80;
+		tracersEvery = 1;
 		lastRoundsTracer = 5;
 	};
 	
@@ -221,7 +277,7 @@ class CfgMagazines
 		
 		tracersEvery = 1;
 		
-		ammo = "OPTRE_B_762x51_DMR_JHPT";
+		ammo = "OPTRE_B_762x51_DMR_JHP";
 		displayname = "15Rnd 7.62x51mm DMR JHP Magazine (Tracer)";
 		displaynameshort = "7.62x51mm JHP Tracer";
 		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
@@ -248,7 +304,7 @@ class CfgMagazines
 		
 		tracersEvery = 1;
 		
-		ammo = "OPTRE_B_762x51_DMR_SST";
+		ammo = "OPTRE_B_762x51_DMR_SS";
 		displayname = "15Rnd 7.62x51mm DMR SS Magazine (Tracer)";
 		displaynameshort = "7.62x51mm SS Tracer";
 		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
@@ -275,7 +331,7 @@ class CfgMagazines
 		
 		tracersEvery = 1;
 		
-		ammo = "OPTRE_B_762x51_DMR_FST";
+		ammo = "OPTRE_B_762x51_DMR_FS";
 		displayname = "15Rnd 7.62x51mm DMR FS Magazine (Tracer)";
 		displaynameshort = "7.62x51mm FS Tracer";
 		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized<br>Tracers";
@@ -342,7 +398,7 @@ class CfgMagazines
 		displayNameShort = "C12";
         initSpeed = 9;
     };
-	
+		
     class MEU_9bang_Mag : ACE_CTS9
     {
         author = "1st MEU Mark";
@@ -366,6 +422,21 @@ class CfgMagazines
         descriptionShort = "An explosive and a detonator stuck together with gum";
 		displayNameShort = "M168";
         initSpeed = 9;
+    };
+	
+	class MEU_Fury_Mag : OPTRE_M9_Frag
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[1st MEU] Throwable Fury Tactical Nuclear Weapon";
+		ammo = "MEU_Fury_ammo_thrown";
+		model = "\OPTRE_weapons\backpacks\fury.p3d";
+		picture = "\OPTRE_weapons\backpacks\icons\icon_b_fury_nuke_ca.paa";
+		mass = 380;
+        descriptionShort = "Fury Tactical Nuclear Weapon";
+		displayNameShort = "Fury";
+        initSpeed = 8;
     };
 	
 	class OPTRE_60Rnd_5x23mm_Mag_FMJ: OPTRE_60Rnd_5x23mm_Mag
@@ -429,7 +500,7 @@ class CfgMagazines
 		scope = 2;
 		scopeArsenal = 2;
 		
-		ammo = "OPTRE_B_5x23_Caseless_JHPT";
+		ammo = "OPTRE_B_5x23_Caseless_JHP";
 		displayname = "60Rnd 5x23mm JHP Magazine";
 		displaynameshort = "5x23mm JHP";
 		descriptionShort = "60 Round Magazine<br>5x23mm<br>Jacketed Hollow-Point";
