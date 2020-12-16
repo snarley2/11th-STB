@@ -235,6 +235,8 @@ class CfgVehicles
     // end meds
     class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         tf_range=30000;
         weapons[] = {"CMFlareLauncher_Singles"};
 		magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
@@ -282,6 +284,8 @@ class CfgVehicles
     };  
     class VES_AV22_Sparrowhawk_Base_F: VES_AV22_Sparrowhawk_Base
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
@@ -331,6 +335,8 @@ class CfgVehicles
     };
         class MEU_Blackfish: B_T_VTOL_01_armed_F
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         scope = 2;
@@ -388,6 +394,8 @@ class CfgVehicles
     
 	class OPTRE_UNSC_falcon: OPTRE_falcon_base
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         tf_range = 30000;
         class pilotCamera
         {
@@ -445,6 +453,8 @@ class CfgVehicles
     };
 	class OPTRE_Pelican_F: Helicopter_Base_H
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         tf_range=30000;
         class pilotCamera
         {
@@ -676,6 +686,8 @@ class CfgVehicles
     };
     class OPTRE_Hornet_base: Helicopter_Base_H
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         tf_range=30000;
         class useractions
         {
@@ -774,6 +786,8 @@ class CfgVehicles
     
 	class VES_UH144_A: OPTRE_UNSC_falcon
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         radarTargetSize = 0.1;
@@ -879,6 +893,8 @@ class CfgVehicles
     {
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         tf_range=30000;
         class useractions
         {
@@ -976,6 +992,8 @@ class CfgVehicles
     };
     class VES_AV14_AGM : OPTRE_UNSC_hornet_CAS
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
@@ -1075,6 +1093,8 @@ class CfgVehicles
     };
     class VES_AV14_Rockets : OPTRE_UNSC_hornet
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
@@ -1174,6 +1194,8 @@ class CfgVehicles
     };
     class VES_AV14 : OPTRE_UNSC_hornet
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
@@ -1277,12 +1299,16 @@ class CfgVehicles
 
 	class VES_UH144: OPTRE_UNSC_falcon_unarmed
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
     };
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
@@ -1517,6 +1543,8 @@ class CfgVehicles
     
 	class VES_D77HTCI: OPTRE_Pelican_unarmed
     {
+		crewCrashProtection = 0.0001;
+		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
@@ -1751,6 +1779,8 @@ class CfgVehicles
     };
     class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
+	crewCrashProtection = 0.5;
+	crewExplosionProtection = 0.5;
 	ace_cargo_space = 8;
 	ace_cargo_hasCargo = 1;	
     class TransportMagazines
@@ -1791,6 +1821,8 @@ class CfgVehicles
     };
     class B_T_APC_Tracked_01_CRV_F: B_APC_Tracked_01_CRV_F
     {
+	crewCrashProtection = 0.5;
+	crewExplosionProtection = 0.5;
 	ace_cargo_space = 8;
 	ace_cargo_hasCargo = 1;		
 		class TransportMagazines
@@ -1832,6 +1864,8 @@ class CfgVehicles
     };
     class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
     {
+	crewCrashProtection = 0.5;
+	crewExplosionProtection = 0.5;
         displayname = "Vulkan Repair APC";
         ace_repair_canRepair = 1; 
         scope = 2;
@@ -1847,6 +1881,8 @@ class CfgVehicles
         
     class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
     {
+	crewCrashProtection = 0.5;
+	crewExplosionProtection = 0.5;
         displayname = "Vulkan Repair APC (Pacific)";
         ace_repair_canRepair = 1;
         scope = 2;
