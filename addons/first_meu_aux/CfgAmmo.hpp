@@ -220,7 +220,6 @@ class CfgAmmo
 		typicalSpeed = 343;
 	};
 
-	
 	class MEU_40mm_HE: G_40mm_HE
 	{
 		hit = 80;

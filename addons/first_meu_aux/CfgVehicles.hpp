@@ -1830,12 +1830,6 @@ class CfgVehicles
 					"40Rnd_HEDP_Belt",
 					"40Rnd_HEDP_Belt",
 					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
 					"OPTRE_400Rnd_127x99_M250HMG",
 					"OPTRE_400Rnd_127x99_M250HMG",
 					"OPTRE_400Rnd_127x99_M250HMG",
@@ -1901,12 +1895,6 @@ class CfgVehicles
 					"40Rnd_HEDP_Belt",
 					"40Rnd_HEDP_Belt",
 					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
 					"OPTRE_400Rnd_127x99_M250HMG",
 					"OPTRE_400Rnd_127x99_M250HMG",
 					"OPTRE_400Rnd_127x99_M250HMG",
@@ -1955,6 +1943,8 @@ class CfgVehicles
 	
 	class MEU_Meerkat_APC: APC_Wheeled_02_base_F
 	{
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
 		ace_cargo_space = 8;
 		ace_cargo_hasCargo = 1;		
 		class TransportMagazines
@@ -2012,16 +2002,11 @@ class CfgVehicles
 					"40Rnd_HEDP_Belt",
 					"40Rnd_HEDP_Belt",
 					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
 					"OPTRE_400Rnd_127x99_M250HMG",
 					"OPTRE_400Rnd_127x99_M250HMG",
 					"OPTRE_400Rnd_127x99_M250HMG",
 					"OPTRE_400Rnd_127x99_M250HMG", 
 					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG"
 				};
 				gunnerGetInAction = "GetInAMV_cargo";
 				gunnerGetOutAction = "GetOutLow";
