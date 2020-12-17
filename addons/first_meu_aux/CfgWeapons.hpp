@@ -66,6 +66,10 @@ class CfgWeapons
     class OPTRE_UNSC_M52A_Armor_Base;
     class VES_M52A_URB_Security_A;
 	class VES_CH252A;
+	class HMG_127;
+	class GMG_40mm;
+	class MGun;
+	class GMG_F;
 	
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
@@ -13465,5 +13469,46 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     {
         magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
     };
-
+	
+	class M250_APC: HMG_127
+	{
+		magazines[] = 
+		{
+			"OPTRE_400Rnd_127x99_M250HMG",
+			"500Rnd_127x99_mag",
+			"500Rnd_127x99_mag_Tracer_Red",
+			"500Rnd_127x99_mag_Tracer_Green",
+			"500Rnd_127x99_mag_Tracer_Yellow",
+			"200Rnd_127x99_mag",
+			"200Rnd_127x99_mag_Tracer_Red",
+			"200Rnd_127x99_mag_Tracer_Green",
+			"200Rnd_127x99_mag_Tracer_Yellow",
+			"100Rnd_127x99_mag",
+			"100Rnd_127x99_mag_Tracer_Red",
+			"100Rnd_127x99_mag_Tracer_Green",
+			"100Rnd_127x99_mag_Tracer_Yellow"
+		};
+		class manual: MGun
+		{
+			displayName = "M250 12.7mm HMG";
+			reloadTime = 0.1;
+		};
+	};
+	
+	class MG460_APC: GMG_40mm
+	{
+		magazines[] = 
+		{
+			"40Rnd_HEDP_Belt",
+			"200Rnd_40mm_G_belt",
+			"96Rnd_40mm_G_belt",
+			"64Rnd_40mm_G_belt",
+			"32Rnd_40mm_G_belt"
+		};
+		class manual: GMG_F
+		{
+			displayName = "MG460 40mm AGL";
+			reloadTime = 0.25;
+		};
+	};
 };												 

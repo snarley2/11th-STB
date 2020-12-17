@@ -161,6 +161,13 @@ class CfgMagazines
 		lastRoundsTracer = 5;
 	};
 	
+	class OPTRE_400Rnd_127x99_M250HMG: OPTRE_100Rnd_127x99_M250HMG
+	{
+		displayname = "400Rnd 12.7x99mm Box Magazine";
+		count = 400;
+		mass = 400;
+	};
+	
 	class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
 	{
 		scope = 2;
@@ -367,6 +374,20 @@ class CfgMagazines
 		initspeed = 100;
 		ammo = "MEU_40mm_HEDP";
 		mass = 18;
+	};
+	
+	class 40Rnd_HEDP_Belt:1Rnd_HEDP_MEU_shell
+	{
+		author = "1st MEU  Oneill";
+		displayName = "40 Rnd 40mm HEDP Belt";
+		displayNameShort = "40Rnd 40mm HEDP";
+		descriptionShort = "40mm Dual-Purpose Grenade Belt";
+		initspeed = 250;
+		ammo = "MEU_40mm_HEDP";
+		mass = 50;
+		count = 40;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
 	};
 	
     class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag

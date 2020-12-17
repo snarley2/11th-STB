@@ -65,7 +65,7 @@ class CfgVehicles
     class Man;
     class House;
     class B_T_VTOL_01_armed_F;
-
+	class APC_Wheeled_02_base_F;
 
     class MEU_SCORPION: VES_M808B_MBT
 	{
@@ -1777,14 +1777,15 @@ class CfgVehicles
             };
         };
     };
+	
     class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
-	crewCrashProtection = 0.5;
-	crewExplosionProtection = 0.5;
-	ace_cargo_space = 8;
-	ace_cargo_hasCargo = 1;	
-    class TransportMagazines
-    {
+		crewExplosionProtection = 0.5;
+		crewCrashProtection = 0.5;
+		ace_cargo_space = 8;
+		ace_cargo_hasCargo = 1;	
+		class TransportMagazines
+		{
 			delete _xx_30Rnd_65x39_caseless_mag;
 			delete _xx_100Rnd_65x39_caseless_mag;
 			delete _xx_HandGrenade;
@@ -1817,14 +1818,42 @@ class CfgVehicles
 		{
 			delete _xx_FirstAidKit;
 			item_xx(ToolKit, 1);	
-		};	
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG"
+				};
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				LODTurnedIn = 1100;
+			};
+		};		
     };
     class B_T_APC_Tracked_01_CRV_F: B_APC_Tracked_01_CRV_F
     {
-	crewCrashProtection = 0.5;
-	crewExplosionProtection = 0.5;
-	ace_cargo_space = 8;
-	ace_cargo_hasCargo = 1;		
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
+		ace_cargo_space = 8;
+		ace_cargo_hasCargo = 1;		
+		
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_khaki_mag;
@@ -1861,12 +1890,40 @@ class CfgVehicles
 			delete _xx_FirstAidKit;	
 			item_xx(ToolKit, 1);
 		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG"
+				};
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				LODTurnedIn = 1100;
+			};
+		};		
     };
-    class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
+	
+	class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
     {
-	crewCrashProtection = 0.5;
-	crewExplosionProtection = 0.5;
-        displayname = "Vulkan Repair APC";
+        displayname = "Vulcan Repair APC";	
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
         ace_repair_canRepair = 1; 
         scope = 2;
 		scopeCurator = 2;
@@ -1881,9 +1938,9 @@ class CfgVehicles
         
     class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
     {
-	crewCrashProtection = 0.5;
-	crewExplosionProtection = 0.5;
-        displayname = "Vulkan Repair APC (Pacific)";
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
+        displayname = "Vulcan Repair APC (Jungle)";
         ace_repair_canRepair = 1;
         scope = 2;
 		scopeCurator = 2;
@@ -1895,6 +1952,101 @@ class CfgVehicles
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_apc";
     };
+	
+	class MEU_Meerkat_APC: APC_Wheeled_02_base_F
+	{
+		ace_cargo_space = 8;
+		ace_cargo_hasCargo = 1;		
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_green;
+			delete _xx_150Rnd_762x54_Box;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellRed;
+			delete _xx_SmokeShellYellow;
+			delete _xx_SmokeShellOrange;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeRed_Grenade_shell;
+			delete _xx_RPG32_F;
+			delete _xx_RPG32_HE_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_Katiba_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;	
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG"
+				};
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				LODTurnedIn = 1100;
+			};
+		};		
+    };
+	
+	class MEU_Meerkat_IFV: MEU_Meerkat_APC
+	{
+		author = "1st MEU Oneill";
+		displayname = "Meerkat";
+        scope = 2;
+		scopeCurator = 2;
+		accuracy = 1000;
+		faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_ifv";
+		textureList[] = {"Hex",1};
+		hiddenSelectionsTextures[] = {"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa","a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa","a3\data_f\vehicles\turret_opfor_co.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa","A3\armor_f\data\cage_csat_co.paa"};
+	};
+	
     class OPTRE_HEV: StaticMGWeapon
 	{
         faction = "MEU_UNSC";
