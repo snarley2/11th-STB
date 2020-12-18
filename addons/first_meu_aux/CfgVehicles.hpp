@@ -347,7 +347,7 @@ class CfgVehicles
         damageResistance = 0.00055;
         tf_range=30000;
         faction = "MEU_UNSC";
-	side = 1;
+		side = 1;
         hiddenSelections[] ={
 			"Camo_1",
 			"Camo_2",
@@ -1846,8 +1846,6 @@ class CfgVehicles
 					"OPTRE_400Rnd_127x99_HE_M250HMG",
 					"OPTRE_400Rnd_127x99_HE_M250HMG",
 					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
 				gunnerGetInAction = "GetInAMV_cargo";
@@ -1926,8 +1924,6 @@ class CfgVehicles
 					"OPTRE_400Rnd_127x99_HE_M250HMG",
 					"OPTRE_400Rnd_127x99_HE_M250HMG",
 					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
 				gunnerGetInAction = "GetInAMV_cargo";
@@ -1973,6 +1969,9 @@ class CfgVehicles
 	
 	class MEU_Leopard_APC: APC_Wheeled_02_base_v2_F
 	{
+		tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
 		crewCrashProtection = 0.5;
 		crewExplosionProtection = 0.5;
 		ace_cargo_space = 8;
@@ -2042,8 +2041,6 @@ class CfgVehicles
 					"OPTRE_400Rnd_127x99_HE_M250HMG",
 					"OPTRE_400Rnd_127x99_HE_M250HMG",
 					"SmokeLauncherMag",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
 				gunnerGetInAction = "GetInAMV_cargo";
@@ -2059,8 +2056,6 @@ class CfgVehicles
 		displayname = "Leopard IFV";
         scope = 2;
 		scopeCurator = 2;
-		crewCrashProtection = 0.5;
-		crewExplosionProtection = 0.5;
 		accuracy = 1000;
 		class SimpleObject
 		{

@@ -13490,7 +13490,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		class manual: GMG_F
 		{
 			displayName = "MG460 40mm AGL";
-			reloadTime = 0.25;
+			reloadTime = 0.75;
 		};
 	};
 };												 
