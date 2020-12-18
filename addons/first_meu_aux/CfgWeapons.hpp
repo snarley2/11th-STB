@@ -13462,9 +13462,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
     };
 	
-	// Weapon end
-	
-    //back to weapons
     class OPTRE_M319 : OPTRE_Rifle_Base
     {
         magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
@@ -13475,18 +13472,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		magazines[] = 
 		{
 			"OPTRE_400Rnd_127x99_M250HMG",
-			"500Rnd_127x99_mag",
-			"500Rnd_127x99_mag_Tracer_Red",
-			"500Rnd_127x99_mag_Tracer_Green",
-			"500Rnd_127x99_mag_Tracer_Yellow",
-			"200Rnd_127x99_mag",
-			"200Rnd_127x99_mag_Tracer_Red",
-			"200Rnd_127x99_mag_Tracer_Green",
-			"200Rnd_127x99_mag_Tracer_Yellow",
-			"100Rnd_127x99_mag",
-			"100Rnd_127x99_mag_Tracer_Red",
-			"100Rnd_127x99_mag_Tracer_Green",
-			"100Rnd_127x99_mag_Tracer_Yellow"
+			"OPTRE_400Rnd_127x99_HE_M250HMG"
 		};
 		class manual: MGun
 		{
@@ -13499,11 +13485,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	{
 		magazines[] = 
 		{
-			"40Rnd_HEDP_Belt",
-			"200Rnd_40mm_G_belt",
-			"96Rnd_40mm_G_belt",
-			"64Rnd_40mm_G_belt",
-			"32Rnd_40mm_G_belt"
+			"40Rnd_HEDP_Belt"
 		};
 		class manual: GMG_F
 		{

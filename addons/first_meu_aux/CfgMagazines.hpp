@@ -168,6 +168,13 @@ class CfgMagazines
 		mass = 400;
 	};
 	
+	class OPTRE_400Rnd_127x99_HE_M250HMG: OPTRE_100Rnd_127x99_HE_M250HMG
+	{
+		displayname = "400Rnd 12.7x99mm HE Box Magazine";
+		count = 400;
+		mass = 400;
+	};
+	
 	class OPTRE_6Rnd_8Gauge_Pellet: 2Rnd_12Gauge_Pellets
 	{
 		scope = 2;
@@ -384,7 +391,7 @@ class CfgMagazines
 		descriptionShort = "40mm Dual-Purpose Grenade Belt";
 		initspeed = 250;
 		ammo = "MEU_40mm_HEDP";
-		mass = 50;
+		mass = 100;
 		count = 40;
 		tracersEvery = 4;
 		lastRoundsTracer = 5;
