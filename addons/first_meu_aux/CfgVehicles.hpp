@@ -1941,6 +1941,7 @@ class CfgVehicles
         ace_repair_canRepair = 1; 
         scope = 2;
 		scopeCurator = 2;
+        scopeArsenal = 2;
 		accuracy = 1000;
 		faction = "MEU_UNSC";
 		side = 1;
@@ -1958,6 +1959,7 @@ class CfgVehicles
         ace_repair_canRepair = 1;
         scope = 2;
 		scopeCurator = 2;
+        scopeArsenal = 2;
 		accuracy = 1000;
 		faction = "MEU_UNSC";
 		side = 1;
@@ -1967,13 +1969,17 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_apc";
     };
 	
-	class MEU_Leopard_APC: APC_Wheeled_02_base_v2_F
+	class MEU_Leopard: APC_Wheeled_02_base_v2_F
 	{
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 30000;
 		crewCrashProtection = 0.5;
 		crewExplosionProtection = 0.5;
+		armor = 400;
+		armorStructural = 5;
+		armorLights = 0.1;
+		damageResistance = 0.008;
 		ace_cargo_space = 8;
 		ace_cargo_hasCargo = 1;		
 		class TransportMagazines
@@ -2043,19 +2049,17 @@ class CfgVehicles
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
-				gunnerGetInAction = "GetInAMV_cargo";
-				gunnerGetOutAction = "GetOutLow";
-				LODTurnedIn = 1100;
 			};
 		};		
     };
 	
-	class MEU_Leopard_IFV: MEU_Leopard_APC
+	class MEU_Leopard_IFV: MEU_Leopard
 	{
 		author = "1st MEU Oneill";
 		displayname = "Leopard IFV";
         scope = 2;
 		scopeCurator = 2;
+        scopeArsenal = 2;
 		accuracy = 1000;
 		class SimpleObject
 		{
@@ -2069,11 +2073,18 @@ class CfgVehicles
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
 		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
 		textureList[] = {"Hex",1};
-		hiddenSelectionsTextures[] = {"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa","a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa","a3\data_f\vehicles\turret_opfor_co.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa","A3\armor_f\data\cage_csat_co.paa"};
+		hiddenSelectionsTextures[] = 
+		{
+			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
+			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
+			"a3\data_f\vehicles\turret_opfor_co.paa",
+			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
+			"A3\armor_f\data\cage_csat_co.paa"
+		};
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-		faction = "MEU_UNSC";
 		side = 1;
+		faction = "MEU_UNSC";
 		editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_ifv";
 	};
