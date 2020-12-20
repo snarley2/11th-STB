@@ -13480,6 +13480,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	
 	class M250_APC: HMG_127
 	{
+		displayName = "M250 12.7mm HMG";
 		magazines[] = 
 		{
 			"OPTRE_400Rnd_127x99_M250HMG",
@@ -13494,6 +13495,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	
 	class MG460_APC: GMG_40mm
 	{
+		displayName = "MG460 40mm AGL";
 		magazines[] = 
 		{
 			"40Rnd_HEDP_Belt"
@@ -13501,7 +13503,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		class manual: GMG_F
 		{
 			displayName = "MG460 40mm AGL";
-			reloadTime = 0.75;
+			reloadTime = 0.4;
 		};
 	};
 };												 

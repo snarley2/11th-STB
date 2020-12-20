@@ -29,6 +29,8 @@ class cfgPatches
             "MEU_IFV",
             "MEU_IFV_A",
             "MEU_M12_AP",
+			"MEU_Leopard_APC",
+			"MEU_Leopard_Medical_APC",
             "OPTRE_AV22_Sparrowhawk_Base",
             "VES_AV22_Sparrowhawk_Base_F",
             "OPTRE_UNSC_falcon",
