@@ -65,7 +65,11 @@ class CfgVehicles
     class Man;
     class House;
     class B_T_VTOL_01_armed_F;
-	class APC_Wheeled_02_base_v2_F;
+    class APC_Wheeled_02_base_v2_F;
+    class O_T_VTOL_02_infantry_dynamicLoadout_F;
+    class GunnerTurret;
+    class CargoTurret_01;
+    class CargoTurret_02;
 
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
@@ -865,6 +869,58 @@ class CfgVehicles
             };
         };
         memoryPointDriverOptics = "gunnerview";
+    };
+class MEU_Wyvern: O_T_VTOL_02_infantry_dynamicLoadout_F
+    {
+	crewCrashProtection = 0.001;
+	crewExplosionProtection = 0.001;
+        _generalMacro = "O_T_VTOL_02_infantry_dynamicLoadout_F";
+        editorCategory = "MEU_cat_air";
+        editorsubCategory = "MEU_sub_rot";
+        scope = 2;
+        scopeCurator = 2;
+	scopeArsenal = 2;
+        displayName = "[MEU] Pegasus Wyvern";
+        armor = 600;
+        damageResistance = 0.001;
+        tf_range=30000;
+        faction = "MEU_UNSC";
+	side = 1;
+	magazines[] = {"PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
+	weapons[] = {"weapon_AMRAAMLauncher","rockets_Skyfire","Laserdesignator_mounted"};
+		class Turrets: Turrets
+		{
+			class GunnerTurret: GunnerTurret
+			{
+				magazines[] = {"4000Rnd_20mm_Tracer_Red_shells","Laserbatteries"};
+				weapons[] = {"gatling_20mm_VTOL_01","Laserdesignator_mounted"};
+			};
+			class CargoTurret_01: CargoTurret_01{};
+			class CargoTurret_02: CargoTurret_02{};
+		};
+		class TextureSources
+		{
+			class Grey
+			{
+				displayName = "UNSC Wyvern Class";
+				author = "1stMEU";
+				factions[] = {"MEU_UNSC"};
+				textures[] = {"first_meu_aux\data\pegasus\vic\VTOL_02_EXT01_grey_CO.paa","first_meu_aux\data\pegasus\vic\VTOL_02_EXT02_grey_CO.paa","first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_L_grey_CO.paa","first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_R_grey_CO.paa"};
+			};
+		};
+        hiddenSelections[] ={
+			"Camo_1",
+			"Camo_2",
+			"Camo_3", 
+			"Camo_4"
+		};
+        hiddenSelectionsTextures[] = 
+		{
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT01_grey_CO.paa",
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT02_grey_CO.paa", 
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_L_grey_CO.paa",
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_R_grey_CO.paa"
+		};
     };
         class MEU_Blackfish: B_T_VTOL_01_armed_F
     {
