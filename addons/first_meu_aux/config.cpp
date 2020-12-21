@@ -31,6 +31,7 @@ class cfgPatches
             "MEU_M12_AP",
 			"MEU_Leopard_APC",
 			"MEU_Leopard_Medical_APC",
+			"MEU_SCORPION",
             "OPTRE_AV22_Sparrowhawk_Base",
             "VES_AV22_Sparrowhawk_Base_F",
             "OPTRE_UNSC_falcon",
@@ -64,6 +65,7 @@ class cfgPatches
             "OPTRE_BR55HB",
             "OPTRE_M295_BMR",
             "OPTRE_M393_DMR",
+			"OPTRE_M247";
             "OPTRE_CR77",
 			"OPTRE_M7",
             "throw",

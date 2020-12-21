@@ -47,11 +47,12 @@ class CfgWeapons
 	class UnderBarrelSlot;
 	class Single;
 	class FullAuto;
-	class OPTRE_M247;
 	class OPTRE_Rifle_Base;
 	class OPTRE_LongRifle_Base;
 	class UGL_F;
     class OPTRE_M7S;
+	class OPTRE_M73;
+	class autocannon_40mm_CTWS;
     class VES_M7_I;
     class OPTRE_SubMachineGun_Base;
     class Grenadelauncher;
@@ -68,8 +69,11 @@ class CfgWeapons
 	class VES_CH252A;
 	class HMG_127;
 	class GMG_40mm;
+	class LMG_coax;
+	class autocannon_Base_F;
 	class MGun;
 	class GMG_F;
+	class cannon_120mm;
 	
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
@@ -13310,6 +13314,42 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	{
 		magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
 	};
+	
+	class OPTRE_M247: OPTRE_M73
+	{
+		displayName = "M247X General Purpose Machine Gun";
+		magazines[] = 
+			{
+				"OPTRE_100Rnd_762x51_Box",
+				"OPTRE_100Rnd_762x51_Box_AP",
+				"OPTRE_100Rnd_762x51_Box_JHP",
+				"OPTRE_100Rnd_762x51_Box_Tracer",
+				"OPTRE_100Rnd_762x51_Box_APT",
+				"OPTRE_100Rnd_762x51_Box_JHPT",
+				"OPTRE_100Rnd_762x51_Box_Tracer_Yellow",
+				"OPTRE_400Rnd_762x51_Box",
+				"OPTRE_400Rnd_762x51_Box_AP",
+				"OPTRE_400Rnd_762x51_Box_JHP",
+				"OPTRE_400Rnd_762x51_Box_Tracer",
+				"OPTRE_400Rnd_762x51_Box_APT",
+				"OPTRE_400Rnd_762x51_Box_JHPT",
+			};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","OPTRE_SRS99_Scope_v2","OPTRE_SRS99C_Scope_v2","OPTRE_M73_Smartlink_v2","OPTRE_M6S_Scope","OPTRE_M6GX_Scope","OPTRE_M6D_Smartlink","OPTRE_MA5_SmartLink","OPTRE_MA5_SmartLink_v2","OPTRE_MA5C_SmartLink_v2","OPTRE_MA5_SmartLink_legacy","OPTRE_MA5C_SmartLink_legacy","OPTRE_M7_Sight_v2","OPTRE_M392_Scope_v2","OPTRE_BMR_Scope_v2","OPTRE_M393_Scope_v2","OPTRE_M393_ACOG_v2","OPTRE_M393_EOTECH_v2","OPTRE_BR55HB_Scope_v2"};
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[] = {"acc_pointer_ir","ace_acc_pointer_green","acc_flashlight","OPTRE_BMR_Laser"};
+			};
+		};
+	};
     
 	class M250HMG: OPTRE_M247
 	{
@@ -13467,6 +13507,32 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
     };
 	
+	class M247_APC: LMG_coax
+	{
+		displayName = "M247 7.62mm GPMG";
+		magazines[] = 
+		{
+			"OPTRE_100Rnd_762x51_Box",
+			"OPTRE_100Rnd_762x51_Box_AP",
+			"OPTRE_100Rnd_762x51_Box_JHP",
+			"OPTRE_100Rnd_762x51_Box_Tracer",
+			"OPTRE_100Rnd_762x51_Box_APT",
+			"OPTRE_100Rnd_762x51_Box_JHPT",
+			"OPTRE_100Rnd_762x51_Box_Tracer_Yellow",
+			"OPTRE_400Rnd_762x51_Box",
+			"OPTRE_400Rnd_762x51_Box_AP",
+			"OPTRE_400Rnd_762x51_Box_JHP",
+			"OPTRE_400Rnd_762x51_Box_Tracer",
+			"OPTRE_400Rnd_762x51_Box_APT",
+			"OPTRE_400Rnd_762x51_Box_JHPT",
+		};
+		class manual: MGun
+		{
+			displayName = "M247 7.62mm GPMG";
+			reloadTime = 0.07;
+		};
+	};
+	
 	class M250_APC: HMG_127
 	{
 		displayName = "M250 12.7mm HMG";
@@ -13478,7 +13544,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		class manual: MGun
 		{
 			displayName = "M250 12.7mm HMG";
-			reloadTime = 0.1;
+			reloadTime = 0.09;
 		};
 	};
 	
@@ -13492,7 +13558,57 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		class manual: GMG_F
 		{
 			displayName = "MG460 40mm AGL";
-			reloadTime = 0.4;
+			reloadTime = 0.35;
+		};
+	};
+	
+	class M1024_30mm: autocannon_40mm_CTWS
+	{
+		displayName = "M1024 ASW/AC 30mm ALA Cannon";
+		muzzles[] = {"HE","AP"};
+		class HE: autocannon_Base_F
+		{
+			displayName = "M1024 ASW/AC 30mm ALA Cannon";
+			magazines[] = 
+			{
+				"80Rnd_30mm_HEAT",
+			};
+		};
+		class AP: autocannon_Base_F
+		{
+			displayName = "M1024 ASW/AC 30mm ALA Cannon";
+			magazines[] = 
+			{
+				"60Rnd_30mm_APFSDS",
+			};
+		};
+	};
+	
+	class M512_90mm: cannon_120mm
+	{
+		magazinereloadTime = 4.0;
+		displayName = "M512 Smoothbore High-Velocity Cannon";
+		descriptionShort = "90mm";
+		magazines[] = 
+		{
+			"60Rnd_90mm_APBC",
+			"60Rnd_90mm_SAPHE",
+			"60Rnd_90mm_HEAT"
+		};
+		class gunParticles
+		{
+			class FirstEffect
+			{
+				effectName = "CannonFired";
+				positionName = "Usti hlavne";
+				directionName = "Konec hlavne";
+			};
+			class ejectshellcase
+			{
+				directionName = "nabojniceend";
+				effectName = "OPTRE_90mmShellcase";
+				positionName = "nabojnicestart";
+			};
 		};
 	};
 };												 

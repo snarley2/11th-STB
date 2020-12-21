@@ -5,6 +5,8 @@ class CfgAmmo
 	class OPTRE_B_762x51_Ball;
 	class B_12Gauge_Pellets_Submunition;
 	class B_12Gauge_Pellets_Submunition_Deploy;
+	class B_30mm_MP;
+	class B_30mm_APFSDS;
 	class OPTRE_B_95x40_Ball;
 	class OPTRE_B_127x40_Ball;
     class B_12Gauge_Slug;
@@ -12,6 +14,8 @@ class CfgAmmo
     class CA_Magazine;
     class ACE_SatchelCharge_Remote_Ammo_Thrown;
     class ACE_G_CTS9;
+	class Sh_105mm_APFSDS_T_Green;
+	class Sh_105mm_HEAT_MP;
 	
     // code name LMAO
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
@@ -231,12 +235,54 @@ class CfgAmmo
 	
 	class MEU_40mm_HEDP: MEU_40mm_HE
 	{
-		hit = 220;
-		indirectHit = 100;
+		hit = 180;
+		indirectHit = 60;
 		indirectHitRange = 4;
 		caliber = 4;
 		warheadName = "HEAT";
         timeToLive = 30;
         fuseDistance = 4;
+	};
+	
+	class M1024_30mm_HEAT: B_30mm_MP
+	{
+		hit = 100;
+		indirectHit = 20;
+		indirectHitRange = 4;
+		caliber = 5;
+		typicalSpeed = 1200;
+	};
+		
+	class M1024_30mm_APFSDS: B_30mm_APFSDS
+	{
+		hit = 180;
+		indirectHit = 8;
+		indirectHitRange = 0.2;
+		caliber = 8;
+		typicalSpeed = 1400;
+	};
+	
+	class 90mm_APBC: Sh_105mm_APFSDS_T_Green
+	{
+		caliber = 26;
+		hit = 500;
+	};
+	
+	class 90mm_SAPHE: Sh_105mm_HEAT_MP
+	{
+		hit = 300;
+		indirectHit = 100;
+		indirectHitRange = 10;
+		caliber = 9;
+		explosive = 1.0;
+	};
+	
+	class 90mm_HEAT: Sh_105mm_HEAT_MP
+	{
+		hit = 600;
+		indirectHit = 20;
+		indirectHitRange = 2;
+		caliber = 12;
+		explosive = 0.75;
 	};
 };

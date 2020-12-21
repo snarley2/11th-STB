@@ -1,9 +1,10 @@
 class CfgMagazines
 {
-    class OPTRE_60Rnd_762x51_Mag;
+    
     class B_127x99_Ball;
 	class OPTRE_B_127x99_HE;
-    class 150Rnd_762x51_Box;
+	class 1Rnd_HE_Grenade_shell;
+    
     class 8Rnd_82mm_Mo_shells;
 	class 8Rnd_82mm_Mo_Smoke_white;
 	class 8Rnd_82mm_Mo_Flare_white;
@@ -11,13 +12,30 @@ class CfgMagazines
 	class 8Rnd_82mm_Mo_LG;
 	class 2Rnd_12Gauge_Pellets;
 	class OPTRE_6Rnd_8Gauge_Slug;
-	class OPTRE_15Rnd_762x51_Mag;
-	class 1Rnd_HE_Grenade_shell;
-    class CA_Magazine;
+	
     class OPTRE_M9_Frag;
     class ACE_CTS9;
     class M168_Remote_Mag;
+	
+	class CA_Magazine;
+	class VehicleMagazine;
+	class 150Rnd_762x51_Box;
 	class OPTRE_60Rnd_5x23mm_Mag;
+	class OPTRE_60Rnd_762x51_Mag;
+	class OPTRE_60Rnd_762x51_Mag_AP;
+	class OPTRE_60Rnd_762x51_Mag_JHP;
+	class OPTRE_32Rnd_762x51_Mag_AP;
+	class OPTRE_32Rnd_762x51_Mag_JHP;
+	class OPTRE_32Rnd_762x51_Mag_SS;
+	class OPTRE_15Rnd_762x51_Mag;
+	class OPTRE_15Rnd_762x51_Mag_AP;
+	class OPTRE_15Rnd_762x51_Mag_JHP;
+	class OPTRE_15Rnd_762x51_Mag_FS;
+	class OPTRE_15Rnd_762x51_Mag_SS;
+	class OPTRE_36Rnd_95x40_Mag_JHP;
+	class OPTRE_36Rnd_95x40_Mag_HPSAP;
+	class OPTRE_36Rnd_95x40_Mag_SAPHE;
+	class 40Rnd_105mm_APFSDS_T_Green;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -26,11 +44,55 @@ class CfgMagazines
 		lastRoundsTracer = 5;
 	};
 	
+	class OPTRE_100Rnd_762x51_Box_AP: OPTRE_100Rnd_762x51_Box
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_AP";
+		displayname = "100Rnd 7.62x51mm AP Belt";
+		displaynameshort = "100Rnd 7.62x51mm AP Belt";
+		descriptionShort = "100 Round Belt<br>7.62x51mm<br>Armor Piercing";
+	};
+	
+	class OPTRE_100Rnd_762x51_Box_JHP: OPTRE_100Rnd_762x51_Box
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_JHP";
+		displayname = "100Rnd 7.62x51mm JHP Belt";
+		displaynameshort = "100Rnd 7.62x51mm JHP Belt";
+		descriptionShort = "100 Round Belt<br>7.62x51mm<br>Jacketed Hollow-Point";
+	};
+	
 	class OPTRE_100Rnd_762x51_Box_Tracer: OPTRE_100Rnd_762x51_Box
 	{
 		ace_isbelt = 1;
 		tracersEvery = 1;
 		lastRoundsTracer = 5;
+		
+		displayname = "100Rnd 7.62x51mm Belt (Tracers)";
+		displaynameshort = "100Rnd 7.62x51mm JHP Belt (Tracers)";
+		descriptionShort = "100 Round Belt<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+	};
+	
+	class OPTRE_100Rnd_762x51_Box_APT: OPTRE_100Rnd_762x51_Box_Tracer
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_AP";
+		displayname = "100Rnd 7.62x51mm AP Belt (Tracers)";
+		displaynameshort = "100Rnd 7.62x51mm AP Belt (Tracers)";
+		descriptionShort = "100 Round Belt<br>7.62x51mm<br>Armor Piercing<br>Tracers";
+	};
+	
+	class OPTRE_100Rnd_762x51_Box_JHPT: OPTRE_100Rnd_762x51_Box_Tracer
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_JHPT";
+		displayname = "100Rnd 7.62x51mm JHP Belt (Tracers)";
+		displaynameshort = "100Rnd 7.62x51mm JHP Belt (Tracers)";
+		descriptionShort = "100 Round Belt<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
 	};
 	
 	class OPTRE_100Rnd_762x51_Box_Tracer_Yellow: OPTRE_100Rnd_762x51_Box_Tracer
@@ -38,13 +100,75 @@ class CfgMagazines
 		ace_isbelt = 1;
 		tracersEvery = 1;
 		lastRoundsTracer = 5;
+		
+		displayname = "100Rnd 7.62x51mm Belt (Tracers-Yellow)";
+		displaynameshort = "100Rnd 7.62x51mm JHP Belt (Tracers-Yellow)";
+		descriptionShort = "100 Round Belt<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers-Yellow";
 	};
 	
-	class OPTRE_400Rnd_762x51_Box_Tracer: OPTRE_100Rnd_762x51_Box_Tracer
+	class OPTRE_400Rnd_762x51_Box: OPTRE_100Rnd_762x51_Box
+	{
+		count = 400;
+		mass = 120;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		displayname = "400Rnd 7.62x51mm Belt";
+		displaynameshort = "400Rnd 7.62x51mm Belt";
+		descriptionShort = "400 Round Belt<br>7.62x51mm";
+	};
+	
+	class OPTRE_400Rnd_762x51_Box_AP: OPTRE_400Rnd_762x51_Box
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_AP";
+		displayname = "400Rnd 7.62x51mm AP Belt";
+		displaynameshort = "400Rnd 7.62x51mm AP Belt";
+		descriptionShort = "400 Round Belt<br>7.62x51mm<br>Armor Piercing";
+	};
+	
+	class OPTRE_400Rnd_762x51_Box_JHP: OPTRE_400Rnd_762x51_Box
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_JHP";
+		displayname = "400Rnd 7.62x51mm JHP Belt";
+		displaynameshort = "400Rnd 7.62x51mm JHP Belt";
+		descriptionShort = "400 Round Belt<br>7.62x51mm<br>Jacketed Hollow-Point";
+	};
+	
+	class OPTRE_400Rnd_762x51_Box_Tracer: OPTRE_400Rnd_762x51_Box
 	{
 		ace_isbelt = 1;
 		tracersEvery = 1;
 		lastRoundsTracer = 5;
+		
+		displayname = "400Rnd 7.62x51mm Belt (Tracers)";
+		displaynameshort = "400Rnd 7.62x51mm Belt (Tracers)";
+		descriptionShort = "400 Round Belt<br>7.62x51mm<br>Tracers";
+	};
+	
+	class OPTRE_400Rnd_762x51_Box_APT: OPTRE_400Rnd_762x51_Box_Tracer
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_AP";
+		displayname = "400Rnd 7.62x51mm AP Belt (Tracers)";
+		displaynameshort = "400Rnd 7.62x51mm AP Belt (Tracers)";
+		descriptionShort = "400 Round Belt<br>7.62x51mm<br>Armor Piercing<br>Tracers";
+	};
+	
+	class OPTRE_400Rnd_762x51_Box_JHPT: OPTRE_400Rnd_762x51_Box_Tracer
+	{
+		author = "1st MEU Oneill";
+		
+		ammo = "OPTRE_B_762x51_JHPT";
+		displayname = "400Rnd 7.62x51mm JHP Belt (Tracers)";
+		displaynameshort = "400Rnd 7.62x51mm JHP Belt (Tracers)";
+		descriptionShort = "400 Round Belt<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
 	};
 	
     class OPTRE_100Rnd_95x40_Box: 150Rnd_762x51_Box
@@ -68,11 +192,257 @@ class CfgMagazines
 		lastRoundsTracer = 5;
 	};
 	
-	class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
+	class OPTRE_100Rnd_95x40_Box_JHP: OPTRE_100Rnd_95x40_Box
 	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
 		ace_isbelt = 1;
 		tracersEvery = 4;
 		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "100Rnd 9.5x40mm JHP Box Magazine";
+		displaynameshort = "9.5x60mm JHP";
+		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
+		initspeed = 1200;
+	};
+
+	class OPTRE_100Rnd_95x40_Box_JHPT: OPTRE_100Rnd_95x40_Box_JHP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
+		displaynameshort = "9.5x60mm JHP Tracer";
+		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+	};
+
+	class OPTRE_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_HPSAP";
+		displayname = "100Rnd 9.5x40mm HP-SAP Box Magazine";
+		displaynameshort = "9.5x60mm HP-SAP";
+		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
+		initspeed = 1200;
+	};
+
+	class OPTRE_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_HPSAP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
+		displaynameshort = "9.5x60mm HP-SAP Tracer";
+		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+	};
+
+	class OPTRE_100Rnd_95x40_Box_SAPHE: OPTRE_100Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_SAPHE";
+		displayname = "100Rnd 9.5x40mm SAP-HE Box Magazine";
+		displaynameshort = "9.5x60mm SAP-HE";
+		descriptionShort = "100 Round Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
+		initspeed = 720;
+	};
+
+	class OPTRE_100Rnd_95x40_Box_SAPHET: OPTRE_100Rnd_95x40_Box_SAPHE
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_SAPHE";
+		displayname = "100Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
+		displaynameshort = "9.5x60mm SAP-HE Tracer";
+		descriptionShort = "100 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+	};
+
+	class OPTRE_100Rnd_95x40_Box_SS: OPTRE_100Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_SS";
+		displayname = "100Rnd 9.5x40mm SS Box Magazine";
+		displaynameshort = "9.5x60mm SS";
+		descriptionShort = "100 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
+		initspeed = 340;
+	};
+
+	class OPTRE_200Rnd_95x40_Box: OPTRE_100Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		count = 200;
+		displayname = "200Rnd 9.5x40mm Box Magazine";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm";
+		mass = 70.5;
+		initspeed = 1100;
+	};
+
+	class OPTRE_200Rnd_95x40_Box_JHP: OPTRE_200Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "200Rnd 9.5x40mm JHP Box Magazine";
+		displaynameshort = "9.5x60mm JHP";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
+		initspeed = 1100;
+	};
+
+	class OPTRE_200Rnd_95x40_Box_JHPT: OPTRE_200Rnd_95x40_Box_JHP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "200Rnd 9.5x40mm JHP Box Magazine (Tracer)";
+		displaynameshort = "9.5x60mm JHP Tracer";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+
+	};
+
+	class OPTRE_200Rnd_95x40_Box_HPSAP: OPTRE_200Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_HPSAP";
+		displayname = "200Rnd 9.5x40mm HP-SAP Box Magazine";
+		displaynameshort = "9.5x60mm HP-SAP";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
+		initspeed = 1200;
+	};
+
+	class OPTRE_200Rnd_95x40_Box_HPSAPT: OPTRE_200Rnd_95x40_Box_HPSAP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
+		displaynameshort = "9.5x60mm HP-SAP Tracer";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+	};
+
+	class OPTRE_200Rnd_95x40_Box_SAPHE: OPTRE_200Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_SAPHE";
+		displayname = "200Rnd 9.5x40mm SAP-HE Box Magazine";
+		displaynameshort = "9.5x60mm SAP-HE";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
+		initspeed = 720;
+	};
+
+	class OPTRE_200Rnd_95x40_Box_SAPHET: OPTRE_200Rnd_95x40_Box_SAPHE
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		ace_isbelt = 1;
+		tracersEvery = 1;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_SAPHE";
+		displayname = "200Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
+		displaynameshort = "9.5x60mm SAP-HE Tracer";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+	};
+
+	class OPTRE_200Rnd_95x40_Box_SS: OPTRE_200Rnd_95x40_Box
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		scope = 2;
+		scopeArsenal = 2;
+		
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		
+		ammo = "OPTRE_B_95x40_SS";
+		displayname = "200Rnd 9.5x40mm SS Box Magazine";
+		displaynameshort = "9.5x60mm SS";
+		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
+		initspeed = 340;
 	};
 	
 	class OPTRE_200Rnd_95x40_Box_Tracer: OPTRE_200Rnd_95x40_Box
@@ -264,7 +634,7 @@ class CfgMagazines
 		
 		tracersEvery = 1;
 		
-		ammo = "OPTRE_B_762x51_DMR_APT";
+		ammo = "OPTRE_B_762x51_DMR_AP";
 		displayname = "15Rnd 7.62x51mm DMR AP Magazine (Tracer)";
 		displaynameshort = "7.62x51mm AP Tracer";
 		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
@@ -347,6 +717,58 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_762x51_DMR_FS";
 		displayname = "15Rnd 7.62x51mm DMR FS Magazine (Tracer)";
+		displaynameshort = "7.62x51mm FS Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized<br>Tracers";
+	};
+	
+	class OPTRE_15Rnd_762x51_Mag_APT: OPTRE_15Rnd_762x51_Mag_AP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_AP";
+		displayname = "15Rnd 7.62x51mm AP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm AP Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
+	};
+
+	class OPTRE_15Rnd_762x51_Mag_JHPT: OPTRE_15Rnd_762x51_Mag_JHP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_JHP";
+		displayname = "15Rnd 7.62x51mm JHP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm JHP Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+	};
+
+	class OPTRE_15Rnd_762x51_Mag_SST: OPTRE_15Rnd_762x51_Mag_SS
+	{
+		dlc	= "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_SS";
+		displayname = "15Rnd 7.62x51mm SS Magazine (Tracer)";
+		displaynameshort = "7.62x51mm SS Tracer";
+		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
+	};
+
+	class OPTRE_15Rnd_762x51_Mag_FST: OPTRE_15Rnd_762x51_Mag_FS
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_FS";
+		displayname = "15Rnd 7.62x51mm FS Magazine (Tracer)";
 		displaynameshort = "7.62x51mm FS Tracer";
 		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized<br>Tracers";
 	};
@@ -595,5 +1017,165 @@ class CfgMagazines
 		displayname = "60Rnd 5x23mm NARQ Magazine (Tracer)";
 		displaynameshort = "5x23mm NARQ Tracer";
 		descriptionShort = "60 Round Magazine<br>5x23mm Tracer<br>Tranquilizer";
+	};
+	
+	class OPTRE_36Rnd_95x40_Mag_JHPT: OPTRE_36Rnd_95x40_Mag_JHP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "36Rnd 9.5x40mm JHP Magazine (Tracer)";
+		displaynameshort = "9.5x60mm JHP Tracer";
+		descriptionShort = "36 Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
+	};
+
+	class OPTRE_36Rnd_95x40_Mag_HPSAPT: OPTRE_36Rnd_95x40_Mag_HPSAP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_95x40_JHP";
+		displayname = "36Rnd 9.5x40mm HP-SAP Magazine (Tracer)";
+		displaynameshort = "9.5x60mm HP-SAP Tracer";
+		descriptionShort = "36 Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
+	};
+
+	class OPTRE_36Rnd_95x40_Mag_SAPHET: OPTRE_36Rnd_95x40_Mag_SAPHE
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_95x40_SAPHE";
+		displayname = "36Rnd 9.5x40mm SAP-HE Magazine (Tracer)";
+		displaynameshort = "9.5x60mm SAP-HE Tracer";
+		descriptionShort = "36 Round Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
+	};
+	
+	class OPTRE_60Rnd_762x51_Mag_APT: OPTRE_60Rnd_762x51_Mag_AP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_AP";
+		displayname = "60Rnd 7.62x51mm AP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm AP Tracer";
+		descriptionShort = "60 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
+	};
+
+	class OPTRE_60Rnd_762x51_Mag_JHPT: OPTRE_60Rnd_762x51_Mag_JHP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_JHP";
+		displayname = "60Rnd 7.62x51mm JHP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm JHP Tracer";
+		descriptionShort = "60 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+	};
+
+	class OPTRE_32Rnd_762x51_Mag_APT: OPTRE_32Rnd_762x51_Mag_AP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_AP";
+		displayname = "32Rnd 7.62x51mm AP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm AP Tracer";
+		descriptionShort = "32 Round Magazine<br>7.62x51mm<br>Armor-Piercing<br>Tracers";
+	};
+
+	class OPTRE_32Rnd_762x51_Mag_JHPT: OPTRE_32Rnd_762x51_Mag_JHP
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_JHP";
+		displayname = "32Rnd 7.62x51mm JHP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm JHP Tracer";
+		descriptionShort = "32 Round Magazine<br>7.62x51mm<br>Jacketed Hollow-Point<br>Tracers";
+	};
+
+	class OPTRE_32Rnd_762x51_Mag_SST: OPTRE_32Rnd_762x51_Mag_SS
+	{
+		dlc = "SO";
+		author = "Fireteam Zulu";
+		
+		tracersEvery = 1;
+		
+		ammo = "OPTRE_B_762x51_SS";
+		displayname = "32Rnd 7.62x51mm SS Magazine (Tracer)";
+		displaynameshort = "7.62x51mm SS Tracer";
+		descriptionShort = "32 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
+	};
+	
+	class 80Rnd_30mm_HEAT: VehicleMagazine
+	{
+		author = "1st MEU Oneill";
+		scope = 2;
+		displayName = "80Rnd 30mm HEAT Belt ";
+		displayNameShort = "30mm HEAT";
+		ammo = "M1024_30mm_HEAT";
+		count = 80;
+		initSpeed = 1200;
+		maxLeadSpeed = 83.3333;
+		nameSound = "cannon";
+		tracersEvery = 1;
+		muzzleImpulseFactor[] = {1.0,6};
+	};
+	
+	class 60Rnd_30mm_APFSDS: VehicleMagazine
+	{
+		author = "1st MEU Oneill";
+		scope = 2;
+		displayName = "80Rnd 30mm APFSDS Belt ";
+		displayNameShort = "30mm APFSDS";
+		ammo = "M1024_30mm_APFSDS";
+		count = 60;
+		initSpeed = 1400;
+		maxLeadSpeed = 83.3333;
+		nameSound = "cannon";
+		tracersEvery = 1;
+		muzzleImpulseFactor[] = {1.0,6};
+	};
+	
+	class 60Rnd_90mm_SAPHE: 40Rnd_105mm_APFSDS_T_Green
+	{
+		ammo = "90mm_SAPHE";
+		count = 60;
+		displayname = "90mm SAPHE";
+		displaynameshort = "SAPHE";
+		initspeed = 2000;
+		lastroundstracer = 0;
+		scope = 2;
+		tracersevery = 1;
+	};
+	
+	class 60Rnd_90mm_HEAT: 60Rnd_90mm_SAPHE
+	{
+		ammo = "90mm_HEAT";
+		displayname = "90mm HEAT";
+		displaynameshort = "HEAT";
+	};
+	
+	class 60Rnd_90mm_APBC: 60Rnd_90mm_SAPHE
+	{
+		ammo = "90mm_APBC";
+		displayname = "90mm APBC";
+		displaynameshort = "APBC";
 	};
 };

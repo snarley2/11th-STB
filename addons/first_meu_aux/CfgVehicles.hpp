@@ -67,88 +67,7 @@ class CfgVehicles
     class B_T_VTOL_01_armed_F;
 	class APC_Wheeled_02_base_v2_F;
 
-    class MEU_SCORPION: VES_M808B_MBT
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        dlc = "1stMEU"
-        author = "Romeo";
-        displayName = "[MEU] M808B Scorpion"
-        tf_hasLRradio = 1;
-		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
-        faction = "MEU_UNSC";
-        side = 1;
-		editorCategory = "MEU_cat_gnd";
-		crew = "VES_Rifleman_MA5B_MAR";	
-	};
-    class MEU_IFV : VES_IFV76
-    {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[MEU] APC-76 Honeybadger";
-        tf_hasLRradio = 1;
-		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
-        transportSoldier = 16;
-        faction = "MEU_UNSC";
-		side = 1;
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";  
-    };
-    class MEU_IFV_A : VES_IFV76_A
-    {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[MEU] IFV-76 Honeybadger";
-        tf_hasLRradio = 1;
-		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
-        transportSoldier = 12;
-        faction = "MEU_UNSC";
-		side = 1;
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_ifv";
-        visionMode[] = {"Normal","TI","NVG"};
-        thermalMode[] = {0,1,2,3,4,5};
-        class Turrets: Turrets
-		{
-            visionMode[] = {"Normal","TI","NVG"};
-            thermalMode[] = {0,1,2,3,4,5};
-			class MainTurret: MainTurret
-			{
-                visionMode[] = {"Normal","TI","NVG"};
-                thermalMode[] = {0,1,2,3,4,5};
-                class Viewoptics : RCWSOptics
-                {
-                    visionMode[] = {"Normal","TI","NVG"};
-                    thermalMode[] = {0,1,2,3,4,5};
-                };
-            };
-        };
-    };
-    class MEU_M12_AP : VES_M12_APC
-    {
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-        displayName = "[MEU] M12 AP Warthog";
-        tf_hasLRradio = 1;
-		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
-        ace_cargo_size = 10;
-        faction = "MEU_UNSC";
-		side = 1;
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_car";
-    };
-    //more meds
+	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
         scope = 2;
@@ -233,6 +152,620 @@ class CfgVehicles
         mass = 20
     };
     // end meds
+	
+    class MEU_SCORPION: VES_M808B_MBT
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        dlc = "1stMEU";
+        author = "Oneill";
+        displayName = "M808B Scorpion";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        faction = "MEU_UNSC";
+        side = 1;
+		editorCategory = "MEU_cat_gnd";
+		editorsubCategory = "MEU_sub_arm";
+		crew = "VES_Rifleman_MA5B_MAR";	
+		class Turrets: Turrets
+		{
+            visionMode[] = {"Normal","TI","NVG"};
+            thermalMode[] = {0,1,2,3,4,5};
+			class MainTurret: MainTurret
+			{
+                visionMode[] = {"Normal","TI","NVG"};
+                thermalMode[] = {0,1,2,3,4,5};
+                class Viewoptics : RCWSOptics
+                {
+                    visionMode[] = {"Normal","TI","NVG"};
+                    thermalMode[] = {0,1,2,3,4,5};
+                };
+				weapons[] = {"M512_90mm","M247_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"60Rnd_90mm_SAPHE",
+					"60Rnd_90mm_HEAT",
+					"60Rnd_90mm_APBC",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+        };
+	};
+	
+    class MEU_IFV : VES_IFV76
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "APC-76 Honeybadger";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        transportSoldier = 16;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc"; 
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
+    };
+	
+    class MEU_IFV_A : VES_IFV76_A
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "IFV-76 Honeybadger";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        transportSoldier = 12;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_ifv";
+        visionMode[] = {"Normal","TI","NVG"};
+        thermalMode[] = {0,1,2,3,4,5};
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
+		
+        class Turrets: Turrets
+		{
+            visionMode[] = {"Normal","TI","NVG"};
+            thermalMode[] = {0,1,2,3,4,5};
+			class MainTurret: MainTurret
+			{
+                visionMode[] = {"Normal","TI","NVG"};
+                thermalMode[] = {0,1,2,3,4,5};
+                class Viewoptics : RCWSOptics
+                {
+                    visionMode[] = {"Normal","TI","NVG"};
+                    thermalMode[] = {0,1,2,3,4,5};
+                };
+				weapons[] = {"M1024_30mm","M247_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+        };
+    };
+	
+	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
+    {
+		crewExplosionProtection = 0.5;
+		crewCrashProtection = 0.5;
+		ace_cargo_space = 8;
+		ace_cargo_hasCargo = 1;	
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			item_xx(ToolKit, 1);
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				LODTurnedIn = 1100;
+			};
+		};		
+    };
+	
+    class B_T_APC_Tracked_01_CRV_F: B_APC_Tracked_01_CRV_F
+    {
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
+		ace_cargo_space = 8;
+		ace_cargo_hasCargo = 1;		
+		
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_khaki_mag;
+			delete _xx_100Rnd_65x39_caseless_khaki_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_khk_F;
+			delete _xx_arifle_MX_SW_khk_F;
+			delete _xx_launch_NLAW_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;	
+			item_xx(ToolKit, 1);
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				LODTurnedIn = 1100;
+			};
+		};		
+    };
+	
+	class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
+    {
+        displayname = "Vulcan Repair APC";	
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
+        ace_repair_canRepair = 1; 
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+		accuracy = 1000;
+		faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc";
+    };
+        
+    class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
+    {
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
+        displayname = "Vulcan Repair APC (Jungle)";
+        ace_repair_canRepair = 1;
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+		accuracy = 1000;
+		faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc";
+    };
+	
+	class MEU_Leopard: APC_Wheeled_02_base_v2_F
+	{
+		tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+		crewCrashProtection = 0.5;
+		crewExplosionProtection = 0.5;
+		armor = 400;
+		armorStructural = 5;
+		armorLights = 0.1;
+		damageResistance = 0.008;
+		ace_cargo_space = 8;
+		ace_cargo_hasCargo = 1;		
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_green;
+			delete _xx_150Rnd_762x54_Box;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellRed;
+			delete _xx_SmokeShellYellow;
+			delete _xx_SmokeShellOrange;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeRed_Grenade_shell;
+			delete _xx_RPG32_F;
+			delete _xx_RPG32_HE_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 10);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 10);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 10);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 10);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 10);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 10);
+			mag_xx(OPTRE_M41_Twin_HEAT, 4);
+			mag_xx(OPTRE_M41_Twin_HEAT_G, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_Katiba_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;	
+			item_xx(MEU_Biofoam_Light, 10);
+            item_xx(MEU_Medigel_Light, 10);
+            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_epinephrine, 4);
+            item_xx(ACE_adenosine, 4);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};		
+    };
+	
+	class MEU_Leopard_APC: MEU_Leopard
+	{
+		author = "1st MEU Oneill";
+		displayname = "Leopard APC";
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+		accuracy = 1000;
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {{"damagehide",0},{"damagehidevez",0},{"damagehidehlaven",0},{"wheel_1_1_destruct",0},{"wheel_1_2_destruct",0},{"wheel_1_3_destruct",0},{"wheel_1_4_destruct",0},{"wheel_2_1_destruct",0},{"wheel_2_2_destruct",0},{"wheel_2_3_destruct",0},{"wheel_2_4_destruct",0},{"wheel_1_1_destruct_unhide",0},{"wheel_1_2_destruct_unhide",0},{"wheel_1_3_destruct_unhide",0},{"wheel_1_4_destruct_unhide",0},{"wheel_2_1_destruct_unhide",0},{"wheel_2_2_destruct_unhide",0},{"wheel_2_3_destruct_unhide",0},{"wheel_2_4_destruct_unhide",0},{"wheel_1_4_damage",0},{"wheel_2_4_damage",0},{"wheel_1_4_damper_damage_backanim",0},{"wheel_2_4_damper_damage_backanim",0},{"wheel_1_1",0},{"wheel_2_1",0},{"wheel_1_2",0},{"wheel_1_3",0},{"wheel_2_2",0},{"wheel_2_3",0},{"daylights",0},{"wheel_1_1_damage",0},{"wheel_1_2_damage",0},{"wheel_1_3_damage",0},{"wheel_2_1_damage",0},{"wheel_2_2_damage",0},{"wheel_2_3_damage",0},{"wheel_1_1_damper_damage_backanim",0},{"wheel_1_2_damper_damage_backanim",0},{"wheel_1_3_damper_damage_backanim",0},{"wheel_2_1_damper_damage_backanim",0},{"wheel_2_2_damper_damage_backanim",0},{"wheel_2_3_damper_damage_backanim",0},{"steering_1_1",0},{"steering_2_1",0},{"steering_1_2",0},{"steering_2_2",0},{"wheel_1_1_damper",0},{"wheel_2_1_damper",0},{"wheel_1_2_damper",0},{"wheel_1_3_damper",0},{"wheel_2_2_damper",0},{"wheel_2_3_damper",0},{"hatchdriver",0},{"hatchcommander",0},{"mainturret",0},{"maingun",0},{"obsturret",0},{"obsgun",0},{"damagehlaven",0},{"damagecamonet",0},{"vrtulea",0},{"vrtuleb",0},{"zasleh_rot",781},{"zasleh2_rot",3222.53},{"zasleh_hide",0},{"reverse_light",1},{"drivingwheel",0},{"indicatorvoltammeter",0},{"indicatortempoil",0},{"indicatortempwater",0},{"lights_driver",0},{"lights_driver_off",0},{"lights_turret",0},{"cannon_ready_light",0},{"engine_damage_fire_indicator",0},{"engine_damage_indicator",0},{"main_gun_damage_indicator",0},{"pedal_thrust",0},{"pedal_brake",0},{"turret_control_x",0},{"turret_control_y",0},{"mainturret_indicator",0},{"commander_mainturret_indicator",0},{"driver_reverse_cam",1},{"driver_hide_mfd",1},{"indicatorspeed_mfd_driver",0},{"indicatorrpm",0},{"indicatorrpm_mfd_driver",0},{"indicatortempwater_mfd_driver",0},{"indicatorfuel_mfd_driver",1},{"indicator_hull_direction_mfd_driver",0},{"indicator_main_turret_mfd_driver",0},{"indicator_hull_direction_mfd_gunner",0},{"indicator_main_turret_mfd_gunner",0},{"indicator_com_turret_mfd_gunner",0},{"indicator_com_turret_counter_mfd_gunner",0},{"indicator_com_smoke_1",1},{"indicator_com_smoke_2",1},{"indicator_damage_engine",0},{"indicator_damage_fuel",0},{"indicator_damage_track",0},{"indicator_turret_damage_hull",0},{"indicator_turret_damage_engine",0},{"indicator_turret_damage_fuel",0},{"indicator_turret_damage_main_gun",0},{"indicator_turret_damage_wheels",0},{"indicator_turret_damage_turret",0},{"indicator_turret_damage_com_turret",0},{"hide_mfd_and_pip_screen",1},{"hide_mfd_elements_for_com",1},{"slat_front_normal_hide",0},{"slat_front_damage_unhide",0},{"slat_front_damage_hide",0},{"slat_front_destroyed_unhide",0},{"slat_front_firegeo_hide",0},{"slat_back_normal_hide",0},{"slat_back_damage_unhide",0},{"slat_back_damage_hide",0},{"slat_back_destroyed_unhide",0},{"slat_back_firegeo_hide",0},{"slat_left_1_normal_hide",0},{"slat_left_1_damage_unhide",0},{"slat_left_1_damage_hide",0},{"slat_left_1_destroyed_unhide",0},{"slat_left_1_firegeo_hide",0},{"slat_left_2_normal_hide",0},{"slat_left_2_damage_unhide",0},{"slat_left_2_damage_hide",0},{"slat_left_2_destroyed_unhide",0},{"slat_left_2_firegeo_hide",0},{"slat_left_3_normal_hide",0},{"slat_left_3_damage_unhide",0},{"slat_left_3_damage_hide",0},{"slat_left_3_destroyed_unhide",0},{"slat_left_3_firegeo_hide",0},{"slat_right_1_normal_hide",0},{"slat_right_1_damage_unhide",0},{"slat_right_1_damage_hide",0},{"slat_right_1_destroyed_unhide",0},{"slat_right_1_firegeo_hide",0},{"slat_right_2_normal_hide",0},{"slat_right_2_damage_unhide",0},{"slat_right_2_damage_hide",0},{"slat_right_2_destroyed_unhide",0},{"slat_right_2_firegeo_hide",0},{"slat_right_3_normal_hide",0},{"slat_right_3_damage_unhide",0},{"slat_right_3_damage_hide",0},{"slat_right_3_destroyed_unhide",0},{"slat_right_3_firegeo_hide",0}};
+			hide[] = {"clan","zasleh2","light_l","light_r","light_r2","light_l2","zadni svetlo","brzdove svetlo","podsvit pristroju","poskozeni"};
+			verticalOffset = 2.409;
+			verticalOffsetWorld = -0.148;
+			init = "[this, '', []] call bis_fnc_initVehicle";
+		};
+		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
+		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
+		textureList[] = {"Hex",1};
+		hiddenSelectionsTextures[] = 
+		{
+			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
+			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
+			"a3\data_f\vehicles\turret_opfor_co.paa",
+			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
+			"A3\armor_f\data\cage_csat_co.paa"
+		};
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+		side = 1;
+		faction = "MEU_UNSC";
+		editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc";
+	};
+	
+	class MEU_Leopard_Medical_APC: MEU_Leopard
+	{
+		author = "1st MEU Oneill";
+		displayname = "Leopard Medical APC";
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+		accuracy = 1000;
+		class TransportMagazines
+		{
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;	
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+		class SimpleObject
+		{
+			eden = 1;
+			animate[] = {{"damagehide",0},{"damagehidevez",0},{"damagehidehlaven",0},{"wheel_1_1_destruct",0},{"wheel_1_2_destruct",0},{"wheel_1_3_destruct",0},{"wheel_1_4_destruct",0},{"wheel_2_1_destruct",0},{"wheel_2_2_destruct",0},{"wheel_2_3_destruct",0},{"wheel_2_4_destruct",0},{"wheel_1_1_destruct_unhide",0},{"wheel_1_2_destruct_unhide",0},{"wheel_1_3_destruct_unhide",0},{"wheel_1_4_destruct_unhide",0},{"wheel_2_1_destruct_unhide",0},{"wheel_2_2_destruct_unhide",0},{"wheel_2_3_destruct_unhide",0},{"wheel_2_4_destruct_unhide",0},{"wheel_1_4_damage",0},{"wheel_2_4_damage",0},{"wheel_1_4_damper_damage_backanim",0},{"wheel_2_4_damper_damage_backanim",0},{"wheel_1_1",0},{"wheel_2_1",0},{"wheel_1_2",0},{"wheel_1_3",0},{"wheel_2_2",0},{"wheel_2_3",0},{"daylights",0},{"wheel_1_1_damage",0},{"wheel_1_2_damage",0},{"wheel_1_3_damage",0},{"wheel_2_1_damage",0},{"wheel_2_2_damage",0},{"wheel_2_3_damage",0},{"wheel_1_1_damper_damage_backanim",0},{"wheel_1_2_damper_damage_backanim",0},{"wheel_1_3_damper_damage_backanim",0},{"wheel_2_1_damper_damage_backanim",0},{"wheel_2_2_damper_damage_backanim",0},{"wheel_2_3_damper_damage_backanim",0},{"steering_1_1",0},{"steering_2_1",0},{"steering_1_2",0},{"steering_2_2",0},{"wheel_1_1_damper",0},{"wheel_2_1_damper",0},{"wheel_1_2_damper",0},{"wheel_1_3_damper",0},{"wheel_2_2_damper",0},{"wheel_2_3_damper",0},{"hatchdriver",0},{"hatchcommander",0},{"mainturret",0},{"maingun",0},{"obsturret",0},{"obsgun",0},{"damagehlaven",0},{"damagecamonet",0},{"vrtulea",0},{"vrtuleb",0},{"zasleh_rot",781},{"zasleh2_rot",3222.53},{"zasleh_hide",0},{"reverse_light",1},{"drivingwheel",0},{"indicatorvoltammeter",0},{"indicatortempoil",0},{"indicatortempwater",0},{"lights_driver",0},{"lights_driver_off",0},{"lights_turret",0},{"cannon_ready_light",0},{"engine_damage_fire_indicator",0},{"engine_damage_indicator",0},{"main_gun_damage_indicator",0},{"pedal_thrust",0},{"pedal_brake",0},{"turret_control_x",0},{"turret_control_y",0},{"mainturret_indicator",0},{"commander_mainturret_indicator",0},{"driver_reverse_cam",1},{"driver_hide_mfd",1},{"indicatorspeed_mfd_driver",0},{"indicatorrpm",0},{"indicatorrpm_mfd_driver",0},{"indicatortempwater_mfd_driver",0},{"indicatorfuel_mfd_driver",1},{"indicator_hull_direction_mfd_driver",0},{"indicator_main_turret_mfd_driver",0},{"indicator_hull_direction_mfd_gunner",0},{"indicator_main_turret_mfd_gunner",0},{"indicator_com_turret_mfd_gunner",0},{"indicator_com_turret_counter_mfd_gunner",0},{"indicator_com_smoke_1",1},{"indicator_com_smoke_2",1},{"indicator_damage_engine",0},{"indicator_damage_fuel",0},{"indicator_damage_track",0},{"indicator_turret_damage_hull",0},{"indicator_turret_damage_engine",0},{"indicator_turret_damage_fuel",0},{"indicator_turret_damage_main_gun",0},{"indicator_turret_damage_wheels",0},{"indicator_turret_damage_turret",0},{"indicator_turret_damage_com_turret",0},{"hide_mfd_and_pip_screen",1},{"hide_mfd_elements_for_com",1},{"slat_front_normal_hide",0},{"slat_front_damage_unhide",0},{"slat_front_damage_hide",0},{"slat_front_destroyed_unhide",0},{"slat_front_firegeo_hide",0},{"slat_back_normal_hide",0},{"slat_back_damage_unhide",0},{"slat_back_damage_hide",0},{"slat_back_destroyed_unhide",0},{"slat_back_firegeo_hide",0},{"slat_left_1_normal_hide",0},{"slat_left_1_damage_unhide",0},{"slat_left_1_damage_hide",0},{"slat_left_1_destroyed_unhide",0},{"slat_left_1_firegeo_hide",0},{"slat_left_2_normal_hide",0},{"slat_left_2_damage_unhide",0},{"slat_left_2_damage_hide",0},{"slat_left_2_destroyed_unhide",0},{"slat_left_2_firegeo_hide",0},{"slat_left_3_normal_hide",0},{"slat_left_3_damage_unhide",0},{"slat_left_3_damage_hide",0},{"slat_left_3_destroyed_unhide",0},{"slat_left_3_firegeo_hide",0},{"slat_right_1_normal_hide",0},{"slat_right_1_damage_unhide",0},{"slat_right_1_damage_hide",0},{"slat_right_1_destroyed_unhide",0},{"slat_right_1_firegeo_hide",0},{"slat_right_2_normal_hide",0},{"slat_right_2_damage_unhide",0},{"slat_right_2_damage_hide",0},{"slat_right_2_destroyed_unhide",0},{"slat_right_2_firegeo_hide",0},{"slat_right_3_normal_hide",0},{"slat_right_3_damage_unhide",0},{"slat_right_3_damage_hide",0},{"slat_right_3_destroyed_unhide",0},{"slat_right_3_firegeo_hide",0}};
+			hide[] = {"clan","zasleh2","light_l","light_r","light_r2","light_l2","zadni svetlo","brzdove svetlo","podsvit pristroju","poskozeni"};
+			verticalOffset = 2.409;
+			verticalOffsetWorld = -0.148;
+			init = "[this, '', []] call bis_fnc_initVehicle";
+		};
+		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
+		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
+		textureList[] = {"Hex",1};
+		hiddenSelectionsTextures[] = 
+		{
+			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
+			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
+			"a3\data_f\vehicles\turret_opfor_co.paa",
+			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
+			"A3\armor_f\data\cage_csat_co.paa"
+		};
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
+		side = 1;
+		faction = "MEU_UNSC";
+		editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_apc";
+	};
+	
+    class MEU_M12_AP : VES_M12_APC
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "M12 AP Warthog";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        ace_cargo_size = 10;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_car";
+    };
+    
     class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H
     {
 		crewCrashProtection = 0.0001;
@@ -1778,384 +2311,6 @@ class CfgVehicles
         };
     };
 	
-    class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
-    {
-		crewExplosionProtection = 0.5;
-		crewCrashProtection = 0.5;
-		ace_cargo_space = 8;
-		ace_cargo_hasCargo = 1;	
-		class TransportMagazines
-		{
-			delete _xx_30Rnd_65x39_caseless_mag;
-			delete _xx_100Rnd_65x39_caseless_mag;
-			delete _xx_HandGrenade;
-			delete _xx_MiniGrenade;
-			delete _xx_1Rnd_HE_Grenade_shell;
-			delete _xx_1Rnd_Smoke_Grenade_shell;
-			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
-			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
-			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
-			delete _xx_SmokeShell;
-			delete _xx_SmokeShellGreen;
-			delete _xx_SmokeShellOrange;
-			delete _xx_SmokeShellBlue;
-			delete _xx_NLAW_F;
-			delete _xx_Titan_AT;
-			delete _xx_Titan_AP;
-			delete _xx_Titan_AA;
-			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
-			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
-		};
-		class TransportWeapons
-		{
-			delete _xx_arifle_MX_F;
-		};
-		class TransportItems
-		{
-			delete _xx_FirstAidKit;
-			item_xx(ToolKit, 1);
-			item_xx(MEU_Biofoam_Light, 20);
-            item_xx(MEU_Medigel_Light, 20);
-            item_xx(ACE_plasmaIV_500, 10);
-            item_xx(ACE_epinephrine, 10);
-            item_xx(ACE_adenosine, 10);
-            item_xx(ACE_Banana, 5);
-            item_xx(ACE_splint, 10);
-            item_xx(MEU_compat_Ibuprofen, 20);			
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
-				magazines[] = 
-				{
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag"
-				};
-				gunnerGetInAction = "GetInAMV_cargo";
-				gunnerGetOutAction = "GetOutLow";
-				LODTurnedIn = 1100;
-			};
-		};		
-    };
-    class B_T_APC_Tracked_01_CRV_F: B_APC_Tracked_01_CRV_F
-    {
-		crewCrashProtection = 0.5;
-		crewExplosionProtection = 0.5;
-		ace_cargo_space = 8;
-		ace_cargo_hasCargo = 1;		
-		
-		class TransportMagazines
-		{
-			delete _xx_30Rnd_65x39_caseless_khaki_mag;
-			delete _xx_100Rnd_65x39_caseless_khaki_mag;
-			delete _xx_HandGrenade;
-			delete _xx_MiniGrenade;
-			delete _xx_1Rnd_HE_Grenade_shell;
-			delete _xx_1Rnd_Smoke_Grenade_shell;
-			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
-			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
-			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
-			delete _xx_SmokeShell;
-			delete _xx_SmokeShellGreen;
-			delete _xx_SmokeShellOrange;
-			delete _xx_SmokeShellBlue;
-			delete _xx_Titan_AT;
-			delete _xx_Titan_AP;
-			delete _xx_Titan_AA;
-			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
-			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
-		};
-		class TransportWeapons
-		{
-			delete _xx_arifle_MX_khk_F;
-			delete _xx_arifle_MX_SW_khk_F;
-			delete _xx_launch_NLAW_F;
-		};
-		class TransportItems
-		{
-			delete _xx_FirstAidKit;	
-			item_xx(ToolKit, 1);
-			item_xx(MEU_Biofoam_Light, 20);
-            item_xx(MEU_Medigel_Light, 20);
-            item_xx(ACE_plasmaIV_500, 10);
-            item_xx(ACE_epinephrine, 10);
-            item_xx(ACE_adenosine, 10);
-            item_xx(ACE_Banana, 5);
-            item_xx(ACE_splint, 10);
-            item_xx(MEU_compat_Ibuprofen, 20);
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
-				magazines[] = 
-				{
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag"
-				};
-				gunnerGetInAction = "GetInAMV_cargo";
-				gunnerGetOutAction = "GetOutLow";
-				LODTurnedIn = 1100;
-			};
-		};		
-    };
-	
-	class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
-    {
-        displayname = "Vulcan Repair APC";	
-		crewCrashProtection = 0.5;
-		crewExplosionProtection = 0.5;
-        ace_repair_canRepair = 1; 
-        scope = 2;
-		scopeCurator = 2;
-        scopeArsenal = 2;
-		accuracy = 1000;
-		faction = "MEU_UNSC";
-		side = 1;
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
-    };
-        
-    class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
-    {
-		crewCrashProtection = 0.5;
-		crewExplosionProtection = 0.5;
-        displayname = "Vulcan Repair APC (Jungle)";
-        ace_repair_canRepair = 1;
-        scope = 2;
-		scopeCurator = 2;
-        scopeArsenal = 2;
-		accuracy = 1000;
-		faction = "MEU_UNSC";
-		side = 1;
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
-    };
-	
-	class MEU_Leopard: APC_Wheeled_02_base_v2_F
-	{
-		tf_hasLRradio = 1;
-		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
-		crewCrashProtection = 0.5;
-		crewExplosionProtection = 0.5;
-		armor = 400;
-		armorStructural = 5;
-		armorLights = 0.1;
-		damageResistance = 0.008;
-		ace_cargo_space = 8;
-		ace_cargo_hasCargo = 1;		
-		class TransportMagazines
-		{
-			delete _xx_30Rnd_65x39_caseless_green;
-			delete _xx_150Rnd_762x54_Box;
-			delete _xx_HandGrenade;
-			delete _xx_MiniGrenade;
-			delete _xx_SmokeShell;
-			delete _xx_SmokeShellRed;
-			delete _xx_SmokeShellYellow;
-			delete _xx_SmokeShellOrange;
-			delete _xx_1Rnd_HE_Grenade_shell;
-			delete _xx_1Rnd_Smoke_Grenade_shell;
-			delete _xx_1Rnd_SmokeYellow_Grenade_shell;
-			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
-			delete _xx_1Rnd_SmokeRed_Grenade_shell;
-			delete _xx_RPG32_F;
-			delete _xx_RPG32_HE_F;
-			delete _xx_Titan_AT;
-			delete _xx_Titan_AA;
-			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 10);
-			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 10);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 10);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 10);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 10);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 10);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 2);
-		};
-		class TransportWeapons
-		{
-			delete _xx_arifle_Katiba_F;
-		};
-		class TransportItems
-		{
-			delete _xx_FirstAidKit;	
-			item_xx(MEU_Biofoam_Light, 10);
-            item_xx(MEU_Medigel_Light, 10);
-            item_xx(ACE_plasmaIV_500, 10);
-            item_xx(ACE_epinephrine, 4);
-            item_xx(ACE_adenosine, 4);
-            item_xx(ACE_Banana, 5);
-            item_xx(ACE_splint, 10);
-            item_xx(MEU_compat_Ibuprofen, 20);
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
-				magazines[] = 
-				{
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag"
-				};
-			};
-		};		
-    };
-	
-	class MEU_Leopard_APC: MEU_Leopard
-	{
-		author = "1st MEU Oneill";
-		displayname = "Leopard APC";
-        scope = 2;
-		scopeCurator = 2;
-        scopeArsenal = 2;
-		accuracy = 1000;
-		class SimpleObject
-		{
-			eden = 1;
-			animate[] = {{"damagehide",0},{"damagehidevez",0},{"damagehidehlaven",0},{"wheel_1_1_destruct",0},{"wheel_1_2_destruct",0},{"wheel_1_3_destruct",0},{"wheel_1_4_destruct",0},{"wheel_2_1_destruct",0},{"wheel_2_2_destruct",0},{"wheel_2_3_destruct",0},{"wheel_2_4_destruct",0},{"wheel_1_1_destruct_unhide",0},{"wheel_1_2_destruct_unhide",0},{"wheel_1_3_destruct_unhide",0},{"wheel_1_4_destruct_unhide",0},{"wheel_2_1_destruct_unhide",0},{"wheel_2_2_destruct_unhide",0},{"wheel_2_3_destruct_unhide",0},{"wheel_2_4_destruct_unhide",0},{"wheel_1_4_damage",0},{"wheel_2_4_damage",0},{"wheel_1_4_damper_damage_backanim",0},{"wheel_2_4_damper_damage_backanim",0},{"wheel_1_1",0},{"wheel_2_1",0},{"wheel_1_2",0},{"wheel_1_3",0},{"wheel_2_2",0},{"wheel_2_3",0},{"daylights",0},{"wheel_1_1_damage",0},{"wheel_1_2_damage",0},{"wheel_1_3_damage",0},{"wheel_2_1_damage",0},{"wheel_2_2_damage",0},{"wheel_2_3_damage",0},{"wheel_1_1_damper_damage_backanim",0},{"wheel_1_2_damper_damage_backanim",0},{"wheel_1_3_damper_damage_backanim",0},{"wheel_2_1_damper_damage_backanim",0},{"wheel_2_2_damper_damage_backanim",0},{"wheel_2_3_damper_damage_backanim",0},{"steering_1_1",0},{"steering_2_1",0},{"steering_1_2",0},{"steering_2_2",0},{"wheel_1_1_damper",0},{"wheel_2_1_damper",0},{"wheel_1_2_damper",0},{"wheel_1_3_damper",0},{"wheel_2_2_damper",0},{"wheel_2_3_damper",0},{"hatchdriver",0},{"hatchcommander",0},{"mainturret",0},{"maingun",0},{"obsturret",0},{"obsgun",0},{"damagehlaven",0},{"damagecamonet",0},{"vrtulea",0},{"vrtuleb",0},{"zasleh_rot",781},{"zasleh2_rot",3222.53},{"zasleh_hide",0},{"reverse_light",1},{"drivingwheel",0},{"indicatorvoltammeter",0},{"indicatortempoil",0},{"indicatortempwater",0},{"lights_driver",0},{"lights_driver_off",0},{"lights_turret",0},{"cannon_ready_light",0},{"engine_damage_fire_indicator",0},{"engine_damage_indicator",0},{"main_gun_damage_indicator",0},{"pedal_thrust",0},{"pedal_brake",0},{"turret_control_x",0},{"turret_control_y",0},{"mainturret_indicator",0},{"commander_mainturret_indicator",0},{"driver_reverse_cam",1},{"driver_hide_mfd",1},{"indicatorspeed_mfd_driver",0},{"indicatorrpm",0},{"indicatorrpm_mfd_driver",0},{"indicatortempwater_mfd_driver",0},{"indicatorfuel_mfd_driver",1},{"indicator_hull_direction_mfd_driver",0},{"indicator_main_turret_mfd_driver",0},{"indicator_hull_direction_mfd_gunner",0},{"indicator_main_turret_mfd_gunner",0},{"indicator_com_turret_mfd_gunner",0},{"indicator_com_turret_counter_mfd_gunner",0},{"indicator_com_smoke_1",1},{"indicator_com_smoke_2",1},{"indicator_damage_engine",0},{"indicator_damage_fuel",0},{"indicator_damage_track",0},{"indicator_turret_damage_hull",0},{"indicator_turret_damage_engine",0},{"indicator_turret_damage_fuel",0},{"indicator_turret_damage_main_gun",0},{"indicator_turret_damage_wheels",0},{"indicator_turret_damage_turret",0},{"indicator_turret_damage_com_turret",0},{"hide_mfd_and_pip_screen",1},{"hide_mfd_elements_for_com",1},{"slat_front_normal_hide",0},{"slat_front_damage_unhide",0},{"slat_front_damage_hide",0},{"slat_front_destroyed_unhide",0},{"slat_front_firegeo_hide",0},{"slat_back_normal_hide",0},{"slat_back_damage_unhide",0},{"slat_back_damage_hide",0},{"slat_back_destroyed_unhide",0},{"slat_back_firegeo_hide",0},{"slat_left_1_normal_hide",0},{"slat_left_1_damage_unhide",0},{"slat_left_1_damage_hide",0},{"slat_left_1_destroyed_unhide",0},{"slat_left_1_firegeo_hide",0},{"slat_left_2_normal_hide",0},{"slat_left_2_damage_unhide",0},{"slat_left_2_damage_hide",0},{"slat_left_2_destroyed_unhide",0},{"slat_left_2_firegeo_hide",0},{"slat_left_3_normal_hide",0},{"slat_left_3_damage_unhide",0},{"slat_left_3_damage_hide",0},{"slat_left_3_destroyed_unhide",0},{"slat_left_3_firegeo_hide",0},{"slat_right_1_normal_hide",0},{"slat_right_1_damage_unhide",0},{"slat_right_1_damage_hide",0},{"slat_right_1_destroyed_unhide",0},{"slat_right_1_firegeo_hide",0},{"slat_right_2_normal_hide",0},{"slat_right_2_damage_unhide",0},{"slat_right_2_damage_hide",0},{"slat_right_2_destroyed_unhide",0},{"slat_right_2_firegeo_hide",0},{"slat_right_3_normal_hide",0},{"slat_right_3_damage_unhide",0},{"slat_right_3_damage_hide",0},{"slat_right_3_destroyed_unhide",0},{"slat_right_3_firegeo_hide",0}};
-			hide[] = {"clan","zasleh2","light_l","light_r","light_r2","light_l2","zadni svetlo","brzdove svetlo","podsvit pristroju","poskozeni"};
-			verticalOffset = 2.409;
-			verticalOffsetWorld = -0.148;
-			init = "[this, '', []] call bis_fnc_initVehicle";
-		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
-		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
-		textureList[] = {"Hex",1};
-		hiddenSelectionsTextures[] = 
-		{
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
-			"a3\data_f\vehicles\turret_opfor_co.paa",
-			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
-			"A3\armor_f\data\cage_csat_co.paa"
-		};
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-		side = 1;
-		faction = "MEU_UNSC";
-		editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
-	};
-	
-	class MEU_Leopard_Medical_APC: MEU_Leopard
-	{
-		author = "1st MEU Oneill";
-		displayname = "Leopard Medical APC";
-        scope = 2;
-		scopeCurator = 2;
-        scopeArsenal = 2;
-		accuracy = 1000;
-		class TransportItems
-		{
-			delete _xx_FirstAidKit;	
-			item_xx(MEU_Biofoam_Light, 40);
-            item_xx(MEU_Medigel_Light, 40);
-            item_xx(MEU_PlasmaIV, 20);
-            item_xx(ACE_epinephrine, 40);
-            item_xx(ACE_adenosine, 40);
-            item_xx(ACE_Banana, 10);
-            item_xx(ACE_splint, 20);
-            item_xx(MEU_compat_Ibuprofen, 40);
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
-				magazines[] = 
-				{
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"40Rnd_HEDP_Belt",
-					"OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"SmokeLauncherMag",
-					"SmokeLauncherMag"
-				};
-			};
-		};
-		class SimpleObject
-		{
-			eden = 1;
-			animate[] = {{"damagehide",0},{"damagehidevez",0},{"damagehidehlaven",0},{"wheel_1_1_destruct",0},{"wheel_1_2_destruct",0},{"wheel_1_3_destruct",0},{"wheel_1_4_destruct",0},{"wheel_2_1_destruct",0},{"wheel_2_2_destruct",0},{"wheel_2_3_destruct",0},{"wheel_2_4_destruct",0},{"wheel_1_1_destruct_unhide",0},{"wheel_1_2_destruct_unhide",0},{"wheel_1_3_destruct_unhide",0},{"wheel_1_4_destruct_unhide",0},{"wheel_2_1_destruct_unhide",0},{"wheel_2_2_destruct_unhide",0},{"wheel_2_3_destruct_unhide",0},{"wheel_2_4_destruct_unhide",0},{"wheel_1_4_damage",0},{"wheel_2_4_damage",0},{"wheel_1_4_damper_damage_backanim",0},{"wheel_2_4_damper_damage_backanim",0},{"wheel_1_1",0},{"wheel_2_1",0},{"wheel_1_2",0},{"wheel_1_3",0},{"wheel_2_2",0},{"wheel_2_3",0},{"daylights",0},{"wheel_1_1_damage",0},{"wheel_1_2_damage",0},{"wheel_1_3_damage",0},{"wheel_2_1_damage",0},{"wheel_2_2_damage",0},{"wheel_2_3_damage",0},{"wheel_1_1_damper_damage_backanim",0},{"wheel_1_2_damper_damage_backanim",0},{"wheel_1_3_damper_damage_backanim",0},{"wheel_2_1_damper_damage_backanim",0},{"wheel_2_2_damper_damage_backanim",0},{"wheel_2_3_damper_damage_backanim",0},{"steering_1_1",0},{"steering_2_1",0},{"steering_1_2",0},{"steering_2_2",0},{"wheel_1_1_damper",0},{"wheel_2_1_damper",0},{"wheel_1_2_damper",0},{"wheel_1_3_damper",0},{"wheel_2_2_damper",0},{"wheel_2_3_damper",0},{"hatchdriver",0},{"hatchcommander",0},{"mainturret",0},{"maingun",0},{"obsturret",0},{"obsgun",0},{"damagehlaven",0},{"damagecamonet",0},{"vrtulea",0},{"vrtuleb",0},{"zasleh_rot",781},{"zasleh2_rot",3222.53},{"zasleh_hide",0},{"reverse_light",1},{"drivingwheel",0},{"indicatorvoltammeter",0},{"indicatortempoil",0},{"indicatortempwater",0},{"lights_driver",0},{"lights_driver_off",0},{"lights_turret",0},{"cannon_ready_light",0},{"engine_damage_fire_indicator",0},{"engine_damage_indicator",0},{"main_gun_damage_indicator",0},{"pedal_thrust",0},{"pedal_brake",0},{"turret_control_x",0},{"turret_control_y",0},{"mainturret_indicator",0},{"commander_mainturret_indicator",0},{"driver_reverse_cam",1},{"driver_hide_mfd",1},{"indicatorspeed_mfd_driver",0},{"indicatorrpm",0},{"indicatorrpm_mfd_driver",0},{"indicatortempwater_mfd_driver",0},{"indicatorfuel_mfd_driver",1},{"indicator_hull_direction_mfd_driver",0},{"indicator_main_turret_mfd_driver",0},{"indicator_hull_direction_mfd_gunner",0},{"indicator_main_turret_mfd_gunner",0},{"indicator_com_turret_mfd_gunner",0},{"indicator_com_turret_counter_mfd_gunner",0},{"indicator_com_smoke_1",1},{"indicator_com_smoke_2",1},{"indicator_damage_engine",0},{"indicator_damage_fuel",0},{"indicator_damage_track",0},{"indicator_turret_damage_hull",0},{"indicator_turret_damage_engine",0},{"indicator_turret_damage_fuel",0},{"indicator_turret_damage_main_gun",0},{"indicator_turret_damage_wheels",0},{"indicator_turret_damage_turret",0},{"indicator_turret_damage_com_turret",0},{"hide_mfd_and_pip_screen",1},{"hide_mfd_elements_for_com",1},{"slat_front_normal_hide",0},{"slat_front_damage_unhide",0},{"slat_front_damage_hide",0},{"slat_front_destroyed_unhide",0},{"slat_front_firegeo_hide",0},{"slat_back_normal_hide",0},{"slat_back_damage_unhide",0},{"slat_back_damage_hide",0},{"slat_back_destroyed_unhide",0},{"slat_back_firegeo_hide",0},{"slat_left_1_normal_hide",0},{"slat_left_1_damage_unhide",0},{"slat_left_1_damage_hide",0},{"slat_left_1_destroyed_unhide",0},{"slat_left_1_firegeo_hide",0},{"slat_left_2_normal_hide",0},{"slat_left_2_damage_unhide",0},{"slat_left_2_damage_hide",0},{"slat_left_2_destroyed_unhide",0},{"slat_left_2_firegeo_hide",0},{"slat_left_3_normal_hide",0},{"slat_left_3_damage_unhide",0},{"slat_left_3_damage_hide",0},{"slat_left_3_destroyed_unhide",0},{"slat_left_3_firegeo_hide",0},{"slat_right_1_normal_hide",0},{"slat_right_1_damage_unhide",0},{"slat_right_1_damage_hide",0},{"slat_right_1_destroyed_unhide",0},{"slat_right_1_firegeo_hide",0},{"slat_right_2_normal_hide",0},{"slat_right_2_damage_unhide",0},{"slat_right_2_damage_hide",0},{"slat_right_2_destroyed_unhide",0},{"slat_right_2_firegeo_hide",0},{"slat_right_3_normal_hide",0},{"slat_right_3_damage_unhide",0},{"slat_right_3_damage_hide",0},{"slat_right_3_destroyed_unhide",0},{"slat_right_3_firegeo_hide",0}};
-			hide[] = {"clan","zasleh2","light_l","light_r","light_r2","light_l2","zadni svetlo","brzdove svetlo","podsvit pristroju","poskozeni"};
-			verticalOffset = 2.409;
-			verticalOffsetWorld = -0.148;
-			init = "[this, '', []] call bis_fnc_initVehicle";
-		};
-		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
-		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
-		textureList[] = {"Hex",1};
-		hiddenSelectionsTextures[] = 
-		{
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
-			"a3\data_f\vehicles\turret_opfor_co.paa",
-			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
-			"A3\armor_f\data\cage_csat_co.paa"
-		};
-		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-		side = 1;
-		faction = "MEU_UNSC";
-		editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
-	};
-
     class OPTRE_HEV: StaticMGWeapon
 	{
         faction = "MEU_UNSC";
