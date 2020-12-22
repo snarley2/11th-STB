@@ -10850,6 +10850,14 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_color_green_custom_FloodedMac.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
+    class Praetor_Helmet_Bjorn_dp : 1stMEU_Base_CH252D_Helmet_dp
+	{
+        scope = 1;
+        scopeArsenal = 1;
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\ODST_H3_32_custom_bjorn.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+	};
     class Praetor_Helmet_Black_31_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
