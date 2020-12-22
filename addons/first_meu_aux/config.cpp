@@ -32,6 +32,8 @@ class cfgPatches
 			"MEU_Leopard_APC",
 			"MEU_Leopard_Medical_APC",
 			"MEU_SCORPION",
+			"M910_Point_Defense_Cannon_Active",
+			"M910_Point_Defense_Cannon_Active_Inverted",
             "OPTRE_AV22_Sparrowhawk_Base",
             "VES_AV22_Sparrowhawk_Base_F",
             "OPTRE_UNSC_falcon",

@@ -65,7 +65,14 @@ class CfgVehicles
     class Man;
     class House;
     class B_T_VTOL_01_armed_F;
+	class B_Ship_Gun_01_base_F;
 	class APC_Wheeled_02_base_v2_F;
+	class Components;
+	class SensorTemplateIR;
+	class SensorTemplateDataLink;
+	class ViewOptics;
+	class DataLinkSensorComponent;
+	class StaticWeapon;
 
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
@@ -765,7 +772,234 @@ class CfgVehicles
         editorCategory = "MEU_cat_gnd";
         editorsubCategory = "MEU_sub_car";
     };
-    
+// Ground Vehicles End	
+
+// Turrets Start
+	class M910_Point_Defense_Cannon: StaticWeapon
+	{
+		author = "1st MEU Oneill";
+		scope = 0;
+		scopeCurator = 0;
+		vehicleClass = "OPTRE_UNSC_corvette_class";
+		icon = "iconCrateWpns";
+		displayName = "M910_Point_Defense_Cannon";
+		DLC = "Optre";
+		threat[] = {1.0,1.0,0.1};
+		cost = 2500000;
+		accuracy = 0.12;
+		picture = "";
+		uiPicture = "";
+		unitInfoType = "RscUnitInfoMortar";
+		model = "\OPTRE_Corvette\weapons\pointdefense\turret.p3d";
+		availableForSupportTypes[] = {"Artillery"};
+		extCameraPosition[] = {0,3.5,-9.5};
+		canFloat = 0;
+		enableGPS = 1;
+		artilleryScanner = 1;
+		radartype = 2;
+		radarTarget = 1;
+		radarTargetSize = 1.5;
+		visualTarget = 1;
+		visualTargetSize = 2;
+		irTargetSize = 1;
+		reportRemoteTargets = 0;
+		receiveRemoteTargets = 1;
+		reportOwnPosition = 0;
+		lockDetectionSystem = 0;
+		incomingMissileDetectionSystem = 16;
+		gunBeg[] = {"z_gunL_chamber","z_gunR_chamber"};
+		gunEnd[] = {"z_gunL_muzzle","z_gunR_muzzle"};
+		uavCameraGunnerPos = "pos_gunner_view";
+		uavCameraGunnerDir = "pos_gunner_view_dir";
+		typicalCargo[] = {"B_UAV_AI"};
+		class AttributeValues
+		{
+			RadarUsageAI = 1;
+		};
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange = 500;
+							maxRange = 4000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 500;
+							maxRange = 3500;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						typeRecognitionDistance = 3500;
+						maxTrackableSpeed = 600;
+						angleRangeHorizontal = 60;
+						angleRangeVertical = 40;
+						animDirection = "mainGun";
+						aimDown = -0.5;
+					};
+					class DataLinkSensorComponent: SensorTemplateDataLink
+					{
+						class AirTarget
+						{
+							minRange = 32000;
+							maxRange = 32000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 32000;
+							maxRange = 32000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+					};
+				};
+			};
+		};
+		animated = 1;
+		class AnimationSources
+		{
+			class muzzle_rot_cannon
+			{
+				source = "ammorandom";
+				weapon = "OPTRE_M9109_Turret";
+			};
+			class muzzle_hide_cannon
+			{
+				source = "reload";
+				weapon = "OPTRE_M9109_Turret";
+			};
+		};
+		armor = 400;
+		armorStructural = 4;
+		damageResistance = 0.004;
+		damageEffect = "AirDestructionEffects";
+		explosionEffect = "FuelExplosionBig";
+		fuelExplosionPower = 1;
+		hullDamageCauseExplosion = 1;
+		secondaryExplosion = -1;
+		class Damage
+		{
+			tex[] = {};
+			mat[] = {"A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_damage.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_destruct.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\ship_gun_01_optic.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_damage.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_destruct.rvmat"};
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				body = "mainturret";
+				gun = "maingun";
+				animationsourcebody = "MainTurret";
+				animationSourceGun = "MainGun";
+				memoryPointGun[] = {"z_gunL_chamber","z_gunR_chamber"};
+				gunAxis = "gun_axis";
+				turretAxis = "turret_axis";
+				minElev = -12;
+				maxElev = 120;
+				minTurn = -360;
+				maxTurn = 360;
+				initTurn = 0;
+				maxHorizontalRotSpeed = 3;
+				maxVerticalRotSpeed = 3;
+				gunnerAction = "driver_boat01";
+				gunnerInAction = "driver_boat01";
+				gunnerGetInAction = "GetInMRAP_01";
+				gunnerGetOutAction = "GetOutMRAP_01";
+				gunnerName = "Gunner";
+				outGunnerMayFire = 1;
+				inGunnerMayFire = 1;
+				commanding = 1;
+				primaryGunner = 1;
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\noises\servo_best","db-40",1.0,50};
+				uavCameraGunnerPos = "pos_gunner_view_arty";
+				uavCameraGunnerDir = "pos_gunner_view_arty_dir";
+				memoryPointGunnerOptics = "pos_gunner_view_arty";
+				cameraDir = "pos_gunner_view_arty_dir";
+				memoryPointsGetInGunner = "Pos Gunner";
+				memoryPointsGetInGunnerDir = "Pos Gunner dir";
+				gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+				gunnerOpticsShowCursor = 1;
+				unitInfoType = "RscUnitInfoMortar";
+				visionMode[] = {"Normal","NVG","Ti"};
+				thermalMode[] = {1,2,3,4,5};
+				castGunnerShadow = 1;
+				startEngine = 0;
+				enableManualFire = 0;
+				gunnerForceOptics = 1;
+				gunnerForceOutOptics = 1;
+				hideWeaponsGunner = 1;
+				class ViewGunner: ViewOptics
+				{
+					initFov = 0.7;
+					minFov = 0.01;
+					maxFov = 1;
+				};
+				weapons[] = {"weapon_ShipCannon_120mm"};
+				magazines[] = {"magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_guided_shells_x2","magazine_ShipCannon_120mm_HE_LG_shells_x2","magazine_ShipCannon_120mm_HE_cluster_shells_x2","magazine_ShipCannon_120mm_mine_shells_x6","magazine_ShipCannon_120mm_smoke_shells_x6","magazine_ShipCannon_120mm_AT_mine_shells_x6"};
+			};
+		};
+	};
+	
+	class M910_Point_Defense_Cannon_Active: M910_Point_Defense_Cannon
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "M910 Point Defense Cannon";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+        faction = "MEU_UNSC";
+		side = 1;
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_trt";
+	};
+	
+	class M910_Point_Defense_Cannon_Active_Inverted: M910_Point_Defense_Cannon
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "M910 Point Defense Cannon (inverted)";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 30000;
+		model = "\OPTRE_Corvette\weapons\pointdefense\turret_u.p3d";
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				minElev = -120;
+				maxElev = 12;
+				minTurn = -360;
+				maxTurn = 360;
+				initTurn = 0;
+				class ViewGunner: ViewOptics
+				{
+					initFov = 0.7;
+					minFov = 0.01;
+					maxFov = 1;
+				};
+			};
+		};
+        faction = "MEU_UNSC";
+		side = 1;
+        editorCategory = "MEU_cat_gnd";
+        editorsubCategory = "MEU_sub_trt";
+	};
+	
+// Turrets End
+
+// Air Vehicles Start    
     class OPTRE_AV22_Sparrowhawk_Base: Helicopter_Base_H
     {
 		crewCrashProtection = 0.0001;
@@ -2588,8 +2822,7 @@ class CfgVehicles
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
     };
-    class DataLinkSensorComponent;
-    class SensorTemplateDataLink;
+    
 	class uplinkpack : MEU_Prae_Ruck_Base_Heavy
     {
         author = "1st MEU Mark";
