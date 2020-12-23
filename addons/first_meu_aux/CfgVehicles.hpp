@@ -73,7 +73,6 @@ class CfgVehicles
 	class ViewOptics;
 	class DataLinkSensorComponent;
 	class StaticWeapon;
-    class APC_Wheeled_02_base_v2_F;
     class O_T_VTOL_02_infantry_dynamicLoadout_F;
     class GunnerTurret;
     class CargoTurret_01;

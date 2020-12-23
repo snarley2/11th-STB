@@ -266,6 +266,7 @@ class CfgAmmo
 	{
 		caliber = 26;
 		hit = 500;
+		typicalSpeed = 2000;
 	};
 	
 	class 90mm_SAPHE: Sh_105mm_HEAT_MP
@@ -275,6 +276,7 @@ class CfgAmmo
 		indirectHitRange = 10;
 		caliber = 9;
 		explosive = 1.0;
+		typicalSpeed = 2000;
 	};
 	
 	class 90mm_HEAT: Sh_105mm_HEAT_MP
@@ -284,5 +286,6 @@ class CfgAmmo
 		indirectHitRange = 2;
 		caliber = 12;
 		explosive = 0.75;
+		typicalSpeed = 2000;
 	};
 };

@@ -1165,7 +1165,7 @@ class CfgMagazines
 		tracersevery = 1;
 	};
 	
-	class 30Rnd_90mm_HEAT: 60Rnd_90mm_SAPHE
+	class 30Rnd_90mm_HEAT: 30Rnd_90mm_SAPHE
 	{
 		ammo = "90mm_HEAT";
 		count = 30;
@@ -1173,7 +1173,7 @@ class CfgMagazines
 		displaynameshort = "HEAT";
 	};
 	
-	class 60Rnd_90mm_APBC: 60Rnd_90mm_SAPHE
+	class 60Rnd_90mm_APBC: 30Rnd_90mm_SAPHE
 	{
 		ammo = "90mm_APBC";
 		count = 60;
