@@ -74,6 +74,7 @@ class CfgWeapons
 	class MGun;
 	class GMG_F;
 	class cannon_120mm;
+    class OPTRE_FC_VX19_Helmet;
 	
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
@@ -11444,6 +11445,32 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 	
 // Praetorian Helmet End
 // pilot helmet Start
+
+    class VX19_1stMEU : OPTRE_FC_VX19_Helmet
+	{
+                scope = 2;
+                author = "1st MEU Chaotic";
+                scopeCurator = 2;
+                scopeArsenal = 2;
+                weaponPoolAvailable = 1;
+		displayName = "[1stMEU] Pegasus VX-19";
+		optreVarietys[] = {"", "_broken"};
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\first_meu_aux\data\pegasus\h3_pilothelmet_BK.paa",
+			"\first_meu_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"
+		};
+                class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo","camo2"};
+			hiddenSelectionsTextures[] = {"\first_meu_aux\data\pegasus\h3_pilothelmet_BK.paa","\first_meu_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"};
+		};
+	};
     class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_base
     {
 		scope = 2;

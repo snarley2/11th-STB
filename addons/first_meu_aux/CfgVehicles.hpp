@@ -1114,8 +1114,8 @@ class CfgVehicles
         tf_range=30000;
         faction = "MEU_UNSC";
 		side = 1;
-		magazines[] = {"PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
-		weapons[] = {"weapon_AMRAAMLauncher","rockets_Skyfire","Laserdesignator_mounted"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
+		weapons[] = {"CMFlareLauncher","weapon_AMRAAMLauncher","rockets_Skyfire","Laserdesignator_mounted"};
 		class Turrets: Turrets
 		{
 			class GunnerTurret: GunnerTurret
@@ -2128,6 +2128,7 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_air";
+        transportSoldier = 16;
         editorsubCategory = "MEU_sub_rot";
         tf_range=30000;
          class pilotCamera
