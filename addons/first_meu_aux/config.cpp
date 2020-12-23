@@ -31,17 +31,11 @@ class cfgPatches
             "MEU_IFV",
             "MEU_IFV_A",
             "MEU_M12_AP",
-<<<<<<< HEAD
 			"MEU_Leopard_APC",
 			"MEU_Leopard_Medical_APC",
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
-=======
-	    "MEU_Leopard_APC",
-	    "MEU_Leopard_Medical_APC",
-	    "MEU_SCORPION",
->>>>>>> master
             "OPTRE_AV22_Sparrowhawk_Base",
             "VES_AV22_Sparrowhawk_Base_F",
             "OPTRE_UNSC_falcon",
