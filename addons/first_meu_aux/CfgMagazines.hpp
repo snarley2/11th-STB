@@ -1153,10 +1153,10 @@ class CfgMagazines
 		muzzleImpulseFactor[] = {1.0,6};
 	};
 	
-	class 60Rnd_90mm_SAPHE: 40Rnd_105mm_APFSDS_T_Green
+	class 30Rnd_90mm_SAPHE: 40Rnd_105mm_APFSDS_T_Green
 	{
 		ammo = "90mm_SAPHE";
-		count = 60;
+		count = 30;
 		displayname = "90mm SAPHE";
 		displaynameshort = "SAPHE";
 		initspeed = 2000;
@@ -1165,9 +1165,10 @@ class CfgMagazines
 		tracersevery = 1;
 	};
 	
-	class 60Rnd_90mm_HEAT: 60Rnd_90mm_SAPHE
+	class 30Rnd_90mm_HEAT: 60Rnd_90mm_SAPHE
 	{
 		ammo = "90mm_HEAT";
+		count = 30;
 		displayname = "90mm HEAT";
 		displaynameshort = "HEAT";
 	};
@@ -1175,6 +1176,7 @@ class CfgMagazines
 	class 60Rnd_90mm_APBC: 60Rnd_90mm_SAPHE
 	{
 		ammo = "90mm_APBC";
+		count = 60;
 		displayname = "90mm APBC";
 		displaynameshort = "APBC";
 	};

@@ -192,8 +192,8 @@ class CfgVehicles
 				weapons[] = {"M512_90mm","M247_APC","SmokeLauncher"};
 				magazines[] = 
 				{
-					"60Rnd_90mm_SAPHE",
-					"60Rnd_90mm_HEAT",
+					"30Rnd_90mm_SAPHE",
+					"30Rnd_90mm_HEAT",
 					"60Rnd_90mm_APBC",
 					"OPTRE_400Rnd_762x51_Box_AP",
 					"OPTRE_400Rnd_762x51_Box_AP",
@@ -438,9 +438,9 @@ class CfgVehicles
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
-				gunnerGetInAction = "GetInAMV_cargo";
-				gunnerGetOutAction = "GetOutLow";
-				LODTurnedIn = 1100;
+				//gunnerGetInAction = "GetInAMV_cargo";
+				//gunnerGetOutAction = "GetOutLow";
+				//LODTurnedIn = 1100;
 			};
 		};		
     };
@@ -517,9 +517,6 @@ class CfgVehicles
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
-				gunnerGetInAction = "GetInAMV_cargo";
-				gunnerGetOutAction = "GetOutLow";
-				LODTurnedIn = 1100;
 			};
 		};		
     };
