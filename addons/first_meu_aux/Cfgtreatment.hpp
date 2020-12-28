@@ -40,10 +40,17 @@ class ACE_Medical_Treatment
             incompatibleMedication[] = {};
             viscosityChange = -1000;
         };
+		class MEU_Emergency_MedKit : MEU_compat_Ibuprofen
+		{
+		};
     };
     class IV 
     {
         class MEU_PlasmaIV : PlasmaIV
+        {
+            volume = 2500;
+        };
+		class MEU_Emergency_MedKit : PlasmaIV
         {
             volume = 2500;
         };
@@ -521,6 +528,129 @@ class ACE_Medical_Treatment
             };
             class punctureWoundLarge: punctureWound {
                 effectiveness = 0.5;
+            };
+        };
+		class MEU_Emergency_MedKit: OPTRE_Biofoam
+         {
+            class Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+            class AbrasionMinor: Abrasion {};
+            class AbrasionMedium: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+            };
+            class AbrasionLarge: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+            };
+
+            class Avulsions: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 300;
+                reopeningMaxDelay = 600;
+            };
+            class AvulsionsMinor: Avulsions {
+                effectiveness = 20;
+            };
+            class AvulsionsMedium: Avulsions {
+                effectiveness = 20;
+            };
+            class AvulsionsLarge: Avulsions {
+                effectiveness = 20;
+                reopeningChance = 1;
+            };
+
+            class Contusion: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 0;
+                reopeningMaxDelay = 0;
+            };
+            class ContusionMinor: Contusion {};
+            class ContusionMedium: Contusion {};
+            class ContusionLarge: Contusion {
+                effectiveness = 20;
+            };
+
+            class Crush: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 0;
+                reopeningMaxDelay = 0;
+            };
+            class CrushMinor: Crush {
+                reopeningChance = 1;
+            };
+            class CrushMedium: Crush {
+                effectiveness = 20;
+            };
+            class CrushLarge: Crush {
+                effectiveness = 20;
+                reopeningChance = 1;
+            };
+
+            class Cut: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 300;
+                reopeningMaxDelay = 600;
+            };
+            class CutMinor: Cut {};
+            class CutMedium: Cut {
+                effectiveness = 20;
+                reopeningChance = 1;
+            };
+            class CutLarge: Cut {
+                effectiveness = 20;
+                reopeningChance = 1;
+            };
+
+            class Laceration: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 300;
+                reopeningMaxDelay = 900;
+            };
+            class LacerationMinor: Laceration {};
+            class LacerationMedium: Laceration {
+                effectiveness = 20;
+            };
+            class LacerationLarge: Laceration {
+                effectiveness = 20;
+                reopeningChance = 1;
+            };
+
+            class velocityWound: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 120;
+                reopeningMaxDelay = 180;
+            };
+            class velocityWoundMinor: velocityWound {};
+            class velocityWoundMedium: velocityWound {
+                effectiveness = 20;
+            };
+            class velocityWoundLarge: velocityWound {
+                effectiveness = 20;
+            };
+
+            class punctureWound: Abrasion {
+                effectiveness = 20;
+                reopeningChance = 1;
+                reopeningMinDelay = 120;
+                reopeningMaxDelay = 180;
+            };
+            class punctureWoundMinor: punctureWound {};
+            class punctureWoundMedium: punctureWound {
+                effectiveness = 20;
+            };
+            class punctureWoundLarge: punctureWound {
+                effectiveness = 20;
             };
         };
     };

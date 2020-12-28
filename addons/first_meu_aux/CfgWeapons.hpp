@@ -102,6 +102,16 @@ class CfgWeapons
 			mass = 16;
         };
     };
+	class MEU_Emergency_MedKit: OPTRE_Biofoam
+	{
+		scope = 2;
+		author = "Rave";
+		displayName = "[1st MEU] Emergency Medkit";
+		class ItemInfo: CBA_MiscItem_ItemInfo
+		{
+			mass = 32;
+		};
+	};
     class MEU_Biofoam: OPTRE_Biofoam
     {
         scope = 2;

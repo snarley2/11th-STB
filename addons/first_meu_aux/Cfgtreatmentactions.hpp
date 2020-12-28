@@ -100,4 +100,18 @@ class ACE_Medical_Treatment_Actions
         consumeItem = 0;
         category = "bandage";
     };
+	class MEU_Emergency_MedKit: OPTRE_Medigel
+	{
+		displayName = "Emergency MedKit";
+		displayNameProgress = "Hope this works";
+		icon = "";
+		consumeItem = 1;
+        treatmentTime = 10;
+		medicRequired = 0;
+		allowSelfTreatment = 0;
+		category = "advanced";
+		items[] = {"MEU_Emergency_MedKit"};
+		callbackStart = "ace_medical_treatment_fnc_ivBag";
+		callbackSuccess = "MEU_fnc_medkit";
+	};
 };
