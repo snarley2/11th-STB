@@ -13341,6 +13341,17 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_41PI","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
 	};
+    class Praetorian_Helmet_41SL_Silent: 1stMEU_Base_CH252D_Helmet
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] 4-1 CH252D Helmet (Silent)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_41PI_custom_silent","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+	};
     class Praetorian_Helmet_42: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
@@ -13737,15 +13748,15 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     };
     
 // Triarii Depolarised
-    class Prae_46_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_46_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_purple_romeo.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Prae_4M_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_4M_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -13753,89 +13764,97 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_purple_rave.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Prae_4R_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_4R_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_purple_kenobi.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Prae_41_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_41_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_41PI.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Prae_41B_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_41TL_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_blue_41PI","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-     class Prae_41Y_dp : 1stMEU_Base_CH252D_Helmet_dp
+     class Praetorian_Helmet_41SL_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_41PI","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Prae_42_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_41SL_Silent_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_41PI_custom_silent","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+    };
+    class Praetorian_Helmet_42_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_42PI.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Triarii_42B_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_42TL_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_blue_42PI","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-     class Prae_42Y_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_42SL_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_42PI","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Prae_43_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_43_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_43PI.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    class Prae_43B_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetorian_Helmet_43TL_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 1;
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_blue_43PI","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-     class Prae_43Y_dp : 1stMEU_Base_CH252D_Helmet_dp
+     class Praetorian_Helmet_43SL_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 14
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_43PI","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-     class Prae_43Y_Mutt_dp : 1stMEU_Base_CH252D_Helmet_dp
+     class Praetorian_Helmet_43SL_Mutt_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
-        scope = 14
+        scope = 2;
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
