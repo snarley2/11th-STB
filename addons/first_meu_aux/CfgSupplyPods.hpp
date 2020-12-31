@@ -3,20 +3,6 @@ class OPTRE_Ammo_SupplyPod_Empty;
 class OPTRE_Ammo_SupplyPod_Launcher;
 class Module_F;
 
-////////////Base Pods
-//Guided SPNKr
-class OPTRE_Ammo_SupplyPod_Launcher_Guided: OPTRE_Ammo_SupplyPod_Empty
-{
-	displayName	= "[UNSC] Supply Pod (M41-G)";
-	class TransportMagazines
-	{		
-		mag_xx(OPTRE_M41_Twin_HEAT_G, 12);
-	};
-	class TransportWeapons
-	{
-		weap_xx(OPTRE_M41_SSR_G, 1);
-	};
-};
 //Ace medical 
 class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 {
@@ -206,139 +192,78 @@ class OPTRE_SupplyPod_VehicleRefuel: OPTRE_Ammo_SupplyPod_Empty
 };
 ///////// mark starts memeing here
 //AR for everyone
-class OPTRE_Ammo_SupplyPod_MA5BXAR: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_SupplyPod_ARBRGL: OPTRE_Ammo_SupplyPod_Empty
 {
-	displayName = "[UNSC] Supply Pod (MA5BX AR)";
-	class TransportMagazines
-	{			
-		mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 60);
-	};
-	class TransportWeapons
-	{
-		weap_xx(OPTRE_MA5B, 4);
-	};
-	class TransportItems
-	{
-		
-	};
-};
-//GL of the AR
-class OPTRE_Ammo_SupplyPod_MA5BXARGL: OPTRE_Ammo_SupplyPod_Empty
-{
-	displayName = "[UNSC] Supply Pod (MA5BX GL)";
+	displayName = "[UNSC] Supply Pod (Assault/Battle Rifles w/Grenadier)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 54);
+        mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 100);
 		mag_xx(1Rnd_HE_MEU_shell, 30);
 		mag_xx(3Rnd_HE_MEU_shell, 10);
 		mag_xx(1Rnd_HEDP_MEU_shell, 10);
+        mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 135);
 	};
 	class TransportWeapons
 	{
 		weap_xx(OPTRE_MA5BGL, 2);
+        weap_xx(OPTRE_BR55, 2);
 	};
 	class TransportItems
 	{
-		
+        item_xx(optre_br55hb_scope_v2, 2);
 	};
 };
-//saw basically
-class OPTRE_Ammo_SupplyPod_M73X: OPTRE_Ammo_SupplyPod_Empty
-{
-	displayName = "[UNSC] Supply Pod (M73X LMG)";
-	class TransportMagazines
-	{	
-        mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
-        mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
-	};
-	class TransportWeapons
-	{
-		weap_xx(OPTRE_M73, 2);
-	};
-	class TransportItems
-	{
-		item_xx(optic_arco_blk_f, 2);
-	};
-};
-//smg pod
-class OPTRE_Ammo_SupplyPod_M7XTardis: OPTRE_Ammo_SupplyPod_Empty
-{
-	displayName = "[UNSC] Supply Pod (M7X SMG)";
-	class TransportMagazines
-	{	
-        mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 100);
-	};
-	class TransportWeapons
-	{
-		weap_xx(OPTRE_M7, 4);
-	};
-	class TransportItems
-	{
-		item_xx(optre_m7_sight_v2, 4);
-        item_xx(optre_m7_silencer, 4);
-        item_xx(optre_m7_laser, 4);
-	};
-};
-//its bigger on the inside?
+
 //shotgun here
-class OPTRE_Ammo_SupplyPod_ShotgunM45X: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_SupplyPod_Breacher: OPTRE_Ammo_SupplyPod_Empty
 {
-	displayName = "[UNSC] Supply Pod (M45X Shotgun)";
+	displayName = "[UNSC] Supply Pod (Breaching Kit)";
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 15);
         mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 25);
         mag_xx(OPTRE_12Rnd_8Gauge_Beanbag, 15);
         mag_xx(AMP_Breaching_Charge_Mag, 20);
+        mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 100);
 	};
 	class TransportWeapons
 	{
 		weap_xx(OPTRE_M45, 2);
+        weap_xx(OPTRE_M7, 4);
 	};
 	class TransportItems
 	{
-		item_xx(optre_m7_sight_v2, 2);
+		item_xx(optre_m7_sight_v2, 6);
+        item_xx(optre_m7_silencer, 4);
+        item_xx(optre_m7_laser, 4);
 	};
 };
 //dmr subject to change
-class OPTRE_Ammo_SupplyPod_DMRM395X: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_SupplyPod_Marksman: OPTRE_Ammo_SupplyPod_Empty
 {
-	displayName = "[UNSC] Supply Pod (M395X DMR)";
+	displayName = "[UNSC] Supply Pod (Marksman Rifles)"; 
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
 		mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
         mag_xx(OPTRE_20Rnd_86x70_Mag_JHPT, 20);
         mag_xx(OPTRE_20Rnd_86x70_Mag_APT, 20);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_JHP, 20);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
 	};
 	class TransportWeapons
 	{
 		weap_xx(OPTRE_M393_DMR, 2);
+     
 	};
 	class TransportItems
 	{
 		item_xx(optre_bmr_scope_v2, 2);
 	};
 };
-//BXR? no br55x
-class OPTRE_Ammo_SupplyPod_BR55X: OPTRE_Ammo_SupplyPod_Empty
-{
-	displayName = "[UNSC] Supply Pod (BR55X)";
-	class TransportMagazines
-	{	
-        mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 135);
-	};
-	class TransportWeapons
-	{
-		weap_xx(OPTRE_BR55, 2);
-	};
-	class TransportItems
-	{
-		item_xx(optre_br55hb_scope_v2, 2);
-	};
-};
+
 //sniper, who the hell ordered this?
-class OPTRE_Ammo_SupplyPod_SR99DXSniper: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_SupplyPod_Sniper: OPTRE_Ammo_SupplyPod_Empty
 {
 	displayName = "[UNSC] Supply Pod (SR99DX Sniper)";
 	class TransportMagazines
@@ -359,37 +284,43 @@ class OPTRE_Ammo_SupplyPod_SR99DXSniper: OPTRE_Ammo_SupplyPod_Empty
 	};
 };
 //Oneills monster
-class OPTRE_Ammo_Supplypod_M250HMG: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_Supplypod_Autorifles: OPTRE_Ammo_SupplyPod_Empty
 {
-    displayname = "[UNSC] Supply Pod (M250HMG)";
+    displayname = "[UNSC] Supply Pod (Auto-Rifle's)";
     class TransportMagazines
     {
         mag_xx(OPTRE_100Rnd_127x99_M250HMG, 10);
 		mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
+        mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
+        mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
     };
 	class TransportWeapons
 	{
 		weap_xx(M250HMG, 2);
+        weap_xx(OPTRE_M73, 2);
 	};
 	class TransportItems
 	{
 		item_xx(optic_hamr, 2);
+        item_xx(optre_m72_smartlink_v2, 2);
 	};
 };
 // Cricket Launcher
-class OPTRE_Ammo_SupplyPod_CricketLauncher: OPTRE_Ammo_SupplyPod_Empty
+class OPTRE_Ammo_SupplyPod_ATLauncher: OPTRE_Ammo_SupplyPod_Empty
 {
-	displayName 		= "[UNSC] Supply Pod (Cricket Launcher)";
+	displayName 		= "[UNSC] Supply Pod (AT Launchers)";
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_1Rnd_50x137_HE, 3);
         mag_xx(OPTRE_1Rnd_50x137_HEAT, 10);
         mag_xx(OPTRE_1Rnd_50x137_PEN, 5);
         mag_xx(OPTRE_1Rnd_50x137_THERMO, 5);
+        mag_xx(OPTRE_M41_Twin_HEAT_G, 12);
 	};
 	class TransportWeapons
 	{
 		weap_xx(OPTRE_M48_PAW, 2);
+        weap_xx(OPTRE_M41_SSR_G, 2);
 	};
 	class TransportItems
 	{
@@ -448,156 +379,125 @@ class Module_OPTRE_PelicanSupplyDrop: Module_F
 				{
 					name = "Random Supply Pod";
 				};
-				class n3
-				{
-					name = "SPNKr/Guided Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_Launcher_Guided";
-				};
-				class n4
-				{
-					name = "M247 GPMG Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_M247";
-				};
-				class n5
-				{
-					name = "Mortar Ammo Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_Mortar_Ammo";
-				};
-				class n6
-				{
-					name = "Mortar Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_Mortar";
-				};
-				class n7
-				{
-					name = "MA5BX AR Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_MA5BXAR";
-				};
-				class n8
-				{
-					name = "MA5BGLX AR-GL Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_MA5BXARGL";
-				};
-				class n9
-				{
-					name = "M73X LMG Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_M73X";
-				};
-                class n10
-				{
-					name = "M7X SMG Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_M7XTardis";
-				};
-				class n11
+                class n3
                 {
-					name = "M45X Shotgun Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_ShotgunM45X";
-				};
-				class n12
+                    name = "Autorifle Supply Pod";
+                    value = "OPTRE_Ammo_Supplypod_Autorifles";
+                };
+                class n4
                 {
-					name = "DMRX Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_DMRM395X";
+					name = "AT Launcher Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_ATLauncher";
 				};
-				class n13
-                {
-					name = "BR55X Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_BR55X";
-				};
-				class n14
-                {
-					name = "SR99DX Sniper Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_SR99DXSniper";
-				};
-				class n15
-                {
-					name = "M41 SPNKr/Unguided Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_Launcher";
-				};
-                
-				class n16
-                {
-					name = "Vulcan Static HMG";
-					value = "OPTRE_SupplyPod_StaticHMG";
-				};
-                class n17
-                {
-					name = "Vulcan Static HMG Ammo";
-					value = "OPTRE_SupplyPod_StaticHMGAmmo";
-				};
-                class n18
-                {
-					name = "Vulcan Static GMG";
-					value = "OPTRE_SupplyPod_StaticGMG";
-				};
-                class n19
-                {
-					name = "Vulcan Static GMG Ammo";
-					value = "OPTRE_SupplyPod_StaticGMGAmmo";
-				};
-                class n20
-                {
-					name = "Vulcan Static AT";
-					value = "OPTRE_SupplyPod_StaticAT";
-				};
-                class n21
-                {
-					name = "Vulcan Static AT Ammo";
-					value = "OPTRE_SupplyPod_StaticATAmmo";
-				};
-                class n22
-                {
-					name = "Vulcan Static AA";
-					value = "OPTRE_SupplyPod_StaticAA";
-				};
-                class n23
-                {
-					name = "Vulcan Static AA Ammo";
-					value = "OPTRE_SupplyPod_StaticAAAmmo";
-				};
-                class n24
-                {
-					name = "Vulcan Vehicle Ammo";
-					value = "OPTRE_SupplyPod_VehicleAmmo";
-				};
-                class n25
-                {
-					name = "Vulcan Vehicle Repair";
-					value = "OPTRE_SupplyPod_VehicleRepair";
-				};
-                class n26
-                {
-					name = "Vulcan Tracked Vehicle Repair";
-					value = "OPTRE_SupplyPod_TrackedVehicleRepair";
-				};
-                class n27
-                {
-					name = "Vulcan Vehicle Refuel";
-					value = "OPTRE_SupplyPod_VehicleRefuel";
-				};
-                class n28
-                {
-					name = "ACE Medical Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_NEWACE_Medical";
-				};
-                class n29
-                {
-					name = "Cricket Launcher Supply Pod";
-					value = "OPTRE_Ammo_SupplyPod_CricketLauncher";
-				};
-                class n30
+                class n5
                 {
 					name = "Explosives Supply Pod";
 					value = "OPTRE_Ammo_SupplyPod_ExplosivesPack";
 				};
-                class n31
+				class n6
+				{
+					name = "AR/BR w/ Grenadier Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_ARBRGL";
+				};
+				class n7
+                {
+					name = "Breacher Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_Breacher";
+				};
+				class n8
+                {
+					name = "Marksman Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_Marksman";
+				};
+				class n9
+                {
+					name = "Sniper Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_Sniper";
+				};
+                class n10
+                {
+					name = "ACE Medical Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_NEWACE_Medical";
+				};
+                class n11
+				{
+					name = "M247 GPMG Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_M247";
+				};
+				class n12
+				{
+					name = "Mortar Ammo Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_Mortar_Ammo";
+				};
+				class n13
+				{
+					name = "Mortar Supply Pod";
+					value = "OPTRE_Ammo_SupplyPod_Mortar";
+				};
+				class n14
+                {
+					name = "Vulcan Static HMG";
+					value = "OPTRE_SupplyPod_StaticHMG";
+				};
+                class n15
+                {
+					name = "Vulcan Static HMG Ammo";
+					value = "OPTRE_SupplyPod_StaticHMGAmmo";
+				};
+                class n16
+                {
+					name = "Vulcan Static GMG";
+					value = "OPTRE_SupplyPod_StaticGMG";
+				};
+                class n17
+                {
+					name = "Vulcan Static GMG Ammo";
+					value = "OPTRE_SupplyPod_StaticGMGAmmo";
+				};
+                class n18
+                {
+					name = "Vulcan Static AT";
+					value = "OPTRE_SupplyPod_StaticAT";
+				};
+                class n19
+                {
+					name = "Vulcan Static AT Ammo";
+					value = "OPTRE_SupplyPod_StaticATAmmo";
+				};
+                class n20
+                {
+					name = "Vulcan Static AA";
+					value = "OPTRE_SupplyPod_StaticAA";
+				};
+                class n21
+                {
+					name = "Vulcan Static AA Ammo";
+					value = "OPTRE_SupplyPod_StaticAAAmmo";
+				};
+                class n22
+                {
+					name = "Vulcan Vehicle Ammo";
+					value = "OPTRE_SupplyPod_VehicleAmmo";
+				};
+                class n23
+                {
+					name = "Vulcan Vehicle Repair";
+					value = "OPTRE_SupplyPod_VehicleRepair";
+				};
+                class n24
+                {
+					name = "Vulcan Tracked Vehicle Repair";
+					value = "OPTRE_SupplyPod_TrackedVehicleRepair";
+				};
+                class n25
+                {
+					name = "Vulcan Vehicle Refuel";
+					value = "OPTRE_SupplyPod_VehicleRefuel";
+				};
+                class n26
                 {
 					name = "UAV Supply Pod";
 					value = "OPTRE_Ammo_SupplyPod_UAVResupply";
-				};
-				class n32
-                {
-                    name = "M250HMG Supply Pod";
-                    value = "OPTRE_Ammo_Supplypod_M250HMG";
                 };
 			};
 		};
