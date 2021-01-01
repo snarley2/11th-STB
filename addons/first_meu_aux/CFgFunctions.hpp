@@ -16,7 +16,7 @@ class CfgFunctions
     };
     class MEU
     {
-        class compat
+        class ACE_compat
         {
             class fn_meuPainReduce
             {
@@ -26,6 +26,10 @@ class CfgFunctions
             {
                 file = "first_meu_aux\Functions\fn_meuPainReduceLocal.sqf";
             };
+			class medkit
+			{
+                file = "first_meu_aux\Functions\fn_medkit.sqf";
+			};
         };
         class fnc_tourniquetRemove
         {
