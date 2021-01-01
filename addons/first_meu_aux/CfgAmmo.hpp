@@ -113,7 +113,26 @@ class CfgAmmo
         initSpeed = 9;
     };
 	// end throwable explosives
-	
+	//throwable sheild
+	class OPTRE_FC_BubbleShield_Ammo: ACE_SatchelCharge_Remote_Ammo_Thrown
+	{
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		defaultMagazine = "OPTRE_FC_BubbleShield";
+		model = "\OPTRE_FC_Buildings\misc\energy_shield.p3d";
+		explosive = 0;
+		explosionType = "bomb";
+		mineModelDisabled = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";
+		triggerWhenDestroyed = 0;
+		explosionEffects = "";
+		CraterEffects = "";
+		soundHit1[] = {"",0,0,0};
+		multiSoundHit[] = {};
+		mineInconspicuousness = 9999;\
+        timetolive = 220
+	};
+    //end throwable sheild
 	// start ammo reballance
 	class OPTRE_B_8Gauge_Slug: B_12Gauge_Slug
 	{

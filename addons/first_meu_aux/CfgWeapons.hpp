@@ -13884,7 +13884,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     
     class Throw : GrenadeLauncher
 	{
-		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle","MEU_Fury_Muzzle"};
+		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle","MEU_Fury_Muzzle","MEU_Bubble_Muzzle",};
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
             reloadtime = 0;
@@ -13910,6 +13910,11 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
             reloadtime = 0;
 			magazines[] = {"MEU_Fury_Mag"};
 		};
+        class MEU_Bubble_Muzzle : ThrowMuzzle
+        {
+            reloadtime = 0;
+            magazines[] = {"MEU_Bubble_Mag"}; 
+        };
     };
 	
 	class OPTRE_M7: OPTRE_SubMachineGun_Base
