@@ -13611,8 +13611,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		magazines[] = 
 		{
 			"60Rnd_90mm_APBC",
-			"60Rnd_90mm_SAPHE",
-			"60Rnd_90mm_HEAT"
+			"30Rnd_90mm_SAPHE",
+			"30Rnd_90mm_HEAT"
 		};
 		class gunParticles
 		{

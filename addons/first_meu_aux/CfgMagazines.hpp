@@ -549,6 +549,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		scopeArsenal = 2;
+		count = 6;
 		ammo = "MEU_B_8Gauge_Pellet";
 		displayname = "6Rnd 8 Gauge Pellets";
 		displayNameShort = "8 Gauge Pellets";
@@ -573,6 +574,7 @@ class CfgMagazines
 	{
 		scope = 2;
 		scopeArsenal = 2;
+		count = 6;
 		ammo = "OPTRE_B_8Gauge_Beanbags";
 		displayname = "6Rnd 8 Gauge Beanbags";
 		displayNameShort = "8 Gauge Beanbags";

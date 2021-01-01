@@ -117,7 +117,7 @@ class CfgAmmo
 	// start ammo reballance
 	class OPTRE_B_8Gauge_Slug: B_12Gauge_Slug
 	{
-		caliber	= 6;
+		caliber	= 8;
 		hit = 36;
 	};
 
@@ -178,6 +178,7 @@ class CfgAmmo
 
 	class MEU_B_8Gauge_Pellet_Submunition: B_12Gauge_Pellets_Submunition_Deploy
 	{
+		caliber = 4;
 		hit = 12;
 	};
 	
