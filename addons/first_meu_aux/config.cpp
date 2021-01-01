@@ -63,6 +63,7 @@ class cfgPatches
             "OPTRE_B_8Gauge_Beanbags",
             "MEU_B_8Gauge_Pellet",
             "MEU_B_8Gauge_Pellet_Submunition",
+            "OPTRE_FC_BubbleShield_Ammo",
             };
 		weapons[] = {
             "OPTRE_M392_DMR",

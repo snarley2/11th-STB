@@ -888,6 +888,24 @@ class CfgMagazines
 		displayNameShort = "Fury";
         initSpeed = 8;
     };
+    
+    class MEU_Bubble_Mag : OPTRE_M9_Frag
+    {
+        author = "1st MEU Mark";
+		scope = 2;
+		displayName = "Throwable Bubble Shield";
+		displayNameShort = "Throwable Bubble Shield";
+		descriptionShort = "Throwable Bubble Shield";
+		descriptionUse = "Use: Throw Shield";
+		type = "2* 256";
+		allowedSlots[] = {901,701};
+		ammo = "OPTRE_FC_BubbleShield_Ammo";
+		model = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";
+		mass = 15;
+		count = 1;
+		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
+        initSpeed = 8;
+    };
 	
 	class OPTRE_60Rnd_5x23mm_Mag_FMJ: OPTRE_60Rnd_5x23mm_Mag
 	{
