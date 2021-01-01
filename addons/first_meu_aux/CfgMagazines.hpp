@@ -893,15 +893,15 @@ class CfgMagazines
     {
         author = "1st MEU Mark";
 		scope = 2;
-		displayName = "Throwable Bubble Shield";
+		displayName = "[1st MEU] Throwable Bubble Shield";
 		displayNameShort = "Throwable Bubble Shield";
 		descriptionShort = "Throwable Bubble Shield";
 		descriptionUse = "Use: Throw Shield";
 		type = "2* 256";
 		allowedSlots[] = {901,701};
-		ammo = "OPTRE_FC_BubbleShield_Ammo";
+		ammo = "MEU_Bubbleshield_Ammo";
 		model = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";
-		mass = 15;
+		mass = 25;
 		count = 1;
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
         initSpeed = 8;
