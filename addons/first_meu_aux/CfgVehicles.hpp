@@ -2689,6 +2689,50 @@ class CfgVehicles
                 statement = "0 = [this, 0, true] spawn OPTRE_Fnc_HEVDoor; this setVariable [""OPTRE_HEV_DoorEjectedWanted"",false,true]; resetCamShake; moveOut player; player allowDamage true;";
                 onlyforplayer = 1;
             };
+			class thrusterforward
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Forward";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Forward";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterforward;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Forward";
+			};
+			class thrusterback
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Rear";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Rear";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterrear;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Rear";
+			};
+			class thrusterleft
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Left";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Left";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterleft;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Left";
+			};
+			class thrusterright
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Right";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Right";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterright;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Right";
+			};
         };
     };
     class OPTRE_Static_M41: StaticMGWeapon
