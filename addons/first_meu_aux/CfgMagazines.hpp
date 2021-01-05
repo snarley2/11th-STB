@@ -892,7 +892,8 @@ class CfgMagazines
     class MEU_Bubble_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark";
-		scope = 2;
+		scope = 0;
+		scopeArsenal = 0;
 		displayName = "[1st MEU] Throwable Bubble Shield";
 		displayNameShort = "Throwable Bubble Shield";
 		descriptionShort = "Throwable Bubble Shield";
