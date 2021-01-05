@@ -30,6 +30,22 @@ class CfgFunctions
 			{
                 file = "first_meu_aux\Functions\fn_medkit.sqf";
 			};
+			class thrusterforward
+			{
+                file = "first_meu_aux\Functions\fn_thrusterforward.sqf";
+			};
+			class thrusterback
+			{
+                file = "first_meu_aux\Functions\fn_thrusterback.sqf";
+			};
+			class thrusterleft
+			{
+                file = "first_meu_aux\Functions\fn_thrusterleft.sqf";
+			};
+			class thrusterright
+			{
+                file = "first_meu_aux\Functions\fn_thrusterright.sqf";
+			};
         };
         class fnc_tourniquetRemove
         {

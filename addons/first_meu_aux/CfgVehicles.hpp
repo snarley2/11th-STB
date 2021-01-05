@@ -1101,17 +1101,18 @@ class CfgVehicles
     };
 	class MEU_Wyvern: O_T_VTOL_02_infantry_dynamicLoadout_F
     {
-		crewCrashProtection = 0.001;
-		crewExplosionProtection = 0.001;
+	crewCrashProtection = 0.001;
+	crewExplosionProtection = 0.001;
         _generalMacro = "O_T_VTOL_02_infantry_dynamicLoadout_F";
         editorCategory = "MEU_cat_air";
         editorsubCategory = "MEU_sub_rot";
         scope = 2;
         scopeCurator = 2;
-		scopeArsenal = 2;
+	scopeArsenal = 2;
+        airBrakeFrictionCoef = 50;
         displayName = "[MEU] Pegasus Wyvern";
         armor = 600;
-        damageResistance = 0.001;
+        damageResistance = 0.002;
         tf_range=30000;
         faction = "MEU_UNSC";
 		side = 1;
@@ -1121,8 +1122,8 @@ class CfgVehicles
 		{
 			class GunnerTurret: GunnerTurret
 			{
-				magazines[] = {"4000Rnd_20mm_Tracer_Red_shells","Laserbatteries"};
-				weapons[] = {"gatling_20mm_VTOL_01","Laserdesignator_mounted"};
+				magazines[] = {"680Rnd_35mm_AA_shells_Tracer_Yellow","Laserbatteries"};
+				weapons[] = {"autocannon_35mm","Laserdesignator_mounted"};
 			};
 			class CargoTurret_01: CargoTurret_01{};
 			class CargoTurret_02: CargoTurret_02{};
@@ -2688,6 +2689,50 @@ class CfgVehicles
                 statement = "0 = [this, 0, true] spawn OPTRE_Fnc_HEVDoor; this setVariable [""OPTRE_HEV_DoorEjectedWanted"",false,true]; resetCamShake; moveOut player; player allowDamage true;";
                 onlyforplayer = 1;
             };
+			class thrusterforward
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Forward";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Forward";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterforward;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Forward";
+			};
+			class thrusterback
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Rear";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Rear";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterrear;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Rear";
+			};
+			class thrusterleft
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Left";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Left";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterleft;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Left";
+			};
+			class thrusterright
+			{
+				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
+				displayName = "<t color='#FE2E2E'>Adjust Right";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Right";
+				onlyForPlayer = 1;
+                radius = 4;
+				position = "";
+				statement = "0 = this spawn MEU_fnc_thrusterright;"
+				textToolTip = "<t color='#FE2E2E'>Adjust Right";
+			};
         };
     };
     class OPTRE_Static_M41: StaticMGWeapon

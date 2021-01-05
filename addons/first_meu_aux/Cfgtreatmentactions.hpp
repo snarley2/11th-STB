@@ -111,7 +111,7 @@ class ACE_Medical_Treatment_Actions
 		allowSelfTreatment = 0;
 		category = "advanced";
 		items[] = {"MEU_Emergency_MedKit"};
-		callbackStart = "ace_medical_treatment_fnc_ivBag";
+		callbackStart = "";
 		callbackSuccess = "MEU_fnc_medkit";
 	};
 };

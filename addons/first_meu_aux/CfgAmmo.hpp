@@ -114,7 +114,7 @@ class CfgAmmo
     };
 	// end throwable explosives
 	//throwable sheild
-	class OPTRE_FC_BubbleShield_Ammo: ACE_SatchelCharge_Remote_Ammo_Thrown
+	class MEU_Bubbleshield_Ammo: ACE_SatchelCharge_Remote_Ammo_Thrown
 	{
 		hit = 0;
 		indirectHit = 0;
@@ -129,8 +129,9 @@ class CfgAmmo
 		CraterEffects = "";
 		soundHit1[] = {"",0,0,0};
 		multiSoundHit[] = {};
-		mineInconspicuousness = 9999;\
-        timetolive = 220
+		mineInconspicuousness = 9999;
+        timetolive = 220;
+		explosionTime = 30;
 	};
     //end throwable sheild
 	// start ammo reballance
