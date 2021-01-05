@@ -1945,7 +1945,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Rave";
+		author = "Rave & Ginger";
 		displayName = "[1stMEU] CH252 Training Medical Helmet (Red)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_RED_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
@@ -1960,7 +1960,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Rave";
+		author = "Rave & Ginger";
 		displayName = "[1stMEU] CH252 Training Medical Helmet (Blue)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_BLU_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
@@ -1975,7 +1975,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Rave";
+		author = "Rave & Ginger";
 		displayName = "[1stMEU] CH252 Training Medical Helmet (Green)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_GRE_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
@@ -1990,7 +1990,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Rave";
+		author = "Rave & Ginger";
 		displayName = "[1stMEU] CH252 Training Medical Helmet (Purple)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_PUR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
