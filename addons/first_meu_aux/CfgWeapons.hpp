@@ -3481,13 +3481,6 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
         scope = 0;
     };
     //end plt dp
-    //unis helmet
-    class MEU_RTO_CPY_dp : MEU_RTO_CPY
-    {
-        scopeArsenal = 0;
-        scope = 0;
-    };
-    //end unis
     //start regular dp end custom
     class MEU_RTO_Helm_base_dp : MEU_rto_Helm_base
     {
