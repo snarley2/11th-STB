@@ -2648,6 +2648,7 @@ class CfgVehicles
             mag_xx(OPTRE_15Rnd_762x51_Mag_JHPT, 5);
             mag_xx(OPTRE_20Rnd_86x70_Mag_JHPT, 5);
             mag_xx(OPTRE_20Rnd_86x70_Mag_APT, 5);
+            mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
             mag_xx(3Rnd_HE_Grenade_shell, 2);
             mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 4);
             mag_xx(rhs_charge_tnt_x2_mag, 2);

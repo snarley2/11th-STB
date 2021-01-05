@@ -76,6 +76,7 @@ class CfgWeapons
 	class cannon_120mm;
     class OPTRE_FC_VX19_Helmet;
     class G_Aviator;
+    class H_Beret_Colonel;
 	
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
@@ -938,7 +939,7 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Beret_Colonel_ca.paa";
 		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
 		hiddenSelections[] = {"Camo"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Centurion1BeretV4.paa"};
@@ -949,7 +950,7 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] Beret (4th Plt)";
+		displayName = "[1stMEU] Beret (5th Plt)";
         weaponPoolAvailable = 1;
 		subItems[]=
 		{
@@ -957,12 +958,31 @@ class CfgWeapons
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Beret_Colonel_ca.paa";
 		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
 		hiddenSelections[] = {"Camo"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\VulcanBeretV2.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\VulcanBeretV2.paa"};
         visionMode[] = {"Normal","TI","NVG"};
         thermalMode[] = {0,1,2,3,4,5};
+    };
+    class Battallion_Beret: LM_OPCAN_Beret_CGC
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Romeo";
+		displayName = "[1stMEU] Beret (Battallion)";
+        weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+        picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Beret_Colonel_ca.paa";
+		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\V_B_Army_MP_CA_1st.paa"};
     };
 	
 // centurion heavy helmets
@@ -1492,7 +1512,7 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 		displayName = "[1stMEU] 5-2 ECH252 Helmet (Snow Gold)";
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\Helmets\V_CH252_SNO_L_CO_A.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_L_CO_A.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
   };
 	class MEU_Mar_Sealed_V_CH252_SNO_L_CO_A_GLD_dp : MEU_Mar_MOS_Helm_Sealed_Base
   {
@@ -3508,13 +3528,10 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
         scopeArsenal = 0;
         scope = 0;
     };
-	
-// end CH252 headgear start vest
-
-// M52A Armor
-
-// Rifleman
-	
+    // M52A Armor 
+    // Rifleman
+    // end CH252 headgear
+    // M52A Armor 
     class MEU_M52A_Rifleman: 1MEU_BASE_M52A_Armor
 	{
 		scope = 2;
@@ -15260,6 +15277,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 // Weapons Start
     
     class Throw : GrenadeLauncher
+    //Weapon Start
+    class Throw : Grenadelauncher
 	{
 		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle","MEU_Fury_Muzzle","MEU_Bubble_Muzzle",};
 		class MEU_C7_Muzzle : ThrowMuzzle
