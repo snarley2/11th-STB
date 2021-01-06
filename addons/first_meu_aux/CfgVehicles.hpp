@@ -2921,7 +2921,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
     };
 	
-	class MEU_Prae_Ruck_Base_Heavy : OPTRE_ILCS_Rucksack_Heavy
+	class MEU_Prae_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
@@ -2930,21 +2930,6 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","biofoam"};
     };
     
-	class uplinkpack : MEU_Prae_Ruck_Base_Heavy
-    {
-        author = "1st MEU Mark";
-        displayName = "[1stMEU] ODST Uplink Rucksack";
-        maximumLoad = 250;
-        class components :  DataLinkSensorComponent
-        {
-            class SensorsManagerComponent : SensorTemplateDataLink
-            {
-                setVehicleReportRemoteTargets = 1;
-                setVehicleReportOwnPosition = 1;
-            };
-        };
-    };
-    //add this to binos?
 	class MEU_Prae_Corpsman_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
