@@ -55,11 +55,14 @@ class CfgFunctions
         {
                 file = "first_meu_aux\Functions\fn_necktourniquet.sqf";
         };
-    };
-    class TAS
-	{
-		tag = "TAS";
-		class TAS_Keybinds
+        tag = "MEU";
+		class afterburner_functions
+		{
+			file = "first_meu_aux\functions\afterburnerMk1";
+			class Afterburners_Disengage;
+			class Afterburners_Engage;
+		};
+		class MEU_Keybinds
 		{
 			class keybinds
 			{
@@ -67,7 +70,7 @@ class CfgFunctions
 				postInit = 1;
 			};
 		};
-                class TAS_utility_functions
+                class MEU_utility_functions
 		{
 			class get_config_attribute
 			{
@@ -79,14 +82,4 @@ class CfgFunctions
 			};
 		};
     };
-    class tcw_functions
-	{
-		tag = "tcw";
-		class afterburner_functions
-		{
-			file = "first_meu_aux\functions\afterburnerMk1";
-			class Afterburners_Disengage;
-			class Afterburners_Engage;
-		};
-	};
 };
