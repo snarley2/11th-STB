@@ -177,7 +177,7 @@ class CfgVehicles
 		tf_range = 30000;
         faction = "MEU_UNSC";
         side = 1;
-		editorCategory = "MEU_cat_gnd";
+		editorCategory = "MEU_cat_A";
 		editorsubCategory = "MEU_sub_arm";
 		crew = "VES_Rifleman_MA5B_MAR";	
 		class Turrets: Turrets
@@ -225,8 +225,8 @@ class CfgVehicles
         faction = "MEU_UNSC";
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc"; 
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv"; 
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -286,7 +286,7 @@ class CfgVehicles
         faction = "MEU_UNSC";
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_ifv";
         visionMode[] = {"Normal","TI","NVG"};
         thermalMode[] = {0,1,2,3,4,5};
@@ -536,8 +536,8 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
     };
         
     class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
@@ -554,8 +554,8 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
     };
 	
 	class MEU_Leopard: APC_Wheeled_02_base_v2_F
@@ -674,8 +674,8 @@ class CfgVehicles
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
 		side = 1;
 		faction = "MEU_UNSC";
-		editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+		editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
 	};
 	
 	class MEU_Leopard_Medical_APC: MEU_Leopard
@@ -750,8 +750,8 @@ class CfgVehicles
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
 		side = 1;
 		faction = "MEU_UNSC";
-		editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+		editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
 	};
 	
     class MEU_M12_AP : VES_M12_APC
@@ -767,7 +767,7 @@ class CfgVehicles
         faction = "MEU_UNSC";
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_car";
     };
 // Ground Vehicles End	
@@ -958,7 +958,7 @@ class CfgVehicles
 		tf_range = 30000;
         faction = "MEU_UNSC";
 		side = 1;
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_trt";
 	};
 	
@@ -991,7 +991,7 @@ class CfgVehicles
 		};
         faction = "MEU_UNSC";
 		side = 1;
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_trt";
 	};
 	
@@ -1051,7 +1051,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
@@ -1104,7 +1104,7 @@ class CfgVehicles
 	crewCrashProtection = 0.001;
 	crewExplosionProtection = 0.001;
         _generalMacro = "O_T_VTOL_02_infantry_dynamicLoadout_F";
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         scope = 2;
         scopeCurator = 2;
@@ -1157,7 +1157,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         scope = 2;
         scopeCurator = 2;
@@ -1608,7 +1608,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         radarTargetSize = 0.1;
@@ -1712,7 +1712,7 @@ class CfgVehicles
 
     class VES_AV14_AIM : OPTRE_UNSC_hornet_CAP
     {
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
 		crewCrashProtection = 0.0001;
@@ -1816,7 +1816,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
@@ -1918,7 +1918,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
@@ -2020,7 +2020,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
@@ -2126,7 +2126,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
@@ -2135,7 +2135,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         transportSoldier = 16;
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
@@ -2373,7 +2373,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
@@ -2610,7 +2610,7 @@ class CfgVehicles
     class OPTRE_HEV: StaticMGWeapon
 	{
         faction = "MEU_UNSC";
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_trt";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -3366,7 +3366,7 @@ class CfgVehicles
 		transmissionLosses = 15;
 		ace_repair_canRepair = 1;
         mass = 50000;
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_WIP";
 	};		
 			
