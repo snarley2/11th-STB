@@ -1,24 +1,23 @@
 class CfgMagazines
 {
-    
-    class B_127x99_Ball;
-	class OPTRE_B_127x99_HE;
-	class 1Rnd_HE_Grenade_shell;
-    
+    //Mortarvitaville
     class 8Rnd_82mm_Mo_shells;
 	class 8Rnd_82mm_Mo_Smoke_white;
 	class 8Rnd_82mm_Mo_Flare_white;
 	class 8Rnd_82mm_Mo_guided;
 	class 8Rnd_82mm_Mo_LG;
-	class 2Rnd_12Gauge_Pellets;
-	class OPTRE_6Rnd_8Gauge_Slug;
 	
-    class OPTRE_M9_Frag;
+	//Throwables
+	class OPTRE_M9_Frag;
     class ACE_CTS9;
     class M168_Remote_Mag;
 	
+	//Magazines
 	class CA_Magazine;
 	class VehicleMagazine;
+	class 1Rnd_HE_Grenade_shell;
+	class OPTRE_6Rnd_8Gauge_Slug;
+	class 2Rnd_12Gauge_Pellets;
 	class 150Rnd_762x51_Box;
 	class OPTRE_60Rnd_5x23mm_Mag;
 	class OPTRE_60Rnd_762x51_Mag;
