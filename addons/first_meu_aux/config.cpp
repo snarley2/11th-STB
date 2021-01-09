@@ -125,15 +125,9 @@ class CfgFactionClasses
 };
 class CfgEditorCategories
 {
-    class MEU_cat_air
+    class MEU_cat_A
     {   
-        displayName = "1st MEU Air Assets";
-        scopeCurator = 2;
-        scopeeditor = 2;
-    };
-    class MEU_cat_gnd
-    {   
-        displayName = "1st MEU Ground Assets";
+        displayName = "1st MEU Assets";
         scopeCurator = 2;
         scopeeditor = 2;
     };
@@ -146,15 +140,9 @@ class CfgEditorCategories
 };
 class CfgEditorSubcategories
 {
-    class MEU_sub_apc
-    {
-		displayName = "APC";
-        scopeCurator = 2;
-        scopeeditor = 2;
-	};
     class MEU_sub_ifv
     {
-		displayName = "IFV";
+		displayName = "Mechanized";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
@@ -166,13 +154,13 @@ class CfgEditorSubcategories
 	};
     class MEU_sub_WIP
     {
-		displayName = "WIP";
+		displayName = "[WIP]";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
     class MEU_sub_car
     {
-		displayName = "Warthogs";
+		displayName = "Motorized";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
@@ -184,7 +172,7 @@ class CfgEditorSubcategories
 	};
     class MEU_sub_rot
     {
-		displayName = "Rotary";
+		displayName = "Air Vehicles";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
