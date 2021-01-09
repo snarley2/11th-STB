@@ -2,19 +2,46 @@ class CfgVehicles
 {
     #include "CfgSupplyPods.hpp"
     
-    class Helicopter_Base_H;
-    class OPTRE_falcon_base;
+    //Base Arma Vehicle Classes
+	class Helicopter_Base_H;
+	class B_APC_Tracked_01_base_F;
+	class APC_Wheeled_02_base_v2_F;
+	class B_T_VTOL_01_armed_F;
+	class B_Ship_Gun_01_base_F;
+		
+	//Base Optre Classes
+	class OPTRE_falcon_base;
     class OPTRE_UNSC_falcon_unarmed;
     class OPTRE_Pelican_armed;
     class OPTRE_Pelican_unarmed;
-    class VES_AV22_Sparrowhawk_Base;
+	class OPTRE_UNSC_hornet_CAP;
+    class OPTRE_UNSC_hornet_CAS;
+    class OPTRE_UNSC_hornet;
+    class OPTRE_M313_UNSC;
+	class OPTRE_M808B_UNSC;
+	class OPTRE_CTF_Flag_Base;
+
+	//Base FZ Classes
+	class VES_AV22_Sparrowhawk_Base;
     class VES_AV22_Sparrowhawk;
-    class B_APC_Tracked_01_base_F;
-    class OPTRE_S12_SOLA_Jetpack;
-    class StaticMGWeapon;
-    class OPTRE_ANPRC_515;
+	class VES_IFV76;
+    class VES_IFV76_A;
+    class VES_M808B_MBT;
+    class VES_M12_APC;
+    	
+	//Backpack Classes
+	class OPTRE_S12_SOLA_Jetpack;
+	class OPTRE_ANPRC_515;
     class OPTRE_ANPRC_521_Black;
     class OPTRE_ILCS_Rucksack_Heavy;
+	class OPTRE_ILCS_Rucksack_Black;
+	class B_parachute;
+
+	//Uniforms
+	class OPTRE_UNSC_Soldier_Base;
+	class OPTRE_FC_Elite_Undersuit;
+	
+	//AI
     class O_Soldier_SL_F;
     class O_Soldier_F;
     class O_Soldier_GL_F;
@@ -25,59 +52,60 @@ class CfgVehicles
     class O_Officer_F;
     class O_Engineer_F;
     class O_Soldier_TL_F;
-    class OPTRE_UNSC_Soldier_Base;
-    class B_Soldier_base_F;
+	class O_Soldier_base_F;
+	class O_T_VTOL_02_infantry_dynamicLoadout_F;
+	
+	class B_Soldier_base_F;
+	class B_RangeMaster_F;
+    
     class I_Soldier_base_F;
-    class O_Soldier_base_F;
     class I_G_Soldier_AR_F;
     class I_G_Soldier_LAT_F;
     class I_officer_F;
-    class B_RangeMaster_F;
-    class C_man_hunter_1_F;
-    class I_G_Soldier_M_F;
+	class I_G_Soldier_M_F;
     class I_G_Soldier_A_F;
-    class B_fieldpack_blk;
-    class OPTRE_FC_Elite_Undersuit;
-    class UniformItem;
-    class Item_Base_F;
+    
+    class C_man_hunter_1_F;
+        
+    //Medical
     class ACE_morphineItem;
-    class OPTRE_UNSC_hornet_CAP;
-    class OPTRE_UNSC_hornet_CAS;
-    class OPTRE_UNSC_hornet;
-    class OPTRE_M313_UNSC;
-    class B_parachute;
-    class VES_IFV76;
-    class VES_IFV76_A;
-    class OPTRE_M808B_UNSC;
-    class VES_M808B_MBT;
-    class VES_M12_APC;
-    class OPTRE_ILCS_Rucksack_Black;
-    class textureSources;
-    class Turrets;
-    class MainTurret;
-    class RCWSOptics;
-    class OPTRE_BiofoamItem; 
+	class OPTRE_BiofoamItem; 
     class OPTRE_MediGelItem;
     class ACE_tourniquetItem;
-    class ItemInfo;
-    class OPTRE_CTF_Flag_Base;
-    class ACE_SelfActions;
-    class Man;
-    class House;
-    class B_T_VTOL_01_armed_F;
-	class B_Ship_Gun_01_base_F;
-	class APC_Wheeled_02_base_v2_F;
+	class ACE_SelfActions;
+	
+	//Misc Classes
+	class GunnerTurret;
+	class CargoTurret;
+    class CargoTurret_01;
+    class CargoTurret_02;
+	class ViewOptics;
+	class CommanderOptics;
+	class Optics_Commander_01;
+	class Optics_Gunner_APC_01;
+	class VehicleSystemsTemplateLeftCommander;
+	class VehicleSystemsTemplateRightCommander;
+    class RCWSOptics;
+	class viewGunner;
+	class ViewCargo;
+	class Wide;
+	class Medium;
+	class Narrow;
 	class Components;
 	class SensorTemplateIR;
 	class SensorTemplateDataLink;
-	class ViewOptics;
 	class DataLinkSensorComponent;
 	class StaticWeapon;
-    class O_T_VTOL_02_infantry_dynamicLoadout_F;
-    class GunnerTurret;
-    class CargoTurret_01;
-    class CargoTurret_02;
-
+	class StaticMGWeapon;
+	class Item_Base_F;
+	class UniformItem;
+    class textureSources;
+    class Turrets;
+    class MainTurret;
+	class ItemInfo;
+    class Man;
+    class House;
+    
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
@@ -177,13 +205,89 @@ class CfgVehicles
 		tf_range = 30000;
         faction = "MEU_UNSC";
         side = 1;
-		editorCategory = "MEU_cat_gnd";
+		editorCategory = "MEU_cat_A";
 		editorsubCategory = "MEU_sub_arm";
 		crew = "VES_Rifleman_MA5B_MAR";	
 		class Turrets: Turrets
 		{
             visionMode[] = {"Normal","TI","NVG"};
             thermalMode[] = {0,1,2,3,4,5};
+			class CargoTurret1: CargoTurret
+			{
+				gunnerAction = "passenger_inside_3";
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos cargo1";
+				memoryPointsGetInGunnerDir = "pos cargo1 dir";
+				memoryPointGunnerOptics = "gunnerview";
+				gunnerName = "Passenger Gunner 1";
+				proxyIndex = 1;
+				maxElev = 15;
+				minElev = -25;
+				maxTurn = 60;
+				minTurn = -60;
+				isPersonTurret = 2;
+				ejectDeadGunner = 0;
+				gunnerInAction = "passenger_inside_3";
+				startEngine = 0;
+				allowLauncherIn = 1;
+				allowLauncherOut = 1;
+			};
+			class CargoTurret2: CargoTurret1
+			{
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos cargo2";
+				memoryPointsGetInGunnerDir = "pos cargo2 dir";
+				gunnerName = "Passenger Gunner 2";
+				proxyIndex = 2;
+			};
+			class CargoTurret3: CargoTurret1
+			{
+				proxyIndex = 3;
+				gunnerName = "Passenger Gunner 3";
+				gunnerCompartments = "Compartment3";
+				memoryPointsGetInGunner = "pos cargo3";
+				memoryPointsGetInGunnerDir = "pos cargo3 dir";
+			};
+			class CargoTurret4: CargoTurret1
+			{
+				proxyIndex = 4;
+				gunnerName = "Passenger Gunner 4";
+				gunnerCompartments = "Compartment3";
+				memoryPointsGetInGunner = "pos cargo4";
+				memoryPointsGetInGunnerDir = "pos cargo4 dir";
+			};
+			class CargoTurret5: CargoTurret1
+			{
+				proxyIndex = 5;
+				gunnerName = "Passenger Gunner 5";
+				gunnerCompartments = "Compartment4";
+				memoryPointsGetInGunner = "pos cargo5";
+				memoryPointsGetInGunnerDir = "pos cargo6 dir";
+			};
+			class CargoTurret6: CargoTurret1
+			{
+				proxyIndex = 6;
+				gunnerName = "Passenger Gunner 6";
+				gunnerCompartments = "Compartment4";
+				memoryPointsGetInGunner = "pos cargo6";
+				memoryPointsGetInGunnerDir = "pos cargo6 dir";
+			};
+			class CargoTurret7: CargoTurret1
+			{
+				proxyIndex = 7;
+				gunnerName = "Passenger Gunner 7";
+				gunnerCompartments = "Compartment5";
+				memoryPointsGetInGunner = "pos cargo7";
+				memoryPointsGetInGunnerDir = "pos cargo7 dir";
+			};
+			class CargoTurret8: CargoTurret1
+			{
+				proxyIndex = 8;
+				gunnerName = "Passenger Gunner 8";
+				gunnerCompartments = "Compartment5";
+				memoryPointsGetInGunner = "pos cargo8";
+				memoryPointsGetInGunnerDir = "pos cargo8 dir";
+			};
 			class MainTurret: MainTurret
 			{
                 visionMode[] = {"Normal","TI","NVG"};
@@ -225,8 +329,8 @@ class CfgVehicles
         faction = "MEU_UNSC";
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc"; 
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv"; 
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -286,7 +390,7 @@ class CfgVehicles
         faction = "MEU_UNSC";
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_ifv";
         visionMode[] = {"Normal","TI","NVG"};
         thermalMode[] = {0,1,2,3,4,5};
@@ -334,20 +438,12 @@ class CfgVehicles
             item_xx(ACE_splint, 10);
             item_xx(MEU_compat_Ibuprofen, 20);			
 		};
-		
-        class Turrets: Turrets
+		class Turrets: Turrets
 		{
-            visionMode[] = {"Normal","TI","NVG"};
-            thermalMode[] = {0,1,2,3,4,5};
 			class MainTurret: MainTurret
 			{
-                visionMode[] = {"Normal","TI","NVG"};
-                thermalMode[] = {0,1,2,3,4,5};
-                class Viewoptics : RCWSOptics
-                {
-                    visionMode[] = {"Normal","TI","NVG"};
-                    thermalMode[] = {0,1,2,3,4,5};
-                };
+				body = "mainTurret";
+				gun = "mainGun";
 				weapons[] = {"M1024_30mm","M247_APC","SmokeLauncher"};
 				magazines[] = 
 				{
@@ -443,6 +539,114 @@ class CfgVehicles
 					"SmokeLauncherMag"
 				};
 			};
+			class CommanderOptics: CommanderOptics
+			{
+				memoryPointGunnerOutOptics = "commanderview";
+				memoryPointGunnerOptics = "commanderview";
+				minElev = -10;
+				maxElev = 30;
+				initElev = 0;
+				minTurn = -360;
+				maxTurn = 360;
+				initTurn = 0;
+				minCamElev = -90;
+				maxCamElev = 90;
+				weapons[] = {"SmokeLauncher"};
+				magazines[] = {"SmokeLauncherMag"};
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_comm",0.56234133,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_comm",0.56234133,1,30};
+				outGunnerMayFire = 0;
+				inGunnerMayFire = 1;
+				gunnerAction = "Commander_APC_tracked_01_crv_out";
+				gunnerInAction = "Commander_APC_tracked_01_crv_in";
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				turretInfoType = "RscWeaponRangeFinder";
+				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+				gunnerforceoptics = 0;
+				usePip = 1;
+				animationSourceStickX = "com_turret_control_x";
+				animationSourceStickY = "com_turret_control_y";
+				gunnerLeftHandAnimName = "com_turret_control";
+				turretFollowFreeLook = 2;
+				LODOpticsIn = 0;
+				viewGunnerShadowAmb = 0.5;
+				viewGunnerShadowDiff = 0.05;
+				gunnerOutOpticsModel = "";
+				gunnerOpticsEffect[] = {};
+				class ViewGunner: ViewCargo
+				{
+					initAngleX = -6;
+					initAngleY = 0;
+					initFov = 0.9;
+					minFov = 0.25;
+					maxFov = 1.25;
+					minAngleX = -65;
+					maxAngleX = 85;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minMoveX = -0.075;
+					maxMoveX = 0.075;
+					minMoveY = -0.075;
+					maxMoveY = 0.075;
+					minMoveZ = -0.075;
+					maxMoveZ = 0.1;
+				};
+				class ViewOptics: ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.31;
+					minFov = 0.034;
+					maxFov = 0.31;
+					visionMode[] = {"Normal","NVG","TI"};
+					thermalMode[] = {2,3};
+				};
+				startEngine = 0;
+				stabilizedInAxes = 3;
+				maxHorizontalRotSpeed = 1.8;
+				maxVerticalRotSpeed = 1.8;
+				viewGunnerInExternal = 1;
+				showCrewAim = 1;
+				class HitPoints
+				{
+					class HitComTurret
+					{
+						armor = 0.1;
+						material = -1;
+						armorComponent = "hit_com_turret";
+						name = "hit_com_turret_point";
+						visual = "-";
+						passThrough = 0;
+						minimalHit = 0.1;
+						explosionShielding = 1;
+						radius = 0.15;
+						isTurret = 1;
+					};
+					class HitComGun
+					{
+						armor = 0.1;
+						material = -1;
+						armorComponent = "hit_com_gun";
+						name = "hit_com_gun_point";
+						visual = "-";
+						passThrough = 0;
+						minimalHit = 0.1;
+						explosionShielding = 1;
+						radius = 0.15;
+						isGun = 1;
+					};
+				};
+				class Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander{};
+					class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander{};
+				};
+			};
 		};		
     };
 	
@@ -519,6 +723,114 @@ class CfgVehicles
 					"SmokeLauncherMag"
 				};
 			};
+			class CommanderOptics: CommanderOptics
+			{
+				memoryPointGunnerOutOptics = "commanderview";
+				memoryPointGunnerOptics = "commanderview";
+				minElev = -10;
+				maxElev = 30;
+				initElev = 0;
+				minTurn = -360;
+				maxTurn = 360;
+				initTurn = 0;
+				minCamElev = -90;
+				maxCamElev = 90;
+				weapons[] = {"SmokeLauncher"};
+				magazines[] = {"SmokeLauncherMag"};
+				soundServo[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_comm",0.56234133,1,30};
+				soundServoVertical[] = {"A3\Sounds_F\vehicles\armor\APC\noises\servo_APC_comm",0.56234133,1,30};
+				outGunnerMayFire = 0;
+				inGunnerMayFire = 1;
+				gunnerAction = "Commander_APC_tracked_01_crv_out";
+				gunnerInAction = "Commander_APC_tracked_01_crv_in";
+				gunnerGetInAction = "GetInAMV_cargo";
+				gunnerGetOutAction = "GetOutLow";
+				turretInfoType = "RscWeaponRangeFinder";
+				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Commander_02_F";
+				gunnerforceoptics = 0;
+				usePip = 1;
+				animationSourceStickX = "com_turret_control_x";
+				animationSourceStickY = "com_turret_control_y";
+				gunnerLeftHandAnimName = "com_turret_control";
+				turretFollowFreeLook = 2;
+				LODOpticsIn = 0;
+				viewGunnerShadowAmb = 0.5;
+				viewGunnerShadowDiff = 0.05;
+				gunnerOutOpticsModel = "";
+				gunnerOpticsEffect[] = {};
+				class ViewGunner: ViewCargo
+				{
+					initAngleX = -6;
+					initAngleY = 0;
+					initFov = 0.9;
+					minFov = 0.25;
+					maxFov = 1.25;
+					minAngleX = -65;
+					maxAngleX = 85;
+					minAngleY = -150;
+					maxAngleY = 150;
+					minMoveX = -0.075;
+					maxMoveX = 0.075;
+					minMoveY = -0.075;
+					maxMoveY = 0.075;
+					minMoveZ = -0.075;
+					maxMoveZ = 0.1;
+				};
+				class ViewOptics: ViewOptics
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.31;
+					minFov = 0.034;
+					maxFov = 0.31;
+					visionMode[] = {"Normal","NVG","TI"};
+					thermalMode[] = {2,3};
+				};
+				startEngine = 0;
+				stabilizedInAxes = 3;
+				maxHorizontalRotSpeed = 1.8;
+				maxVerticalRotSpeed = 1.8;
+				viewGunnerInExternal = 1;
+				showCrewAim = 1;
+				class HitPoints
+				{
+					class HitComTurret
+					{
+						armor = 0.1;
+						material = -1;
+						armorComponent = "hit_com_turret";
+						name = "hit_com_turret_point";
+						visual = "-";
+						passThrough = 0;
+						minimalHit = 0.1;
+						explosionShielding = 1;
+						radius = 0.15;
+						isTurret = 1;
+					};
+					class HitComGun
+					{
+						armor = 0.1;
+						material = -1;
+						armorComponent = "hit_com_gun";
+						name = "hit_com_gun_point";
+						visual = "-";
+						passThrough = 0;
+						minimalHit = 0.1;
+						explosionShielding = 1;
+						radius = 0.15;
+						isGun = 1;
+					};
+				};
+				class Components
+				{
+					class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftCommander{};
+					class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander{};
+				};
+			};
 		};		
     };
 	
@@ -536,8 +848,8 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
     };
         
     class Vulkan_Repair_APC_P: B_T_APC_Tracked_01_CRV_F
@@ -554,8 +866,8 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-        editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
     };
 	
 	class MEU_Leopard: APC_Wheeled_02_base_v2_F
@@ -674,8 +986,8 @@ class CfgVehicles
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
 		side = 1;
 		faction = "MEU_UNSC";
-		editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+		editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
 	};
 	
 	class MEU_Leopard_Medical_APC: MEU_Leopard
@@ -750,8 +1062,8 @@ class CfgVehicles
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
 		side = 1;
 		faction = "MEU_UNSC";
-		editorCategory = "MEU_cat_gnd";
-        editorsubCategory = "MEU_sub_apc";
+		editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
 	};
 	
     class MEU_M12_AP : VES_M12_APC
@@ -767,7 +1079,7 @@ class CfgVehicles
         faction = "MEU_UNSC";
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_car";
     };
 // Ground Vehicles End	
@@ -958,7 +1270,7 @@ class CfgVehicles
 		tf_range = 30000;
         faction = "MEU_UNSC";
 		side = 1;
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_trt";
 	};
 	
@@ -991,7 +1303,7 @@ class CfgVehicles
 		};
         faction = "MEU_UNSC";
 		side = 1;
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_trt";
 	};
 	
@@ -1051,10 +1363,41 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
+         class UserActions
+         {
+        class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
+        };
         weapons[] = {"CMFlareLauncher_Singles"};
 		magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
         class pilotCamera
@@ -1104,7 +1447,7 @@ class CfgVehicles
 	crewCrashProtection = 0.001;
 	crewExplosionProtection = 0.001;
         _generalMacro = "O_T_VTOL_02_infantry_dynamicLoadout_F";
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         scope = 2;
         scopeCurator = 2;
@@ -1157,7 +1500,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         scope = 2;
         scopeCurator = 2;
@@ -1608,103 +1951,41 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         radarTargetSize = 0.1;
         tf_range=30000;
         class useractions
         {
-            class FullAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID = 57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID = 58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage";
-				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID = 52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage";
-				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID = 53;
-			};
-			class Afterburnerss600Engage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName = "<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
-				textToolTip = "<t color='#04B45F'>Engage Afterburners";
-				userActionID = 54;
-			};
-			class Afterburners600Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
-				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
-				userActionID = 55;
-			};
+            class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
         };
     };
 	
@@ -1712,7 +1993,7 @@ class CfgVehicles
 
     class VES_AV14_AIM : OPTRE_UNSC_hornet_CAP
     {
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
 		crewCrashProtection = 0.0001;
@@ -1720,402 +2001,154 @@ class CfgVehicles
         tf_range=30000;
         class useractions
         {
-            class FullAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID = 57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID = 58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID = 52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID = 53;
-			};
-			class Afterburnerss600Engage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName = "<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
-				textToolTip = "<t color='#04B45F'>Engage Afterburners";
-				userActionID = 54;
-			};
-			class Afterburners600Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
-				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
-				userActionID = 55;
-			};
+            class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
         };
     };
     class VES_AV14_AGM : OPTRE_UNSC_hornet_CAS
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
         class useractions
         {
-            class FullAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID = 57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID = 58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID = 52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID = 53;
-			};
-			class Afterburnerss600Engage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName = "<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
-				textToolTip = "<t color='#04B45F'>Engage Afterburners";
-				userActionID = 54;
-			};
-			class Afterburners600Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
-				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
-				userActionID = 55;
-			};
+            class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
         };
     };
     class VES_AV14_Rockets : OPTRE_UNSC_hornet
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
         class useractions
         {
-            class FullAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID = 57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID = 58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID = 52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID = 53;
-			};
-			class Afterburnerss600Engage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName = "<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
-				textToolTip = "<t color='#04B45F'>Engage Afterburners";
-				userActionID = 54;
-			};
-			class Afterburners600Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
-				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
-				userActionID = 55;
-			};
+            class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
         };
     };
     class VES_AV14 : OPTRE_UNSC_hornet
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
         class useractions
         {
-            class FullAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID = 57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod = 5;
-				condition = "(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID = 58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod = 5;
-				condition = "(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID = 52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID = 53;
-			};
-			class Afterburnerss600Engage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburnerss_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName = "<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Engage";
-				textToolTip = "<t color='#04B45F'>Engage Afterburners";
-				userActionID = 54;
-			};
-			class Afterburners600Disengage
-			{
-				animPeriod = 5;
-				condition = "(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName = "<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer = 0;
-				position = "cargo_door_handle";
-				priority = 10;
-				radius = 100000;
-				showWindow = 0;
-				statement = "0 = this spawn V_FZ_fnc_Afterburners600Disengage";
-				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
-				userActionID = 55;
-			};
+            class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
         };
     };
 	
@@ -2126,20 +2159,272 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
+        class UserActions
+    {
+	    class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
+        };
         tf_range=30000;
     };
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         transportSoldier = 16;
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
+            class UserActions
+    {
+	    class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
+	    class PelLift_LoadPodMenu
+	    {
+	    	condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND ((vehicle player) isKindOf ""OPTRE_cart_base"")";
+	    	displayName = "<t color='#FFBF00'>Load Supply Pods";
+	    	displayNameDefault = "<t color='#FFBF00'>Load Supply Pods";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 2;
+	    	radius = 15;
+	    	showWindow = 0;
+	    	statement = "OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject = this; createDialog ""OPTRE_PelicanLoadSupplyPods_Menu""; OPTRE_PelicanLoadSupplyPods_Menu_cam = ""camera"" CamCreate getPosATL OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject;  OPTRE_PelicanLoadSupplyPods_Menu_cam CamSetTarget OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject; OPTRE_PelicanLoadSupplyPods_Menu_cam CameraEffect [""Internal"",""Back""]; OPTRE_PelicanLoadSupplyPods_Menu_cam camSetRelPos [4,-12,-2.4]; OPTRE_PelicanLoadSupplyPods_Menu_cam CamCommit 0; showCinemaBorder false; if (sunOrMoon == 0) then {camUseNVG true;};";
+	    	textToolTip = "<t color='#FFBF00'>Load Supply Pods";
+	    	userActionID = 9;
+	    };
+	    class PelLift_LoadVehicle
+	    {
+	    	condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
+	    	displayName = "<t color='#FFBF00'>Maglock Cargo";
+	    	displayNameDefault = "<t color='#FFBF00'>Maglock Cargo";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 2;
+	    	radius = 15;
+	    	showWindow = 0;
+	    	statement = "0 = [this,vehicle player] spawn V_FZ_fnc_PelicanLoadValidate;";
+	    	textToolTip = "<t color='#FFBF00'>Maglock Cargo";
+	    	userActionID = 6;
+	    };
+	    class PelLift_LoadDevice
+	    {
+	    	condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player) AND ((vehicle player) isKindOf ""VES_HDV134_Fujikawa"") AND (vehicle player getvariable [""VES_DeviceAvailable"",true])";
+	    	displayName = "<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
+	    	displayNameDefault = "<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 2;
+	    	radius = 4;
+	    	showWindow = 0;
+	    	statement = "0 = [this,vehicle player] spawn V_FZ_fnc_SlipspaceRuptureDetected;";
+	    	textToolTip = "<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
+	    	userActionID = 6;
+	    };
+	    class PelLift_OpenDetatchPodMenu
+	    {
+	    	condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+	    	displayName = "<t color='#DF3A01'>Detach Individual Supply Pod Menu";
+	    	displayNameDefault = "<t color='#DF3A01'>Detach Individual Supply Pod Menu";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 3;
+	    	radius = 5;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn V_FZ_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
+	    	textToolTip = "<t color='#DF3A01'>Detach Individual Supply Pod Menu";
+	    	userActionID = 8;
+	    };
+	    class PelLift_UnLoadVehicle
+	    {
+	    	condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+	    	displayName = "<t color='#DF3A01'>Release Maglock";
+	    	displayNameDefault = "<t color='#DF3A01'>Release Maglock";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 3;
+	    	radius = 5;
+	    	showWindow = 0;
+	    	statement = "0 = [this] spawn V_FZ_fnc_PelicanUnLoadValidate;";
+	    	textToolTip = "<t color='#DF3A01'>Release Maglock";
+	    	userActionID = 7;
+	    };
+	    class RampClose
+	    {
+	    	animPeriod = 5;
+	    	condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (!(this getvariable [""VES_PelicanMG_Status"",false])) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this))";
+	    	displayName = "Close Ramp";
+	    	displayNameDefault = "Close Ramp";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 4;
+	    	radius = 4;
+	    	showWindow = 0;
+	    	statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
+	    	textToolTip = "Close Ramp";
+	    	userActionID = 51;
+	    };
+	    class RampOpen
+	    {
+	    	animPeriod = 5;
+	    	condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (!(this getvariable [""VES_PelicanMG_Status"",false])) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this))";
+	    	displayName = "Open Ramp";
+	    	displayNameDefault = "Open Ramp";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 4;
+	    	radius = 4;
+	    	showWindow = 0;
+	    	statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
+	    	textToolTip = "Open Ramp";
+	    	userActionID = 50;
+	    };
+		class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburners900Engage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners900Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners900Disengage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+	};
          class pilotCamera
         {
             class OpticsIn
@@ -2373,11 +2658,232 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        editorCategory = "MEU_cat_air";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
         transportsoldier = 20;
+            class UserActions
+    {
+	    class MEU_E_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	displayNameDefault = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 10;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Engage;";
+	    	textToolTip = "<t color='#2CDB24'>Afterburners [ON]</t>";
+	    	userActionID = 59;
+	    };
+		class MEU_D_Thruster
+	    {
+	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
+	    	displayName = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	displayNameDefault = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 9;
+	    	radius = 100000;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn MEU_fnc_Afterburners_Disengage;";
+	    	textToolTip = "<t color='#ff0000'>Afterburners [OFF]</t>";
+	    	userActionID = 60;
+	    };
+	    class PelLift_LoadPodMenu
+	    {
+	    	condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND ((vehicle player) isKindOf ""OPTRE_cart_base"")";
+	    	displayName = "<t color='#FFBF00'>Load Supply Pods";
+	    	displayNameDefault = "<t color='#FFBF00'>Load Supply Pods";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 2;
+	    	radius = 15;
+	    	showWindow = 0;
+	    	statement = "OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject = this; createDialog ""OPTRE_PelicanLoadSupplyPods_Menu""; OPTRE_PelicanLoadSupplyPods_Menu_cam = ""camera"" CamCreate getPosATL OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject;  OPTRE_PelicanLoadSupplyPods_Menu_cam CamSetTarget OPTRE_PelicanLoadSupplyPods_Menu_PelicanObject; OPTRE_PelicanLoadSupplyPods_Menu_cam CameraEffect [""Internal"",""Back""]; OPTRE_PelicanLoadSupplyPods_Menu_cam camSetRelPos [4,-12,-2.4]; OPTRE_PelicanLoadSupplyPods_Menu_cam CamCommit 0; showCinemaBorder false; if (sunOrMoon == 0) then {camUseNVG true;};";
+	    	textToolTip = "<t color='#FFBF00'>Load Supply Pods";
+	    	userActionID = 9;
+	    };
+	    class PelLift_LoadVehicle
+	    {
+	    	condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
+	    	displayName = "<t color='#FFBF00'>Maglock Cargo";
+	    	displayNameDefault = "<t color='#FFBF00'>Maglock Cargo";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 2;
+	    	radius = 15;
+	    	showWindow = 0;
+	    	statement = "0 = [this,vehicle player] spawn V_FZ_fnc_PelicanLoadValidate;";
+	    	textToolTip = "<t color='#FFBF00'>Maglock Cargo";
+	    	userActionID = 6;
+	    };
+	    class PelLift_LoadDevice
+	    {
+	    	condition = "!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player) AND ((vehicle player) isKindOf ""VES_HDV134_Fujikawa"") AND (vehicle player getvariable [""VES_DeviceAvailable"",true])";
+	    	displayName = "<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
+	    	displayNameDefault = "<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 2;
+	    	radius = 4;
+	    	showWindow = 0;
+	    	statement = "0 = [this,vehicle player] spawn V_FZ_fnc_SlipspaceRuptureDetected;";
+	    	textToolTip = "<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
+	    	userActionID = 6;
+	    };
+	    class PelLift_OpenDetatchPodMenu
+	    {
+	    	condition = "(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+	    	displayName = "<t color='#DF3A01'>Detach Individual Supply Pod Menu";
+	    	displayNameDefault = "<t color='#DF3A01'>Detach Individual Supply Pod Menu";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 3;
+	    	radius = 5;
+	    	showWindow = 0;
+	    	statement = "0 = this spawn V_FZ_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
+	    	textToolTip = "<t color='#DF3A01'>Detach Individual Supply Pod Menu";
+	    	userActionID = 8;
+	    };
+	    class PelLift_UnLoadVehicle
+	    {
+	    	condition = "(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+	    	displayName = "<t color='#DF3A01'>Release Maglock";
+	    	displayNameDefault = "<t color='#DF3A01'>Release Maglock";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 3;
+	    	radius = 5;
+	    	showWindow = 0;
+	    	statement = "0 = [this] spawn V_FZ_fnc_PelicanUnLoadValidate;";
+	    	textToolTip = "<t color='#DF3A01'>Release Maglock";
+	    	userActionID = 7;
+	    };
+	    class RampClose
+	    {
+	    	animPeriod = 5;
+	    	condition = "((this animationPhase ""cargoDoor_1"" > 0.5) AND (!(this getvariable [""VES_PelicanMG_Status"",false])) AND (this animationPhase ""cargoDoor_2"" > 0.5) AND (alive this))";
+	    	displayName = "Close Ramp";
+	    	displayNameDefault = "Close Ramp";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 4;
+	    	radius = 4;
+	    	showWindow = 0;
+	    	statement = "this animate [""cargoDoor_1"",0]; this animate [""cargoDoor_2"",0]";
+	    	textToolTip = "Close Ramp";
+	    	userActionID = 51;
+	    };
+	    class RampOpen
+	    {
+	    	animPeriod = 5;
+	    	condition = "((this animationPhase ""cargoDoor_1"" < 0.5) AND (!(this getvariable [""VES_PelicanMG_Status"",false])) AND (this animationPhase ""cargoDoor_2"" < 0.5) AND (alive this))";
+	    	displayName = "Open Ramp";
+	    	displayNameDefault = "Open Ramp";
+	    	onlyForPlayer = 0;
+	    	position = "cargo_door_handle";
+	    	priority = 4;
+	    	radius = 4;
+	    	showWindow = 0;
+	    	statement = "this animate [""cargoDoor_1"",1]; this animate [""cargoDoor_2"",1]";
+	    	textToolTip = "Open Ramp";
+	    	userActionID = 50;
+	    };
+		class FullAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault = "<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID = 57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault = "<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID = 58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault = "<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID = 52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault = "<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID = 53;
+			};
+			class Afterburners900Engage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault = "<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners900Engage";
+				textToolTip = "<t color='#04B45F'>Engage Afterburners";
+				userActionID = 54;
+			};
+			class Afterburners900Disengage
+			{
+				animPeriod = 5;
+				condition = "false";
+				displayName = "<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault = "<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer = 0;
+				position = "cargo_door_handle";
+				priority = 10;
+				radius = 100000;
+				showWindow = 0;
+				statement = "0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
+				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
+				userActionID = 55;
+			};
+	};
         class pilotCamera
         {
             class OpticsIn
@@ -2610,7 +3116,7 @@ class CfgVehicles
     class OPTRE_HEV: StaticMGWeapon
 	{
         faction = "MEU_UNSC";
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_trt";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -3366,7 +3872,7 @@ class CfgVehicles
 		transmissionLosses = 15;
 		ace_repair_canRepair = 1;
         mass = 50000;
-        editorCategory = "MEU_cat_gnd";
+        editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_WIP";
 	};		
 			

@@ -15597,6 +15597,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		class HE: autocannon_Base_F
 		{
 			displayName = "M1024 ASW/AC 30mm ALA Cannon";
+			reloadTime = 0.25;
 			magazines[] = 
 			{
 				"80Rnd_30mm_HEAT",
@@ -15605,6 +15606,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		class AP: autocannon_Base_F
 		{
 			displayName = "M1024 ASW/AC 30mm ALA Cannon";
+			reloadTime = 0.25;
 			magazines[] = 
 			{
 				"60Rnd_30mm_APFSDS",
@@ -15620,8 +15622,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		magazines[] = 
 		{
 			"60Rnd_90mm_APBC",
-			"60Rnd_90mm_SAPHE",
-			"60Rnd_90mm_HEAT"
+			"30Rnd_90mm_SAPHE",
+			"30Rnd_90mm_HEAT"
 		};
 		class gunParticles
 		{
