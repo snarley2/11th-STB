@@ -15238,27 +15238,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_43PI_Custom_Mutt","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
     };
-    //lol glasses
-    class Marks_Aviators : G_Aviator
-    {
-        scope = 2;
-        scopeArsenal = 2;
-        displayname = "Marks Aviator";
-        class controls
-		{
-			class RscPicture_120: OPTRE_HUD_RscPicture
-			{
-				idc = 1;
-				text = "first_meu_aux\Data\misc\hud_cracked.paa";
-				x = "-0.000156274 * safezoneW + safezoneX";
-				y = "-0.00599999 * safezoneH + safezoneY";
-				w = "1.00031 * safezoneW";
-				h = "1.012 * safezoneH";
-				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
-			};
-		};
-    };
-    //lol glasses
 // Weapons Start
     
     class Throw : Grenadelauncher
