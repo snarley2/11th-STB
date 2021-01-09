@@ -1,21 +1,27 @@
 class CfgAmmo
 {
+	//Vehicle Rounds
 	class ammo_Missile_CruiseBase;
-	class OPTRE_B_5x23_Caseless;
-	class OPTRE_B_762x51_Ball;
-	class B_12Gauge_Pellets_Submunition;
-	class B_12Gauge_Pellets_Submunition_Deploy;
-	class B_30mm_MP;
-	class B_30mm_APFSDS;
-	class OPTRE_B_95x40_Ball;
-	class OPTRE_B_127x40_Ball;
-    class B_12Gauge_Slug;
-	class G_40mm_HE;
-    class CA_Magazine;
-    class ACE_SatchelCharge_Remote_Ammo_Thrown;
-    class ACE_G_CTS9;
 	class Sh_105mm_APFSDS_T_Green;
 	class Sh_105mm_HEAT_MP;
+	class B_30mm_MP;
+	class B_30mm_APFSDS;	
+	
+	//Explosives
+	class G_40mm_HE;
+    class ACE_SatchelCharge_Remote_Ammo_Thrown;
+    class ACE_G_CTS9;
+	
+	//Shotguns
+	class B_12Gauge_Pellets_Submunition;
+	class B_12Gauge_Pellets_Submunition_Deploy;
+	class B_12Gauge_Slug;
+	
+	//Rifles
+	class OPTRE_B_5x23_Caseless;
+	class OPTRE_B_762x51_Ball;
+	class OPTRE_B_95x40_Ball;
+	class OPTRE_B_127x40_Ball;
 	
     // code name LMAO
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
@@ -137,7 +143,7 @@ class CfgAmmo
 	// start ammo reballance
 	class OPTRE_B_8Gauge_Slug: B_12Gauge_Slug
 	{
-		caliber	= 6;
+		caliber	= 8;
 		hit = 36;
 	};
 
@@ -198,6 +204,7 @@ class CfgAmmo
 
 	class MEU_B_8Gauge_Pellet_Submunition: B_12Gauge_Pellets_Submunition_Deploy
 	{
+		caliber = 4;
 		hit = 12;
 	};
 	
@@ -275,7 +282,7 @@ class CfgAmmo
 		
 	class M1024_30mm_APFSDS: B_30mm_APFSDS
 	{
-		hit = 180;
+		hit = 200;
 		indirectHit = 8;
 		indirectHitRange = 0.2;
 		caliber = 8;
@@ -285,7 +292,7 @@ class CfgAmmo
 	class 90mm_APBC: Sh_105mm_APFSDS_T_Green
 	{
 		caliber = 26;
-		hit = 500;
+		hit = 600;
 		typicalSpeed = 2000;
 	};
 	
