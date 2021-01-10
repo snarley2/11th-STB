@@ -14595,6 +14595,17 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Black_HM_42.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
+        class Helmet_HOK: 1stMEU_Base_CH252D_Helmet
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] Hokage";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\misc\hokHelm.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+	};
     class Praetorian_Helmet_42TL: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
@@ -15002,6 +15013,14 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     };
     
 // Praetorian 4th Platoon Helmets Depolarised
+    class Helmet_HOK_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\misc\hokHelm.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
+    };
     class Praetorian_Helmet_46_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
