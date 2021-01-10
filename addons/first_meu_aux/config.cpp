@@ -12,6 +12,7 @@
 #include "Cfgtreatmentactions.hpp"
 #include "CfgFunctions.hpp"
 #include "Cfgloadingscreens.hpp"
+#include "CfgGlasses.hpp"
 class CAWorld;
 class cfgPatches
 {
@@ -79,6 +80,7 @@ class cfgPatches
         requiredVersion = 0.1;
 		requiredAddons[] = 
         {
+            "ace_goggles",
 			"OPTRE_UNSC_Units",
 			"OPTRE_Ins_Units",
 			"OPTRE_Weapons",
