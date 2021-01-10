@@ -11546,6 +11546,19 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 			};
 		};
     };
+    //fix this later needs to be here fuck me
+    class Praetor_Helmet_Black: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Oneill";
+		displayName = "[1stMEU] CH252D Helmet";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Black.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
     
     //praetorian helmets starts with broke shit
     class Praetor_Helmet_Base_Broken : Praetor_Helmet_Black
@@ -12361,18 +12374,6 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Ride.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
-    };
-    class Praetor_Helmet_Black: 1stMEU_Base_CH252D_Helmet
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		author = "1stMEU Oneill";
-		displayName = "[1stMEU] CH252D Helmet";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Black.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
     };
      class Praetor_Helmet_Black_31: 1stMEU_Base_CH252D_Helmet
 	{
@@ -15316,20 +15317,102 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
 		class Single: Single
 		{
+            sounds[] = {"StandardSound","SilencedSound"};
 			class StandardSound: StandardSound
 			{
 				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
+			};
+            class SilencedSound: StandardSound
+			{
+				begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",1.0,1,300};
+				begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",1.0,1,300};
+				begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",1.0,1,300};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",1.0,1,300};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
 			};
 			reloadTime = 0.1;
 			dispersion = 0.0030;
 		};
 		class FullAuto: FullAuto
 		{
+            sounds[] = {"StandardSound","SilencedSound"};
 			class StandardSound: StandardSound
 			{
 				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
+			};
+			class SilencedSound: StandardSound
+			{
+				begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",1.0,1,300};
+				begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",1.0,1,300};
+				begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",1.0,1,300};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",1.0,1,300};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",1.0,1,300};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
 			};
 			reloadTime = 0.1;
 			dispersion = 0.0030;
