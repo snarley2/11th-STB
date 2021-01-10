@@ -1,8 +1,9 @@
-_vel = velocity _this;
-_dir = direction _this;
+_droppod = _this;
+_vel = velocity _droppod;
+_dir = direction _droppod;
 _speed = 10;
-_this setVelocity [
-	(_vel select 0) + (_speed), 
+_droppod setVelocity [
+	(_vel select 0) - (_speed), 
 	(_vel select 1), 
 	(_vel select 2)
 ];
