@@ -15166,7 +15166,1115 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\odst_H3_color_yellow_43PI_Custom_Mutt","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
     };
 // Weapons Start
-    
+     class Snow_Helmet_11H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Heavy Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\11_V_CH252_SNO_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_11L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Light Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\11_V_CH252_SNO_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_11M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Corpsman Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\11_V_CH252_SNO_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_11R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 RTO Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\11_V_CH252_SNO_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_11R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Sr RTO Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\11_V_CH252_SNO_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_12H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Heavy Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\12_V_CH252_SNO_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_12L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Light Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\12_V_CH252_SNO_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_12M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Corpsman Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\12_V_CH252_SNO_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_12R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 RTO Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\12_V_CH252_SNO_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_12R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Sr RTO Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\12_V_CH252_SNO_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_13H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Heavy Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\13_V_CH252_SNO_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_13L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Light Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\13_V_CH252_SNO_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_13M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Corpsman Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\13_V_CH252_SNO_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_13R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 RTO Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\13_V_CH252_SNO_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Snow_Helmet_13R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Sr RTO Helmet (Arctic)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\arctic\13_V_CH252_SNO_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_11H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Heavy Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\11_V_CH252_DES_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_11L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Light Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\11_V_CH252_DES_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_11M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Corpsman Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\11_V_CH252_DES_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_11R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 RTO Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\11_V_CH252_DES_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_11R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Sr RTO Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\11_V_CH252_DES_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_12H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Heavy Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\12_V_CH252_DES_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_12L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Light Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\12_V_CH252_DES_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_12M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Corpsman Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\12_V_CH252_DES_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_12R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2: 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 RTO Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\12_V_CH252_DES_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_12R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2: 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Sr RTO Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\12_V_CH252_DES_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_13H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Heavy Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\13_V_CH252_DES_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_13L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Light Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\13_V_CH252_DES_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_13M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Corpsman Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\13_V_CH252_DES_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_13R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 RTO Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\13_V_CH252_DES_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Desert_Helmet_13R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Sr RTO Helmet (Desert)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Desert\13_V_CH252_DES_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_11H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Heavy Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\11_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_11L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Light Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\11_V_CH252_MAR_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_11M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Corpsman Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\11_V_CH252_MAR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_11R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 RTO Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\11_V_CH252_MAR_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_11R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Sr RTO Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\11_V_CH252_MAR_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_12H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Heavy Helmet (Marine)";  
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\12_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_12L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Light Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\12_V_CH252_MAR_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_12M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Corpsman Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\12_V_CH252_MAR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_12R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 RTO Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\12_V_CH252_MAR_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_12R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Sr RTO Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\12_V_CH252_MAR_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_13H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Heavy Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\13_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_13L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Light Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\13_V_CH252_MAR_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_13M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Corpsman Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\13_V_CH252_MAR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_13R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 RTO Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\13_V_CH252_MAR_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Marine_Helmet_13R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Sr RTO Helmet (Marine)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Marine\13_V_CH252_MAR_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    };
+    class Marine_Helmet_CA : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] C-A CH252 Heavy Helmet (Steeler)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\CA_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    };
+    class Marine_Helmet_CM : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] C-M CH252 Heavy Helmet (Crolter)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\CM_V_CH252_MAR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    };
+    class Marine_Helmet_CR : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] C-R CH252 Heavy Helmet (Hermes)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\CR_V_CH252_MAR_R3_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    };
+    class Marine_Helmet_17 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-7 CH252 Heavy Helmet (Eli)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\17_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_11H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Heavy Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\11_V_CH252_URB_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_11L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Light Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\11_V_CH252_URB_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_11M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Corpsman Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\11_V_CH252_URB_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_11R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 RTO Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\11_V_CH252_URB_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_11R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Sr RTO Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\11_V_CH252_URB_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_12H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Heavy Helmet (Urban)"; 
+        hiddenSelectionsTextures[] ={"first_meu_aux\Data\1stplt\Urban\12_V_CH252_URB_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_12L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Light Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\12_V_CH252_URB_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_12M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Corpsman Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\12_V_CH252_URB_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_12R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 RTO Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\12_V_CH252_URB_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_12R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Sr RTO Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\12_V_CH252_URB_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_13H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Heavy Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\13_V_CH252_URB_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_13L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Light Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\13_V_CH252_URB_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_13M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Corpsman Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\13_V_CH252_URB_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Urban_Helmet_13R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 RTO Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\13_V_CH252_URB_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+     class Urban_Helmet_13R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Sr RTO Helmet (Urban)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Urban\13_V_CH252_URB_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_11H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Heavy Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\11_V_CH252_WDL_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_11L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Light Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\11_V_CH252_WDL_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_11M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Corpsman Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\11_V_CH252_WDL_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_11R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 RTO Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\11_V_CH252_WDL_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+     class Woodland_Helmet_11R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-1 CH252 Sr RTO Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\11_V_CH252_WDL_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_12H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurato = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Heavy Helmet (Woodland)";  
+        hiddenSelectionsTextures[] ={"first_meu_aux\Data\1stplt\Woodland\12_V_CH252_WDL_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_12L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Light Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\12_V_CH252_WDL_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_12M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Corpsman Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\12_V_CH252_WDL_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_12R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 RTO Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\12_V_CH252_WDL_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+     class Woodland_Helmet_12R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-2 CH252 Sr RTO Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\12_V_CH252_WDL_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_13H : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Heavy Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_13L : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Light Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_13M : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Corpsman Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_13R1 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 RTO Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_R1_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+    class Woodland_Helmet_13R2 : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		author = "1st MEU Mark"; 
+		displayName = "[1stMEU] 1-3 CH252 Sr RTO Helmet (Woodland)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    }; 
+     
+    // 1stplt dp 
+     
+     class Snow_Helmet_11H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_11L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_11M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_11R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_11R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_12H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_12L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_12M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_12R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_12R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_13H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_13L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_13M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_13R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Snow_Helmet_13R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_11H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_11L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_11M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_11R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_11R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_12H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_12L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_12M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_12R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_12R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_13H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_13L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_13M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_13R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Desert_Helmet_13R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+    class Marine_Helmet_11H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_11L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_11M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_11R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_11R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_12H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_12L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_12M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_12R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_12R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_13H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_13L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_13M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_13R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Marine_Helmet_13R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        };
+    class Marine_Helmet_CA_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        };
+    class Marine_Helmet_CR_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        };
+    class Marine_Helmet_CM_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        };
+    class Marine_Helmet_17_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_11H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_11L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_11M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_11R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_11R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_12H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_12L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_12M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_12R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_12R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_13H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_13L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_13M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_13R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Urban_Helmet_13R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+    class  Woodland_Helmet_11H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_11L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_11M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_11R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_11R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_12H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_12L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_12M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_12R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_12R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_13H_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_13L_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_13M_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_13R1_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
+     class Woodland_Helmet_13R2_dp : 1MEU_Base_CH252_Helmet 
+        { 
+            scopeArsenal = 0; 
+            scope = 0; 
+        }; 
     class Throw : Grenadelauncher
 	{
 		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle","MEU_Fury_Muzzle","MEU_Bubble_Muzzle",};
