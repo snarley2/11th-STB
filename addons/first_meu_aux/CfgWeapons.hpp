@@ -7010,7 +7010,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     class Prae37: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Mark";
-		displayName="[1stMEU] M52D D-7 (Mark)";
+		displayName="[1stMEU] M52D D-5 (Mark)";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -7068,7 +7068,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 			"optre_unsc_units\army\data\armor_odst_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ_Mark.paa"
 		};
         
         class ItemInfo: ItemInfo
@@ -7970,6 +7970,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 	
     class M52DRiflemanPurple:1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -8603,6 +8604,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     
     class M52DMarksmanPurple:1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -9132,6 +9134,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     
     class M52DSniperSilver: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -9236,6 +9239,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 	
     class M52DSniperPurple: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -9759,6 +9763,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 	
     class M52DAutoRiflemanSilver: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -9861,6 +9866,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     
     class M52DAutoRiflemanPurple: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -10390,6 +10396,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 	
     class M52DGrenadierSilver: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -10494,6 +10501,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     
     class M52DGrenadierPurple: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -11015,6 +11023,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 	
     class M52DBreacherSilver: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -11117,6 +11126,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     
     class M52DBreacherPurple: 1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -11276,7 +11286,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 			"optre_unsc_units\army\data\armor_odst_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Green.paa"
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
         subItems[] =
 		{
@@ -11387,7 +11397,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 			"optre_unsc_units\army\data\armor_odst_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Green.paa"
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
         subItems[] =
 		{
@@ -11971,7 +11981,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     {
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_color_green_custom_FloodedMac.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black_Red_HM_CHQ_Flooded.paa"};
         idd = 8000;
 		duration = 99999;
 		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
@@ -12029,7 +12039,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black_Red_HM_CHQ.paa","first_meu_aux\data\misc\VISR_ODST_CLR.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black_Red_HM_CHQ_Flooded.paa","first_meu_aux\data\misc\VISR_ODST_CLR.paa"};
     };
     class Praetor_Helmet_Black_31_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
@@ -12261,6 +12271,42 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_33","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
     };
+    class Praetor_RTO_41: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		displayName = "[1stMEU] 4-1 CH252D (RTO)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_31.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Praetor_RTO_42: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		displayName = "[1stMEU] 4-2 CH252D (RTO)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_32","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+     class Praetor_RTO_43: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1stMEU Mark";
+		displayName = "[1stMEU] 4-3 CH252D (RTO)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_33","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
     //broken
     class Praetor_RTO_31_broken : Praetor_RTO_31
     {
@@ -12355,6 +12401,30 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_32.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
     class Praetor_RTO_33_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_33.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+    };
+    class Praetor_RTO_41_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_31.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+    };
+    class Praetor_RTO_42_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_R1_32.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+    };
+    class Praetor_RTO_43_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -12628,10 +12698,11 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black_Red_HM_CHQ.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black_Red_HM_CHQ_Flooded.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
     class Praetor_Helmet_Silver: 1stMEU_Base_CH252D_Helmet
 	{
+        author = "1st MEU Ginger"
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -15011,7 +15082,112 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			};
         };
     };
-    
+    class M52DGinger:1MEU_BASE_M52D_Armor
+	{
+        author = "1st MEU Ginger"
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D 4-1A (Ginger)";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+            "APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+            "APO_Knife"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
+			"optre_unsc_units\army\data\armor_odst_co.paa",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Thigh",
+                "APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"APO_Sniper",
+                "APO_Knife"
+			};
+		};
+	};
 // Praetorian 4th Platoon Helmets Depolarised
     class Helmet_HOK_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
