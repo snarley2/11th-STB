@@ -3215,7 +3215,7 @@ class CfgVehicles
 				onlyForPlayer = 1;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterrear;"
+				statement = "0 = this spawn MEU_fnc_thrusterback;"
 				textToolTip = "<t color='#FE2E2E'>Adjust Rear";
 			};
 			class thrusterleft
