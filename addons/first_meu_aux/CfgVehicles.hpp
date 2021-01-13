@@ -1454,12 +1454,12 @@ class CfgVehicles
 	scopeArsenal = 2;
         airBrakeFrictionCoef = 50;
         displayName = "[MEU] Pegasus Wyvern";
-        armor = 600;
-        damageResistance = 0.002;
+        armor = 350;
+        damageResistance = 0.00555;
         tf_range=30000;
         faction = "MEU_UNSC";
 		side = 1;
-		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
 		weapons[] = {"CMFlareLauncher","weapon_AMRAAMLauncher","rockets_Skyfire","Laserdesignator_mounted"};
 		class Turrets: Turrets
 		{
