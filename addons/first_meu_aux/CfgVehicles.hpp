@@ -3713,6 +3713,13 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO.paa"};
 	};
 	
+    class BDU_V_Praetorian_Slim_2: 1stMEU_BDU
+	{
+		uniformclass = "Praetorian_BDU_2";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa","first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa"};
+	};
+    
 	class BDU_V_Centurion_Slim: 1stMEU_BDU
 	{
         uniformclass = "Centurion_BDU";

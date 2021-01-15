@@ -7064,9 +7064,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ_Mark.paa"
 		};
@@ -7171,9 +7171,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -7276,9 +7276,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -7381,9 +7381,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -7489,9 +7489,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -7598,9 +7598,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
@@ -7705,9 +7705,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
@@ -7811,9 +7811,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -7917,9 +7917,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
@@ -8025,9 +8025,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
@@ -8133,9 +8133,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -8239,9 +8239,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
@@ -8344,9 +8344,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
@@ -8448,9 +8448,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -8552,9 +8552,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
@@ -8657,9 +8657,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
@@ -8763,9 +8763,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -8873,9 +8873,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
@@ -8978,9 +8978,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
@@ -9082,9 +9082,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -9187,9 +9187,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
@@ -9292,9 +9292,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
@@ -9398,9 +9398,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -9507,9 +9507,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
@@ -9610,9 +9610,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
@@ -9712,9 +9712,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -9815,9 +9815,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
@@ -9918,9 +9918,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
@@ -10024,9 +10024,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -10135,9 +10135,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
@@ -10240,9 +10240,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
@@ -10344,9 +10344,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -10449,9 +10449,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
@@ -10554,9 +10554,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
@@ -10659,9 +10659,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -10767,9 +10767,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
@@ -10870,9 +10870,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
@@ -10972,9 +10972,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
@@ -11075,9 +11075,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
@@ -11178,9 +11178,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
@@ -11282,9 +11282,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -11393,9 +11393,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
@@ -11503,9 +11503,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};
@@ -14098,9 +14098,21 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"camo3",
 			"camo4",
 			"camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_ODST",
+            "A_KneesLeft",
+            "A_KneesRight",
 			"A_KneesMarLeft",
 			"A_KneesMarRight",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
 			"A_Ghillie",
+            "A_TacPad",
+            "AS_BaseLeft",
+            "AS_BaseLight",
 			"AS_LargeLeft",
 			"AS_LargeRight",
 			"AS_MediumLeft",
@@ -14119,11 +14131,13 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"AP_GL",
 			"AP_Knife",
 			"AP_MGThigh",
+            "AP_Thigh",
 			"AP_AR",
 			"AP_Pack",
 			"AP_Pistol",
 			"AP_Rounds",
 			"AP_SG",
+            "AP_SMG",
 			"AP_Sniper",
 			"APO_AR",
 			"APO_BR",
@@ -14141,11 +14155,11 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_HR.paa"
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -14215,6 +14229,24 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         };
     };
 	
+    class Praetorian_BDU_2 : U_B_CombatUniform_mcam
+	{
+		author = "1stMEU Ginger";
+		scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+		displayName = "[1stMEU] Praetorian Combat Uniform (New)";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "BDU_V_Praetorian_Slim_2";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
+    
     class Centurion_BDU : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -14942,9 +14974,9 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\Data\4thPlt\ODST_HR_Black_Purple3.paa"
 		};
@@ -15049,9 +15081,9 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\Data\4thPlt\ODST_HR_Black_Purple2.paa"
 		};
@@ -15153,9 +15185,9 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple1.paa"
 		};
@@ -15258,9 +15290,9 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"OPTRE_UNSC_Units\Army\data\vest_odst_co.paa",
-			"optre_unsc_units\army\data\armor_odst_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_H3_Legs.paa",
+			"first_meu_aux\data\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
@@ -15461,7 +15493,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Yellow_43_Mutt.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
     };
-// Weapons Start
+//1stPlt Helm Start
      class Snow_Helmet_11H : 1MEU_Base_CH252_Helmet 
     { 
         scope = 2; 
@@ -16173,7 +16205,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		displayName = "[1stMEU] 1-3 CH252 Sr RTO Helmet (Woodland)"; 
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_R2_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     }; 
-     
+    //1stPlt Helm End 
     // 1stplt dp 
      
      class Snow_Helmet_11H_dp : 1MEU_Base_CH252_Helmet 
@@ -16571,6 +16603,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
             scopeArsenal = 0; 
             scope = 0; 
         }; 
+    // Weapons Start
     class Throw : Grenadelauncher
 	{
 		muzzles[] += {"MEU_C7_Muzzle","MEU_C12_Muzzle","MEU_9bang_Muzzle","MEU_C168_Muzzle","MEU_Fury_Muzzle","MEU_Bubble_Muzzle",};
