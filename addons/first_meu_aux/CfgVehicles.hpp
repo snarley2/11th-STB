@@ -3426,6 +3426,29 @@ class CfgVehicles
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
     };
+	class MEU_Prae_Ruck_Base_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
+        maximumLoad = 400;
+		mass = 50;
+		hiddenSelections[] = {"camo1","biofoam"};
+    };
+    
+	class uplinkpack : MEU_Prae_Ruck_Base_Heavy
+    {
+        author = "1st MEU Mark";
+        displayName = "[1stMEU] ODST Uplink Rucksack";
+        maximumLoad = 250;
+        class components :  DataLinkSensorComponent
+        {
+            class SensorsManagerComponent : SensorTemplateDataLink
+            {
+                setVehicleReportRemoteTargets = 1;
+                setVehicleReportOwnPosition = 1;
+            };
+        };
+    };
 	
 	class MEU_Prae_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
