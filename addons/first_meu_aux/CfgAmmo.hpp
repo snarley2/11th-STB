@@ -126,9 +126,9 @@ class CfgAmmo
 		indirectHit = 0;
 		indirectHitRange = 0;
 		defaultMagazine = "OPTRE_FC_BubbleShield";
-		model = "\OPTRE_FC_Buildings\misc\energy_shield.p3d";
+		model = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";
 		explosive = 0;
-		explosionType = "bomb";
+		explosionType = "";
 		mineModelDisabled = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";
 		triggerWhenDestroyed = 0;
 		explosionEffects = "";
@@ -136,8 +136,25 @@ class CfgAmmo
 		soundHit1[] = {"",0,0,0};
 		multiSoundHit[] = {};
 		mineInconspicuousness = 9999;
-        timetolive = 220;
-		explosionTime = 30;
+        timetolive = 15;
+		explosionTime = 8;
+		effectFlare = "";
+		effectsFire = "";
+		effectsMissile = "";
+		effectsSmoke = "";
+		explosionEffectsDir = "";
+		explosionForceCoef = "";
+		explosionPos = "";
+		explosionEffectsRadius = 0;
+		explosionSoundEffect = "";
+		SoundSetExplosion[] ={""};
+		class CamShakeExplode
+		{
+			power = 0;
+			duration = 0;
+			frequency = 0;
+			distance = 0;
+		};
 	};
     //end throwable sheild
 	// start ammo reballance

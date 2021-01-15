@@ -46,6 +46,10 @@ class CfgFunctions
 			{
                 file = "first_meu_aux\Functions\fn_thrusterright.sqf";
 			};
+			class Bubbleshield_throw
+			{
+                file = "first_meu_aux\Functions\Bubbleshield_throw.sqf";
+			};
         };
         class fnc_tourniquetRemove
         {
