@@ -16738,6 +16738,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				compatibleitems[] = {"OPTRE_SRS99D_Suppressor"};
 			};
 		};
+        modes[] = {"FullAuto","Single"};
 		class Single: Single
 		{
             sounds[] = {"StandardSound","SilencedSound"};
@@ -16746,43 +16747,43 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
 			};
-            class SilencedSound: StandardSound
+            class SilencedSound: BaseSoundModeType
 			{
-				begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",1.0,1,300};
-				begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",1.0,1,300};
-				begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",1.0,1,300};
+				begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_short_01",1.5848932,1,400};
+				begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_short_02",1.5848932,1,400};
+				begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_short_03",1.5848932,1,400};
 				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
 				class SoundTails
 				{
 					class TailInterior
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_interior",1.4125376,1,400};
 						frequency = 1;
 						volume = "interior";
 					};
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",1.0,1,300};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
 					class TailForest
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_forest",1.0,1,400};
 						frequency = 1;
 						volume = "(1-interior/1.4)*forest";
 					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_houses",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
 					class TailMeadows
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_meadows",1.0,1,400};
 						frequency = 1;
 						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
 					};
-					class TailHouses
+					class TailTrees
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_trees",1.0,1,400};
 						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
+						volume = "(1-interior/1.4)*trees";
 					};
 				};
 			};
@@ -16797,43 +16798,43 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",1.0,1,2000};
 				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",1.0,1,2000};
 			};
-			class SilencedSound: StandardSound
+			class SilencedSound: BaseSoundModeType
 			{
-				begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",1.0,1,300};
-				begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",1.0,1,300};
-				begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",1.0,1,300};
+				begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_short_01",1.5848932,1,400};
+				begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_short_02",1.5848932,1,400};
+				begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_short_03",1.5848932,1,400};
 				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
 				class SoundTails
 				{
 					class TailInterior
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_interior",1.4125376,1,400};
 						frequency = 1;
 						volume = "interior";
 					};
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",1.0,1,300};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
 					class TailForest
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_forest",1.0,1,400};
 						frequency = 1;
 						volume = "(1-interior/1.4)*forest";
 					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_houses",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
 					class TailMeadows
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_meadows",1.0,1,400};
 						frequency = 1;
 						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
 					};
-					class TailHouses
+					class TailTrees
 					{
-						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",1.0,1,300};
+						sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\Machineguns\MMG_01_Navid\silencer_MMG_01_tail_trees",1.0,1,400};
 						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
+						volume = "(1-interior/1.4)*trees";
 					};
 				};
 			};
