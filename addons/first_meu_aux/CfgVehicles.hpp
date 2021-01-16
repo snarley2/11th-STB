@@ -3429,6 +3429,9 @@ class CfgVehicles
     };
 	class MEU_Prae_Ruck_Base_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
         maximumLoad = 400;
