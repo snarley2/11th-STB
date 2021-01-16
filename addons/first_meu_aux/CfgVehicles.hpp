@@ -3425,6 +3425,7 @@ class CfgVehicles
         maximumLoad = 320;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
 	class MEU_Prae_Ruck_Base_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
@@ -3433,6 +3434,7 @@ class CfgVehicles
         maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
     
 	class uplinkpack : MEU_Prae_Ruck_Base_Heavy
@@ -3457,6 +3459,7 @@ class CfgVehicles
         maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
     
 	class MEU_Prae_Corpsman_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
@@ -3470,6 +3473,7 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
 		maximumLoad = 320;
     };
 	
@@ -3480,6 +3484,7 @@ class CfgVehicles
 		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
     class MEU_Parachute : B_parachute
     {
@@ -3710,16 +3715,9 @@ class CfgVehicles
 	{
 		uniformclass = "Praetorian_BDU";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Urban_CO.paa"};
-	};
-	
-    class BDU_V_Praetorian_Slim_2: 1stMEU_BDU
-	{
-		uniformclass = "Praetorian_BDU_2";
-        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa","first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa"};
 	};
-    
+	
 	class BDU_V_Centurion_Slim: 1stMEU_BDU
 	{
         uniformclass = "Centurion_BDU";

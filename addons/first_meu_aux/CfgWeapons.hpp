@@ -969,13 +969,13 @@ class CfgWeapons
         visionMode[] = {"Normal","TI","NVG"};
         thermalMode[] = {0,1,2,3,4,5};
     };
-    class Battallion_Beret: LM_OPCAN_Beret_CGC
+    class Battalion_Beret: LM_OPCAN_Beret_CGC
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Romeo";
-		displayName = "[1stMEU] Beret (Battallion)";
+		displayName = "[1stMEU] Beret (Battalion)";
         weaponPoolAvailable = 1;
 		subItems[]=
 		{
@@ -991,6 +991,20 @@ class CfgWeapons
 	
 // centurion heavy helmets
 
+    class MEUA_MarT_HelmH_MARH_Eul : 1MEU_Base_CH252_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        author = "1stMEU Ginger";
+        displayName = "[1stMEU] CH252 Heavy Helmet (Euler)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\V_CH252_MAR_H_Euler_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        class ItemInfo: ItemInfo
+        {
+            hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\V_CH252_MAR_H_Euler_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
+        };
+    };
+    
     class MEU_Mar_Helm_MAR : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -2271,6 +2285,11 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
    };
     //no more 1st
     class MEU_Mar_Helm_MAR_dp : MEU_Mar_Helm_MAR
+        {
+            scopeArsenal = 0;
+            scope = 0;
+        };
+    class MEUA_MarT_HelmH_MARH_Eul_dp : MEU_Mar_Helm_MAR
         {
             scopeArsenal = 0;
             scope = 0;
@@ -14222,24 +14241,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "BDU_V_Praetorian_Slim";
-			containerClass = "Supply100";
-			uniformModel = "-";
-			uniformType = "Neopren";
-			mass = 40;
-        };
-    };
-	
-    class Praetorian_BDU_2 : U_B_CombatUniform_mcam
-	{
-		author = "1stMEU Ginger";
-		scope = 1;
-        scopeCurator = 1;
-        scopeArsenal = 1;
-		displayName = "[1stMEU] Praetorian Combat Uniform (New)";
-		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
-		class ItemInfo: UniformItem
-		{
-			uniformClass = "BDU_V_Praetorian_Slim_2";
 			containerClass = "Supply100";
 			uniformModel = "-";
 			uniformType = "Neopren";
