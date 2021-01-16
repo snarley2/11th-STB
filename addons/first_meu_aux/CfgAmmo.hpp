@@ -125,8 +125,8 @@ class CfgAmmo
 		hit = 0;
 		indirectHit = 0;
 		indirectHitRange = 0;
-		defaultMagazine = "OPTRE_FC_BubbleShield";
-		model = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";
+		defaultMagazine = "MEU_Bubble_Mag";
+		model = "first_meu_aux\Data\Misc\Starry Night\bubbleshield.p3d";
 		explosive = 0;
 		explosionType = "";
 		mineModelDisabled = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";
@@ -137,7 +137,7 @@ class CfgAmmo
 		multiSoundHit[] = {};
 		mineInconspicuousness = 9999;
         timetolive = 15;
-		explosionTime = 8;
+		explosionTime = 6;
 		effectFlare = "";
 		effectsFire = "";
 		effectsMissile = "";
