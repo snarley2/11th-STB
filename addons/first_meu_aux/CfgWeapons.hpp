@@ -216,8 +216,8 @@ class CfgWeapons
     {
         dlc = "1st MEU";
 		author = "1st MEU Mark";
-		scope = 0;
-		scopeArsenal = 0;
+		scope = 1;
+		scopeArsenal = 1;
 		scopeCurator = 1;
         weaponPoolAvailable = 1;
 		ace_hearing_protection = 5.0;
@@ -1150,8 +1150,8 @@ class CfgWeapons
 	class MEU_Mar_MOS_Helm_Sealed_Base: 1stMEU_Base_CH252D_Helmet
 	{
 		author = "Rave";
-		scope = 0;
-		scopeCurator = 0;
+		scope = 1;
+		scopeCurator = 1;
 		model = "\OPTRE_UNSC_Units\Army\helmet_p";
 		picture = "\OPTRE_UNSC_Units\Army\icons\Army_Helmet_WDL_vac";
 		hiddenSelections[] = {"camo","camo2","camo3","H_Collar","H_Ghillie"};
@@ -2192,68 +2192,68 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     //no more 1st
     class MEU_Mar_Helm_MAR_dp : MEU_Mar_Helm_MAR
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEUA_MarT_HelmH_MARH_Eul_dp : MEU_Mar_Helm_MAR
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_DES_dp : MEU_Mar_Helm_DES
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_CEA_dp : MEU_Mar_Helm_CEA
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 01;
+            scope = 1;
         };
     class MEU_Mar_Helm_SNO_dp : MEU_Mar_Helm_SNO
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_URB_dp : MEU_Mar_Helm_URB
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_WDL_dp : MEU_Mar_Helm_WDL
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_MAR2_dp : MEU_Mar_Helm_MAR2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_DES2_dp : MEU_Mar_Helm_DES2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_CEA2_dp : MEU_Mar_Helm_CEA2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_SNO2_dp : MEU_Mar_Helm_SNO2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_URB2_dp : MEU_Mar_Helm_URB2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_WDL2_dp : MEU_Mar_Helm_WDL2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
 	
 // CH252 light helmets
@@ -2403,63 +2403,63 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     //2nd light dp
     class MEU_Mar_Helm_base_L_dp : MEU_Mar_Helm_base_L
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_DES_L_dp : MEU_Mar_Helm_DES_L
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_CEA_L_dp : MEU_Mar_Helm_CEA_L
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_SNO_L_dp : MEU_Mar_Helm_SNO_L
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_URB_L_dp : MEU_Mar_Helm_URB_L
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_WDL_L_dp : MEU_Mar_Helm_WDL_L
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_base_L2_dp : MEU_Mar_Helm_base_L2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_DES_L2_dp : MEU_Mar_Helm_DES_L2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_CEA_L2_dp : MEU_Mar_Helm_CEA_L2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_SNO_L2_dp : MEU_Mar_Helm_SNO_L2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_URB_L2_dp : MEU_Mar_Helm_URB_L2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_Helm_WDL_L2_dp : MEU_Mar_Helm_WDL_L2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
 	
 // CH252 MOS Helmets
@@ -2576,6 +2576,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
         scope = 1; 
         scopeArsenal = 1; 
     };
+    
     //2nd plt med
      class MEU_Mar_MOS_Helm_BASE2 : 1MEU_Base_CH252_Helmet
     {
@@ -2636,65 +2637,67 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		displayName = "[1stMEU] 2nd PLT CH252 Medical Helmet (Woodland)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\M\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
+    
+    //2nd Platoon Corpsman DP Helmets Start
     class MEU_Mar_MOS_Helm_BASE_dp : MEU_Mar_MOS_Helm_BASE
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_DES_dp : MEU_Mar_MOS_Helm_DES
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_CEA_dp : MEU_Mar_MOS_Helm_CEA
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_SNO_dp : MEU_Mar_MOS_Helm_SNO
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_URB_dp : MEU_Mar_MOS_Helm_URB
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_WDL_dp : MEU_Mar_MOS_Helm_WDL
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_BASE2_dp : MEU_Mar_MOS_Helm_BASE2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_DES2_dp : MEU_Mar_MOS_Helm_DES2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_CEA2_dp : MEU_Mar_MOS_Helm_CEA2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_SNO2_dp : MEU_Mar_MOS_Helm_SNO2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_URB2_dp : MEU_Mar_MOS_Helm_URB2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
     class MEU_Mar_MOS_Helm_WDL2_dp : MEU_Mar_MOS_Helm_WDL2
         {
-            scopeArsenal = 0;
-            scope = 0;
+            scopeArsenal = 1;
+            scope = 1;
         };
 	
 // end Medical Helmets start RTO Helmets
@@ -2917,46 +2920,46 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     //2nd plt dp
     class MEU_RTO_Helm_base2_dp : MEU_rto_Helm_base2
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_DES2_dp : MEU_rto_Helm_DES2
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_CEA2_dp : MEU_rto_Helm_CEA2
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_SNO2_dp : MEU_rto_Helm_SNO2
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_URB2_dp : MEU_rto_Helm_URB2
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_WDL2_dp : MEU_rto_Helm_WDL2
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     //2nd plt sr dp
     class MEU_RTO_Helm_base4_dp : MEU_RTO_Helm_base4
     {
         scope = 1;
-        scopeCurator = 2;
+        scopeCurator = 1;
         scopeArsenal = 1;
 		author = "1st MEU Mark";
     };
     class MEU_RTO_Helm_DES4_dp : MEU_RTO_Helm_DES4
     {
         scope = 1;
-        scopeCurator = 2;
+        scopeCurator = 1;
         scopeArsenal = 1;
 		author = "1st MEU Mark";
     };
@@ -2964,7 +2967,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     class MEU_RTO_Helm_CEA4_dp : MEU_RTO_Helm_CEA4
     {
         scope = 1;
-        scopeCurator = 2;
+        scopeCurator = 1;
         scopeArsenal = 1;
 		author = "1st MEU Mark";
     };
@@ -2972,7 +2975,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     class MEU_RTO_Helm_SNO4_dp : MEU_RTO_Helm_SNO4
     {
         scope = 1;
-        scopeCurator = 2;
+        scopeCurator = 1;
         scopeArsenal = 1;
 		author = "1st MEU Mark";
     };
@@ -2980,54 +2983,54 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 	class MEU_RTO_Helm_URB4_dp : MEU_RTO_Helm_URB4
     {
         scope = 1;
-        scopeCurator = 2;
+        scopeCurator = 1;
         scopeArsenal = 1;
 		author = "1st MEU Mark";
     };
     class MEU_RTO_Helm_WDL4_dp : MEU_RTO_Helm_WDL4
     {
         scope = 1;
-        scopeCurator = 2;
+        scopeCurator = 1;
         scopeArsenal = 1;
 		author = "1st MEU Mark";
     };
     //plt dp
     class MEU_RTO_2PLT_dp : MEU_RTO_2PLT
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     //end plt dp
     //start regular dp end custom
     class MEU_RTO_Helm_base_dp : MEU_rto_Helm_base
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_DES_dp : MEU_rto_Helm_DES
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_CEA_dp : MEU_rto_Helm_CEA
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_SNO_dp : MEU_rto_Helm_SNO
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_URB_dp : MEU_rto_Helm_URB
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     class MEU_RTO_Helm_WDL_dp : MEU_rto_Helm_WDL
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
     };
     // M52A Armor 
     // Rifleman
@@ -11086,12 +11089,17 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     //praetorian helmets starts with broke shit
     class Praetor_Helmet_Base_Broken : Praetor_Helmet_Black
     {
+        scope = 1;
+        scopeArsenal = 1;
         ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
         ace_overlayCracked = "first_meu_aux\Data\misc\hud_cracked.paa";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black.paa","first_meu_aux\Data\misc\hud_cracked.paa"};
     };
     class Praetor_Helmet_Black_broken : Praetor_Helmet_Black
-    {};
+    {
+        scope = 1;
+        scopeArsenal = 1;
+    };
     class Praetor_Helmet_Black_31_broken : Praetor_Helmet_Base_Broken
     {
         scope = 1;
@@ -12647,8 +12655,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     //dp and broken shit for pilots
     class Siffy_Helmet_dp : Siffy_Helmet
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP1";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_6.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -12660,8 +12668,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_Deck_dp : Siffy_Helmet
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
@@ -12674,8 +12682,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class peg_flight_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP2";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -12687,8 +12695,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     }
     class Peg_Axios_section_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 11;
         displayName = "[1stMEU] Pegasus Helmet DP3";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -12700,8 +12708,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_Helios_section_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP4";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -12713,8 +12721,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_ilithios_section_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP6";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -12726,8 +12734,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_Axios_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP7";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12739,7 +12747,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_Helios_dp : Siffy_Helmet_dp
     {
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP8";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12751,8 +12760,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_ilithios_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP10";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12764,8 +12773,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_chaotic_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Chaotic.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12777,8 +12786,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_1stFC_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_1stFC.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12790,8 +12799,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_2ndFC_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_2ndFC.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12803,8 +12812,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_Five_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_5.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12816,8 +12825,8 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     };
     class Peg_Base_dp : Siffy_Helmet_dp
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -12830,71 +12839,71 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     //broken stuff
     class Siffy_Helmet_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Custom_Siffy.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
     };
     class peg_flight_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
     }
     class Peg_Axios_section_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
     };
     class Peg_Helios_section_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
     };
     class Peg_ilithios_section_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
     };
     class Peg_Axios_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
     };
     class Peg_Helios_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
     };
     class Peg_ilithios_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
     };
     class Peg_Base_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
     };
 	class Peg_Deck_broken : OPTRE_UNSC_VX16_Helmet_base_broken
     {
-        scopeArsenal = 0;
-        scope = 0;
+        scopeArsenal = 1;
+        scope = 1;
         displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2"};
@@ -14177,8 +14186,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	};
 	class MEU_CH252A_Pararescue_Rave_dp : VES_CH252A
 	{
-		scope = 0;
-		scopeArsenal = 0;
+		scope = 1;
+		scopeArsenal = 1;
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
@@ -14190,8 +14199,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     };
 	class MEU_CH252A_Pararescue_Dino_dp : VES_CH252A
 	{
-		scope = 0;
-		scopeArsenal = 0;
+		scope = 1;
+		scopeArsenal = 1;
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
@@ -14203,8 +14212,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	};	
     class MEU_CH252A_Pararescue_Blue_dp : VES_CH252A
 	{
-		scope = 0;
-		scopeArsenal = 0;
+		scope = 1;
+		scopeArsenal = 1;
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
@@ -14216,8 +14225,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	};
 	class MEU_CH252A_Pararescue_Silver_dp : VES_CH252A
 	{
-		scope = 0;
-		scopeArsenal = 0;
+		scope = 1;
+		scopeArsenal = 1;
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
@@ -14229,8 +14238,8 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	};
 	class MEU_CH252A_Pararescue_Gold_dp : VES_CH252A
 	{
-		scope = 0;
-		scopeArsenal = 0;
+		scope = 1;
+		scopeArsenal = 1;
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
