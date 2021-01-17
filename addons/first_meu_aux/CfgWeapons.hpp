@@ -1,33 +1,17 @@
 class CfgWeapons
 {
-
-    class LM_OPCAN_CGC;
-    class ItemCore;
-	class HeadgearItem;
-	class Uniform_Base;
-    class ItemInfo;
-	class H_HelmetB;
-	class VestItem;
-    class LM_OPCAN_Beret_CGC;
-    class LM_OPCAN_Vest_ODST_Red;
-    class G_B_Diving;
-	class ItemcTabHCam;
-	class A3_TVG_S_F6;
-    class v_rebreatherB;
-	class MRH_BluForTransponder;
+	//OPTRE Armor
 	class OPTRE_UNSC_CH252D_Helmet;
 	class OPTRE_UNSC_CH252_Helmet2_MAR;
 	class OPTRE_UNSC_M52D_Armor;
-	class UniformItem;
-	class ACE_ItemCore;
-	class CBA_MiscItem_ItemInfo;
-	class InventoryFirstAidKitItem_Base_F;
-	class MedikitItem;
-    class ACE_Morphine;
-	class U_B_CombatUniform_mcam;
-    class OPTRE_UNSC_VX16_Helmet_base;
+	class OPTRE_UNSC_VX16_Helmet_base;
     class OPTRE_UNSC_VX16_Helmet_base_broken;
     class OPTRE_UNSC_VX16_Helmet_base_dp;
+	class OPTRE_UNSC_M52A_Armor_Base;
+    class OPTRE_FC_VX19_Helmet;
+	class OPTRE_HUD_RscPicture;
+	
+	//OPCAN Armor
 	class LM_OPCAN_CH252D_H3_dp;
 	class LM_OPCAN_CH252D_H3_Green_dp;
 	class LM_OPCAN_CH252D_H3_Red_dp;
@@ -38,35 +22,27 @@ class CfgWeapons
 	class LM_OPCAN_CH252D_H3_Red_broken;
 	class LM_OPCAN_CH252D_H3_Yellow_broken;
 	class LM_OPCAN_CH252D_H3_Blue_broken;
-    class VES_CH252D_dp;
-    class WeaponSlotsInfo;
-	class StandardSound;
-	class CowsSlot;
-	class MuzzleSlot;
-	class PointerSlot;
-	class UnderBarrelSlot;
-	class Single;
-	class FullAuto;
+	class LM_OPCAN_CGC;
+	class LM_OPCAN_Beret_CGC;
+    class LM_OPCAN_Vest_ODST_Red;
+	
+	//Zulu Armor
+	class VES_M52A_URB_Security_A;
+	class VES_CH252A;
+	class VES_CH252D_dp;
+	
+    //Weapons
 	class OPTRE_Rifle_Base;
 	class OPTRE_LongRifle_Base;
-	class UGL_F;
+	class OPTRE_Handgun_Base;
+	class OPTRE_SubMachineGun_Base;
     class OPTRE_M7S;
 	class OPTRE_M73;
 	class autocannon_40mm_CTWS;
     class VES_M7_I;
-    class OPTRE_SubMachineGun_Base;
+    class UGL_F;
     class Grenadelauncher;
     class ThrowMuzzle;
-    class OPTRE_HUD_RscPicture;
-    class ACE_plasmaIV;
-    class OPTRE_Biofoam;
-    class OPTRE_Medigel;
-    class ACE_tourniquet;
-    class OPTRE_Handgun_Base;
-    class BaseSoundModeType;
-    class OPTRE_UNSC_M52A_Armor_Base;
-    class VES_M52A_URB_Security_A;
-	class VES_CH252A;
 	class HMG_127;
 	class GMG_40mm;
 	class LMG_coax;
@@ -74,7 +50,43 @@ class CfgWeapons
 	class MGun;
 	class GMG_F;
 	class cannon_120mm;
-    class OPTRE_FC_VX19_Helmet;
+		
+	//Medical
+	class InventoryFirstAidKitItem_Base_F;
+	class MedikitItem;
+    class ACE_Morphine;
+	class ACE_plasmaIV;
+    class OPTRE_Biofoam;
+    class OPTRE_Medigel;
+    class ACE_tourniquet;
+	
+	//Generic Classes
+    class ItemCore;
+	class HeadgearItem;
+	class Uniform_Base;
+	class UniformItem;
+    class ItemInfo;
+	class VestItem;
+	class BaseSoundModeType;
+	class WeaponSlotsInfo;
+	class StandardSound;
+	class CowsSlot;
+	class MuzzleSlot;
+	class PointerSlot;
+	class UnderBarrelSlot;
+	class Single;
+	class FullAuto;
+	
+	//Miscelaneous Classes
+	class ItemcTabHCam;
+	class v_rebreatherB;
+    class G_B_Diving;
+	class H_HelmetB;
+	class MRH_BluForTransponder;
+    class A3_TVG_S_F6;
+    class ACE_ItemCore;
+	class CBA_MiscItem_ItemInfo;
+	class U_B_CombatUniform_mcam;
     class G_Aviator;
     class H_Beret_Colonel;
 	
