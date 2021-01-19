@@ -11,6 +11,7 @@ class CfgAmmo
 	class G_40mm_HE;
     class ACE_SatchelCharge_Remote_Ammo_Thrown;
     class ACE_G_CTS9;
+	class M_Titan_AT;
 	
 	//Shotguns
 	class B_12Gauge_Pellets_Submunition;
@@ -22,6 +23,9 @@ class CfgAmmo
 	class OPTRE_B_762x51_Ball;
 	class OPTRE_B_95x40_Ball;
 	class OPTRE_B_127x40_Ball;
+	
+	//Miscelaneous Classes
+	class SensorTemplateIR;
 	
     // code name LMAO
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
@@ -286,6 +290,183 @@ class CfgAmmo
 		warheadName = "HEAT";
         timeToLive = 30;
         fuseDistance = 4;
+	};
+	
+	class M41_Rocket_HEAT_WireGuided: M_Titan_AT
+	{
+		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
+		effectsMissile = "missile3";
+		timeToLive = 30;
+		cost = 500;
+		aiAmmoUsageFlags = "128 + 512 + 256";
+		allowAgainstInfantry = 0;
+		hit = 500;
+		indirectHit = 40;
+		indirectHitRange = 4;
+		explosive = 0.8;
+		fuseDistance = 20;
+		irLock = 0;
+		airLock = 2;
+		lockType = 0;
+		laserLock = 0;
+		nvLock = 0;
+		cmImmunity = 0.4;
+		manualControl = 1;
+		missileManualControlCone = 360;
+		maxControlRange = 10000;
+		weaponLockSystem = "2 + 16";
+		simulationStep = 0.002;
+		airFriction = 0.145;
+		sideAirFriction = 0.3;
+		maneuvrability = 24;
+		coefGravity = 1;
+		missileKeepLockedCone = 360;
+		missileLockCone = 270;
+		missileLockMaxDistance = 5000;
+		missileLockMinDistance = 20;
+		missileLockMaxSpeed = 270;
+		trackOversteer = 0.9;
+		trackLead = 0.8;
+		initTime = 0.1;
+		thrustTime = 10;
+		thrust = 100;
+		maxSpeed = 270;
+		class Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange = 0;
+							maxRange = 3000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = 1;
+						};
+						class GroundTarget
+						{
+							minRange = 0;
+							maxRange = 3000;
+							objectDistanceLimitCoef = 1;
+							viewDistanceLimitCoef = 1;
+						};
+						maxTrackableSpeed = 340;
+						angleRangeHorizontal = 60;
+						angleRangeVertical = 60;
+						maxTrackableATL = 4000;
+					};
+				};
+			};
+		};
+		class ace_missileguidance
+		{
+			enabled = 1;
+			canVanillaLock = 0;
+			onFired = "ace_hot_fnc_onFired";
+			minDeflection = 0.00025;
+			maxDeflection = 0.007;
+			incDeflection = 0.0005;
+			defaultSeekerType = "SACLOS";
+			seekerTypes[] = {"SACLOS"};
+			defaultSeekerLockMode = "LOAL";
+			seekerLockModes[] = {"LOAL","LOBL"};
+			seekerAngle = 30;
+			seekerAccuracy = 1;
+			seekerMinRange = 75;
+			seekerMaxRange = 2500;
+			seekLastTargetPos = 0;
+			correctionDistance = 15;
+			offsetFromCrosshair[] = {0,0,0.5};
+			defaultAttackProfile = "WIRE";
+			attackProfiles[] = {"WIRE"};
+		};
+	};
+	
+	class M41_Rocket_HEAT_HeatSeeking: M41_Rocket_HEAT_WireGuided
+	{
+		hit = 400;
+		indirectHit = 40;
+		indirectHitRange = 4;
+		missileKeepLockedCone = 90;
+		missileLockCone = 90;
+		missileLockMaxDistance = 5000;
+		missileLockMinDistance = 10;
+		missileLockMaxSpeed = 270;
+		trackOversteer = 0.33;
+		trackLead = 0.33;
+		irLock = 1;
+		airLock = 1;
+		lockType = 0;
+		laserLock = 0;
+		nvLock = 0;
+		cmImmunity = 0.33;
+		manualControl = 0;
+		missileManualControlCone = 360;
+		maxControlRange = 10000;
+		weaponLockSystem = "2 + 16";
+		class ace_missileguidance
+		{
+			enabled = 1;
+			minDeflection = 5e-05;
+			maxDeflection = 0.007;
+			incDeflection = 5e-05;
+			canVanillaLock = 1;
+			defaultSeekerType = "Optic";
+			seekerTypes[] = {"Optic","Thermal"};
+			defaultSeekerLockMode = "LOAL";
+			seekerLockModes[] = {"LOAL","LOBL"};
+			seekerAngle = 90;
+			seekerAccuracy = 1;
+			seekerMinRange = 1;
+			seekerMaxRange = 2500;
+			seekLastTargetPos = 1;
+			showHintOnCycle = 1;
+			defaultAttackProfile = "DIR";
+			attackProfiles[] = {"DIR"};
+		};
+	};
+	
+	class M41_Rocket_HEAT_Unguided: M41_Rocket_HEAT_WireGuided
+	{
+		allowAgainstInfantry = 1;
+		aiAmmoUsageFlags = "64 + 128";
+		hit = 600;
+		indirectHit = 20;
+		indirectHitRange = 2;
+		explosive = 1;
+		simulation = "shotRocket";
+		irLock = 0;
+		airLock = 0;
+		cmImmunity = 1;
+		manualControl = 0;
+		weaponLockSystem = 0;
+		class ace_missileguidance
+		{
+			enabled = 0;
+		};
+	};
+	
+	class M41_Rocket_HEAP_Unguided: M41_Rocket_HEAT_WireGuided
+	{
+		allowAgainstInfantry = 1;
+		aiAmmoUsageFlags = "64 + 128";
+		hit = 100;
+		indirectHit = 100;
+		indirectHitRange = 10;
+		explosive = 1;
+		simulation = "shotRocket";
+		irLock = 0;
+		airLock = 0;
+		cmImmunity = 1;
+		manualControl = 0;
+		weaponLockSystem = 0;
+		class ace_missileguidance
+		{
+			enabled = 0;
+		};
 	};
 	
 	class M1024_30mm_HEAT: B_30mm_MP

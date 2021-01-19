@@ -38,6 +38,7 @@ class CfgWeapons
 	class OPTRE_SubMachineGun_Base;
     class OPTRE_M7S;
 	class OPTRE_M73;
+	class OPTRE_UnguidedLauncher_Base;
 	class autocannon_40mm_CTWS;
     class VES_M7_I;
     class UGL_F;
@@ -76,6 +77,7 @@ class CfgWeapons
 	class UnderBarrelSlot;
 	class Single;
 	class FullAuto;
+	class Mode_SemiAuto;
 	
 	//Miscelaneous Classes
 	class ItemcTabHCam;
@@ -16534,6 +16536,24 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"FullAuto"
 		};
     };
+	
+	class OPAEX_M41_Launcher: OPTRE_UnguidedLauncher_Base
+	{
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		scope = 2;
+		scopeArsenal = 2;
+		displayname = "M41 SSR MAV/AW SPNKr";
+		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon";
+		magazines[] =
+		{
+			"M41_Twin_HEAT_WireGuided",
+			"M41_Twin_HEAT_HeatSeeking",
+			"M41_Twin_HEAT",
+			"M41_Twin_HEAP"
+		};
+		magazineWell[] = {};
+	};	
 	
     class OPTRE_M319 : OPTRE_Rifle_Base
     {

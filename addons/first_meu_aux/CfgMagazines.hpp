@@ -35,6 +35,7 @@ class CfgMagazines
 	class OPTRE_36Rnd_95x40_Mag_HPSAP;
 	class OPTRE_36Rnd_95x40_Mag_SAPHE;
 	class 40Rnd_105mm_APFSDS_T_Green;
+	class RPG32_HE_F;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -1198,5 +1199,48 @@ class CfgMagazines
 		count = 60;
 		displayname = "90mm APBC";
 		displaynameshort = "APBC";
+	};
+	
+	class M41_Twin_HEAT_WireGuided: RPG32_HE_F
+	{
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayname = "M19 HEAT (Wire-Guided) Twin Rockets";
+		displaynameshort = "HEAT (Wire-Guided)";
+		descriptionshort = "High Explosive Anti Tank<br/>SACLOS";
+		ammo = "M41_Rocket_HEAT_WireGuided";
+		picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
+		model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
+		count = 2;
+		mass = 100;
+		initSpeed = 150;
+		allowedSlots[] = {901,701};
+		maxLeadSpeed = 270;
+	};
+	
+	class M41_Twin_HEAT_HeatSeeking: M41_Twin_HEAT_WireGuided
+	{
+		displayname = "M19 HEAT (Heat-Seeking) Twin Rockets";
+		displaynameshort = "HEAT (Heat-seeking)";
+		descriptionshort = "High Explosive Anti Tank<br/>Heat-Seeking";
+		ammo = "M41_Rocket_HEAT_HeatSeeking";
+	};
+	
+	class M41_Twin_HEAT: M41_Twin_HEAT_WireGuided
+	{
+		dlc = "OPTRE";
+		descriptionshort = "High Explosive Anti Tank<br/>Un-guided";
+		displayname = "M19 HEAT (Un-guided) Twin Rockets";
+		displaynameshort = "High Explosive Anti Tank";
+		ammo = "M41_Rocket_HEAT_Unguided";
+	};
+	
+	class M41_Twin_HEAP: M41_Twin_HEAT_WireGuided
+	{
+		dlc = "OPTRE";
+		descriptionshort = "High Explosive Anti Personnel<br/>Un-guided";
+		displayname = "M19 HEAP (Un-guided) Twin Rockets";
+		displaynameshort = "High Explosive Anti Personnel";
+		ammo = "M41_Rocket_HEAP_Unguided";
 	};
 };

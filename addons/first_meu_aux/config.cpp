@@ -76,6 +76,7 @@ class cfgPatches
 			"OPTRE_M7",
             "throw",
             "OPTRE_M319",
+			"OPAEX_M41_Launcher",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
