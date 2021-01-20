@@ -51,6 +51,18 @@ class CfgWeapons
 	class MGun;
 	class GMG_F;
 	class cannon_120mm;
+	class arifle_MSBS65_black_F;
+	class arifle_MSBS65_GL_black_F;
+	class arifle_MSBS65_Mark_black_F;
+	class arifle_MSBS65_UBS_black_F;
+    class arifle_MX_Black_F;
+    class arifle_MX_GL_Black_F;
+    class arifle_CTAR_blk_F;
+    class arifle_CTAR_GL_blk_F;
+    class arifle_CTARS_blk_F;
+    class arifle_Mk20_F;
+    class arifle_Mk20C_F;
+    class arifle_Mk20_GL_F;
 		
 	//Medical
 	class InventoryFirstAidKitItem_Base_F;
@@ -16535,6 +16547,1018 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"Single",
 			"FullAuto"
 		};
+    };
+	
+	class LM_OPCAN_AR0M37: arifle_MSBS65_black_F
+    {
+        picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_black_F_ca.paa";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_AR0M37_GL: arifle_MSBS65_GL_black_F
+    {
+        picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_GL_black_F_ca.paa";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_AR0M37_SHT: arifle_MSBS65_UBS_black_F
+    {
+        picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_UBS_black_F_ca.paa";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_DMR0M37: arifle_MSBS65_Mark_black_F
+    {
+		picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_Mark_black_F_ca.paa";
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+    
+    class LM_OPCAN_ARMX: arifle_MX_Black_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_ARMX_GL: arifle_MX_GL_Black_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_CTAR: arifle_CTAR_blk_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_CTAR_GL: arifle_CTAR_GL_blk_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_CTAR_SAW: arifle_CTARS_blk_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+    class LM_OPCAN_M18AR: arifle_Mk20_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+	class LM_OPCAN_M18AR_C: arifle_Mk20C_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
+    };
+	
+	class LM_OPCAN_M18AR_GL: arifle_Mk20_GL_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class MuzzleSlot: MuzzleSlot
+            {
+                compatibleitems[] = 
+                {
+                    "muzzle_snds_b",
+                    "muzzle_snds_h_mg_blk_f",
+                    "ace_muzzle_mzls_b",
+                    "optre_m7_silencer",
+                    "optre_m6_silencer",
+                    "OPTRE_MA5Suppressor"
+                };
+            };
+            class CowsSlot: CowsSlot
+            {
+                compatibleitems[] =
+                {
+                    "optic_ico_01_black_f",
+                    "optic_Nightstalker",
+					"optic_tws",
+					"optic_tws_mg",
+					"optic_NVS",
+					"optic_DMS",
+					"optic_LRPS",
+					"optic_ams",
+					"optic_AMS_snd",
+					"optic_AMS_khk",
+					"optic_KHS_blk",
+					"optic_KHS_tan",
+					"optic_KHS_hex",
+					"optic_KHS_old",
+					"optic_SOS",
+					"optic_MRCO",
+					"optic_Arco",
+					"optic_aco",
+					"optic_ACO_grn",
+					"optic_aco_smg",
+					"optic_ACO_grn_smg",
+					"optic_hamr",
+					"optic_Holosight",
+					"optic_Holosight_smg",
+					"optic_Hamr_khk_F",
+					"optic_SOS_khk_F",
+					"optic_Arco_ghex_F",
+					"optic_Arco_blk_F",
+					"optic_DMS_ghex_F",
+					"optic_ERCO_blk_F",
+					"optic_ERCO_khk_F",
+					"optic_ERCO_snd_F",
+					"optic_LRPS_ghex_F",
+					"optic_LRPS_tna_F",
+					"optic_Holosight_blk_F",
+					"optic_Holosight_khk_F",
+					"optic_Holosight_smg_blk_F",
+					"optic_Holosight_smg_khk_F",
+                    "OPTRE_M392_Scope",
+                    "OPTRE_BR55HB_Scope",
+                    "OPTRE_M7_Sight",
+                    "OPTRE_M393_Scope",
+                    "OPTRE_M393_ACOG",
+                    "OPTRE_M393_EOTECH",
+                    "OPTRE_M392_Scope_v2",
+                    "OPTRE_BR55HB_Scope_v2",
+                    "OPTRE_M7_Sight_v2",
+                    "OPTRE_M393_Scope_v2",
+                    "OPTRE_M393_ACOG_v2",
+                    "OPTRE_M393_EOTECH_v2"
+                };
+            };
+            class PointerSlot: PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "acc_pointer_ir",
+                    "acc_flashlight",
+                    "OPTRE_BMR_Laser"
+                };
+            };
+        };
     };
 	
 	class OPAEX_M41_Launcher: OPTRE_UnguidedLauncher_Base

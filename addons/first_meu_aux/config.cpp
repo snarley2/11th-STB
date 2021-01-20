@@ -18,7 +18,8 @@ class cfgPatches
 {
     class first_meu_aux
     {
-		units[] = {
+		units[] = 
+		{
 			"OPTRE_Ammo_SupplyPod_Launcher",
 			"OPTRE_Ammo_SupplyPod_Medical",
 			"OPTRE_Ammo_SupplyPod_Mortars",
@@ -51,13 +52,15 @@ class cfgPatches
             "VES_D77HTCI_A",
             "VES_D77HTCI",
 			};
-        magazines[] = {
+        magazines[] = 
+		{
             "OPTRE_6Rnd_8Gauge_Pellet",
             "OPTRE_12Rnd_8Gauge_Pellet",
             "OPTRE_6Rnd_8Gauge_Beanbag",
             "OPTRE_12Rnd_8Gauge_Beanbag",
             };
-		ammo[] = {
+		ammo[] = 
+		{
             "OPTRE_B_5x23_Caseless_JHP",
             "OPTRE_B_762x51_JHP",
             "OPTRE_B_95x40_JHP",
@@ -66,7 +69,8 @@ class cfgPatches
             "MEU_B_8Gauge_Pellet_Submunition",
             "OPTRE_FC_BubbleShield_Ammo",
             };
-		weapons[] = {
+		weapons[] = 
+		{
             "OPTRE_M392_DMR",
             "OPTRE_BR55HB",
             "OPTRE_M295_BMR",
@@ -77,6 +81,18 @@ class cfgPatches
             "throw",
             "OPTRE_M319",
 			"OPAEX_M41_Launcher",
+			"LM_OPCAN_AR0M37";
+			"LM_OPCAN_AR0M37_GL";
+			"LM_OPCAN_AR0M37_SHT";
+			"LM_OPCAN_DMR0M37";
+			"LM_OPCAN_ARMX",
+			"LM_OPCAN_ARMX_GL",
+			"LM_OPCAN_CTAR",
+			"LM_OPCAN_CTAR_GL",
+			"LM_OPCAN_CTAR_SAW",
+			"LM_OPCAN_M18AR",
+			"LM_OPCAN_M18AR_C",
+			"LM_OPCAN_M18AR_GL",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -185,7 +201,7 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         scopeeditor = 2;
 	};
-        class Flags
+    class Flags
     {
 		displayName = "Flags";
         scopeCurator = 2;

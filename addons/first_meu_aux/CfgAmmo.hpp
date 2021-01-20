@@ -300,7 +300,7 @@ class CfgAmmo
 		cost = 500;
 		aiAmmoUsageFlags = "128 + 512 + 256";
 		allowAgainstInfantry = 0;
-		hit = 500;
+		hit = 520;
 		indirectHit = 40;
 		indirectHitRange = 4;
 		explosive = 0.8;
@@ -387,7 +387,7 @@ class CfgAmmo
 	
 	class M41_Rocket_HEAT_HeatSeeking: M41_Rocket_HEAT_WireGuided
 	{
-		hit = 400;
+		hit = 440;
 		indirectHit = 40;
 		indirectHitRange = 4;
 		missileKeepLockedCone = 90;

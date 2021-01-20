@@ -36,6 +36,22 @@ class CfgMagazines
 	class OPTRE_36Rnd_95x40_Mag_SAPHE;
 	class 40Rnd_105mm_APFSDS_T_Green;
 	class RPG32_HE_F;
+	class 30Rnd_580x42_Mag_F;
+    class 30Rnd_580x42_Mag_Tracer_F;
+    class 100Rnd_580x42_Mag_F;
+    class 100Rnd_580x42_Mag_Tracer_F;
+    class 30Rnd_556x45_Stanag;
+    class 30Rnd_556x45_Stanag_Tracer_Red;
+    class 30Rnd_65x39_caseless_msbs_mag;
+    class 30Rnd_65x39_caseless_msbs_mag_Tracer;
+    class 30Rnd_65x39_caseless_black_mag;
+    class 30Rnd_65x39_caseless_black_mag_Tracer;
+    class 100Rnd_65x39_caseless_black_mag;
+    class 100Rnd_65x39_caseless_black_mag_tracer;
+    class 30Rnd_762x39_AK12_Mag_F;
+    class 30Rnd_762x39_AK12_Mag_Tracer_F;
+    class 75rnd_762x39_AK12_Mag_F;
+    class 75rnd_762x39_AK12_Mag_Tracer_F;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -1143,6 +1159,414 @@ class CfgMagazines
 		descriptionShort = "32 Round Magazine<br>7.62x51mm<br>Subsonic<br>Tracers";
 	};
 	
+	//30rnd 6.5x39mm Magazines
+    class 30rnd_65x39_mag_AP:30Rnd_65x39_caseless_black_mag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30Rnd 6.5x39mm AP Magazine";
+        displaynameshort = "6.5x39mm AP";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Armor-Piercing";
+    };
+	
+    class 30rnd_65x39_mag_APT:30Rnd_65x39_caseless_black_mag_Tracer
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        tracersEvery = 1;
+        count = 30;
+        
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30Rnd 6.5x39mm AP Magazine (Tracer)";
+        displaynameshort = "6.5x39mm AP Tracer";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 30rnd_65x39_mag_JHP:30Rnd_65x39_caseless_black_mag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 6.5x39mm JHP Magazine";
+        displaynameshort = "6.5x39mm JHP";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Jacketed Hollow Point";
+    };
+	
+    class 30rnd_65x39_mag_JHPT:30Rnd_65x39_caseless_black_mag_Tracer
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 30;
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 6.5x39mm JHP Magazine (Tracer)";
+        displaynameshort = "6.5x39mm JHP Tracer";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
+    //100rnd 6.5x39mm Magazines
+    class 100rnd_65x39_mag_AP:100Rnd_65x39_caseless_black_mag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "100Rnd 6.5x39mm AP Magazine";
+        displaynameshort = "6.5x39mm AP";
+        descriptionShort = "100 Round Magazine<br>6.5x39mm<br>Armor-Piercing";
+    };
+	
+    class 100rnd_65x39_mag_APT:100Rnd_65x39_caseless_black_mag_Tracer
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        tracersEvery = 1;
+        count = 100;
+        
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "100Rnd 6.5x39mm AP Magazine (Tracer)";
+        displaynameshort = "6.5x39mm AP Tracer";
+        descriptionShort = "100 Round Magazine<br>6.5x39mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 100rnd_65x39_mag_JHP:100Rnd_65x39_caseless_black_mag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "100Rnd 6.5x39mm JHP Magazine";
+        displaynameshort = "6.5x39mm JHP";
+        descriptionShort = "100 Round Magazine<br>6.5x39mm<br>Jacketed Hollow Point";
+    };
+	
+    class 100rnd_65x39_mag_JHPT:100Rnd_65x39_caseless_black_mag_Tracer
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 100;
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "100Rnd 6.5x39mm JHP Magazine (Tracer)";
+        displaynameshort = "6.5x39mm JHP Tracer";
+        descriptionShort = "100 Round Magazine<br>6.5x39mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
+    //30rnd 6.5x39mm Promet Magazines
+    class 30rnd_65x39_mag_msbs_AP:30Rnd_65x39_caseless_msbs_mag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        ammo = "Optre_B_762x51_AP";
+        displayname = "30Rnd 6.5mm Promet AP Magazine";
+        displaynameshort = "6.5x39mm Promet AP";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Armor-Piercing";
+    };
+	
+    class 30rnd_65x39_mag_msbs_APT:30Rnd_65x39_caseless_msbs_mag_Tracer
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 30;
+        
+        ammo = "Optre_B_762x51_AP";
+        displayname = "30Rnd 6.5mm Promet APT Magazine (Tracer)";
+        displaynameshort = "6.5x39mm Promet AP Tracer";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 30rnd_65x39_mag_msbs_JHP:30Rnd_65x39_caseless_msbs_mag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        ammo = "Optre_B_762x51_JHP";
+        displayname = "30Rnd 6.5mm Promet JHP Magazine";
+        displaynameshort = "6.5x39mm Promet JHP";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Jacketed Hollow Point";
+    };
+	
+    class 30rnd_65x39_mag_msbs_JHPT:30Rnd_65x39_caseless_msbs_mag_Tracer
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 30;
+        
+        ammo = "Optre_B_762x51_JHP";
+        displayname = "30Rnd 6.5mm Promet JHP Magazine (Tracer)";
+        displaynameshort = "6.5x39mm Promet JHP Tracer";
+        descriptionShort = "30 Round Magazine<br>6.5x39mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
+    //30rnd 5.56x45mm Magazines
+    class 30rnd_556x45_mag_AP:30Rnd_556x45_Stanag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30Rnd 5.56x45mm AP Magazine";
+        displaynameshort = "5.56x45mm AP";
+        descriptionShort = "30 Round Magazine<br>5.56x45mm<br>Armor-Piercing";
+    };
+	
+    class 30rnd_556x45_mag_APT:30Rnd_556x45_Stanag_Tracer_Red
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        tracersEvery = 1;
+        count = 30;
+        
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30Rnd 5.56x45mm AP Magazine (Tracer)";
+        displaynameshort = "5.56x45mm AP Tracer";
+        descriptionShort = "30 Round Magazine<br>5.56x45mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 30rnd_556x45_mag_JHP:30Rnd_556x45_Stanag
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 5.56x45mm JHP Magazine";
+        displaynameshort = "5.56x45mm JHP";
+        descriptionShort = "30 Round Magazine<br>5.56x45mm<br>Jacketed Hollow Point";
+    };
+	
+    class 30rnd_556x45_mag_JHPT:30Rnd_556x45_Stanag_Tracer_Red
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 30;
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 5.56x45mm JHP Magazine (Tracer)";
+        displaynameshort = "5.56x45mm JHP Tracer";
+        descriptionShort = "30 Round Magazine<br>5.56x45mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
+    //30rnd 5.8x42mm Magazines
+    class 30rnd_580x42_mag_AP:30Rnd_580x42_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30Rnd 5.8x40mm AP Magazine";
+        displaynameshort = "5.8x40mm AP";
+        descriptionShort = "30 Round Magazine<br>5.8x40mm<br>Armor-Piercing";
+    };
+	
+    class 30rnd_580x42_mag_APT:30Rnd_580x42_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        tracersEvery = 1;
+        count = 30;
+        
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30Rnd 5.8x40mm AP Magazine (Tracer)";
+        displaynameshort = "5.8x40mm AP Tracer";
+        descriptionShort = "30 Round Magazine<br>5.8x40mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 30rnd_580x42_mag_JHP:30Rnd_580x42_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 5.8x40mm JHP Magazine";
+        displaynameshort = "5.8x40mm JHP";
+        descriptionShort = "30 Round Magazine<br>5.8x40mm<br>Jacketed Hollow Point";
+    };
+	
+    class 30rnd_580x42_mag_JHPT:30Rnd_580x42_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 30;
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 5.8x40mm JHP Magazine (Tracer)";
+        displaynameshort = "5.8x40mm JHP Tracer";
+        descriptionShort = "30 Round Magazine<br>5.8x40mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
+    //100rnd 5.8x42mm Magazines
+    class 100rnd_580x42_mag_AP:100Rnd_580x42_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "100Rnd 5.8x40mm AP Magazine";
+        displaynameshort = "5.8x40mm AP";
+        descriptionShort = "100 Round Magazine<br>5.8x40mm<br>Armor-Piercing";
+    };
+	
+    class 100rnd_580x42_mag_APT:100Rnd_580x42_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        tracersEvery = 1;
+        count = 100;
+        
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "100Rnd 5.8x40mm AP Magazine (Tracer)";
+        displaynameshort = "5.8x40mm AP Tracer";
+        descriptionShort = "100 Round Magazine<br>5.8x40mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 100rnd_580x42_mag_JHP:100Rnd_580x42_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "100Rnd 5.8x40mm JHP Magazine";
+        displaynameshort = "5.8x40mm JHP";
+        descriptionShort = "100 Round Magazine<br>5.8x40mm<br>Jacketed Hollow Point";
+    };
+	
+    class 100rnd_580x42_mag_JHPT:100Rnd_580x42_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 100;
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "100Rnd 5.8x40mm JHP Magazine (Tracer)";
+        displaynameshort = "5.8x40mm JHP Tracer";
+        descriptionShort = "100 Round Magazine<br>5.8x40mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
+    //30rnd 7.62x39 Magazines
+    class 30rnd_762x39_mag_AP:30Rnd_762x39_AK12_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30rnd 7.62x39mm AP Magazine";
+        displaynameshort = "7.62x39mm AP";
+        descriptionShort = "30 Round Magazine<br>7.62x39mm<br>Armor-Piercing";
+    };
+	
+    class 30rnd_762x39_mag_APT:30Rnd_762x39_AK12_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        tracersEvery = 1;
+        count = 30;
+        
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "30Rnd 7.62x39mm AP Magazine (Tracer)";
+        displaynameshort = "7.62x39mm AP Tracer";
+        descriptionShort = "30 Round Magazine<br>7.62x39mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 30rnd_762x39_mag_JHP:30Rnd_762x39_AK12_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 7.62x39mm JHP Magazine";
+        displaynameshort = "7.62x39mm JHP";
+        descriptionShort = "30 Round Magazine<br>7.62x39mm<br>Jacketed Hollow Point";
+    };
+	
+    class 30rnd_762x39_mag_JHPT:30Rnd_762x39_AK12_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 30;
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "30Rnd 7.62x39mm JHP Magazine (Tracer)";
+        displaynameshort = "7.62x39mm JHP Tracer";
+        descriptionShort = "30 Round Magazine<br>7.62x39mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
+    //75rnd 7.62x39 Magazines
+    class 75rnd_762x39_mag_AP:75Rnd_762x39_AK12_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "75rnd 7.62x39mm AP Magazine";
+        displaynameshort = "7.62x39mm AP";
+        descriptionShort = "75 Round Magazine<br>7.62x39mm<br>Armor-Piercing";
+    };
+	
+    class 75rnd_762x39_mag_APT:75Rnd_762x39_AK12_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        tracersEvery = 1;
+        count = 75;
+        
+        ammo = "OPTRE_B_762x51_AP";
+        displayname = "75Rnd 7.62x39mm AP Magazine (Tracer)";
+        displaynameshort = "7.62x39mm AP Tracer";
+        descriptionShort = "75 Round Magazine<br>7.62x39mm<br>Armor-Piercing<br>Tracers";
+    };
+	
+    class 75rnd_762x39_mag_JHP:75Rnd_762x39_AK12_Mag_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "75Rnd 7.62x39mm JHP Magazine";
+        displaynameshort = "7.62x39mm JHP";
+        descriptionShort = "75 Round Magazine<br>7.62x39mm<br>Jacketed Hollow Point";
+    };
+	
+    class 75rnd_762x39_mag_JHPT:75Rnd_762x39_AK12_Mag_Tracer_F
+    {
+        dlc = "1st MEU";
+        author = "Jhin";
+        
+        tracersEvery = 1;
+        count = 75;
+
+        ammo = "OPTRE_B_762x51_JHP";
+        displayname = "75Rnd 7.62x39mm JHP Magazine (Tracer)";
+        displaynameshort = "7.62x39mm JHP Tracer";
+        descriptionShort = "75 Round Magazine<br>7.62x39mm<br>Jacketed Hollow Point<br>Tracers";
+    };
+	
 	class 80Rnd_30mm_HEAT: VehicleMagazine
 	{
 		author = "1st MEU Oneill";
@@ -1243,4 +1667,90 @@ class CfgMagazines
 		displaynameshort = "High Explosive Anti Personnel";
 		ammo = "M41_Rocket_HEAP_Unguided";
 	};
+};
+
+class CfgMagazineWells
+{
+    class STANAG_556x45
+    {
+        MEU_Magazines[]=
+        {
+            "30rnd_556x45_mag_AP",
+            "30rnd_556x45_mag_APT",
+            "30rnd_556x45_mag_JHP",
+            "30rnd_556x45_mag_JHPT",
+        };
+    };
+    class MX_65x39
+    {
+        MEU_Magazines[]=
+        {
+            "30rnd_65x39_mag_AP",
+            "30rnd_65x39_mag_APT",
+            "30rnd_65x39_mag_JHP",
+            "30rnd_65x39_mag_JHPT",
+            "100rnd_65x39_mag_AP",
+            "100rnd_65x39_mag_APT",
+            "100rnd_65x39_mag_JHP",
+            "100rnd_65x39_mag_JHPT",
+        };
+    };
+    class MX_65x39_MSBS
+    {
+        MEU_Magazines[]=
+        {
+            "30rnd_65x39_mag_msbs_AP",
+            "30rnd_65x39_mag_msbs_APT",
+            "30rnd_65x39_mag_msbs_JHP",
+            "30rnd_65x39_mag_msbs_JHPT",
+        };
+    };
+    class CTAR_580x42
+    {
+        MEU_Magazines[]=
+        {
+            "30rnd_580x42_mag_AP",
+            "30rnd_580x42_mag_APT",
+            "30rnd_580x42_mag_JHP",
+            "30rnd_580x42_mag_JHPT",
+            "100rnd_580x42_mag_AP",
+            "100rnd_580x42_mag_APT",
+            "100rnd_580x42_mag_JHP",
+            "100rnd_580x42_mag_JHPT",
+        };
+    };
+    class AK_762x39
+    {
+        MEU_Magazines[]=
+        {
+            "30rnd_762x39_mag_AP",
+            "30rnd_762x39_mag_APT",
+            "30rnd_762x39_mag_JHP",
+            "30rnd_762x39_mag_JHPT",
+            "75rnd_762x39_mag_AP",
+            "75rnd_762x39_mag_APT",
+            "75rnd_762x39_mag_JHP",
+            "75rnd_762x39_mag_JHPT",
+        };
+    };
+    class CBA_40mm_M203
+    {
+        MEU_grenades[]=
+        {
+            "1Rnd_HE_MEU_shell",
+            "1Rnd_HEDP_MEU_shell",
+            "3Rnd_HE_MEU_shell"
+        };
+    };
+    class UBS_12GA
+    {
+        MEU_Shotgun[]=
+        {
+            "OPTRE_6Rnd_8Gauge_Pellets",
+            "OPTRE_6Rnd_8Gauge_Slugs",
+            "OPTRE_6Rnd_8Gauge_HEDP",
+            "OPTRE_6Rnd_8Gauge_Beanbag",
+            "OPTRE_6Rnd_8Gauge_Incendiary"
+        };
+    };
 };
