@@ -11634,14 +11634,6 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black_31.paa","first_meu_aux\data\misc\VISR_ODST_CLR.paa"};
     };
-    class Praetor_Helmet_Corpsman_31_Derri_dp : 1stMEU_Base_CH252D_Helmet_dp
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black_HM_31_Derri.paa","first_meu_aux\data\misc\VISR_ODST_CLR.paa"};
-    };
     class Praetor_Helmet_Black_32_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
@@ -12310,18 +12302,6 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Black_HM_31.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
-    };
-    class Praetor_Helmet_Corpsman_31_Derri: 1stMEU_Base_CH252D_Helmet
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		author = "Romeo";
-		displayName = "[1stMEU] 3-1 CH252D Helmet (Derri)";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Black_HM_31_Derri.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
     };
     class Praetor_Helmet_Corpsman_32: 1stMEU_Base_CH252D_Helmet
 	{
@@ -14164,19 +14144,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 // BDU End
 // Air Assault Helmet start
 	
-	class MEU_CH252A_Pararescue_Rave : VES_CH252A
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		weaponPoolAvailable = 1;
-		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Rave)";
-		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_Rave.paa","V_FZ_Armor\Data\Helmets\V_CH252A_SLV_V_CO.paa"};
-		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
-    };
 	class MEU_CH252A_Pararescue_Dino: VES_CH252A
 	{
 		scope = 2;
@@ -14229,19 +14196,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_GLD_V_CO.paa"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
 	};
-	class MEU_CH252A_Pararescue_Rave_dp : VES_CH252A
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		scopeCurator = 1;
-		weaponPoolAvailable = 1;
-		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Rave)";
-		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_Rave.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
-		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252A.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252A_V.rvmat"};
-    };
 	class MEU_CH252A_Pararescue_Dino_dp : VES_CH252A
 	{
 		scope = 1;
