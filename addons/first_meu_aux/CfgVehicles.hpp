@@ -33,6 +33,7 @@ class CfgVehicles
 	class OPTRE_S12_SOLA_Jetpack;
 	class OPTRE_ANPRC_515;
     class OPTRE_ANPRC_521_Black;
+	class OPTRE_ANPRC_521_Green;
     class OPTRE_ILCS_Rucksack_Heavy;
 	class OPTRE_ILCS_Rucksack_Black;
 	class B_parachute;
@@ -3427,6 +3428,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
+	
 	class MEU_Prae_Ruck_Base_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
 		scope = 1;
@@ -3489,6 +3491,139 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
+	
+	//	Test Backpacks for Inventory Ballance
+	class ODST_Ruck : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[Test] ODST Trooper Rucksack";
+        maximumLoad = 200;
+		mass = 50;
+		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+    };
+	
+	class ODST_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[Test] ODST Trooper Rucksack Heavy";
+        maximumLoad = 350;
+		mass = 50;
+		hiddenSelections[] = {"camo1","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+    };
+	
+	class ODST_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[Test] ODST Corpsman Rucksack Heavy";
+        maximumLoad = 300;
+		mass = 50;
+		hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+    };
+	
+	class ODST_Platoon_Corpsman_Ruck : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[Test] ODST Platoon Corpsman Rucksack";
+		tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+		hiddenSelections[] = {"camo1","AP_Heavy"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+		maximumLoad = 200;
+    };
+	
+	class ODST_RTO_Ruck: OPTRE_ANPRC_521_Black
+    {
+        displayName = "[Test] ODST LR Rucksack";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+    };
+	
+	class ODST_NCO_Ruck: OPTRE_ANPRC_515
+    {
+        displayName = "[Test] ODST NCO Rucksack";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 200;
+    };
+	
+	class Cent_Ruck : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[Test] Centurion Trooper Rucksack";
+        maximumLoad = 150;
+		mass = 50;
+		model = "\OPTRE_unsc_units\army\rucksack.p3d";
+		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa",""};
+    };
+	
+	class Cent_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[Test] Centurion Trooper Rucksack Heavy";
+        maximumLoad = 300;
+		mass = 50;
+		model = "\OPTRE_unsc_units\army\rucksack.p3d";
+		hiddenSelections[] = {"camo","camo2","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa",""};
+    };
+	
+	class Cent_Corpsman_Ruck : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[Test] Centurion Corpsman Rucksack Heavy";
+        maximumLoad = 250;
+		mass = 50;
+		model = "\OPTRE_unsc_units\army\rucksack.p3d";
+		hiddenSelections[] = {"camo","camo2","B_Addons","B_Radio"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\soft_backpack_co.paa",""};
+    };
+	
+	class Cent_RTO_Ruck: OPTRE_ANPRC_521_Green
+    {
+        displayName = "[Test] Centurion LR Rucksack";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 100;
+    };
+	
+	class Cent_NCO_Ruck: OPTRE_ANPRC_515
+    {
+        displayName = "[Test] Centurion NCO Rucksack";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+    };
+	// End Test
+	
     class MEU_Parachute : B_parachute
     {
         author = "1st MEU Mark";
@@ -3874,14 +4009,15 @@ class CfgVehicles
 		displayName = "[WIP][1stMEU] M313 HRV Elephant";
 		enginePower = 8000;
 		maxOmega = 800;
-		peakTorque = 100000;
+		peakTorque = 80000;
+		maxSpeed = 60;
 		torqueCurve[] = {{0,0},{"(3000/4000)","(2650/2850)"},{"(3200/4000)","(2800/2850)"},{"(3400/4000)","(2850/2850)"},{"(3600/4000)","(2800/2850)"},{"(3800/4000)","(2750/2850)"},{"(4000/4000)","(2600/2850)"},{"(4000/4000)","(2350/2850)"}};
 		thrustDelay = 0.01;
 		clutchStrength = 500.0;
 		fuelCapacity = 20000;
 		brakeIdleSpeed = 1.78;
 		latency = 0.1;
-		tankTurnForce = 3200000;
+		tankTurnForce = 320000;
 		idleRpm = 1000;
 		redRpm = 4000;
 		engineLosses = 25;

@@ -483,15 +483,15 @@ class CfgAmmo
 		hit = 200;
 		indirectHit = 8;
 		indirectHitRange = 0.2;
-		caliber = 8;
-		typicalSpeed = 1400;
+		caliber = 10;
+		typicalSpeed = 1500;
 	};
 	
 	class 90mm_APBC: Sh_105mm_APFSDS_T_Green
 	{
 		caliber = 26;
 		hit = 600;
-		typicalSpeed = 2000;
+		typicalSpeed = 2600;
 	};
 	
 	class 90mm_SAPHE: Sh_105mm_HEAT_MP
