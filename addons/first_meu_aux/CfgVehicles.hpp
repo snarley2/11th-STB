@@ -106,6 +106,7 @@ class CfgVehicles
 	class ItemInfo;
     class Man;
     class House;
+        
     
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
@@ -7095,7 +7096,7 @@ class CfgVehicles
 		editorCategory = "MEU_Objects";
                 editorSubcategory = "Flags";
     };
-	class SuperWall_01: House
+	class SuperWall_01 : House
     {
         class SimpleObject
         {
@@ -7117,7 +7118,7 @@ class CfgVehicles
         simulation = "house";
         side = 4;
     };
-	class shiva_uncovered: House
+	class shiva_uncovered : House
     {
         class SimpleObject
         {
