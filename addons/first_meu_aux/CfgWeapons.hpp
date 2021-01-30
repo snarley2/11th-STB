@@ -10,7 +10,7 @@ class CfgWeapons
 	class OPTRE_UNSC_M52A_Armor_Base;
     class OPTRE_FC_VX19_Helmet;
 	class OPTRE_HUD_RscPicture;
-	
+
 	//OPCAN Armor
 	class LM_OPCAN_CH252D_H3_dp;
 	class LM_OPCAN_CH252D_H3_Green_dp;
@@ -11099,6 +11099,7 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
 		};
     };
     //fix this later needs to be here fuck me
+	
     class Praetor_Helmet_Black: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
@@ -11120,6 +11121,15 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
         ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
         ace_overlayCracked = "first_meu_aux\Data\misc\hud_cracked.paa";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Black.paa","first_meu_aux\Data\misc\hud_cracked.paa"};
+    };
+	class Praetorian_Helmet_4M_broken : Praetor_Helmet_Base_Broken
+    {
+        scope = 1;
+        scopeArsenal = 1;
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Purple_4HQ_Rave.paa","first_meu_aux\data\MISC\VISR_ODST_NAV_SPD.paa"};
+		
     };
     class Praetor_Helmet_Black_broken : Praetor_Helmet_Black
     {
@@ -11169,9 +11179,9 @@ class MEU_Mar_WDL_R1_A_dp  : MEU_Mar_WDL_R1_A
     {
         scope = 1;
         scopeArsenal = 1;
-        hiddenSelections[] = {"camo"};
+		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_color_Yellow_31.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_color_Yellow_31.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
         idd = 8000;
 		duration = 99999;
 		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
@@ -17960,4 +17970,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			};
 		};
 	};
+	
+    
 };												 

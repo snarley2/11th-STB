@@ -1,0 +1,1 @@
+cutRsc ["brokenhud","PLAIN",-1,false];

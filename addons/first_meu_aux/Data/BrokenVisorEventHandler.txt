@@ -1,0 +1,16 @@
+this addEventHandler ["Dammaged", {    
+_dude = _this select 0;   
+_loc = _this select 1;   
+_ammo = _this select 6;   
+_helmet = (headgear _dude);
+_cal = ( getNumber (configfile >> "CfgAmmo" >> typeof _ammo >> "caliber") );     
+   
+if (_cal > 2 && _loc == "head" && isClass (configFile >> "cfgweapons" >> _helmet))   
+then    
+{   
+_helmet = (headgear _dude);   
+_dude addHeadgear (_helmet + "_broken") ;
+_id = clientOwner;
+[] remoteExec ["first_meu_aux\Functions\brokenhud.sqf", _id];
+};   
+}]; 
