@@ -3870,7 +3870,6 @@ class CfgVehicles
 		uniformclass = "Praetorian_BDU";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa","first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa"};
-        CBRN_protectionLevel = "4 + 8";
 	};
 	
 	class BDU_V_Centurion_Slim: 1stMEU_BDU
@@ -3878,7 +3877,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa"};
-        CBRN_protectionLevel = "4 + 8";
 	};
 	
 	class BDU_V_Centurion_Urban_Evolved_Slim: 1stMEU_BDU
@@ -3886,7 +3884,6 @@ class CfgVehicles
 		uniformclass = "Centurion_BDU_Urban_Evolved";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
-        CBRN_protectionLevel = "4 + 8";
 	};
 	
 	class BDU_V_Centurion_Desert_Slim: 1stMEU_BDU
@@ -3894,7 +3891,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Desert";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa"};
-        CBRN_protectionLevel = "4 + 8";
 	};
 	
 	class BDU_V_Centurion_Snow_Slim: 1stMEU_BDU
@@ -3902,7 +3898,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Snow";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa"};
-        CBRN_protectionLevel = "4 + 8";
 	};
 	
 	class BDU_V_Centurion_Woodland_Slim: 1stMEU_BDU
@@ -3910,7 +3905,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Woodland";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa"};
-        CBRN_protectionLevel = "4 + 8";
 	};
 	
 	class BDU_V_Pegasus_Slim: 1stMEU_BDU
@@ -3918,7 +3912,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Urban_Evolved";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"};
-        CBRN_protectionLevel = "4 + 8";
 	};
 	
 	class BDU_V_Centurion_Slim_Rolled: 1stMEU_BDU
@@ -3927,7 +3920,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Rolled";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa"};
-        CBRN_protectionLevel = "4 + 2";
 	};
 	
 	class BDU_V_Centurion_Urban_Evolved_Slim_Rolled: 1stMEU_BDU
@@ -3936,7 +3928,6 @@ class CfgVehicles
 		uniformclass = "Centurion_BDU_Urban_Evolved_Rolled";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
-        CBRN_protectionLevel = "4 + 2";
 	};
 	
 	class BDU_V_Centurion_Desert_Slim_Rolled: 1stMEU_BDU
@@ -3945,7 +3936,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Desert_Rolled";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa"};
-        CBRN_protectionLevel = "4 + 2";
 	};
 	
 	class BDU_V_Centurion_Snow_Slim_Rolled: 1stMEU_BDU
@@ -3954,7 +3944,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Snow_Rolled";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa"};
-        CBRN_protectionLevel = "4 + 2";
 	};
 	
 	class BDU_V_Centurion_Woodland_Slim_Rolled: 1stMEU_BDU
@@ -3963,7 +3952,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Woodland_Rolled";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa"};
-        CBRN_protectionLevel = "4 + 2";
 	};
 	
 	class BDU_V_Pegasus_Slim_Rolled: 1stMEU_BDU
@@ -3972,7 +3960,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Urban_Evolved_Rolled";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"};
-        CBRN_protectionLevel = "4 + 2";
 	};
 	
 	class BDU_V_Centurion_Slim_Short: 1stMEU_BDU
@@ -3981,7 +3968,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Short";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_MulticamBlack_CO.paa"};
-        CBRN_protectionLevel = "2 + 2";
 	};
 	
 	class BDU_V_Centurion_Urban_Evolved_Slim_Short: 1stMEU_BDU
@@ -3990,7 +3976,6 @@ class CfgVehicles
 		uniformclass = "Centurion_BDU_Urban_Evolved_Short";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Evolved_CO.paa"};
-        CBRN_protectionLevel = "2 + 2";
 	};
 	
 	class BDU_V_Centurion_Desert_Slim_Short: 1stMEU_BDU
@@ -3999,7 +3984,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Desert_Short";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Splotch_CO.paa"};
-        CBRN_protectionLevel = "2 + 2";
 	};
 	
 	class BDU_V_Centurion_Snow_Slim_Short: 1stMEU_BDU
@@ -4008,7 +3992,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Snow_Short";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_Tundra_CO.paa"};
-        CBRN_protectionLevel = "2 + 2";
 	};
 	
 	class BDU_V_Centurion_Woodland_Slim_Short: 1stMEU_BDU
@@ -4017,7 +4000,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Woodland_Short";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa","V_FZ_Armor\Data\Uniforms\V_BDU_TTsKOWoodland_CO.paa"};
-        CBRN_protectionLevel = "2 + 2";
 	};
 	
 	class BDU_V_Pegasus_Slim_Short: 1stMEU_BDU
@@ -4026,7 +4008,6 @@ class CfgVehicles
         uniformclass = "Centurion_BDU_Urban_Evolved_Short";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"};
-        CBRN_protectionLevel = "2 + 2";
 	};
 	
 //  End Uniforms
