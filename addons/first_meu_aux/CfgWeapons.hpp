@@ -103,6 +103,9 @@ class CfgWeapons
 	class U_B_CombatUniform_mcam;
     class G_Aviator;
     class H_Beret_Colonel;
+    class LM_OPCAN_UP_Shemagh;
+    class LM_OPCAN_URB_UP_Shemagh;
+    class LM_OPCAN_DES_UP_Shemagh;
 	
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
@@ -16215,25 +16218,25 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         { 
             scopeArsenal = 1; 
             scope = 1;
-            iddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_L_CO.paa"};
+            hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_L_CO.paa"};
         }; 
      class Woodland_Helmet_13M_dp : 1MEU_Base_CH252_Helmet 
         { 
             scopeArsenal = 1; 
             scope = 1;
-            iddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_M_CO.paa"};
+            hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_M_CO.paa"};
         }; 
      class Woodland_Helmet_13R1_dp : 1MEU_Base_CH252_Helmet 
         { 
             scopeArsenal = 1; 
             scope = 1;
-            iddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_R1_CO.paa"};
+            hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_R1_CO.paa"};
         }; 
      class Woodland_Helmet_13R2_dp : 1MEU_Base_CH252_Helmet 
         { 
             scopeArsenal = 1; 
             scope = 1;
-            iddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_R2_CO.paa"};
+            hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Woodland\13_V_CH252_WDL_R2_CO.paa"};
         };
      // 1st Platoon DP END
     // Weapons Start
