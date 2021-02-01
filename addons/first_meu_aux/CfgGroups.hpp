@@ -9,6 +9,39 @@ class CfgGroups
         class MEU_Zeus_Spacer
         {
             name = "1st MEU OPFOR";
+            class Flood_Shit
+            {
+                name = "Flood";
+                {
+                    class FloodGroupTest
+                    {
+                        name = "FloodGroupTest";
+                        side = 0;
+                        faction = "JMM_infected_o_faction";
+                        class Unit0
+                        {
+                        side = 0;
+                        vehicle = "JMM_O_IMarineMU";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                        };
+                        class Unit1
+                        {
+                        side = 0;
+                        vehicle = "JMM_O_IMarineSU";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                        };
+                        class Unit2
+                        {
+                        side = 0;
+                        vehicle = "JMM_O_IMarineFU";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                        };
+                    };
+                }; 
+            };
             class LM_OPCAN_FRI_groups
             {
                 name = "(OPCAN)Fridens";
