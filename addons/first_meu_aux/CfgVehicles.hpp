@@ -115,7 +115,7 @@ class CfgVehicles
 	{
 		class ACE_Actions
 		{
-			class class ACE_MainActions
+			class ACE_MainActions
 			{
 				class CBRN_putMaskOn
 				{
