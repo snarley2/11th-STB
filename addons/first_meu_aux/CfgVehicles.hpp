@@ -110,7 +110,23 @@ class CfgVehicles
     class plp_ctf_SafetyBarrelBlue;
     class Land_OPTRE_barrel_hydrogen;
         
-    
+    //chemwar
+	class CAManBase: Man
+	{
+		class ACE_Actions
+		{
+			class class ACE_MainActions
+			{
+				class CBRN_putMaskOn
+				{
+					displayName = "Put mask on";
+					condition = "(ace_medical_menuTypeStyle == 0) && ((_target call CBRN_fnc_hasMaskInInventory) || (_player call CBRN_fnc_hasMaskInInventory)) && (_target getVariable ['ACE_isUnconscious', false]) && !((goggles _target) in CBRN_allLevel1Masks)";
+					statement = "[_player, _target] call CBRN_fnc_putMaskOnAction";
+					icon = "CBRN_scripts\data\icons\gasmaskIcon.paa";
+				};
+            };
+        };
+    };
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
