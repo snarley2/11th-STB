@@ -8,6 +8,7 @@ class ACE_Medical_Treatment_Actions
     class ApplyTourniquet;
     class RemoveTourniquet;
     class BasicBandage;
+    class ACE_Epinephrine;
     
     class MEU_compat_Ibuprofen: Morphine
     {
@@ -17,6 +18,8 @@ class ACE_Medical_Treatment_Actions
         items[] = {"MEU_compat_Ibuprofen"};
         treatmentTime = 1;
     };
+    class Atropine : ACE_Epinephrine
+    {};
 	class ACE_Banana: Morphine
     {
         displayName = "Banana";

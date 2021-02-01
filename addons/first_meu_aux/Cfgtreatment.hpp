@@ -4,6 +4,7 @@ class ACE_Medical_Treatment
     class PlasmaIV;
     class OPTRE_Biofoam;
     class OPTRE_Medigel;
+    class ACE_Epinephrine;
     
     class Medication
     {
@@ -28,6 +29,8 @@ class ACE_Medical_Treatment
             incompatibleMedication[] = {};
             viscosityChange = -1;
         };
+        class Atropine : ACE_Epinephrine
+        {};
 		class ACE_Banana : Morphine
         {
             painReduce = 0.0;

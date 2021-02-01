@@ -20,6 +20,7 @@ class CfgVehicles
     class OPTRE_M313_UNSC;
 	class OPTRE_M808B_UNSC;
 	class OPTRE_CTF_Flag_Base;
+    class OPTRE_Longsword_Bomb;
 
 	//Base FZ Classes
 	class VES_AV22_Sparrowhawk_Base;
@@ -4020,11 +4021,11 @@ class CfgVehicles
 		latency = 0.1;
 		tankTurnForce = 320000;
 		idleRpm = 1000;
-		redRpm = 4000;
+		redRpm = 8000;
 		engineLosses = 25;
 		transmissionLosses = 15;
 		ace_repair_canRepair = 1;
-        mass = 50000;
+        mass = 450000;
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_WIP";
 	};		
@@ -7139,5 +7140,465 @@ class CfgVehicles
         selectionDamage = "zbytek";
         simulation = "house";
         side = 4;
+    };
+    //labomba
+    class SensorTemplatePassiveRadar;
+    class SensorTemplateActiveRadar;
+    class SensorTemplateVisual;
+    class SensorTemplateLaser;
+    class SensorTemplateNV;
+    class DefaultVehicleSystemsDisplayManagerLeft
+    {
+        class components;
+    };      
+    class DefaultVehicleSystemsDisplayManagerRight
+    {
+        class components;
+    };
+    class la_bomba : OPTRE_Longsword_Bomb
+    {
+        displayname = "La-Bomba";
+        scope = 2;
+        scopeCurator = 2;
+        AWS_ECM_STAT = 50; //  ECM capability				
+		
+		class ADESData
+		{
+			ADESEnabled = 1;		
+			NumberEnabled = 0; 
+			NumberList[] = {"num_1","num_2","num_3"};
+			EmblemEnabled = 1;
+			KillmarkEnabled = 0; 
+			NameEnabled = 0;			
+			NameType = "AF_Single";
+		};					
+		
+		class AMSData
+		{
+			AMSEnabled = 1;									
+			DialogClass= "AV8B_GUI";
+			AircraftBase = "OPTRE_Longsword_Base";
+			CustomPreset = "OPTRE_Longsword_CustomPreset_list";
+			CustomPresetAttachment = "OPTRE_Longsword_CustomPreset_list_attachment";
+			presetNumber = 2113;
+			EditNumber = 1400;
+			ListboxArray[] = {0000,2101,2102,2103,2104,2105,2106,2107,2110};
+			loadout_scriptenabled = 0;						
+			loadout_script = "";
+			loadout_pre = "FIR_AV8B\sqs\Loadout\AV8B_Loadout_Pre.sqf";
+			loadout_apply = "FIR_AirWeaponSystem_US\Script\AMS\AMS_Loadout_Apply.sqf";
+			loadout_post = "FIR_AV8B\sqs\Loadout\AV8B_Loadout_Post.sqf";
+			CustomFuelEnabled = 1;
+			CustomFuelScript = "FIR_AV8B\sqs\Loadout\AV8B_Refuel.sqf";
+			CustomLoadoutScriptEnabled = 0;
+			CustomLoadoutScript = "";			
+		};
+	
+		class ARSData
+		{
+			ARSEnabled = 1;									
+			ARS_CBARS_Offset[] = {1.2,-27.8,-3.5};					
+			ARS_Point = "refuel_probe";
+			ARS_Type = "probe";
+		};
+        class Components: Components
+		{		
+			class SensorsManagerComponent 
+			{
+			class Components {
+				class IRSensorComponent: SensorTemplateIR {
+					class AirTarget {
+						minRange = 10000;
+						maxRange = 10000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = 1;
+					};
+					class GroundTarget {
+						minRange = 10000;
+						maxRange = 10000;
+						objectDistanceLimitCoef = 1;
+						viewDistanceLimitCoef = 1;
+					};
+					angleRangeHorizontal = 360;
+					angleRangeVertical = 90;
+					maxTrackableSpeed = 400;
+					componentType = "IRSensorComponent";
+					typeRecognitionDistance = 2000;
+					maxFogSeeThrough = 0.995;
+					color[] = {1, 0, 0, 1};
+					allowsMarking = 1;
+					groundNoiseDistanceCoef = -1;
+					maxGroundNoiseDistance = -1;
+					minSpeedThreshold = 0;
+					maxSpeedThreshold = 0;
+					animDirection = "";
+					aimDown = 0;
+					minTrackableSpeed = -1e+010;
+					minTrackableATL = -1e+010;
+					maxTrackableATL = 1e+010;
+				};
+				class VisualSensorComponent: SensorTemplateVisual {
+					class AirTarget {
+						minRange = 10000;
+						maxRange = 10000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = 1;
+					};
+					class GroundTarget {
+						minRange = 10000;
+						maxRange = 10000;
+						objectDistanceLimitCoef = 1;
+						viewDistanceLimitCoef = 1;
+					};
+					angleRangeHorizontal = 26;
+					angleRangeVertical = 20;
+					maxTrackableSpeed = 100;
+					aimDown = 1;
+					animDirection = "main1turret";
+					componentType = "VisualSensorComponent";
+					nightRangeCoef = 0;
+					maxFogSeeThrough = 0.94;
+					color[] = {1, 1, 0.5, 0.8};
+					typeRecognitionDistance = 2000;
+					allowsMarking = 1;
+					groundNoiseDistanceCoef = -1;
+					maxGroundNoiseDistance = -1;
+					minSpeedThreshold = 0;
+					maxSpeedThreshold = 0;
+					minTrackableSpeed = -1e+010;
+					minTrackableATL = -1e+010;
+					maxTrackableATL = 1e+010;
+				};
+				class PassiveRadarSensorComponent: SensorTemplatePassiveRadar {
+					componentType = "PassiveRadarSensorComponent";
+					class AirTarget {
+						minRange = 45000;
+						maxRange = 45000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					class GroundTarget {
+						minRange = 20000;
+						maxRange = 20000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					typeRecognitionDistance = 12000;
+					angleRangeHorizontal = 360;
+					angleRangeVertical = 360;
+					groundNoiseDistanceCoef = -1;
+					maxGroundNoiseDistance = -1;
+					minSpeedThreshold = 0;
+					maxSpeedThreshold = 0;
+					animDirection = "";
+					aimDown = 0;
+					color[] = {0.5, 1, 0.5, 0.5};
+					minTrackableSpeed = -1e+010;
+					maxTrackableSpeed = 1e+010;
+					minTrackableATL = -1e+010;
+					maxTrackableATL = 1e+010;
+					allowsMarking = 0;
+				};
+				class ActiveRadarSensorComponent: SensorTemplateActiveRadar {
+					class AirTarget {
+						minRange = 30000;
+						maxRange = 30000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					class GroundTarget {
+						minRange = 8000;
+						maxRange = 8000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					typeRecognitionDistance = 8000;
+					angleRangeHorizontal = 45;
+					angleRangeVertical = 45;
+					groundNoiseDistanceCoef = 0.2;
+					componentType = "ActiveRadarSensorComponent";
+					maxGroundNoiseDistance = 200;
+					minSpeedThreshold = 30;
+					maxSpeedThreshold = 40;
+					color[] = {0, 1, 1, 1};
+					allowsMarking = 1;
+					animDirection = "";
+					aimDown = 0;
+					minTrackableSpeed = -1e+010;
+					maxTrackableSpeed = 1e+010;
+					minTrackableATL = -1e+010;
+					maxTrackableATL = 1e+010;
+				};
+				class LaserSensorComponent: SensorTemplateLaser {
+					componentType = "LaserSensorComponent";
+					class AirTarget {
+						minRange = 10000;
+						maxRange = 10000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					class GroundTarget {
+						minRange = 10000;
+						maxRange = 10000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					angleRangeHorizontal = 180;
+					angleRangeVertical = 180;
+					typeRecognitionDistance = 0;
+					color[] = {1, 1, 1, 0};
+					allowsMarking = 1;
+					groundNoiseDistanceCoef = -1;
+					maxGroundNoiseDistance = -1;
+					minSpeedThreshold = 0;
+					maxSpeedThreshold = 0;
+					animDirection = "";
+					aimDown = 0;
+					minTrackableSpeed = -1e+010;
+					maxTrackableSpeed = 1e+010;
+					minTrackableATL = -1e+010;
+					maxTrackableATL = 1e+010;
+				};
+				class NVSensorComponent: SensorTemplateNV {
+					componentType = "NVSensorComponent";
+					color[] = {1, 1, 1, 0};
+					typeRecognitionDistance = 0;
+					class AirTarget {
+						minRange = 8000;
+						maxRange = 8000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					class GroundTarget {
+						minRange = 8000;
+						maxRange = 8000;
+						objectDistanceLimitCoef = -1;
+						viewDistanceLimitCoef = -1;
+					};
+					angleRangeHorizontal = 90;
+					angleRangeVertical = 90;
+					allowsMarking = 1;
+					groundNoiseDistanceCoef = -1;
+					maxGroundNoiseDistance = -1;
+					minSpeedThreshold = 0;
+					maxSpeedThreshold = 0;
+					animDirection = "";
+					aimDown = 0;
+					minTrackableSpeed = -1e+010;
+					maxTrackableSpeed = 1e+010;
+					minTrackableATL = -1e+010;
+					maxTrackableATL = 1e+010;
+				};
+			};
+		};					
+			class TransportPylonsComponent
+			{
+				class Presets 
+				{
+					class Empty 
+					{
+						displayName = "Empty";
+						dataname = "Empty";
+						attachment[] = {};
+					};
+					class CAP 
+					{
+						displayName = "CAP";
+						dataname = "CAP";						
+						attachment[] = {"FIR_AIM9M_LAU115_P_1rnd_M", "FIR_AIM120_LAU115_P_1rnd_M", "FIR_AIM120_LAU115_P_1rnd_M", "FIR_AIM120_LAU115_P_1rnd_M","FIR_AIM120_LAU115_P_1rnd_M","FIR_AIM9M_LAU115_P_1rnd_M","FIR_Empty_P_1rnd_M","FIR_Gunpod_Nomodel_P_1rnd_M"};
+					};
+					class CAS_1 
+					{
+						displayName = "CAS 1";
+						dataname = "CAS_1";	
+						attachment[] = {"FIR_AIM9M_LAU115_P_1rnd_M", "FIR_GBU38_P_1rnd_M", "FIR_GBU12_P_1rnd_M", "FIR_GBU12_P_1rnd_M","FIR_GBU38_P_1rnd_M","FIR_AIM9M_LAU115_P_1rnd_M","FIR_Litening_std_P_1rnd_M","FIR_Gunpod_Nomodel_P_1rnd_M"};
+					};
+					class CAS_2
+					{
+						displayName = "CAS 2";
+						dataname = "CAS_2";							
+						attachment[] = {"FIR_AIM9M_LAU115_P_1rnd_M", "FIR_Hydra_P_7rnd_M", "FIR_Mk82_snakeye_P_3rnd_M", "FIR_Mk82_GP_P_3rnd_M","FIR_Hydra_P_7rnd_M","FIR_AIM9M_LAU115_P_1rnd_M","FIR_Litening_std_P_1rnd_M","FIR_Gunpod_Nomodel_P_1rnd_M"};
+					};
+					class SEAD
+					{
+						displayName = "SEAD";
+						dataname = "SEAD";	
+						attachment[] = {"FIR_AIM9M_LAU115_P_1rnd_M", "FIR_AGM88_P_1rnd_M", "FIR_AV8B_Fueltank_L_P_1rnd_M", "FIR_AV8B_Fueltank_R_P_1rnd_M","FIR_AGM88_P_1rnd_M","FIR_AIM9M_LAU115_P_1rnd_M","FIR_Litening_std_P_1rnd_M","FIR_Gunpod_Nomodel_P_1rnd_M"};
+					};
+					class Multirole
+					{
+						displayName = "Multirole";
+						dataname = "Multirole";							
+						attachment[] = {"FIR_AIM9M_LAU115_P_1rnd_M", "FIR_AGM65D_P_1rnd_M", "FIR_GBU12_P_3rnd_M", "FIR_GBU38_P_3rnd_M","FIR_AGM65H_P_1rnd_M","FIR_AIM9M_LAU115_P_1rnd_M","FIR_Litening_std_P_1rnd_M","FIR_Gunpod_Nomodel_P_1rnd_M"};
+					};
+					class AATraining
+					{
+						displayName = "Training - air to air";
+						dataname = "AATraining";							
+						attachment[] = {"FIR_CATM9M_LAU115_P_1rnd_M", "FIR_CATM120C_LAU115_P_1rnd_M", "FIR_CATM120C_LAU115_P_1rnd_M", "FIR_CATM120C_LAU115_P_1rnd_M","FIR_CATM120C_LAU115_P_1rnd_M","FIR_ACMI_TACTS_P_1rnd_M","FIR_Litening_std_P_1rnd_M","FIR_Gunpod_Nomodel_P_1rnd_M"};
+					};					
+					class AGTraining
+					{
+						displayName = "Training - air to ground";
+						dataname = "AGTraining";							
+						attachment[] = {"", "FIR_Mk76_P_3rnd_M", "FIR_BDU57_P_3rnd_M", "FIR_BDU57_P_3rnd_M","FIR_Mk76_P_3rnd_M","","FIR_Litening_std_P_1rnd_M","FIR_Gunpod_Nomodel_P_1rnd_M"};
+					};								
+				};								
+				UIPicture = "\FIR_AV8B\ui\av8b_dynamic_ca.paa";
+				class pylons
+				{
+					class pylons1
+					{
+						hardpoints[] = {"FIR_AV8B_NA_AA_HP","FIR_AV8B_AA_HP","FIR_AV8B_AG_HP","FIR_AV8B_ECM_HP","FIR_MISC"};
+						attachment = "FIR_AIM9M_LAU115_P_1rnd_M";
+						priority = 4;
+						maxweight = 500;
+						UIposition[] = {0.5,0.35};
+					};
+					class pylons2: pylons1
+					{
+						hardpoints[] = {"FIR_AV8B_NA_AA_HP","FIR_AV8B_AA_HP","FIR_AV8B_AG_HP","FIR_AV8B_AG1K_HP","FIR_AV8B_HARM_HP","FIR_AV8B_Fueltank_L_HP","FIR_MISC"};
+						priority = 3;
+						attachment = "FIR_AGM65D_P_1rnd_M";
+						maxweight = 1050;
+						UIposition[] = {0.45,0.4};
+					};
+					class pylons3: pylons1
+					{
+						hardpoints[] = {"FIR_AV8B_AA_HP","FIR_AV8B_AG_HP","FIR_AV8B_AG1K_HP","FIR_AV8B_Fueltank_L_HP","FIR_MISC"};
+						priority = 2;
+						attachment = "FIR_GBU12_P_2rnd_M";
+						maxweight = 1050;
+						UIposition[] = {0.4,0.45};
+					};
+					class pylons4: pylons3
+					{
+						hardpoints[] = {"FIR_AV8B_AA_HP","FIR_AV8B_AG_HP","FIR_AV8B_AG1K_HP","FIR_AV8B_Fueltank_R_HP","FIR_MISC"};
+						priority = 2;
+						attachment = "FIR_GBU12_P_2rnd_M";
+						mirroredMissilePos = 3;
+						UIposition[] = {0.2,0.45};
+					};
+					class pylons5: pylons2
+					{
+						hardpoints[] = {"FIR_AV8B_NA_AA_HP","FIR_AV8B_AA_HP","FIR_AV8B_AG_HP","FIR_AV8B_AG1K_HP","FIR_AV8B_HARM_HP","FIR_AV8B_Fueltank_R_HP","FIR_MISC"};
+						priority = 3;
+						attachment = "FIR_AGM65D_P_1rnd_M";
+						mirroredMissilePos = 2;
+						UIposition[] = {0.15,0.4};
+					};
+					class pylons6: pylons1
+					{
+						hardpoints[] = {"FIR_AV8B_NA_AA_HP","FIR_AV8B_AA_HP","FIR_AV8B_AG_HP","FIR_MISC"};
+						UIposition[] = {0.1,0.35};
+						priority = 4;
+						attachment = "FIR_AIM9M_LAU115_P_1rnd_M";
+						mirroredMissilePos = 1;
+					};
+					class pylons7: pylons1
+					{
+						hardpoints[] = {"FIR_AV8B_Under_HP","FIR_MISC"};
+						priority = 1;
+						UIposition[] = {0.3,0.35};
+						attachment = "FIR_Litening_std_P_1rnd_M";
+					};
+					class pylons8: pylons1
+					{
+						hardpoints[] = {"FIR_AV8B_Misc","FIR_MISC"};
+						priority = 1;
+						UIposition[] = {0.3,0.55};
+						attachment = "FIR_Gunpod_Nomodel_P_1rnd_M";
+					};							
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentLeft: DefaultVehicleSystemsDisplayManagerLeft
+			{
+				defaultDisplay = "EmptyDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoMiniMap";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {8000,16000,30000,2000,4000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+			class VehicleSystemsDisplayManagerComponentRight: DefaultVehicleSystemsDisplayManagerRight
+			{
+				defaultDisplay = "SensorDisplay";
+				class Components
+				{
+					class EmptyDisplay
+					{
+						componentType = "EmptyDisplayComponent";
+					};
+					class MinimapDisplay
+					{
+						componentType = "MinimapDisplayComponent";
+						resource = "RscCustomInfoMiniMap";
+					};
+					class VehicleDriverDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Driver";
+					};
+					class VehicleMissileDisplay
+					{
+						componentType = "TransportFeedDisplayComponent";
+						source = "Missile";
+					};
+					class SensorDisplay
+					{
+						componentType = "SensorsDisplayComponent";
+						range[] = {8000,16000,30000,2000,4000};
+						resource = "RscCustomInfoSensors";
+					};
+				};
+			};
+		};		
+
+		AWS_MFD_OVERLAY_TGP = "\FIR_AV8B\cockpit\MFD_TGP.paa";
+		AWS_MFD_OVERLAY_TAD = "\FIR_AV8B\cockpit\MFD_HSD.paa";		
+	
+		acceleration = 200;
+		driveoncomponent[] = {"wheel_1", "wheel_2", "wheel_3_1","wheel_3_2"};
+		
+		camouflage = 8;
+		audible = 10;
+		accuracy = 0.2;
+		
+		memoryPointCM[] = {"flare_launcher1","flare_launcher2","flare_launcher3"};
+  		memoryPointCMDir[] = {"flare_launcher1_dir","flare_launcher2_dir","flare_launcher3_dir"};
+
+		htMin = 60;
+  		htMax = 1800;
+  		afMax = 200;
+  		mfMax = 100;
+  		mFact = 0;
+  		tBody = 0;
+
+		radartype = 4;
+		lockdetectionsystem = 2 + 8 + 4;
+		incommingmissliedetectionsystem = 16;
     };
 };

@@ -119,6 +119,8 @@ class CfgWeapons
 			mass = 0.1;
 		};
 	};
+    class Atropine : ACE_Epinephrine
+    {};
     class MEU_PlasmaIV : ACE_plasmaIV
     {
         scope = 2;

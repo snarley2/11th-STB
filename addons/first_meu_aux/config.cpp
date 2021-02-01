@@ -97,6 +97,7 @@ class cfgPatches
             "Land_OPTRE_ConstructionBarrier2",
             "Land_ModularOutPostBuildingQuarters",
             "Land_OPTRE_fusion_coil",
+            "la_bomba",
 			};
         magazines[] = 
 		{
