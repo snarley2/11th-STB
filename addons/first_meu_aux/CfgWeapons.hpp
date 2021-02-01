@@ -107,7 +107,115 @@ class CfgWeapons
     class LM_OPCAN_UP_Shemagh;
     class LM_OPCAN_URB_UP_Shemagh;
     class LM_OPCAN_DES_UP_Shemagh;
+    class plp_ctf_SafetyBarrelBlue;
 	
+    // Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
+    class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
+	{
+        author = "Romeo" 
+		scope = 2;
+		scopeCurator = 2;
+        armor = 50;
+        armorStructural = 4;
+        ace_frag_enabled = 0;
+        CBRN_chemicalType = 2;
+        CBRN_heightOfBurst = 1;
+        CBRN_sprayWidth = 15;
+        CBRN_lifetime = 90;
+        CBRN_isPlacedExplosive = 1;
+		displayName = "Chemical Barrel (Nerve Agent)";
+        destrType = "DestructBuilding";
+        editorCategory = "MEU_Objects";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\NerveAgentBarrel_co.paa"};
+        class EventHandlers
+        {
+            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+        };
+        class DestructionEffects
+        {
+            class Light1
+            {
+                simulation = "light";
+                type = "ObjectDestructionLight";
+                position = "DestructionFire";
+                intensity = 0.001;
+                interval = 1;
+                lifeTime = 0.5;
+            };
+            class FuelFire1
+            {
+                simulation = "particles";
+                type = "BarelDestructionFire";
+                position = "DestructionFire";
+                intensity = 0.15;
+                interval = 1;
+                lifeTime = 0.5;
+            };
+            class FuelDestr
+            {
+                simulation = "destroy";
+                type = "FuelStationDestr";
+                position = "";
+                intensity = 1;
+                interval = 1;
+                lifeTime = 1;
+            };
+        };
+    };
+    class ChemicalBarrel_AS: plp_ctf_SafetyBarrelBlue
+	{
+        author = "Romeo" 
+		scope = 2;
+		scopeCurator = 2;
+        armor = 50;
+        armorStructural = 4;
+        ace_frag_enabled = 0;
+        CBRN_chemicalType = 1;
+        CBRN_heightOfBurst = 1;
+        CBRN_sprayWidth = 15;
+        CBRN_lifetime = 90;
+        CBRN_isPlacedExplosive = 1;
+		displayName = "Chemical Barrel (Asphyxiant)";
+        destrType = "DestructBuilding";
+        editorCategory = "MEU_Objects";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\AsphyxiantBarrel_co.paa"};
+        class EventHandlers
+        {
+            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+        };
+        class DestructionEffects
+        {
+            class Light1
+            {
+                simulation = "light";
+                type = "ObjectDestructionLight";
+                position = "DestructionFire";
+                intensity = 0.001;
+                interval = 1;
+                lifeTime = 0.5;
+            };
+            class FuelFire1
+            {
+                simulation = "particles";
+                type = "BarelDestructionFire";
+                position = "DestructionFire";
+                intensity = 0.15;
+                interval = 1;
+                lifeTime = 0.5;
+            };
+            class FuelDestr
+            {
+                simulation = "destroy";
+                type = "FuelStationDestr";
+                position = "";
+                intensity = 1;
+                interval = 1;
+                lifeTime = 1;
+            };
+        };
+    };
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
 	{
