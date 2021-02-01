@@ -8,18 +8,22 @@ class ACE_Medical_Treatment_Actions
     class ApplyTourniquet;
     class RemoveTourniquet;
     class BasicBandage;
-    class ACE_Epinephrine;
     
     class MEU_compat_Ibuprofen: Morphine
     {
-        displayName = "Ibuprofen Bottle";
+        displayName = "Take Ibuprofen";
         displayNameProgress = "Having some Water and rest...";
         allowedSelections[] = {"Head"};
         items[] = {"MEU_compat_Ibuprofen"};
         treatmentTime = 1;
     };
-    class Atropine : ACE_Epinephrine
-    {};
+    class Atropine : MEU_compat_Ibuprofen
+    {
+		displayName = "Inject Antidote";
+        displayNameProgress = "Applying Chemical Antidote";
+        allowedSelections[] = {"All"};
+        items[] = {"Atropine"};
+    };
 	class ACE_Banana: Morphine
     {
         displayName = "Banana";

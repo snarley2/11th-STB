@@ -75,7 +75,7 @@ class CfgVehicles
     class OPTRE_MediGelItem;
     class ACE_tourniquetItem;
 	class ACE_SelfActions;
-	
+    
 	//Misc Classes
 	class GunnerTurret;
 	class CargoTurret;
@@ -121,6 +121,20 @@ class CfgVehicles
         class TransportItems 
         {
             item_xx(MEU_compat_Ibuprofen,1);
+        };
+        mass = 20
+    };
+    class AtropineItem : MEU_compat_IbuprofenItem
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "Antidote";
+        author = "1st MEU Mark";
+        vehicleClass = "Items";
+        class TransportItems 
+        {
+            item_xx(Atropine,1);
         };
         mass = 20
     };

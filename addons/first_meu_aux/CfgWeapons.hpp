@@ -72,6 +72,7 @@ class CfgWeapons
     class OPTRE_Biofoam;
     class OPTRE_Medigel;
     class ACE_tourniquet;
+    class ACE_Epinephrine;
 	
 	//Generic Classes
     class ItemCore;
@@ -122,8 +123,15 @@ class CfgWeapons
 			mass = 0.1;
 		};
 	};
-    class Atropine : ACE_Epinephrine
-    {};
+    class Atropine : MEU_compat_Ibuprofen
+    {
+        scope = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "Antidote";
+        descriptionShort = "Emergeny Use Only";
+		descriptionUse = "Might save you from the cloud";
+    };
     class MEU_PlasmaIV : ACE_plasmaIV
     {
         scope = 2;
@@ -13810,7 +13818,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 // Recon End
 
 // BDU Start
-	
+
 	class Praetorian_BDU : U_B_CombatUniform_mcam
 	{
 		author = "1stMEU Oneill";
@@ -13819,6 +13827,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
 		displayName = "[1stMEU] Praetorian Combat Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "BDU_V_Praetorian_Slim";
@@ -13837,6 +13846,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Slim";
@@ -13855,6 +13865,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform (Urban/Evolved)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Urban_Evolved_Slim";
@@ -13873,6 +13884,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform (Desert)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Desert_Slim";
@@ -13891,6 +13903,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform (Snow)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Snow_Slim";
@@ -13909,6 +13922,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform (Woodland)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Woodland_Slim";
@@ -13927,6 +13941,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Pegasus Pilot Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
 		ACE_GForceCoef = 0.1;
         class ItemInfo: UniformItem
         {
@@ -13946,6 +13961,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Slim_Rolled";
@@ -13964,6 +13980,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Urban/Evolved)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Urban_Evolved_Slim_Rolled";
@@ -13982,6 +13999,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Desert)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Desert_Slim_Rolled";
@@ -14000,6 +14018,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Snow)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Snow_Slim_Rolled";
@@ -14018,6 +14037,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Woodland)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Woodland_Slim_Rolled";
@@ -14036,6 +14056,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Pegasus Pilot Uniform Rolled Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
 		ACE_GForceCoef = 0.1;
         class ItemInfo: UniformItem
         {
@@ -14055,6 +14076,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Slim_Short";
@@ -14073,6 +14095,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Urban/Evolved)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Urban_Evolved_Slim_Short";
@@ -14091,6 +14114,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Desert)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Desert_Slim_Short";
@@ -14109,6 +14133,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Snow)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Snow_Slim_Short";
@@ -14127,6 +14152,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Woodland)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
         {
 			uniformClass = "BDU_V_Centurion_Woodland_Slim_Short";
@@ -14145,6 +14171,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2;
         displayName = "[1stMEU] Pegasus Pilot Uniform Short Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = 8;
 		ACE_GForceCoef = 0.1;
         class ItemInfo: UniformItem
         {
