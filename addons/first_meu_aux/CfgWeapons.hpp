@@ -72,6 +72,7 @@ class CfgWeapons
     class OPTRE_Biofoam;
     class OPTRE_Medigel;
     class ACE_tourniquet;
+    class ACE_Epinephrine;
 	
 	//Generic Classes
     class ItemCore;
@@ -122,8 +123,15 @@ class CfgWeapons
 			mass = 0.1;
 		};
 	};
-    class Atropine : ACE_Epinephrine
-    {};
+    class Atropine : MEU_compat_Ibuprofen
+    {
+        scope = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
+		displayName = "Antidote";
+        descriptionShort = "Emergeny Use Only";
+		descriptionUse = "Might save you from the cloud";
+    };
     class MEU_PlasmaIV : ACE_plasmaIV
     {
         scope = 2;
