@@ -12,31 +12,32 @@ class CfgGroups
                 name = "Flood";
                 class FloodGroupTest
                 {
-                    name = "FloodGroupTest";
+                    name = "Flood Test Group";
                     side = 0;
-                    faction = "JMM_infected_o_faction";
+                    faction = "MEU_Flood";
+                    rarityGroup = 0.3;
                     class Unit0
                     {
                     side = 0;
-                    vehicle = "JMM_O_IMarineMU";
+                    vehicle = "MEU_IMarineMU";
                     rank = "CORPORAL";
                     position[] = {0,0,0};
                     };
                     class Unit1
                     {
                     side = 0;
-                    vehicle = "JMM_O_IMarineSU";
+                    vehicle = "MEU_IMarineSU";
                     rank = "CORPORAL";
                     position[] = {0,0,0};
                     };
                     class Unit2
                     {
                     side = 0;
-                    vehicle = "JMM_O_IMarineFU";
+                    vehicle = "MEU_IMarineFU";
                     rank = "CORPORAL";
                     position[] = {0,0,0};
                     };
-                }; 
+                };
             };
             class OPTRE_Ins
             {
