@@ -12,6 +12,8 @@ class CfgAmmo
     class ACE_SatchelCharge_Remote_Ammo_Thrown;
     class ACE_G_CTS9;
 	class M_Titan_AT;
+	class SmokeShell;
+	class OPAEX_40mm_Smoke;
 	
 	//Shotguns
 	class B_12Gauge_Pellets_Submunition;
@@ -107,9 +109,9 @@ class CfgAmmo
 	class MEU_Fury_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
         scope = 1;
-        hit = 100000;
-		indirectHit = 100000;
-		indirectHitRange = 100000;
+        hit = 10000;
+		indirectHit = 10000;
+		indirectHitRange = 500;
 		defaultMagazine = "MEU_Fury_Mag"; 
 		model = "\OPTRE_weapons\backpacks\fury.p3d";
         timeToLive = 15;
@@ -123,7 +125,40 @@ class CfgAmmo
         initSpeed = 9;
     };
 	// end throwable explosives
-	//throwable sheild
+	
+	// CBRN Munitions
+	class 40mm_CS: OPAEX_40mm_Smoke
+	{
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
+		smokeColor[] = {1,1,1,1};
+		ace_frag_enabled = 0;
+		aiAmmoUsageFlags = "64 + 128";
+		CraterEffects = "";
+		CBRN_isProjectile = 1;
+		CBRN_chemicalType = 0;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 10;
+		CBRN_lifetime = 90;
+	};
+	
+	class M3_CS: SmokeShell
+	{
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
+		smokeColor[] = {1,1,1,1};
+		deflecting = 5;
+		explosive = 0;
+		explosionTime = 0;
+		timetolive = 60;
+		fuseDistance = 0;
+		aiAmmoUsageFlags = "4 + 2";
+		CraterEffects = "";
+		CBRN_isProjectile = 1;
+		CBRN_chemicalType = 0;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 10;
+		CBRN_lifetime = 90;
+	};
+	// throwable sheild
 	class MEU_Bubbleshield_Ammo: ACE_SatchelCharge_Remote_Ammo_Thrown
 	{
 		hit = 0;
@@ -291,6 +326,17 @@ class CfgAmmo
         timeToLive = 30;
         fuseDistance = 4;
 	};
+	
+	class MEU_40mm_9bang : ACE_G_CTS9
+    {
+		deflecting = 5;
+		explosive = 1;
+		timetolive = 60;
+		fuseDistance = 0;
+		ace_frag_enabled = 0;
+        explosionTime = 1.5;
+        ace_flashbang_Interval = 0.05;
+    };
 	
 	class M41_Rocket_HEAT_WireGuided: M_Titan_AT
 	{
