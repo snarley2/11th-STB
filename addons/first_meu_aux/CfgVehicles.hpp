@@ -29,6 +29,11 @@ class CfgVehicles
     class VES_IFV76_A;
     class VES_M808B_MBT;
     class VES_M12_APC;
+    
+    //flud
+    class JMM_O_IMarineMU;
+    class JMM_O_IMarineSU;
+	class JMM_O_IMarineFU;
     	
 	//Backpack Classes
 	class OPTRE_S12_SOLA_Jetpack;
@@ -109,6 +114,7 @@ class CfgVehicles
     class House;
     class plp_ctf_SafetyBarrelBlue;
     class Land_OPTRE_barrel_hydrogen;
+    class CBRN_putMaskOn;
         
     //chemwar
 	class CAManBase: Man
@@ -117,13 +123,8 @@ class CfgVehicles
 		{
 			class ACE_MainActions
 			{
-				class CBRN_putMaskOn
-				{
-					displayName = "Put mask on";
-					condition = "(ace_medical_menuTypeStyle == 0) && ((_target call CBRN_fnc_hasMaskInInventory) || (_player call CBRN_fnc_hasMaskInInventory)) && (_target getVariable ['ACE_isUnconscious', false]) && !((goggles _target) in CBRN_allLevel1Masks)";
-					statement = "[_player, _target] call CBRN_fnc_putMaskOnAction";
-					icon = "CBRN_scripts\data\icons\gasmaskIcon.paa";
-				};
+				class MEU_Maskon : CBRN_putMaskOn
+				{};
             };
         };
     };
@@ -6991,6 +6992,36 @@ class CfgVehicles
 		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke"};
 		icon = "iconManOfficer";
 	};
+    //end ins units
+    //flud
+    class MEU_IMarineMU : JMM_O_IMarineMU
+	{
+		faction = "JMM_infected_o_faction";
+		editorSubcategory = "MEU_Flood";
+        editorCategory = "MEU_Assets";
+		vehicleClass = "JMM_infectedM";
+		displayName = "Combat Form (Medium)";
+		side = 0;
+	};
+    class MEU_IMarineSU : JMM_O_IMarineSU
+	{
+		faction = "JMM_infected_o_faction";
+		editorSubcategory = "MEU_Flood";
+        editorCategory = "MEU_Assets";    
+		vehicleClass = "JMM_infectedS";
+		displayName = "Combat Form (Slow)";
+		side = 0;
+	};
+    class MEU_IMarineFU : JMM_O_IMarineFU
+	{
+		faction = "JMM_infected_o_faction";
+		editorSubcategory = "MEU_Flood";
+        editorCategory = "MEU_Assets";    
+		vehicleClass = "JMM_infectedF";
+		displayName = "Combat Form (Fast)";
+		side = 0;
+	};
+    //end flud
     class 1stMEU_CTF_Flag_Prae1 : OPTRE_CTF_Flag_Base
     {
         scope = 2;
@@ -6999,7 +7030,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST31_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     }; 
 
     class 1stMEU_CTF_Flag_Prae2 : OPTRE_CTF_Flag_Base
@@ -7010,7 +7041,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST32_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     }; 
 
     class 1stMEU_CTF_Flag_Prae3 : OPTRE_CTF_Flag_Base
@@ -7021,7 +7052,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST33_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_1stMEU : OPTRE_CTF_Flag_Base
@@ -7032,7 +7063,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_red1stmeu_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_1stPlt : OPTRE_CTF_Flag_Base
@@ -7043,7 +7074,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow1stplt_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_2ndPlt : OPTRE_CTF_Flag_Base
@@ -7055,7 +7086,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
         editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_Hammer : OPTRE_CTF_Flag_Base
@@ -7067,7 +7098,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_hammer_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_Anvil : OPTRE_CTF_Flag_Base
@@ -7079,7 +7110,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_anvil_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
     class 1stMEU_CTF_Flag_Forge : OPTRE_CTF_Flag_Base
@@ -7091,7 +7122,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleforge_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_Guardian : OPTRE_CTF_Flag_Base
@@ -7103,7 +7134,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_guardian_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_Gladius : OPTRE_CTF_Flag_Base
@@ -7115,7 +7146,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_gladius_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
      class 1stMEU_CTF_Flag_VulcanHQ : OPTRE_CTF_Flag_Base
@@ -7127,7 +7158,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_vulcanhq_co.paa"};
 		editorCategory = "MEU_Objects";
-                editorSubcategory = "Flags";
+        editorSubcategory = "Flags";
     };
     
     // Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA

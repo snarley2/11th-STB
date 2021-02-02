@@ -188,6 +188,11 @@ class CfgFactionClasses
 		primaryLanguage = "EN";
 		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
 	};
+    class JMM_infected_o_faction;
+    class MEU_Flood : JMM_infected_o_faction
+    {
+        displayName = "1st MEU Flood";
+    };
 };
 class CfgEditorCategories
 {
@@ -251,6 +256,12 @@ class CfgEditorSubcategories
     class Flags
     {
 		displayName = "Flags";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+    class MEU_Flood
+    {
+		displayName = "Flood";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
