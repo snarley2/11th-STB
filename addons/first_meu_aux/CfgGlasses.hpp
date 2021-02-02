@@ -21,7 +21,7 @@ class CfgGlasses
     //lol glasses
     // CBRN Shemaghs
     class ODST_Shemagh_Olive : LM_OPCAN_UP_Shemagh
-       {
+	{
         displayName = "[1stMEU] Praetorian Shemagh (Olive)";
 		scope = 2;
         scopeArsenal = 2;
@@ -29,9 +29,9 @@ class CfgGlasses
         CBRN_protectionLevel = "1 + 2 + 4";
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_CO_ODST.paa"};
-       };
+    };
     class ODST_Shemagh_Urban : LM_OPCAN_URB_UP_Shemagh
-       {
+    {
         displayName = "[1stMEU] Praetorian Shemagh (Urban)";
 		scope = 2;
         scopeArsenal = 2;
@@ -39,9 +39,9 @@ class CfgGlasses
         CBRN_protectionLevel = "1 + 2 + 4";
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COB_ODST.paa"};
-       };
+	};
     class ODST_Shemagh_Tan : LM_OPCAN_DES_UP_Shemagh
-       {
+    {
         displayName = "[1stMEU] Praetorian Shemagh (Tan)";
 		scope = 2;
         scopeArsenal = 2;
@@ -49,5 +49,5 @@ class CfgGlasses
         CBRN_protectionLevel = "1 + 2 + 4";
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COD_ODST.paa"};
-       };
+    };
 };
