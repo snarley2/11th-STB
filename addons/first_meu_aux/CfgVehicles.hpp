@@ -109,21 +109,17 @@ class CfgVehicles
     class House;
     class plp_ctf_SafetyBarrelBlue;
     class Land_OPTRE_barrel_hydrogen;
+    class CBRN_putMaskOn;
         
     //chemwar
 	class CAManBase: Man
 	{
 		class ACE_Actions
 		{
-			class class ACE_MainActions
+			class ACE_MainActions
 			{
-				class CBRN_putMaskOn
-				{
-					displayName = "Put mask on";
-					condition = "(ace_medical_menuTypeStyle == 0) && ((_target call CBRN_fnc_hasMaskInInventory) || (_player call CBRN_fnc_hasMaskInInventory)) && (_target getVariable ['ACE_isUnconscious', false]) && !((goggles _target) in CBRN_allLevel1Masks)";
-					statement = "[_player, _target] call CBRN_fnc_putMaskOnAction";
-					icon = "CBRN_scripts\data\icons\gasmaskIcon.paa";
-				};
+				class MEU_Maskon : CBRN_putMaskOn
+				{};
             };
         };
     };
