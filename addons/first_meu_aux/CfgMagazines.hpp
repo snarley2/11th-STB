@@ -11,6 +11,7 @@ class CfgMagazines
 	class OPTRE_M9_Frag;
     class ACE_CTS9;
     class M168_Remote_Mag;
+	class OPTRE_M2_Smoke;
 	
 	//Magazines
 	class CA_Magazine;
@@ -791,6 +792,30 @@ class CfgMagazines
 		descriptionShort = "15 Round Magazine<br>7.62x51mm<br>Fin-Stabalized<br>Tracers";
 	};
 	
+	class 1Rnd_9Bang_MEU_shell:1Rnd_HE_Grenade_shell
+	{
+		author = "Oneill";
+		displayName = "M301 1 Rnd 40mm 9 Bang Shell";
+		displayNameShort = "1Rnd 40mm 9 Bang";
+		descriptionShort = "40mm 9 Bang Rifle Grenade";
+		initSpeed = 100;
+		ammo = "MEU_40mm_9bang";
+		fuseDistance = 3;
+		mass = 6;
+	};
+	
+	class 1Rnd_CS_MEU_shell:1Rnd_HE_Grenade_shell
+	{
+		author = "Oneill";
+		displayName = "M301 1 Rnd 40mm CS Shell";
+		displayNameShort = "1Rnd 40mm CS";
+		descriptionShort = "40mm Tear Gas Rifle Grenade";
+		initSpeed = 100;
+		ammo = "40mm_CS";
+		fuseDistance = 3;
+		mass = 6;
+	};
+	
 	class 1Rnd_HE_MEU_shell:1Rnd_HE_Grenade_shell
 	{
 		author = "1stMEUKestrelOneill";
@@ -837,7 +862,22 @@ class CfgMagazines
 		lastRoundsTracer = 5;
 	};
 	
-    class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
+	class MEU_M3_CS_Mag : OPTRE_M2_Smoke
+    {
+        author = "1st Oneill";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[1st MEU] M3 CS Grenade";
+		ammo = "M3_CS";
+		picture = "\A3\Weapons_f\data\ui\gear_smokegrenade_white_ca.paa";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Throw\M2_SMOKE.paa";
+		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
+		mass = 4;
+        descriptionShort = "M3 CS Grenade";
+		displayNameShort = "CS Grenade";
+    };
+	
+	class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark";
         scope = 2;
@@ -872,7 +912,7 @@ class CfgMagazines
         author = "1st MEU Mark";
         scope = 2;
         scopeArsenal = 2;
-        displayName = "[1st MEU] Praetorian 9 Bang";
+        displayName = "[1st MEU] 9 Bang";
         descriptionShort = "ODSTs shouldn't play with grenades";
 		displayNameShort = "P9B";
     };
