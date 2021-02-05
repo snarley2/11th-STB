@@ -107,6 +107,7 @@ class CfgWeapons
     class LM_OPCAN_UP_Shemagh;
     class LM_OPCAN_URB_UP_Shemagh;
     class LM_OPCAN_DES_UP_Shemagh;
+    class LM_OPCAN_BRW_Shemagh;
     class plp_ctf_SafetyBarrelBlue;
 	
     // Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
@@ -7519,6 +7520,7 @@ class CfgWeapons
     
     class M52DRiflemanSilver:1MEU_BASE_M52D_Armor
 	{
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -7625,7 +7627,7 @@ class CfgWeapons
 	
     class M52DRiflemanPurple:1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -8259,7 +8261,7 @@ class CfgWeapons
     
     class M52DMarksmanPurple:1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -8789,7 +8791,7 @@ class CfgWeapons
     
     class M52DSniperSilver: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -8894,7 +8896,7 @@ class CfgWeapons
 	
     class M52DSniperPurple: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -9418,7 +9420,7 @@ class CfgWeapons
 	
     class M52DAutoRiflemanSilver: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -9521,7 +9523,7 @@ class CfgWeapons
     
     class M52DAutoRiflemanPurple: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -10051,7 +10053,7 @@ class CfgWeapons
 	
     class M52DGrenadierSilver: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -10156,7 +10158,7 @@ class CfgWeapons
     
     class M52DGrenadierPurple: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -10678,7 +10680,7 @@ class CfgWeapons
 	
     class M52DBreacherSilver: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -10781,7 +10783,7 @@ class CfgWeapons
     
     class M52DBreacherPurple: 1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -12412,7 +12414,7 @@ class CfgWeapons
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3_color_green.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Black_HM.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
     class Praetor_Helmet_Corpsman_31: 1stMEU_Base_CH252D_Helmet
 	{
@@ -12518,7 +12520,7 @@ class CfgWeapons
 	};
     class Praetor_Helmet_Silver: 1stMEU_Base_CH252D_Helmet
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -14919,7 +14921,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     };
     class M52DGinger:1MEU_BASE_M52D_Armor
 	{
-        author = "1st MEU Ginger"
+        author = "1st MEU Ginger";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -15017,7 +15019,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				"AP_Thigh",
                 "APO_AR",
 				"APO_BR",
-				"APO_SMG",
 				"APO_Sniper",
                 "APO_Knife"
 			};
