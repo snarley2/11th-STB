@@ -18,24 +18,24 @@ class CfgGroups
                     rarityGroup = 0.3;
                     class Unit0
                     {
-                    side = 0;
-                    vehicle = "MEU_IMarineMU";
-                    rank = "CORPORAL";
-                    position[] = {0,0,0};
+                        side = 0;
+                        vehicle = "MEU_IMarineMU";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
                     };
                     class Unit1
                     {
-                    side = 0;
-                    vehicle = "MEU_IMarineSU";
-                    rank = "CORPORAL";
-                    position[] = {0,0,0};
+                        side = 0;
+                        vehicle = "MEU_IMarineSU";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
                     };
                     class Unit2
                     {
-                    side = 0;
-                    vehicle = "MEU_IMarineFU";
-                    rank = "CORPORAL";
-                    position[] = {0,0,0};
+                        side = 0;
+                        vehicle = "MEU_IMarineFU";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
                     };
                 };
             };

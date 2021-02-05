@@ -4,12 +4,14 @@ class CfgGlasses
     class LM_OPCAN_UP_Shemagh;
     class LM_OPCAN_URB_UP_Shemagh;
     class LM_OPCAN_DES_UP_Shemagh;
-    //lol glasses
+    class LM_OPCAN_BRW_Shemagh;
+        
+    //lol glasses     
     class Marks_Aviators : LM_OPCAN_Shemagh
     {
         scope = 2;
         scopeArsenal = 2;
-        displayname = "Praetorian Shemaghe (Olive) (Mark)";
+        displayname = "Praetorian Shemagh (Olive) (Mark)";
         CBRN_protectionLevel = "1 + 2 + 4";
         ACE_Resistance = 2;
         ACE_Protection = 1;
@@ -49,5 +51,15 @@ class CfgGlasses
         CBRN_protectionLevel = "1 + 2 + 4";
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COD_ODST.paa"};
+    };
+    class ODST_Shemagh_Brown : LM_OPCAN_BRW_Shemagh
+    {
+        displayName = "[1stMEU] Praetorian Shemagh (Brown)";
+		scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        CBRN_protectionLevel = "1 + 2 + 4";
+		hiddenSelections[] = {"camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COBR_ODST.paa"};
     };
 };
