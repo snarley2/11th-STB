@@ -1094,6 +1094,27 @@ class CfgWeapons
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
+		displayName = "[1stMEU] Beret (4th Plt)";
+        weaponPoolAvailable = 1;
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+        picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Beret_Colonel_ca.paa";
+		model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+		hiddenSelections[] = {"Camo"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\4thBeret.paa"};
+        visionMode[] = {"Normal","TI","NVG"};
+        thermalMode[] = {0,1,2,3,4,5};
+    };
+    class fifth_plt_beret : first_plt_Beret
+    {
+       scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "1st MEU Mark";
 		displayName = "[1stMEU] Beret (5th Plt)";
         weaponPoolAvailable = 1;
 		subItems[]=
@@ -15057,7 +15078,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeCurator = 2; 
         scopeArsenal = 2; 
 		author = "1st MEU Mark"; 
-		displayName = "[1stMEU] 1-6 CH252 Heavy Helmet (Coward)"; 
+		displayName = "[1stMEU] 1-6 CH252 Heavy Helmet (Night)"; 
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\16_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     }; 
     class Marine_Helmet_17 : 1MEU_Base_CH252_Helmet 
@@ -16248,7 +16269,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2; 
 		author = "1st MEU Mark"; 
 		displayName = "[1stMEU] 2-6 CH252 Heavy Helmet (Coward)"; 
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\26_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\26_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     }; 
     class Marine_Helmet_27 : 1MEU_Base_CH252_Helmet 
     { 
@@ -16257,7 +16278,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2; 
 		author = "1st MEU Mark"; 
 		displayName = "[1stMEU] 2-7 CH252 Heavy Helmet (BLANK)"; 
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     };
     class Marine_Helmet_2R : 1MEU_Base_CH252_Helmet 
     { 
@@ -16266,7 +16287,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2; 
 		author = "1st MEU Mark"; 
 		displayName = "[1stMEU] 2-R CH252 Heavy Helmet (BLANK)"; 
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\2R_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     };
     class Marine_Helmet_2M : 1MEU_Base_CH252_Helmet 
     { 
@@ -16275,7 +16296,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scopeArsenal = 2; 
 		author = "1st MEU Mark"; 
 		displayName = "[1stMEU] 2-M CH252 Heavy Helmet (Swedgie)"; 
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\2M_CH252_MAR_M_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     }; 
     class Urban_Helmet_21H : 1MEU_Base_CH252_Helmet 
     { 
@@ -16824,25 +16845,25 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	{ 
 		scopeArsenal = 1; 
 		scope = 1;
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_V_CH252_MAR_H_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\26_CH252_MAR_H_CO.paa"};
 	}; 
     class Marine_Helmet_27_dp : 1MEU_Base_CH252_Helmet 
 	{ 
 		scopeArsenal = 1; 
 		scope = 1;
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_V_CH252_MAR_H_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_CH252_MAR_H_CO.paa"};
 	};
     class Marine_Helmet_2R_dp : 1MEU_Base_CH252_Helmet 
 	{ 
 		scopeArsenal = 1; 
 		scope = 1;
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_V_CH252_MAR_H_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_CH252_MAR_R3_CO.paa"};
 	};
     class Marine_Helmet_2M_dp : 1MEU_Base_CH252_Helmet 
 	{ 
 		scopeArsenal = 1; 
 		scope = 1;
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\27_V_CH252_MAR_H_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Leadership\2M_CH252_MAR_M_CO.paa"};
 	}; 
     class Urban_Helmet_21H_dp : 1MEU_Base_CH252_Helmet 
 	{ 
