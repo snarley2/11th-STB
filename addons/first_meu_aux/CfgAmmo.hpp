@@ -145,12 +145,8 @@ class CfgAmmo
 	{
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		smokeColor[] = {1,1,1,1};
-		deflecting = 5;
-		explosive = 0;
-		explosionTime = 0;
-		timetolive = 60;
-		fuseDistance = 0;
-		aiAmmoUsageFlags = "4 + 2";
+		ace_frag_enabled = 0;
+		aiAmmoUsageFlags = "64 + 128";
 		CraterEffects = "";
 		CBRN_isProjectile = 1;
 		CBRN_chemicalType = 0;
@@ -327,15 +323,29 @@ class CfgAmmo
         fuseDistance = 4;
 	};
 	
-	class MEU_40mm_9bang : ACE_G_CTS9
-    {
+	class MEU_40mm_9bang : MEU_40mm_HE
+    {		
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+		visibleFire = 1;
+		audibleFire = 30;
+		visibleFireTime = 3;
+		dangerRadiusHit = -1;
+        suppressionRadiusHit = 20;
 		deflecting = 5;
-		explosive = 1;
-		timetolive = 60;
-		fuseDistance = 0;
+		timetolive = 10;
+		airFriction = -0.001;
+		fuseDistance = 15;
 		ace_frag_enabled = 0;
         explosionTime = 1.5;
+		typicalSpeed = 185;
+		effectsSmoke = "ACE_M84FlashbangEffect";
+		ace_flashbang = 1;
+        ace_flashbang_Bangs = 9;
         ace_flashbang_Interval = 0.05;
+        ace_flashbang_Interval_Max_Deviation = 0.35;
+        model = QPATHTOF(models\ACE_CTS_9bang_thrown.p3d);
     };
 	
 	class M41_Rocket_HEAT_WireGuided: M_Titan_AT

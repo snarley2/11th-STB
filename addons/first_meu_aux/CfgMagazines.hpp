@@ -810,6 +810,7 @@ class CfgMagazines
 		displayName = "M301 1 Rnd 40mm CS Shell";
 		displayNameShort = "1Rnd 40mm CS";
 		descriptionShort = "40mm Tear Gas Rifle Grenade";
+		picture = "\A3\Weapons_F\Data\UI\gear_flare_white_ca.paa";
 		initSpeed = 100;
 		ammo = "40mm_CS";
 		fuseDistance = 3;
@@ -1676,7 +1677,7 @@ class CfgMagazines
 		picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
 		model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
 		count = 2;
-		mass = 100;
+		mass = 80;
 		initSpeed = 150;
 		allowedSlots[] = {901,701};
 		maxLeadSpeed = 270;

@@ -38,6 +38,8 @@ class CfgWeapons
 	class OPTRE_SubMachineGun_Base;
     class OPTRE_M7S;
 	class OPTRE_M73;
+	class OPTRE_BR55;
+	class OPTRE_BR55HB_Scope;
 	class OPTRE_UnguidedLauncher_Base;
 	class autocannon_40mm_CTWS;
     class VES_M7_I;
@@ -91,6 +93,8 @@ class CfgWeapons
 	class Single;
 	class FullAuto;
 	class Mode_SemiAuto;
+	class Mode_Burst;
+	class InventoryOpticsItem_Base_F;
 	
 	//Miscelaneous Classes
 	class ItemcTabHCam;
@@ -17203,10 +17207,47 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"1Rnd_HEDP_MEU_shell",
 			"3Rnd_HE_MEU_shell",
 			"1Rnd_9Bang_MEU_shell",
-			"1Rnd_CS_MEU_shell"
+			"1Rnd_CS_MEU_shell",
+			"ACE_CTS9"
 		};
 	};
 	
+	class OPTRE_M319s: OPTRE_Handgun_Base
+	{
+		magazines[] = 
+		{
+			"UGL_FlareWhite_F",
+			"UGL_FlareGreen_F",
+			"UGL_FlareRed_F",
+			"UGL_FlareYellow_F",
+			"UGL_FlareCIR_F",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeYellow_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeOrange_Grenade_shell",
+			"3Rnd_HE_Grenade_shell",
+			"3Rnd_UGL_FlareWhite_F",
+			"3Rnd_UGL_FlareGreen_F",
+			"3Rnd_UGL_FlareRed_F",
+			"3Rnd_UGL_FlareYellow_F",
+			"3Rnd_UGL_FlareCIR_F",
+			"3Rnd_Smoke_Grenade_shell",
+			"3Rnd_SmokeRed_Grenade_shell",
+			"3Rnd_SmokeGreen_Grenade_shell",
+			"3Rnd_SmokeYellow_Grenade_shell",
+			"3Rnd_SmokePurple_Grenade_shell",
+			"3Rnd_SmokeBlue_Grenade_shell",
+			"3Rnd_SmokeOrange_Grenade_shell",
+			"M319_Smoke",
+			"M319_Smoke_Orange",
+			"M319_Smoke_Green",
+			"M319_Smoke_Red"
+		};
+	};
+		
 	class OPTRE_M247: OPTRE_M73
 	{
 		displayName = "M247X General Purpose Machine Gun";
@@ -17382,6 +17423,56 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		{
 			"Single",
 			"Burst"
+		};
+	};
+	
+	class OPTRE_BR45_Scope: OPTRE_BR55HB_Scope
+	{
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			mass = 2;
+			opticType = 1;
+			optics = 1;
+			modelOptics = "\OPTRE_Weapons\BR\BR_Scope_V2.p3d";
+			class OpticsModes
+			{
+				class BR55HB_BUIS
+				{
+					opticsID = 1;
+					useModelOptics = 0;
+					opticsPPEffects[] = {""};
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					opticsZoomMin = 0.275;
+					opticsZoomMax = 0.99;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "opticView2";
+					visionMode[] = {"Normal","NVG"};
+					discreteDistance[] = {50,100,150,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex = 1;
+					distanceZoomMin = 100;
+					distanceZoomMax = 1000;
+					cameraDir = "";
+				};
+				class BR55HB_Scope: BR55HB_BUIS
+				{
+					opticsID = 2;
+					useModelOptics = 1;
+					opticsZoomMin = 0.125;
+					opticsZoomMax = 0.0525;
+					opticsZoomInit = 0.125;
+					discretefov[] = {0.125,0.0525};
+					discreteinitIndex = 0;
+					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex = 1;
+					distanceZoomMin = 100;
+					distanceZoomMax = 1000;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\OPTRE_Weapons\BR\BR45_Optic_2x.p3d","\OPTRE_Weapons\BR\BR45_Optic_4x.p3d"};
+					visionMode[] = {"Normal","NVG"};
+					thermalMode[] = {0,1};
+				};
+			};
 		};
 	};
 	

@@ -105,7 +105,7 @@ class cfgPatches
             "OPTRE_12Rnd_8Gauge_Pellet",
             "OPTRE_6Rnd_8Gauge_Beanbag",
             "OPTRE_12Rnd_8Gauge_Beanbag",
-            };
+        };
 		ammo[] = 
 		{
             "OPTRE_B_5x23_Caseless_JHP",
@@ -115,7 +115,7 @@ class cfgPatches
             "MEU_B_8Gauge_Pellet",
             "MEU_B_8Gauge_Pellet_Submunition",
             "OPTRE_FC_BubbleShield_Ammo",
-            };
+        };
 		weapons[] = 
 		{
             "OPTRE_M392_DMR",
@@ -125,6 +125,9 @@ class cfgPatches
 			"OPTRE_M247";
             "OPTRE_CR77",
 			"OPTRE_M7",
+			"OPTRE_BR45",
+			"OPTRE_BR45_Scope",
+			"OPTRE_M319s",
             "throw",
             "OPTRE_M319",
 			"OPAEX_M41_Launcher",
