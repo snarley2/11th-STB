@@ -339,12 +339,11 @@ class CfgAmmo
 		fuseDistance = 15;
 		ace_frag_enabled = 0;
         explosionTime = 1.5;
-		typicalSpeed = 185;
+		typicalSpeed = 50;
 		effectsSmoke = "ACE_M84FlashbangEffect";
 		ace_flashbang = 1;
         ace_flashbang_Bangs = 9;
         ace_flashbang_Interval = 0.05;
-        ace_flashbang_Interval_Max_Deviation = 0.35;
         model = QPATHTOF(models\ACE_CTS_9bang_thrown.p3d);
     };
 	
