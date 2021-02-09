@@ -6890,35 +6890,91 @@ class CfgVehicles
 		side = 0;
 	};
     //end flud
-    class 1stMEU_CTF_Flag_Prae1 : OPTRE_CTF_Flag_Base
+    // begin ctf flags
+    class 1stMEU_CTF_Flag_3HQ : OPTRE_CTF_Flag_Base
     {
         scope = 2;
         scopeCurator = 2;
-        displayName ="Praetorian 3-1 CTF Flag";
+        displayName ="3rd Plt HQ CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_whiteODST3HQ_co.paa"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    }; 
+
+    class 1stMEU_CTF_Flag_31 : OPTRE_CTF_Flag_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="3rd Plt 3-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST31_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
 
-    class 1stMEU_CTF_Flag_Prae2 : OPTRE_CTF_Flag_Base
+    class 1stMEU_CTF_Flag_32 : OPTRE_CTF_Flag_Base
     {    
         scope = 2;
         scopeCurator = 2;
-        displayName ="Praetorian 3-2 CTF Flag";
+        displayName ="3rd Plt 3-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST32_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
 
-    class 1stMEU_CTF_Flag_Prae3 : OPTRE_CTF_Flag_Base
+    class 1stMEU_CTF_Flag_33 : OPTRE_CTF_Flag_Base
     {    
         scope = 2;
         scopeCurator = 2;
-        displayName ="Praetorian 3-3 CTF Flag";
+        displayName ="3rd Plt 3-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST33_co.paa"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    };
+        
+    class 1stMEU_CTF_Flag_4HQ : OPTRE_CTF_Flag_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="4th Plt HQ CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleODST4HQ_co.paa"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    }; 
+
+    class 1stMEU_CTF_Flag_41 : OPTRE_CTF_Flag_Base
+    {
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="4th Plt 4-1 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST41_co"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    }; 
+
+    class 1stMEU_CTF_Flag_42 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="4th Plt 4-2 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST42_co.paa"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    }; 
+
+    class 1stMEU_CTF_Flag_43 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="4th Plt 4-3 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST43_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -6934,83 +6990,152 @@ class CfgVehicles
         editorSubcategory = "Flags";
     };
     
-    class 1stMEU_CTF_Flag_1stPlt : OPTRE_CTF_Flag_Base
+    class 1stMEU_CTF_Flag_1HQ : OPTRE_CTF_Flag_Base
     {    
         scope = 2;
         scopeCurator = 2;
-        displayName ="1st Platoon CTF Flag";
+        displayName ="1st Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow1stplt_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
     
-    class 1stMEU_CTF_Flag_2ndPlt : OPTRE_CTF_Flag_Base
+    class 1stMEU_CTF_Flag_11 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="1st Plt 1-1 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_red11_co.paa"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    };
+    
+    class 1stMEU_CTF_Flag_12 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="1st Plt 1-2 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blue12_co.paa"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    };
+        
+    class 1stMEU_CTF_Flag_13 : OPTRE_CTF_Flag_Base
+    {    
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="1st Plt 1-3 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_green13_co.paa"};
+		editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    };
+    
+    class 1stMEU_CTF_Flag_2HQ : OPTRE_CTF_Flag_Base
     {    
         author = "Romeo"
         scope = 2;
         scopeCurator = 2;
-        displayName ="2nd Platoon CTF Flag";
+        displayName ="2nd Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
         editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
+        
+    class 1stMEU_CTF_Flag_21 : OPTRE_CTF_Flag_Base
+    {    
+        author = "Romeo"
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="2nd Plt 2-1 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2-1_co.paa"};
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    };
+        
+    class 1stMEU_CTF_Flag_22 : OPTRE_CTF_Flag_Base
+    {    
+        author = "Romeo"
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="2nd Plt 2-2 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2-2_co.paa"};
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    };
+        
+    class 1stMEU_CTF_Flag_23 : OPTRE_CTF_Flag_Base
+    {    
+        author = "Romeo"
+        scope = 2;
+        scopeCurator = 2;
+        displayName ="2nd Plt 2-3 CTF Flag";
+        hiddenSelections[] = {"camo1"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2-3_co.paa"};
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "Flags";
+    };
     
-    class 1stMEU_CTF_Flag_Hammer : OPTRE_CTF_Flag_Base
+    class 1stMEU_CTF_Flag_51 : OPTRE_CTF_Flag_Base
         
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
-        displayName ="Vulcan 4-1 CTF Flag";
+        displayName ="5th Plt 5-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_hammer_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
     
-     class 1stMEU_CTF_Flag_Anvil : OPTRE_CTF_Flag_Base
+     class 1stMEU_CTF_Flag_52 : OPTRE_CTF_Flag_Base
          
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
-        displayName ="Vulcan 4-2 CTF Flag";
+        displayName ="5th Plt 5-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_anvil_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
     
-    class 1stMEU_CTF_Flag_Forge : OPTRE_CTF_Flag_Base
+    class 1stMEU_CTF_Flag_53 : OPTRE_CTF_Flag_Base
          
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
-        displayName ="Vulcan 4-3 CTF Flag";
+        displayName ="5th Plt 5-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleforge_co.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_forge_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
     
-     class 1stMEU_CTF_Flag_Guardian : OPTRE_CTF_Flag_Base
+     class 1stMEU_CTF_Flag_5M : OPTRE_CTF_Flag_Base
          
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
-        displayName ="Vulcan 4-Mike CTF Flag";
+        displayName ="5th Plt 5-Mike CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_guardian_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
     
-     class 1stMEU_CTF_Flag_Gladius : OPTRE_CTF_Flag_Base
+     class 1stMEU_CTF_Flag_50 : OPTRE_CTF_Flag_Base
          
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
-        displayName ="Vulcan 4-0 CTF Flag";
+        displayName ="5th Plt 5-0 CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_gladius_co.paa"};
 		editorCategory = "MEU_Objects";
@@ -7022,13 +7147,13 @@ class CfgVehicles
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
-        displayName ="4th Platoon CTF Flag";
+        displayName ="5th Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_vulcanhq_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
-    
+     
     // Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
 	{
