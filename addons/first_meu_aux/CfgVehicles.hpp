@@ -20,7 +20,7 @@ class CfgVehicles
     class OPTRE_M313_UNSC;
 	class OPTRE_M808B_UNSC;
 	class OPTRE_CTF_Flag_Base;
-    class OPTRE_Longsword_Bomb;
+    //class OPTRE_Longsword_Bomb;
 
 	//Base FZ Classes
 	class VES_AV22_Sparrowhawk_Base;
@@ -31,9 +31,9 @@ class CfgVehicles
     class VES_M12_APC;
     
     //flud
-    class JMM_O_IMarineMU;
-    class JMM_O_IMarineSU;
-	class JMM_O_IMarineFU;
+    //class JMM_O_IMarineMU;
+    //class JMM_O_IMarineSU;
+	//class JMM_O_IMarineFU;
     	
 	//Backpack Classes
 	class OPTRE_S12_SOLA_Jetpack;
@@ -61,18 +61,16 @@ class CfgVehicles
     class O_Soldier_TL_F;
 	class O_Soldier_base_F;
 	class O_T_VTOL_02_infantry_dynamicLoadout_F;
-	
 	class B_Soldier_base_F;
 	class B_RangeMaster_F;
-    
     class I_Soldier_base_F;
     class I_G_Soldier_AR_F;
     class I_G_Soldier_LAT_F;
     class I_officer_F;
 	class I_G_Soldier_M_F;
     class I_G_Soldier_A_F;
-    
     class C_man_hunter_1_F;
+    class B_UAV_AI;
         
     //Medical
     class ACE_morphineItem;
@@ -115,6 +113,7 @@ class CfgVehicles
     class plp_ctf_SafetyBarrelBlue;
     class Land_OPTRE_barrel_hydrogen;
     class CBRN_putMaskOn;
+    class RHS_C130J;
         
     //chemwar
 	class CAManBase: Man
@@ -227,7 +226,58 @@ class CfgVehicles
         mass = 20
     };
     // end meds
-	
+	class MEU_AWACS : RHS_C130J
+    {
+        scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+        author = "1st MEU Mark";
+        displayName = "[1stMEU] AWACS [WIP]";
+        tf_isolatedAmount = 0.80;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 80000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_fix";
+        crew = "B_UAV_AI";
+        class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class SomeRadarSensorComponent
+					{
+						componentType = "ActiveRadarSensorComponent";
+						class AirTarget		// ranges for targets with sky background
+						{
+							minRange	= 120000;	// minimum possible range in meters
+							maxRange	= 120000;	// maximum possible range in meters
+							objectDistanceLimitCoef	= -1; // range not limited by obj. view distance
+							viewDistanceLimitCoef	= -1; // range not limited by view distance
+						};
+						class GroundTarget	// ranges for targets with ground background
+						{
+							minRange = 500;
+							maxRange = 80000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef 	= -1;
+						};
+						typeRecognitionDistance = 10000; // distance how far the target type gets recognized
+						angleRangeHorizontal 	= 60;	// sensor azimuth coverage in degrees
+						angleRangeVertical 		= 60;	// sensor elevation coverage in degrees
+						groundNoiseDistanceCoef = 0.5;	// portion of sensor-target-ground distance below which the targets become invisible to the sensor
+						maxGroundNoiseDistance 	= 250;	// distance from the ground in meters, hard cap, above which the target will be visible even if still below groundNoiseDistanceCoef
+						minSpeedThreshold 		= 0;	// target speed in m/s above which the target will start to become visible
+						maxSpeedThreshold 		= 45;	// target speed above which the target becomes visible even if below groundNoiseDistanceCoef, linearly decreases to minSpeedThreshold
+					};
+				};
+			};
+		};
+    };
     class MEU_SCORPION: VES_M808B_MBT
 	{
 		scope = 2;
@@ -238,7 +288,7 @@ class CfgVehicles
         displayName = "M808B Scorpion";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
+		tf_range = 80000;
         faction = "MEU_UNSC";
         side = 1;
 		editorCategory = "MEU_cat_A";
@@ -360,7 +410,7 @@ class CfgVehicles
         displayName = "APC-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
+		tf_range = 80000;
         transportSoldier = 16;
         faction = "MEU_UNSC";
 		side = 1;
@@ -421,7 +471,7 @@ class CfgVehicles
         displayName = "IFV-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
+		tf_range = 80000;
         transportSoldier = 12;
         faction = "MEU_UNSC";
 		side = 1;
@@ -910,7 +960,7 @@ class CfgVehicles
 	{
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
+		tf_range = 80000;
 		crewCrashProtection = 0.5;
 		crewExplosionProtection = 0.5;
 		armor = 400;
@@ -1110,7 +1160,7 @@ class CfgVehicles
         displayName = "M12 AP Warthog";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
+		tf_range = 80000;
         ace_cargo_size = 10;
         faction = "MEU_UNSC";
 		side = 1;
@@ -1303,7 +1353,7 @@ class CfgVehicles
         displayName = "M910 Point Defense Cannon";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
+		tf_range = 80000;
         faction = "MEU_UNSC";
 		side = 1;
         editorCategory = "MEU_cat_A";
@@ -1318,7 +1368,7 @@ class CfgVehicles
         displayName = "M910 Point Defense Cannon (inverted)";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 30000;
+		tf_range = 80000;
 		model = "\OPTRE_Corvette\weapons\pointdefense\turret_u.p3d";
 		class Turrets: Turrets
 		{
@@ -1350,7 +1400,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=30000;
+        tf_range=80000;
         weapons[] = {"CMFlareLauncher_Singles"};
 		magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
         class pilotCamera
@@ -1402,7 +1452,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range=80000;
          class UserActions
          {
         class MEU_E_Thruster
@@ -1492,7 +1542,7 @@ class CfgVehicles
         displayName = "[MEU] Pegasus Wyvern";
         armor = 350;
         damageResistance = 0.00555;
-        tf_range=30000;
+        tf_range=80000;
         faction = "MEU_UNSC";
 		side = 1;
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
@@ -1544,7 +1594,7 @@ class CfgVehicles
         displayName = "[MEU] Pegasus Blackfish";
         armor = 1250;
         damageResistance = 0.00055;
-        tf_range=30000;
+        tf_range=80000;
         faction = "MEU_UNSC";
 		side = 1;
         hiddenSelections[] ={
@@ -1595,7 +1645,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range = 30000;
+        tf_range = 80000;
         class pilotCamera
         {
             class OpticsIn
@@ -1654,7 +1704,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=30000;
+        tf_range=80000;
         class pilotCamera
         {
             class OpticsIn
@@ -1887,7 +1937,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=30000;
+        tf_range=80000;
         class useractions
         {
             class FullAirbrakeEngageFast
@@ -1991,7 +2041,7 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         radarTargetSize = 0.1;
-        tf_range=30000;
+        tf_range=80000;
         class useractions
         {
             class MEU_E_Thruster
@@ -2034,7 +2084,7 @@ class CfgVehicles
         fuelCapacity = 200;
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=30000;
+        tf_range=80000;
         class useractions
         {
             class MEU_E_Thruster
@@ -2074,7 +2124,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range=80000;
         class useractions
         {
             class MEU_E_Thruster
@@ -2114,7 +2164,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range=80000;
         class useractions
         {
             class MEU_E_Thruster
@@ -2154,7 +2204,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range=80000;
         class useractions
         {
             class MEU_E_Thruster
@@ -2229,7 +2279,7 @@ class CfgVehicles
 	    	userActionID = 60;
 	    };
         };
-        tf_range=30000;
+        tf_range=80000;
     };
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
     {
@@ -2239,7 +2289,7 @@ class CfgVehicles
         transportSoldier = 16;
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range=80000;
             class UserActions
     {
 	    class MEU_E_Thruster
@@ -2697,7 +2747,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range=80000;
         transportsoldier = 20;
             class UserActions
     {
@@ -3158,7 +3208,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 35000;
+        tf_range = 80000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         class TransportBackpacks
@@ -3304,7 +3354,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 35000;
+        tf_range = 80000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
@@ -3334,7 +3384,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 35000;
+        tf_range = 80000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
@@ -3364,7 +3414,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 35000;
+        tf_range = 80000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
@@ -3435,7 +3485,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 80000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 220;
@@ -3448,7 +3498,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 80000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 320;
@@ -3535,7 +3585,7 @@ class CfgVehicles
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
         tf_isolatedAmount = 0.65;
-        tf_range = 70000;
+        tf_range = 80000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
     };
@@ -6861,7 +6911,7 @@ class CfgVehicles
 		icon = "iconManOfficer";
 	};
     //end ins units
-    //flud
+    /*flud
     class MEU_IMarineMU : JMM_O_IMarineMU
 	{
 		faction = "JMM_infected_o_faction";
@@ -6889,7 +6939,7 @@ class CfgVehicles
 		displayName = "Combat Form (Fast)";
 		side = 0;
 	};
-    //end flud
+    end flud*/
     class 1stMEU_CTF_Flag_Prae1 : OPTRE_CTF_Flag_Base
     {
         scope = 2;
@@ -7235,7 +7285,7 @@ class CfgVehicles
         simulation = "house";
         side = 4;
     };
-    //labomba
+    /*labomba
     class SensorTemplatePassiveRadar;
     class SensorTemplateActiveRadar;
     class SensorTemplateVisual;
@@ -7695,4 +7745,5 @@ class CfgVehicles
 		lockdetectionsystem = 2 + 8 + 4;
 		incommingmissliedetectionsystem = 16;
     };
+    */
 };

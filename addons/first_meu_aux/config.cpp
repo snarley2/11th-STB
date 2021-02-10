@@ -97,7 +97,7 @@ class cfgPatches
             "Land_OPTRE_ConstructionBarrier2",
             "Land_ModularOutPostBuildingQuarters",
             "Land_OPTRE_fusion_coil",
-            "la_bomba",
+            "MEU_AWACS",
 			};
         magazines[] = 
 		{
@@ -182,7 +182,6 @@ class cfgPatches
             "NSM_patch_particle_effects",
             "V_FZ_Vehicles",
             "task_force_radio",
-            "HaloFactions",
         };
     };
 };
@@ -251,7 +250,13 @@ class CfgEditorSubcategories
 	};
     class MEU_sub_rot
     {
-		displayName = "Air Vehicles";
+		displayName = "Helicopters/VTOL";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+    class MEU_sub_fix
+    {
+		displayName = "Planes";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
