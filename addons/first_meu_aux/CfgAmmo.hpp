@@ -88,6 +88,13 @@ class CfgAmmo
         explosionTime = 1.5;
         ace_flashbang_Interval = 0.05;
     };
+    class MEU_9bang_nofuse : MEU_9bang
+    {
+        ace_flashbang_Interval = 0.05;
+        timeToLive = 15;
+        fuseDistance = 0;
+        explosionTime = 0.5;
+    };
     class MEU_C168_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {
         scope = 1;

@@ -6940,7 +6940,6 @@ class CfgVehicles
 		side = 0;
 	};
     end flud*/
-    class 1stMEU_CTF_Flag_Prae1 : OPTRE_CTF_Flag_Base
     //end flud
     // begin ctf flags
     class 1stMEU_CTF_Flag_3HQ : OPTRE_CTF_Flag_Base
