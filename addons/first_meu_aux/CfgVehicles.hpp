@@ -8,6 +8,9 @@ class CfgVehicles
 	class APC_Wheeled_02_base_v2_F;
 	class B_T_VTOL_01_armed_F;
 	class B_Ship_Gun_01_base_F;
+    class O_MRAP_02_F;
+    class O_MRAP_02_HMG_F;
+    class I_APC_tracked_03_cannon_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -1167,6 +1170,677 @@ class CfgVehicles
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_car";
+    };
+    class MEU_Antelope_WDL: O_MRAP_02_HMG_F
+	{
+		displayName = "[1stMEU] Antelope (Woodland)";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 80000;
+        ace_cargo_size = 10
+        faction = "MEU_UNSC";
+        side = 1;
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_car";
+		crew = "VES_Rifleman_MA5B_MAR";
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class TransportWeapons
+        {
+            delete _xx_arifle_Katiba_F;
+        }
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+        textureList[] = {"BLU",1};
+		class TextureSources
+		{
+			class ANT_Arctic
+			{
+				displayName = "Arctic";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_ARC_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Urban
+			{
+				displayName = "Urban/";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Antelope_EVOURB_back_co.paa","first_meu_aux\data\vehicles\Turret_EVOURB.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Desert
+			{
+				displayName = "Desert";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Turret_DES.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Woodland
+			{
+				displayName = "Woodland";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_WDL_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_WDL.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_WDL_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_WDL.paa"};
+	};  
+    class MEU_Antelope_ARC: O_MRAP_02_HMG_F
+	{
+		displayName = "[1stMEU] Antelope (Arctic)";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 80000;
+        ace_cargo_size = 10
+        faction = "MEU_UNSC";
+        side = 1;
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_car";
+		crew = "VES_Rifleman_MA5B_MAR";
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class TransportWeapons
+        {
+            delete _xx_arifle_Katiba_F;
+        }
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+        textureList[] = {"BLU",1};
+		class TextureSources
+		{
+			class ANT_Arctic
+			{
+				displayName = "Arctic";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_ARC_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Urban
+			{
+				displayName = "Urban/";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Turret_EVOURB.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Desert
+			{
+				displayName = "Desert";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Turret_DES.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Woodland
+			{
+				displayName = "Woodland";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_WDL_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_WDL.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_ARC_front_co.paa","first_meu_aux\data\vehicles\Antelope_ARC_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+	};
+    class MEU_Antelope_DES: O_MRAP_02_HMG_F
+	{
+		displayName = "[1stMEU] Antelope (Desert)";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 80000;
+        ace_cargo_size = 10
+        faction = "MEU_UNSC";
+        side = 1;
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_car";
+		crew = "VES_Rifleman_MA5B_MAR";
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class TransportWeapons
+        {
+            delete _xx_arifle_Katiba_F;
+        }
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+        textureList[] = {"BLU",1};
+		class TextureSources
+		{
+			class ANT_Arctic
+			{
+				displayName = "Arctic";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_ARC_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_EvoUrb
+			{
+				displayName = "Evolved/Urban";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Desert
+			{
+				displayName = "Desert";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Woodland
+			{
+				displayName = "Woodland";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_WDL_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Antelope_DES_back_co.paa","first_meu_aux\data\vehicles\Turret_DES.paa"};
+	};
+    class MEU_Antelope_EVOURB: O_MRAP_02_HMG_F
+	{
+		displayName = "[1stMEU] Antelope (Evolved/Urban)";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 80000;
+        ace_cargo_size = 10
+        faction = "MEU_UNSC";
+        side = 1;
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_car";
+		crew = "VES_Rifleman_MA5B_MAR";
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class TransportWeapons
+        {
+            delete _xx_arifle_Katiba_F;
+        }
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+        textureList[] = {"BLU",1};
+		class TextureSources
+		{
+			class ANT_Arctic
+			{
+				displayName = "Arctic";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_ARC_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_EvoUrb
+			{
+				displayName = "Evolved/Urban";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Desert
+			{
+				displayName = "Desert";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+			class ANT_Woodland
+			{
+				displayName = "Woodland";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Antelope_WDL_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
+				factions[] = {"BLU_F_ARC","BLU_F_EVOURB","BLU_F_DES","BLU_F_WDL"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Antelope_EVOURB_back_co.paa","first_meu_aux\data\vehicles\Turret_EVOURB.paa"};
+	};
+    class MEU_Ansaldo_Friden: O_MRAP_02_HMG_F
+	{
+		displayName = "[1stMEU] Ansaldo (Friden)";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 80000;
+        ace_cargo_size = 10
+        faction = "MEU_Insurrectionist";
+        side = 0;
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_car";
+		crew = "LM_OPCAN_FRI_Rifleman";
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class TransportWeapons
+        {
+            delete _xx_arifle_Katiba_F;
+        }
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+        textureList[] = {"OPF",0};
+		class TextureSources
+		{
+			class ANS_Friden
+			{
+				displayName = "Friden";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\Ansaldo_FRI_Front_co.paa","first_meu_aux\data\vehicles\Ansaldo_FRI_Back_co.paa","first_meu_aux\data\vehicles\Turret_Friden.paa"};
+				factions[] = {"OPF_F_ARC"};
+			};
+        };
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Ansaldo_FRI_Front_co.paa","first_meu_aux\data\vehicles\Ansaldo_FRI_Back_co.paa","first_meu_aux\data\vehicles\Turret_Friden.paa"};
+    };
+        
+    class MEU_Warrior_WDL: I_APC_tracked_03_cannon_F
+	{
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] Warrior";
+		faction = "MEU_UNSC";
+		crew = "VES_Rifleman_MA5B_MAR";
+		side = 1;
+        editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_ifv";
+		vehicleClass = "APCs";
+		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Warrior_WDL_Back_co.paa","\first_meu_aux\data\vehicles\Warrior_WDL_Front_co.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				body = "mainTurret";
+				gun = "mainGun";
+				weapons[] = {"M1024_30mm","M250_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+                    "OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+	   };
+    };
+    class MEU_Champion_Friden: I_APC_tracked_03_cannon_F
+	{
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] Champion (Friden)";
+		faction = "MEU_Insurrectionist";
+		crew = "LM_OPCAN_FRI_Rifleman";
+		side = 0;
+        editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_ifv";
+		vehicleClass = "APCs";
+		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Champion_FRI_Back_co.paa","\first_meu_aux\data\vehicles\Champion_FRI_Front_co.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				body = "mainTurret";
+				gun = "mainGun";
+				weapons[] = {"M1024_30mm","M250_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+                    "OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+	    };
     };
 // Ground Vehicles End	
 

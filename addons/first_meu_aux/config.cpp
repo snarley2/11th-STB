@@ -35,6 +35,13 @@ class cfgPatches
             "MEU_M12_AP",
 			"MEU_Leopard_APC",
 			"MEU_Leopard_Medical_APC",
+            "MEU_Antelope_WDL",
+            "MEU_Antelope_ARC",
+            "MEU_Antelope_DES",
+            "MEU_Antelope_EVOURB",
+            "MEU_Ansaldo_Friden",
+            "MEU_Champion_Friden",
+            "MEU_Warrior_WDL",
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
@@ -192,6 +199,14 @@ class CfgFactionClasses
 		displayName = "1st MEU BLUFOR";
 		priority = 1;
 		side = 1;
+		primaryLanguage = "EN";
+		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
+	};
+    class MEU_Insurrectionist
+	{
+		displayName = "1st MEU OPFOR";
+		priority = 1;
+		side = 0;
 		primaryLanguage = "EN";
 		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
 	};
