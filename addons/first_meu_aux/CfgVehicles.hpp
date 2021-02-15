@@ -11,6 +11,8 @@ class CfgVehicles
     class O_MRAP_02_F;
     class O_MRAP_02_HMG_F;
     class I_APC_tracked_03_cannon_F;
+    class I_APC_Wheeled_03_cannon_F;
+    class I_MBT_03_cannon_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -116,6 +118,8 @@ class CfgVehicles
 	class ItemInfo;
     class Man;
     class House;
+    class DefaultEventHandlers;
+    class EventHandlers;
     class plp_ctf_SafetyBarrelBlue;
     class Land_OPTRE_barrel_hydrogen;
     class CBRN_putMaskOn;
@@ -1080,14 +1084,11 @@ class CfgVehicles
 		};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
 		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
-		textureList[] = {"Hex",1};
 		hiddenSelectionsTextures[] = 
 		{
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
-			"a3\data_f\vehicles\turret_opfor_co.paa",
-			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
-			"A3\armor_f\data\cage_csat_co.paa"
+			"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_Turret.paa",
 		};
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
@@ -1159,14 +1160,11 @@ class CfgVehicles
 		};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
 		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
-		textureList[] = {"Hex",1};
 		hiddenSelectionsTextures[] = 
 		{
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
-			"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
-			"a3\data_f\vehicles\turret_opfor_co.paa",
-			"A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
-			"A3\armor_f\data\cage_csat_co.paa"
+			"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_Turret.paa",
 		};
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
@@ -1863,6 +1861,182 @@ class CfgVehicles
 			};
 	    };
     };
+    class MEU_Raptor_Friden_IFV: I_APC_Wheeled_03_cannon_F
+	{
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] Raptor IFV (Friden)";
+		picture = "\A3\armor_f_gamma\APC_Wheeled_03\Data\UI\APC_Wheeled_03_CA.paa";
+		faction = "MEU_Insurrectionist";
+        crew = "LM_OPCAN_FRI_Rifleman";
+		side = 0;
+        editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_ifv";
+        vehicleClass = "APCs";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4",};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Raptor_01_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_02_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_Turret_co.paa","\first_meu_aux\data\vehicles\Raptor_03_Ext_co.paa"};
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				body = "mainTurret";
+				gun = "mainGun";
+				weapons[] = {"M1024_30mm","M250_APC","missiles_titan","SmokeLauncher"};
+				magazines[] = 
+				{
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"80Rnd_30mm_HEAT",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+					"60Rnd_30mm_APFSDS",
+                    "OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+                    "2Rnd_GAT_missiles",
+                    "2Rnd_GAT_missiles",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+	    };
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+	};
+    class MEU_Raptor_Friden_APC: I_APC_Wheeled_03_cannon_F
+	{
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Raptor APC (Friden)";
+        crew = "LM_OPCAN_FRI_Rifleman";
+		class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {{(_this select 0) animate [_x, 1]} forEach ['HideHull','HideTurret']}";
+		};
+		faction = "MEU_Insurrectionist";
+		side = 0;
+        editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_ifv";
+		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Raptor_01_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_02_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_03_Ext_co.paa"};
+        class Turrets{};
+		threat[] = {0,0,0};
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+	};
+    class MEU_Tusk_Friden: I_MBT_03_cannon_F
+	{
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Tusk";
+        side = 0;
+		crew = "LM_OPCAN_FRI_Rifleman";
+		faction = "MEU_Insurrectionist";
+        armor = 1200;
+		armorStructural = 6;
+        editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_arm";
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Tusk_Ext01_co.paa","\first_meu_aux\data\vehicles\Tusk_Ext02_co.paa","\first_meu_aux\data\vehicles\Tusk_RCWS_co.paa"};
+        class Turrets: Turrets
+		{
+            class MainTurret: MainTurret
+            {
+				weapons[] = {"M512_90mm","M247_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"30Rnd_90mm_SAPHE",
+					"30Rnd_90mm_HEAT",
+					"60Rnd_90mm_APBC",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"OPTRE_400Rnd_762x51_Box_AP",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+             };
+         };
+     };
 // Ground Vehicles End	
 
 // Turrets Start
