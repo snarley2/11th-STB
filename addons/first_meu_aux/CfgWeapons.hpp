@@ -255,6 +255,8 @@ class CfgWeapons
 		scope = 2;
 		author = "Rave";
 		displayName = "[1st MEU] Emergency Medkit";
+		picture = "\OPTRE_weapons\items\icons\medkit.paa";
+		model = "\OPTRE_Weapons\items\MedKit.p3d";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 32;
@@ -264,6 +266,8 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[C] Biofoam Canister";
+		picture = "\OPTRE_weapons\items\icons\biofoam.paa";
+		model = "\OPTRE_Weapons\items\Biofoam.p3d";
         class ItemInfo: ItemInfo
 		{
 			mass = 35;
@@ -273,6 +277,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[C] Optican Medigel";
+		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
 			mass = 35;
@@ -282,6 +287,8 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[1st MEU] Biofoam Canister";
+		picture = "\OPTRE_weapons\items\icons\biofoam.paa";
+		model = "\OPTRE_Weapons\items\Biofoam.p3d";
         class ItemInfo: ItemInfo
 		{
 			mass = 2;
@@ -291,6 +298,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[1st MEU] Optican Medigel";
+		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
 			mass = 2;

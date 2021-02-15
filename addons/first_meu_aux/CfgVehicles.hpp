@@ -42,6 +42,9 @@ class CfgVehicles
 	class OPTRE_ANPRC_521_Green;
     class OPTRE_ILCS_Rucksack_Heavy;
 	class OPTRE_ILCS_Rucksack_Black;
+	class OPTRE_UNSC_Rucksack;
+	class OPTRE_UNSC_Rucksack_Heavy;
+	class OPTRE_UNSC_Rucksack_Medic;
 	class B_parachute;
 
 	//Uniforms
@@ -392,8 +395,8 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 2);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
 		class TransportWeapons
 		{
@@ -402,9 +405,12 @@ class CfgVehicles
 		class TransportItems
 		{
 			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
 			item_xx(MEU_Biofoam_Light, 20);
             item_xx(MEU_Medigel_Light, 20);
-            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_plasmaIV_1000, 10);
             item_xx(ACE_epinephrine, 10);
             item_xx(ACE_adenosine, 10);
             item_xx(ACE_Banana, 5);
@@ -455,8 +461,8 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 2);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
 		class TransportWeapons
 		{
@@ -465,9 +471,12 @@ class CfgVehicles
 		class TransportItems
 		{
 			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
 			item_xx(MEU_Biofoam_Light, 20);
             item_xx(MEU_Medigel_Light, 20);
-            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_plasmaIV_1000, 10);
             item_xx(ACE_epinephrine, 10);
             item_xx(ACE_adenosine, 10);
             item_xx(ACE_Banana, 5);
@@ -535,8 +544,8 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
 		class TransportWeapons
 		{
@@ -545,10 +554,13 @@ class CfgVehicles
 		class TransportItems
 		{
 			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
 			item_xx(ToolKit, 1);
 			item_xx(MEU_Biofoam_Light, 20);
             item_xx(MEU_Medigel_Light, 20);
-            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_plasmaIV_1000, 10);
             item_xx(ACE_epinephrine, 10);
             item_xx(ACE_adenosine, 10);
             item_xx(ACE_Banana, 5);
@@ -717,8 +729,8 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 4);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
 		class TransportWeapons
 		{
@@ -729,10 +741,13 @@ class CfgVehicles
 		class TransportItems
 		{
 			delete _xx_FirstAidKit;	
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
 			item_xx(ToolKit, 1);
 			item_xx(MEU_Biofoam_Light, 20);
             item_xx(MEU_Medigel_Light, 20);
-            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_plasmaIV_1000, 10);
             item_xx(ACE_epinephrine, 10);
             item_xx(ACE_adenosine, 10);
             item_xx(ACE_Banana, 5);
@@ -944,8 +959,8 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 10);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 10);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 10);
-			mag_xx(OPTRE_M41_Twin_HEAT, 4);
-			mag_xx(OPTRE_M41_Twin_HEAT_G, 2);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
 		class TransportWeapons
 		{
@@ -954,9 +969,12 @@ class CfgVehicles
 		class TransportItems
 		{
 			delete _xx_FirstAidKit;	
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
 			item_xx(MEU_Biofoam_Light, 10);
             item_xx(MEU_Medigel_Light, 10);
-            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(ACE_plasmaIV_1000, 10);
             item_xx(ACE_epinephrine, 4);
             item_xx(ACE_adenosine, 4);
             item_xx(ACE_Banana, 5);
@@ -1046,6 +1064,9 @@ class CfgVehicles
 		class TransportItems
 		{
 			delete _xx_FirstAidKit;	
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
 			item_xx(MEU_Biofoam_Light, 40);
             item_xx(MEU_Medigel_Light, 40);
             item_xx(MEU_PlasmaIV, 20);
@@ -1480,14 +1501,14 @@ class CfgVehicles
     };
 	class MEU_Wyvern: O_T_VTOL_02_infantry_dynamicLoadout_F
     {
-	crewCrashProtection = 0.001;
-	crewExplosionProtection = 0.001;
-        _generalMacro = "O_T_VTOL_02_infantry_dynamicLoadout_F";
-        editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_rot";
-        scope = 2;
-        scopeCurator = 2;
-	scopeArsenal = 2;
+		crewCrashProtection = 0.001;
+		crewExplosionProtection = 0.001;
+		_generalMacro = "O_T_VTOL_02_infantry_dynamicLoadout_F";
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_rot";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
         airBrakeFrictionCoef = 50;
         displayName = "[MEU] Pegasus Wyvern";
         armor = 350;
@@ -1497,6 +1518,53 @@ class CfgVehicles
 		side = 1;
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
 		weapons[] = {"CMFlareLauncher","weapon_AMRAAMLauncher","rockets_Skyfire","Laserdesignator_mounted"};
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 20);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
 		class Turrets: Turrets
 		{
 			class GunnerTurret: GunnerTurret
@@ -1596,6 +1664,53 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range = 30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 20);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
         class pilotCamera
         {
             class OpticsIn
@@ -1655,6 +1770,53 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 20);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
         class pilotCamera
         {
             class OpticsIn
@@ -1888,6 +2050,51 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 6);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 10);
+            item_xx(MEU_Medigel_Light, 10);
+            item_xx(ACE_plasmaIV_1000, 5);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 5);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 5);			
+		};
         class useractions
         {
             class FullAirbrakeEngageFast
@@ -1992,6 +2199,53 @@ class CfgVehicles
         fuelCapacity = 200;
         radarTargetSize = 0.1;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 20);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);		
+		};
         class useractions
         {
             class MEU_E_Thruster
@@ -2035,6 +2289,51 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 6);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 10);
+            item_xx(MEU_Medigel_Light, 10);
+            item_xx(ACE_plasmaIV_1000, 5);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 5);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 5);			
+		};
         class useractions
         {
             class MEU_E_Thruster
@@ -2075,6 +2374,51 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 6);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 10);
+            item_xx(MEU_Medigel_Light, 10);
+            item_xx(ACE_plasmaIV_1000, 5);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 5);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 5);			
+		};
         class useractions
         {
             class MEU_E_Thruster
@@ -2115,6 +2459,51 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 6);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 10);
+            item_xx(MEU_Medigel_Light, 10);
+            item_xx(ACE_plasmaIV_1000, 5);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 5);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 5);			
+		};
         class useractions
         {
             class MEU_E_Thruster
@@ -2155,6 +2544,51 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 6);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 6);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 10);
+            item_xx(MEU_Medigel_Light, 10);
+            item_xx(ACE_plasmaIV_1000, 5);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 5);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 5);			
+		};
         class useractions
         {
             class MEU_E_Thruster
@@ -2198,6 +2632,53 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
         class UserActions
     {
 	    class MEU_E_Thruster
@@ -2240,8 +2721,55 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
-            class UserActions
-    {
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
+        class UserActions
+		{
 	    class MEU_E_Thruster
 	    {
 	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
@@ -2698,9 +3226,56 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
         transportsoldier = 20;
             class UserActions
-    {
+		{
 	    class MEU_E_Thruster
 	    {
 	    	condition = "(player == driver this) AND (alive this) AND ((speed this) > 2)";
@@ -2919,7 +3494,7 @@ class CfgVehicles
 				textToolTip = "<t color='#FCE205'>Disengage Afterburners";
 				userActionID = 55;
 			};
-	};
+		};
         class pilotCamera
         {
             class OpticsIn
@@ -3194,7 +3769,7 @@ class CfgVehicles
             mag_xx(3Rnd_HE_Grenade_shell, 2);
             mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 4);
             mag_xx(rhs_charge_tnt_x2_mag, 2);
-            mag_xx(OPTRE_M41_Twin_HEAT, 1);
+			mag_xx(M41_Twin_HEAT_WireGuided, 1);
             mag_xx(OPTRE_100Rnd_95x40_Box_JHPT, 2);
             mag_xx(OPTRE_100Rnd_127x99_M250HMG, 1);
             mag_xx(MEU_c7_remote_throwable_Mag, 4);
@@ -3210,7 +3785,7 @@ class CfgVehicles
 		{
             item_xx(ACE_elasticBandage, 8);
             item_xx(ACE_packingBandage, 14);
-            item_xx(ACE_plasmaIV_500, 2);
+            item_xx(ACE_plasmaIV_1000, 1);
             item_xx(ACE_epinephrine, 3);
             item_xx(ACE_adenosine, 2);
             item_xx(ACE_tourniquet, 2);
@@ -3292,7 +3867,10 @@ class CfgVehicles
     {
         armor = 1000;
     };
-    //  Start Backpacks
+	
+//  Start Backpacks
+//	Start Jump Packs
+
 	class Praetor_Jumpack : OPTRE_ILCS_Rucksack_Black	
     {
         author = "NSM & Oneill & Mark";
@@ -3323,6 +3901,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
     };
+	
     class Para_Jumpack : Praetor_Jumpack
     {
         author = "NSM & Oneill & Mark";
@@ -3353,6 +3932,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
     };
+	
     class MEU_Cent_RTO_Pack : Praetor_Jumpack
     {
         author = "NSM & Oneill & Mark";
@@ -3383,6 +3963,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
     };
+	
     class MEU_Cent_Pack : Praetor_Jumpack
     {
         author = "NSM (Namenai) & Oneill & Mark";
@@ -3406,6 +3987,7 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"NSM_Objects\Data\XD_1_JumpPack_CO.paa"};
     };
+	
     class MEU_Testpack : Praetor_Jumpack
     {
 		scope = 1;
@@ -3414,7 +3996,23 @@ class CfgVehicles
         displayName = "[1stMEU] Test Pack";
         NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}},{"Full Power",{30,5,1,0,1,0}}};
     };
-      
+	
+	class MEU_Parachute : B_parachute
+    {
+        author = "1st MEU Mark";
+        displayName = "[1stMEU] Parachute";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_isolatedAmount = 0.65;
+        tf_range = 70000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+    };
+	
+//	End Jump Packs
+//	RTO Back Packs     
+	 
 	class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black
     {
         displayName = "[1stMEU] Zeus LR";
@@ -3454,16 +4052,135 @@ class CfgVehicles
         maximumLoad = 320;
     };
 	
-    class MEU_Prae_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
+	class MEU_ANPRC_515: OPTRE_ANPRC_515
     {
-        author = "1st MEU Oneill";
-        displayName = "[1stMEU] ODST Trooper Rucksack";
-        maximumLoad = 320;
-		mass = 50;
-		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        displayName = "[1stMEU] AN/PRC-515";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 200;
     };
 	
+	class MEU_Marine_ANPRC_521: OPTRE_ANPRC_521_Green
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] AN/PRC-521 (Marine)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa","first_meu_aux\data\misc\packs\common_pack_mar_co.paa"};
+        descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+	};
+	
+    class MEU_Woodland_ANPRC_521: OPTRE_ANPRC_521_green
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] AN/PRC-521 (Woodland)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa","first_meu_aux\data\misc\packs\common_pack_wdl_co.paa"};
+        descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+	};
+	
+    class MEU_Arctic_ANPRC_521: OPTRE_ANPRC_521_green
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] AN/PRC-521 (Arctic)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa","first_meu_aux\data\misc\packs\common_pack_arc_co.paa"};
+        descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+	};
+	
+    class MEU_Desert_ANPRC_521: OPTRE_ANPRC_521_green
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] AN/PRC-521 (Desert)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa","first_meu_aux\data\misc\packs\common_pack_des_co.paa"};
+        descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+	};
+	
+    class MEU_EvoUrb_ANPRC_521: OPTRE_ANPRC_521_green
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] AN/PRC-521 (Evolved/Urban)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_evourb_co.paa"};
+        descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+	};
+	
+	class MEU_ILCS_ANPRC_521: OPTRE_ANPRC_521_green
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] AN/PRC-521 (ILCS)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_evourb_co.paa"};
+        descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 150;
+	};
+	
+//	Redacted
+
 	class MEU_Prae_Ruck_Base_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
 		scope = 1;
@@ -3490,6 +4207,19 @@ class CfgVehicles
                 setVehicleReportOwnPosition = 1;
             };
         };
+    };
+	
+//	End Redacted
+//	Praetorian Back Packs
+
+	class MEU_Prae_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ODST Trooper Rucksack";
+        maximumLoad = 320;
+		mass = 50;
+		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
 	
 	class MEU_Prae_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
@@ -3527,19 +4257,252 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
 	
-    class MEU_Parachute : B_parachute
+	class MEU_ILCS_Ruck : OPTRE_ILCS_Rucksack_Heavy
     {
-        author = "1st MEU Mark";
-        displayName = "[1stMEU] Parachute";
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_dialog = "anarc210_radio_dialog";
-        tf_subtype = "digital_lr";
-        tf_isolatedAmount = 0.65;
-        tf_range = 70000;
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio = 1;
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ILCS Rucksack";
+        maximumLoad = 150;
+		mass = 50;
+		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
     };
 	
+	class MEU_ILCS_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ILCS Heavy Rucksack";
+        maximumLoad = 300;
+		mass = 50;
+		hiddenSelections[] = {"camo1","biofoam"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+    };
+    
+	class MEU_ILCS_Corpsman_Ruck : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ILCS Corpsman Rucksack";
+		tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+		hiddenSelections[] = {"camo1","AP_Heavy"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        //hiddenSelectionsTextures[] = {"OPTRE_Weapons\Backpacks\data\ruck_med_CO.paa"};
+		maximumLoad = 200;
+    };
+	
+	class MEU_ILCS_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
+    {
+        author = "1st MEU Oneill";
+        displayName = "[1stMEU] ILCS Heavy Corpsman Rucksack";
+		maximumLoad = 350;
+		mass = 50;
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        //hiddenSelectionsTextures[] = {"OPTRE_Weapons\Backpacks\data\ruck_med_CO.paa"};
+    };
+	
+//	Praetorian Back Packs End
+// 	Centuron Back Packs
+
+	class MEU_Desert_Rucksack_Soft: OPTRE_UNSC_Rucksack
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Basic Rucksack (Desert)";
+        maximumLoad = 150;
+		mass = 40;
+		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
+	};
+	
+    class MEU_Desert_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Heavy Rucksack (Desert)";
+        maximumLoad = 250;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
+	};
+	
+    class MEU_Desert_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Corpsman Rucksack (Desert)";
+        maximumLoad = 300;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
+	};
+	
+    class MEU_Arctic_Rucksack_Soft: OPTRE_UNSC_Rucksack
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Basic Rucksack (Arctic)";
+        maximumLoad = 150;
+		mass = 40;
+		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
+	};
+	
+    class MEU_Arctic_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Heavy Rucksack (Arctic)";
+        maximumLoad = 250;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
+	};
+	
+    class MEU_Arctic_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Corpsman Rucksack (Arctic)";
+        maximumLoad = 300;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
+	};
+	
+    class MEU_Woodland_Rucksack_Soft: OPTRE_UNSC_Rucksack
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Basic Rucksack (Woodland)";
+        maximumLoad = 150;
+		mass = 40;
+		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
+	};
+	
+    class MEU_Woodland_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Heavy Rucksack (Woodland)";
+        maximumLoad = 250;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
+	};
+	
+    class MEU_Woodland_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Corpsman Rucksack (Woodland)";
+        maximumLoad = 300;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
+	};
+	
+    class MEU_EvoUrb_Rucksack_Soft: OPTRE_UNSC_Rucksack
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Basic Rucksack (Evolved/Urban)";
+        maximumLoad = 150;
+		mass = 40;
+		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
+	};
+	
+    class MEU_EvoUrb_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Heavy Rucksack (Evolved/Urban)";
+        maximumLoad = 250;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
+	};
+	
+    class MEU_EvoUrb_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Corpsman Rucksack (Evolved/Urban)";
+        maximumLoad = 300;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
+	};
+	
+    class MEU_Marine_Rucksack_Soft: OPTRE_UNSC_Rucksack
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Basic Rucksack (Marine)";
+        maximumLoad = 150;
+		mass = 40;
+		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
+	};
+	
+    class MEU_Marine_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Heavy Rucksack (Marine)";
+        maximumLoad = 250;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
+	};
+	
+    class MEU_Marine_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
+	{
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] UNSC Corpsman Rucksack (Marine)";
+        maximumLoad = 300;
+		mass = 50;
+		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
+	};
+
+//	End Centurion Backpacks		
 //  End Backpacks
 //  Start Uniforms
 	

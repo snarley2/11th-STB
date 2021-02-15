@@ -64,16 +64,16 @@ class ACE_Medical_Treatment_Actions
         displayName = "Apply Medigel";
         displayNameProgress = "Spreading Medigel";
         items[] = {"MEU_Medigel_Light"};
-        callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
         category = "bandage";
+		callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
     };
     class MEU_Biofoam_Light : OPTRE_Biofoam
     {
         displayName = "Inject Biofoam";
         displayNameProgress = "Injecting Biofoam";
         items[] = {"MEU_Biofoam_Light"};
-        callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
         category = "bandage";
+		callbackSuccess = "OPTRE_fnc_treatmentBandageAndPainReduction";
     };
     class MEU_ApplyTourniquet: ApplyTourniquet
     {
