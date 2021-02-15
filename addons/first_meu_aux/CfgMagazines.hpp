@@ -916,6 +916,17 @@ class CfgMagazines
         displayName = "[1st MEU] 9 Bang";
         descriptionShort = "ODSTs shouldn't play with grenades";
 		displayNameShort = "P9B";
+        ammo = "MEU_9bang";
+    };
+    class MEU_9bang_nofuse_Mag : MEU_9bang_Mag
+    {
+        author = "1st MEU Mark";
+        scope = 1;
+        scopeArsenal = 1;
+        displayName = "[1st MEU] 9 Bang";
+        descriptionShort = "ODSTs shouldn't play with grenades";
+		displayNameShort = "P9B";
+        ammo = "MEU_9bang_nofuse";
     };
 	
     class MEU_C168_Mag : OPTRE_M9_Frag

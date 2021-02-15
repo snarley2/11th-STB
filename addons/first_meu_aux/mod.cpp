@@ -1,0 +1,10 @@
+name = "@First MEU Aux";
+picture = "first_meu_aux\Data\MEU.jpg";
+logo = "first_meu_aux\Data\1stModDevInsig.paa";
+logoSmall = "first_meu_aux\Data\1stModDevInsig_small.paa";
+logoOver = "first_meu_aux\Data\1stModDevInsig_small.paa";
+description = "Fuck Us huh?";
+tooltipOwned="1st MEU";
+hideName = 0;
+hidePicture = 0;
+author = "Hobnob & Chatter & Chaotic & Kestrel & NSM (Namenai) & Oneill & Mark & Romeo"

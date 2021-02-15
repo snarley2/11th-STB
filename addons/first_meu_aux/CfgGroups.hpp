@@ -7,38 +7,6 @@ class CfgGroups
         class MEU_Zeus_Spacer
         {
             name = "1st MEU OPFOR";
-            class Flood_Shit
-            {
-                name = "Flood";
-                class FloodGroupTest
-                {
-                    name = "Flood Test Group";
-                    side = 0;
-                    faction = "MEU_Flood";
-                    rarityGroup = 0.3;
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "MEU_IMarineMU";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "MEU_IMarineSU";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "MEU_IMarineFU";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                };
-            };
             class OPTRE_Ins
             {
                 dlc = "OPTRE";
