@@ -6261,6 +6261,7 @@ class CfgWeapons
 			"AP_GL",
 			"AP_AR",
 			"AP_Pack",
+			"AP_MGThigh",
 			"AP_Pistol",
 			"AP_Rounds",
 			"AP_SG",
@@ -6268,8 +6269,7 @@ class CfgWeapons
 			"AP_Sniper",
 			"APO_BR",
 			"APO_AR",
-			"APO_Sniper",
-			"APO_Knife"
+			"CustomKit_Scorch"
 		};
 		hiddenSelectionsMaterials[] = 
 		{
@@ -6318,6 +6318,7 @@ class CfgWeapons
 				"AP_GL",
 				"AP_AR",
 				"AP_Pack",
+				"AP_MGThigh",
 				"AP_Pistol",
 				"AP_Rounds",
 				"AP_SG",
@@ -6325,8 +6326,7 @@ class CfgWeapons
 				"AP_Sniper",
 				"APO_BR",
 				"APO_AR",
-				"APO_Sniper",
-				"APO_Knife"
+				"CustomKit_Scorch"
 			};
 		};
     };
