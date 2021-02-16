@@ -277,6 +277,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[C] Optican Medigel";
+		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
 		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
@@ -298,6 +299,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[1st MEU] Optican Medigel";
+		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
 		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
