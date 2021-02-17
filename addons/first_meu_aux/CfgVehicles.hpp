@@ -2138,11 +2138,6 @@ class CfgVehicles
 				source = "ammorandom";
 				weapon = "OPTRE_M9109_Turret";
 			};
-			class muzzle_hide_cannon
-			{
-				source = "reload";
-				weapon = "OPTRE_M9109_Turret";
-			};
 		};
 		armor = 400;
 		armorStructural = 4;
@@ -2208,7 +2203,7 @@ class CfgVehicles
 					minFov = 0.01;
 					maxFov = 1;
 				};
-				weapons[] = {"weapon_ShipCannon_120mm"};
+				weapons[] = {"M910_Point_Defense_Cannon"};
 				magazines[] = {"magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_guided_shells_x2","magazine_ShipCannon_120mm_HE_LG_shells_x2","magazine_ShipCannon_120mm_HE_cluster_shells_x2","magazine_ShipCannon_120mm_mine_shells_x6","magazine_ShipCannon_120mm_smoke_shells_x6","magazine_ShipCannon_120mm_AT_mine_shells_x6"};
 			};
 		};

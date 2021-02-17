@@ -1688,7 +1688,7 @@ class CfgMagazines
 		picture = "\OPTRE_weapons\rockets\icons\rocket.paa";
 		model = "\OPTRE_Weapons\Rockets\M41_tube.p3d";
 		count = 2;
-		mass = 80;
+		mass = 100;
 		initSpeed = 150;
 		allowedSlots[] = {901,701};
 		maxLeadSpeed = 270;
@@ -1700,6 +1700,7 @@ class CfgMagazines
 		displaynameshort = "HEAT (Heat-seeking)";
 		descriptionshort = "High Explosive Anti Tank<br/>Heat-Seeking";
 		ammo = "M41_Rocket_HEAT_HeatSeeking";
+		mass = 120;
 	};
 	
 	class M41_Twin_HEAT: M41_Twin_HEAT_WireGuided
@@ -1709,6 +1710,7 @@ class CfgMagazines
 		displayname = "M19 HEAT (Un-guided) Twin Rockets";
 		displaynameshort = "High Explosive Anti Tank";
 		ammo = "M41_Rocket_HEAT_Unguided";
+		mass = 80;
 	};
 	
 	class M41_Twin_HEAP: M41_Twin_HEAT_WireGuided
@@ -1718,6 +1720,7 @@ class CfgMagazines
 		displayname = "M19 HEAP (Un-guided) Twin Rockets";
 		displaynameshort = "High Explosive Anti Personnel";
 		ammo = "M41_Rocket_HEAP_Unguided";
+		mass = 80;
 	};
 };
 
