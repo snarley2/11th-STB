@@ -17113,7 +17113,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			};
         };
     };
-	
 	class OPTRE_M7: OPTRE_SubMachineGun_Base
 	{
 		magazines[]=

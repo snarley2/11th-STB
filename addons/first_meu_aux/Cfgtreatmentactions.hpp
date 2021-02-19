@@ -107,7 +107,7 @@ class ACE_Medical_Treatment_Actions
         consumeItem = 0;
         category = "bandage";
     };
-	class MEU_Emergency_MedKit: Morphine
+	class MEU_Emergency_MedKit: OPTRE_Medigel
 	{
 		displayName = "Emergency MedKit";
 		displayNameProgress = "Hope this works";

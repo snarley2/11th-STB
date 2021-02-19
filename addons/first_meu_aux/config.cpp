@@ -153,6 +153,7 @@ class cfgPatches
 			"LM_OPCAN_M18AR",
 			"LM_OPCAN_M18AR_C",
 			"LM_OPCAN_M18AR_GL",
+            "optre_hgun_SAS10_F",
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 

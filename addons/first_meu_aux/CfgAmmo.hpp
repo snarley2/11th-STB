@@ -271,7 +271,6 @@ class CfgAmmo
 	{
 		caliber = 4;
 		hit = 16;
-		
 		deflecting = 0;
 		thrust = 75;
 		model = "\V_SO_Core\data\Effects\fire_effect";
