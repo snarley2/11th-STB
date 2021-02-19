@@ -11294,7 +11294,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Blue_33.paa","first_meu_aux\data\misc\VISR_ODST_CLR.paa"};
     };
-    class Praetor_Helmet_Green_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetor_Helmet_Corpsman_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
