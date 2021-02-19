@@ -2138,11 +2138,6 @@ class CfgVehicles
 				source = "ammorandom";
 				weapon = "OPTRE_M9109_Turret";
 			};
-			class muzzle_hide_cannon
-			{
-				source = "reload";
-				weapon = "OPTRE_M9109_Turret";
-			};
 		};
 		armor = 400;
 		armorStructural = 4;
@@ -2208,7 +2203,7 @@ class CfgVehicles
 					minFov = 0.01;
 					maxFov = 1;
 				};
-				weapons[] = {"weapon_ShipCannon_120mm"};
+				weapons[] = {"M910_Point_Defense_Cannon"};
 				magazines[] = {"magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_guided_shells_x2","magazine_ShipCannon_120mm_HE_LG_shells_x2","magazine_ShipCannon_120mm_HE_cluster_shells_x2","magazine_ShipCannon_120mm_mine_shells_x6","magazine_ShipCannon_120mm_smoke_shells_x6","magazine_ShipCannon_120mm_AT_mine_shells_x6"};
 			};
 		};
@@ -4963,6 +4958,20 @@ class CfgVehicles
         maximumLoad = 200;
     };
 	
+	class MEU_ILCS_ANPRC_515: OPTRE_ANPRC_515
+    {
+        displayName = "[1stMEU] ILCS AN/PRC-515";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\como_pack_black_co.paa"};
+        maximumLoad = 250;
+    };
+	
 	class MEU_Marine_ANPRC_521: OPTRE_ANPRC_521_Green
 	{
 		dlc = "1stMEU";
@@ -5064,8 +5073,8 @@ class CfgVehicles
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] AN/PRC-521 (ILCS)";
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_evourb_co.paa"};
+		displayName = "[1stMEU] ILCS AN/PRC-521";
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_prae_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -5074,7 +5083,7 @@ class CfgVehicles
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 150;
+        maximumLoad = 200;
 	};
 	
 //	Redacted
@@ -5159,20 +5168,20 @@ class CfgVehicles
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ILCS Rucksack";
-        maximumLoad = 150;
+        maximumLoad = 200;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
     };
 	
 	class MEU_ILCS_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ILCS Heavy Rucksack";
-        maximumLoad = 300;
+        maximumLoad = 350;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
     };
     
 	class MEU_ILCS_Corpsman_Ruck : OPTRE_ILCS_Rucksack_Heavy
@@ -5186,20 +5195,18 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
-        //hiddenSelectionsTextures[] = {"OPTRE_Weapons\Backpacks\data\ruck_med_CO.paa"};
-		maximumLoad = 200;
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
+		maximumLoad = 300;
     };
 	
 	class MEU_ILCS_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ILCS Heavy Corpsman Rucksack";
-		maximumLoad = 350;
+		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
-        //hiddenSelectionsTextures[] = {"OPTRE_Weapons\Backpacks\data\ruck_med_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
     };
 	
 //	Praetorian Back Packs End

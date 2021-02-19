@@ -53,6 +53,7 @@ class CfgWeapons
 	class MGun;
 	class GMG_F;
 	class cannon_120mm;
+	class mortar_155mm_AMOS;
 	class arifle_MSBS65_black_F;
 	class arifle_MSBS65_GL_black_F;
 	class arifle_MSBS65_Mark_black_F;
@@ -277,6 +278,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[C] Optican Medigel";
+		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
 		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
@@ -298,6 +300,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[1st MEU] Optican Medigel";
+		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
 		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
@@ -6259,6 +6262,7 @@ class CfgWeapons
 			"AP_GL",
 			"AP_AR",
 			"AP_Pack",
+			"AP_MGThigh",
 			"AP_Pistol",
 			"AP_Rounds",
 			"AP_SG",
@@ -6266,8 +6270,7 @@ class CfgWeapons
 			"AP_Sniper",
 			"APO_BR",
 			"APO_AR",
-			"APO_Sniper",
-			"APO_Knife"
+			"CustomKit_Scorch"
 		};
 		hiddenSelectionsMaterials[] = 
 		{
@@ -6316,6 +6319,7 @@ class CfgWeapons
 				"AP_GL",
 				"AP_AR",
 				"AP_Pack",
+				"AP_MGThigh",
 				"AP_Pistol",
 				"AP_Rounds",
 				"AP_SG",
@@ -6323,8 +6327,7 @@ class CfgWeapons
 				"AP_Sniper",
 				"APO_BR",
 				"APO_AR",
-				"APO_Sniper",
-				"APO_Knife"
+				"CustomKit_Scorch"
 			};
 		};
     };
@@ -11291,7 +11294,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Blue_33.paa","first_meu_aux\data\misc\VISR_ODST_CLR.paa"};
     };
-    class Praetor_Helmet_Green_dp : 1stMEU_Base_CH252D_Helmet_dp
+    class Praetor_Helmet_Corpsman_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
         scopeArsenal = 1;
@@ -18715,6 +18718,127 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				effectName = "OPTRE_90mmShellcase";
 				positionName = "nabojnicestart";
 			};
+		};
+	};
+	
+	class M910_Point_Defense_Cannon: mortar_155mm_AMOS
+	{
+		displayName = "M910 Point Defense Cannon";
+		magazines[] = {"magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_guided_shells_x2","magazine_ShipCannon_120mm_HE_LG_shells_x2","magazine_ShipCannon_120mm_HE_cluster_shells_x2","magazine_ShipCannon_120mm_mine_shells_x6","magazine_ShipCannon_120mm_smoke_shells_x6","magazine_ShipCannon_120mm_AT_mine_shells_x6"};
+		modes[] = {"Single1","Single2","Single3","Single4","Single5","Burst1","Burst2","Burst3","Burst4","Burst5"};
+		magazineReloadTime = 2.0;
+		class Single1: Mode_SemiAuto
+		{
+			displayName = "$STR_A3_mortar_120mm_AMOS_Single10";
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant",2.5118864,1,1500};
+				soundBegin[] = {"begin1",1};
+			};
+			reloadSound[] = {"A3\sounds_f\dummysound",1.0,1,20};
+			reloadTime = .2;
+			artilleryDispersion = 0.8;
+			artilleryCharge = 0.18;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 0;
+			minRangeProbab = 0.01;
+			midRange = 1;
+			midRangeProbab = 0.01;
+			maxRange = 2;
+			maxRangeProbab = 0.01;
+		};
+		class Single2: Single1
+		{
+			displayName = "$STR_A3_mortar_120mm_AMOS_Single20";
+			artilleryCharge = 0.25;
+		};
+		class Single3: Single1
+		{
+			displayName = "$STR_A3_mortar_120mm_AMOS_Single30";
+			artilleryCharge = 0.5;
+		};
+		class Single4: Single1
+		{
+			displayName = "$STR_A3_mortar_120mm_AMOS_Single40";
+			artilleryCharge = 0.75;
+		};
+		class Single5: Single1
+		{
+			displayName = "$STR_A3_mortar_120mm_AMOS_Single50";
+			artilleryCharge = 1;
+		};
+		class Burst1: Mode_Burst
+		{
+			showToPlayer = 0;
+			displayName = "$STR_A3_mortar_120mm_AMOS_Burst10";
+			burst = 6;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_155mm\sochor_155mm_distant",2.5118864,1,1500};
+				soundBegin[] = {"begin1",1};
+			};
+			reloadSound[] = {"A3\sounds_f\dummysound",1.0,1,20};
+			soundBurst = 0;
+			reloadTime = .2;
+			minRange = 800;
+			minRangeProbab = 0.5;
+			midRange = 1500;
+			midRangeProbab = 0.7;
+			maxRange = 2000;
+			maxRangeProbab = 0.5;
+			artilleryDispersion = 2.5;
+			artilleryCharge = 0.18;
+		};
+		class Burst2: Burst1
+		{
+			showToPlayer = 0;
+			displayName = "$STR_A3_mortar_120mm_AMOS_Burst20";
+			minRange = 2000;
+			minRangeProbab = 0.4;
+			midRange = 3000;
+			midRangeProbab = 0.6;
+			maxRange = 5200;
+			maxRangeProbab = 0.4;
+			artilleryCharge = 0.25;
+		};
+		class Burst3: Burst1
+		{
+			showToPlayer = 0;
+			displayName = "$STR_A3_mortar_120mm_AMOS_Burst30";
+			minRange = 5200;
+			minRangeProbab = 0.3;
+			midRange = 8000;
+			midRangeProbab = 0.4;
+			maxRange = 13300;
+			maxRangeProbab = 0.3;
+			artilleryCharge = 0.5;
+		};
+		class Burst4: Burst1
+		{
+			showToPlayer = 0;
+			displayName = "$STR_A3_mortar_120mm_AMOS_Burst40";
+			minRange = 14600;
+			minRangeProbab = 0.2;
+			midRange = 25000;
+			midRangeProbab = 0.3;
+			maxRange = 37000;
+			maxRangeProbab = 0.2;
+			artilleryCharge = 0.75;
+		};
+		class Burst5: Burst1
+		{
+			showToPlayer = 0;
+			displayName = "$STR_A3_mortar_120mm_AMOS_Burst50";
+			minRange = 25000;
+			minRangeProbab = 0.1;
+			midRange = 40000;
+			midRangeProbab = 0.2;
+			maxRange = 58000;
+			maxRangeProbab = 0.1;
+			artilleryCharge = 1;
 		};
 	};
 };												 
