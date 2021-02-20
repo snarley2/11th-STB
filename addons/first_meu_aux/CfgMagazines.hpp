@@ -53,6 +53,9 @@ class CfgMagazines
     class 30Rnd_762x39_AK12_Mag_Tracer_F;
     class 75rnd_762x39_AK12_Mag_F;
     class 75rnd_762x39_AK12_Mag_Tracer_F;
+    class OPTRE_SpLaser_Battery;
+    class OPTRE_25x130mm_Slug;
+    class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
@@ -1722,8 +1725,34 @@ class CfgMagazines
 		ammo = "M41_Rocket_HEAP_Unguided";
 		mass = 80;
 	};
+    class MEU_SpLaser_Battery: OPTRE_3Rnd_ALIM_Gauss_Slugs
+	{
+		scope = 2;
+		displayName = "M6 GGNR Laser Battery";
+		displayNameShort = "Laser";
+		ammo = "MEU_SpLaserAmmo";
+		model = "\OPTRE_Weapons\Ammo\boxAmmo.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTexturesp[] = {"OPTRE_Weapons\Ammo\data\SpartanLaser_Ammo_CO.paa"};
+		initSpeed = 13680;
+		count = 50;
+		muzzleImpulseFactor[] = {0,0};
+	};
+    class MEU_Railgun_Slug: CA_Magazine
+	{
+		ammo = "MEU_16x65mm";
+		displayName = "16x65mm Slug";
+		count = 1;
+		initSpeed = 3915;
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\A3\weapons_F\ammo\mag_univ.p3d";
+		picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
+        mass = 25;
+		nameSound = "cannon";
+		tracersEvery = 1;
+	};
 };
-
 class CfgMagazineWells
 {
     class STANAG_556x45
@@ -1734,6 +1763,13 @@ class CfgMagazineWells
             "30rnd_556x45_mag_APT",
             "30rnd_556x45_mag_JHP",
             "30rnd_556x45_mag_JHPT",
+        };
+    };
+    class MEU_Railgun
+    {
+        MEU_Magazines[]=
+        {
+            "MEU_Railgun_Slug",
         };
     };
     class MX_65x39

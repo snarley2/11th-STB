@@ -5,7 +5,9 @@ class CfgAmmo
 	class Sh_105mm_APFSDS_T_Green;
 	class Sh_105mm_HEAT_MP;
 	class B_30mm_MP;
-	class B_30mm_APFSDS;	
+	class B_30mm_APFSDS;
+    class OPTRE_SpLaserAmmo;
+    class OPTRE_25x130mm_Slug;
 	
 	//Explosives
 	class G_40mm_HE;
@@ -25,6 +27,7 @@ class CfgAmmo
 	class OPTRE_B_762x51_Ball;
 	class OPTRE_B_95x40_Ball;
 	class OPTRE_B_127x40_Ball;
+    class BulletBase;
 	
 	//Miscelaneous Classes
 	class SensorTemplateIR;
@@ -132,7 +135,39 @@ class CfgAmmo
         initSpeed = 9;
     };
 	// end throwable explosives
-	
+	class MEU_SpLaserAmmo: OPTRE_25x130mm_Slug
+	{
+		scope = 1;
+		caliber = 100;
+		hit = 250;
+		indirectHit = 25;
+		indirectHitRange = 1;
+	};
+    class MEU_16x65mm: BulletBase
+	{
+		airFriction = -1e-05;
+		coefGravity = 0;
+		caliber = 750;
+        explosive = 0.2;
+		indirectHitRange = 2;
+		indirectHit = 25;
+		hit = 250;
+		typicalSpeed = 3890;
+        sideAirFriction = 0;
+		simulation = "shotSubmunitions";
+		suppressionRadiusBulletClose = 100;
+		suppressionRadiusHit = 100;
+		timeToLive = 10;
+		tracerStartTime = 0;
+		supersonicCrackNear[] = {"A3\sounds_f\weapons\hits\sscrack1",1.0,1,40};
+		supersonicCrackFar[] = {"A3\sounds_f\weapons\hits\sscrack2",1.0,1,100};
+		visibleFire = 100;
+		visibleFireTime = 300;
+        model = "\A3\Weapons_f\Data\bullettracer\shell_tracer_white";
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects = "HEShellExplosion";
+	};
 	// CBRN Munitions
 	class 40mm_CS: OPAEX_40mm_Smoke
 	{

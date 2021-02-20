@@ -45,6 +45,8 @@ class cfgPatches
             "MEU_Raptor_Friden_IFV",
             "MEU_Raptor_Friden_APC",
             "MEU_Tusk_Friden",
+            "MEU_Gungoose",
+            "MEU_GGNR_AA",
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
@@ -115,6 +117,7 @@ class cfgPatches
             "OPTRE_12Rnd_8Gauge_Pellet",
             "OPTRE_6Rnd_8Gauge_Beanbag",
             "OPTRE_12Rnd_8Gauge_Beanbag",
+            "MEU_Railgun_Slug"
         };
 		ammo[] = 
 		{
@@ -125,6 +128,7 @@ class cfgPatches
             "MEU_B_8Gauge_Pellet",
             "MEU_B_8Gauge_Pellet_Submunition",
             "OPTRE_FC_BubbleShield_Ammo",
+            "MEU_16x65mm_Slug"
         };
 		weapons[] = 
 		{
@@ -154,6 +158,7 @@ class cfgPatches
 			"LM_OPCAN_M18AR_C",
 			"LM_OPCAN_M18AR_GL",
             "optre_hgun_SAS10_F",
+            "OPTRE_FC_Railgun"
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 

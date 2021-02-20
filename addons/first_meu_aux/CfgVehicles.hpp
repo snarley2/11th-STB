@@ -25,6 +25,7 @@ class CfgVehicles
     class OPTRE_M313_UNSC;
 	class OPTRE_M808B_UNSC;
 	class OPTRE_CTF_Flag_Base;
+    class OPTRE_M274_ATV;
     //class OPTRE_Longsword_Bomb;
 
 	//Base FZ Classes
@@ -124,6 +125,7 @@ class CfgVehicles
     class Land_OPTRE_barrel_hydrogen;
     class CBRN_putMaskOn;
     class RHS_C130J;
+    class NewTurret;
         
     //chemwar
 	class CAManBase: Man
@@ -566,6 +568,82 @@ class CfgVehicles
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
+			};
+        };
+    };
+    class MEU_GGNR_AA : VES_IFV76_A
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] ARC-920 Honeybadger [WIP]";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 80000;
+        transportSoldier = 12;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_WIP";
+        visionMode[] = {"Normal","TI","NVG"};
+        thermalMode[] = {0,1,2,3,4,5};
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				body = "mainTurret";
+				gun = "mainGun";
+				weapons[] = {"MEU_Railgun","Laserdesignator_mounted","SmokeLauncher"};
+				magazines[] = {"MEU_Railgun_Slug","MEU_Railgun_Slug","Laserbatteries"};
+
 			};
         };
     };
@@ -2005,7 +2083,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Tusk";
+        displayName = "[1stMEU] Tusk (Friden)";
         side = 0;
 		crew = "LM_OPCAN_FRI_Rifleman";
 		faction = "MEU_Insurrectionist";
@@ -2037,6 +2115,42 @@ class CfgVehicles
              };
          };
      };
+     class MEU_Gungoose: OPTRE_M274_ATV
+	 {
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M274-M Gungoose [WIP]";
+		faction = "MEU_UNSC";
+        ace_cargo_size = 10
+        side = 1;
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_WIP";
+		crew = "VES_Rifleman_MA5B_MAR";
+		hiddenSelections[] = {"camo1","camo2","attach_police"};
+		hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Mongoose\data\body1_blk_co.paa","OPTRE_Vehicles\Mongoose\data\body2_blk_co.paa"};
+        class Turrets{};
+		showNVGCargo[] = {1};
+		soundAttenuationCargo[] = {1,0};
+		showNVGDriver = 1;
+		hideWeaponsDriver = 0;
+		hideWeaponsCargo = 0;
+		weapons[] = {"M250_APC","MG460_APC"};
+        magazines[] ={"OPTRE_400Rnd_127x99_M250HMG","40Rnd_HEDP_Belt"};
+		driverAction = "driver_quadbike";
+		getInAction = "GetInQuadbike";
+		getOutAction = "GetOutQuadbike";
+		cargoAction[] = {"passenger_quadbike"};
+		cargoGetInAction[] = {"GetInQuadbike_cargo"};
+		cargoGetOutAction[] = {"GetOutQuadbike_cargo"};
+		preciseGetInOut = 1;
+		cargoPreciseGetInOut[] = {1};
+		extCameraPosition[] = {0,1.6,-4.5};
+		camShakeCoef = 1.0;
+	 };
+    
 // Ground Vehicles End	
 
 // Turrets Start
@@ -2138,6 +2252,11 @@ class CfgVehicles
 				source = "ammorandom";
 				weapon = "OPTRE_M9109_Turret";
 			};
+			class muzzle_hide_cannon
+			{
+				source = "reload";
+				weapon = "OPTRE_M9109_Turret";
+			};
 		};
 		armor = 400;
 		armorStructural = 4;
@@ -2203,7 +2322,7 @@ class CfgVehicles
 					minFov = 0.01;
 					maxFov = 1;
 				};
-				weapons[] = {"M910_Point_Defense_Cannon"};
+				weapons[] = {"weapon_ShipCannon_120mm"};
 				magazines[] = {"magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_guided_shells_x2","magazine_ShipCannon_120mm_HE_LG_shells_x2","magazine_ShipCannon_120mm_HE_cluster_shells_x2","magazine_ShipCannon_120mm_mine_shells_x6","magazine_ShipCannon_120mm_smoke_shells_x6","magazine_ShipCannon_120mm_AT_mine_shells_x6"};
 			};
 		};
