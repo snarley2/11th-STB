@@ -13,6 +13,11 @@ class CfgVehicles
     class I_APC_tracked_03_cannon_F;
     class I_APC_Wheeled_03_cannon_F;
     class I_MBT_03_cannon_F;
+    class I_Heli_light_03_F;
+    class I_Heli_Transport_02_F;
+    class Plane_Fighter_03_base_f;
+    class I_Plane_Fighter_03_CAS_F;
+    class I_Plane_Fighter_04_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -1269,7 +1274,70 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_car";
     };
+<<<<<<< Updated upstream
 	
+=======
+    class MEU_Felix_Rotary_Friden : I_Heli_light_03_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[1stMEU] Felix";
+        faction = "MEU_Insurrectionist";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Heli_Light_03_base_friden_CO.paa"};
+        side = 0;
+        transportSoldier = 4;
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_rot";
+    };
+    class MEU_Arthur_Rotary_Friden : I_Heli_Transport_02_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCruator = 2;
+        displayName = "[1stMEU] Arthur";
+        faction = "MEU_Insurrectionist";
+        hiddenSelections[] = {"camo1","camo2","camo3"};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Arthur_Body_1.paa","\first_meu_aux\data\vehicles\Arthur_Body_2.paa","\first_meu_aux\data\vehicles\Arthur_Body_3.paa"};
+        side = 0;
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_rot";
+    };
+    class MEU_Wasp_Friden : I_Plane_Fighter_03_CAS_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[1stMEU] Wasp";
+        side = 0;
+        faction = "MEU_Insurrectionist";
+        hiddenSelections[]= {"camo1","camo2"};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\plane_buzzard_body_01_co.paa","\first_meu_aux\data\vehicles\plane_buzzard_body_02_co.paa"};
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_fix";
+    };
+    class MEU_Witherwing_Friden : I_Plane_Fighter_04_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Witherwing";
+        side = 0;
+        faction = "MEU_Insurrectionist";
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Witherwing_01_co.paa","\first_meu_aux\data\vehicles\Witherwing_02_co.paa"};
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_fix";
+    };
+>>>>>>> Stashed changes
     class MEU_Antelope_WDL: O_MRAP_02_HMG_F
 	{
 		displayName = "[1stMEU] Antelope (Woodland)";
