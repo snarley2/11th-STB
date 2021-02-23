@@ -1680,6 +1680,21 @@ class CfgMagazines
 		displaynameshort = "APBC";
 	};
 	
+	class 20Rnd_50mm_HEAT: VehicleMagazine
+	{
+		author = "1st MEU Oneill";
+		scope = 2;
+		displayName = "20Rnd 50mm HEAT Magazine";
+		displayNameShort = "50mm HEAT";
+		ammo = "M910_50mm_HEAT";
+		count = 20;
+		initSpeed = 1000;
+		maxLeadSpeed = 83.3333;
+		nameSound = "cannon";
+		tracersEvery = 1;
+		muzzleImpulseFactor[] = {1.0,6};
+	};
+	
 	class M41_Twin_HEAT_WireGuided: RPG32_HE_F
 	{
 		dlc = "1st MEU";

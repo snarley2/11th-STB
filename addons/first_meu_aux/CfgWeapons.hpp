@@ -42,17 +42,22 @@ class CfgWeapons
 	class OPTRE_BR55HB_Scope;
 	class OPTRE_UnguidedLauncher_Base;
 	class autocannon_40mm_CTWS;
+	class gatling_30mm;
     class VES_M7_I;
     class UGL_F;
     class Grenadelauncher;
     class ThrowMuzzle;
 	class HMG_127;
+	class HMG_127_APC;
 	class GMG_40mm;
 	class LMG_coax;
 	class autocannon_Base_F;
 	class MGun;
 	class GMG_F;
+	class autocannon_35mm;
 	class cannon_120mm;
+	class mortar_155mm_AMOS;
+	class weapon_ShipCannon_120mm;
 	class arifle_MSBS65_black_F;
 	class arifle_MSBS65_GL_black_F;
 	class arifle_MSBS65_Mark_black_F;
@@ -99,8 +104,11 @@ class CfgWeapons
 	class UnderBarrelSlot;
 	class Single;
 	class FullAuto;
+	class player;
+	class CannonCore;
 	class Mode_SemiAuto;
 	class Mode_Burst;
+	class Mode_FullAuto;
 	class InventoryOpticsItem_Base_F;
 	
 	//Miscelaneous Classes
@@ -19254,7 +19262,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		};
 	};
 	
-	class M250_APC: HMG_127
+	class M250_APC: HMG_127_APC
 	{
 		displayName = "M250 12.7mm HMG";
 		magazines[] = 
@@ -19334,31 +19342,128 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			};
 		};
 	};
-    class M6_GGNR_Laser: OPTRE_M68_GAUSS
+	
+	class M910_Point_Defense_Cannon: autocannon_35mm
 	{
-		reloadTime = 0.01;
-		magazineReloadTime = 5;
-		autoReload = 1;
-		displayName = "M6 Grindell/Galilean Energy Weapon";
-		descriptionShort = "Laser";
-		magazines[] = {"MEU_SpLaser_Battery"};
+		displayName = "M910 ASW/AC 50mm";
+		holdsterAnimValue = 0;
+		ballisticsComputer = 4;
+		canLock = 1;
 		cursor = "EmptyCursor";
-		cursorAim = "OPTRE_M6GSL";
-        class player: Mode_Burst
+		cursorAim = "OPTRE_M231";
+		nameSound = "cannon";
+		shotFromTurret = 0;
+		muzzlePos = "Usti hlavne1R";
+		muzzleEnd = "konec hlavne1R";
+		selectionFireAnim = "Usti hlavne1R";
+		magazines[] = 
 		{
+			"20Rnd_50mm_HEAT"
+		};
+		magazinereloadTime = 6.0;
+		modes[] = {"Point_Defense", "close_range", "short_range", "medium_range", "long_range"}; 
+		class Point_Defense: CannonCore
+		{
+			displayName = "M910 ASW/AC 50mm";
+			textureType = "fullAuto";
+			autoFire = 1;
+			dispersion = 0.0015;
 			sounds[] = {"StandardSound"};
 			class StandardSound
 			{
-				begin1[] = {"OPTRE_Weapons\Vehicle\data\sounds\Laser_1.wss",2.5,1,1500};
-				soundBegin[] = {"begin1",1};
+				begin1[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_01",1.9952624,1,1500};
+				begin2[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_02",1.9952624,1,1500};
+				begin3[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_03",1.9952624,1,1500};
+				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
 			};
-			soundContinuous = 1;
-			reloadTime = 0.01;
-			magazineReloadTime = 5;
-			autoReload = 1;
-            burst = 50;
+			artilleryDispersion = 0.8;
+			artilleryCharge = 0.18;
+			reloadTime = 0.25;
+		};
+		class close_range: Point_Defense
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burstRangeMax = 6;
+			aiRateOfFire = 1;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 200;
+			minRange = 0;
+			minRangeProbab = 0.1;
+			midRange = 400;
+			midRangeProbab = 0.7;
+			maxRange = 800;
+			maxRangeProbab = 0.8;
+			artilleryDispersion = 0.8;
+			artilleryCharge = 0.25;
+		};
+		class short_range: Point_Defense
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burstRangeMax = 5;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 2;
+			aiRateOfFireDistance = 600;
+			minRange = 1200;
+			minRangeProbab = 0.75;
+			midRange = 1600;
+			midRangeProbab = 0.8;
+			maxRange = 2400;
+			maxRangeProbab = 0.8;
+			artilleryDispersion = 0.8;
+			artilleryCharge = 0.50;
+		};
+		class medium_range: Point_Defense
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burstRangeMax = 3;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 3;
+			aiRateOfFireDistance = 1000;
+			minRange = 2000;
+			minRangeProbab = 0.8;
+			midRange = 3000;
+			midRangeProbab = 0.8;
+			maxRange = 4000;
+			maxRangeProbab = 0.7;
+			artilleryDispersion = 0.8;
+			artilleryCharge = 0.75;
+		};
+		class long_range: Point_Defense
+		{
+			aiBurstTerminable = 1;
+			showToPlayer = 0;
+			burstRangeMax = 1;
+			aiRateOfFire = 2;
+			aiRateOfFireDispersion = 4;
+			aiRateOfFireDistance = 1800;
+			minRange = 3600;
+			minRangeProbab = 0.74;
+			midRange = 4800;
+			midRangeProbab = 0.65;
+			maxRange = 6000;
+			maxRangeProbab = 0.05;
+			artilleryDispersion = 0.8;
+			artilleryCharge = 1.0;
+		};
+		class GunParticles
+		{
+			class effect1
+			{
+				positionName = "usti hlavne 1";
+				directionName = "konec hlavne 1";
+				effectName = "AutoCannonFired";
+			};
+			class effect2: effect1
+			{
+				positionName = "usti hlavne 2";
+				directionName = "konec hlavne 2";
+			};
 		};
 	};
+	
     class MEU_Railgun: OPTRE_FC_Railgun
 	{
 		author = "Romeo";
