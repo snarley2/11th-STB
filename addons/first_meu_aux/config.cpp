@@ -110,7 +110,7 @@ class cfgPatches
             "Land_ModularOutPostBuildingQuarters",
             "Land_OPTRE_fusion_coil",
             "MEU_AWACS",
-			};
+		};
         magazines[] = 
 		{
             "OPTRE_6Rnd_8Gauge_Pellet",

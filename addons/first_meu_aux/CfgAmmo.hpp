@@ -609,4 +609,13 @@ class CfgAmmo
 		explosive = 0.75;
 		typicalSpeed = 2000;
 	};
+	
+	class M910_50mm_HEAT: B_30mm_MP
+	{
+		hit = 200;
+		indirectHit = 30;
+		indirectHitRange = 5;
+		caliber = 10;
+		typicalSpeed = 1000;
+	};
 };
