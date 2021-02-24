@@ -95,6 +95,7 @@ class CfgVehicles
 	class ACE_SelfActions;
     
 	//Misc Classes
+    class House_F;
 	class GunnerTurret;
 	class CargoTurret;
     class CargoTurret_01;
@@ -1274,9 +1275,6 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_car";
     };
-<<<<<<< Updated upstream
-	
-=======
     class MEU_Felix_Rotary_Friden : I_Heli_light_03_F
     {
         author = "Romeo";
@@ -1284,7 +1282,7 @@ class CfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        displayName = "[1stMEU] Felix";
+        displayName = "[1stMEU] Felix (Friden)";
         faction = "MEU_Insurrectionist";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Heli_Light_03_base_friden_CO.paa"};
@@ -1300,7 +1298,7 @@ class CfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCruator = 2;
-        displayName = "[1stMEU] Arthur";
+        displayName = "[1stMEU] Arthur (Friden)";
         faction = "MEU_Insurrectionist";
         hiddenSelections[] = {"camo1","camo2","camo3"};
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Arthur_Body_1.paa","\first_meu_aux\data\vehicles\Arthur_Body_2.paa","\first_meu_aux\data\vehicles\Arthur_Body_3.paa"};
@@ -1315,7 +1313,7 @@ class CfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        displayName = "[1stMEU] Wasp";
+        displayName = "[1stMEU] Wasp (Friden)";
         side = 0;
         faction = "MEU_Insurrectionist";
         hiddenSelections[]= {"camo1","camo2"};
@@ -1330,14 +1328,13 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Witherwing";
+        displayName = "[1stMEU] Witherwing (Friden)";
         side = 0;
         faction = "MEU_Insurrectionist";
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Witherwing_01_co.paa","\first_meu_aux\data\vehicles\Witherwing_02_co.paa"};
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_fix";
     };
->>>>>>> Stashed changes
     class MEU_Antelope_WDL: O_MRAP_02_HMG_F
 	{
 		displayName = "[1stMEU] Antelope (Woodland)";
@@ -9195,7 +9192,6 @@ class CfgVehicles
     };
     
      class 1stMEU_CTF_Flag_VulcanHQ : OPTRE_CTF_Flag_Base
-         
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
@@ -9412,6 +9408,163 @@ class CfgVehicles
         simulation = "house";
         side = 4;
     };
+    class Land_LargeLandingPad_Snow: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Landing Platform Large [Snow]";
+		author = "Big_Wilk";
+		model = "OPTRE_BW_Buildings\LargeLandingPad\Land_LargeLandingPad_Snow";
+	};
+    class Land_ModularOutPostBuildingEmpty: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Modular Barracks Empty";
+		editorCategory = "OPTRE_ArcticResearchStation";
+		editorSubcategory = "OPTRE_ARS_BGB";
+		model = "OPTRE_BW_Buildings\ModularBuilding\ModularOutPostBuildingEmpty.p3d";
+    };
+    class Land_ModularOutPostBuildingQuaters: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Modular Barracks Quaters";
+		editorCategory = "OPTRE_ArcticResearchStation";
+		editorSubcategory = "OPTRE_ARS_BGB";
+		model = "OPTRE_BW_Buildings\ModularBuilding\ModularOutPostBuildingQuaters.p3d";
+    };
+    class Land_vehiclelift_tan: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Vehicle Lift";
+		author = "Article 2 Studios";
+		model = "\OPTRE_BW_Buildings\VehicleLift\vehiclelift_tan";
+		destructbuilding = 0;
+		mapSize = 35.54;
+		icon = "iconObject_2x1";
+		armor = 999999;
+		armorStructural = 999;
+		editorCategory = "OPTRE_ArcticResearchStation";
+		editorSubcategory = "OPTRE_ARS_BGB";
+    };
+    class OPTRE_holo_corvette: House_F
+	{
+		dlc = "OPTRE";
+		model = "\OPTRE_Misc\holo\holo_corvette.p3d";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope = 2;
+		displayName = "Corvette (Holo)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	class OPTRE_holo_longsword: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\longsword_0.001.p3d";
+		displayName = "Longsword (Holo)";
+	};
+	class OPTRE_holo_pelican: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\pelican_0.001.p3d";
+		displayName = "Pelican (Holo)";
+	};
+	class OPTRE_holo_bison: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\bison_0.001.p3d";
+		displayName = "Bison (Holo)";
+	};
+	class OPTRE_holo_elephant: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\elephant_0.001.p3d";
+		displayName = "Elephant (Holo)";
+	};
+	class OPTRE_holo_falcon: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\falcon_0.001.p3d";
+		displayName = "Falcon (Holo)";
+	};
+	class OPTRE_holo_hornet: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\hornet_0.001.p3d";
+		displayName = "Hornet (Holo)";
+	};
+	class OPTRE_holo_scorpion: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\scorpion_0.001.p3d";
+		displayName = "Scorpion (Holo)";
+	};
+	class OPTRE_holo_warthog: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\warthog_0.001.p3d";
+		displayName = "Warthog (Holo)";
+	};
+	class OPTRE_holo_data_chip: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\data_chip_holo.p3d";
+		displayName = "Data Chip (Holo)";
+	};
+	class OPTRE_Holo_eridanus: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\Holo_eridanus.p3d";
+		displayName = "Eridanus Star System (Holo)";
+	};
+	class OPTRE_AI_Ball: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\AI_ball.p3d";
+		displayName = "AI Ball";
+	};
+
     /*labomba
     class SensorTemplatePassiveRadar;
     class SensorTemplateActiveRadar;

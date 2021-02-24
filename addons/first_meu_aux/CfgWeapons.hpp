@@ -17375,7 +17375,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     
 	class M250HMG: OPTRE_M247
 	{
-		dlc = "OPTRE";
+		dlc = "1STMEUAUX";
 		author = "[1stMEU] Oneill";
 		scope = 2;
 		scopeCurator = 2;
