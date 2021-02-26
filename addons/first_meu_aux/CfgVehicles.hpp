@@ -1962,7 +1962,7 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"M1024_30mm","M250_APC","SmokeLauncher"};
+				weapons[] = {"M1024_30mm","M247_APC","SmokeLauncher"};
 				magazines[] = 
 				{
 					"80Rnd_30mm_HEAT",
@@ -1975,10 +1975,12 @@ class CfgVehicles
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
-                    "OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
+                    "OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
@@ -2045,7 +2047,7 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"M1024_30mm","M250_APC","SmokeLauncher"};
+				weapons[] = {"M1024_30mm","M247_APC","SmokeLauncher"};
 				magazines[] = 
 				{
 					"80Rnd_30mm_HEAT",
@@ -2058,10 +2060,12 @@ class CfgVehicles
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
-                    "OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
+                    "OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
@@ -2091,7 +2095,7 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"M1024_30mm","M250_APC","missiles_titan","SmokeLauncher"};
+				weapons[] = {"M1024_30mm","M247_APC","missiles_titan","SmokeLauncher"};
 				magazines[] = 
 				{
 					"80Rnd_30mm_HEAT",
@@ -2104,10 +2108,12 @@ class CfgVehicles
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
-                    "OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
+                    "OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
                     "2Rnd_GAT_missiles",
                     "2Rnd_GAT_missiles",
 					"SmokeLauncherMag",
@@ -2277,8 +2283,13 @@ class CfgVehicles
 		showNVGDriver = 1;
 		hideWeaponsDriver = 0;
 		hideWeaponsCargo = 0;
-		weapons[] = {"M250_APC","MG460_APC"};
-        magazines[] ={"OPTRE_400Rnd_127x99_M250HMG","40Rnd_HEDP_Belt"};
+		weapons[] = {"M247_APC","MG460_APC"};
+        magazines[] =
+			{
+				"OPTRE_400Rnd_762x51_Box_APT", 
+				"OPTRE_400Rnd_762x51_Box_APT",
+				"40Rnd_HEDP_Belt"
+			};
 		driverAction = "driver_quadbike";
 		getInAction = "GetInQuadbike";
 		getOutAction = "GetOutQuadbike";
