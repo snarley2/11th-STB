@@ -613,9 +613,10 @@ class CfgAmmo
 	class M910_50mm_HEAT: B_30mm_MP
 	{
 		hit = 200;
-		indirectHit = 30;
+		indirectHit = 40;
 		indirectHitRange = 5;
 		caliber = 10;
 		typicalSpeed = 1000;
+		warheadName = "HEAT";
 	};
 };

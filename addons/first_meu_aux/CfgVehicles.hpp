@@ -140,6 +140,7 @@ class CfgVehicles
             };
         };
     };
+	
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
@@ -455,6 +456,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -521,6 +526,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -614,6 +623,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -680,6 +693,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -865,6 +882,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -1095,6 +1116,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 10);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 10);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 10);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 10);
+			mag_xx(30rnd_556x45_mag_AP, 10);
+			mag_xx(30rnd_65x39_mag_AP, 10);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 10);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -1193,6 +1218,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1303,6 +1332,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1411,6 +1444,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1519,6 +1556,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1627,6 +1668,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1735,6 +1780,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1820,6 +1869,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1899,6 +1952,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -2010,6 +2067,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -2067,6 +2128,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -2551,6 +2616,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -2697,6 +2766,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -2803,6 +2876,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -3083,6 +3160,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3232,6 +3313,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -3322,6 +3407,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3407,6 +3496,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3492,6 +3585,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3577,6 +3674,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3665,6 +3766,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -3754,6 +3859,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -4259,6 +4368,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
