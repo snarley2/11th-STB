@@ -1473,11 +1473,76 @@ class CfgWeapons
 		displayName = "[1stMEU] 5-2 ECH252 Helmet (Marine Gold)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_A.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
 	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_56 : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] 5-6 ECH252 Helmet (Marine Gold) (Spades)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_56.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_57 : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] 5-7 ECH252 Helmet (Marine Gold) (Starbuck)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_57.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_5R : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] 5-R ECH252 Helmet (Marine Gold) (Aqyrys)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R3_CO_AQ.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_CEA_L_CO_A_GLD_50 : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] 5-0 ECH252 Helmet (Evolved Gold) (Muffins)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_CEA_L_CO_50.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_5M : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] 5-M ECH252 Helmet (Marine Gold) (Avon)";
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_5M.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
+	};
 	class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_dp : MEU_Mar_MOS_Helm_Sealed_Base
 	{
         scope = 1;
         scopeArsenal = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_A.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_56_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_56.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_57_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_57.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_5R_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R3_CO_AQ.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_CEA_L_CO_A_GLD_50_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_CEA_L_CO_50.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_GLD_5M_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_5M.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
 	};
 	class MEU_Mar_Sealed_V_CH252_MAR_L_CO_GU : MEU_Mar_MOS_Helm_Sealed_Base
 	{
@@ -17310,7 +17375,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     
 	class M250HMG: OPTRE_M247
 	{
-		dlc = "OPTRE";
+		dlc = "1STMEUAUX";
 		author = "[1stMEU] Oneill";
 		scope = 2;
 		scopeCurator = 2;
