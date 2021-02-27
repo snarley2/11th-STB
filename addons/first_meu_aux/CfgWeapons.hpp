@@ -790,7 +790,7 @@ class CfgWeapons
 		{
             vestType = "Rebreather";
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			containerClass = "Supply250";
+			containerClass = "Supply300";
 			mass = 75;
 			modelSides[] = {6};
 			hiddenSelections[] = 

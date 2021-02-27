@@ -21,7 +21,6 @@ class CfgMagazines
 	class 2Rnd_12Gauge_Pellets;
 	class 150Rnd_762x51_Box;
 	class OPTRE_60Rnd_5x23mm_Mag;
-	class OPTRE_60Rnd_762x51_Mag;
 	class OPTRE_60Rnd_762x51_Mag_AP;
 	class OPTRE_60Rnd_762x51_Mag_JHP;
 	class OPTRE_32Rnd_762x51_Mag_AP;
@@ -37,6 +36,7 @@ class CfgMagazines
 	class OPTRE_36Rnd_95x40_Mag_SAPHE;
 	class 40Rnd_105mm_APFSDS_T_Green;
 	class RPG32_HE_F;
+	class 20Rnd_762x51_Mag;
 	class 30Rnd_580x42_Mag_F;
     class 30Rnd_580x42_Mag_Tracer_F;
     class 100Rnd_580x42_Mag_F;
@@ -57,6 +57,22 @@ class CfgMagazines
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     
+	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
+	{
+		dlc = "OPTRE";
+		model = "\OPTRE_Weapons\Ammo\MA5Ammo.p3d";
+		displayname = "60Rnd 7.62x51mm Magazine";
+		displaynameshort = "7.62x51mm";
+		ammo = "OPTRE_B_762x51_Ball";
+		count = 60;
+		initspeed = 900;
+		picture = "\OPTRE_weapons\ar\icons\magazine.paa";
+		descriptionshort = "60 Round Magazine<br>7.62x51mm";
+		mass = 15;
+		tracersEvery = 0;
+		lastRoundsTracer = 5;
+	};
+	
     class OPTRE_100Rnd_762x51_Box: OPTRE_60Rnd_762x51_Mag
 	{
 		ace_isbelt = 1;
@@ -225,7 +241,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_JHP";
 		displayname = "100Rnd 9.5x40mm JHP Box Magazine";
-		displaynameshort = "9.5x60mm JHP";
+		displaynameshort = "9.5x40mm JHP";
 		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
 		initspeed = 1200;
 	};
@@ -241,7 +257,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_JHP";
 		displayname = "100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
-		displaynameshort = "9.5x60mm JHP Tracer";
+		displaynameshort = "9.5x40mm JHP Tracer";
 		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
 	};
 
@@ -258,7 +274,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_HPSAP";
 		displayname = "100Rnd 9.5x40mm HP-SAP Box Magazine";
-		displaynameshort = "9.5x60mm HP-SAP";
+		displaynameshort = "9.5x40mm HP-SAP";
 		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
 		initspeed = 1200;
 	};
@@ -274,7 +290,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_JHP";
 		displayname = "100Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
-		displaynameshort = "9.5x60mm HP-SAP Tracer";
+		displaynameshort = "9.5x40mm HP-SAP Tracer";
 		descriptionShort = "100 Box Round Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
 	};
 
@@ -291,7 +307,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_SAPHE";
 		displayname = "100Rnd 9.5x40mm SAP-HE Box Magazine";
-		displaynameshort = "9.5x60mm SAP-HE";
+		displaynameshort = "9.5x40mm SAP-HE";
 		descriptionShort = "100 Round Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
 		initspeed = 720;
 	};
@@ -307,7 +323,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_SAPHE";
 		displayname = "100Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
-		displaynameshort = "9.5x60mm SAP-HE Tracer";
+		displaynameshort = "9.5x40mm SAP-HE Tracer";
 		descriptionShort = "100 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 	};
 
@@ -324,7 +340,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_SS";
 		displayname = "100Rnd 9.5x40mm SS Box Magazine";
-		displaynameshort = "9.5x60mm SS";
+		displaynameshort = "9.5x40mm SS";
 		descriptionShort = "100 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
 		initspeed = 340;
 	};
@@ -360,7 +376,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_JHP";
 		displayname = "200Rnd 9.5x40mm JHP Box Magazine";
-		displaynameshort = "9.5x60mm JHP";
+		displaynameshort = "9.5x40mm JHP";
 		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point";
 		initspeed = 1100;
 	};
@@ -376,7 +392,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_JHP";
 		displayname = "200Rnd 9.5x40mm JHP Box Magazine (Tracer)";
-		displaynameshort = "9.5x60mm JHP Tracer";
+		displaynameshort = "9.5x40mm JHP Tracer";
 		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Jacketed Hollow-Point<br>Tracers";
 
 	};
@@ -394,7 +410,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_HPSAP";
 		displayname = "200Rnd 9.5x40mm HP-SAP Box Magazine";
-		displaynameshort = "9.5x60mm HP-SAP";
+		displaynameshort = "9.5x40mm HP-SAP";
 		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercing";
 		initspeed = 1200;
 	};
@@ -410,7 +426,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_JHP";
 		displayname = "200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer)";
-		displaynameshort = "9.5x60mm HP-SAP Tracer";
+		displaynameshort = "9.5x40mm HP-SAP Tracer";
 		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>High-Powered Semi-Armor-Piercingbr>Tracers";
 	};
 
@@ -427,7 +443,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_SAPHE";
 		displayname = "200Rnd 9.5x40mm SAP-HE Box Magazine";
-		displaynameshort = "9.5x60mm SAP-HE";
+		displaynameshort = "9.5x40mm SAP-HE";
 		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive";
 		initspeed = 720;
 	};
@@ -443,7 +459,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_SAPHE";
 		displayname = "200Rnd 9.5x40mm SAP-HE Box Magazine (Tracer)";
-		displaynameshort = "9.5x60mm SAP-HE Tracer";
+		displaynameshort = "9.5x40mm SAP-HE Tracer";
 		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Semi-Armor-Piercing High-Explosive<br>Tracers";
 	};
 
@@ -460,7 +476,7 @@ class CfgMagazines
 		
 		ammo = "OPTRE_B_95x40_SS";
 		displayname = "200Rnd 9.5x40mm SS Box Magazine";
-		displaynameshort = "9.5x60mm SS";
+		displaynameshort = "9.5x40mm SS";
 		descriptionShort = "200 Round Box Magazine<br>9.5x40mm<br>Sub-Sonic";
 		initspeed = 340;
 	};
@@ -979,7 +995,7 @@ class CfgMagazines
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
         initSpeed = 12;
     };
-	
+		
 	class OPTRE_60Rnd_5x23mm_Mag_FMJ: OPTRE_60Rnd_5x23mm_Mag
 	{
 		dlc = "SO";
@@ -1219,7 +1235,7 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
-
+		
         ammo = "OPTRE_B_762x51_AP";
         displayname = "30Rnd 6.5x39mm AP Magazine";
         displaynameshort = "6.5x39mm AP";
