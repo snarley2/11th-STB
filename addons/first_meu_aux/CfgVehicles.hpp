@@ -18,6 +18,10 @@ class CfgVehicles
     class Plane_Fighter_03_base_f;
     class I_Plane_Fighter_03_CAS_F;
     class I_Plane_Fighter_04_F;
+    class O_APC_Tracked_02_cannon_F;
+    class B_UGV_01_rcws_F;
+    class O_APC_Tracked_02_cannon_ghex_F;
+    class O_APC_Tracked_02_AA_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -1083,7 +1087,69 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_ifv";
     };
-	
+    class MEU_Hyena_Friden: B_UGV_01_rcws_F
+    {
+        author = "Romeo";
+        displayname = "[1stMEU] Hyena (Friden)"
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        crew = "B_UAV_AI";
+        faction = "MEU_Insurrectionist";
+        side = 0;
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\UGV_01_ext_Friden_co.paa","\first_meu_aux\data\vehicles\UGV_01_int_Friden_co.paa","\first_meu_aux\data\vehicles\Turret_Friden.paa"};
+        editorCategory = "MEU_cat_A";
+    };
+    class MEU_Arcane_IFV_Friden: O_APC_Tracked_02_cannon_F
+    {
+        author = "Romeo"
+        displayname = "[1stMEU] Arcane IFV (Friden)"
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        crew = "LM_OPCAN_FRI_Rifleman"
+        faction = "MEU_Insurrectionist"
+        side = 0;
+        model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_cannon_f";
+        features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull, turret						<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
+        class TextureSources
+        {
+            class FridenArcaneIFV
+            {
+                displayName = "Arcane IFV";
+                textures[] =
+                {"\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_01_Friden_CO.paa","\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_02_Friden_CO.paa","\first_meu_aux\data\vehicles\RCWS30_Friden_CO.paa"};
+            }; 
+        };
+        textureList[]= {"FridenArcaneIFV", 1};
+    };
+    class MEU_Arcane_AA_Friden: O_APC_Tracked_02_AA_F
+    {
+        author = "Romeo"
+        displayname = "[1stMEU] Arcane AA (Friden)"
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        crew = "LM_OPCAN_FRI_Rifleman"
+        faction = "MEU_Insurrectionist"
+        side = 0;
+        model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_aa_F";
+        features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull					<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
+        class TextureSources
+        {
+            class FridenArcaneAA
+            {
+                displayName = "Arcane AA";
+                textures[] =
+                {"\first_meu_aux\data\vehicles\Arcane_02_ext_01_AA_Friden_CO.paa","\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_02_Friden_CO.paa","\first_meu_aux\data\vehicles\Arcane_01_AA_Tower_Friden_CO.paa"};
+            };
+        };
+        textureList[]= {"FridenArcaneAA", 1};
+    };
 	class MEU_Leopard: APC_Wheeled_02_base_v2_F
 	{
 		tf_hasLRradio = 1;

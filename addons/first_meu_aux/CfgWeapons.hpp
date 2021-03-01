@@ -110,6 +110,9 @@ class CfgWeapons
 	class Mode_Burst;
 	class Mode_FullAuto;
 	class InventoryOpticsItem_Base_F;
+    class H_HelmetO_ViperSP_ghex_F;
+    class U_O_V_Soldier_Viper_F;
+
 	
 	//Miscelaneous Classes
 	class ItemcTabHCam;
@@ -18374,6 +18377,16 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		scopeArsenal = 1; 
 		scope = 1;
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Woodland\23_CH252_WDL_R2_CO.paa"};
+	};
+    // Friden Vipers
+	class MEU_Viper_Helmet_Friden: H_HelmetO_ViperSP_ghex_F
+	{
+		author = "Romeo";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+		displayName = "[RIE] Special Purpose Helmet (Friden)";
+		hiddenSelectionsTextures[] = {"\first_meu_aux\Data\opfor\Viper_Helmet_Friden_co.paa"};
 	};
     // Weapons Start
     class Throw : Grenadelauncher
