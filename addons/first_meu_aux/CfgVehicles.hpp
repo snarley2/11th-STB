@@ -9547,6 +9547,16 @@ class CfgVehicles
         simulation = "house";
         side = 4;
     };
+//logey box
+   class logey_Box : House 
+   {
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "Objects";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Logey's Cereal Box";
+        model = "first_meu_aux\data\logeyBOX.p3d";
+   };
     class Land_LargeLandingPad_Snow: House_F
 	{
 		dlc = "OPTRE";
