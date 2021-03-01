@@ -6371,6 +6371,7 @@ class CfgWeapons
         class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			containerClass = "Supply450";
 			hiddenSelections[] = 
 			{
 				"camo",
@@ -9800,7 +9801,7 @@ class CfgWeapons
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher";
+		displayName = "[1stMEU] M52D Breacher (SMG)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -9909,7 +9910,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (Blue)";
+		displayName = "[1stMEU] M52D Breacher (SMG) (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -10013,7 +10014,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (Yellow)";
+		displayName = "[1stMEU] M52D Breacher (SMG) (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -10115,7 +10116,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (Red)";
+		displayName = "[1stMEU] M52D Breacher (SMG) (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -10218,7 +10219,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (Silver)";
+		displayName = "[1stMEU] M52D Breacher (SMG) (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -10321,7 +10322,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (Purple)";
+		displayName = "[1stMEU] M52D Breacher (SMG) (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -10417,14 +10418,226 @@ class CfgWeapons
 			};
 		};
 	};
-    
-	class M52DPlatoonCorpsman: 1MEU_BASE_M52D_Armor
-	{
-		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D Platoon Corpsman";
+	
+		class M52DBreacherShotgun: 1MEU_BASE_M52D_Armor
+    {
+		author = "1stMEU Oneill";
 		scope = 2;
-		scopeArsenal = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D Breacher (SHTGN)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"APO_SMG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+		};
+		subItems[] =
+		{
+			"MRH_BluForTransponder"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"APO_SMG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	
+	class M52DBreacherBlueShotgun: 1MEU_BASE_M52D_Armor
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D Breacher (SHTGN) (Blue)";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"APO_SMG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"APO_SMG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	
+	class M52DBreacherYellowShotgun: 1MEU_BASE_M52D_Armor
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D Breacher (SHTGN) (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -10447,19 +10660,18 @@ class CfgWeapons
 			"AS_SmallRight",
 			"AP_AR",
 			"AP_BR",
-			"AP_Frag",
+			"AP_Canteen",
 			"AP_GL",
 			"AP_Knife",
 			"AP_MGThigh",
 			"AP_AR",
 			"AP_Pack",
-			"AP_Smoke",
+			"AP_Pistol",
 			"AP_Rounds",
-			"AP_SG",
+			"APO_SMG",
 			"AP_SMG",
 			"AP_Sniper",
 			"APO_BR",
-			"APO_SMG",
 			"APO_Sniper",
 			"CustomKit_Scorch"
 		};
@@ -10477,11 +10689,7 @@ class CfgWeapons
 			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
 			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
-		};
-        subItems[] =
-		{
-			"MRH_BluForTransponder"
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -10508,25 +10716,332 @@ class CfgWeapons
 				"AS_SmallRight",
 				"AP_AR",
 				"AP_BR",
-				"AP_Frag",
+				"AP_Canteen",
 				"AP_GL",
 				"AP_Knife",
 				"AP_MGThigh",
 				"AP_AR",
 				"AP_Pack",
-				"AP_Smoke",
+				"AP_Pistol",
 				"AP_Rounds",
-				"AP_SG",
+				"APO_SMG",
 				"AP_SMG",
 				"AP_Sniper",
 				"APO_BR",
-				"APO_SMG",
 				"APO_Sniper",
 				"CustomKit_Scorch"
 			};
 		};
-    };
+	};
 	
+	class M52DBreacherRedShotgun: 1MEU_BASE_M52D_Armor
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D Breacher (SHTGN) (Red)";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"APO_SMG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"APO_SMG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	
+    class M52DBreacherSilverShotgun: 1MEU_BASE_M52D_Armor
+	{
+        author = "1st MEU Ginger";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D Breacher (SHTGN) (Silver)";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"APO_SMG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"APO_SMG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	
+	class M52DBreacherPurpleShotgun: 1MEU_BASE_M52D_Armor
+	{
+        author = "1st MEU Ginger";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D Breacher (SHTGN) (Purple)";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"APO_SMG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"APO_SMG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+    
 	class M52DCorpsman: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
@@ -10544,7 +11059,6 @@ class CfgWeapons
 			"A_KneesMarLeft",
 			"A_KneesMarRight",
 			"A_Ghillie",
-			"A_TacPad",
 			"AS_LargeLeft",
 			"AS_LargeRight",
 			"AS_MediumLeft",
@@ -10590,10 +11104,6 @@ class CfgWeapons
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
-        subItems[] =
-		{
-			"MRH_BluForTransponder"
-		};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -10607,7 +11117,6 @@ class CfgWeapons
 				"A_KneesMarLeft",
 				"A_KneesMarRight",
 				"A_Ghillie",
-				"A_TacPad",
 				"AS_LargeLeft",
 				"AS_LargeRight",
 				"AS_MediumLeft",
@@ -10639,6 +11148,738 @@ class CfgWeapons
 			};
 		};
     };
+	
+	class M52DPlatoonCorpsman: 1MEU_BASE_M52D_Armor
+	{
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52D Corpsman Leadership (Red)";
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Frag",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Smoke",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Frag",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Smoke",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+    };
+	
+	class M52DPlatoonCorpsmanSilver: 1MEU_BASE_M52D_Armor
+	{
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52D Corpsman Leadership (Silver)";
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Frag",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Smoke",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Frag",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Smoke",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+    };
+	
+	class M52DPlatoonCorpsmanPurple: 1MEU_BASE_M52D_Armor
+	{
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52D Corpsman Leadership (Purple)";
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Frag",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Smoke",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+		};
+        class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Frag",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Smoke",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+    };
+		
+	class M52DRTO: 1MEU_BASE_M52D_Armor
+    {
+		author = "1stMEU Oneill";
+		scope = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M52D RTO";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Knife",
+			"APO_Sniper",
+			"APO_SMG",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Knife",
+				"APO_Sniper",
+				"APO_SMG",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	
+	class M52DRTORed: 1MEU_BASE_M52D_Armor
+	{
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52D RTO Leadership (Red)";
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Knife",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Knife",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+    };
+	
+	class M52DRTOSilver: 1MEU_BASE_M52D_Armor
+	{
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52D RTO Leadership (Silver)";
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Knife",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Knife",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+    };
+	
+	class M52DRTOPurple: 1MEU_BASE_M52D_Armor
+	{
+		author = "1st MEU Oneill";
+		displayName = "[1stMEU] M52D RTO Leadership (Purple)";
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_Ghillie",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"APO_BR",
+			"APO_Knife",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+		};
+        class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Pistol",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"APO_BR",
+				"APO_Knife",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+    };
+	
     class Hokage: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Oneill";
@@ -10699,11 +11940,6 @@ class CfgWeapons
 			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
-		};
-        
-		subItems[] =
-		{
-			"MRH_BluForTransponder"
 		};
         class ItemInfo: ItemInfo
 		{

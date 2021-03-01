@@ -5276,6 +5276,21 @@ class CfgVehicles
         maximumLoad = 250;
     };
 	
+	class MEU_ILCS_Recon: OPTRE_ILCS_Rucksack_Black
+    {
+        displayName = "[1stMEU] ILCS Recon";
+		picture = "\OPTRE_weapons\backpacks\icons\como_pack.paa";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+		model = "\A3\weapons_f\empty";
+        maximumLoad = 0;
+    };
+	
 	class MEU_Marine_ANPRC_521: OPTRE_ANPRC_521_Green
 	{
 		dlc = "1stMEU";
