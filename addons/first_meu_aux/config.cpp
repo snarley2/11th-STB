@@ -142,6 +142,12 @@ class cfgPatches
             "Land_ModularOutPostBuildingQuarters",
             "Land_OPTRE_fusion_coil",
             "MEU_AWACS",
+            "ChemicalBarrel_NA",
+            "ChemicalBarrel_AS",
+            "ChemicalBarrel_CS",
+            "SuperWall_01",
+            "shiva_uncovered",
+            "logey_Box"
 		};
         magazines[] = 
 		{
