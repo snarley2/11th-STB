@@ -1704,7 +1704,7 @@ class CfgMagazines
 		displayNameShort = "50mm HEAT";
 		ammo = "M910_50mm_HEAT";
 		count = 20;
-		initSpeed = 1000;
+		initSpeed = 800;
 		maxLeadSpeed = 83.3333;
 		nameSound = "cannon";
 		tracersEvery = 1;

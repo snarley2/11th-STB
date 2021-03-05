@@ -51,6 +51,7 @@ class CfgWeapons
 	class HMG_127_APC;
 	class GMG_40mm;
 	class LMG_coax;
+	class M134_minigun;
 	class autocannon_Base_F;
 	class MGun;
 	class GMG_F;
@@ -18430,6 +18431,10 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_M3_CS_Mag"};
+			class EventHandlers
+			{
+				fired = "_this execVM 'first_meu_aux\Functions\CS_Grenade.sqf'";
+			};
 		};
         class MEU_Bubble_Muzzle : ThrowMuzzle
         {
@@ -18543,10 +18548,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"3Rnd_SmokeOrange_Grenade_shell",
 			"1Rnd_HE_MEU_shell",
 			"1Rnd_HEDP_MEU_shell",
-			"3Rnd_HE_MEU_shell",
-			"1Rnd_9Bang_MEU_shell",
-			"1Rnd_CS_MEU_shell",
-			"ACE_CTS9"
+			"3Rnd_HE_MEU_shell"
 		};
 	};
 	
@@ -20690,77 +20692,62 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				begin3[] = {"A3\Sounds_F\arsenal\weapons_vehicles\cannon_40mm\autocannon_40mm_body_03",1.9952624,1,1500};
 				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
 			};
-			artilleryDispersion = 0.8;
-			artilleryCharge = 0.18;
+			recoil = "Empty";
 			reloadTime = 0.25;
+			aiRateOfFire = 1;
+			aiRateOfFireDistance = 10;
+			minRange = 800;
+			minRangeProbab = 0.5;
+			midRange = 1500;
+			midRangeProbab = 0.7;
+			maxRange = 2000;
+			maxRangeProbab = 0.5;
+			artilleryDispersion = 2.5;
+			artilleryCharge = 0.18;
 		};
 		class close_range: Point_Defense
 		{
-			aiBurstTerminable = 1;
-			showToPlayer = 0;
-			burstRangeMax = 6;
-			aiRateOfFire = 1;
-			aiRateOfFireDispersion = 2;
-			aiRateOfFireDistance = 200;
-			minRange = 0;
-			minRangeProbab = 0.1;
-			midRange = 400;
-			midRangeProbab = 0.7;
-			maxRange = 800;
-			maxRangeProbab = 0.8;
-			artilleryDispersion = 0.8;
+			recoil = "Empty";
+			minRange = 2000;
+			minRangeProbab = 0.4;
+			midRange = 3000;
+			midRangeProbab = 0.6;
+			maxRange = 5200;
+			maxRangeProbab = 0.4;
 			artilleryCharge = 0.25;
 		};
 		class short_range: Point_Defense
 		{
-			aiBurstTerminable = 1;
-			showToPlayer = 0;
-			burstRangeMax = 5;
-			aiRateOfFire = 2;
-			aiRateOfFireDispersion = 2;
-			aiRateOfFireDistance = 600;
-			minRange = 1200;
-			minRangeProbab = 0.75;
-			midRange = 1600;
-			midRangeProbab = 0.8;
-			maxRange = 2400;
-			maxRangeProbab = 0.8;
-			artilleryDispersion = 0.8;
-			artilleryCharge = 0.50;
+			recoil = "Empty";
+			minRange = 5200;
+			minRangeProbab = 0.3;
+			midRange = 8000;
+			midRangeProbab = 0.4;
+			maxRange = 13300;
+			maxRangeProbab = 0.3;
+			artilleryCharge = 0.5;
 		};
 		class medium_range: Point_Defense
 		{
-			aiBurstTerminable = 1;
-			showToPlayer = 0;
-			burstRangeMax = 3;
-			aiRateOfFire = 2;
-			aiRateOfFireDispersion = 3;
-			aiRateOfFireDistance = 1000;
-			minRange = 2000;
-			minRangeProbab = 0.8;
-			midRange = 3000;
-			midRangeProbab = 0.8;
-			maxRange = 4000;
-			maxRangeProbab = 0.7;
-			artilleryDispersion = 0.8;
+			recoil = "Empty";
+			minRange = 14600;
+			minRangeProbab = 0.2;
+			midRange = 25000;
+			midRangeProbab = 0.3;
+			maxRange = 37000;
+			maxRangeProbab = 0.2;
 			artilleryCharge = 0.75;
 		};
 		class long_range: Point_Defense
 		{
-			aiBurstTerminable = 1;
-			showToPlayer = 0;
-			burstRangeMax = 1;
-			aiRateOfFire = 2;
-			aiRateOfFireDispersion = 4;
-			aiRateOfFireDistance = 1800;
-			minRange = 3600;
-			minRangeProbab = 0.74;
-			midRange = 4800;
-			midRangeProbab = 0.65;
-			maxRange = 6000;
-			maxRangeProbab = 0.05;
-			artilleryDispersion = 0.8;
-			artilleryCharge = 1.0;
+			recoil = "Empty";
+			minRange = 25000;
+			minRangeProbab = 0.1;
+			midRange = 40000;
+			midRangeProbab = 0.2;
+			maxRange = 58000;
+			maxRangeProbab = 0.1;
+			artilleryCharge = 1;
 		};
 		class GunParticles
 		{

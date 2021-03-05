@@ -11,6 +11,7 @@ class CfgAmmo
 	
 	//Explosives
 	class G_40mm_HE;
+	class Sh_82mm_AMOS;
     class ACE_SatchelCharge_Remote_Ammo_Thrown;
     class ACE_G_CTS9;
 	class M_Titan_AT;
@@ -169,6 +170,40 @@ class CfgAmmo
 		ExplosionEffects = "HEShellExplosion";
 	};
 	// CBRN Munitions
+	class CS_Grenade: Sh_82mm_AMOS
+	{
+		ace_frag_enabled = 0;
+		aiAmmoUsageFlags = "64 + 128";
+		CraterEffects = "";
+		CBRN_isProjectile = 1;
+		CBRN_chemicalType = 0;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 8;
+		CBRN_lifetime = 90;
+	};
+	class Asphyxiant_Grenade: Sh_82mm_AMOS
+	{
+		ace_frag_enabled = 0;
+		aiAmmoUsageFlags = "64 + 128";
+		CraterEffects = "";
+		CBRN_isProjectile = 1;
+		CBRN_chemicalType = 1;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 8;
+		CBRN_lifetime = 90;
+	};
+	class Nerve_Agent_Grenade: Sh_82mm_AMOS
+	{
+		ace_frag_enabled = 0;
+		aiAmmoUsageFlags = "64 + 128";
+		CraterEffects = "";
+		CBRN_isProjectile = 1;
+		CBRN_chemicalType = 2;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 8;
+		CBRN_lifetime = 90;
+	};
+	
 	class 40mm_CS: OPAEX_40mm_Smoke
 	{
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
@@ -176,25 +211,12 @@ class CfgAmmo
 		ace_frag_enabled = 0;
 		aiAmmoUsageFlags = "64 + 128";
 		CraterEffects = "";
-		CBRN_isProjectile = 1;
-		CBRN_chemicalType = 0;
-		CBRN_heightOfBurst = 1;
-		CBRN_sprayWidth = 10;
-		CBRN_lifetime = 90;
 	};
 	
 	class M3_CS: SmokeShell
 	{
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
-		smokeColor[] = {1,1,1,1};
-		ace_frag_enabled = 0;
-		aiAmmoUsageFlags = "64 + 128";
-		CraterEffects = "";
-		CBRN_isProjectile = 1;
-		CBRN_chemicalType = 0;
-		CBRN_heightOfBurst = 1;
-		CBRN_sprayWidth = 10;
-		CBRN_lifetime = 90;
+		effectsSmoke = "";
 	};
 	// throwable sheild
 	class MEU_Bubbleshield_Ammo: ACE_SatchelCharge_Remote_Ammo_Thrown
@@ -613,10 +635,17 @@ class CfgAmmo
 	class M910_50mm_HEAT: B_30mm_MP
 	{
 		hit = 200;
-		indirectHit = 40;
-		indirectHitRange = 5;
+		indirectHit = 50;
+		indirectHitRange = 10;
 		caliber = 10;
-		typicalSpeed = 1000;
+		typicalSpeed = 800;
 		warheadName = "HEAT";
+		deflecting = 0;
+		explosive = 0.8;
+		whistleDist = 60;
+		artilleryLock = 1;
+		airFriction = 0;
+		sideairFriction = 0.0;
+		suppressionRadiusHit = 30;
 	};
 };
