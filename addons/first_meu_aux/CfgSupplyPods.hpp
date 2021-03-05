@@ -12,6 +12,11 @@ class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 		item_xx(ACE_elasticBandage, 100);
 		item_xx(ACE_packingBandage, 80);
 		item_xx(ACE_plasmaIV_500, 40);
+		item_xx(MEU_Biofoam_Light, 40);
+		item_xx(MEU_Medigel_Light, 40);
+		item_xx(MEU_PlasmaIV, 20);
+		item_xx(MEU_compat_Ibuprofen, 40);
+		item_xx(MEU_Emergency_MedKit, 10);
 		item_xx(ACE_epinephrine, 80);
 		item_xx(ACE_tourniquet, 80);
 		item_xx(ACE_quikclot, 80);
@@ -19,7 +24,6 @@ class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 		item_xx(ACE_plasmaIV, 40);
 		item_xx(ACE_Banana, 5);
 		item_xx(ACE_splint, 80);
-		
 	};
 };
 //M247 LMG (the shitty one)
@@ -28,8 +32,10 @@ class OPTRE_Ammo_SupplyPod_M247: OPTRE_Ammo_SupplyPod_Empty
 	displayName = "[UNSC] GPMG Supply Pod (M247)";
 	class TransportMagazines
 	{			
-		mag_xx(OPTRE_400Rnd_762x51_Box_Tracer, 3);
-		mag_xx(OPTRE_100Rnd_762x51_Box_Tracer, 6);
+		mag_xx(OPTRE_400Rnd_762x51_Box_JHPT, 3);
+		mag_xx(OPTRE_100Rnd_762x51_Box_JHPT, 6);
+		mag_xx(OPTRE_400Rnd_762x51_Box_APT, 3);
+		mag_xx(OPTRE_100Rnd_762x51_Box_APT, 6);
 	};
 	class TransportWeapons
 	{
@@ -198,6 +204,10 @@ class OPTRE_Ammo_SupplyPod_ARBRGL: OPTRE_Ammo_SupplyPod_Empty
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 100);
+		mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
+		mag_xx(30rnd_556x45_mag_AP, 100);
+		mag_xx(30rnd_65x39_mag_AP, 100);
+		mag_xx(30rnd_65x39_mag_msbs_AP, 100);
 		mag_xx(1Rnd_HE_MEU_shell, 30);
 		mag_xx(3Rnd_HE_MEU_shell, 10);
 		mag_xx(1Rnd_HEDP_MEU_shell, 10);
@@ -220,9 +230,16 @@ class OPTRE_Ammo_SupplyPod_Breacher: OPTRE_Ammo_SupplyPod_Empty
 	displayName = "[UNSC] Supply Pod (Breaching Kit)";
 	class TransportMagazines
 	{	
-        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 15);
-        mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 25);
-        mag_xx(OPTRE_12Rnd_8Gauge_Beanbag, 15);
+        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 10);
+        mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 10);
+        mag_xx(OPTRE_12Rnd_8Gauge_HEDP, 10);
+		mag_xx(OPTRE_12Rnd_8Gauge_Beanbag, 10);
+        mag_xx(OPTRE_12Rnd_8Gauge_Incendiary, 10);
+		mag_xx(OPTRE_6Rnd_8Gauge_Pellets, 10);
+        mag_xx(OPTRE_6Rnd_8Gauge_Slugs, 10);
+        mag_xx(OPTRE_6Rnd_8Gauge_HEDP, 10);
+		mag_xx(OPTRE_6Rnd_8Gauge_Beanbag, 10);
+        mag_xx(OPTRE_6Rnd_8Gauge_Incendiary, 10);
         mag_xx(AMP_Breaching_Charge_Mag, 20);
         mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 100);
 	};
@@ -233,7 +250,7 @@ class OPTRE_Ammo_SupplyPod_Breacher: OPTRE_Ammo_SupplyPod_Empty
 	};
 	class TransportItems
 	{
-		item_xx(optre_m7_sight_v2, 6);
+		item_xx(optre_m7_sight, 6);
         item_xx(optre_m7_silencer, 4);
         item_xx(optre_m7_laser, 4);
 	};
@@ -246,11 +263,7 @@ class OPTRE_Ammo_SupplyPod_Marksman: OPTRE_Ammo_SupplyPod_Empty
 	{	
         mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
 		mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
-        mag_xx(OPTRE_20Rnd_86x70_Mag_JHPT, 20);
-        mag_xx(OPTRE_20Rnd_86x70_Mag_APT, 20);
-        mag_xx(OPTRE_20Rnd_86x70_Mag_JHP, 20);
-        mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
-	};
+  	};
 	class TransportWeapons
 	{
 		weap_xx(OPTRE_M393_DMR, 2);
@@ -258,7 +271,7 @@ class OPTRE_Ammo_SupplyPod_Marksman: OPTRE_Ammo_SupplyPod_Empty
 	};
 	class TransportItems
 	{
-		item_xx(optre_bmr_scope_v2, 2);
+		item_xx(optre_bmr_scope, 2);
 	};
 };
 
@@ -279,7 +292,7 @@ class OPTRE_Ammo_SupplyPod_Sniper: OPTRE_Ammo_SupplyPod_Empty
 	};
 	class TransportItems
 	{
-		item_xx(optre_srs99_scope_v2, 2);
+		item_xx(optre_srs99_scope, 2);
         item_xx(optre_srs99d_suppressor, 2);
 	};
 };
@@ -302,7 +315,7 @@ class OPTRE_Ammo_Supplypod_Autorifles: OPTRE_Ammo_SupplyPod_Empty
 	class TransportItems
 	{
 		item_xx(optic_hamr, 2);
-        item_xx(optre_m72_smartlink_v2, 2);
+        item_xx(optre_m72_smartlink, 2);
 	};
 };
 // Cricket Launcher

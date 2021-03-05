@@ -23,6 +23,29 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Medical",
 			"OPTRE_Ammo_SupplyPod_Mortars",
 			"OPTRE_Ammo_SupplyPod_LMG",
+            "1stMEU_CTF_Flag_VulcanHQ",
+            "1stMEU_CTF_Flag_50",
+            "1stMEU_CTF_Flag_5M",
+            "1stMEU_CTF_Flag_53",
+            "1stMEU_CTF_Flag_3HQ",
+            "1stMEU_CTF_Flag_31",
+            "1stMEU_CTF_Flag_32",
+            "1stMEU_CTF_Flag_33",
+            "1stMEU_CTF_Flag_4HQ",
+            "1stMEU_CTF_Flag_41",
+            "1stMEU_CTF_Flag_42",
+            "1stMEU_CTF_Flag_43",
+            "1stMEU_CTF_Flag_1stMEU",
+            "1stMEU_CTF_Flag_1HQ",
+            "1stMEU_CTF_Flag_11",
+            "1stMEU_CTF_Flag_12",
+            "1stMEU_CTF_Flag_13",
+            "1stMEU_CTF_Flag_2HQ",
+            "1stMEU_CTF_Flag_21",
+            "1stMEU_CTF_Flag_22",
+            "1stMEU_CTF_Flag_23",
+            "1stMEU_CTF_Flag_51",
+            "1stMEU_CTF_Flag_52",
             "1stMEU_M313_Elephant",
             "Vulkan_Repair_APC",
             "Vulkan_Repair_APC_P",
@@ -44,6 +67,17 @@ class cfgPatches
             "MEU_Raptor_Friden_IFV",
             "MEU_Raptor_Friden_APC",
             "MEU_Tusk_Friden",
+            "MEU_Gungoose",
+            "MEU_GGNR_AA",
+            "MEU_Witherwing_Friden",
+            "MEU_Wasp_Friden",
+            "MEU_Felix_Rotary_Friden",
+            "MEU_Arthur_Rotary_Friden",
+            "MEU_Viper_Helmet_Friden",
+            "MEU_Hyena_Friden",
+            "MEU_Arcane_IFV_Friden",
+            "MEU_Arcane_APC_Friden",
+            "MEU_Arcane_AA_Friden",
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
@@ -107,13 +141,20 @@ class cfgPatches
             "Land_ModularOutPostBuildingQuarters",
             "Land_OPTRE_fusion_coil",
             "MEU_AWACS",
-			};
+            "ChemicalBarrel_NA",
+            "ChemicalBarrel_AS",
+            "ChemicalBarrel_CS",
+            "SuperWall_01",
+            "shiva_uncovered",
+            "logey_Box"
+		};
         magazines[] = 
 		{
             "OPTRE_6Rnd_8Gauge_Pellet",
             "OPTRE_12Rnd_8Gauge_Pellet",
             "OPTRE_6Rnd_8Gauge_Beanbag",
             "OPTRE_12Rnd_8Gauge_Beanbag",
+            "MEU_Railgun_Slug"
         };
 		ammo[] = 
 		{
@@ -124,6 +165,7 @@ class cfgPatches
             "MEU_B_8Gauge_Pellet",
             "MEU_B_8Gauge_Pellet_Submunition",
             "OPTRE_FC_BubbleShield_Ammo",
+            "MEU_16x65mm_Slug"
         };
 		weapons[] = 
 		{
@@ -153,6 +195,7 @@ class cfgPatches
 			"LM_OPCAN_M18AR_C",
 			"LM_OPCAN_M18AR_GL",
             "optre_hgun_SAS10_F",
+            "OPTRE_FC_Railgun"
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 

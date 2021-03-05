@@ -13,6 +13,15 @@ class CfgVehicles
     class I_APC_tracked_03_cannon_F;
     class I_APC_Wheeled_03_cannon_F;
     class I_MBT_03_cannon_F;
+    class I_Heli_light_03_F;
+    class I_Heli_Transport_02_F;
+    class Plane_Fighter_03_base_f;
+    class I_Plane_Fighter_03_CAS_F;
+    class I_Plane_Fighter_04_F;
+    class O_APC_Tracked_02_cannon_F;
+    class B_UGV_01_rcws_F;
+    class O_APC_Tracked_02_cannon_ghex_F;
+    class O_APC_Tracked_02_AA_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -25,6 +34,8 @@ class CfgVehicles
     class OPTRE_M313_UNSC;
 	class OPTRE_M808B_UNSC;
 	class OPTRE_CTF_Flag_Base;
+	class OPTRE_Corvette_M910_Turret;
+    class OPTRE_M274_ATV;
     //class OPTRE_Longsword_Bomb;
 
 	//Base FZ Classes
@@ -88,6 +99,7 @@ class CfgVehicles
 	class ACE_SelfActions;
     
 	//Misc Classes
+    class House_F;
 	class GunnerTurret;
 	class CargoTurret;
     class CargoTurret_01;
@@ -123,6 +135,7 @@ class CfgVehicles
     class plp_ctf_SafetyBarrelBlue;
     class Land_OPTRE_barrel_hydrogen;
     class CBRN_putMaskOn;
+    class NewTurret;
         
     //chemwar
 	class CAManBase: Man
@@ -136,6 +149,7 @@ class CfgVehicles
             };
         };
     };
+	
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
@@ -399,6 +413,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -465,6 +483,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -516,6 +538,86 @@ class CfgVehicles
 			};
         };
     };
+    class MEU_GGNR_AA : VES_IFV76_A
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] ARC-920 Honeybadger [WIP]";
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 80000;
+        transportSoldier = 12;
+        faction = "MEU_UNSC";
+		side = 1;
+		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_WIP";
+        visionMode[] = {"Normal","TI","NVG"};
+        thermalMode[] = {0,1,2,3,4,5};
+		class TransportMagazines
+		{
+			delete _xx_30Rnd_65x39_caseless_mag;
+			delete _xx_100Rnd_65x39_caseless_mag;
+			delete _xx_HandGrenade;
+			delete _xx_MiniGrenade;
+			delete _xx_1Rnd_HE_Grenade_shell;
+			delete _xx_1Rnd_Smoke_Grenade_shell;
+			delete _xx_1Rnd_SmokeGreen_Grenade_shell;
+			delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+			delete _xx_1Rnd_SmokeBlue_Grenade_shell;
+			delete _xx_SmokeShell;
+			delete _xx_SmokeShellGreen;
+			delete _xx_SmokeShellOrange;
+			delete _xx_SmokeShellBlue;
+			delete _xx_NLAW_F;
+			delete _xx_Titan_AT;
+			delete _xx_Titan_AP;
+			delete _xx_Titan_AA;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 2);
+		};
+		class TransportWeapons
+		{
+			delete _xx_arifle_MX_F;
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+			delete _xx_ACE_Fortify;
+			delete _xx_OPTRE_Biofoam;
+			delete _xx_ACE_morphine;
+			item_xx(MEU_Biofoam_Light, 20);
+            item_xx(MEU_Medigel_Light, 20);
+            item_xx(ACE_plasmaIV_1000, 10);
+            item_xx(ACE_epinephrine, 10);
+            item_xx(ACE_adenosine, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
+            item_xx(MEU_compat_Ibuprofen, 20);			
+		};
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				body = "mainTurret";
+				gun = "mainGun";
+				weapons[] = {"MEU_Railgun","Laserdesignator_mounted","SmokeLauncher"};
+				magazines[] = {"MEU_Railgun_Slug","MEU_Railgun_Slug","Laserbatteries"};
+
+			};
+        };
+    };
 	
 	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
@@ -548,6 +650,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -733,6 +839,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -924,7 +1034,69 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_ifv";
     };
-	
+    class MEU_Hyena_Friden: B_UGV_01_rcws_F
+    {
+        author = "Romeo";
+        displayname = "[1stMEU] Hyena (Friden)"
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        crew = "B_UAV_AI";
+        faction = "MEU_Insurrectionist";
+        side = 0;
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\UGV_01_ext_Friden_co.paa","\first_meu_aux\data\vehicles\UGV_01_int_Friden_co.paa","\first_meu_aux\data\vehicles\Turret_Friden.paa"};
+        editorCategory = "MEU_cat_A";
+    };
+    class MEU_Arcane_IFV_Friden: O_APC_Tracked_02_cannon_F
+    {
+        author = "Romeo"
+        displayname = "[1stMEU] Arcane IFV (Friden)"
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        crew = "LM_OPCAN_FRI_Rifleman"
+        faction = "MEU_Insurrectionist"
+        side = 0;
+        model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_cannon_f";
+        features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull, turret						<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
+        class TextureSources
+        {
+            class FridenArcaneIFV
+            {
+                displayName = "Arcane IFV";
+                textures[] =
+                {"\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_01_Friden_CO.paa","\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_02_Friden_CO.paa","\first_meu_aux\data\vehicles\RCWS30_Friden_CO.paa"};
+            }; 
+        };
+        textureList[]= {"FridenArcaneIFV", 1};
+    };
+    class MEU_Arcane_AA_Friden: O_APC_Tracked_02_AA_F
+    {
+        author = "Romeo"
+        displayname = "[1stMEU] Arcane AA (Friden)"
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        crew = "LM_OPCAN_FRI_Rifleman"
+        faction = "MEU_Insurrectionist"
+        side = 0;
+        model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_aa_F";
+        features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull					<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_ifv";
+        class TextureSources
+        {
+            class FridenArcaneAA
+            {
+                displayName = "Arcane AA";
+                textures[] =
+                {"\first_meu_aux\data\vehicles\Arcane_02_ext_01_AA_Friden_CO.paa","\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_02_Friden_CO.paa","\first_meu_aux\data\vehicles\Arcane_01_AA_Tower_Friden_CO.paa"};
+            };
+        };
+        textureList[]= {"FridenArcaneAA", 1};
+    };
 	class MEU_Leopard: APC_Wheeled_02_base_v2_F
 	{
 		tf_hasLRradio = 1;
@@ -963,6 +1135,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 10);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 10);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 10);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 10);
+			mag_xx(30rnd_556x45_mag_AP, 10);
+			mag_xx(30rnd_65x39_mag_AP, 10);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 10);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -1061,6 +1237,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1137,6 +1317,66 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_car";
     };
+    class MEU_Felix_Rotary_Friden : I_Heli_light_03_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[1stMEU] Felix (Friden)";
+        faction = "MEU_Insurrectionist";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Heli_Light_03_base_friden_CO.paa"};
+        side = 0;
+        transportSoldier = 4;
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_rot";
+    };
+    class MEU_Arthur_Rotary_Friden : I_Heli_Transport_02_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCruator = 2;
+        displayName = "[1stMEU] Arthur (Friden)";
+        faction = "MEU_Insurrectionist";
+        hiddenSelections[] = {"camo1","camo2","camo3"};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Arthur_Body_1.paa","\first_meu_aux\data\vehicles\Arthur_Body_2.paa","\first_meu_aux\data\vehicles\Arthur_Body_3.paa"};
+        side = 0;
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_rot";
+    };
+    class MEU_Wasp_Friden : I_Plane_Fighter_03_CAS_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        displayName = "[1stMEU] Wasp (Friden)";
+        side = 0;
+        faction = "MEU_Insurrectionist";
+        hiddenSelections[]= {"camo1","camo2"};
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\plane_buzzard_body_01_co.paa","\first_meu_aux\data\vehicles\plane_buzzard_body_02_co.paa"};
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_fix";
+    };
+    class MEU_Witherwing_Friden : I_Plane_Fighter_04_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_FRI_Rifleman";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] Witherwing (Friden)";
+        side = 0;
+        faction = "MEU_Insurrectionist";
+        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Witherwing_01_co.paa","\first_meu_aux\data\vehicles\Witherwing_02_co.paa"};
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_fix";
+    };
     class MEU_Antelope_WDL: O_MRAP_02_HMG_F
 	{
 		displayName = "[1stMEU] Antelope (Woodland)";
@@ -1170,6 +1410,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1243,7 +1487,8 @@ class CfgVehicles
 			};
 		};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_WDL_front_co.paa","first_meu_aux\data\vehicles\Antelope_WDL_back_co.paa","first_meu_aux\data\vehicles\Turret_WDL.paa"};
-	};  
+	}; 
+	
     class MEU_Antelope_ARC: O_MRAP_02_HMG_F
 	{
 		displayName = "[1stMEU] Antelope (Arctic)";
@@ -1277,6 +1522,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1351,6 +1600,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_ARC_front_co.paa","first_meu_aux\data\vehicles\Antelope_ARC_back_co.paa","first_meu_aux\data\vehicles\Turret_ARC.paa"};
 	};
+	
     class MEU_Antelope_DES: O_MRAP_02_HMG_F
 	{
 		displayName = "[1stMEU] Antelope (Desert)";
@@ -1384,6 +1634,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1458,6 +1712,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_DES_front_co.paa","first_meu_aux\data\vehicles\Antelope_DES_back_co.paa","first_meu_aux\data\vehicles\Turret_DES.paa"};
 	};
+	
     class MEU_Antelope_EVOURB: O_MRAP_02_HMG_F
 	{
 		displayName = "[1stMEU] Antelope (Evolved/Urban)";
@@ -1491,6 +1746,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1565,6 +1824,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Antelope_EVOURB_front_co.paa","first_meu_aux\data\vehicles\Antelope_EVOURB_back_co.paa","first_meu_aux\data\vehicles\Turret_EVOURB.paa"};
 	};
+	
     class MEU_Ansaldo_Friden: O_MRAP_02_HMG_F
 	{
 		displayName = "[1stMEU] Ansaldo (Friden)";
@@ -1598,6 +1858,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1683,6 +1947,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1707,7 +1975,7 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"M1024_30mm","M250_APC","SmokeLauncher"};
+				weapons[] = {"M1024_30mm","M247_APC","SmokeLauncher"};
 				magazines[] = 
 				{
 					"80Rnd_30mm_HEAT",
@@ -1720,16 +1988,19 @@ class CfgVehicles
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
-                    "OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
+                    "OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
 			};
 	   };
     };
+	
     class MEU_Champion_Friden: I_APC_tracked_03_cannon_F
 	{
 		author = "Romeo";
@@ -1761,6 +2032,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1785,7 +2060,7 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"M1024_30mm","M250_APC","SmokeLauncher"};
+				weapons[] = {"M1024_30mm","M247_APC","SmokeLauncher"};
 				magazines[] = 
 				{
 					"80Rnd_30mm_HEAT",
@@ -1798,16 +2073,19 @@ class CfgVehicles
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
-                    "OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
+                    "OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
 					"SmokeLauncherMag",
 					"SmokeLauncherMag"
 				};
 			};
 	    };
     };
+	
     class MEU_Raptor_Friden_IFV: I_APC_Wheeled_03_cannon_F
 	{
 		author = "Romeo";
@@ -1830,7 +2108,7 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"M1024_30mm","M250_APC","missiles_titan","SmokeLauncher"};
+				weapons[] = {"M1024_30mm","M247_APC","missiles_titan","SmokeLauncher"};
 				magazines[] = 
 				{
 					"80Rnd_30mm_HEAT",
@@ -1843,10 +2121,12 @@ class CfgVehicles
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
 					"60Rnd_30mm_APFSDS",
-                    "OPTRE_400Rnd_127x99_M250HMG", 
-					"OPTRE_400Rnd_127x99_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
-					"OPTRE_400Rnd_127x99_HE_M250HMG",
+                    "OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT",
+					"OPTRE_400Rnd_762x51_Box_APT", 
+					"OPTRE_400Rnd_762x51_Box_APT",
                     "2Rnd_GAT_missiles",
                     "2Rnd_GAT_missiles",
 					"SmokeLauncherMag",
@@ -1871,6 +2151,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1890,6 +2174,7 @@ class CfgVehicles
             item_xx(MEU_compat_Ibuprofen, 40);
 		};
 	};
+	
     class MEU_Raptor_Friden_APC: I_APC_Wheeled_03_cannon_F
 	{
 		author = "Romeo";
@@ -1927,6 +2212,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
 		};
 		class TransportItems
 		{
@@ -1946,13 +2235,14 @@ class CfgVehicles
             item_xx(MEU_compat_Ibuprofen, 40);
 		};
 	};
+	
     class MEU_Tusk_Friden: I_MBT_03_cannon_F
 	{
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Tusk";
+        displayName = "[1stMEU] Tusk (Friden)";
         side = 0;
 		crew = "LM_OPCAN_FRI_Rifleman";
 		faction = "MEU_Insurrectionist";
@@ -1984,120 +2274,103 @@ class CfgVehicles
              };
          };
      };
+     class MEU_Gungoose: OPTRE_M274_ATV
+	 {
+		dlc = "1stMEU";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] M274-M Gungoose [WIP]";
+		faction = "MEU_UNSC";
+        ace_cargo_size = 10
+        side = 1;
+		editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_WIP";
+		crew = "VES_Rifleman_MA5B_MAR";
+		hiddenSelections[] = {"camo1","camo2","attach_police"};
+		hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Mongoose\data\body1_blk_co.paa","OPTRE_Vehicles\Mongoose\data\body2_blk_co.paa"};
+        class Turrets{};
+		showNVGCargo[] = {1};
+		soundAttenuationCargo[] = {1,0};
+		showNVGDriver = 1;
+		hideWeaponsDriver = 0;
+		hideWeaponsCargo = 0;
+		weapons[] = {"M247_APC","MG460_APC"};
+        magazines[] =
+			{
+				"OPTRE_400Rnd_762x51_Box_APT", 
+				"OPTRE_400Rnd_762x51_Box_APT",
+				"40Rnd_HEDP_Belt"
+			};
+		driverAction = "driver_quadbike";
+		getInAction = "GetInQuadbike";
+		getOutAction = "GetOutQuadbike";
+		cargoAction[] = {"passenger_quadbike"};
+		cargoGetInAction[] = {"GetInQuadbike_cargo"};
+		cargoGetOutAction[] = {"GetOutQuadbike_cargo"};
+		preciseGetInOut = 1;
+		cargoPreciseGetInOut[] = {1};
+		extCameraPosition[] = {0,1.6,-4.5};
+		camShakeCoef = 1.0;
+	 };
+    
 // Ground Vehicles End	
 
 // Turrets Start
 	class M910_Point_Defense_Cannon: StaticWeapon
 	{
-		author = "1st MEU Oneill";
-		scope = 0;
-		scopeCurator = 0;
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		side = 1;
+		faction = "OPTRE_UNSC";
+		isUav = 1;
+		crew = "B_UAV_AI";
+		armor = 250;
 		vehicleClass = "OPTRE_UNSC_corvette_class";
-		icon = "iconCrateWpns";
-		displayName = "M910_Point_Defense_Cannon";
-		DLC = "Optre";
-		threat[] = {1.0,1.0,0.1};
-		cost = 2500000;
-		accuracy = 0.12;
-		picture = "";
-		uiPicture = "";
-		unitInfoType = "RscUnitInfoMortar";
+		displayName = "M910 Point Defense Gun";
 		model = "\OPTRE_Corvette\weapons\pointdefense\turret.p3d";
-		availableForSupportTypes[] = {"Artillery"};
-		extCameraPosition[] = {0,3.5,-9.5};
-		canFloat = 0;
-		enableGPS = 1;
-		artilleryScanner = 1;
-		radartype = 2;
-		radarTarget = 1;
-		radarTargetSize = 1.5;
-		visualTarget = 1;
-		visualTargetSize = 2;
-		irTargetSize = 1;
-		reportRemoteTargets = 0;
-		receiveRemoteTargets = 1;
-		reportOwnPosition = 0;
-		lockDetectionSystem = 0;
-		incomingMissileDetectionSystem = 16;
+		author = "Article 2 Studios";
+		icon = "iconCrateWpns";
+		mapSize = 2;
 		gunBeg[] = {"z_gunL_chamber","z_gunR_chamber"};
 		gunEnd[] = {"z_gunL_muzzle","z_gunR_muzzle"};
 		uavCameraGunnerPos = "pos_gunner_view";
 		uavCameraGunnerDir = "pos_gunner_view_dir";
 		typicalCargo[] = {"B_UAV_AI"};
+		enableGPS = 1;
+		availableForSupportTypes[] = {"Artillery"};
+		artilleryScanner = 1;
+		radartype = 2;
+		radarTarget = 1;
+		radarTargetSize = 0.9;
+		visualTarget = 1;
+		visualTargetSize = 1.2;
+		irTarget = 1;
+		irTargetSize = 0.5;
+		reportRemoteTargets = 1;
+		receiveRemoteTargets = 1;
+		reportOwnPosition = 1;
+		lockDetectionSystem = 0;
+		incomingMissileDetectionSystem = 16;
+		mass = 1000000;
 		class AttributeValues
 		{
 			RadarUsageAI = 1;
 		};
-		class Components: Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class IRSensorComponent: SensorTemplateIR
-					{
-						class AirTarget
-						{
-							minRange = 500;
-							maxRange = 4000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = 1;
-						};
-						class GroundTarget
-						{
-							minRange = 500;
-							maxRange = 3500;
-							objectDistanceLimitCoef = 1;
-							viewDistanceLimitCoef = 1;
-						};
-						typeRecognitionDistance = 3500;
-						maxTrackableSpeed = 600;
-						angleRangeHorizontal = 60;
-						angleRangeVertical = 40;
-						animDirection = "mainGun";
-						aimDown = -0.5;
-					};
-					class DataLinkSensorComponent: SensorTemplateDataLink
-					{
-						class AirTarget
-						{
-							minRange = 32000;
-							maxRange = 32000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-						class GroundTarget
-						{
-							minRange = 32000;
-							maxRange = 32000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-					};
-				};
-			};
-		};
-		animated = 1;
 		class AnimationSources
 		{
 			class muzzle_rot_cannon
 			{
 				source = "ammorandom";
+				weapon = "M910_Point_Defense_Cannon";
+			};
+			class muzzle_hide_cannon
+			{
+				source = "reload";
 				weapon = "OPTRE_M9109_Turret";
 			};
-		};
-		armor = 400;
-		armorStructural = 4;
-		damageResistance = 0.004;
-		damageEffect = "AirDestructionEffects";
-		explosionEffect = "FuelExplosionBig";
-		fuelExplosionPower = 1;
-		hullDamageCauseExplosion = 1;
-		secondaryExplosion = -1;
-		class Damage
-		{
-			tex[] = {};
-			mat[] = {"A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_damage.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_destruct.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\ship_gun_01_optic.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_damage.rvmat","A3\Static_F_Destroyer\Ship_Gun_01\Data\Ship_Gun_01_destruct.rvmat"};
 		};
 		class Turrets: Turrets
 		{
@@ -2132,10 +2405,58 @@ class CfgVehicles
 				memoryPointGunnerOptics = "pos_gunner_view_arty";
 				cameraDir = "pos_gunner_view_arty_dir";
 				memoryPointsGetInGunner = "Pos Gunner";
-				memoryPointsGetInGunnerDir = "Pos Gunner dir";
-				gunnerOpticsModel = "A3\drones_f\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+				memoryPointsGetInGunnerDir = "Pos Gunner dir";	
+				turretInfoType = "RscWeaponRangeArtilleryAuto";
+				optics = 1;
+				gunnerOpticsModel = "\A3\weapons_f\reticle\Optics_Gunner_02_F";
+				discreteDistance[] = {100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400,2500,2600,2700,2800,2900,3000,3100,3200,3300,3400,3500,3600,3700,3800,3900,4000};
+				discreteDistanceInitIndex = 5;
+				weapons[] = {"M910_Point_Defense_Cannon"};
+				magazines[] = 
+				{
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT",
+					"20Rnd_50mm_HEAT"
+				};
 				gunnerOpticsShowCursor = 1;
-				unitInfoType = "RscUnitInfoMortar";
 				visionMode[] = {"Normal","NVG","Ti"};
 				thermalMode[] = {1,2,3,4,5};
 				castGunnerShadow = 1;
@@ -2149,9 +2470,10 @@ class CfgVehicles
 					initFov = 0.7;
 					minFov = 0.01;
 					maxFov = 1;
+					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0,1};
+					gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_MBT_01_w_F.p3d";
 				};
-				weapons[] = {"M910_Point_Defense_Cannon"};
-				magazines[] = {"magazine_ShipCannon_120mm_HE_shells_x32","magazine_ShipCannon_120mm_HE_guided_shells_x2","magazine_ShipCannon_120mm_HE_LG_shells_x2","magazine_ShipCannon_120mm_HE_cluster_shells_x2","magazine_ShipCannon_120mm_mine_shells_x6","magazine_ShipCannon_120mm_smoke_shells_x6","magazine_ShipCannon_120mm_AT_mine_shells_x6"};
 			};
 		};
 	};
@@ -2383,6 +2705,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -2529,6 +2855,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -2635,6 +2965,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -2915,6 +3249,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3064,6 +3402,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -3154,6 +3496,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3239,6 +3585,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3324,6 +3674,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3409,6 +3763,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 6);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 6);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 6);
+			mag_xx(30rnd_556x45_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_AP, 6);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 6);
 		};
 		class TransportWeapons
 		{
@@ -3497,6 +3855,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -3586,6 +3948,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -4091,6 +4457,10 @@ class CfgVehicles
 			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
 			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
 			mag_xx(M41_Twin_HEAT, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 2);
 		};
@@ -4901,7 +5271,7 @@ class CfgVehicles
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 200;
+        maximumLoad = 150;
     };
 	
 	class MEU_ILCS_ANPRC_515: OPTRE_ANPRC_515
@@ -4916,6 +5286,21 @@ class CfgVehicles
         tf_hasLRradio = 1;
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\como_pack_black_co.paa"};
         maximumLoad = 250;
+    };
+	
+	class MEU_ILCS_Recon: OPTRE_ILCS_Rucksack_Black
+    {
+        displayName = "[1stMEU] ILCS Recon";
+		picture = "\OPTRE_weapons\backpacks\icons\como_pack.paa";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 30000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+		model = "\A3\weapons_f\empty";
+        maximumLoad = 0;
     };
 	
 	class MEU_Marine_ANPRC_521: OPTRE_ANPRC_521_Green
@@ -4934,7 +5319,7 @@ class CfgVehicles
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 150;
+        maximumLoad = 100;
 	};
 	
     class MEU_Woodland_ANPRC_521: OPTRE_ANPRC_521_green
@@ -4953,7 +5338,7 @@ class CfgVehicles
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 150;
+        maximumLoad = 100;
 	};
 	
     class MEU_Arctic_ANPRC_521: OPTRE_ANPRC_521_green
@@ -4972,7 +5357,7 @@ class CfgVehicles
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 150;
+        maximumLoad = 100;
 	};
 	
     class MEU_Desert_ANPRC_521: OPTRE_ANPRC_521_green
@@ -4991,7 +5376,7 @@ class CfgVehicles
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 150;
+        maximumLoad = 100;
 	};
 	
     class MEU_EvoUrb_ANPRC_521: OPTRE_ANPRC_521_green
@@ -5010,7 +5395,7 @@ class CfgVehicles
         tf_range = 30000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 150;
+        maximumLoad = 100;
 	};
 	
 	class MEU_ILCS_ANPRC_521: OPTRE_ANPRC_521_green
@@ -5165,7 +5550,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Basic Rucksack (Desert)";
-        maximumLoad = 150;
+        maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
@@ -5191,7 +5576,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Desert)";
-        maximumLoad = 300;
+        maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
@@ -5204,7 +5589,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Basic Rucksack (Arctic)";
-        maximumLoad = 150;
+        maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
@@ -5230,7 +5615,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Arctic)";
-        maximumLoad = 300;
+        maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
@@ -5243,7 +5628,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Basic Rucksack (Woodland)";
-        maximumLoad = 150;
+        maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
@@ -5269,7 +5654,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Woodland)";
-        maximumLoad = 300;
+        maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
@@ -5282,7 +5667,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Basic Rucksack (Evolved/Urban)";
-        maximumLoad = 150;
+        maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
@@ -5308,7 +5693,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Evolved/Urban)";
-        maximumLoad = 300;
+        maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
@@ -5321,7 +5706,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Basic Rucksack (Marine)";
-        maximumLoad = 150;
+        maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
@@ -5347,7 +5732,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Marine)";
-        maximumLoad = 300;
+        maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
@@ -8958,7 +9343,6 @@ class CfgVehicles
     };
     
      class 1stMEU_CTF_Flag_VulcanHQ : OPTRE_CTF_Flag_Base
-         
     {   author = "Romeo" 
         scope = 2;
         scopeCurator = 2;
@@ -9175,6 +9559,173 @@ class CfgVehicles
         simulation = "house";
         side = 4;
     };
+//logey box
+   class logey_Box : House 
+   {
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "Objects";
+        scope = 2;
+        scopeCurator = 2;
+        displayName = "Logey's Cereal Box";
+        model = "first_meu_aux\data\logeyBOX.p3d";
+   };
+    class Land_LargeLandingPad_Snow: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Landing Platform Large [Snow]";
+		author = "Big_Wilk";
+		model = "OPTRE_BW_Buildings\LargeLandingPad\Land_LargeLandingPad_Snow";
+	};
+    class Land_ModularOutPostBuildingEmpty: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Modular Barracks Empty";
+		editorCategory = "OPTRE_ArcticResearchStation";
+		editorSubcategory = "OPTRE_ARS_BGB";
+		model = "OPTRE_BW_Buildings\ModularBuilding\ModularOutPostBuildingEmpty.p3d";
+    };
+    class Land_ModularOutPostBuildingQuaters: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Modular Barracks Quaters";
+		editorCategory = "OPTRE_ArcticResearchStation";
+		editorSubcategory = "OPTRE_ARS_BGB";
+		model = "OPTRE_BW_Buildings\ModularBuilding\ModularOutPostBuildingQuaters.p3d";
+    };
+    class Land_vehiclelift_tan: House_F
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "Vehicle Lift";
+		author = "Article 2 Studios";
+		model = "\OPTRE_BW_Buildings\VehicleLift\vehiclelift_tan";
+		destructbuilding = 0;
+		mapSize = 35.54;
+		icon = "iconObject_2x1";
+		armor = 999999;
+		armorStructural = 999;
+		editorCategory = "OPTRE_ArcticResearchStation";
+		editorSubcategory = "OPTRE_ARS_BGB";
+    };
+    class OPTRE_holo_corvette: House_F
+	{
+		dlc = "OPTRE";
+		model = "\OPTRE_Misc\holo\holo_corvette.p3d";
+		vehicleClass = "OPTRE_City_Objects_class";
+		armor = 999999;
+		armorStructural = 999;
+		scope = 2;
+		displayName = "Corvette (Holo)";
+		editorCategory = "OPTRE_EditorCategory_Objects";
+		editorSubcategory = "OPTRE_EditorSubcategory_Objects_Civilian";
+	};
+	class OPTRE_holo_longsword: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\longsword_0.001.p3d";
+		displayName = "Longsword (Holo)";
+	};
+	class OPTRE_holo_pelican: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\pelican_0.001.p3d";
+		displayName = "Pelican (Holo)";
+	};
+	class OPTRE_holo_bison: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\bison_0.001.p3d";
+		displayName = "Bison (Holo)";
+	};
+	class OPTRE_holo_elephant: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\elephant_0.001.p3d";
+		displayName = "Elephant (Holo)";
+	};
+	class OPTRE_holo_falcon: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\falcon_0.001.p3d";
+		displayName = "Falcon (Holo)";
+	};
+	class OPTRE_holo_hornet: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\hornet_0.001.p3d";
+		displayName = "Hornet (Holo)";
+	};
+	class OPTRE_holo_scorpion: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\scorpion_0.001.p3d";
+		displayName = "Scorpion (Holo)";
+	};
+	class OPTRE_holo_warthog: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\warthog_0.001.p3d";
+		displayName = "Warthog (Holo)";
+	};
+	class OPTRE_holo_data_chip: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\data_chip_holo.p3d";
+		displayName = "Data Chip (Holo)";
+	};
+	class OPTRE_Holo_eridanus: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\Holo_eridanus.p3d";
+		displayName = "Eridanus Star System (Holo)";
+	};
+	class OPTRE_AI_Ball: OPTRE_holo_corvette
+	{
+		dlc = "OPTRE";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		model = "\OPTRE_Misc\holo\AI_ball.p3d";
+		displayName = "AI Ball";
+	};
+
     /*labomba
     class SensorTemplatePassiveRadar;
     class SensorTemplateActiveRadar;

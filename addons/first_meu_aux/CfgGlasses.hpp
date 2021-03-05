@@ -11,7 +11,7 @@ class CfgGlasses
     {
         scope = 2;
         scopeArsenal = 2;
-        displayname = "Praetorian Shemagh (Olive) (Mark)";
+        displayname = "[1stMEU] Praetorian Shemagh (Olive) (Mark)";
         CBRN_protectionLevel = "1 + 2 + 4";
         ACE_Resistance = 2;
         ACE_Protection = 1;
