@@ -123,7 +123,6 @@ class CfgVehicles
     class plp_ctf_SafetyBarrelBlue;
     class Land_OPTRE_barrel_hydrogen;
     class CBRN_putMaskOn;
-    class RHS_C130J;
         
     //chemwar
 	class CAManBase: Man
@@ -236,58 +235,6 @@ class CfgVehicles
         mass = 20
     };
     // end meds
-	class MEU_AWACS : RHS_C130J
-    {
-        scope = 2;
-		scopeArsenal = 2;
-		scopeCurator = 2;
-        author = "1st MEU Mark";
-        displayName = "[1stMEU] AWACS [WIP]";
-        tf_isolatedAmount = 0.80;
-        tf_encryptionCode = "tf_west_radio_code";
-        tf_dialog = "anarc210_radio_dialog";
-        tf_subtype = "digital_lr";
-        tf_range = 80000;
-        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
-        tf_hasLRradio = 1;
-        editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_fix";
-        crew = "B_UAV_AI";
-        class Components: Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class SomeRadarSensorComponent
-					{
-						componentType = "ActiveRadarSensorComponent";
-						class AirTarget		// ranges for targets with sky background
-						{
-							minRange	= 120000;	// minimum possible range in meters
-							maxRange	= 120000;	// maximum possible range in meters
-							objectDistanceLimitCoef	= -1; // range not limited by obj. view distance
-							viewDistanceLimitCoef	= -1; // range not limited by view distance
-						};
-						class GroundTarget	// ranges for targets with ground background
-						{
-							minRange = 500;
-							maxRange = 80000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef 	= -1;
-						};
-						typeRecognitionDistance = 10000; // distance how far the target type gets recognized
-						angleRangeHorizontal 	= 60;	// sensor azimuth coverage in degrees
-						angleRangeVertical 		= 60;	// sensor elevation coverage in degrees
-						groundNoiseDistanceCoef = 0.5;	// portion of sensor-target-ground distance below which the targets become invisible to the sensor
-						maxGroundNoiseDistance 	= 250;	// distance from the ground in meters, hard cap, above which the target will be visible even if still below groundNoiseDistanceCoef
-						minSpeedThreshold 		= 0;	// target speed in m/s above which the target will start to become visible
-						maxSpeedThreshold 		= 45;	// target speed above which the target becomes visible even if below groundNoiseDistanceCoef, linearly decreases to minSpeedThreshold
-					};
-				};
-			};
-		};
-    };
     class MEU_SCORPION: VES_M808B_MBT
 	{
 		scope = 2;
@@ -4661,7 +4608,6 @@ class CfgVehicles
             mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
             mag_xx(3Rnd_HE_Grenade_shell, 2);
             mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 4);
-            mag_xx(rhs_charge_tnt_x2_mag, 2);
 			mag_xx(M41_Twin_HEAT_WireGuided, 1);
             mag_xx(OPTRE_100Rnd_95x40_Box_JHPT, 2);
             mag_xx(OPTRE_100Rnd_127x99_M250HMG, 1);

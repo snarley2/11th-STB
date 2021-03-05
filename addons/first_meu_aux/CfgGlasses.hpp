@@ -62,4 +62,28 @@ class CfgGlasses
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COBR_ODST.paa"};
     };
+    class ODST_Shemagh_Olive_dp : ODST_Shemagh_Olive
+    {
+        scope = 1;
+        scopearsenal = 1;
+        CBRN_protectionLevel = "1";
+    };
+    class ODST_Shemagh_Urban_dp : ODST_Shemagh_Urban
+    {
+        scope = 1;
+        scopearsenal = 1;
+        CBRN_protectionLevel = "1";
+    };
+    class ODST_Shemagh_Tan_dp : ODST_Shemagh_Tan
+    {
+        scope = 1;
+        scopearsenal = 1;
+        CBRN_protectionLevel = "1";
+    };
+    class ODST_Shemagh_Brown_dp : ODST_Shemagh_Brown
+    {
+        scope = 1;
+        scopearsenal = 1;
+        CBRN_protectionLevel = "1";
+    };
 };
