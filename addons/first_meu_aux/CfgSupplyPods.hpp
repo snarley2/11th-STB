@@ -330,9 +330,9 @@ class OPTRE_Ammo_SupplyPod_ATLauncher: OPTRE_Ammo_SupplyPod_Empty
         mag_xx(OPTRE_1Rnd_50x137_PEN, 5);
         mag_xx(OPTRE_1Rnd_50x137_THERMO, 5);
 		mag_xx(M41_Twin_HEAT, 8);
-		mag_xx(M41_Twin_HEAT_WireGuided, 4);
-        mag_xx(M41_Twin_HEAT_WireGuided, 4);
-        mag_xx(M41_Twin_HEAT_HeatSeeking, 8);
+		mag_xx(M41_Twin_HEAP, 4);
+        mag_xx(M41_Twin_HEAT_WireGuided, 8);
+        mag_xx(M41_Twin_HEAT_HeatSeeking, 4);
 	};
 	class TransportWeapons
 	{
