@@ -19,6 +19,10 @@ class CfgGlasses
         ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
         ace_overlayCracked = "first_meu_aux\Data\misc\hud_mork.paa";
         mass = 4;
+		class EventHandlers
+		{
+		Dammaged = " _dude = _this select 0; _loc = _this select 1; _ammo = _this select 6; _facewear = (goggles _dude); _cal = ( getNumber (configfile >> 'CfgAmmo' >> typeof _ammo >> 'caliber') ); if (_cal > 2 && _loc == 'head' && isClass (configFile >> 'cfgglasses' >> _facewear + '_dp')) then {_rand = selectrandom[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; if (_rand == 5) then { _facewear = (goggles _dude); _dude addGoggles  (_facewear + '_dp');};};"
+		};
     };
     //lol glasses
     // CBRN Shemaghs
@@ -33,6 +37,10 @@ class CfgGlasses
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_CO_ODST.paa"};
+		class EventHandlers
+		{
+		Dammaged = " _dude = _this select 0; _loc = _this select 1; _ammo = _this select 6; _facewear = (goggles _dude); _cal = ( getNumber (configfile >> 'CfgAmmo' >> typeof _ammo >> 'caliber') ); if (_cal > 2 && _loc == 'head' && isClass (configFile >> 'cfgglasses' >> _facewear + '_dp')) then {_rand = selectrandom[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; if (_rand == 5) then { _facewear = (goggles _dude); _dude addGoggles  (_facewear + '_dp');};};"
+		};
     };
     class ODST_Shemagh_Urban : LM_OPCAN_URB_UP_Shemagh
     {
@@ -45,6 +53,10 @@ class CfgGlasses
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COB_ODST.paa"};
+		class EventHandlers
+		{
+		Dammaged = " _dude = _this select 0; _loc = _this select 1; _ammo = _this select 6; _facewear = (goggles _dude); _cal = ( getNumber (configfile >> 'CfgAmmo' >> typeof _ammo >> 'caliber') ); if (_cal > 2 && _loc == 'head' && isClass (configFile >> 'cfgglasses' >> _facewear + '_dp')) then {_rand = selectrandom[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; if (_rand == 5) then { _facewear = (goggles _dude); _dude addGoggles  (_facewear + '_dp');};};"
+		};
 	};
     class ODST_Shemagh_Tan : LM_OPCAN_DES_UP_Shemagh
     {
@@ -57,6 +69,10 @@ class CfgGlasses
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COD_ODST.paa"};
+		class EventHandlers
+		{
+		Dammaged = " _dude = _this select 0; _loc = _this select 1; _ammo = _this select 6; _facewear = (goggles _dude); _cal = ( getNumber (configfile >> 'CfgAmmo' >> typeof _ammo >> 'caliber') ); if (_cal > 2 && _loc == 'head' && isClass (configFile >> 'cfgglasses' >> _facewear + '_dp')) then {_rand = selectrandom[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; if (_rand == 5) then { _facewear = (goggles _dude); _dude addGoggles  (_facewear + '_dp');};};"
+		};
     };
     class ODST_Shemagh_Brown : LM_OPCAN_BRW_UP_Shemagh
     {
@@ -69,6 +85,10 @@ class CfgGlasses
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COBR_ODST.paa"};
+		class EventHandlers
+		{
+		Dammaged = " _dude = _this select 0; _loc = _this select 1; _ammo = _this select 6; _facewear = (goggles _dude); _cal = ( getNumber (configfile >> 'CfgAmmo' >> typeof _ammo >> 'caliber') ); if (_cal > 2 && _loc == 'head' && isClass (configFile >> 'cfgglasses' >> _facewear + '_dp')) then {_rand = selectrandom[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; if (_rand == 5) then { _facewear = (goggles _dude); _dude addGoggles  (_facewear + '_dp');};};"
+		};
     };
     class ODST_Shemagh_Olive_dp : ODST_Shemagh_Olive
     {
