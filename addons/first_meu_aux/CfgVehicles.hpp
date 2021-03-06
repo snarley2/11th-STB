@@ -4978,7 +4978,6 @@ class CfgVehicles
             mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
             mag_xx(3Rnd_HE_Grenade_shell, 2);
             mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 4);
-			mag_xx(M41_Twin_HEAT_WireGuided, 1);
             mag_xx(OPTRE_100Rnd_95x40_Box_JHPT, 2);
             mag_xx(OPTRE_100Rnd_127x99_M250HMG, 1);
             mag_xx(MEU_c7_remote_throwable_Mag, 4);
@@ -4987,8 +4986,8 @@ class CfgVehicles
             mag_xx(MEU_C168_Mag, 1);
             mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,100);
             mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
-            mag_xx(M41_Twin_HEAT_WireGuided, 2);
-            mag_xx(M41_Twin_HEAT_HeatSeeking, 2);
+            mag_xx(M41_Twin_HEAT_WireGuided, 1);
+            mag_xx(M41_Twin_HEAT_HeatSeeking, 1);
             delete _xx_OPTRE_ELB47_Strobe;
             delete _xx_OPTRE_M8_Flare;
             delete _xx_OPTRE_M2_Smoke_Purple;
