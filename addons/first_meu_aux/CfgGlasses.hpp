@@ -29,6 +29,8 @@ class CfgGlasses
         scopeArsenal = 2;
         scopeCurator = 2;
         CBRN_protectionLevel = "1 + 2 + 4";
+		ACE_Resistance = 2;
+        ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_CO_ODST.paa"};
     };
@@ -38,7 +40,9 @@ class CfgGlasses
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        CBRN_protectionLevel = "1 + 2 + 4";
+        CBRN_protectionLevel = "1 + 2 + 4";        
+		ACE_Resistance = 2;
+        ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COB_ODST.paa"};
 	};
@@ -48,7 +52,9 @@ class CfgGlasses
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        CBRN_protectionLevel = "1 + 2 + 4";
+        CBRN_protectionLevel = "1 + 2 + 4";        
+		ACE_Resistance = 2;
+        ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COD_ODST.paa"};
     };
@@ -59,6 +65,8 @@ class CfgGlasses
         scopeArsenal = 2;
         scopeCurator = 2;
         CBRN_protectionLevel = "1 + 2 + 4";
+		ACE_Resistance = 2;
+        ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\Shemagh_COBR_ODST.paa"};
     };
