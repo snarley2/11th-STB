@@ -75,7 +75,7 @@ class RscDisplayLoading {
 					y = SafeZoneY;
 					h = SafeZoneH;
 					w = SafeZoneW;
-					text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+					text = "\first_meu_aux\data\loadingscreens\startImage.jpg";
 				};
 			};
 		};
@@ -154,7 +154,7 @@ class RscDisplayStart : RscStandardDisplay {
 			y = SafeZoneY;
 			h = SafeZoneH;
 			w = SafeZoneW;
-			text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+			text = "\first_meu_aux\data\loadingscreens\startImage.jpg";
 		};
 	};
 };
