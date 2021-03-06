@@ -204,7 +204,6 @@ class OPTRE_Ammo_SupplyPod_ARBRGL: OPTRE_Ammo_SupplyPod_Empty
 	class TransportMagazines
 	{	
         mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 100);
-		mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
 		mag_xx(30rnd_556x45_mag_AP, 100);
 		mag_xx(30rnd_65x39_mag_AP, 100);
 		mag_xx(30rnd_65x39_mag_msbs_AP, 100);
@@ -212,6 +211,8 @@ class OPTRE_Ammo_SupplyPod_ARBRGL: OPTRE_Ammo_SupplyPod_Empty
 		mag_xx(3Rnd_HE_MEU_shell, 10);
 		mag_xx(1Rnd_HEDP_MEU_shell, 10);
         mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 135);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,100);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
 	};
 	class TransportWeapons
 	{
@@ -330,6 +331,8 @@ class OPTRE_Ammo_SupplyPod_ATLauncher: OPTRE_Ammo_SupplyPod_Empty
         mag_xx(OPTRE_1Rnd_50x137_THERMO, 5);
 		mag_xx(M41_Twin_HEAT, 8);
 		mag_xx(M41_Twin_HEAT_WireGuided, 4);
+        mag_xx(M41_Twin_HEAT_WireGuided, 4);
+        mag_xx(M41_Twin_HEAT_HeatSeeking, 8);
 	};
 	class TransportWeapons
 	{

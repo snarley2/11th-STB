@@ -4985,6 +4985,10 @@ class CfgVehicles
             mag_xx(MEU_c12_remote_throwable_Mag, 2);
             mag_xx(MEU_9bang_Mag, 2);
             mag_xx(MEU_C168_Mag, 1);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,100);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
+            mag_xx(M41_Twin_HEAT_WireGuided, 2);
+            mag_xx(M41_Twin_HEAT_HeatSeeking, 2);
             delete _xx_OPTRE_ELB47_Strobe;
             delete _xx_OPTRE_M8_Flare;
             delete _xx_OPTRE_M2_Smoke_Purple;
