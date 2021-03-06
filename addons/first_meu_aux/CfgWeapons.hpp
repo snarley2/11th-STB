@@ -334,7 +334,17 @@ class CfgWeapons
             mass = 0.5;
         };
     };
-	
+	class MEU_Suit_Sealant : OPTRE_Medigel
+	{
+		scope = 2;
+        displayName = "[1st MEU] Flex Seal";
+		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
+		model = "\OPTRE_Weapons\items\Medigel.p3d";
+        class ItemInfo: ItemInfo
+		{
+			mass = 2;
+        };
+	};
 	
 // Medical Items End
 // Armor Base Values
