@@ -3972,7 +3972,7 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         editorCategory = "MEU_cat_A";
-        transportSoldier = 16;
+        transportSoldier = 14;
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range=30000;
