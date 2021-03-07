@@ -121,20 +121,19 @@ class ACE_Medical_Treatment_Actions
 		callbackStart = "";
 		callbackSuccess = "MEU_fnc_medkit";
 	};
-		class MEU_Suit_Sealant: OPTRE_Medigel
+		class MEU_Suit_Sealant: Morphine
 	{
 		displayName = "Flex Seal";
 		displayNameProgress = "Thats a lot of damage!";
 		icon = "";
+		condition = "";
 		consumeItem = 1;
-        treatmentTime = 5;
+        treatmentTime = 3;
 		medicRequired = 0;
 		allowSelfTreatment = 1;
         allowedSelections[] = {"Head"};
 		items[] = {"MEU_Suit_Sealant"};
-		callbackStart = "";
-		callbackSuccess = '_wear= goggles _this;_findit = ["Marks_Aviators_dp","ODST_Shemagh_Olive_dp","ODST_Shemagh_Urban_dp","ODST_Shemagh_Tan_dp","ODST_Shemagh_Brown_dp"] find _wear;_selected = ["Marks_Aviators","ODST_Shemagh_Olive","ODST_Shemagh_Urban","ODST_Shemagh_Tan","ODST_Shemagh_Brown"] select _findit;	_this addGoggles _selected;';
+		category = "medication";
+		callbackSuccess = "_this execVM 'first_meu_aux\Functions\fn_flexseal.sqf'";
 	};
-	
-	
 };
