@@ -5596,7 +5596,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Desert)";
-        maximumLoad = 250;
+        maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
@@ -5635,7 +5635,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Arctic)";
-        maximumLoad = 250;
+        maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
@@ -5674,7 +5674,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Woodland)";
-        maximumLoad = 250;
+        maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
@@ -5713,7 +5713,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Evolved/Urban)";
-        maximumLoad = 250;
+        maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
@@ -5752,7 +5752,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[1stMEU] UNSC Corpsman Rucksack (Marine)";
-        maximumLoad = 250;
+        maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
