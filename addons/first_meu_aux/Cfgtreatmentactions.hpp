@@ -121,4 +121,18 @@ class ACE_Medical_Treatment_Actions
 		callbackStart = "";
 		callbackSuccess = "MEU_fnc_medkit";
 	};
+		class MEU_Suit_Sealant: Morphine
+	{
+		displayName = "Flex Seal";
+		displayNameProgress = "Thats a lot of damage!";
+		icon = "";
+		condition = "";
+		consumeItem = 1;
+        treatmentTime = 3;
+		allowSelfTreatment = 1;
+        allowedSelections[] = {"Head"};
+		items[] = {"MEU_Suit_Sealant"};
+		category = "medication";
+		callbackSuccess = "_this execVM 'first_meu_aux\Functions\fn_flexseal.sqf'";
+	};
 };

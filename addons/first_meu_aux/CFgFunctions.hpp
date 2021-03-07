@@ -50,10 +50,11 @@ class CfgFunctions
 			{
                 file = "first_meu_aux\Functions\Bubbleshield_throw.sqf";
 			};
-			class brokenhud
+			class flexseal
 			{
-                file = "first_meu_aux\Functions\brokenhud.sqf";
+                file = "first_meu_aux\Functions\fn_flexseal.sqf";
 			};
+			
         };
         class fnc_tourniquetRemove
         {

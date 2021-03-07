@@ -334,7 +334,17 @@ class CfgWeapons
             mass = 0.5;
         };
     };
-	
+	class MEU_Suit_Sealant : OPTRE_Medigel
+	{
+		scope = 2;
+        displayName = "[1st MEU] Flex Seal";
+		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
+		model = "\OPTRE_Weapons\items\Medigel.p3d";
+        class ItemInfo: ItemInfo
+		{
+			mass = 2;
+        };
+	};
 	
 // Medical Items End
 // Armor Base Values
@@ -2391,7 +2401,7 @@ class CfgWeapons
 		scope = 1;
 	};	
     //no more 1st
-    class MEU_Mar_Helm_MAR_dp : MEU_Mar_Helm_MAR
+    class MEU_Mar_Helm_base_L_dp : MEU_Mar_Helm_MAR
 	{
 		scopeArsenal = 1;
 		scope = 1;
@@ -2401,27 +2411,27 @@ class CfgWeapons
 		scopeArsenal = 1;
 		scope = 1;
 	};
-    class MEU_Mar_Helm_DES_dp : MEU_Mar_Helm_DES
+    class MEU_Mar_Helm_DES_L_dp : MEU_Mar_Helm_DES
 	{
 		scopeArsenal = 1;
 		scope = 1;
 	};
-    class MEU_Mar_Helm_CEA_dp : MEU_Mar_Helm_CEA
+    class MEU_Mar_Helm_CEA_L_dp : MEU_Mar_Helm_CEA
 	{
 		scopeArsenal = 01;
 		scope = 1;
 	};
-    class MEU_Mar_Helm_SNO_dp : MEU_Mar_Helm_SNO
+    class MEU_Mar_Helm_SNO_L_dp : MEU_Mar_Helm_SNO
 	{
 		scopeArsenal = 1;
 		scope = 1;
 	};
-    class MEU_Mar_Helm_URB_dp : MEU_Mar_Helm_URB
+    class MEU_Mar_Helm_URB_L_dp : MEU_Mar_Helm_URB
 	{
 		scopeArsenal = 1;
 		scope = 1;
 	};
-    class MEU_Mar_Helm_WDL_dp : MEU_Mar_Helm_WDL
+    class MEU_Mar_Helm_WDL_L_dp : MEU_Mar_Helm_WDL
 	{
 		scopeArsenal = 1;
 		scope = 1;

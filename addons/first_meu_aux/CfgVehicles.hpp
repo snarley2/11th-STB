@@ -22,6 +22,7 @@ class CfgVehicles
     class B_UGV_01_rcws_F;
     class O_APC_Tracked_02_cannon_ghex_F;
     class O_APC_Tracked_02_AA_F;
+    class O_T_MBT_04_command_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -136,7 +137,9 @@ class CfgVehicles
     class Land_OPTRE_barrel_hydrogen;
     class CBRN_putMaskOn;
     class NewTurret;
-        
+    class Optics_Commander_02;
+    class Optics_Gunner_MBT_03;
+    
     //chemwar
 	class CAManBase: Man
 	{
@@ -613,10 +616,24 @@ class CfgVehicles
 				body = "mainTurret";
 				gun = "mainGun";
 				weapons[] = {"MEU_Railgun","Laserdesignator_mounted","SmokeLauncher"};
-				magazines[] = {"MEU_Railgun_Slug","MEU_Railgun_Slug","Laserbatteries"};
+				magazines[] = {"MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","Laserbatteries"};
 
 			};
         };
+    };
+    class MEU_T140K_Koslovic: O_T_MBT_04_command_F
+    {
+        side = 0;
+        displayName = "(1stMEU) T-140K (Koslovic)";
+        scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        crew = "LM_OPCAN_KOS_Rifleman";
+        faction = "MEU_Insurrectionist";
+        editorCategory = "MEU_cat_A";
+        editorsubCategory = "MEU_sub_arm";
+        hiddenSelections[] = {"Camo1","Camo2","CamoNet"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Armata_04_exterior_1_CO.paa","first_meu_aux\data\vehicles\Armata_04_exterior_2_CO.paa"};
     };
 	
 	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
