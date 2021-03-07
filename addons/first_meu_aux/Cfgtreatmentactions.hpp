@@ -129,7 +129,6 @@ class ACE_Medical_Treatment_Actions
 		condition = "";
 		consumeItem = 1;
         treatmentTime = 3;
-		medicRequired = 0;
 		allowSelfTreatment = 1;
         allowedSelections[] = {"Head"};
 		items[] = {"MEU_Suit_Sealant"};
