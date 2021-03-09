@@ -1222,7 +1222,14 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
         };
     };
-	
+    
+    class MEU_Mar_Helm_MAR_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
     class MEU_Mar_Helm_DES : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -1235,6 +1242,14 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
+    };
+    
+    class MEU_Mar_Helm_DES_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+
     };
 	
     class MEU_Mar_Helm_CEA : 1MEU_Base_CH252_Helmet
@@ -1250,6 +1265,13 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    
+    class MEU_Mar_Helm_CEA_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
 	
     class MEU_Mar_Helm_SNO : 1MEU_Base_CH252_Helmet
     {
@@ -1263,6 +1285,13 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
+    };
+    
+    class MEU_Mar_Helm_SNO_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
    
 	class MEU_Mar_Helm_URB : 1MEU_Base_CH252_Helmet
@@ -1278,6 +1307,14 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    
+    class MEU_Mar_Helm_URB_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
     class MEU_Mar_Helm_WDL : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -1291,6 +1328,14 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    
+    class MEU_Mar_Helm_WDL_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_H_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
 	//5th plt helmets 
 	class MEU_Mar_MOS_Helm_Sealed_Base: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2410,6 +2455,7 @@ class CfgWeapons
 	{
 		scopeArsenal = 1;
 		scope = 1;
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\V_CH252_MAR_H_Euler_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
     class MEU_Mar_Helm_DES_L_dp : MEU_Mar_Helm_DES
 	{
@@ -2536,6 +2582,13 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    
+    class MEU_Mar_MOS_Helm_BASE_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
 	
     class MEU_Mar_MOS_Helm_DES : 1MEU_Base_CH252_Helmet
     {
@@ -2549,6 +2602,13 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
+    };
+    
+    class MEU_Mar_MOS_Helm_DES_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 	
     class MEU_Mar_MOS_Helm_CEA : 1MEU_Base_CH252_Helmet
@@ -2565,6 +2625,13 @@ class CfgWeapons
 		};
     };
 	
+    class MEU_Mar_MOS_Helm_CEA_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_CEA_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
     class MEU_Mar_MOS_Helm_SNO : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -2577,6 +2644,13 @@ class CfgWeapons
 		{
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
+    };
+    
+    class MEU_Mar_MOS_Helm_SNO_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_SNO_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
     };
 	
 	class MEU_Mar_MOS_Helm_URB : 1MEU_Base_CH252_Helmet
@@ -2592,6 +2666,13 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    
+    class MEU_Mar_MOS_Helm_URB_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_URB_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
 	
     class MEU_Mar_MOS_Helm_WDL : 1MEU_Base_CH252_Helmet
     {
@@ -2606,6 +2687,14 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
 		};
     };
+    
+    class MEU_Mar_MOS_Helm_WDL_dp : 1MEU_Base_CH252_Helmet
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_WDL_M_CO","optre_unsc_units\army\data\helmet_visor_ca"};
+    };
+    
     class MEU_RTO_Helm_base : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -20808,4 +20897,3 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		modelOptics = "-";
 	};
 };
-											 
