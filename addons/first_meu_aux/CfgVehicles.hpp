@@ -24,9 +24,10 @@ class CfgVehicles
     class O_APC_Tracked_02_AA_F;
     class O_T_MBT_04_command_F;
     class O_MBT_02_cannon_F;
-    class O_LSV_02_armed_F;
-    class O_LSV_02_unarmed_F;
-    class O_LSV_02_AT_F;
+    class I_LT_01_AA_F;
+    class I_LT_01_Scout_F;
+    class I_LT_01_AT_F;
+    class I_LT_01_Cannon_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -626,134 +627,114 @@ class CfgVehicles
 			};
         };
     };
-    class MEU_T140K_Koslovic: O_T_MBT_04_command_F
-    {
-        author = "Romeo";
-        side = 0;
-        displayName = "[1stMEU] T-140K (Koslovic)";
-        scope = 2;
+    class MEU_Nyx_AA_Koslovic : I_LT_01_AA_F
+	{
+		author = "Romeo";
+		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        crew = "LM_OPCAN_KOS_Crewman";
-        faction = "MEU_Insurrectionist";
         editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_arm";
-        hiddenSelections[] = {"Camo1","Camo2","CamoNet"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Armata_04_exterior_1_CO.paa","first_meu_aux\data\vehicles\Armata_04_exterior_2_CO.paa"};
-    };
-    class MEU_Scamper_Koslovic: O_MBT_02_cannon_F
-    {
-        author = "Romeo";
+        editorsubCategory = "MEU_sub_ifv";
 		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] Scamper (Koslovic)";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-        editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_arm";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Scamper_Body.paa","first_meu_aux\data\vehicles\Scamper_Gun.paa","first_meu_aux\data\vehicles\Scamper_Back.paa"};
+		faction = "MEU_Insurrectionist";
+		displayName = "Weasel (AA)";
 		crew = "LM_OPCAN_KOS_Crewman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class SU_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Scamper_Body.paa","first_meu_aux\data\vehicles\Scamper_Gun.paa","first_meu_aux\data\vehicles\Scamper_Back.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-    class MEU_Gopher_Koslovic: O_LSV_02_unarmed_F
+    class MEU_Nyx_AT_Koslovic : I_LT_01_AT_F
 	{
 		author = "Romeo";
-		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] M121 Gopher (Koslovic)";
 		scope = 2;
 		scopeCurator = 2;
-		scopeArsenal = 2;
+        scopeArsenal = 2;
         editorCategory = "MEU_cat_A";
-		editorsubCategory = "MEU_sub_car";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-		crew = "LM_OPCAN_KOS_Rifleman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+        editorsubCategory = "MEU_sub_ifv";
+		side = 0;
+		faction = "MEU_Insurrectionist";
+		displayName = "Weasel (AT)";
+		crew = "LM_OPCAN_KOS_Crewman";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class SU_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-	class MEU_Gopher_Koslovic_HMG: O_LSV_02_armed_F
+    class MEU_Nyx_Cannon_Koslovic : I_LT_01_Cannon_F
 	{
 		author = "Romeo";
-		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] M121 Gopher HMG (Koslovic)";
 		scope = 2;
 		scopeCurator = 2;
-		scopeArsenal = 2;
+        scopeArsenal = 2;
         editorCategory = "MEU_cat_A";
-		editorsubCategory = "MEU_sub_car";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-		crew = "LM_OPCAN_KOS_Rifleman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+        editorsubCategory = "MEU_sub_ifv";
+		side = 0;
+		faction = "MEU_Insurrectionist";
+		displayName = "Weasel (Cannon)";
+		crew = "LM_OPCAN_KOS_Crewman";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class SU_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-	class MEU_Gopher_Koslovic_AT: O_LSV_02_AT_F
+    class MEU_Nyx_Radar_Koslovic : I_LT_01_Scout_F
 	{
-		author = "J.Burgess";
-		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] M121 Gopher AT (Koslovic)";
+		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		scopeArsenal = 2;
+        scopeArsenal = 2;
         editorCategory = "MEU_cat_A";
-		editorsubCategory = "MEU_sub_car";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-		crew = "LM_OPCAN_KOS_Rifleman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+        editorsubCategory = "MEU_sub_ifv";
+		side = 0;
+		faction = "MEU_Insurrectionist";
+		displayName = "Weasel (Radar)";
+		crew = "LM_OPCAN_KOS_Crewman";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class SU_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-	
 	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
 		crewExplosionProtection = 0.5;
