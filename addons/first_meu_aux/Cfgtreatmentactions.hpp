@@ -127,7 +127,7 @@ class ACE_Medical_Treatment_Actions
 		displayNameProgress = "Thats a lot of damage!";
 		icon = "";
 		condition = "";
-		consumeItem = 1;
+		consumeItem = 0;
         treatmentTime = 3;
 		allowSelfTreatment = 1;
         allowedSelections[] = {"Head"};
