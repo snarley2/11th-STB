@@ -172,6 +172,8 @@ class ACE_Medical_Treatment
                 effectiveness = 3;
             };
         };
+        class FirstAidKit : MEU_Biofoam
+        {};
         class MEU_Medigel: OPTRE_Medigel
         {
             class Abrasion {

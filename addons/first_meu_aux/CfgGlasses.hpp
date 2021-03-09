@@ -5,6 +5,7 @@ class CfgGlasses
     class LM_OPCAN_URB_UP_Shemagh;
     class LM_OPCAN_DES_UP_Shemagh;
     class LM_OPCAN_BRW_UP_Shemagh;
+    class VES_HUD_Balaclava_Gray;
         
     //lol glasses     
     class Marks_Aviators : LM_OPCAN_Shemagh
@@ -90,6 +91,20 @@ class CfgGlasses
 		Dammaged = " _dude = _this select 0; _loc = _this select 1; _ammo = _this select 6; _facewear = (goggles _dude); _cal = ( getNumber (configfile >> 'CfgAmmo' >> typeof _ammo >> 'caliber') ); if (_cal > 2 && _loc == 'head' && isClass (configFile >> 'cfgglasses' >> _facewear + '_dp')) then {_rand = selectrandom[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; if (_rand == 5) then { _facewear = (goggles _dude); _dude addGoggles  (_facewear + '_dp');};};"
 		};
     };
+    class JTAC_Bala : VES_HUD_Balaclava_Gray
+    {
+        displayName = "[1stMEU] [JTAC] Balaclava";
+		scope = 2;
+        scopeArsenal = 2;
+        scopeCurator = 2;
+        CBRN_protectionLevel = "1 + 2 + 4";
+		ACE_Resistance = 2;
+        ACE_Protection = 1;
+        class EventHandlers
+		{
+		Dammaged = " _dude = _this select 0; _loc = _this select 1; _ammo = _this select 6; _facewear = (goggles _dude); _cal = ( getNumber (configfile >> 'CfgAmmo' >> typeof _ammo >> 'caliber') ); if (_cal > 2 && _loc == 'head' && isClass (configFile >> 'cfgglasses' >> _facewear + '_dp')) then {_rand = selectrandom[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]; if (_rand == 5) then { _facewear = (goggles _dude); _dude addGoggles  (_facewear + '_dp');};};"
+		};
+    };
     class ODST_Shemagh_Olive_dp : ODST_Shemagh_Olive
     {
         scope = 1;
@@ -119,6 +134,13 @@ class CfgGlasses
         ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
     };
     class Marks_Aviators_dp : Marks_Aviators
+    {
+        scope = 1;
+        scopearsenal = 1;
+        CBRN_protectionLevel = "1";
+        ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
+    };
+    class JTAC_Bala_dp : JTAC_Bala
     {
         scope = 1;
         scopearsenal = 1;
