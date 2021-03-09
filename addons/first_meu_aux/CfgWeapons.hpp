@@ -13415,6 +13415,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] 0-6 Squadron CO (Siffy)";
         optreVarietys[] = {"_dp","","_broken"};
+		optreHUDStyle = "ODST_1";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_6.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		class ItemInfo: ItemInfo
