@@ -256,11 +256,6 @@ class CfgFactionClasses
 		primaryLanguage = "EN";
 		backpack_tf_faction_radio_api = "OPTRE_Como_pack_2";
 	};
-    class JMM_infected_o_faction;
-    class MEU_Flood : JMM_infected_o_faction
-    {
-        displayName = "1st MEU Flood";
-    };
 };
 class CfgEditorCategories
 {

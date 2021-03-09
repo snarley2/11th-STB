@@ -67,6 +67,7 @@ class CfgVehicles
 	class OPTRE_UNSC_Rucksack_Heavy;
 	class OPTRE_UNSC_Rucksack_Medic;
 	class B_parachute;
+    class B_RadioBag_01_black_F;
 
 	//Uniforms
 	class OPTRE_UNSC_Soldier_Base;
@@ -266,7 +267,7 @@ class CfgVehicles
         displayName = "M808B Scorpion";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         faction = "MEU_UNSC";
         side = 1;
 		editorCategory = "MEU_cat_A";
@@ -388,7 +389,7 @@ class CfgVehicles
         displayName = "APC-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         transportSoldier = 16;
         faction = "MEU_UNSC";
 		side = 1;
@@ -456,7 +457,7 @@ class CfgVehicles
         displayName = "IFV-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         transportSoldier = 12;
         faction = "MEU_UNSC";
 		side = 1;
@@ -553,7 +554,7 @@ class CfgVehicles
         displayName = "[1stMEU] ARC-920 Honeybadger [WIP]";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         transportSoldier = 12;
         faction = "MEU_UNSC";
 		side = 1;
@@ -1235,7 +1236,7 @@ class CfgVehicles
 	{
 		tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
 		crewCrashProtection = 0.5;
 		crewExplosionProtection = 0.5;
 		armor = 400;
@@ -1443,7 +1444,7 @@ class CfgVehicles
         displayName = "M12 AP Warthog";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         ace_cargo_size = 10;
         faction = "MEU_UNSC";
 		side = 1;
@@ -1520,7 +1521,7 @@ class CfgVehicles
         scopeArsenal = 2;
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         ace_cargo_size = 10
         faction = "MEU_UNSC";
         side = 1;
@@ -1632,7 +1633,7 @@ class CfgVehicles
         scopeArsenal = 2;
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         ace_cargo_size = 10
         faction = "MEU_UNSC";
         side = 1;
@@ -1744,7 +1745,7 @@ class CfgVehicles
         scopeArsenal = 2;
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         ace_cargo_size = 10
         faction = "MEU_UNSC";
         side = 1;
@@ -1856,7 +1857,7 @@ class CfgVehicles
         scopeArsenal = 2;
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         ace_cargo_size = 10
         faction = "MEU_UNSC";
         side = 1;
@@ -1968,7 +1969,7 @@ class CfgVehicles
         scopeArsenal = 2;
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         ace_cargo_size = 10
         faction = "MEU_Insurrectionist";
         side = 0;
@@ -2620,7 +2621,7 @@ class CfgVehicles
         displayName = "M910 Point Defense Cannon";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
         faction = "MEU_UNSC";
 		side = 1;
         editorCategory = "MEU_cat_A";
@@ -2635,7 +2636,7 @@ class CfgVehicles
         displayName = "M910 Point Defense Cannon (inverted)";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
-		tf_range = 80000;
+		tf_range = 120000;
 		model = "\OPTRE_Corvette\weapons\pointdefense\turret_u.p3d";
 		class Turrets: Turrets
 		{
@@ -2667,7 +2668,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=80000;
+        tf_range = 120000;
         weapons[] = {"CMFlareLauncher_Singles"};
 		magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
         class pilotCamera
@@ -2719,7 +2720,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=80000;
+        tf_range = 120000;
          class UserActions
          {
         class MEU_E_Thruster
@@ -2809,7 +2810,7 @@ class CfgVehicles
         displayName = "[MEU] Pegasus Wyvern";
         armor = 350;
         damageResistance = 0.00555;
-        tf_range=80000;
+        tf_range = 120000;
         faction = "MEU_UNSC";
 		side = 1;
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
@@ -2912,7 +2913,7 @@ class CfgVehicles
         displayName = "[MEU] Pegasus Blackfish";
         armor = 1250;
         damageResistance = 0.00055;
-        tf_range=80000;
+        tf_range = 120000;
         faction = "MEU_UNSC";
 		side = 1;
         hiddenSelections[] ={
@@ -2963,7 +2964,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range = 30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3073,7 +3074,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3357,7 +3358,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3510,7 +3511,7 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         radarTargetSize = 0.1;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3604,7 +3605,7 @@ class CfgVehicles
         fuelCapacity = 200;
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3693,7 +3694,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3782,7 +3783,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3871,7 +3872,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4046,7 +4047,7 @@ class CfgVehicles
 	    	userActionID = 60;
 	    };
         };
-        tf_range=80000;
+        tf_range = 120000;
     };
 	class VES_D77HTCI_A: OPTRE_Pelican_armed
     {
@@ -4056,7 +4057,7 @@ class CfgVehicles
         transportSoldier = 14;
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4565,7 +4566,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
-        tf_range=30000;
+        tf_range = 120000;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -5077,7 +5078,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 80000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         class TransportBackpacks
@@ -5228,7 +5229,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 80000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
@@ -5259,7 +5260,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 80000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
@@ -5290,7 +5291,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 80000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
@@ -5351,9 +5352,22 @@ class CfgVehicles
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
         tf_isolatedAmount = 0.65;
-        tf_range = 70000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
+    };
+    class stukasbackpack : B_RadioBag_01_black_F
+    {
+        author = "1st MEU Mark";
+        displayName = "[1stMEU] [JTAC] Radio Pack";
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_isolatedAmount = 0.80;
+        tf_range = 200000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+        maximumLoad = 700;
     };
 	
 //	End Jump Packs
@@ -5366,7 +5380,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 100000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 1000;
@@ -5379,7 +5393,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 80000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 220;
@@ -5392,7 +5406,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 80000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 320;
@@ -5405,7 +5419,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 150;
@@ -5418,7 +5432,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\como_pack_black_co.paa"};
@@ -5433,7 +5447,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		model = "\A3\weapons_f\empty";
@@ -5453,7 +5467,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 100;
@@ -5472,7 +5486,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 100;
@@ -5491,7 +5505,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 100;
@@ -5510,7 +5524,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 100;
@@ -5529,7 +5543,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 100;
@@ -5548,7 +5562,7 @@ class CfgVehicles
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
         maximumLoad = 200;
@@ -5614,7 +5628,7 @@ class CfgVehicles
 		tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
@@ -5659,7 +5673,7 @@ class CfgVehicles
 		tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
-        tf_range = 30000;
+        tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};

@@ -13377,13 +13377,15 @@ class CfgWeapons
 
     class VX19_1stMEU : OPTRE_FC_VX19_Helmet
 	{
-                scope = 2;
-                author = "1st MEU Chaotic";
-                scopeCurator = 2;
-                scopeArsenal = 2;
-                weaponPoolAvailable = 1;
-		displayName = "[1stMEU] Pegasus VX-19";
+        scope = 2;
+        author = "1st MEU Chaotic";
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        weaponPoolAvailable = 1;
+		displayName = "[1stMEU] [JTAC] Pegasus VX-19";
 		optreVarietys[] = {"", "_broken"};
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.60;
 		hiddenSelections[] =
 		{
 			"camo",
@@ -13415,6 +13417,7 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "[1stMEU] 0-6 Squadron CO (Siffy)";
         optreVarietys[] = {"_dp","","_broken"};
+		optreHUDStyle = "ODST_1";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_6.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		class ItemInfo: ItemInfo
