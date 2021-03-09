@@ -13377,13 +13377,15 @@ class CfgWeapons
 
     class VX19_1stMEU : OPTRE_FC_VX19_Helmet
 	{
-                scope = 2;
-                author = "1st MEU Chaotic";
-                scopeCurator = 2;
-                scopeArsenal = 2;
-                weaponPoolAvailable = 1;
-		displayName = "[1stMEU] Pegasus VX-19";
+        scope = 2;
+        author = "1st MEU Chaotic";
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        weaponPoolAvailable = 1;
+		displayName = "[1stMEU] [JTAC] Pegasus VX-19";
 		optreVarietys[] = {"", "_broken"};
+        ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.60;
 		hiddenSelections[] =
 		{
 			"camo",

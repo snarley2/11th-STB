@@ -135,4 +135,15 @@ class ACE_Medical_Treatment_Actions
 		category = "medication";
 		callbackSuccess = "_this execVM 'first_meu_aux\Functions\fn_flexseal.sqf'";
 	};
+    class FirstAidKit : MEU_Biofoam
+    {
+		displayName = "First Aid Kit";
+		displayNameProgress = "not a lot";
+		icon = "";
+		condition = "";
+		consumeItem = 1;
+        treatmentTime = 5;
+		allowSelfTreatment = 1;
+		items[] = {"FirstAidKit"};
+	};
 };
