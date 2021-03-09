@@ -110,41 +110,41 @@ class CfgGlasses
         scope = 1;
         scopearsenal = 1;
         CBRN_protectionLevel = "1";
-        ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
+        ace_overlay = "first_meu_aux\Data\Misc\Cracked.paa";
     };
     class ODST_Shemagh_Urban_dp : ODST_Shemagh_Urban
     {
         scope = 1;
         scopearsenal = 1;
         CBRN_protectionLevel = "1";
-        ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
+        ace_overlay = "first_meu_aux\Data\Misc\Cracked.paa";
     };
     class ODST_Shemagh_Tan_dp : ODST_Shemagh_Tan
     {
         scope = 1;
         scopearsenal = 1;
         CBRN_protectionLevel = "1";
-        ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
+        ace_overlay = "first_meu_aux\Data\Misc\Cracked.paa";
     };
     class ODST_Shemagh_Brown_dp : ODST_Shemagh_Brown
     {
         scope = 1;
         scopearsenal = 1;
         CBRN_protectionLevel = "1";
-        ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
+        ace_overlay = "first_meu_aux\Data\Misc\Cracked.paa";
     };
     class Marks_Aviators_dp : Marks_Aviators
     {
         scope = 1;
         scopearsenal = 1;
         CBRN_protectionLevel = "1";
-        ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
+        ace_overlay = "first_meu_aux\Data\Misc\Cracked.paa";
     };
     class JTAC_Bala_dp : JTAC_Bala
     {
         scope = 1;
         scopearsenal = 1;
         CBRN_protectionLevel = "1";
-        ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
+        ace_overlay = "first_meu_aux\Data\Misc\Cracked.paa";
     };
 };
