@@ -13497,6 +13497,20 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
 		};
     };
+//iron
+    class Peg_Iron : Siffy_Helmet
+    {
+        displayName = "[1stMEU] Iron";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Iron.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Iron.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
+		};
+    };
+//iron done
     class Peg_ilithios : Siffy_Helmet
     {
         displayName = "[1stMEU] 1-3 VX-16 Ilithios";
