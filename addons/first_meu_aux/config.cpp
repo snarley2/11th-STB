@@ -146,7 +146,8 @@ class cfgPatches
             "ChemicalBarrel_CS",
             "SuperWall_01",
             "shiva_uncovered",
-            "logey_Box"
+            "logey_Box",
+			"OPTRE_Ins_URF_Rifleman_SMG"
 		};
         magazines[] = 
 		{
