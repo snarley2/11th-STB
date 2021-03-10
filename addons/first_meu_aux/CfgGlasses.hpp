@@ -97,6 +97,7 @@ class CfgGlasses
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
+        optreHUDStyle = "";
         CBRN_protectionLevel = "1 + 2 + 4";
 		ACE_Resistance = 2;
         ACE_Protection = 1;
@@ -144,6 +145,7 @@ class CfgGlasses
     {
         scope = 1;
         scopearsenal = 1;
+        optreHUDStyle = "";
         CBRN_protectionLevel = "1";
         ace_overlay = "first_meu_aux\Data\Misc\Cracked.paa";
     };

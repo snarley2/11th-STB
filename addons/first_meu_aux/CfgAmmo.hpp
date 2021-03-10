@@ -203,7 +203,6 @@ class CfgAmmo
 		CBRN_sprayWidth = 8;
 		CBRN_lifetime = 90;
 	};
-	
 	class 40mm_CS: OPAEX_40mm_Smoke
 	{
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";

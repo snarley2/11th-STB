@@ -13475,6 +13475,8 @@ class CfgWeapons
 		optreVarietys[] = {"", "_broken"};
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.60;
+        optreVarietys[] = {"_dp","","_broken"};
+        optreHUDStyle = "ODST_1";
 		hiddenSelections[] =
 		{
 			"camo",
@@ -13485,12 +13487,37 @@ class CfgWeapons
 			"\first_meu_aux\data\pegasus\h3_pilothelmet_BK.paa",
 			"\first_meu_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"
 		};
-                class ItemInfo: ItemInfo
+        class ItemInfo: ItemInfo
 		{
-			hiddenSelections[] = {"camo","camo2"};
+            hiddenSelections[] = {"camo","camo2"};
 			hiddenSelectionsTextures[] = {"\first_meu_aux\data\pegasus\h3_pilothelmet_BK.paa","\first_meu_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
 		};
 	};
+    class VX19_1stMEU_dp : VX19_1stMEU
+    {};
+    class VX19_1stMEU_broken : VX19_1stMEU
+    {};
     class Siffy_Helmet : OPTRE_UNSC_VX16_Helmet_base
     {
 		scope = 2;
@@ -14808,7 +14835,106 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 	};
 	
 // Recon End
-
+//jtac shit
+    class MEU_JTAC_Vest : MEU_M52A_NCO_Marksman_URB
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Mark";
+		displayName = "[1stMEU] [JTAC] Pegasus Plate Carrier";
+        hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+            "A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_MGThigh",
+            "AP_BR",
+            "AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+            "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
+			"optre_unsc_units\army\data\ghillie_woodland_co",
+			"optre_unsc_units\army\data\odst_armor_co"
+		};
+        class ItemInfo: ItemInfo
+		{
+            hiddenSelections[] = 
+            {
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+			"A_ODST",
+            "A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_Smoke",
+			"AP_GL",
+			"AP_MGThigh",
+            "AP_BR",
+            "AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+            };
+        };
+    };
+//jtac end
 // BDU Start
 
 	class Praetorian_BDU : U_B_CombatUniform_mcam

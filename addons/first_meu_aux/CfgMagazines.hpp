@@ -56,6 +56,7 @@ class CfgMagazines
     class OPTRE_SpLaser_Battery;
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
+    class OPTRE_16Rnd_127x40_Mag_NARQ;
     
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
 	{
@@ -1103,29 +1104,6 @@ class CfgMagazines
 		displaynameshort = "5x23mm SS Tracer";
 		descriptionShort = "60 Round Magazine<br>5x23mm<br>Sub-sonic<br>Tracers";
 	};
-	
-	class OPTRE_60Rnd_5x23mm_Mag_NARQ: OPTRE_60Rnd_5x23mm_Mag
-	{
-		dlc = "1st MEU";
-		author = "1st MEU Oneill";
-		scope = 2;
-		scopeArsenal = 2;
-		
-		initspeed = 900;
-		ammo = "OPTRE_B_127x40_NARQ";
-		displayname = "60Rnd 5x23mm NARQ Magazine";
-		displaynameshort = "5x23mm NARQ";
-		descriptionShort = "60 Round Magazine<br>5x23mm<br>Tranquilizer";
-	};
-	
-	class OPTRE_60Rnd_5x23mm_Mag_NARQT: OPTRE_60Rnd_5x23mm_Mag_NARQ
-	{
-		tracersEvery = 1;
-		displayname = "60Rnd 5x23mm NARQ Magazine (Tracer)";
-		displaynameshort = "5x23mm NARQ Tracer";
-		descriptionShort = "60 Round Magazine<br>5x23mm Tracer<br>Tranquilizer";
-	};
-	
 	class OPTRE_36Rnd_95x40_Mag_JHPT: OPTRE_36Rnd_95x40_Mag_JHP
 	{
 		dlc = "SO";
@@ -1783,9 +1761,21 @@ class CfgMagazines
 		nameSound = "cannon";
 		tracersEvery = 1;
 	};
+    class meu_sas_narq_mag : OPTRE_16Rnd_127x40_Mag_NARQ
+    {
+      author = "1st MEU Stewka";
+          scope = 2;
+          displayName = "16 Rnd NARQ ";
+          displayNameShort = "10mm NARQ";
+          count = 16;
+    };
 };
 class CfgMagazineWells
 {
+    class optre_sas10_mag
+    {
+        OPTRE_Magazines[] = {"8Rnd_10mm_EXP","16Rnd_10mm_Ball","16Rnd_10mm_AP","32Rnd_10mm_Ball","meu_sas_narq_mag"};
+    };
     class STANAG_556x45
     {
         MEU_Magazines[]=

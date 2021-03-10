@@ -5625,6 +5625,12 @@ class CfgVehicles
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
     };
 	
 	class MEU_ILCS_Ruck : OPTRE_ILCS_Rucksack_Heavy
