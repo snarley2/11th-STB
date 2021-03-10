@@ -57,7 +57,29 @@ class CfgMagazines
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     class OPTRE_16Rnd_127x40_Mag_NARQ;
-    
+    class CBRN_IEDLandSmall_Type1_Remote_Mag;
+    class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
+    class CBRN_1Rnd_82mm_Mo_Chemical_Type1;
+    class CBRN_1Rnd_82mm_Mo_Chemical_Type2;
+    // Chemicals | 0 = CS | 1 = AS | 2 = NA
+    class ChemicalBarrel_NA_mag : CBRN_1Rnd_82mm_Mo_Chemical_Type2
+    {
+		displayName = "Nerve Agent Mortar (PLP)";
+        ammo = "ChemicalBarrel_NA_ammo";
+        triggerWhenDestroyed = 1;
+    };
+    class ChemicalBarrel_AS_mag : CBRN_1Rnd_82mm_Mo_Chemical_Type1
+    {
+		displayName = "Asphyxiant Mortar (PLP)";
+        ammo = "ChemicalBarrel_AS_ammo";
+        triggerWhenDestroyed = 1;
+    };
+    class ChemicalBarrel_CS_mag : CBRN_1Rnd_82mm_Mo_Chemical_Type0
+    {
+		displayName = "Crowd Suppressant Mortar (PLP)";
+		ammo = "hemicalBarrel_CS_Ammo";
+        triggerWhenDestroyed = 1;
+    };
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
 	{
 		dlc = "OPTRE";

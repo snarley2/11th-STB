@@ -17,6 +17,9 @@ class CfgAmmo
 	class M_Titan_AT;
 	class SmokeShell;
 	class OPAEX_40mm_Smoke;
+    class Sh_82mm_AMOS_Chem_Type2;
+    class Sh_82mm_AMOS_Chem_Type1;
+    class Sh_82mm_AMOS_Chem_Type0;
 	
 	//Shotguns
 	class B_12Gauge_Pellets_Submunition;
@@ -647,4 +650,36 @@ class CfgAmmo
 		sideairFriction = 0.0;
 		suppressionRadiusHit = 30;
 	};
+    //cbrn
+    class ChemicalBarrel_NA_ammo : Sh_82mm_AMOS_Chem_Type2
+    {
+		hit = 0;
+		indirectHit = 0;
+		CBRN_isPlacedExplosive = 1;
+		CBRN_chemicalType = 2;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 30;
+		CBRN_lifetime = 120;
+	};
+    class ChemicalBarrel_AS_ammo : Sh_82mm_AMOS_Chem_Type1
+    {
+		hit = 0;
+		indirectHit = 0;
+		CBRN_isPlacedExplosive = 1;
+		CBRN_chemicalType = 1;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 30;
+		CBRN_lifetime = 120;
+	};
+    class ChemicalBarrel_CS_ammo : Sh_82mm_AMOS_Chem_Type0
+    {
+		hit = 0;
+		indirectHit = 0;
+		CBRN_isPlacedExplosive = 1;
+		CBRN_chemicalType = 0;
+		CBRN_heightOfBurst = 1;
+		CBRN_sprayWidth = 30;
+		CBRN_lifetime = 120;
+	};
+    //
 };

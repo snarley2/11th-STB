@@ -1347,6 +1347,8 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","H_Collar","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_DES_M_CO","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
 		hiddenSelectionsMaterials[] = {"V_FZ_Armor\Data\Helmets\Materials\V_CH252.rvmat","V_FZ_Armor\Data\Helmets\Materials\V_CH252_V.rvmat"};
+        ace_hearing_lowerVolume = 0.85;
+        ace_hearing_protection = 5.0;
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "OPTRE_UNSC_Units\Army\helmet_p";
@@ -13472,7 +13474,6 @@ class CfgWeapons
         scopeArsenal = 2;
         weaponPoolAvailable = 1;
 		displayName = "[1stMEU] [JTAC] Pegasus VX-19";
-		optreVarietys[] = {"", "_broken"};
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.60;
         optreVarietys[] = {"_dp","","_broken"};

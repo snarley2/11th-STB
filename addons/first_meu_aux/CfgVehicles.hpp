@@ -9503,6 +9503,7 @@ class CfgVehicles
     };
      
     // Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
+    /*
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
 	{
         author = "Romeo" 
@@ -9523,7 +9524,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\NerveAgentBarrel_co.paa"};
         class EventHandlers
         {
-            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            Killed = "[_this, "ChemicalBarrel_NA_mag", 1, 1, 0] spawn BIS_fnc_fireSupportVirtual";
         };
         class DestructionEffects
         {
@@ -9576,7 +9578,9 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\AsphyxiantBarrel_co.paa"};
         class EventHandlers
         {
-            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            Killed = "[_this, "ChemicalBarrel_AS_mag", 1, 1, 0] spawn BIS_fnc_fireSupportVirtual";
+            
         };
         class DestructionEffects
         {
@@ -9630,7 +9634,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\CrowdSuppressentBarrel_co.paa"};
         class EventHandlers
         {
-            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            Killed = "[_this, "ChemicalBarrel_CS_mag", 1, 1, 0] spawn BIS_fnc_fireSupportVirtual";
         };
         class DestructionEffects
         {
@@ -9663,7 +9668,8 @@ class CfgVehicles
             };
         };
     };
-
+    */
+//end chemwar
 	class SuperWall_01 : House
     {
         class SimpleObject
