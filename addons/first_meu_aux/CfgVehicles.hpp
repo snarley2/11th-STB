@@ -637,13 +637,13 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_ifv";
 		side = 0;
 		faction = "MEU_Insurrectionist";
-		displayName = "Weasel (AA)";
+		displayName = "[1stMEU] Weasel AA (Koslovic)";
 		crew = "LM_OPCAN_KOS_Crewman";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
-			class SU_Camo
+			class KOS_Camo
 			{
 				displayName = "KOS";
 				author = "Romeo";
@@ -664,13 +664,13 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_ifv";
 		side = 0;
 		faction = "MEU_Insurrectionist";
-		displayName = "Weasel (AT)";
+		displayName = "[1stMEU] Weasel AT (Koslovic)";
 		crew = "LM_OPCAN_KOS_Crewman";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
-			class SU_Camo
+			class KOS_Camo
 			{
 				displayName = "KOS";
 				author = "Romeo";
@@ -691,13 +691,13 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_ifv";
 		side = 0;
 		faction = "MEU_Insurrectionist";
-		displayName = "Weasel (Cannon)";
+		displayName = "[1stMEU] Weasel Cannon (Koslovic)";
 		crew = "LM_OPCAN_KOS_Crewman";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
 		class TextureSources
 		{
-			class SU_Camo
+			class KOS_Camo
 			{
 				displayName = "KOS";
 				author = "Romeo";
@@ -718,13 +718,13 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_ifv";
 		side = 0;
 		faction = "MEU_Insurrectionist";
-		displayName = "Weasel (Radar)";
+		displayName = "[1stMEU] Weasel Radar (Koslovic)";
 		crew = "LM_OPCAN_KOS_Crewman";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
 		class TextureSources
 		{
-			class SU_Camo
+			class KOS_Camo
 			{
 				displayName = "KOS";
 				author = "Romeo";
