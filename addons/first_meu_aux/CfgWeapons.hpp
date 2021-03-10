@@ -12806,7 +12806,7 @@ class CfgWeapons
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Silver_3HQ.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Silver_3HQ_Silent.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
     class Praetor_Helmet_Ender_3M_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
@@ -13419,11 +13419,11 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 3-7 CH252D Helmet (Drammon)";
+		displayName = "[1stMEU] 3-6 CH252D Helmet (Silent)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Silver_3HQ.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Silver_3HQ_Silent.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
     class Praetor_Helmet_Ender_3M: 1stMEU_Base_CH252D_Helmet
 	{
@@ -15360,17 +15360,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Yellow_41.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
-    class Praetorian_Helmet_41SL_Silent: 1stMEU_Base_CH252D_Helmet
-	{
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		displayName = "[1stMEU] 4-1 CH252D Helmet (Silent)";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Yellow_41_Silent.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
-	};
     class Praetorian_Helmet_42: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
@@ -15815,7 +15804,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D 4-1A (Ginger)";
+		displayName = "[1stMEU] M52D 4-1 (Ginger)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -15869,7 +15858,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
 			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -15978,14 +15967,6 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Yellow_41.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
-    };
-    class Praetorian_Helmet_41SL_Silent_dp : 1stMEU_Base_CH252D_Helmet_dp
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Yellow_41_Silent.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
     };
     class Praetorian_Helmet_42_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
