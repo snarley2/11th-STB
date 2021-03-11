@@ -18666,7 +18666,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
             magazines[] = {"MEU_Bubble_Mag"}; 
 			class EventHandlers
 			{
-				fired = "_this execVM 'first_meu_aux\Functions\Bubbleshield_throw.sqf'";
+				fired = "_script = _this execVM 'first_meu_aux\Functions\Bubbleshield_throw.sqf'; waitUntil { scriptDone _script }; ";
 			};
         };
     };
