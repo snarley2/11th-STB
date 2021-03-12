@@ -5533,9 +5533,10 @@ class CfgVehicles
 				displayName = "<t color='#FE2E2E'>Adjust North";
 				displayNameDefault = "<t color='#FE2E2E'>Adjust North";
 				onlyForPlayer = 1;
+		        hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_vel = velocity this; this setVelocity [0, (_vel select 1) + 5, (_vel select 2)];";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; this setVelocity [0, (_vel select 1) + 5, (_vel select 2)];";
 				textToolTip = "<t color='#FE2E2E'>Adjust North";
 			};
 			class thrustSouth
@@ -5544,9 +5545,10 @@ class CfgVehicles
 				displayName = "<t color='#FE2E2E'>Adjust South";
 				displayNameDefault = "<t color='#FE2E2E'>Adjust South";
 				onlyForPlayer = 1;
+		        hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_vel = velocity this; this setVelocity [0, (_vel select 1) -5, (_vel select 2)];";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [0, (_vel select 1) - 5, (_vel select 2)];";
 				textToolTip = "<t color='#FE2E2E'>Adjust South";
 			};
 			class thrustEast
@@ -5555,9 +5557,10 @@ class CfgVehicles
 				displayName = "<t color='#FE2E2E'>Adjust East";
 				displayNameDefault = "<t color='#FE2E2E'>Adjust East";
 				onlyForPlayer = 1;
+				hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_vel = velocity this; this setVelocity [(_vel select 0) + 5, 0, (_vel select 2)];";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [(_vel select 0) + 5, 0, (_vel select 2)];";
 				textToolTip = "<t color='#FE2E2E'>Adjust East";
 			};
 			class thrustWest
@@ -5566,9 +5569,10 @@ class CfgVehicles
 				displayName = "<t color='#FE2E2E'>Adjust West";
 				displayNameDefault = "<t color='#FE2E2E'>Adjust West";
 				onlyForPlayer = 1;
+				hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_vel = velocity this; this setVelocity [(_vel select 0) - 5, 0, (_vel select 2)];";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [(_vel select 0) - 5, 0, (_vel select 2)];";
 				textToolTip = "<t color='#FE2E2E'>Adjust West";
 			};
         };
