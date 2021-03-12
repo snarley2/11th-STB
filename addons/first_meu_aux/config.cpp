@@ -85,6 +85,8 @@ class cfgPatches
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
+           "MEU_M412_IFV_UNSC",
+           "MEU_M413_MGS_UNSC",
             "OPTRE_AV22_Sparrowhawk_Base",
             "VES_AV22_Sparrowhawk_Base_F",
             "OPTRE_UNSC_falcon",
@@ -312,7 +314,7 @@ class CfgEditorSubcategories
 	};
     class MEU_sub_rot
     {
-		displayName = "Helicopters/VTOL";
+		displayName = "Air Vehicles";
         scopeCurator = 2;
         scopeeditor = 2;
 	};

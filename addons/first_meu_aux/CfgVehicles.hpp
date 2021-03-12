@@ -28,7 +28,7 @@ class CfgVehicles
     class I_LT_01_Scout_F;
     class I_LT_01_AT_F;
     class I_LT_01_Cannon_F;
-    class O_Heli_Attack_02_black_F;
+    class O_Heli_Attack_02_dynamicLoadout_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -44,6 +44,8 @@ class CfgVehicles
 	class OPTRE_Corvette_M910_Turret;
     class OPTRE_M274_ATV;
     //class OPTRE_Longsword_Bomb;
+      class OPTRE_M412_IFV_UNSC;
+      class OPTRE_M413_MGS_UNSC;
 
 	//Base FZ Classes
 	class VES_AV22_Sparrowhawk_Base;
@@ -259,11 +261,16 @@ class CfgVehicles
         mass = 20
     };
     // end meds
-    class MEU_KajMoney : O_Heli_Attack_02_black_F
+    class MEU_KajMoney : O_Heli_Attack_02_dynamicLoadout_F
     {
+        editorCategory = "MEU_cat_A";
+        crewCrashProtection = 0.001;
+		crewExplosionProtection = 0.001;
+        armor = 250;
+        damageResistance = 0.01555;
 		scope = 2;
         scopecurator = 2;
-		displayName = '"Babushka" Kajman 2035';
+		displayName = "[MEU] 'Babushka-class' Kajman";
 		editorSubcategory = "MEU_sub_rot";
 		crewVulnerable = 0;
         transportsoldiers = 13;
@@ -641,7 +648,7 @@ class CfgVehicles
 				minTurn = -120;
 				maxTurn = 120;
 				initTurn = 0;
-				weapons[] = {"gatling_30mm","FIR_RKT_Launcher","FIR_9K121","FIR_9K121","Laserdesignator_mounted"};
+				weapons[] = {"gatling_30mm","FIR_9K121","Laserdesignator_mounted"};
 				magazines[] = {"250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","Laserbatteries","FIR_APKWS_M282_P_38rnd_M","FIR_9K121_P_8rnd_M","FIR_9K121_P_8rnd_M"};
 				canEject = 0;
 				maxHorizontalRotSpeed = 1.8;
@@ -10276,7 +10283,32 @@ class CfgVehicles
 		model = "\OPTRE_Misc\holo\AI_ball.p3d";
 		displayName = "AI Ball";
 	};
+//Vulcan Bison Re-work
+	class MEU_M412_IFV_UNSC: OPTRE_M412_IFV_UNSC
+	{
+         scope = 2;
+         scopeCurator = 2;
+         editorCategory = "MEU_cat_A";
+         editorsubCategory = "MEU_sub_ifv";
+	 displayName = "[MEU] Bison IFV";
+	 weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
+         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
+         faction = "MEU_UNSC";
+	 side = 1;
+	};
 
+	class MEU_M413_MGS_UNSC: OPTRE_M413_MGS_UNSC
+	{
+         scope = 2;
+         scopeCurator = 2;
+         editorCategory = "MEU_cat_A";
+         editorsubCategory = "MEU_sub_ifv";
+	 displayName = "[MEU] Bison MGS";
+	 weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
+         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
+         faction = "MEU_UNSC";
+	 side = 1;
+	};
     /*labomba
     class SensorTemplatePassiveRadar;
     class SensorTemplateActiveRadar;
