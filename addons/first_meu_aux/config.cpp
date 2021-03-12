@@ -151,7 +151,8 @@ class cfgPatches
             "SuperWall_01",
             "shiva_uncovered",
             "logey_Box",
-			"OPTRE_Ins_URF_Rifleman_SMG"
+			"OPTRE_Ins_URF_Rifleman_SMG",
+            "MEU_KajMoney",
 		};
         magazines[] = 
 		{
