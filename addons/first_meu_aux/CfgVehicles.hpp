@@ -5135,49 +5135,49 @@ class CfgVehicles
                 statement = "0 = [this, 0, true] spawn OPTRE_Fnc_HEVDoor; this setVariable [""OPTRE_HEV_DoorEjectedWanted"",false,true]; resetCamShake; moveOut player; player allowDamage true;";
                 onlyforplayer = 1;
             };
-			class thrusterforward
+			class thrustNorth
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Forward";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Forward";
+				displayName = "<t color='#FE2E2E'>Adjust North";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust North";
 				onlyForPlayer = 1;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterforward;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Forward";
+				statement = "_vel = velocity this; this setVelocity [0, (_vel select 1) + 5, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust North";
 			};
-			class thrusterback
+			class thrustSouth
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Rear";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Rear";
+				displayName = "<t color='#FE2E2E'>Adjust South";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust South";
 				onlyForPlayer = 1;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterback;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Rear";
+				statement = "_vel = velocity this; this setVelocity [0, (_vel select 1) -5, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust South";
 			};
-			class thrusterleft
+			class thrustEast
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Left";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Left";
+				displayName = "<t color='#FE2E2E'>Adjust East";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust East";
 				onlyForPlayer = 1;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterleft;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Left";
+				statement = "_vel = velocity this; this setVelocity [(_vel select 0) + 5, 0, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust East";
 			};
-			class thrusterright
+			class thrustWest
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Right";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Right";
+				displayName = "<t color='#FE2E2E'>Adjust West";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust West";
 				onlyForPlayer = 1;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterright;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Right";
+				statement = "_vel = velocity this; this setVelocity [(_vel select 0) - 5, 0, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust West";
 			};
         };
     };
