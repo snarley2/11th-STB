@@ -78,9 +78,15 @@ class cfgPatches
             "MEU_Arcane_IFV_Friden",
             "MEU_Arcane_APC_Friden",
             "MEU_Arcane_AA_Friden",
+            "MEU_Nyx_AT_Koslovic",
+            "MEU_Nyx_AA_Koslovic",
+            "MEU_Nyx_Cannon_Koslovic",
+            "MEU_Nyx_Radar_Koslovic",
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
+           "MEU_M412_IFV_UNSC",
+           "MEU_M413_MGS_UNSC",
             "OPTRE_AV22_Sparrowhawk_Base",
             "VES_AV22_Sparrowhawk_Base_F",
             "OPTRE_UNSC_falcon",
@@ -147,6 +153,7 @@ class cfgPatches
             "SuperWall_01",
             "shiva_uncovered",
             "logey_Box",
+<<<<<<< HEAD
 			"OPTRE_Ins_ER_Deserter_GL_Light",
 			"OPTRE_Ins_URF_Rifleman_SMG",
 			"OPTRE_Ins_URF_Grenadier_Light",
@@ -154,6 +161,10 @@ class cfgPatches
 			"OPTRE_Ins_BJ_Soldier_URB_Demolitions",
 			"OPTRE_Ins_BJ_Soldier_Grenadier",
 			"OPTRE_Ins_BJ_Soldier_URB_Grenadier"
+=======
+			"OPTRE_Ins_URF_Rifleman_SMG",
+            "MEU_KajMoney",
+>>>>>>> master
 		};
         magazines[] = 
 		{
@@ -313,7 +324,7 @@ class CfgEditorSubcategories
 	};
     class MEU_sub_rot
     {
-		displayName = "Helicopters/VTOL";
+		displayName = "Air Vehicles";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
@@ -351,7 +362,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Anizay : CAWorld
@@ -361,7 +372,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Bariga : CAWorld
@@ -371,7 +382,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Blood_OPTRE : CAWorld
@@ -381,7 +392,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class bsoc_brasil : CAWorld
@@ -391,7 +402,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Bootcamp_ACR : CAWorld
@@ -401,7 +412,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Woodland_ACR : CAWorld
@@ -411,7 +422,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class chernarus : CAWorld
@@ -421,7 +432,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class chernarus_summer : CAWorld
@@ -431,7 +442,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Chernarus_Winter : CAWorld
@@ -441,7 +452,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class clafghan : CAWorld
@@ -451,7 +462,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Desert_E : CAWorld
@@ -461,7 +472,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class desert_island : CAWorld
@@ -471,7 +482,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class dingor : CAWorld
@@ -481,7 +492,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class eladeen_terrain : CAWorld
@@ -491,7 +502,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class eden : CAWorld
@@ -501,7 +512,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class pja310 : CAWorld
@@ -511,7 +522,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class pja308 : CAWorld
@@ -521,7 +532,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class pja314 : CAWorld
@@ -531,7 +542,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class pja319 : CAWorld
@@ -541,7 +552,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class pja305 : CAWorld
@@ -551,7 +562,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class pja312 : CAWorld
@@ -561,7 +572,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class OPTRE_Gridlock : CAWorld
@@ -571,7 +582,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class hellanmaa : CAWorld
@@ -581,7 +592,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class hellanmaaw : CAWorld
@@ -591,7 +602,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class OPTRE_iberius : CAWorld
@@ -601,7 +612,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class tem_ihantalaw : CAWorld
@@ -611,7 +622,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class abramia : CAWorld
@@ -621,7 +632,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class isladuala3 : CAWorld
@@ -631,7 +642,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class OPTRE_Kholo : CAWorld
@@ -641,7 +652,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class cain : CAWorld
@@ -651,17 +662,17 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
- 	class Lingor_v3_9_5 : CAWorld
+ 	class lingor3 : CAWorld
 	{
 		description = "Lingor v3.9.5";
 		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Enoch : CAWorld
@@ -671,7 +682,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class OPTRE_Madrigal : CAWorld
@@ -681,7 +692,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class abel : CAWorld
@@ -691,7 +702,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Malden : CAWorld
@@ -701,7 +712,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Mountain_Wilderness : CAWorld
@@ -711,7 +722,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Nam2 : CAWorld
@@ -721,7 +732,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class noe : CAWorld
@@ -731,7 +742,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Pandora : CAWorld
@@ -741,7 +752,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Winthera3 : CAWorld
@@ -751,7 +762,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class panthera3 : CAWorld
@@ -761,7 +772,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class porto : CAWorld
@@ -771,7 +782,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class ProvingGrounds_PMC : CAWorld
@@ -781,7 +792,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class pulau : CAWorld
@@ -791,7 +802,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class intro : CAWorld
@@ -801,7 +812,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class ruha : CAWorld
@@ -811,7 +822,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class sara : CAWorld
@@ -821,7 +832,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Kapaulio : CAWorld
@@ -831,7 +842,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class OPTRE_Sandstorm : CAWorld
@@ -841,7 +852,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Shapur_BAF : CAWorld
@@ -851,7 +862,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class saralite : CAWorld
@@ -861,7 +872,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Stratis : CAWorld
@@ -871,7 +882,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class tem_summa : CAWorld
@@ -881,7 +892,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class tem_summawcup : CAWorld
@@ -891,7 +902,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Takistan : CAWorld
@@ -901,7 +912,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Mountains_ACR : CAWorld
@@ -911,7 +922,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Tanoa : CAWorld
@@ -921,7 +932,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class Todt : CAWorld
@@ -931,7 +942,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class jns_tria : CAWorld
@@ -941,7 +952,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class United_Sahrani : CAWorld
@@ -951,7 +962,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class utes : CAWorld
@@ -961,7 +972,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC3.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class VR : CAWorld
@@ -971,7 +982,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
  	class zargabad : CAWorld
@@ -981,8 +992,7 @@ class CfgWorlds
 		pictureShot = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 		loadingTexts[]=
 		{
-			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!"
+			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
-
 };

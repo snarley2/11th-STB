@@ -24,9 +24,11 @@ class CfgVehicles
     class O_APC_Tracked_02_AA_F;
     class O_T_MBT_04_command_F;
     class O_MBT_02_cannon_F;
-    class O_LSV_02_armed_F;
-    class O_LSV_02_unarmed_F;
-    class O_LSV_02_AT_F;
+    class I_LT_01_AA_F;
+    class I_LT_01_Scout_F;
+    class I_LT_01_AT_F;
+    class I_LT_01_Cannon_F;
+    class O_Heli_Attack_02_dynamicLoadout_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -42,6 +44,8 @@ class CfgVehicles
 	class OPTRE_Corvette_M910_Turret;
     class OPTRE_M274_ATV;
     //class OPTRE_Longsword_Bomb;
+      class OPTRE_M412_IFV_UNSC;
+      class OPTRE_M413_MGS_UNSC;
 
 	//Base FZ Classes
 	class VES_AV22_Sparrowhawk_Base;
@@ -257,7 +261,401 @@ class CfgVehicles
         mass = 20
     };
     // end meds
-    class MEU_SCORPION: VES_M808B_MBT
+    class MEU_KajMoney : O_Heli_Attack_02_dynamicLoadout_F
+    {
+        editorCategory = "MEU_cat_A";
+        crewCrashProtection = 0.001;
+		crewExplosionProtection = 0.001;
+        armor = 250;
+        damageResistance = 0.01555;
+		scope = 2;
+        scopecurator = 2;
+		displayName = "[MEU] 'Babushka-class' Kajman";
+		editorSubcategory = "MEU_sub_rot";
+		crewVulnerable = 0;
+        transportsoldiers = 13;
+        tf_hasLRradio = 1;
+        tf_isolatedAmount = 0.65;
+        tf_range = 120000;
+        side = 1;
+        crew = "VES_Rifleman_MA5B_MAR";
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\Vehicles\Kashmoney_body1_co.paa","first_meu_aux\data\Vehicles\Kashmoney_body2_co.paa"};
+        class TextureSources
+        {
+            class UNSC
+            {
+                displayName = "UNSC";
+                author = "Mark";
+                textures[] = {"first_meu_aux\data\vehicles\Kashmoney_body1_co.paa","first_meu_aux\data\vehicles\Kashmoney_body2_co.paa"};
+                faction = "MEU_UNSC";
+            };
+        };
+        textureList[] = {"UNSC",1};
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 13;
+			};
+		};
+		class TransportMagazines
+		{
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 100);
+            mag_xx(30rnd_556x45_mag_AP, 100);
+            mag_xx(30rnd_65x39_mag_AP, 100);
+            mag_xx(30rnd_65x39_mag_msbs_AP, 100);
+            mag_xx(1Rnd_HE_MEU_shell, 50);
+            mag_xx(3Rnd_HE_MEU_shell, 50);
+            mag_xx(1Rnd_HEDP_MEU_shell, 50);
+            mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 135);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,100);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
+            mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 100);
+            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 100);
+            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 100);
+            mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 100);
+            mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 10);
+            mag_xx(OPTRE_1Rnd_50x137_HEAT, 10)
+            mag_xx(M41_Twin_HEAT_WireGuided, 10);
+            mag_xx(M41_Twin_HEAT_HeatSeeking, 10);
+		};
+		class TransportWeapons
+		{
+			weap_xx(OPTRE_MA5BGL, 2);
+            weap_xx(OPTRE_BR55, 2);
+            weap_xx(OPTRE_M45, 2);
+            weap_xx(OPTRE_M7, 4);
+            weap_xx(OPTRE_M393_DMR, 2);
+            weap_xx(OPTRE_SRS99D, 2);
+            weap_xx(M250HMG, 2);
+            weap_xx(OPTRE_M73, 2);
+		};
+		class TransportItems
+		{
+            item_xx(ACE_elasticBandage, 100);
+		    item_xx(ACE_packingBandage, 80);
+		    item_xx(ACE_plasmaIV_500, 40);
+		    item_xx(MEU_Biofoam_Light, 40);
+		    item_xx(MEU_Medigel_Light, 40);
+		    item_xx(MEU_PlasmaIV, 20);
+		    item_xx(MEU_compat_Ibuprofen, 40);
+		    item_xx(MEU_Emergency_MedKit, 10);
+		    item_xx(ACE_epinephrine, 80);
+		    item_xx(ACE_tourniquet, 80);
+		    item_xx(ACE_quikclot, 80);
+		    item_xx(ACE_morphine, 80);
+		    item_xx(ACE_plasmaIV, 40);
+		    item_xx(ACE_Banana, 5);
+		    item_xx(ACE_splint, 80);
+		};
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine"};
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 999;
+				visual = "camo1";
+				minimalHit = 0.05;
+				depends = "Total";
+				radius = 0.01;
+			};
+			class HitFuel
+			{
+				armor = 4;
+				radius = 0.125;
+				minimalHit = 0.05;
+				explosionShielding = 4;
+			};
+			class HitAvionics
+			{
+				armor = 3;
+				radius = 0.4;
+				minimalHit = 0.15;
+				explosionShielding = 3;
+				visual = "podsvit pristroju";
+			};
+			class HitEngine1
+			{
+				armor = 6;
+				radius = 0.35;
+				name = "engine_1_hit";
+				explosionShielding = 6;
+				minimalHit = 0.1;
+				visual = "motor";
+				passThrough = 1;
+				convexComponent = "engine_1_hit";
+				material = 51;
+			};
+			class HitEngine2: HitEngine1
+			{
+				name = "engine_2_hit";
+				convexComponent = "engine_2_hit";
+			};
+			class HitEngine
+			{
+				armor = 999;
+				radius = 0.05;
+				minimalHit = 1;
+				visual = "camo2";
+				depends = "0.5 * (HitEngine1 + HitEngine2)";
+			};
+			class HitHRotor
+			{
+				armor = 2.6;
+				radius = 0.4;
+				minimalHit = 0.1;
+				explosionShielding = 4;
+			};
+			class HitVRotor
+			{
+				armor = 2.6;
+				radius = 0.4;
+				minimalHit = 0.1;
+				explosionShielding = 4;
+			};
+			class HitGlass1
+			{
+				name = "glass1";
+				visual = "glass1";
+				radius = 0.2;
+				armor = 4.5;
+				explosionShielding = 4;
+				minimalHit = 0.05;
+			};
+			class HitGlass2: HitGlass1
+			{
+				name = "glass2";
+				visual = "glass2";
+				radius = 0.35;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass4: HitGlass1
+			{
+				name = "glass4";
+				visual = "glass4";
+				radius = 0.22;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass7: HitGlass1
+			{
+				name = "glass7";
+				visual = "glass7";
+				radius = 0.35;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass5: HitGlass1
+			{
+				name = "glass5";
+				visual = "glass5";
+				radius = 0.25;
+				armor = 9;
+				explosionShielding = 4;
+				minimalHit = 0.05;
+			};
+			class HitGlass3: HitGlass1
+			{
+				name = "glass3";
+				visual = "glass3";
+				radius = 0.34;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass6: HitGlass1
+			{
+				name = "glass6";
+				visual = "glass6";
+				radius = 0.18;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass8: HitGlass1
+			{
+				name = "glass8";
+				visual = "glass8";
+				radius = 0.34;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass9: HitGlass1
+			{
+				name = "glass9";
+				visual = "glass9";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass10: HitGlass1
+			{
+				name = "glass10";
+				visual = "glass10";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass11: HitGlass1
+			{
+				name = "glass11";
+				visual = "glass11";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass12: HitGlass1
+			{
+				name = "glass12";
+				visual = "glass12";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass13: HitGlass1
+			{
+				name = "glass13";
+				visual = "glass13";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass14: HitGlass1
+			{
+				name = "glass14";
+				visual = "glass14";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass15: HitGlass1
+			{
+				name = "glass15";
+				visual = "glass15";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+		};
+        class ACE_SelfActions
+        {
+            class OpenRdoor
+			{
+				displayName = "Open Right Door";
+				position = "door_R";
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_R"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_R"",1];";
+			};
+			class CloseRdoor
+			{
+				displayName = "Close Right Door";
+				position = "door_R";
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_R"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_R"",0];";
+			};
+			class OpenLdoor
+			{
+				displayName = "Open Left Door";
+				position = "door_L";
+				radius = 1.8;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_L"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_L"",1];";
+			};
+			class CloseLdoor
+			{
+				displayName = "Close Left Door";
+				position = "door_L";
+				radius = 1.8;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_L"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_L"",0];";
+			};
+        };
+		class UserActions
+		{
+			class OpenRdoor
+			{
+				displayName = "Open Right Door";
+				position = "door_R";
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_R"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_R"",1];";
+			};
+			class CloseRdoor
+			{
+				displayName = "Close Right Door";
+				position = "door_R";
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_R"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_R"",0];";
+			};
+			class OpenLdoor
+			{
+				displayName = "Open Left Door";
+				position = "door_L";
+				radius = 1.8;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_L"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_L"",1];";
+			};
+			class CloseLdoor
+			{
+				displayName = "Close Left Door";
+				position = "door_L";
+				radius = 1.8;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_L"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_L"",0];";
+			};
+		};
+		enableManualFire = 1;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				isCopilot = 0;
+				startEngine = 0;
+				minElev = -30;
+				maxElev = 20;
+				initElev = 15;
+				minTurn = -120;
+				maxTurn = 120;
+				initTurn = 0;
+				weapons[] = {"gatling_30mm","FIR_9K121","Laserdesignator_mounted"};
+				magazines[] = {"250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","Laserbatteries","FIR_APKWS_M282_P_38rnd_M","FIR_9K121_P_8rnd_M","FIR_9K121_P_8rnd_M"};
+				canEject = 0;
+				maxHorizontalRotSpeed = 1.8;
+				maxVerticalRotSpeed = 1.5;
+			};
+		};
+    };
+    class MEU_SCORPION : VES_M808B_MBT
 	{
 		scope = 2;
         scopeCurator = 2;
@@ -626,134 +1024,114 @@ class CfgVehicles
 			};
         };
     };
-    class MEU_T140K_Koslovic: O_T_MBT_04_command_F
-    {
-        author = "Romeo";
-        side = 0;
-        displayName = "[1stMEU] T-140K (Koslovic)";
-        scope = 2;
+    class MEU_Nyx_AA_Koslovic : I_LT_01_AA_F
+	{
+		author = "Romeo";
+		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        crew = "LM_OPCAN_KOS_Crewman";
-        faction = "MEU_Insurrectionist";
         editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_arm";
-        hiddenSelections[] = {"Camo1","Camo2","CamoNet"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Armata_04_exterior_1_CO.paa","first_meu_aux\data\vehicles\Armata_04_exterior_2_CO.paa"};
-    };
-    class MEU_Scamper_Koslovic: O_MBT_02_cannon_F
-    {
-        author = "Romeo";
+        editorsubCategory = "MEU_sub_ifv";
 		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] Scamper (Koslovic)";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-        editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_arm";
-		hiddenSelections[] = {"camo1","camo2","camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Scamper_Body.paa","first_meu_aux\data\vehicles\Scamper_Gun.paa","first_meu_aux\data\vehicles\Scamper_Back.paa"};
+		faction = "MEU_Insurrectionist";
+		displayName = "[1stMEU] Weasel AA (Koslovic)";
 		crew = "LM_OPCAN_KOS_Crewman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class KOS_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Scamper_Body.paa","first_meu_aux\data\vehicles\Scamper_Gun.paa","first_meu_aux\data\vehicles\Scamper_Back.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-    class MEU_Gopher_Koslovic: O_LSV_02_unarmed_F
+    class MEU_Nyx_AT_Koslovic : I_LT_01_AT_F
 	{
 		author = "Romeo";
-		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] M121 Gopher (Koslovic)";
 		scope = 2;
 		scopeCurator = 2;
-		scopeArsenal = 2;
+        scopeArsenal = 2;
         editorCategory = "MEU_cat_A";
-		editorsubCategory = "MEU_sub_car";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-		crew = "LM_OPCAN_KOS_Rifleman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+        editorsubCategory = "MEU_sub_ifv";
+		side = 0;
+		faction = "MEU_Insurrectionist";
+		displayName = "[1stMEU] Weasel AT (Koslovic)";
+		crew = "LM_OPCAN_KOS_Crewman";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class KOS_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-	class MEU_Gopher_Koslovic_HMG: O_LSV_02_armed_F
+    class MEU_Nyx_Cannon_Koslovic : I_LT_01_Cannon_F
 	{
 		author = "Romeo";
-		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] M121 Gopher HMG (Koslovic)";
 		scope = 2;
 		scopeCurator = 2;
-		scopeArsenal = 2;
+        scopeArsenal = 2;
         editorCategory = "MEU_cat_A";
-		editorsubCategory = "MEU_sub_car";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-		crew = "LM_OPCAN_KOS_Rifleman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+        editorsubCategory = "MEU_sub_ifv";
+		side = 0;
+		faction = "MEU_Insurrectionist";
+		displayName = "[1stMEU] Weasel Cannon (Koslovic)";
+		crew = "LM_OPCAN_KOS_Crewman";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class KOS_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-	class MEU_Gopher_Koslovic_AT: O_LSV_02_AT_F
+    class MEU_Nyx_Radar_Koslovic : I_LT_01_Scout_F
 	{
-		author = "J.Burgess";
-		side = 0;
-		faction = "LM_OPCAN_KOS";
-		displayName = "[1stMEU] M121 Gopher AT (Koslovic)";
+		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		scopeArsenal = 2;
+        scopeArsenal = 2;
         editorCategory = "MEU_cat_A";
-		editorsubCategory = "MEU_sub_car";
-		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-		crew = "LM_OPCAN_KOS_Rifleman";
-		textureList[] = {"KOS",1};
-		class TransportMagazines{};
-		class TransportItems{};
-		class TransportWeapons{};
+        editorsubCategory = "MEU_sub_ifv";
+		side = 0;
+		faction = "MEU_Insurrectionist";
+		displayName = "[1stMEU] Weasel Radar (Koslovic)";
+		crew = "LM_OPCAN_KOS_Crewman";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
 		class TextureSources
 		{
-			class KOS
+			class KOS_Camo
 			{
-				displayName = "Koslovics";
-				textures[] = {"first_meu_aux\data\vehicles\Gopher_LSV_01_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_black_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_black_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
-				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"};
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
+				faction = "MEU_Insurrectionist";
 			};
 		};
+		textureList[] = {"KOS",1};
+		typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
 	};
-	
 	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
 		crewExplosionProtection = 0.5;
@@ -3075,6 +3453,7 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range = 120000;
+        crewVulnerable = 0;
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -5154,49 +5533,53 @@ class CfgVehicles
                 statement = "0 = [this, 0, true] spawn OPTRE_Fnc_HEVDoor; this setVariable [""OPTRE_HEV_DoorEjectedWanted"",false,true]; resetCamShake; moveOut player; player allowDamage true;";
                 onlyforplayer = 1;
             };
-			class thrusterforward
+			class thrustNorth
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Forward";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Forward";
+				displayName = "<t color='#FE2E2E'>Adjust North";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust North";
 				onlyForPlayer = 1;
+		        hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterforward;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Forward";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; this setVelocity [0, (_vel select 1) + 5, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust North";
 			};
-			class thrusterback
+			class thrustSouth
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Rear";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Rear";
+				displayName = "<t color='#FE2E2E'>Adjust South";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust South";
 				onlyForPlayer = 1;
+		        hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterback;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Rear";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [0, (_vel select 1) - 5, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust South";
 			};
-			class thrusterleft
+			class thrustEast
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Left";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Left";
+				displayName = "<t color='#FE2E2E'>Adjust East";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust East";
 				onlyForPlayer = 1;
+				hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterleft;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Left";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [(_vel select 0) + 5, 0, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust East";
 			};
-			class thrusterright
+			class thrustWest
 			{
 				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust Right";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust Right";
+				displayName = "<t color='#FE2E2E'>Adjust West";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust West";
 				onlyForPlayer = 1;
+				hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "0 = this spawn MEU_fnc_thrusterright;"
-				textToolTip = "<t color='#FE2E2E'>Adjust Right";
+				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [(_vel select 0) - 5, 0, (_vel select 2)];";
+				textToolTip = "<t color='#FE2E2E'>Adjust West";
 			};
         };
     };
@@ -5644,6 +6027,12 @@ class CfgVehicles
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
     };
 	
 	class MEU_ILCS_Ruck : OPTRE_ILCS_Rucksack_Heavy
@@ -9590,6 +9979,7 @@ class CfgVehicles
     };
      
     // Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
+    /*
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
 	{
         author = "Romeo" 
@@ -9610,7 +10000,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\NerveAgentBarrel_co.paa"};
         class EventHandlers
         {
-            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            Killed = "[_this, "ChemicalBarrel_NA_mag", 1, 1, 0] spawn BIS_fnc_fireSupportVirtual";
         };
         class DestructionEffects
         {
@@ -9663,7 +10054,9 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\AsphyxiantBarrel_co.paa"};
         class EventHandlers
         {
-            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            Killed = "[_this, "ChemicalBarrel_AS_mag", 1, 1, 0] spawn BIS_fnc_fireSupportVirtual";
+            
         };
         class DestructionEffects
         {
@@ -9717,7 +10110,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\CrowdSuppressentBarrel_co.paa"};
         class EventHandlers
         {
-            Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
+            Killed = "[_this, "ChemicalBarrel_CS_mag", 1, 1, 0] spawn BIS_fnc_fireSupportVirtual";
         };
         class DestructionEffects
         {
@@ -9750,7 +10144,8 @@ class CfgVehicles
             };
         };
     };
-
+    */
+//end chemwar
 	class SuperWall_01 : House
     {
         class SimpleObject
@@ -9961,7 +10356,32 @@ class CfgVehicles
 		model = "\OPTRE_Misc\holo\AI_ball.p3d";
 		displayName = "AI Ball";
 	};
+//Vulcan Bison Re-work
+	class MEU_M412_IFV_UNSC: OPTRE_M412_IFV_UNSC
+	{
+         scope = 2;
+         scopeCurator = 2;
+         editorCategory = "MEU_cat_A";
+         editorsubCategory = "MEU_sub_ifv";
+	 displayName = "[MEU] Bison IFV";
+	 weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
+         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
+         faction = "MEU_UNSC";
+	 side = 1;
+	};
 
+	class MEU_M413_MGS_UNSC: OPTRE_M413_MGS_UNSC
+	{
+         scope = 2;
+         scopeCurator = 2;
+         editorCategory = "MEU_cat_A";
+         editorsubCategory = "MEU_sub_ifv";
+	 displayName = "[MEU] Bison MGS";
+	 weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
+         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
+         faction = "MEU_UNSC";
+	 side = 1;
+	};
     /*labomba
     class SensorTemplatePassiveRadar;
     class SensorTemplateActiveRadar;
