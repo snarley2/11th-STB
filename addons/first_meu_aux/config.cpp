@@ -147,7 +147,13 @@ class cfgPatches
             "SuperWall_01",
             "shiva_uncovered",
             "logey_Box",
-			"OPTRE_Ins_URF_Rifleman_SMG"
+			"OPTRE_Ins_ER_Deserter_GL_Light",
+			"OPTRE_Ins_URF_Rifleman_SMG",
+			"OPTRE_Ins_URF_Grenadier_Light",
+			"OPTRE_Ins_BJ_Soldier_Demolitions",
+			"OPTRE_Ins_BJ_Soldier_URB_Demolitions",
+			"OPTRE_Ins_BJ_Soldier_Grenadier",
+			"OPTRE_Ins_BJ_Soldier_URB_Grenadier"
 		};
         magazines[] = 
 		{
