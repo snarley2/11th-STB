@@ -277,7 +277,6 @@ class CfgVehicles
         tf_hasLRradio = 1;
         tf_isolatedAmount = 0.65;
         tf_range = 120000;
-        faction = "MEU_UNSC";
         side = 1;
         crew = "VES_Rifleman_MA5B_MAR";
         hiddenSelections[] = {"camo1","camo2"};
