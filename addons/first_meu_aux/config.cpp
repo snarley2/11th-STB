@@ -655,7 +655,7 @@ class CfgWorlds
 			  "Report issues to SSgt.Red! (Red_Advisor#9499) Side effects may include server crashing, memory leaks, and sadness ","Report issues to SSgt.Red! (Owner of Redos Banditos Saloon Red_Advisor#9499) If you break it you buy it!","Report issues to SSgt.Red! (That one guy who wheezes Red_Advisor#9499) Have a great time in the field!";
 		};
 	};
- 	class Lingor_v3_9_5 : CAWorld
+ 	class lingor3 : CAWorld
 	{
 		description = "Lingor v3.9.5";
 		pictureMap = "first_meu_aux\Data\LoadingScreens\MEUPIC2.paa";
