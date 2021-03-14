@@ -175,7 +175,7 @@ class CfgVehicles
         {
             item_xx(MEU_compat_Ibuprofen,1);
         };
-        mass = 20
+        mass = 20;
     };
     class AtropineItem : MEU_compat_IbuprofenItem
     {
@@ -189,7 +189,7 @@ class CfgVehicles
         {
             item_xx(Atropine,1);
         };
-        mass = 20
+        mass = 20;
     };
     class MEU_BiofoamItem: OPTRE_BiofoamItem
     {
@@ -203,7 +203,7 @@ class CfgVehicles
         {
             item_xx(MEU_Biofoam,1);
         };
-        mass = 35
+        mass = 35;
     };
     class MEU_MediGelItem: OPTRE_MediGelItem
     {
@@ -217,7 +217,7 @@ class CfgVehicles
         {
             item_xx(MEU_Medigel,1);
         };
-        mass = 35
+        mass = 35;
     };
 	class MEU_BiofoamItem_Light: OPTRE_BiofoamItem
     {
@@ -231,7 +231,7 @@ class CfgVehicles
         {
             item_xx(MEU_Biofoam_Light,1);
         };
-        mass = 2
+        mass = 2;
     };
     class MEU_MediGelItem_Light: OPTRE_MediGelItem
     {
@@ -245,7 +245,7 @@ class CfgVehicles
         {
             item_xx(MEU_Medigel_Light,1);
         };
-        mass = 2
+        mass = 2;
     };
     class MEU_tourniquetItem: ACE_tourniquetItem
     {
@@ -258,7 +258,7 @@ class CfgVehicles
         {
             item_xx(MEU_tourniquet,1);
         };
-        mass = 20
+        mass = 20;
     };
     // end meds
     class MEU_KajMoney : O_Heli_Attack_02_dynamicLoadout_F
@@ -1550,7 +1550,7 @@ class CfgVehicles
     class MEU_Hyena_Friden: B_UGV_01_rcws_F
     {
         author = "Romeo";
-        displayname = "[1stMEU] Hyena (Friden)"
+        displayname = "[1stMEU] Hyena (Friden)";
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
@@ -1562,13 +1562,13 @@ class CfgVehicles
     };
     class MEU_Arcane_IFV_Friden: O_APC_Tracked_02_cannon_F
     {
-        author = "Romeo"
-        displayname = "[1stMEU] Arcane IFV (Friden)"
+        author = "Romeo";
+        displayname = "[1stMEU] Arcane IFV (Friden)";
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        crew = "LM_OPCAN_FRI_Rifleman"
-        faction = "MEU_Insurrectionist"
+        crew = "LM_OPCAN_FRI_Rifleman";
+        faction = "MEU_Insurrectionist";
         side = 0;
         model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_cannon_f";
         features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull, turret						<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
@@ -1587,13 +1587,13 @@ class CfgVehicles
     };
     class MEU_Arcane_AA_Friden: O_APC_Tracked_02_AA_F
     {
-        author = "Romeo"
-        displayname = "[1stMEU] Arcane AA (Friden)"
+        author = "Romeo";
+        displayname = "[1stMEU] Arcane AA (Friden)";
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        crew = "LM_OPCAN_FRI_Rifleman"
-        faction = "MEU_Insurrectionist"
+        crew = "LM_OPCAN_FRI_Rifleman";
+        faction = "MEU_Insurrectionist";
         side = 0;
         model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_aa_F";
         features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull					<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
@@ -1900,7 +1900,7 @@ class CfgVehicles
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
-        ace_cargo_size = 10
+        ace_cargo_size = 10;
         faction = "MEU_UNSC";
         side = 1;
 		editorCategory = "MEU_cat_A";
@@ -2012,7 +2012,7 @@ class CfgVehicles
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
-        ace_cargo_size = 10
+        ace_cargo_size = 10;
         faction = "MEU_UNSC";
         side = 1;
 		editorCategory = "MEU_cat_A";
@@ -2124,7 +2124,7 @@ class CfgVehicles
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
-        ace_cargo_size = 10
+        ace_cargo_size = 10;
         faction = "MEU_UNSC";
         side = 1;
 		editorCategory = "MEU_cat_A";
@@ -2236,7 +2236,7 @@ class CfgVehicles
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
-        ace_cargo_size = 10
+        ace_cargo_size = 10;
         faction = "MEU_UNSC";
         side = 1;
 		editorCategory = "MEU_cat_A";
@@ -2348,7 +2348,7 @@ class CfgVehicles
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
-        ace_cargo_size = 10
+        ace_cargo_size = 10;
         faction = "MEU_Insurrectionist";
         side = 0;
 		editorCategory = "MEU_cat_A";
@@ -2796,7 +2796,7 @@ class CfgVehicles
         scopeArsenal = 2;
 		displayName = "[1stMEU] M274-M Gungoose [WIP]";
 		faction = "MEU_UNSC";
-        ace_cargo_size = 10
+        ace_cargo_size = 10;
         side = 1;
 		editorCategory = "MEU_cat_A";
 		editorsubCategory = "MEU_sub_WIP";
@@ -9861,7 +9861,7 @@ class CfgVehicles
     
     class 1stMEU_CTF_Flag_2HQ : OPTRE_CTF_Flag_Base
     {    
-        author = "Romeo"
+        author = "Romeo";
         scope = 2;
         scopeCurator = 2;
         displayName ="2nd Plt HQ CTF Flag";
@@ -9873,7 +9873,7 @@ class CfgVehicles
         
     class 1stMEU_CTF_Flag_21 : OPTRE_CTF_Flag_Base
     {    
-        author = "Romeo"
+        author = "Romeo";
         scope = 2;
         scopeCurator = 2;
         displayName ="2nd Plt 2-1 CTF Flag";
@@ -9885,7 +9885,7 @@ class CfgVehicles
         
     class 1stMEU_CTF_Flag_22 : OPTRE_CTF_Flag_Base
     {    
-        author = "Romeo"
+        author = "Romeo";
         scope = 2;
         scopeCurator = 2;
         displayName ="2nd Plt 2-2 CTF Flag";
@@ -9897,7 +9897,7 @@ class CfgVehicles
         
     class 1stMEU_CTF_Flag_23 : OPTRE_CTF_Flag_Base
     {    
-        author = "Romeo"
+        author = "Romeo";
         scope = 2;
         scopeCurator = 2;
         displayName ="2nd Plt 2-3 CTF Flag";
@@ -9909,7 +9909,7 @@ class CfgVehicles
     
     class 1stMEU_CTF_Flag_51 : OPTRE_CTF_Flag_Base
         
-    {   author = "Romeo" 
+    {   author = "Romeo"; 
         scope = 2;
         scopeCurator = 2;
         displayName ="5th Plt 5-1 CTF Flag";
@@ -9921,7 +9921,7 @@ class CfgVehicles
     
      class 1stMEU_CTF_Flag_52 : OPTRE_CTF_Flag_Base
          
-    {   author = "Romeo" 
+    {   author = "Romeo"; 
         scope = 2;
         scopeCurator = 2;
         displayName ="5th Plt 5-2 CTF Flag";
@@ -9933,7 +9933,7 @@ class CfgVehicles
     
     class 1stMEU_CTF_Flag_53 : OPTRE_CTF_Flag_Base
          
-    {   author = "Romeo" 
+    {   author = "Romeo"; 
         scope = 2;
         scopeCurator = 2;
         displayName ="5th Plt 5-3 CTF Flag";
@@ -9945,7 +9945,7 @@ class CfgVehicles
     
      class 1stMEU_CTF_Flag_5M : OPTRE_CTF_Flag_Base
          
-    {   author = "Romeo" 
+    {   author = "Romeo";
         scope = 2;
         scopeCurator = 2;
         displayName ="5th Plt 5-Mike CTF Flag";
@@ -9957,7 +9957,7 @@ class CfgVehicles
     
      class 1stMEU_CTF_Flag_50 : OPTRE_CTF_Flag_Base
          
-    {   author = "Romeo" 
+    {   author = "Romeo"; 
         scope = 2;
         scopeCurator = 2;
         displayName ="5th Plt 5-0 CTF Flag";
@@ -9968,7 +9968,7 @@ class CfgVehicles
     };
     
      class 1stMEU_CTF_Flag_VulcanHQ : OPTRE_CTF_Flag_Base
-    {   author = "Romeo" 
+    {   author = "Romeo";
         scope = 2;
         scopeCurator = 2;
         displayName ="5th Plt HQ CTF Flag";
