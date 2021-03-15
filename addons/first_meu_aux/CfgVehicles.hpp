@@ -9982,7 +9982,7 @@ class CfgVehicles
     /*
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
 	{
-        author = "Romeo" 
+        author = "Romeo"; 
 		scope = 2;
 		scopeCurator = 2;
         armor = 50;
@@ -10036,7 +10036,7 @@ class CfgVehicles
     };
     class ChemicalBarrel_AS: plp_ctf_SafetyBarrelBlue
 	{
-        author = "Romeo" 
+        author = "Romeo"; 
 		scope = 2;
 		scopeCurator = 2;
         armor = 50;
@@ -10092,7 +10092,7 @@ class CfgVehicles
     
     class ChemicalBarrel_CS: plp_ctf_SafetyBarrelBlue
 	{
-        author = "Romeo" 
+        author = "Romeo"; 
 		scope = 2;
 		scopeCurator = 2;
         armor = 50;
