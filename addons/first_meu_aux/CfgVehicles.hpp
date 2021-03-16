@@ -270,7 +270,7 @@ class CfgVehicles
         damageResistance = 0.01555;
 		scope = 2;
         scopecurator = 2;
-		displayName = "[MEU] 'Babushka-class' Kajman";
+		displayName = "[1stMEU] 'Babushka-class' Kajman";
 		editorSubcategory = "MEU_sub_rot";
 		crewVulnerable = 0;
         transportsoldiers = 13;
@@ -662,7 +662,7 @@ class CfgVehicles
         scopeArsenal = 2;
         dlc = "1stMEU";
         author = "Oneill";
-        displayName = "M808B Scorpion";
+        displayName = "[1stMEU] M808B Scorpion";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -784,7 +784,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "APC-76 Honeybadger";
+        displayName = "[1stMEU] APC-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -852,7 +852,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "IFV-76 Honeybadger";
+        displayName = "[1stMEU] IFV-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -1704,7 +1704,7 @@ class CfgVehicles
 	class MEU_Leopard_APC: MEU_Leopard
 	{
 		author = "1st MEU Oneill";
-		displayname = "Leopard APC";
+		displayname = "[1stMEU] Leopard APC";
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
@@ -1737,7 +1737,7 @@ class CfgVehicles
 	class MEU_Leopard_Medical_APC: MEU_Leopard
 	{
 		author = "1st MEU Oneill";
-		displayname = "Leopard Medical APC";
+		displayname = "[1stMEU] Leopard Medical APC";
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
@@ -1819,7 +1819,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "M12 AP Warthog";
+        displayName = "[1stMEU] M12 AP Warthog";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -2842,7 +2842,7 @@ class CfgVehicles
 		crew = "B_UAV_AI";
 		armor = 250;
 		vehicleClass = "OPTRE_UNSC_corvette_class";
-		displayName = "M910 Point Defense Gun";
+		displayName = "[1stMEU] M910 Point Defense Gun";
 		model = "\OPTRE_Corvette\weapons\pointdefense\turret.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -2996,7 +2996,7 @@ class CfgVehicles
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "M910 Point Defense Cannon";
+        displayName = "[1stMEU] M910 Point Defense Cannon";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -3011,7 +3011,7 @@ class CfgVehicles
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "M910 Point Defense Cannon (inverted)";
+        displayName = "[1stMEU] M910 Point Defense Cannon (inverted)";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -3185,7 +3185,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		scopeArsenal = 2;
         airBrakeFrictionCoef = 50;
-        displayName = "[MEU] Pegasus Wyvern";
+        displayName = "[1stMEU] Pegasus Wyvern";
         armor = 350;
         damageResistance = 0.00555;
         tf_range = 120000;
@@ -3288,7 +3288,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[MEU] Pegasus Blackfish";
+        displayName = "[1stMEU] Pegasus Blackfish";
         armor = 1250;
         damageResistance = 0.00055;
         tf_range = 120000;
@@ -6648,7 +6648,7 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-		displayName = "[WIP][1stMEU] M313 HRV Elephant";
+		displayName = "[1stMEU] M313 HRV Elephant";
 		enginePower = 8000;
 		maxOmega = 800;
 		peakTorque = 80000;
@@ -10363,7 +10363,7 @@ class CfgVehicles
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
          editorsubCategory = "MEU_sub_ifv";
-	 displayName = "[MEU] Bison IFV";
+	 displayName = "[1stMEU] Bison IFV";
 	 weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
          magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
          faction = "MEU_UNSC";
@@ -10376,7 +10376,7 @@ class CfgVehicles
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
          editorsubCategory = "MEU_sub_ifv";
-	 displayName = "[MEU] Bison MGS";
+	 displayName = "[1stMEU] Bison MGS";
 	 weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
          magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
          faction = "MEU_UNSC";
