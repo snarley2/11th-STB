@@ -13734,6 +13734,20 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_6.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		};
     };
+	    class Peg_Iron_dp : Siffy_Helmet
+    {
+        scopeArsenal = 1;
+        scope = 1;
+        displayName = "[1stMEU] Pegasus Helmet DP1";
+        hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Iron.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
+        class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
+			hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Iron.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
+		};
+    };
+
     class Peg_Deck_dp : Siffy_Helmet
     {
         scopeArsenal = 1;
