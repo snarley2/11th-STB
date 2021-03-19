@@ -75,13 +75,10 @@ class cfgPatches
             "MEU_Arthur_Rotary_Friden",
             "MEU_Viper_Helmet_Friden",
             "MEU_Hyena_Friden",
-            "MEU_Arcane_IFV_Friden",
-            "MEU_Arcane_APC_Friden",
-            "MEU_Arcane_AA_Friden",
-            "MEU_Nyx_AT_Koslovic",
-            "MEU_Nyx_AA_Koslovic",
-            "MEU_Nyx_Cannon_Koslovic",
-            "MEU_Nyx_Radar_Koslovic",
+            "MEU_Nyx_AT",
+            "MEU_Nyx_AA",
+            "MEU_Nyx_Cannon",
+            "MEU_Nyx_Radar",
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
@@ -276,13 +273,19 @@ class CfgEditorCategories
 {
     class MEU_cat_A
     {   
-        displayName = "1st MEU Assets";
+        displayName = "[1stMEU] UNSC";
         scopeCurator = 2;
         scopeeditor = 2;
     };
 	class MEU_Objects
     {   
-        displayName = "1st MEU Objects";
+        displayName = "[1stMEU] Objects";
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Fridens
+    {
+        displayName = "[1stMEU] Fridens"
         scopeCurator = 2;
         scopeeditor = 2;
     };
