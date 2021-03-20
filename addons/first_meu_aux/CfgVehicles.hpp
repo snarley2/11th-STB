@@ -29,6 +29,10 @@ class CfgVehicles
     class I_LT_01_AT_F;
     class I_LT_01_Cannon_F;
     class O_Heli_Attack_02_dynamicLoadout_F;
+    class O_APC_Wheeled_02_rcws_v2_F;
+    class O_MBT_02_arty_base_F;
+    class O_Truck_02_covered_F;
+    class I_Truck_02_MRL_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -1547,6 +1551,235 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_ifv";
     };
+    class MEU_Armata_Koslovic: O_T_MBT_04_command_F 
+    { 
+        side = 0; 
+        displayName = "[1stMEU] Armata (Koslovic)"; 
+        scope = 2; 
+		scopeCurator = 2; 
+        scopeArsenal = 2; 
+        crew = "LM_OPCAN_KOS_Rifleman"; 
+        faction = "MEU_Insurrectionist"; 
+        editorCategory = "MEU_Koslovic"; 
+        editorsubCategory = "MEU_sub_arm"; 
+        hiddenSelections[] = {"Camo1","Camo2","CamoNet"}; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_04_exterior_Koslovic_1_CO.paa","first_meu_aux\data\vehicles\MBT_04_exterior_Koslovic_2_CO.paa"}; 
+    };
+    class MEU_Ural_Transport_Koslovic : O_Truck_02_covered_F
+    {
+        author = "Romeo";
+        cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
+        crew = "LM_OPCAN_KOS_Crewman";
+        displayName = "[1stMEU] Ural Transport (Koslovic)";
+        faction = "MEU_Insurrectionist";
+        getInProxyOrder[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_kuz_Koslovic_co.paa","first_meu_aux\data\vehicles\truck_02_int_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
+        scope = 2;
+        side = 0;
+        editorCategory = "MEU_Koslovic"; 
+        class SimpleObject {};
+        textureList[] = {"KOS",1};
+        transportSoldier = 14;
+        class Turrets: Turrets {};
+    };
+    class MEU_Ural_MLRS_Koslovic : I_Truck_02_MRL_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_KOS_Crewman";
+        displayName = "[1stMEU] Ural MLRS (Koslovic)";
+        faction = "MEU_Insurrectionist";
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        class SimpleObject {};
+        typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","first_meu_aux\data\vehicles\truck_02_int_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_MRL_Koslovic_CO","first_meu_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
+        editorCategory = "MEU_Koslovic"; 
+    };
+    class MEU_Kazan_Koslovic: O_MBT_02_cannon_F 
+    { 
+        author = "Romeo"; 
+		side = 0; 
+		faction = "LM_OPCAN_KOS"; 
+		displayName = "[1stMEU] Kazan (Koslovic)"; 
+		scope = 2; 
+		scopeCurator = 2; 
+		scopeArsenal = 2; 
+        editorCategory = "MEU_Koslovic"; 
+        editorsubCategory = "MEU_sub_arm"; 
+		hiddenSelections[] = {"camo1","camo2","camo3"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_turret_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa"}; 
+		crew = "LM_OPCAN_KOS_Crewman"; 
+		textureList[] = {"KOS",1}; 
+		class TransportMagazines{}; 
+		class TransportItems{}; 
+		class TransportWeapons{}; 
+		class TextureSources 
+		{ 
+			class KOS 
+			{ 
+				displayName = "Koslovics"; 
+				textures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_turret_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
+	};
+    class MEU_Galkin_Koslovic: O_MRAP_02_HMG_F
+	{
+		displayName = "[1stMEU] Galkin (Koslovic)";
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+        scopeArsenal = 2;
+        tf_hasLRradio = 1;
+		tf_isolatedAmount = 0.65;
+		tf_range = 120000;
+        ace_cargo_size = 10;
+        faction = "LM_OPCAN_KOS";
+        side = 0;
+		editorCategory = "MEU_Koslovic";
+		editorsubCategory = "MEU_sub_car";
+		crew = "LM_OPCAN_KOS_Crewman";
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+        class TransportWeapons
+        {
+            delete _xx_arifle_Katiba_F;
+        }
+        class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				weapons[] = {"M250_APC","MG460_APC","SmokeLauncher"};
+				magazines[] = 
+				{
+					"40Rnd_HEDP_Belt",
+					"40Rnd_HEDP_Belt",
+					"OPTRE_400Rnd_127x99_M250HMG", 
+					"OPTRE_400Rnd_127x99_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"OPTRE_400Rnd_127x99_HE_M250HMG",
+					"SmokeLauncherMag",
+					"SmokeLauncherMag"
+				};
+			};
+		};
+        textureList[] = {"KOS_Camo",1};
+		class TextureSources
+		{
+			class KOS_Camo
+			{
+				displayName = "KOS";
+				author = "Romeo";
+				textures[] = {"first_meu_aux\data\vehicles\MRAP_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\MRAP_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+			};
+		};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MRAP_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\MRAP_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+	}; 
+    class MEU_Otakar_Koslovic: O_APC_Wheeled_02_rcws_v2_F
+    {
+        crew = "LM_OPCAN_KOS_Crewman";
+        displayName = "[1stMEU] Otokar IFV (Koslovic)";
+        faction = "MEU_Insurrectionist";
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        class SimpleObject {};
+        typicalCargo[] = {"LM_OPCAN_KOS_Crewman"};
+        editorCategory = "MEU_Koslovic";
+		editorsubCategory = "MEU_sub_car";
+        class TextureSources 
+		{ 
+			class KOS_Camo
+			{ 
+				displayName = "Koslovics"; 
+				textures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
+    };
+    class MEU_Otakar_Koslovic_Unarmed: O_APC_Wheeled_02_rcws_v2_F
+    {
+        crew = "LM_OPCAN_KOS_Crewman";
+        displayName = "[1stMEU] Otokar APC (Koslovic)";
+        faction = "MEU_Insurrectionist";
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        class EventHandlers: EventHandlers
+		{
+			init = "if (local (_this select 0)) then {{(_this select 0) animate [_x, 1]} forEach ['HideHull','HideTurret']}";
+		};
+        class SimpleObject {};
+        typicalCargo[] = {"LM_OPCAN_KOS_Crewman"};
+        editorCategory = "MEU_Koslovic";
+		editorsubCategory = "MEU_sub_car";
+        class TextureSources 
+		{ 
+			class KOS_Camo
+			{ 
+				displayName = "Koslovics"; 
+				textures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
+    };
+    class MEU_Arkhangelsk_Koslovic : O_MBT_02_arty_base_F
+    {
+        author = "Romeo";
+        crew = "LM_OPCAN_KOS_Crewman";
+        scope = 2;
+        scopeCurator = 2;
+        faction = "MEU_Insurrectionists";
+        displayName = "[1stMEU] Arkhangelsk (Koslovic)";
+        hiddenSelections[] = {"camo1","camo2","camo3","camo4","CamoNet"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_scorcher_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+        maxFordingDepth = -1.25;
+        side = 0;
+        textureList[] = {"KOS_Camo",1};
+        class TextureSources {};
+        typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
+        editorCategory = "MEU_Koslovic";
+    };
     class MEU_Hyena_Friden: B_UGV_01_rcws_F
     {
         author = "Romeo";
@@ -1559,56 +1792,6 @@ class CfgVehicles
         side = 0;
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\UGV_01_ext_Friden_co.paa","\first_meu_aux\data\vehicles\UGV_01_int_Friden_co.paa","\first_meu_aux\data\vehicles\Turret_Friden.paa"};
         editorCategory = "MEU_Fridens";
-    };
-    class MEU_Arcane_IFV_Friden: O_APC_Tracked_02_cannon_F
-    {
-        author = "Romeo";
-        displayname = "[1stMEU] Arcane IFV (Friden)";
-        scope = 2;
-        scopeArsenal = 2;
-        scopeCurator = 2;
-        crew = "LM_OPCAN_FRI_Rifleman";
-        faction = "MEU_Insurrectionist";
-        side = 0;
-        model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_cannon_f";
-        features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull, turret						<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
-        editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_ifv";
-        class TextureSources
-        {
-            class FridenArcaneIFV
-            {
-                displayName = "Arcane IFV";
-                textures[] =
-                {"\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_01_Friden_CO.paa","\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_02_Friden_CO.paa","\first_meu_aux\data\vehicles\RCWS30_Friden_CO.paa"};
-            }; 
-        };
-        textureList[]= {"FridenArcaneIFV", 1};
-    };
-    class MEU_Arcane_AA_Friden: O_APC_Tracked_02_AA_F
-    {
-        author = "Romeo";
-        displayname = "[1stMEU] Arcane AA (Friden)";
-        scope = 2;
-        scopeArsenal = 2;
-        scopeCurator = 2;
-        crew = "LM_OPCAN_FRI_Rifleman";
-        faction = "MEU_Insurrectionist";
-        side = 0;
-        model = "\A3\armor_f_beta\APC_Tracked_02\APC_Tracked_02_aa_F";
-        features = "Randomization: No						<br />Camo selections: 3 - top of hull, bottom of hull					<br />Script door sources: None						<br />Script animations: None						<br />Executed scripts: N						<br />Firing from vehicles: No						<br />Slingload: No						<br />Cargo proxy indexes: 1 to 8";
-        editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_ifv";
-        class TextureSources
-        {
-            class FridenArcaneAA
-            {
-                displayName = "Arcane AA";
-                textures[] =
-                {"\first_meu_aux\data\vehicles\Arcane_02_ext_01_AA_Friden_CO.paa","\first_meu_aux\data\vehicles\ArcaneIFV_02_ext_02_Friden_CO.paa","\first_meu_aux\data\vehicles\Arcane_01_AA_Tower_Friden_CO.paa"};
-            };
-        };
-        textureList[]= {"FridenArcaneAA", 1};
     };
 	class MEU_Leopard: APC_Wheeled_02_base_v2_F
 	{
@@ -1720,6 +1903,15 @@ class CfgVehicles
 		};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
 		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
+        class TextureSources 
+		{ 
+			class UNSC_Camo
+			{ 
+				displayName = "UNSC"; 
+				textures[] = {"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_Turret.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
 		hiddenSelectionsTextures[] = 
 		{
 			"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa",
@@ -2442,7 +2634,7 @@ class CfgVehicles
 		editorsubCategory = "MEU_sub_ifv";
 		vehicleClass = "APCs";
 		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Warrior_WDL_Back_co.paa","\first_meu_aux\data\vehicles\Warrior_WDL_Front_co.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\APC_Tracked_03_Ext_olive_CO.paa","\first_meu_aux\data\vehicles\APC_Tracked_03_Ext2_olive_CO.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
         class TransportMagazines
 		{
             delete _xx_1Rnd_HE_Grenade_shell;
@@ -2513,7 +2705,60 @@ class CfgVehicles
 			};
 	   };
     };
-	
+    class MEU_Warrior_Katie: I_APC_tracked_03_cannon_F
+	{
+		author = "Romeo";
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "[1stMEU] Warrior (Katie)";
+		faction = "MEU_UNSC";
+		crew = "VES_Rifleman_MA5B_MAR";
+		side = 1;
+        editorCategory = "MEU_cat_A";
+		editorsubCategory = "MEU_sub_ifv";
+		vehicleClass = "APCs";
+		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
+		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\APC_Tracked_03_Ext_olive_CO.paa","\first_meu_aux\data\vehicles\APC_Tracked_03_Ext2_olive_Katie_CO.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
+        class TransportMagazines
+		{
+            delete _xx_1Rnd_HE_Grenade_shell;
+            delete _xx_30Rnd_65x39_caseless_green;
+            delete _xx_150Rndx762x54_Box;
+            delete _xx_16rn_9x21_Mag;
+            delete _xx_RPG32_F;
+            delete _xx_1Rnd_SmokeOrange_Grenade_shell;
+            delete _xx_1Rnd_SmokeRed_Grenade_shell;
+            delete _xx_1Rnd_Smoke_Grenade_shell;
+            delete _xx_1Rnd_SmokeYellow_Grenade_shell;
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 5);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_APT, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 5);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAPT, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 5);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJT, 5);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 5);
+			mag_xx(30rnd_556x45_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_AP, 5);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 5);
+		};
+		class TransportItems
+		{
+			delete _xx_FirstAidKit;
+            delete _xx_SmokeShellOrange;
+            delete _xx_SmokeShellRed;
+            delete _xx_SmokeShellYellow;
+            delete _xx_SmokeShell;
+            delete _xx_HandGrenade;
+			item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 20);
+            item_xx(ACE_epinephrine, 40);
+            item_xx(ACE_adenosine, 40);
+            item_xx(ACE_Banana, 10);
+            item_xx(ACE_splint, 20);
+            item_xx(MEU_compat_Ibuprofen, 40);
+		};
+    };
     class MEU_Champion_Friden: I_APC_tracked_03_cannon_F
 	{
 		author = "Romeo";

@@ -79,6 +79,15 @@ class cfgPatches
             "MEU_Nyx_AA",
             "MEU_Nyx_Cannon",
             "MEU_Nyx_Radar",
+            "MEU_Armata_Koslovic",
+            "MEU_Kazan_Koslovic",
+            "MEU_Galkin_Koslovic",
+            "MEU_Otakar_Koslovic",
+            "MEU_Otakar_Koslovic_Unarmed",
+            "MEU_Arkhangelsk_Koslovic",
+            "MEU_Ural_Transport_Koslovic",
+            "MEU_Ural_MLRS_Koslovic",
+            "MEU_Warrior_Katie",
 			"MEU_SCORPION",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
@@ -286,6 +295,12 @@ class CfgEditorCategories
     class MEU_Fridens
     {
         displayName = "[1stMEU] Fridens"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Koslovic
+    {
+        displayName = "[1stMEU] Koslovic"
         scopeCurator = 2;
         scopeeditor = 2;
     };
