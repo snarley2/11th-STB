@@ -81,113 +81,21 @@ class CfgGroups
                         side = 0;
                         vehicle = "OPTRE_Ins_URF_Rifleman_SMG";
                         rank = "PRIVATE";
-                        position[] = {15,-5,0};
+                        position[] = {15,-10,0};
                     };
                     class Unit6
                     {
                         side = 0;
                         vehicle = "OPTRE_Ins_URF_Marksman";
                         rank = "PRIVATE";
-                        position[] = {-15,-5,0};
+                        position[] = {-15,-10,0};
                     };
-                    class Unit7
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Autorifleman";
-                        rank = "PRIVATE";
-                        position[] = {20,-5,0};
-                    };
-                    class Unit8
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_TeamLead";
-                        rank = "CORPORAL";
-                        position[] = {-20,-5,0};
-                    };
-					class Unit9
+					class Unit7
                     {
                         side = 0;
                         vehicle = "OPTRE_Ins_URF_Medic";
                         rank = "PRIVATE";
-                        position[] = {-25,-5,0};
-                    };
-                };
-				class OPTRE_Ins_URF_Inf_UrbanRifleSquad
-                {
-                    name = "URF Urban Rifle Squad";
-                    side = 0;
-                    faction = "OPTRE_Ins";
-                    rarityGroup = 0.3;
-                    dlc = "OPTRE";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Rifleman_SMG";
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Breacher";
-                        rank = "CORPORAL";
-                        position[] = {5,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Rifleman_SMG";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Rifleman_SMG";
-                        rank = "PRIVATE";
-                        position[] = {10,-5,0};
-                    };
-                    class Unit4
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Breacher";
-                        rank = "PRIVATE";
-                        position[] = {-10,-5,0};
-                    };
-                    class Unit5
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Rifleman_SMG";
-                        rank = "PRIVATE";
-                        position[] = {15,-5,0};
-                    };
-                    class Unit6
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Demolitions";
-                        rank = "PRIVATE";
-                        position[] = {-15,-5,0};
-                    };
-                    class Unit7
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Autorifleman";
-                        rank = "PRIVATE";
-                        position[] = {20,-5,0};
-                    };
-                    class Unit8
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Engineer";
-                        rank = "CORPORAL";
-                        position[] = {-20,-5,0};
-                    };
-					class Unit9
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Medic";
-                        rank = "PRIVATE";
-                        position[] = {-25,-5,0};
+                        position[] = {20,-15,0};
                     };
                 };
                 class OPTRE_Ins_URF_Inf_Fireteam
@@ -207,7 +115,7 @@ class CfgGroups
                     class Unit1
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_URF_Autorifleman";
+                        vehicle = "OPTRE_Ins_URF_Rifleman_AR";
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
@@ -250,52 +158,9 @@ class CfgGroups
                     class Unit2
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_URF_Autorifleman";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
                         vehicle = "OPTRE_Ins_URF_Rifleman_AR";
                         rank = "PRIVATE";
-                        position[] = {10,-5,0};
-                    };
-                };
-				class OPTRE_Ins_URF_Inf_GrenadierTeam
-                {
-                    name = "URF Grenadier Team";
-                    side = 0;
-                    faction = "OPTRE_Ins";
-                    rarityGroup = 0.3;
-                    dlc = "OPTRE";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Grenadier";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Grenadier_Light";
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Grenadier_Light";
-                        rank = "PRIVATE";
                         position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Rifleman_AR";
-                        rank = "PRIVATE";
-                        position[] = {10,-5,0};
                     };
                 };
                 class OPTRE_Ins_URF_Inf_CmdSquad
@@ -339,13 +204,6 @@ class CfgGroups
                         vehicle = "OPTRE_Ins_URF_Medic";
                         rank = "PRIVATE";
                         position[] = {-10,-5,0};
-                    };
-                    class Unit5
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_URF_Grenadier_Light";
-                        rank = "PRIVATE";
-                        position[] = {15,-5,0};
                     };
                 };
                 class OPTRE_Ins_URF_Inf_AntiTank
@@ -452,7 +310,7 @@ class CfgGroups
                     class Unit0
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_ER_MAdvisor";
+                        vehicle = "OPTRE_Ins_ER_Hacker";
                         rank = "SERGEANT";
                         position[] = {0,0,0};
                     };
@@ -523,7 +381,7 @@ class CfgGroups
                     class Unit0
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_ER_MAdvisor";
+                        vehicle = "OPTRE_Ins_ER_Hacker";
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
@@ -549,42 +407,6 @@ class CfgGroups
                         position[] = {10,-5,0};
                     };
                 };
-				class OPTRE_Ins_ER_Inf_GrenadierGroup
-                {
-                    name = "ER Militia Grenadier Group";
-                    side = 0;
-                    faction = "OPTRE_Ins";
-                    rarityGroup = 0.3;
-                    dlc = "OPTRE";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_ER_MAdvisor";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_ER_Deserter_GL_Light";
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_ER_Deserter_GL";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_ER_Deserter_GL_Light";
-                        rank = "PRIVATE";
-                        position[] = {10,-5,0};
-                    };
-                };
 				class OPTRE_Ins_ER_MG_Group
                 {
                     name = "ER Militia Machine Gun Group";
@@ -595,7 +417,7 @@ class CfgGroups
                     class Unit0
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_ER_MAdvisor";
+                        vehicle = "OPTRE_Ins_ER_Hacker";
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
@@ -607,13 +429,6 @@ class CfgGroups
                         position[] = {5,-5,0};
                     };
                     class Unit2
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_ER_Militia_MG";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
                     {
                         side = 0;
                         vehicle = "OPTRE_Ins_ER_Guerilla_AR";
@@ -631,7 +446,7 @@ class CfgGroups
                     class Unit0
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_ER_MAdvisor";
+                        vehicle = "OPTRE_Ins_ER_Hacker";
                         rank = "CORPORAL";
                         position[] = {0,0,0};
                     };
@@ -643,7 +458,7 @@ class CfgGroups
                         position[] = {5,-5,0};
                     };
                 };
-				class OPTRE_Ins_URF_Inf_AntiAir
+				class OPTRE_Ins_ER_AA_Group
                 {
                     name = "ER Militia Anti-Air Team";
                     side = 0;
@@ -660,7 +475,7 @@ class CfgGroups
                     class Unit1
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_URF_AA_Specialist";
+                        vehicle = "OPTRE_Ins_ER_Rebel_AT";
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
@@ -753,7 +568,7 @@ class CfgGroups
                     class Unit4
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_Automatic_Rifleman";
+                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_Scout";
                         rank = "PRIVATE";
                         position[] = {-10,-5,0};
                     };
@@ -810,7 +625,7 @@ class CfgGroups
                     class Unit1
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_Automatic_Rifleman";
+                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_Rifleman_AR";
                         rank = "PRIVATE";
                         position[] = {5,-5,0};
                     };
@@ -853,43 +668,7 @@ class CfgGroups
                     class Unit2
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_Automatic_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
                         vehicle = "OPTRE_Ins_BJ_Soldier_URB_Rifleman_AR";
-                        rank = "PRIVATE";
-                        position[] = {10,-5,0};
-                    };
-                };
-				class OPTRE_Ins_BJ_Inf_GrenadierTeam
-                {
-                    name = "Battlejumper Grenadier Team";
-                    side = 0;
-                    faction = "OPTRE_Ins";
-                    rarityGroup = 0.3;
-                    dlc = "OPTRE";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_TeamLeader";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_Grenadier";
-                        rank = "PRIVATE";
-                        position[] = {5,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "OPTRE_Ins_BJ_Soldier_URB_Grenadier";
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
