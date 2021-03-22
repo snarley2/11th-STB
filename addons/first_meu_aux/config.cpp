@@ -89,6 +89,12 @@ class cfgPatches
             "MEU_Ural_MLRS_Koslovic",
             "MEU_Warrior_Katie",
 			"MEU_SCORPION",
+            "MEU_Timberwolf",
+            "MEU_M813_TT",
+            "MEU_M12A1_AT",
+            "MEU_M12_Unarmed",
+            "MEU_M12G1_Gauss",
+            "MEU_M12_LAAG",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
             "MEU_M412_IFV_UNSC",
@@ -307,7 +313,7 @@ class CfgEditorCategories
 };
 class CfgEditorSubcategories
 {
-    class MEU_sub_ifv
+    class MEU_sub_Mechanized
     {
 		displayName = "Mechanized";
         scopeCurator = 2;
@@ -325,7 +331,7 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         scopeeditor = 2;
 	};
-    class MEU_sub_car
+    class MEU_sub_Motorised
     {
 		displayName = "Motorized";
         scopeCurator = 2;
