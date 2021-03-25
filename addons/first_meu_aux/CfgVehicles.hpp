@@ -43,9 +43,10 @@ class CfgVehicles
 	class OPTRE_CTF_Flag_Base;
 	class OPTRE_Corvette_M910_Turret;
     class OPTRE_M274_ATV;
+    class Land_optre_milcrate_h3_long;
     //class OPTRE_Longsword_Bomb;
-      class OPTRE_M412_IFV_UNSC;
-      class OPTRE_M413_MGS_UNSC;
+    class OPTRE_M412_IFV_UNSC;
+    class OPTRE_M413_MGS_UNSC;
 
 	//Base FZ Classes
 	class VES_AV22_Sparrowhawk_Base;
@@ -161,7 +162,80 @@ class CfgVehicles
             };
         };
     };
-	
+	//speedbag
+    class MEU_Speedbag : Land_optre_milcrate_h3_long
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeEditor = 2;
+        displayName = "[1st MEU] Speedbag";
+        author = "1st MEU Mark";
+        editorCategory = "MEU_Objects";
+        editorSubcategory = "Objects";
+        ace_cargo_canLoad = 1;
+        ace_cargo_size = 1;
+        ace_dragging_canDrag = 1; 
+        ace_dragging_dragPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo)
+        ace_dragging_dragDirection = 0;  // Model direction while dragging (same as setDir after attachTo)
+        ace_dragging_canCarry = 1;
+        ace_dragging_carryPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo)
+        ace_dragging_carryDirection = 0;
+        class TransportMagazines
+        {	
+        mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+		mag_xx(30rnd_556x45_mag_AP, 20);
+		mag_xx(30rnd_65x39_mag_AP, 20);
+		mag_xx(30rnd_65x39_mag_msbs_AP, 20);
+		mag_xx(1Rnd_HE_MEU_shell, 15);
+		mag_xx(3Rnd_HE_MEU_shell, 10);
+		mag_xx(1Rnd_HEDP_MEU_shell, 10);
+        mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
+        mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 20);
+        mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 20);
+		mag_xx(OPTRE_6Rnd_8Gauge_Pellets, 10);
+        mag_xx(OPTRE_6Rnd_8Gauge_Slugs, 10);
+        mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+        mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
+		mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
+        mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 20);
+        mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag, 10);
+        mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 2);
+        mag_xx(OPTRE_4Rnd_145x114_HVAP_Mag, 10);
+        mag_xx(OPTRE_100Rnd_127x99_M250HMG, 10);
+		mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
+        mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
+        mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
+        mag_xx(OPTRE_1Rnd_50x137_HE, 4);
+        mag_xx(OPTRE_1Rnd_50x137_HEAT, 4);
+        mag_xx(OPTRE_1Rnd_50x137_PEN, 4);
+        mag_xx(OPTRE_1Rnd_50x137_THERMO, 4);
+		mag_xx(M41_Twin_HEAT, 4);
+		mag_xx(M41_Twin_HEAP, 4);
+        mag_xx(M41_Twin_HEAT_WireGuided, 4);
+        mag_xx(M41_Twin_HEAT_HeatSeeking, 4);
+        };
+        class TransportItems
+        {
+        item_xx(ACE_elasticBandage, 20);
+		item_xx(ACE_packingBandage, 60);
+		item_xx(ACE_plasmaIV_500, 30);
+		item_xx(MEU_Biofoam_Light, 20);
+		item_xx(MEU_Medigel_Light, 20);
+		item_xx(MEU_PlasmaIV, 20);
+		item_xx(MEU_compat_Ibuprofen, 40);
+		item_xx(MEU_Emergency_MedKit, 10);
+		item_xx(ACE_epinephrine, 20);
+		item_xx(ACE_tourniquet, 16);
+		item_xx(ACE_quikclot, 40);
+		item_xx(ACE_morphine, 10);
+		item_xx(ACE_plasmaIV, 30);
+		item_xx(ACE_Banana, 5);
+		item_xx(ACE_splint, 10);
+        };
+    };
+    //
 	//more meds
     class MEU_compat_IbuprofenItem: ACE_morphineItem 
     {
@@ -270,17 +344,32 @@ class CfgVehicles
         damageResistance = 0.01555;
 		scope = 2;
         scopecurator = 2;
-		displayName = "[1stMEU] 'Babushka-class' Kajman";
+		displayName = "[1st MEU] 'Babushka-class' Kajman";
 		editorSubcategory = "MEU_sub_rot";
 		crewVulnerable = 0;
-        transportsoldiers = 13;
+        transportSoldier = 13;
         tf_hasLRradio = 1;
         tf_isolatedAmount = 0.65;
         tf_range = 120000;
         side = 1;
         crew = "VES_Rifleman_MA5B_MAR";
+        ace_fastroping_enabled = 1;
+        ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\Vehicles\Kashmoney_body1_co.paa","first_meu_aux\data\Vehicles\Kashmoney_body2_co.paa"};
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
         class TextureSources
         {
             class UNSC
@@ -351,7 +440,7 @@ class CfgVehicles
 		    item_xx(ACE_splint, 80);
 		};
 		weapons[] = {"CMFlareLauncher"};
-		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine"};
+		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine"};
 		class HitPoints
 		{
 			class HitHull
@@ -552,47 +641,118 @@ class CfgVehicles
 				minimalHit = 0.05;
 			};
 		};
-        class ACE_SelfActions
-        {
-            class OpenRdoor
+		class AnimationSources
+		{
+			class HitGlass1
 			{
-				displayName = "Open Right Door";
-				position = "door_R";
-				radius = 1.8;
-				animPeriod = 2;
-				onlyForplayer = 0;
-				condition = "this animationPhase ""door_R"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
-				statement = "this animateDoor [""door_R"",1];";
+				source = "Hit";
+				hitpoint = "HitGlass1";
+				raw = 1;
 			};
-			class CloseRdoor
+			class HitGlass2: HitGlass1
 			{
-				displayName = "Close Right Door";
-				position = "door_R";
-				radius = 1.8;
-				animPeriod = 2;
-				onlyForplayer = 0;
-				condition = "this animationPhase ""door_R"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
-				statement = "this animateDoor [""door_R"",0];";
+				hitpoint = "HitGlass2";
 			};
-			class OpenLdoor
+			class HitGlass3: HitGlass1
 			{
-				displayName = "Open Left Door";
-				position = "door_L";
-				radius = 1.8;
-				onlyForplayer = 0;
-				condition = "this animationPhase ""door_L"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
-				statement = "this animateDoor [""door_L"",1];";
+				hitpoint = "HitGlass3";
 			};
-			class CloseLdoor
+			class HitGlass4: HitGlass1
 			{
-				displayName = "Close Left Door";
-				position = "door_L";
-				radius = 1.8;
-				onlyForplayer = 0;
-				condition = "this animationPhase ""door_L"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
-				statement = "this animateDoor [""door_L"",0];";
+				hitpoint = "HitGlass4";
 			};
-        };
+			class HitGlass5: HitGlass1
+			{
+				hitpoint = "HitGlass5";
+			};
+			class HitGlass6: HitGlass1
+			{
+				hitpoint = "HitGlass6";
+			};
+			class HitGlass7: HitGlass1
+			{
+				hitpoint = "HitGlass7";
+			};
+			class HitGlass8: HitGlass1
+			{
+				hitpoint = "HitGlass8";
+			};
+			class HitGlass9: HitGlass1
+			{
+				hitpoint = "HitGlass9";
+			};
+			class HitGlass10: HitGlass1
+			{
+				hitpoint = "HitGlass10";
+			};
+			class HitGlass11: HitGlass1
+			{
+				hitpoint = "HitGlass11";
+			};
+			class HitGlass12: HitGlass1
+			{
+				hitpoint = "HitGlass12";
+			};
+			class HitGlass13: HitGlass1
+			{
+				hitpoint = "HitGlass13";
+			};
+			class HitGlass14: HitGlass1
+			{
+				hitpoint = "HitGlass14";
+			};
+			class Gatling
+			{
+				source = "revolving";
+				weapon = "gatling_30mm";
+			};
+			class Muzzle_flash
+			{
+				source = "ammorandom";
+				weapon = "gatling_30mm";
+			};
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "rockets_Skyfire";
+			};
+			class Hide
+			{
+				source = "user";
+				animPeriod = 0;
+				initPhase = 0;
+			};
+			class door_L
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class door_R
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class door_L_pop
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class door_R_pop
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class HideWeapons
+			{
+				source = "user";
+				animPeriod = 1e-06;
+				initPhase = 0;
+			};
+		};
 		class UserActions
 		{
 			class OpenRdoor
@@ -648,7 +808,7 @@ class CfgVehicles
 				maxTurn = 120;
 				initTurn = 0;
 				weapons[] = {"gatling_30mm","FIR_9K121","Laserdesignator_mounted"};
-				magazines[] = {"250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","Laserbatteries","FIR_APKWS_M282_P_38rnd_M","FIR_9K121_P_8rnd_M","FIR_9K121_P_8rnd_M"};
+				magazines[] = {"250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","Laserbatteries","FIR_APKWS_M282_P_38rnd_M","FIR_9K121_P_8rnd_M","FIR_9K121_P_8rnd_M"};
 				canEject = 0;
 				maxHorizontalRotSpeed = 1.8;
 				maxVerticalRotSpeed = 1.5;
@@ -845,6 +1005,19 @@ class CfgVehicles
             item_xx(ACE_splint, 10);
             item_xx(MEU_compat_Ibuprofen, 20);			
 		};
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
     };
 	
     class MEU_IFV_A : VES_IFV76_A
@@ -943,6 +1116,19 @@ class CfgVehicles
 				};
 			};
         };
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
     };
     class MEU_GGNR_AA : VES_IFV76_A
     {
@@ -1022,6 +1208,19 @@ class CfgVehicles
 				magazines[] = {"MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","Laserbatteries"};
 
 			};
+        };
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
         };
     };
     class MEU_Nyx_AA_Koslovic : I_LT_01_AA_F
@@ -1509,7 +1708,18 @@ class CfgVehicles
 					class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightCommander{};
 				};
 			};
-		};		
+		};
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
     };
 	
 	class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
@@ -3090,6 +3300,19 @@ class CfgVehicles
             };
         };
         memoryPointDriverOptics = "gunnerview";
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
     };  
     class VES_AV22_Sparrowhawk_Base_F: VES_AV22_Sparrowhawk_Base
     {
@@ -3173,6 +3396,19 @@ class CfgVehicles
             };
         };
         memoryPointDriverOptics = "gunnerview";
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
     };
 	class MEU_Wyvern: O_T_VTOL_02_infantry_dynamicLoadout_F
     {
@@ -3193,6 +3429,19 @@ class CfgVehicles
 		side = 1;
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","PylonRack_Missile_AMRAAM_D_x2","PylonRack_Missile_AMRAAM_D_x2","38Rnd_80mm_rockets","Laserbatteries"};
 		weapons[] = {"CMFlareLauncher","weapon_AMRAAMLauncher","rockets_Skyfire","Laserdesignator_mounted"};
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3294,6 +3543,19 @@ class CfgVehicles
         tf_range = 120000;
         faction = "MEU_UNSC";
 		side = 1;
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
         hiddenSelections[] ={
 			"Camo_1",
 			"Camo_2",
@@ -3343,6 +3605,19 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range = 120000;
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3454,6 +3729,19 @@ class CfgVehicles
 		crewExplosionProtection = 0.0001;
         tf_range = 120000;
         crewVulnerable = 0;
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3738,6 +4026,30 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range = 120000;
+        //lolflightmodelgobrrr
+        altFullForce = 6000;
+        maxSpeed=450;
+        liftForceCoef=2.5;
+        cyclicAsideForceCoef=3.4;
+        cyclicForwardForceCoef=1.65;
+        bodyFrictionCoef=0.3000001;
+        backRotorForceCoef = 2;
+        mainRotorSpeed=6;
+        backRotorSpeed=7;
+        //flightmodelsbrrrrtime
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3891,6 +4203,19 @@ class CfgVehicles
         fuelCapacity = 200;
         radarTargetSize = 0.1;
         tf_range = 120000;
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -3985,6 +4310,30 @@ class CfgVehicles
 		crewCrashProtection = 0.0001;
 		crewExplosionProtection = 0.0001;
         tf_range = 120000;
+        //lolflightmodelgobrrr
+        altFullForce = 6000;
+        maxSpeed=450;
+        liftForceCoef=2.5;
+        cyclicAsideForceCoef=3.4;
+        cyclicForwardForceCoef=1.65;
+        bodyFrictionCoef=0.3000001;
+        backRotorForceCoef = 2;
+        mainRotorSpeed=6;
+        backRotorSpeed=7;
+        //flightmodelsbrrrrtime
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4074,6 +4423,30 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range = 120000;
+        //lolflightmodelgobrrr
+        altFullForce = 6000;
+        maxSpeed=450;
+        liftForceCoef=2.5;
+        cyclicAsideForceCoef=3.4;
+        cyclicForwardForceCoef=1.65;
+        bodyFrictionCoef=0.3000001;
+        backRotorForceCoef = 2;
+        mainRotorSpeed=6;
+        backRotorSpeed=7;
+        //flightmodelsbrrrrtime
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4163,6 +4536,30 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range = 120000;
+        //lolflightmodelgobrrr
+        altFullForce = 6000;
+        maxSpeed=450;
+        liftForceCoef=2.5;
+        cyclicAsideForceCoef=3.4;
+        cyclicForwardForceCoef=1.65;
+        bodyFrictionCoef=0.3000001;
+        backRotorForceCoef = 2;
+        mainRotorSpeed=6;
+        backRotorSpeed=7;
+        //flightmodelsbrrrrtime
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4252,6 +4649,30 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range = 120000;
+        //lolflightmodelgobrrr
+        altFullForce = 6000;
+        maxSpeed=450;
+        liftForceCoef=2.5;
+        cyclicAsideForceCoef=3.4;
+        cyclicForwardForceCoef=1.65;
+        bodyFrictionCoef=0.3000001;
+        backRotorForceCoef = 2;
+        mainRotorSpeed=6;
+        backRotorSpeed=7;
+        //flightmodelsbrrrrtime
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4344,6 +4765,19 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4437,6 +4871,19 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range = 120000;
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
@@ -4946,6 +5393,19 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_rot";
         fuelCapacity = 200;
         tf_range = 120000;
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
 		class TransportMagazines
 		{
 			delete _xx_30Rnd_65x39_caseless_mag;
