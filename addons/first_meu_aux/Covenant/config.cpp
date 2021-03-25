@@ -50,7 +50,7 @@ class CfgFactionClasses
 {
 	class MEU_Covenant
 	{
-		displayName="1st MEU Covenant";
+		displayName="[1stMEU] Covenant";
 		author="1st MEU Seven";
 		priority=1;
 		side=0;
@@ -61,7 +61,7 @@ class CfgEditorCategories
 {
 	class MEU_cat_Cov
 	{
-		displayName="1st MEU Covenant";
+		displayName="[1stMEU] Covenant";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
@@ -1860,7 +1860,7 @@ class CfgGroups
 		side = 0;
         class MEU_Sangheili_Spacer
         {
-            name = "1st MEU Covenant";
+            name = "[1stMEU] Covenant";
             class MEU_Sangheili_groups
             {
                 name = "Sangheili";

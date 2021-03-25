@@ -75,14 +75,26 @@ class cfgPatches
             "MEU_Arthur_Rotary_Friden",
             "MEU_Viper_Helmet_Friden",
             "MEU_Hyena_Friden",
-            "MEU_Arcane_IFV_Friden",
-            "MEU_Arcane_APC_Friden",
-            "MEU_Arcane_AA_Friden",
-            "MEU_Nyx_AT_Koslovic",
-            "MEU_Nyx_AA_Koslovic",
-            "MEU_Nyx_Cannon_Koslovic",
-            "MEU_Nyx_Radar_Koslovic",
+            "MEU_Nyx_AT",
+            "MEU_Nyx_AA",
+            "MEU_Nyx_Cannon",
+            "MEU_Nyx_Radar",
+            "MEU_Armata_Koslovic",
+            "MEU_Kazan_Koslovic",
+            "MEU_Galkin_Koslovic",
+            "MEU_Otakar_Koslovic",
+            "MEU_Otakar_Koslovic_Unarmed",
+            "MEU_Arkhangelsk_Koslovic",
+            "MEU_Ural_Transport_Koslovic",
+            "MEU_Ural_MLRS_Koslovic",
+            "MEU_Warrior_Katie",
 			"MEU_SCORPION",
+            "MEU_Timberwolf",
+            "MEU_M813_TT",
+            "MEU_M12A1_AT",
+            "MEU_M12_Unarmed",
+            "MEU_M12G1_Gauss",
+            "MEU_M12_LAAG",
 			"M910_Point_Defense_Cannon_Active",
 			"M910_Point_Defense_Cannon_Active_Inverted",
             "MEU_M412_IFV_UNSC",
@@ -277,20 +289,32 @@ class CfgEditorCategories
 {
     class MEU_cat_A
     {   
-        displayName = "1st MEU Assets";
+        displayName = "[1stMEU] UNSC";
         scopeCurator = 2;
         scopeeditor = 2;
     };
 	class MEU_Objects
     {   
-        displayName = "1st MEU Objects";
+        displayName = "[1stMEU] Objects";
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Fridens
+    {
+        displayName = "[1stMEU] Fridens"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Koslovic
+    {
+        displayName = "[1stMEU] Koslovic"
         scopeCurator = 2;
         scopeeditor = 2;
     };
 };
 class CfgEditorSubcategories
 {
-    class MEU_sub_ifv
+    class MEU_sub_Mechanized
     {
 		displayName = "Mechanized";
         scopeCurator = 2;
@@ -308,7 +332,7 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         scopeeditor = 2;
 	};
-    class MEU_sub_car
+    class MEU_sub_Motorised
     {
 		displayName = "Motorized";
         scopeCurator = 2;
