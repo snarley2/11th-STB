@@ -768,6 +768,2125 @@ class CfgGroups
                     };
                 };
 			};
+// BJ Woodland
+            class OPTRE_BJ_WDL
+            {
+                dlc = "OPTRE";
+                name = "Battlejumpers (Woodland)";
+                class OPTRE_Ins_BJ_Inf_Sentry
+                {
+                    name = "Battlejumper Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_AR";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Scout";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPTRE_Ins_BJ_Inf_RifleSquad
+                {
+                    name = "Battlejumper Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_BR";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_TeamLeader";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Grenadier";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Scout";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Scout";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Scout";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Marksman";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Automatic_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Demolitions";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Corpsman";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPTRE_Ins_BJ_Inf_Fireteam
+                {
+                    name = "Battlejumper Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_BR";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_AR";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Scout";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_AR";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPTRE_Ins_BJ_Inf_MachineGunTeam
+                {
+                    name = "Battlejumper Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_BR";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Automatic_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_AR";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPTRE_Ins_BJ_Inf_CmdSquad
+                {
+                    name = "Battlejumper Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_BR";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_TeamLeader";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Scout";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Demolitions";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Corpsman";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_AR";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPTRE_Ins_BJ_Inf_AntiTank
+                {
+                    name = "Battlejumper Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_AR";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Rifleman_AT";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPTRE_Ins_BJ_Inf_Sniper
+                {
+                    name = "Battlejumper Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Scout_Sniper";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "OPTRE_Ins_BJ_Soldier_Marksman";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
+            class OPCAN_FRI_Reg
+            {
+                dlc = "OPCAN";
+                name = "Fridens";
+                class OPCAN_Friden_Sentry
+                {
+                    name = "Friden Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPCAN";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_RifleSquad
+                {
+                    name = "Friden Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_SL";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_TL";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_GL";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Marksman";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_AutoRifleman";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Engineer";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPCAN_Friden_Fireteam
+                {
+                    name = "Friden Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Breacher";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPCAN_Friden_MachineGunTeam
+                {
+                    name = "Friden Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_AutoRifleman";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_CmdSquad
+                {
+                    name = "Friden Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_SL";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_TL";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Engineer";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPCAN_Friden_AntiTank
+                {
+                    name = "Friden Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_AT";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_Sniper
+                {
+                    name = "Friden Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_Frihelm";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Marksman";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
+// Friden Desert
+            class OPCAN_FRI_Des
+            {
+                dlc = "OPCAN";
+                name = "Fridens (Desert)";
+                class OPCAN_Friden_Sentry_DES
+                {
+                    name = "Friden Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPCAN";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_DES";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_RifleSquad_DES
+                {
+                    name = "Friden Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_SL_DES";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_TL_DES";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_GL_DES";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_DES";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Marksman_DES";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_AutoRifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Engineer_DES";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_DES";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPCAN_Friden_Fireteam
+                {
+                    name = "Friden Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Breacher_DES";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPCAN_Friden_MachineGunTeam_DES
+                {
+                    name = "Friden Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_AutoRifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_CmdSquad_DES
+                {
+                    name = "Friden Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_SL_DES";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_TL_DES";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Engineer_DES";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_DES";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPCAN_Friden_AntiTank_DES
+                {
+                    name = "Friden Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_DES";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_AT_DES";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_Sniper_DES
+                {
+                    name = "Friden Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_Frihelm_W_DES";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Marksman_DES";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
+// Friden Woodland
+            class OPCAN_FRI_WDL
+            {
+                dlc = "OPCAN";
+                name = "Fridens (Woodland)";
+                class OPCAN_Friden_Sentry_WDL
+                {
+                    name = "Friden Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPCAN";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_WDL";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_RifleSquad_WDL
+                {
+                    name = "Friden Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_SL_WDL";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_TL_WDL";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_GL_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_WDL";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Marksman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_AutoRifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Engineer_WDL";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPCAN_Friden_Fireteam
+                {
+                    name = "Friden Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Breacher_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPCAN_Friden_MachineGunTeam_WDL
+                {
+                    name = "Friden Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_AutoRifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_CmdSquad_WDL
+                {
+                    name = "Friden Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_SL_WDL";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_TL_WDL";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Engineer_WDL";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Medic_WDL";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPCAN_Friden_AntiTank_DES
+                {
+                    name = "Friden Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Rifleman_AT_WDL";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Friden_Sniper_WDL
+                {
+                    name = "Friden Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_Frihelm_W_WDL";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_FRI_Marksman_WDL";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
+// Koslovic Jungle
+            class OPCAN_KOS_JUN
+            {
+                dlc = "OPCAN";
+                name = "Koslovic (Jungle)";
+                class OPCAN_Koslovic_Sentry_Jungle
+                {
+                    name = "Koslovic Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPCAN";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic1";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_RifleSquad_Jungle
+                {
+                    name = "Koslovic Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL1";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL1";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_GL1";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic1";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman1";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman1";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer1";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic1";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Fireteam_Jungle
+                {
+                    name = "Koslovic Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Breacher1";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPCAN_Koslovic_MachineGunTeam_Jungle
+                {
+                    name = "Koslovic Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman1";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_CmdSquad_Jungle
+                {
+                    name = "Koslovic Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL1";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL1";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer1";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic1";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_AntiTank_Jungle
+                {
+                    name = "Koslovic Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman1";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman_AT1";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Sniper_Jungle
+                {
+                    name = "Koslovic Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman1";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman1";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
+// Koslovic Arid
+            class OPCAN_KOS_ARD
+            {
+                dlc = "OPCAN";
+                name = "Koslovic (Arid)";
+                class OPCAN_Koslovic_Sentry_Arid
+                {
+                    name = "Koslovic Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPCAN";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic2";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_RifleSquad_Arid
+                {
+                    name = "Koslovic Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL2";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL2";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_GL2";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic2";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman2";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman2";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer2";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic2";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Fireteam_Arid
+                {
+                    name = "Koslovic Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Breacher2";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPCAN_Koslovic_MachineGunTeam_Arid
+                {
+                    name = "Koslovic Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman2";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_CmdSquad_Arid
+                {
+                    name = "Koslovic Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL2";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL2";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer2";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic2";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_AntiTank_Arid
+                {
+                    name = "Koslovic Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman2";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman_AT2";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Sniper_Arid
+                {
+                    name = "Koslovic Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman2";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman2";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
+// Koslovic Swamp
+            class OPCAN_KOS_SWA
+            {
+                dlc = "OPCAN";
+                name = "Koslovic (Swamp)";
+                class OPCAN_Koslovic_Sentry_Swamp
+                {
+                    name = "Koslovic Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPCAN";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic3";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_RifleSquad_Swamp
+                {
+                    name = "Koslovic Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL3";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL3";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_GL3";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic3";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman3";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman3";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer3";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic3";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Fireteam_Swamp
+                {
+                    name = "Koslovic Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Breacher3";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPCAN_Koslovic_MachineGunTeam_Swamp
+                {
+                    name = "Koslovic Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman3";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_CmdSquad_Swamp
+                {
+                    name = "Koslovic Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL3";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL3";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer3";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic3";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_AntiTank_Swamp
+                {
+                    name = "Koslovic Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman3";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman_AT3";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Sniper_Swamp
+                {
+                    name = "Koslovic Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman3";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman3";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
+// Koslovic
+            class OPCAN_KOS_WDL
+            {
+                dlc = "OPCAN";
+                name = "Koslovic";
+                class OPCAN_Koslovic_Sentry_Woodland
+                {
+                    name = "Koslovic Sentry";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPCAN";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic4";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_RifleSquad_Woodland
+                {
+                    name = "Koslovic Rifle Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL4";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL4";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_GL4";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic4";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                    class Unit6
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman4";
+                        rank = "PRIVATE";
+                        position[] = {-15,-5,0};
+                    };
+                    class Unit7
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman4";
+                        rank = "PRIVATE";
+                        position[] = {20,-5,0};
+                    };
+                    class Unit8
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer4";
+                        rank = "CORPORAL";
+                        position[] = {-20,-5,0};
+                    };
+					class Unit9
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic4";
+                        rank = "PRIVATE";
+                        position[] = {-25,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Fireteam_Woodland
+                {
+                    name = "Koslovic Fireteam";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Breacher4";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                };
+				class OPCAN_Koslovic_MachineGunTeam_Woodland
+                {
+                    name = "Koslovic Machine Gun Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_AutoRifleman4";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_CmdSquad_Woodland
+                {
+                    name = "Koslovic Command Squad";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_SL4";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_TL4";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                    class Unit2
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "PRIVATE";
+                        position[] = {-5,-5,0};
+                    };
+                    class Unit3
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Engineer4";
+                        rank = "PRIVATE";
+                        position[] = {10,-5,0};
+                    };
+                    class Unit4
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Medic4";
+                        rank = "PRIVATE";
+                        position[] = {-10,-5,0};
+                    };
+                    class Unit5
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "PRIVATE";
+                        position[] = {15,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_AntiTank_Woodland
+                {
+                    name = "Koslovic Anti-Tank Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman4";
+                        rank = "CORPORAL";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Rifleman_AT4";
+                        rank = "PRIVATE";
+                        position[] = {5,-5,0};
+                    };
+                };
+                class OPCAN_Koslovic_Sniper_Woodland
+                {
+                    name = "Koslovic Sniper Team";
+                    side = 0;
+                    faction = "OPTRE_Ins";
+                    rarityGroup = 0.3;
+                    dlc = "OPTRE";
+                    class Unit0
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman4";
+                        rank = "SERGEANT";
+                        position[] = {0,0,0};
+                    };
+                    class Unit1
+                    {
+                        side = 0;
+                        vehicle = "LM_OPCAN_KOS_Marksman4";
+                        rank = "CORPORAL";
+                        position[] = {5,-5,0};
+                    };
+                };
+			};
 //Covenant
             class OPTRE_FC_Covenant
             {      
@@ -832,6 +2951,7 @@ class CfgGroups
                     };
                 };
             };
+            
 //OPCAN URA			
             class LM_OPCAN_URA_groups
             {
@@ -1074,488 +3194,6 @@ class CfgGroups
                     };
                 };
             };
-//OPCAN Koslovics
-            class LM_OPCAN_KOS_groups
-            {
-                name = "(OPCAN)Koslovics";
-                class LM_OPCAN_KOS_patrol
-                {
-                    name = "Sentry";
-                    side = 0;
-                    faction = "LM_OPCAN_KOS";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Rifleman";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0,-5,0};
-                    };
-                };
-                class LM_OPCAN_KOS_Fireteam
-                {
-                    name = "Fireteam";
-                    side = 0;
-                    faction = "LM_OPCAN_KOS";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_TL";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_AutoRifleman";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Rifleman_AT";
-                        rank = "PRIVATE";
-                        position[] = {0,-10,0};
-                    };
-                };
-                class LM_OPCAN_KOS_Squad
-                {
-                    name = "Rifle Squad";
-                    side = 0;
-                    faction = "LM_OPCAN_KOS";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_SL";
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Rifleman_AT";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_TL";
-                        rank = "CORPORAL";
-                        position[] = {0,-10,0};
-                    };
-                    class Unit4
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Marksman";
-                        rank = "PRIVATE";
-                        position[] = {-10,-5,0};
-                    };
-                    class Unit5
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_GL";
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-                    class Unit6
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_AutoRifleman";
-                        rank = "PRIVATE";
-                        position[] = {-10,-15,0};
-                    };
-                    class Unit7
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_KOS_Medic";
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
-                };
-            };
-//OPCAN Fridens
-            class LM_OPCAN_FRI_groups
-            {
-                name = "(OPCAN)Fridens";
-                class LM_OPCAN_FRI_patrol
-                {
-                    name = "Sentry";
-                    side = 0;
-                    faction = "LM_OPCAN_FRI";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Rifleman";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0,-5,0};
-                    };
-                };
-                class LM_OPCAN_FRI_Fireteam
-                {
-                    name = "Fireteam";
-                    side = 0;
-                    faction = "LM_OPCAN_FRI";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_TL";
-                        rank = "CORPORAL";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_AutoRifleman";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Rifleman_AT";
-                        rank = "PRIVATE";
-                        position[] = {0,-10,0};
-                    };
-                };
-                class LM_OPCAN_FRI_Squad
-                {
-                    name = "Rifle Squad";
-                    side = 0;
-                    faction = "LM_OPCAN_FRI";
-                    class Unit0
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_SL";
-                        rank = "SERGEANT";
-                        position[] = {0,0,0};
-                    };
-                    class Unit1
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Rifleman";
-                        rank = "PRIVATE";
-                        position[] = {0,-5,0};
-                    };
-                    class Unit2
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Rifleman_AT";
-                        rank = "PRIVATE";
-                        position[] = {-5,-5,0};
-                    };
-                    class Unit3
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_TL";
-                        rank = "CORPORAL";
-                        position[] = {0,-10,0};
-                    };
-                    class Unit4
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Marksman";
-                        rank = "PRIVATE";
-                        position[] = {-10,-5,0};
-                    };
-                    class Unit5
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_GL";
-                        rank = "PRIVATE";
-                        position[] = {-10,-10,0};
-                    };
-                    class Unit6
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_AutoRifleman";
-                        rank = "PRIVATE";
-                        position[] = {-10,-15,0};
-                    };
-                    class Unit7
-                    {
-                        side = 0;
-                        vehicle = "LM_OPCAN_FRI_Medic";
-                        rank = "PRIVATE";
-                        position[] = {-15,-15,0};
-                    };
-                };
-			};
-			class LM_OPCAN_FRI_WDL_groups
-			{
-				name = "(OPCAN)Fridens (Woodland)";
-				class LM_OPCAN_FRI_patrol_WDL
-				{
-					name = "Sentry";
-					side = 0;
-					faction = "LM_OPCAN_FRI_WDL";
-					class Unit0
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
-						rank = "CORPORAL";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-				};
-				class LM_OPCAN_FRI_Fireteam_WDL
-				{
-					name = "Fireteam";
-					side = 0;
-					faction = "LM_OPCAN_FRI_WDL";
-					class Unit0
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_TL_WDL";
-						rank = "CORPORAL";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-					class Unit2
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_AutoRifleman_WDL";
-						rank = "PRIVATE";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_AT_WDL";
-						rank = "PRIVATE";
-						position[] = {0,-10,0};
-					};
-				};
-				class LM_OPCAN_FRI_Squad_WDL
-				{
-					name = "Rifle Squad";
-					side = 0;
-					faction = "LM_OPCAN_FRI_WDL";
-					class Unit0
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_SL_WDL";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_WDL";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-					class Unit2
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_AT_WDL";
-						rank = "PRIVATE";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_TL_WDL";
-						rank = "CORPORAL";
-						position[] = {0,-10,0};
-					};
-					class Unit4
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Marksman_WDL";
-						rank = "PRIVATE";
-						position[] = {-10,-5,0};
-					};
-					class Unit5
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_GL_WDL";
-						rank = "PRIVATE";
-						position[] = {-10,-10,0};
-					};
-					class Unit6
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_AutoRifleman_WDL";
-						rank = "PRIVATE";
-						position[] = {-10,-15,0};
-					};
-					class Unit7
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Medic_WDL";
-						rank = "PRIVATE";
-						position[] = {-15,-15,0};
-					};
-				};
-			};
-			class LM_OPCAN_FRI_DES_groups
-			{
-				name = "(OPCAN)Fridens (Desert)";
-				class LM_OPCAN_FRI_patrol_DES
-				{
-					name = "Sentry";
-					side = 0;
-					faction = "LM_OPCAN_FRI_DES";
-					class Unit0
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_DES";
-						rank = "CORPORAL";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_DES";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-				};
-				class LM_OPCAN_FRI_Fireteam_DES
-				{
-					name = "Fireteam";
-					side = 0;
-					faction = "LM_OPCAN_FRI_DES";
-					class Unit0
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_TL_DES";
-						rank = "CORPORAL";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_DES";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-					class Unit2
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_AutoRifleman_DES";
-						rank = "PRIVATE";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_AT_DES";
-						rank = "PRIVATE";
-						position[] = {0,-10,0};
-					};
-				};
-				class LM_OPCAN_FRI_Squad_DES
-				{
-					name = "Rifle Squad";
-					side = 0;
-					faction = "LM_OPCAN_FRI_DES";
-					class Unit0
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_SL_DES";
-						rank = "SERGEANT";
-						position[] = {0,0,0};
-					};
-					class Unit1
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_DES";
-						rank = "PRIVATE";
-						position[] = {0,-5,0};
-					};
-					class Unit2
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Rifleman_AT_DES";
-						rank = "PRIVATE";
-						position[] = {-5,-5,0};
-					};
-					class Unit3
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_TL_DES";
-						rank = "CORPORAL";
-						position[] = {0,-10,0};
-					};
-					class Unit4
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Marksman_DES";
-						rank = "PRIVATE";
-						position[] = {-10,-5,0};
-					};
-					class Unit5
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_GL_DES";
-						rank = "PRIVATE";
-						position[] = {-10,-10,0};
-					};
-					class Unit6
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_AutoRifleman_DES";
-						rank = "PRIVATE";
-						position[] = {-10,-15,0};
-					};
-					class Unit7
-					{
-						side = 0;
-						vehicle = "LM_OPCAN_FRI_Medic_DES";
-						rank = "PRIVATE";
-						position[] = {-15,-15,0};
-					};
-				};
-			};
         };
     };
 };

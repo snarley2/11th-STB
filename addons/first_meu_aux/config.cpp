@@ -23,6 +23,104 @@ class cfgPatches
 			"OPTRE_Ammo_SupplyPod_Medical",
 			"OPTRE_Ammo_SupplyPod_Mortars",
 			"OPTRE_Ammo_SupplyPod_LMG",
+            "LM_OPCAN_FRI_AutoRifleman",
+            "LM_OPCAN_FRI_Breacher",
+            "LM_OPCAN_FRI_Medic",
+            "LM_OPCAN_FRI_Crewman",
+            "LM_OPCAN_FRI_Engineer",
+            "LM_OPCAN_FRI_GL",
+            "LM_OPCAN_FRI_Marksman",
+            "LM_OPCAN_FRI_Officer",
+            "LM_OPCAN_FRI_Rifleman",
+            "LM_OPCAN_FRI_Rifleman_AT",
+            "LM_OPCAN_FRI_RTO",
+            "LM_OPCAN_Frihelm",
+            "LM_OPCAN_FRI_SL",
+            "LM_OPCAN_FRI_TL",
+            "LM_OPCAN_FRI_AutoRifleman_DES",
+            "LM_OPCAN_FRI_Breacher_DES",
+            "LM_OPCAN_FRI_Medic_DES",
+            "LM_OPCAN_FRI_Crewman_DES",
+            "LM_OPCAN_FRI_Engineer_DES",
+            "LM_OPCAN_FRI_GL_DES",
+            "LM_OPCAN_FRI_Marksman_DES",
+            "LM_OPCAN_FRI_Officer_DES",
+            "LM_OPCAN_FRI_Rifleman_DES",
+            "LM_OPCAN_FRI_Rifleman_AT_DES",
+            "LM_OPCAN_FRI_RTO_DES",
+            "LM_OPCAN_Frihelm_W_DES",
+            "LM_OPCAN_FRI_SL_DES",
+            "LM_OPCAN_FRI_TL_DES",
+            "LM_OPCAN_FRI_AutoRifleman_WDL",
+            "LM_OPCAN_FRI_Breacher_WDL",
+            "LM_OPCAN_FRI_Medic_WDL",
+            "LM_OPCAN_FRI_Crewman_WDL",
+            "LM_OPCAN_FRI_Engineer_WDL",
+            "LM_OPCAN_FRI_GL_WDL",
+            "LM_OPCAN_FRI_Marksman_WDL",
+            "LM_OPCAN_FRI_Officer_WDL",
+            "LM_OPCAN_FRI_Rifleman_WDL",
+            "LM_OPCAN_FRI_Rifleman_AT_WDL",
+            "LM_OPCAN_FRI_RTO_WDL",
+            "LM_OPCAN_Frihelm_WDL",
+            "LM_OPCAN_FRI_SL_WDL",
+            "LM_OPCAN_FRI_TL_WDL",
+            "LM_OPCAN_KOS_AutoRifleman1",
+            "LM_OPCAN_KOS_Breacher1",
+            "LM_OPCAN_KOS_Medic1",
+            "LM_OPCAN_KOS_Crewman1",
+            "LM_OPCAN_KOS_Engineer1",
+            "LM_OPCAN_KOS_GL1",
+            "LM_OPCAN_KOS_Marksman1",
+            "LM_OPCAN_KOS_Officer1",
+            "LM_OPCAN_KOS_Rifleman1",
+            "LM_OPCAN_KOS_Rifleman_AT1",
+            "LM_OPCAN_KOS_RTO1",
+            "LM_OPCAN_KOS_Marksman1",
+            "LM_OPCAN_KOS_SL1",
+            "LM_OPCAN_KOS_TL1",
+            "LM_OPCAN_KOS_AutoRifleman2",
+            "LM_OPCAN_KOS_Breacher2",
+            "LM_OPCAN_KOS_Medic2",
+            "LM_OPCAN_KOS_Crewman2",
+            "LM_OPCAN_KOS_Engineer2",
+            "LM_OPCAN_KOS_GL2",
+            "LM_OPCAN_KOS_Marksman2",
+            "LM_OPCAN_KOS_Officer2",
+            "LM_OPCAN_KOS_Rifleman2",
+            "LM_OPCAN_KOS_Rifleman_AT2",
+            "LM_OPCAN_KOS_RTO2",
+            "LM_OPCAN_KOS_Marksman2",
+            "LM_OPCAN_KOS_SL2",
+            "LM_OPCAN_KOS_TL2",
+            "LM_OPCAN_KOS_AutoRifleman3",
+            "LM_OPCAN_KOS_Breacher3",
+            "LM_OPCAN_KOS_Medic3",
+            "LM_OPCAN_KOS_Crewman3",
+            "LM_OPCAN_KOS_Engineer3",
+            "LM_OPCAN_KOS_GL3",
+            "LM_OPCAN_KOS_Marksman3",
+            "LM_OPCAN_KOS_Officer3",
+            "LM_OPCAN_KOS_Rifleman3",
+            "LM_OPCAN_KOS_Rifleman_A3L",
+            "LM_OPCAN_KOS_RTO3",
+            "LM_OPCAN_KOS_Marksman3",
+            "LM_OPCAN_KOS_SL3",
+            "LM_OPCAN_KOS_TL3",
+            "LM_OPCAN_KOS_AutoRifleman4",
+            "LM_OPCAN_KOS_Breacher4",
+            "LM_OPCAN_KOS_Medic4",
+            "LM_OPCAN_KOS_Crewman4",
+            "LM_OPCAN_KOS_Engineer4",
+            "LM_OPCAN_KOS_GL4",
+            "LM_OPCAN_KOS_Marksman4",
+            "LM_OPCAN_KOS_Officer4",
+            "LM_OPCAN_KOS_Rifleman4",
+            "LM_OPCAN_KOS_Rifleman_AT4",
+            "LM_OPCAN_KOS_RTO4",
+            "LM_OPCAN_KOS_Marksman4",
+            "LM_OPCAN_KOS_SL4",
+            "LM_OPCAN_KOS_TL4",
             "1stMEU_CTF_Flag_VulcanHQ",
             "1stMEU_CTF_Flag_50",
             "1stMEU_CTF_Flag_5M",
@@ -298,15 +396,45 @@ class CfgEditorCategories
         scopeCurator = 2;
         scopeeditor = 2;
     };
-    class MEU_Fridens
+    class MEU_Friden
     {
         displayName = "[1stMEU] Fridens"
         scopeCurator = 2;
         scopeeditor = 2;
     };
-    class MEU_Koslovic
+    class MEU_Friden_Des
+    {
+        displayName = "[1stMEU] Fridens (Desert)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Friden_Wdl
+    {
+        displayName = "[1stMEU] Fridens (Woodland)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Koslovic_Jun
+    {
+        displayName = "[1stMEU] Koslovic (Jungle)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Koslovic_Swa
+    {
+        displayName = "[1stMEU] Koslovic (Swamp)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Koslovic_Wdl
     {
         displayName = "[1stMEU] Koslovic"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_Koslovic_Ard
+    {
+        displayName = "[1stMEU] Koslovic (Arid)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
@@ -352,6 +480,12 @@ class CfgEditorSubcategories
     class MEU_sub_fix
     {
 		displayName = "Planes";
+        scopeCurator = 2;
+        scopeeditor = 2;
+	};
+    class MEU_Men
+    {
+		displayName = "Men";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
