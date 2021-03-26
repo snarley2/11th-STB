@@ -91,4 +91,25 @@ class CfgFunctions
 			};
 		};
     };
+
+	class OPTRE
+	{
+		class HEV
+		{
+			class HEVChuteDeploy
+			{
+				file = "first_meu_aux\functions\HEV\fn_HEVChuteDeploy.sqf";
+			};
+
+			class HEVDoor
+			{
+				file = "first_meu_aux\functions\HEV\fn_HEVDoor.sqf";
+			};
+
+			class HEVHandleLanding
+			{
+				file = "first_meu_aux\functions\HEV\fn_HEVHandleLanding.sqf";
+			};
+		};
+	};
 };

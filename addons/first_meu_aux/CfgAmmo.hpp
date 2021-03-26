@@ -20,6 +20,7 @@ class CfgAmmo
     class Sh_82mm_AMOS_Chem_Type2;
     class Sh_82mm_AMOS_Chem_Type1;
     class Sh_82mm_AMOS_Chem_Type0;
+	class IEDUrbanSmall_Remote_Ammo;
 	
 	//Shotguns
 	class B_12Gauge_Pellets_Submunition;
@@ -682,4 +683,10 @@ class CfgAmmo
 		CBRN_lifetime = 120;
 	};
     //
+	class MEU_HEV_Landing_Explosive: IEDUrbanSmall_Remote_Ammo
+	{
+		hit = 0;
+		indirectHit = 0;
+		indirectHitRange = 0;
+	};
 };
