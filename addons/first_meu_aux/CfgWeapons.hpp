@@ -12812,6 +12812,14 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Silver_3HQ_Silent.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
+    class Praetor_Helmet_37_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+        hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Silver_3HQ_Indigo.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+    };
     class Praetor_Helmet_Ender_3M_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
@@ -13429,6 +13437,17 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Silver_3HQ_Silent.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
+    class Praetor_Helmet_37: 1stMEU_Base_CH252D_Helmet
+    {
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[1stMEU] 3-7 CH252D Helmet (Indigo)";
+        optreVarietys[] = {"_dp","","_broken"};
+        hiddenSelections[] = {"camo","camo2"};
+        hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\3rdPlt\ODST_H3_Silver_3HQ_Indigo.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
     class Praetor_Helmet_Ender_3M: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
@@ -16201,6 +16220,15 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		displayName = "[1stMEU] C-A CH252 Heavy Helmet (Steeler)"; 
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\CA_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     };
+    class Marine_Helmet_CS : 1MEU_Base_CH252_Helmet 
+    { 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
+		author = "1st MEU Ginger"; 
+		displayName = "[1stMEU] C-S CH252 Heavy Helmet (Red)"; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\CA_V_CH252_MAR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
+    };
     class Marine_Helmet_CM : 1MEU_Base_CH252_Helmet 
     { 
         scope = 2; 
@@ -16222,6 +16250,12 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
     // Cent Comp Leadership End
     // Cent Comp Leadership DP Start
     class Marine_Helmet_CA_dp : 1MEU_Base_CH252_Helmet 
+	{ 
+		scopeArsenal = 1; 
+		scope = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\1stplt\Leadership\CA_V_CH252_MAR_H_CO.paa"}; 
+	};
+    class Marine_Helmet_CS_dp : 1MEU_Base_CH252_Helmet 
 	{ 
 		scopeArsenal = 1; 
 		scope = 1;
