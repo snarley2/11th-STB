@@ -1810,7 +1810,7 @@ class CfgVehicles
         scopeArsenal = 2; 
         crew = "LM_OPCAN_KOS_Rifleman"; 
         faction = "MEU_Insurrectionist"; 
-        editorCategory = "MEU_Koslovic"; 
+        editorCategory = "MEU_Koslovic_Wdl"; 
         editorsubCategory = "MEU_sub_arm"; 
         hiddenSelections[] = {"Camo1","Camo2","CamoNet"}; 
         hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_04_exterior_Koslovic_1_CO.paa","first_meu_aux\data\vehicles\MBT_04_exterior_Koslovic_2_CO.paa"}; 
@@ -1826,7 +1826,8 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_kuz_Koslovic_co.paa","first_meu_aux\data\vehicles\truck_02_int_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
         scope = 2;
         side = 0;
-        editorCategory = "MEU_Koslovic"; 
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_sub_Motorised";
         class SimpleObject {};
         textureList[] = {"KOS",1};
         transportSoldier = 14;
@@ -1844,7 +1845,7 @@ class CfgVehicles
         class SimpleObject {};
         typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","first_meu_aux\data\vehicles\truck_02_int_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_MRL_Koslovic_CO","first_meu_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
-        editorCategory = "MEU_Koslovic"; 
+        editorCategory = "MEU_Koslovic_Wdl"; 
     };
     class MEU_Kazan_Koslovic: O_MBT_02_cannon_F 
     { 
@@ -1855,7 +1856,7 @@ class CfgVehicles
 		scope = 2; 
 		scopeCurator = 2; 
 		scopeArsenal = 2; 
-        editorCategory = "MEU_Koslovic"; 
+        editorCategory = "MEU_Koslovic_Wdl"; 
         editorsubCategory = "MEU_sub_arm"; 
 		hiddenSelections[] = {"camo1","camo2","camo3"}; 
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_turret_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa"}; 
@@ -1887,8 +1888,8 @@ class CfgVehicles
         ace_cargo_size = 10;
         faction = "LM_OPCAN_KOS";
         side = 0;
-		editorCategory = "MEU_Koslovic";
-		editorsubCategory = "MEU_sub_car";
+		editorCategory = "MEU_Koslovic_Wdl";
+		editorsubCategory = "MEU_sub_Motorised";
 		crew = "LM_OPCAN_KOS_Crewman";
         class TransportMagazines
 		{
@@ -1974,8 +1975,8 @@ class CfgVehicles
         side = 0;
         class SimpleObject {};
         typicalCargo[] = {"LM_OPCAN_KOS_Crewman"};
-        editorCategory = "MEU_Koslovic";
-		editorsubCategory = "MEU_sub_car";
+        editorCategory = "MEU_Koslovic_Wdl";
+		editorsubCategory = "MEU_sub_Motorised";
         class TextureSources 
 		{ 
 			class KOS_Camo
@@ -2001,8 +2002,8 @@ class CfgVehicles
 		};
         class SimpleObject {};
         typicalCargo[] = {"LM_OPCAN_KOS_Crewman"};
-        editorCategory = "MEU_Koslovic";
-		editorsubCategory = "MEU_sub_car";
+        editorCategory = "MEU_Koslovic_Wdl";
+		editorsubCategory = "MEU_sub_Motorised";
         class TextureSources 
 		{ 
 			class KOS_Camo
@@ -2028,7 +2029,7 @@ class CfgVehicles
         textureList[] = {"KOS_Camo",1};
         class TextureSources {};
         typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
-        editorCategory = "MEU_Koslovic";
+        editorCategory = "MEU_Koslovic_Wdl";
     };
     class MEU_Hyena_Friden: B_UGV_01_rcws_F
     {
@@ -2041,7 +2042,7 @@ class CfgVehicles
         faction = "MEU_Insurrectionist";
         side = 0;
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\UGV_01_ext_Friden_co.paa","\first_meu_aux\data\vehicles\UGV_01_int_Friden_co.paa","\first_meu_aux\data\vehicles\Turret_Friden.paa"};
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
     };
 	class MEU_Leopard: APC_Wheeled_02_base_v2_F
 	{
@@ -2173,7 +2174,7 @@ class CfgVehicles
 		side = 1;
 		faction = "MEU_UNSC";
 		editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_Motorized";
+        editorsubCategory = "MEU_sub_Motorised";
 	};
 	
 	class MEU_Leopard_Medical_APC: MEU_Leopard
@@ -2253,7 +2254,7 @@ class CfgVehicles
 		side = 1;
 		faction = "MEU_UNSC";
 		editorCategory = "MEU_cat_A";
-        editorsubCategory = "MEU_sub_Motorized";
+        editorsubCategory = "MEU_sub_Motorised";
 	};
 	
     class MEU_M12_AP : VES_M12_APC
@@ -2334,7 +2335,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Heli_Light_03_base_friden_CO.paa"};
         side = 0;
         transportSoldier = 4;
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
         editorsubCategory = "MEU_sub_rot";
     };
     class MEU_Arthur_Rotary_Friden : I_Heli_Transport_02_F
@@ -2349,7 +2350,7 @@ class CfgVehicles
         hiddenSelections[] = {"camo1","camo2","camo3"};
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Arthur_Body_1.paa","\first_meu_aux\data\vehicles\Arthur_Body_2.paa","\first_meu_aux\data\vehicles\Arthur_Body_3.paa"};
         side = 0;
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
         editorsubCategory = "MEU_sub_rot";
     };
     class MEU_Wasp_Friden : I_Plane_Fighter_03_CAS_F
@@ -2364,7 +2365,7 @@ class CfgVehicles
         faction = "MEU_Insurrectionist";
         hiddenSelections[]= {"camo1","camo2"};
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\plane_buzzard_body_01_co.paa","\first_meu_aux\data\vehicles\plane_buzzard_body_02_co.paa"};
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
         editorsubCategory = "MEU_sub_fix";
     };
     class MEU_Witherwing_Friden : I_Plane_Fighter_04_F
@@ -2378,7 +2379,7 @@ class CfgVehicles
         side = 0;
         faction = "MEU_Insurrectionist";
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Witherwing_01_co.paa","\first_meu_aux\data\vehicles\Witherwing_02_co.paa"};
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
         editorsubCategory = "MEU_sub_fix";
     };
     class MEU_Ansaldo_Friden: O_MRAP_02_HMG_F
@@ -2394,8 +2395,8 @@ class CfgVehicles
         ace_cargo_size = 10;
         faction = "MEU_Insurrectionist";
         side = 0;
-		editorCategory = "MEU_Fridens";
-		editorsubCategory = "MEU_sub_car";
+		editorCategory = "MEU_Friden";
+		editorsubCategory = "MEU_sub_Motorised";
 		crew = "LM_OPCAN_FRI_Rifleman";
         class TransportMagazines
 		{
@@ -2619,7 +2620,7 @@ class CfgVehicles
 		faction = "MEU_Insurrectionist";
 		crew = "LM_OPCAN_FRI_Rifleman";
 		side = 0;
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
 		editorsubCategory = "MEU_sub_Mechanized";
 		vehicleClass = "APCs";
 		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
@@ -2706,7 +2707,7 @@ class CfgVehicles
 		faction = "MEU_Insurrectionist";
         crew = "LM_OPCAN_FRI_Rifleman";
 		side = 0;
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
 		editorsubCategory = "MEU_sub_Motorised";
         vehicleClass = "APCs";
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4",};
@@ -2798,7 +2799,7 @@ class CfgVehicles
 		};
 		faction = "MEU_Insurrectionist";
 		side = 0;
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
 		editorsubCategory = "MEU_sub_Motorised";
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
         hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Raptor_01_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_02_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_03_Ext_co.paa"};
@@ -2857,7 +2858,7 @@ class CfgVehicles
 		faction = "MEU_Insurrectionist";
         armor = 1200;
 		armorStructural = 6;
-        editorCategory = "MEU_Fridens";
+        editorCategory = "MEU_Friden";
 		editorsubCategory = "MEU_sub_arm";
 		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
 		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Tusk_Ext01_co.paa","\first_meu_aux\data\vehicles\Tusk_Ext02_co.paa","\first_meu_aux\data\vehicles\Tusk_RCWS_co.paa"};
@@ -7026,6 +7027,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Officer";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7046,6 +7049,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Squad Leader";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7066,6 +7071,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Team Leader";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7085,6 +7092,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7104,6 +7113,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Grenadier";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7123,6 +7134,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Corpsman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7144,6 +7157,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "marksman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7163,6 +7178,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "RTO Operator";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7183,6 +7200,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Sniper";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7203,6 +7222,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "AutoRifleman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7222,6 +7243,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Crewman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7241,6 +7264,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7261,6 +7286,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Breacher";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7282,6 +7309,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Engineer";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
@@ -7301,6 +7330,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Officer";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7321,6 +7352,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Squad Leader";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7341,6 +7374,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Team Leader";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7360,6 +7395,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7379,6 +7416,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Grenadier";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7398,6 +7437,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Corpsman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7419,6 +7460,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "marksman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7438,6 +7481,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "RTO Operator";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7458,6 +7503,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Sniper";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7478,6 +7525,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "AutoRifleman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7497,6 +7546,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Crewman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7516,6 +7567,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7536,6 +7589,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Breacher";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7557,6 +7612,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Engineer";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
@@ -7576,6 +7633,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Officer";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7596,6 +7655,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Squad Leader";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7616,6 +7677,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Team Leader";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7635,6 +7698,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7654,6 +7719,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Grenadier";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7673,6 +7740,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Corpsman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7694,6 +7763,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "marksman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7713,6 +7784,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "RTO Operator";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7733,6 +7806,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Sniper";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7753,6 +7828,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "AutoRifleman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7772,6 +7849,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Crewman";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7791,6 +7870,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7811,6 +7892,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Breacher";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7832,6 +7915,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Engineer";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
@@ -7844,16 +7929,19 @@ class CfgVehicles
 		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-    class LM_OPCAN_KOS_Officer: O_Soldier_F
+// KOS Jungle
+    class LM_OPCAN_KOS_Officer1: O_Soldier_F
     {
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Officer";
-		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka1_uni_Base";
 		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
@@ -7863,7 +7951,7 @@ class CfgVehicles
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_SL: O_Soldier_SL_F
+	class LM_OPCAN_KOS_SL1: O_Soldier_SL_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
@@ -7871,19 +7959,21 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Squad Leader";
-		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
 		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_TL: O_Soldier_TL_F
+	class LM_OPCAN_KOS_TL1: O_Soldier_TL_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
@@ -7891,6 +7981,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Team Leader";
 		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
@@ -7903,13 +7995,15 @@ class CfgVehicles
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Rifleman: O_Soldier_F
+	class LM_OPCAN_KOS_Rifleman1: O_Soldier_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman";
 		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
@@ -7922,13 +8016,621 @@ class CfgVehicles
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_GL: O_Soldier_GL_F
+	class LM_OPCAN_KOS_GL1: O_Soldier_GL_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Grenadier";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Medic1: O_Medic_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Corpsman";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		attendant = 1;
+		backpack = "OPTRE_UNSC_Rucksack_Medic_Filled";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Marksman1: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "marksman";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		weapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_RTO1: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "RTO Operator";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		backpack = "OPTRE_ANPRC_521_URF";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Sniper1: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Sniper";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_AutoRifleman1: O_Soldier_AR_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "AutoRifleman";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Crewman1: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Crewman";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_KOS_Vest","H_Tank_Black_F","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Rifleman_AT1: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AT)";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Breacher1: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Breacher";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Engineer1: O_Engineer_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy_Demo";
+		engineer = 1;
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Engineer";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+// Koslovic Arid
+    class LM_OPCAN_KOS_Officer2: O_Soldier_F
+    {
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Officer";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_SL2: O_Soldier_SL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Squad Leader";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_TL2: O_Soldier_TL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Team Leader";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Rifleman2: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_GL2: O_Soldier_GL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Grenadier";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Medic2: O_Medic_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Corpsman";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		attendant = 1;
+		backpack = "OPTRE_UNSC_Rucksack_Medic_Filled";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Marksman2: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "marksman";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_RTO2: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "RTO Operator";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		backpack = "OPTRE_ANPRC_521_URF";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Sniper2: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Sniper";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_AutoRifleman2: O_Soldier_AR_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "AutoRifleman";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Crewman2: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Crewman";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_KOS_Vest","H_Tank_Black_F","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_KOS_Vest","H_Tank_Black_F","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Rifleman_AT2: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AT)";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Breacher2: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Breacher";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Engineer2: O_Engineer_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy_Demo";
+		engineer = 1;
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Engineer";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    // Koslovic Swamp
+    class LM_OPCAN_KOS_Officer3: O_Soldier_F
+    {
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Officer";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_SL3: O_Soldier_SL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Squad Leader";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_TL3: O_Soldier_TL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Team Leader";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Rifleman3: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_GL3: O_Soldier_GL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Grenadier";
 		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
@@ -7941,13 +8643,319 @@ class CfgVehicles
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Medic: O_Medic_F
+	class LM_OPCAN_KOS_Medic3: O_Medic_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Corpsman";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		attendant = 1;
+		backpack = "OPTRE_UNSC_Rucksack_Medic_Filled";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Marksman3: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "marksman";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_RTO3: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "RTO Operator";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		backpack = "OPTRE_ANPRC_521_URF";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Sniper3: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Sniper";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_AutoRifleman3: O_Soldier_AR_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "AutoRifleman";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Crewman3: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Crewman";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_KOS_Vest","H_Tank_Black_F","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_KOS_Vest","H_Tank_Black_F","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Rifleman_AT3: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AT)";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Breacher3: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Breacher";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Engineer3: O_Engineer_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy_Demo";
+		engineer = 1;
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Engineer";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+// Koslovic Woodland
+    class LM_OPCAN_KOS_Officer4: O_Soldier_F
+    {
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Officer";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_SL4: O_Soldier_SL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Squad Leader";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_TL4: O_Soldier_TL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		backpack = "OPTRE_UNSC_Rucksack";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Team Leader";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Rifleman4: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_GL4: O_Soldier_GL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Grenadier";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
+		weapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		respawnWeapons[] = {"LM_OPCAN_CTAR_GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_KOS_Medic4: O_Medic_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Corpsman";
 		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
@@ -7962,35 +8970,39 @@ class CfgVehicles
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Marksman: O_Soldier_M_F
+	class LM_OPCAN_KOS_Marksman4: O_Soldier_M_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "marksman";
-		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
 		weapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
 		respawnMagazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
-		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_RTO: O_Soldier_F
+	class LM_OPCAN_KOS_RTO4: O_Soldier_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "RTO Operator";
-		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
 		backpack = "OPTRE_ANPRC_521_URF";
 		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
@@ -7998,16 +9010,18 @@ class CfgVehicles
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Sniper: O_Soldier_M_F
+	class LM_OPCAN_KOS_Sniper4: O_Soldier_M_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Sniper";
 		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
@@ -8017,10 +9031,10 @@ class CfgVehicles
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		respawnMagazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		linkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_BRW_UP_Shemagheye","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_AutoRifleman: O_Soldier_AR_F
+	class LM_OPCAN_KOS_AutoRifleman4: O_Soldier_AR_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
@@ -8028,44 +9042,50 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "AutoRifleman";
-		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
 		weapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"LM_OPCAN_CTAR_SAW","OPTRE_M6G_SF","Throw","Put"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		respawnMagazines[] = {"100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","100Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Crewman: O_Soldier_F
+	class LM_OPCAN_KOS_Crewman4: O_Soldier_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Crewman";
-		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
 		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		linkedItems[] = {"LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"LM_OPCAN_KOS_Vest","H_Tank_Black_F","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_KOS_Vest","H_Tank_Black_F","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Rifleman_AT: O_Soldier_LAT_F
+	class LM_OPCAN_KOS_Rifleman_AT4: O_Soldier_LAT_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
@@ -8076,19 +9096,21 @@ class CfgVehicles
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Breacher: O_Soldier_F
+	class LM_OPCAN_KOS_Breacher4: O_Soldier_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Breacher";
-		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
 		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
@@ -8098,7 +9120,7 @@ class CfgVehicles
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-	class LM_OPCAN_KOS_Engineer: O_Engineer_F
+	class LM_OPCAN_KOS_Engineer4: O_Engineer_F
 	{
 		author = "J.Burgess";
 		faction = "LM_OPCAN_KOS";
@@ -8107,18 +9129,21 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Engineer";
-		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
 		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
 		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
-		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
-		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
+// URA
     class LM_OPCAN_URA_Officer: O_Soldier_F
 	{
 		author = "J.Burgess";
@@ -10708,7 +11733,7 @@ class CfgVehicles
          scope = 2;
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
-         editorsubCategory = "MEU_sub_ifv";
+         editorsubCategory = "MEU_sub_Motorised";
 	 displayName = "[1stMEU] M640 Bison IFV";
 	 weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
          magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
@@ -10721,7 +11746,7 @@ class CfgVehicles
          scope = 2;
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
-         editorsubCategory = "MEU_sub_ifv";
+         editorsubCategory = "MEU_sub_Motorised";
 	 displayName = "[1stMEU] M640 Bison MGS";
 	 weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
          magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
