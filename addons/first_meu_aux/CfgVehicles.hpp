@@ -5809,11 +5809,6 @@ class CfgVehicles
         tf_hasLRradio = 1;
         class TransportBackpacks
         {
-            class xx_OPTRE_OPTRE_ILCS_HEAVY
-			{
-				backpack = "OPTRE_ILCS_Rucksack_Heavy";
-				count = 1;
-			};
             class xx_MEU_Parachute
             {
                 backpack = "MEU_Parachute";
@@ -5867,7 +5862,9 @@ class CfgVehicles
             item_xx(ACE_Banana, 5);
             item_xx(ACE_splint, 2);
             item_xx(MEU_compat_Ibuprofen, 4);
-            delete _xx_OPTRE_Biofoam;
+			item_xx(MEU_Biofoam_Light, 5);
+			item_xx(MEU_Medigel_Light, 5);
+			delete _xx_OPTRE_Biofoam;
         };
         class userActions
         {
@@ -6086,6 +6083,7 @@ class CfgVehicles
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
     };
+	
     class stukasbackpack : B_RadioBag_01_black_F
     {
         author = "1st MEU Mark";
@@ -6119,6 +6117,9 @@ class CfgVehicles
     class Praetor_LR_backpack_big: OPTRE_ANPRC_521_Black
     {
         displayName = "[1stMEU] ODST LR Rucksack";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -6126,12 +6127,15 @@ class CfgVehicles
         tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 220;
+        maximumLoad = 1;
     };
     
 	class Praetor_LR_backpack: OPTRE_ANPRC_515
     {
         displayName = "[1stMEU] ODST NCO Rucksack";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -6139,7 +6143,7 @@ class CfgVehicles
         tf_range = 120000;
         tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-        maximumLoad = 320;
+        maximumLoad = 1;
     };
 	
 	class MEU_ANPRC_515: OPTRE_ANPRC_515
@@ -6307,7 +6311,7 @@ class CfgVehicles
 		scopeCurator = 1;
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
-        maximumLoad = 400;
+        maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
@@ -6317,7 +6321,10 @@ class CfgVehicles
     {
         author = "1st MEU Mark";
         displayName = "[1stMEU] ODST Uplink Rucksack";
-        maximumLoad = 250;
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+        maximumLoad = 1;
         class components :  DataLinkSensorComponent
         {
             class SensorsManagerComponent : SensorTemplateDataLink
@@ -6335,7 +6342,10 @@ class CfgVehicles
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ODST Trooper Rucksack";
-        maximumLoad = 320;
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+        maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
@@ -6345,7 +6355,10 @@ class CfgVehicles
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
-        maximumLoad = 400;
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+        maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
@@ -6355,6 +6368,9 @@ class CfgVehicles
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ODST Corpsman Rucksack";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
 		tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -6363,14 +6379,17 @@ class CfgVehicles
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
-		maximumLoad = 320;
+		maximumLoad = 1;
     };
 	
 	class MEU_Prae_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
         displayName = "[1stMEU] ODST Corpsman Heavy Rucksack";
-		maximumLoad = 400;
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};

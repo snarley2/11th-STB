@@ -1236,6 +1236,8 @@ class CfgMagazines
         dlc = "1st MEU";
         author = "Jhin";
 		
+		initspeed = 920;
+		
         ammo = "OPTRE_B_762x51_AP";
         displayname = "30Rnd 6.5x39mm AP Magazine";
         displaynameshort = "6.5x39mm AP";
@@ -1249,6 +1251,7 @@ class CfgMagazines
 
         tracersEvery = 1;
         count = 30;
+		initspeed = 920;
         
         ammo = "OPTRE_B_762x51_AP";
         displayname = "30Rnd 6.5x39mm AP Magazine (Tracer)";
@@ -1260,6 +1263,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 6.5x39mm JHP Magazine";
@@ -1274,6 +1279,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 30;
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 6.5x39mm JHP Magazine (Tracer)";
@@ -1286,6 +1292,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 920;
 
         ammo = "OPTRE_B_762x51_AP";
         displayname = "100Rnd 6.5x39mm AP Magazine";
@@ -1300,6 +1308,7 @@ class CfgMagazines
 
         tracersEvery = 1;
         count = 100;
+		initspeed = 920;
         
         ammo = "OPTRE_B_762x51_AP";
         displayname = "100Rnd 6.5x39mm AP Magazine (Tracer)";
@@ -1311,6 +1320,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "100Rnd 6.5x39mm JHP Magazine";
@@ -1325,6 +1336,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 100;
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "100Rnd 6.5x39mm JHP Magazine (Tracer)";
@@ -1337,6 +1349,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 920;
         
         ammo = "Optre_B_762x51_AP";
         displayname = "30Rnd 6.5mm Promet AP Magazine";
@@ -1351,6 +1365,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 30;
+		initspeed = 920;
         
         ammo = "Optre_B_762x51_AP";
         displayname = "30Rnd 6.5mm Promet APT Magazine (Tracer)";
@@ -1362,6 +1377,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
         
         ammo = "Optre_B_762x51_JHP";
         displayname = "30Rnd 6.5mm Promet JHP Magazine";
@@ -1376,6 +1393,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 30;
+		initspeed = 905;
         
         ammo = "Optre_B_762x51_JHP";
         displayname = "30Rnd 6.5mm Promet JHP Magazine (Tracer)";
@@ -1388,6 +1406,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 920;
 
         ammo = "OPTRE_B_762x51_AP";
         displayname = "30Rnd 5.56x45mm AP Magazine";
@@ -1402,6 +1422,7 @@ class CfgMagazines
 
         tracersEvery = 1;
         count = 30;
+		initspeed = 920;
         
         ammo = "OPTRE_B_762x51_AP";
         displayname = "30Rnd 5.56x45mm AP Magazine (Tracer)";
@@ -1413,6 +1434,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 5.56x45mm JHP Magazine";
@@ -1427,6 +1450,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 30;
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 5.56x45mm JHP Magazine (Tracer)";
@@ -1439,6 +1463,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 920;
 
         ammo = "OPTRE_B_762x51_AP";
         displayname = "30Rnd 5.8x40mm AP Magazine";
@@ -1453,6 +1479,7 @@ class CfgMagazines
 
         tracersEvery = 1;
         count = 30;
+		initspeed = 920;
         
         ammo = "OPTRE_B_762x51_AP";
         displayname = "30Rnd 5.8x40mm AP Magazine (Tracer)";
@@ -1464,6 +1491,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 5.8x40mm JHP Magazine";
@@ -1478,6 +1507,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 30;
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 5.8x40mm JHP Magazine (Tracer)";
@@ -1490,6 +1520,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 920;
 
         ammo = "OPTRE_B_762x51_AP";
         displayname = "100Rnd 5.8x40mm AP Magazine";
@@ -1504,6 +1536,7 @@ class CfgMagazines
 
         tracersEvery = 1;
         count = 100;
+		initspeed = 920;
         
         ammo = "OPTRE_B_762x51_AP";
         displayname = "100Rnd 5.8x40mm AP Magazine (Tracer)";
@@ -1515,6 +1548,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "100Rnd 5.8x40mm JHP Magazine";
@@ -1529,6 +1564,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 100;
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "100Rnd 5.8x40mm JHP Magazine (Tracer)";
@@ -1566,6 +1602,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 7.62x39mm JHP Magazine";
@@ -1580,6 +1618,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 30;
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "30Rnd 7.62x39mm JHP Magazine (Tracer)";
@@ -1592,6 +1631,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 920;
 
         ammo = "OPTRE_B_762x51_AP";
         displayname = "75rnd 7.62x39mm AP Magazine";
@@ -1606,6 +1647,7 @@ class CfgMagazines
 
         tracersEvery = 1;
         count = 75;
+		initspeed = 920;
         
         ammo = "OPTRE_B_762x51_AP";
         displayname = "75Rnd 7.62x39mm AP Magazine (Tracer)";
@@ -1617,6 +1659,8 @@ class CfgMagazines
     {
         dlc = "1st MEU";
         author = "Jhin";
+		
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "75Rnd 7.62x39mm JHP Magazine";
@@ -1631,6 +1675,7 @@ class CfgMagazines
         
         tracersEvery = 1;
         count = 75;
+		initspeed = 905;
 
         ammo = "OPTRE_B_762x51_JHP";
         displayname = "75Rnd 7.62x39mm JHP Magazine (Tracer)";

@@ -158,7 +158,7 @@ class CfgGroups
                     class Unit2
                     {
                         side = 0;
-                        vehicle = "OPTRE_Ins_URF_Rifleman_AR";
+                        vehicle = "OPTRE_Ins_URF_Assist_Autorifleman";
                         rank = "PRIVATE";
                         position[] = {-5,-5,0};
                     };
@@ -2950,8 +2950,7 @@ class CfgGroups
                         position[] = {5,-5,0};
                     };
                 };
-            };
-            
+            };            
 //OPCAN URA			
             class LM_OPCAN_URA_groups
             {
