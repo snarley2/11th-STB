@@ -28,8 +28,8 @@ class ACE_Medical_Treatment
             incompatibleMedication[] = {};
             viscosityChange = -1;
         };
-        class Atropine : MEU_compat_Ibuprofen
-        {};
+      /*  class Atropine : MEU_compat_Ibuprofen
+        {};*/
 		class ACE_Banana : Morphine
         {
             painReduce = 0.0;

@@ -57,12 +57,12 @@ class CfgMagazines
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     class OPTRE_16Rnd_127x40_Mag_NARQ;
-    class CBRN_IEDLandSmall_Type1_Remote_Mag;
+    /*class CBRN_IEDLandSmall_Type1_Remote_Mag;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type1;
-    class CBRN_1Rnd_82mm_Mo_Chemical_Type2;
+    class CBRN_1Rnd_82mm_Mo_Chemical_Type2;*/
     // Chemicals | 0 = CS | 1 = AS | 2 = NA
-    class ChemicalBarrel_NA_mag : CBRN_1Rnd_82mm_Mo_Chemical_Type2
+    /*class ChemicalBarrel_NA_mag : CBRN_1Rnd_82mm_Mo_Chemical_Type2
     {
 		displayName = "Nerve Agent Mortar (PLP)";
         ammo = "ChemicalBarrel_NA_ammo";
@@ -79,7 +79,7 @@ class CfgMagazines
 		displayName = "Crowd Suppressant Mortar (PLP)";
 		ammo = "hemicalBarrel_CS_Ammo";
         triggerWhenDestroyed = 1;
-    };
+    };*/
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
 	{
 		dlc = "OPTRE";
@@ -846,7 +846,7 @@ class CfgMagazines
 		mass = 6;
 	};
 	
-	class 1Rnd_CS_MEU_shell:1Rnd_HE_Grenade_shell
+	/*class 1Rnd_CS_MEU_shell:1Rnd_HE_Grenade_shell
 	{
 		author = "Oneill";
 		displayName = "M301 1 Rnd 40mm CS Shell";
@@ -857,7 +857,7 @@ class CfgMagazines
 		ammo = "40mm_CS";
 		fuseDistance = 3;
 		mass = 6;
-	};
+	};*/
 	
 	class 1Rnd_HE_MEU_shell:1Rnd_HE_Grenade_shell
 	{
@@ -905,7 +905,7 @@ class CfgMagazines
 		lastRoundsTracer = 5;
 	};
 	
-	class MEU_M3_CS_Mag : OPTRE_M2_Smoke
+	/*class MEU_M3_CS_Mag : OPTRE_M2_Smoke
     {
         author = "1st Oneill";
         scope = 2;
@@ -918,7 +918,7 @@ class CfgMagazines
 		mass = 4;
         descriptionShort = "M3 CS Grenade";
 		displayNameShort = "CS Grenade";
-    };
+    };*/
 	
 	class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
     {

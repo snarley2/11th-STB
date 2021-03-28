@@ -165,7 +165,7 @@ class CfgVehicles
     class VehicleSystemsTemplateLeftGunner;
     class VehicleSystemsTemplateRightGunner;
     
-    //chemwar
+    /*//chemwar
 	class CAManBase: Man
 	{
 		class ACE_Actions
@@ -176,7 +176,7 @@ class CfgVehicles
 				{};
             };
         };
-    };
+    };*/
 	//speedbag
     class MEU_Speedbag : Land_optre_milcrate_h3_long
     {
@@ -266,7 +266,7 @@ class CfgVehicles
         };
         mass = 20;
     };
-    class AtropineItem : MEU_compat_IbuprofenItem
+    /*class AtropineItem : MEU_compat_IbuprofenItem
     {
         scope = 2;
         scopeCurator = 2;
@@ -279,7 +279,7 @@ class CfgVehicles
             item_xx(Atropine,1);
         };
         mass = 20;
-    };
+    };*/
     class MEU_BiofoamItem: OPTRE_BiofoamItem
     {
         scope = 2;

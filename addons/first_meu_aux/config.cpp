@@ -257,9 +257,9 @@ class cfgPatches
             "Land_ModularOutPostBuildingQuarters",
             "Land_OPTRE_fusion_coil",
             "MEU_AWACS",
-            "ChemicalBarrel_NA",
+            /*"ChemicalBarrel_NA",
             "ChemicalBarrel_AS",
-            "ChemicalBarrel_CS",
+            "ChemicalBarrel_CS"*/
             "SuperWall_01",
             "shiva_uncovered",
             "logey_Box",
@@ -272,7 +272,7 @@ class cfgPatches
 			"OPTRE_Ins_BJ_Soldier_URB_Grenadier",
 			"OPTRE_Ins_URF_Rifleman_SMG",
             "MEU_KajMoney",
-            "MEU_Speedbag",
+            "MEU_Speedbag"
 		};
         magazines[] = 
 		{
@@ -322,7 +322,7 @@ class cfgPatches
 			"LM_OPCAN_M18AR_C",
 			"LM_OPCAN_M18AR_GL",
             "optre_hgun_SAS10_F",
-            "OPTRE_FC_Railgun",
+            "OPTRE_FC_Railgun"
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -361,7 +361,7 @@ class cfgPatches
             "NSM_patch_main",
             "NSM_patch_particle_effects",
             "V_FZ_Vehicles",
-            "task_force_radio",
+            "task_force_radio"
         };
     };
 };

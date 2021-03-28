@@ -135,7 +135,7 @@ class CfgWeapons
     class FullAutoSlow;
     class FullAutoFast; 
 	
-    // Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
+    /*// Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
 	{
         author = "Romeo" 
@@ -235,7 +235,7 @@ class CfgWeapons
                 lifeTime = 1;
             };
         };
-    };
+    };*/
 // Medical Items Start
     class MEU_compat_Ibuprofen: ACE_Morphine
 	{
@@ -2176,8 +2176,6 @@ class CfgWeapons
 		scopeCurator = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\TrainingArmor\MEU_CH252_PUR_H_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"};
 	};
-
-
 	class MEU_Mar_Helm_Training_Red_Med : 1MEU_Base_CH252_Helmet
     {
         scope = 2;
@@ -13638,7 +13636,7 @@ class CfgWeapons
 //iron
     class Peg_Iron : Siffy_Helmet
     {
-        displayName = "[1stMEU] Iron";
+        displayName = "[1stMEU] 3-6 VX-16 (Iron)";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Iron.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -18701,7 +18699,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
             reloadtime = 0;
 			magazines[] = {"MEU_Fury_Mag"};
 		};
-		class MEU_M3_CS_Muzzle : ThrowMuzzle
+		/*class MEU_M3_CS_Muzzle : ThrowMuzzle
 		{
             reloadtime = 0;
 			magazines[] = {"MEU_M3_CS_Mag"};
@@ -18709,7 +18707,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			{
 				fired = "_this execVM 'first_meu_aux\Functions\CS_Grenade.sqf'";
 			};
-		};
+		};*/
         class MEU_Bubble_Muzzle : ThrowMuzzle
         {
             reloadtime = 0;

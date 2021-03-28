@@ -17,13 +17,13 @@ class ACE_Medical_Treatment_Actions
         items[] = {"MEU_compat_Ibuprofen"};
         treatmentTime = 1;
     };
-    class Atropine : MEU_compat_Ibuprofen
+    /*class Atropine : MEU_compat_Ibuprofen
     {
 		displayName = "Inject Antidote";
         displayNameProgress = "Applying Chemical Antidote";
         allowedSelections[] = {"All"};
         items[] = {"Atropine"};
-    };
+    };*/
 	class ACE_Banana: Morphine
     {
         displayName = "Banana";

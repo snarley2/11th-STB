@@ -13,7 +13,6 @@ class CfgGlasses
         scope = 2;
         scopeArsenal = 2;
         displayname = "[1stMEU] Praetorian Shemagh (Olive) (Mark)";
-        CBRN_protectionLevel = "1 + 2 + 4";
         ACE_Resistance = 2;
         ACE_Protection = 1;
         ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
@@ -33,7 +32,6 @@ class CfgGlasses
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        CBRN_protectionLevel = "1 + 2 + 4";
 		ACE_Resistance = 2;
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
@@ -48,8 +46,7 @@ class CfgGlasses
         displayName = "[1stMEU] Praetorian Shemagh (Urban)";
 		scope = 2;
         scopeArsenal = 2;
-        scopeCurator = 2;
-        CBRN_protectionLevel = "1 + 2 + 4";        
+        scopeCurator = 2;   
 		ACE_Resistance = 2;
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
@@ -64,8 +61,7 @@ class CfgGlasses
         displayName = "[1stMEU] Praetorian Shemagh (Tan)";
 		scope = 2;
         scopeArsenal = 2;
-        scopeCurator = 2;
-        CBRN_protectionLevel = "1 + 2 + 4";        
+        scopeCurator = 2;    
 		ACE_Resistance = 2;
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
@@ -81,7 +77,6 @@ class CfgGlasses
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        CBRN_protectionLevel = "1 + 2 + 4";
 		ACE_Resistance = 2;
         ACE_Protection = 1;
 		hiddenSelections[] = {"camo2"};
@@ -98,7 +93,6 @@ class CfgGlasses
         scopeArsenal = 2;
         scopeCurator = 2;
         optreHUDStyle = "";
-        CBRN_protectionLevel = "1 + 2 + 4";
 		ACE_Resistance = 2;
         ACE_Protection = 1;
        /* class EventHandlers

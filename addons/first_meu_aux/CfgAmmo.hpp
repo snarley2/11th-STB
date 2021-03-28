@@ -17,9 +17,9 @@ class CfgAmmo
 	class M_Titan_AT;
 	class SmokeShell;
 	class OPAEX_40mm_Smoke;
-    class Sh_82mm_AMOS_Chem_Type2;
+    /*class Sh_82mm_AMOS_Chem_Type2;
     class Sh_82mm_AMOS_Chem_Type1;
-    class Sh_82mm_AMOS_Chem_Type0;
+    class Sh_82mm_AMOS_Chem_Type0;*/
 	class IEDUrbanSmall_Remote_Ammo;
 	
 	//Shotguns
@@ -174,7 +174,7 @@ class CfgAmmo
 		ExplosionEffects = "HEShellExplosion";
 	};
 	// CBRN Munitions
-	class CS_Grenade: Sh_82mm_AMOS
+	/*class CS_Grenade: Sh_82mm_AMOS
 	{
 		ace_frag_enabled = 0;
 		aiAmmoUsageFlags = "64 + 128";
@@ -220,7 +220,7 @@ class CfgAmmo
 	{
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
 		effectsSmoke = "";
-	};
+	};*/
 	// throwable sheild
 	class MEU_Bubbleshield_Ammo: ACE_SatchelCharge_Remote_Ammo_Thrown
 	{
@@ -652,7 +652,7 @@ class CfgAmmo
 		suppressionRadiusHit = 30;
 	};
     //cbrn
-    class ChemicalBarrel_NA_ammo : Sh_82mm_AMOS_Chem_Type2
+    /*class ChemicalBarrel_NA_ammo : Sh_82mm_AMOS_Chem_Type2
     {
 		hit = 0;
 		indirectHit = 0;
@@ -681,7 +681,7 @@ class CfgAmmo
 		CBRN_heightOfBurst = 1;
 		CBRN_sprayWidth = 30;
 		CBRN_lifetime = 120;
-	};
+	};*/
     //
 	class MEU_HEV_Landing_Explosive: IEDUrbanSmall_Remote_Ammo
 	{
