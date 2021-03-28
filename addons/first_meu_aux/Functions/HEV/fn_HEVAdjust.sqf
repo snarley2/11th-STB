@@ -3,8 +3,6 @@ params [
 	["_velocity", [0, 0, 0], [[1]]]
 ];
 
-hint format ["HEV Adjust: %1", _velocity];
-
 if (MEU_HEV_Thruster_Limit) then
 {
 	private _thrusterUses = _hev getVariable ["MEU_HEV_thrusterUses", MEU_HEV_Thruster_Uses];
