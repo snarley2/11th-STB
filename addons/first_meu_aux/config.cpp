@@ -291,7 +291,8 @@ class cfgPatches
             "MEU_B_8Gauge_Pellet",
             "MEU_B_8Gauge_Pellet_Submunition",
             "OPTRE_FC_BubbleShield_Ammo",
-            "MEU_16x65mm_Slug"
+            "MEU_16x65mm_Slug",
+            "MEU_HEV_Landing_Explosive"
         };
 		weapons[] = 
 		{
@@ -508,4 +509,12 @@ class CfgEditorSubcategories
         scopeCurator = 2;
         scopeeditor = 2;
 	};
+};
+
+class Extended_PreInit_EventHandlers
+{
+    class MEU_pre_init_event
+	{
+        init = "call compile preprocessFileLineNumbers 'first_meu_aux\XEH_preInit.sqf'";
+    };
 };
