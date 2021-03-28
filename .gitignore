@@ -3,4 +3,6 @@
 .pbo
 @first meu DevAuxMod
 
+build/
+
 *.pbo
