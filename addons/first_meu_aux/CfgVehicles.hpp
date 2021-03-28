@@ -5877,53 +5877,53 @@ class CfgVehicles
                 statement = "0 = [this, 0, true] spawn OPTRE_Fnc_HEVDoor; this setVariable [""OPTRE_HEV_DoorEjectedWanted"",false,true]; resetCamShake; moveOut player; player allowDamage true;";
                 onlyforplayer = 1;
             };
-			class thrustNorth
+			class thrustForward
 			{
-				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust North";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust North";
+				condition = "gunner this == player AND (((getPosATL player) select 2) > MEU_HEV_Thruster_Min_Height)";
+				displayName = "<t color='#FE2E2E'>Adjust Forward</t>";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Forward</t>";
 				onlyForPlayer = 1;
 		        hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_veh = vehicle _this; _vel = velocity _veh; this setVelocity [0, (_vel select 1) + 5, (_vel select 2)];";
-				textToolTip = "<t color='#FE2E2E'>Adjust North";
+				statement = "[this, [0, MEU_HEV_Thruster_Velocity, 0]] call MEU_fnc_HEVAdjust;";
+				textToolTip = "<t color='#FE2E2E'>Adjust Forward</t>";
 			};
-			class thrustSouth
+			class thrustBackward
 			{
-				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust South";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust South";
+				condition = "gunner this == player AND (((getPosATL player) select 2) > MEU_HEV_Thruster_Min_Height)";
+				displayName = "<t color='#FE2E2E'>Adjust Backward</t>";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Backward</t>";
 				onlyForPlayer = 1;
 		        hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [0, (_vel select 1) - 5, (_vel select 2)];";
-				textToolTip = "<t color='#FE2E2E'>Adjust South";
+				statement = "[this, [0, -MEU_HEV_Thruster_Velocity, 0]] call MEU_fnc_HEVAdjust;";
+				textToolTip = "<t color='#FE2E2E'>Adjust Backward</t>";
 			};
-			class thrustEast
+			class thrustRight
 			{
-				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust East";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust East";
+				condition = "gunner this == player AND (((getPosATL player) select 2) > MEU_HEV_Thruster_Min_Height)";
+				displayName = "<t color='#FE2E2E'>Adjust Right";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Right</t>";
 				onlyForPlayer = 1;
 				hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [(_vel select 0) + 5, 0, (_vel select 2)];";
-				textToolTip = "<t color='#FE2E2E'>Adjust East";
+				statement = "[this, [MEU_HEV_Thruster_Velocity, 0, 0]] call MEU_fnc_HEVAdjust;";
+				textToolTip = "<t color='#FE2E2E'>Adjust Right</t>";
 			};
-			class thrustWest
+			class thrustLeft
 			{
-				condition = "gunner this == player AND (((getPosATL player) select 2) > 500)";
-				displayName = "<t color='#FE2E2E'>Adjust West";
-				displayNameDefault = "<t color='#FE2E2E'>Adjust West";
+				condition = "gunner this == player AND (((getPosATL player) select 2) > MEU_HEV_Thruster_Min_Height)";
+				displayName = "<t color='#FE2E2E'>Adjust Left</t>";
+				displayNameDefault = "<t color='#FE2E2E'>Adjust Left</t>";
 				onlyForPlayer = 1;
 				hideOnUse = 0;
                 radius = 4;
 				position = "";
-				statement = "_veh = vehicle _this; _vel = velocity _veh; _veh setVelocity [(_vel select 0) - 5, 0, (_vel select 2)];";
-				textToolTip = "<t color='#FE2E2E'>Adjust West";
+				statement = "[this, [-MEU_HEV_Thruster_Velocity, 0, 0]] call MEU_fnc_HEVAdjust;";
+				textToolTip = "<t color='#FE2E2E'>Adjust Left</t>";
 			};
         };
     };

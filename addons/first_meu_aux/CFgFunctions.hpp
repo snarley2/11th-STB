@@ -90,6 +90,14 @@ class CfgFunctions
 				file = "first_meu_aux\functions\utility\get_config\integer_to_boolean.sqf";
 			};
 		};
+
+		class HEV
+		{
+			class HEVAdjust
+			{
+				file = "first_meu_aux\functions\HEV\fn_HEVAdjust.sqf";
+			};
+		};
     };
 
 	class OPTRE
