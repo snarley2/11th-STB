@@ -60,3 +60,48 @@
 	[0, 5, 1, 1],
 	true
 ] call CBA_fnc_addSetting;
+
+[
+	"MEU_HEV_Start_Heights",
+	"EDITBOX",
+	"Start Heights",
+	["1st MEU Aux Mod", "HEV Drop Parameters"],
+	"5000,4500,4000",
+	true
+] call CBA_fnc_addSetting;
+
+[
+	"MEU_HEV_Atmosphere_Start",
+	"EDITBOX",
+	"Atmosphere Start Height",
+	["1st MEU Aux Mod", "HEV Drop Parameters"],
+	"3000",
+	true
+] call CBA_fnc_addSetting;
+
+[
+	"MEU_HEV_Atmosphere_End",
+	"EDITBOX",
+	"Atmosphere End Height",
+	["1st MEU Aux Mod", "HEV Drop Parameters"],
+	"2000",
+	true
+] call CBA_fnc_addSetting;
+
+[
+	"MEU_HEV_Chute_Open",
+	"EDITBOX",
+	"Chute Open Height",
+	["1st MEU Aux Mod", "HEV Drop Parameters"],
+	"1000,500,300",
+	true
+] call CBA_fnc_addSetting;
+
+[
+	"MEU_HEV_Chute_Detach",
+	"EDITBOX",
+	"Chute Detach Height",
+	["1st MEU Aux Mod", "HEV Drop Parameters"],
+	"500,200,100",
+	true
+] call CBA_fnc_addSetting;

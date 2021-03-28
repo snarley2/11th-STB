@@ -111,5 +111,13 @@ class CfgFunctions
 				file = "first_meu_aux\functions\HEV\fn_HEVHandleLanding.sqf";
 			};
 		};
+
+		class MenuFunctions
+		{
+			class HEVRoom
+			{
+				file = "first_meu_aux\functions\MenuFunctions\fn_HEVRoom.sqf";
+			};
+		};
 	};
 };
