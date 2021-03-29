@@ -33,6 +33,7 @@ class cfgPatches
             "LM_OPCAN_FRI_Officer",
             "LM_OPCAN_FRI_Rifleman",
             "LM_OPCAN_FRI_Rifleman_AT",
+            "LM_OPCAN_FRI_Rifleman_AA",
             "LM_OPCAN_FRI_RTO",
             "LM_OPCAN_Frihelm",
             "LM_OPCAN_FRI_SL",
@@ -47,6 +48,7 @@ class cfgPatches
             "LM_OPCAN_FRI_Officer_DES",
             "LM_OPCAN_FRI_Rifleman_DES",
             "LM_OPCAN_FRI_Rifleman_AT_DES",
+            "LM_OPCAN_FRI_Rifleman_AA_DES",
             "LM_OPCAN_FRI_RTO_DES",
             "LM_OPCAN_Frihelm_W_DES",
             "LM_OPCAN_FRI_SL_DES",
@@ -61,6 +63,7 @@ class cfgPatches
             "LM_OPCAN_FRI_Officer_WDL",
             "LM_OPCAN_FRI_Rifleman_WDL",
             "LM_OPCAN_FRI_Rifleman_AT_WDL",
+            "LM_OPCAN_FRI_Rifleman_AA_WDL",
             "LM_OPCAN_FRI_RTO_WDL",
             "LM_OPCAN_Frihelm_WDL",
             "LM_OPCAN_FRI_SL_WDL",
@@ -75,6 +78,7 @@ class cfgPatches
             "LM_OPCAN_KOS_Officer1",
             "LM_OPCAN_KOS_Rifleman1",
             "LM_OPCAN_KOS_Rifleman_AT1",
+            "LM_OPCAN_KOS_Rifleman_AA1",
             "LM_OPCAN_KOS_RTO1",
             "LM_OPCAN_KOS_Marksman1",
             "LM_OPCAN_KOS_SL1",
@@ -89,6 +93,7 @@ class cfgPatches
             "LM_OPCAN_KOS_Officer2",
             "LM_OPCAN_KOS_Rifleman2",
             "LM_OPCAN_KOS_Rifleman_AT2",
+            "LM_OPCAN_KOS_Rifleman_AA2",
             "LM_OPCAN_KOS_RTO2",
             "LM_OPCAN_KOS_Marksman2",
             "LM_OPCAN_KOS_SL2",
@@ -102,7 +107,8 @@ class cfgPatches
             "LM_OPCAN_KOS_Marksman3",
             "LM_OPCAN_KOS_Officer3",
             "LM_OPCAN_KOS_Rifleman3",
-            "LM_OPCAN_KOS_Rifleman_A3L",
+            "LM_OPCAN_KOS_Rifleman_AT3",
+            "LM_OPCAN_KOS_Rifleman_AA3",
             "LM_OPCAN_KOS_RTO3",
             "LM_OPCAN_KOS_Marksman3",
             "LM_OPCAN_KOS_SL3",
@@ -117,10 +123,62 @@ class cfgPatches
             "LM_OPCAN_KOS_Officer4",
             "LM_OPCAN_KOS_Rifleman4",
             "LM_OPCAN_KOS_Rifleman_AT4",
+            "LM_OPCAN_KOS_Rifleman_AA4",
             "LM_OPCAN_KOS_RTO4",
             "LM_OPCAN_KOS_Marksman4",
             "LM_OPCAN_KOS_SL4",
             "LM_OPCAN_KOS_TL4",
+            "MEU_URA_BJ_AutoRifleman",
+            "MEU_URA_BJ_Breacher",
+            "MEU_URA_BJ_Medic",
+            "MEU_URA_BJ_Crewman",
+            "MEU_URA_BJ_Engineer",
+            "MEU_URA_BJ_GL",
+            "MEU_URA_BJ_Marksman",
+            "MEU_URA_BJ_Officer",
+            "MEU_URA_BJ_Rifleman",
+            "MEU_URA_BJ_Rifleman_AT",
+            "MEU_URA_BJ_Rifleman_AA",
+            "MEU_URA_BJ_RTO",
+            "MEU_URA_BJ_Sniper",
+            "MEU_URA_BJ_SL",
+            "MEU_URA_BJ_TL",
+            "LM_OPCAN_URA_AutoRifleman",
+            "LM_OPCAN_URA_Breacher",
+            "LM_OPCAN_URA_Medic",
+            "LM_OPCAN_URA_Crewman",
+            "LM_OPCAN_URA_Engineer",
+            "LM_OPCAN_URA_GL",
+            "LM_OPCAN_URA_Marksman",
+            "LM_OPCAN_URA_Officer",
+            "LM_OPCAN_URA_Rifleman",
+            "LM_OPCAN_URA_Rifleman_AT",
+            "LM_OPCAN_URA_Rifleman_AA",
+            "LM_OPCAN_URA_RTO",
+            "LM_OPCAN_URA_Sniper",
+            "LM_OPCAN_URA_SL",
+            "LM_OPCAN_URA_TL",
+            "LM_OPCAN_M350_INS_WDL",
+            "LM_OPCAN_M48_Buzz_URA",
+            "LM_OPCAN_M92_BOLT_URA",
+            "LM_OPCAN_URA_AutoRifleman_D",
+            "LM_OPCAN_URA_Breacher_D",
+            "LM_OPCAN_URA_Medic_D",
+            "LM_OPCAN_URA_Crewman_D",
+            "LM_OPCAN_URA_Engineer_D",
+            "LM_OPCAN_URA_GL_D",
+            "LM_OPCAN_URA_Marksman_D",
+            "LM_OPCAN_URA_Officer_D",
+            "LM_OPCAN_URA_Rifleman_D",
+            "LM_OPCAN_URA_Rifleman_AT_D",
+            "LM_OPCAN_URA_Rifleman_AA_D",
+            "LM_OPCAN_URA_RTO_D",
+            "LM_OPCAN_URA_Sniper_D",
+            "LM_OPCAN_URA_SL_D",
+            "LM_OPCAN_URA_TL_D",
+            "LM_OPCAN_M350_INS_WDL",
+            "LM_OPCAN_M48_Buzz_URA",
+            "LM_OPCAN_M92_BOLT_URA",
             "1stMEU_CTF_Flag_VulcanHQ",
             "1stMEU_CTF_Flag_50",
             "1stMEU_CTF_Flag_5M",
@@ -398,6 +456,30 @@ class CfgEditorCategories
         scopeCurator = 2;
         scopeeditor = 2;
     };
+    class MEU_URF
+    {
+        displayName = "[1stMEU] United Rebel Front"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_ER
+    {
+        displayName = "[1stMEU] Eridanus Rebels"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_URF_BJ_WDL
+    {
+        displayName = "[1stMEU] URF Battlejumpers (Woodland)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_URF_BJ_URB
+    {
+        displayName = "[1stMEU] URF Battlejumpers (Urban)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
     class MEU_Friden
     {
         displayName = "[1stMEU] Fridens"
@@ -437,6 +519,30 @@ class CfgEditorCategories
     class MEU_Koslovic_Ard
     {
         displayName = "[1stMEU] Koslovic (Arid)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_URA_BJ
+    {
+        displayName = "[1stMEU] URA Battlejumpers"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_URA
+    {
+        displayName = "[1stMEU] United Rebel Alliance (Woodland)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_URA_D
+    {
+        displayName = "[1stMEU] United Rebel Alliance (Desert)"
+        scopeCurator = 2;
+        scopeeditor = 2;
+    };
+    class MEU_SU
+    {
+        displayName = "[1stMEU] Seccesionist Union"
         scopeCurator = 2;
         scopeeditor = 2;
     };

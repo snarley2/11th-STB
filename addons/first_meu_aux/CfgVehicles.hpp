@@ -34,6 +34,9 @@ class CfgVehicles
     class O_Truck_02_covered_F;
     class I_Truck_02_MRL_F;
     class B_AFV_Wheeled_01_up_cannon_F;
+    class B_AAA_System_01_F;
+    class B_SAM_System_01_F;
+    class B_MBT_01_cannon_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -112,6 +115,7 @@ class CfgVehicles
     class I_G_Soldier_A_F;
     class C_man_hunter_1_F;
     class B_UAV_AI;
+    class B_Soldier_F;
         
     //Medical
     class ACE_morphineItem;
@@ -7289,12 +7293,34 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"LM_OPCAN_M18AR","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"LM_OPCAN_M18AR","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_FRI_Rifleman_AA: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_FRI";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Friden";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_FRI_Uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -7342,6 +7368,7 @@ class CfgVehicles
 		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
+// Friden Woodland
 	class LM_OPCAN_FRI_Officer_WDL: O_Officer_F
 	{
 		author = "J.Burgess";
@@ -7592,12 +7619,34 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"LM_OPCAN_M18AR","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"LM_OPCAN_M18AR","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_W","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_W","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_FRI_Rifleman_AA_WDL: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_FRI_WDL";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Wdl";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_FRI_Uni_Base_W";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_W","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_W","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -7645,6 +7694,7 @@ class CfgVehicles
 		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_W","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_W","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
+// Friden Destert
 	class LM_OPCAN_FRI_Officer_DES: O_Officer_F
 	{
 		author = "J.Burgess";
@@ -7895,12 +7945,34 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"LM_OPCAN_M18AR","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"LM_OPCAN_M18AR","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","30Rnd_556x45_Stanag_green","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_FRI_Rifleman_AA_DES: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_FRI_DES";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Friden_Des";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_FRI_Uni_Base_D";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_FRI_VEST_UP","LM_OPCAN_Frihelm_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -8199,12 +8271,34 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_KOS_Rifleman_AA1: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Jun";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_KOS_Gorka_uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -8501,12 +8595,34 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_KOS_Rifleman_AA2: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Ard";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_KOS_Gorka2_uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -8805,12 +8921,34 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_KOS_Rifleman_AA3: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Swa";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_KOS_Gorka3_uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -9109,12 +9247,34 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"LM_OPCAN_CTAR","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_KOS_Rifleman_AA4: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_KOS";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_Koslovic_Wdl";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_KOS_Gorka4_uni_Base";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -9162,7 +9322,7 @@ class CfgVehicles
 		linkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"G_Balaclava_oli","LM_OPCAN_KOS_Vest","LM_OPCAN_KOShelm4","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
-// URA
+// United Rebel Alliance (Woodland)
     class LM_OPCAN_URA_Officer: O_Soldier_F
 	{
 		author = "J.Burgess";
@@ -9170,6 +9330,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Officer";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9190,6 +9352,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Squad Leader";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9210,6 +9374,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Team Leader";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9229,6 +9395,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9248,6 +9416,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Grenadier";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9267,6 +9437,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Corpsman";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9288,6 +9460,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "marksman";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9307,6 +9481,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "RTO Operator";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9327,6 +9503,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Sniper";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9347,6 +9525,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "AutoRifleman";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9366,6 +9546,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Crewman";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9385,16 +9567,40 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_URA_Uni";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"OPTRE_MA32","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"OPTRE_MA32","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_URA_Rifleman_AA: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_URA_Uni";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -9405,6 +9611,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Breacher";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9426,6 +9634,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Engineer";
 		uniformClass = "LM_OPCAN_URA_Uni";
@@ -9438,6 +9648,333 @@ class CfgVehicles
 		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
+// United Rebel Alliance (Desert)
+    class LM_OPCAN_URA_Officer_D: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Officer";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_SL_D: O_Soldier_SL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Squad Leader";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_TL_D: O_Soldier_TL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		backpack = "OPTRE_UNSC_Rucksack";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Team Leader";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Rifleman_D: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_GL_D: O_Soldier_GL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Grenadier";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Medic_D: O_Medic_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_D";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Corpsman";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		attendant = 1;
+		backpack = "OPTRE_UNSC_Rucksack_Medic_Filled";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Marksman_D: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_D";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "marksman";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_RTO_D: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "RTO Operator";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		backpack = "OPTRE_ANPRC_521_URF";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Sniper_D: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_D";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Sniper";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_SRS99C_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_SRS99C_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_AutoRifleman_D: O_Soldier_AR_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "AutoRifleman";
+		uniformClass = "LM_OPCAN_URA_Uni";
+		weapons[] = {"OPTRE_M73_AC","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M73_AC","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Crewman_D: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Crewman";
+		uniformClass = "LM_OPCAN_URA_Uni";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_MTMV_VEST","LM_OPCAN_ACH43","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Rifleman_AT_D: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AT)";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_URA_Rifleman_AA_D: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Breacher_D: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Breacher";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_Engineer_D: O_Engineer_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy_Demo";
+		engineer = 1;
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Engineer";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_UP_Shemagh","LM_OPCAN_MTMV_VEST_D","LM_OPCAN_ACH43_D","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+// Seccessionist Union
     class LM_OPCAN_SU_Officer: O_Soldier_F
 	{
 		author = "J.Burgess";
@@ -9445,6 +9982,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Officer";
 		uniformClass = "LM_OPCAN_SU2_Uni";
@@ -9465,6 +10004,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Squad Leader";
 		uniformClass = "LM_OPCAN_SU2_Uni";
@@ -9485,6 +10026,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Team Leader";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9504,6 +10047,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9523,6 +10068,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Grenadier";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9542,6 +10089,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Corpsman";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9563,6 +10112,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "marksman";
 		uniformClass = "LM_OPCAN_SU2_Uni";
@@ -9582,6 +10133,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "RTO Operator";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9602,6 +10155,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Sniper";
 		uniformClass = "LM_OPCAN_SU2_Uni";
@@ -9622,6 +10177,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "AutoRifleman";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9641,6 +10198,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Crewman";
 		uniformClass = "LM_OPCAN_SU2_Uni";
@@ -9660,16 +10219,40 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Rifleman (AT)";
 		uniformClass = "LM_OPCAN_SU2_Uni";
 		backpack = "OPTRE_UNSC_Rucksack_M41";
-		weapons[] = {"OPTRE_MA32","Throw","Put","OPTRE_M41_SSR"};
-		respawnWeapons[] = {"OPTRE_MA32","Throw","Put","OPTRE_M41_SSR"};
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
-		magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
-		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_DES_Shemagh","LM_OPCAN_SU_FLAK_VEST","LM_OPCAN_TP42_2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_DES_Shemagh","LM_OPCAN_SU_FLAK_VEST","LM_OPCAN_TP42_2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_SU_Rifleman_AA: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_SU";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_SU2_Uni";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
 		linkedItems[] = {"LM_OPCAN_DES_Shemagh","LM_OPCAN_SU_FLAK_VEST","LM_OPCAN_TP42_2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 		respawnLinkedItems[] = {"LM_OPCAN_DES_Shemagh","LM_OPCAN_SU_FLAK_VEST","LM_OPCAN_TP42_2","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
 	};
@@ -9680,6 +10263,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Breacher";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9701,6 +10286,8 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+        editorCategory = "MEU_SU";
+        editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "Engineer";
 		uniformClass = "LM_OPCAN_SU_Uni";
@@ -9854,6 +10441,8 @@ class CfgVehicles
 		displayName = "Scout";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9865,6 +10454,8 @@ class CfgVehicles
 		displayName = "Demolitions";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		engineer = 1;
 		weapons[] = {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] = {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
@@ -9877,6 +10468,8 @@ class CfgVehicles
 		displayName = "Rifleman (HMG38)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9888,6 +10481,8 @@ class CfgVehicles
 		displayName = "Rifleman (HMG38)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9899,6 +10494,8 @@ class CfgVehicles
 		displayName = "Rifleman (BR55)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9910,6 +10507,8 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
 		magazines[] = {"OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9922,6 +10521,8 @@ class CfgVehicles
 		displayName = "Automatic Rifleman";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9934,6 +10535,8 @@ class CfgVehicles
 		displayName = "Marksman";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9945,6 +10548,8 @@ class CfgVehicles
 		displayName = "Scout Sniper";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -9956,6 +10561,8 @@ class CfgVehicles
 		displayName = "Team Leader";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		backpack = "OPTRE_ANPRC_521_Black";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
@@ -9970,6 +10577,8 @@ class CfgVehicles
 		displayName = "Corpsman";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		weapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
@@ -9985,6 +10594,8 @@ class CfgVehicles
 		displayName = "Engineer";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_WDL";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
@@ -9997,6 +10608,8 @@ class CfgVehicles
 		displayName = "Scout";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10008,6 +10621,8 @@ class CfgVehicles
 		displayName = "Demolitions";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		engineer = 1;
 		weapons[] = {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] = {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
@@ -10020,6 +10635,8 @@ class CfgVehicles
 		displayName = "Rifleman (HMG38)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10031,6 +10648,8 @@ class CfgVehicles
 		displayName = "Rifleman (HMG38)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_60Rnd_762x51_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10042,6 +10661,8 @@ class CfgVehicles
 		displayName = "Rifleman (BR55)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_36Rnd_95x40_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10053,6 +10674,8 @@ class CfgVehicles
 		displayName = "Rifleman (AT)";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put","OPTRE_M41_SSR"};
 		magazines[] = {"OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10065,6 +10688,8 @@ class CfgVehicles
 		displayName = "Automatic Rifleman";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M73","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10077,6 +10702,8 @@ class CfgVehicles
 		displayName = "Marksman";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10088,6 +10715,8 @@ class CfgVehicles
 		displayName = "Scout Sniper";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M9_Frag","OPTRE_M9_Frag","OPTRE_M2_Smoke"};
@@ -10099,6 +10728,8 @@ class CfgVehicles
 		displayName = "Team Leader";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		backpack = "OPTRE_ANPRC_521_Black";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
@@ -10113,6 +10744,8 @@ class CfgVehicles
 		displayName = "Corpsman";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
 		weapons[] = {"OPTRE_M7S","OPTRE_M6G_SF","Throw","Put"};
@@ -10128,6 +10761,8 @@ class CfgVehicles
 		displayName = "Engineer";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF_BJ_URB";
+        editorsubCategory = "MEU_Men";
 		weapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_HMG38_Rifle","OPTRE_M6G_SF","Throw","Put"};
 		magazines[] = {"OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_40Rnd_30x06_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"};
@@ -10543,6 +11178,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		attendant = 1;
 		displayName = "Surgeon";
 		vehicleClass = "OPTRE_Ins_Man_ER_class";
@@ -10560,6 +11198,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Guerilla (MA5)";
 		uniformClass = "OPTRE_Ins_ER_jacket_surplus_redshirt";
 		linkedItems[] = {"V_Chestrig_blk","OPTRE_Ins_URF_Helmet3","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
@@ -10573,6 +11214,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Hunter";
 		uniformClass = "OPTRE_Ins_ER_uniform_GGgrey";
 		linkedItems[] = {"OPTRE_UNSC_M52A_Armor_Soft","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
@@ -10586,6 +11230,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Rebel (AT)";
 		uniformClass = "OPTRE_Ins_ER_jacket_surplus_OD";
 		backpack = "OPTRE_B_TacticalPack_blk_M41";
@@ -10601,6 +11248,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Farmer (M45)";
 		uniformClass = "OPTRE_Ins_ER_jacket_brown_surplus";
 		linkedItems[] = {"V_BandollierB_blk","H_cap_red","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
@@ -10614,6 +11264,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Deserter (GL MA5B)";
 		uniformClass = "OPTRE_Ins_ER_rolled_surplus_crimson";
 		linkedItems[] = {"V_BandollierB_blk","OPTRE_Ins_URF_Helmet3","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
@@ -10627,6 +11280,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Deserter (GL M319)";
 		uniformClass = "OPTRE_Ins_ER_jacket_brown_surplus";
 		linkedItems[] = {"V_BandollierB_blk","OPTRE_Ins_URF_Helmet3","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
@@ -10640,6 +11296,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Militia (MG)";
 		uniformClass = "OPTRE_Ins_ER_rolled_OD_blknblu";
 		backpack = "OPTRE_B_TacticalPack_blk_M73";
@@ -10655,6 +11314,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Assassin";
 		uniformClass = "OPTRE_Ins_ER_rolled_surplus_black";
 		linkedItems[] = {"V_Chestrig_blk","H_Watchcap_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_Biofoam","OPTRE_NVG"};
@@ -10668,6 +11330,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Terrorist";
 		backpack = "OPTRE_B_TacticalPack_blk_Demo";
 		uniformClass = "OPTRE_Ins_ER_rolled_jean_orca";
@@ -10684,6 +11349,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Hacker";
 		backpack = "OPTRE_ANPRC_515";
 		uniformClass = "OPTRE_Ins_ER_rolled_jean_orca";
@@ -10699,6 +11367,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Unarmed";
 		uniformClass = "OPTRE_Ins_ER_jacket_surplus_OD";
 		weapons[] = {"Throw","Put"};
@@ -10710,6 +11381,9 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
+        editorCategory = "MEU_ER";
+        editorsubCategory = "MEU_Men";
 		displayName = "Warlord";
 		vehicleClass = "OPTRE_Ins_Man_ER_class";
 		uniformClass = "OPTRE_Ins_ER_jacket_od_surplus";
@@ -10752,6 +11426,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Team Leader";
 		weapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
@@ -10763,6 +11439,7 @@ class CfgVehicles
 	{
 		dlc = "OPTRE";
 		scope = 2;
+        scopeCurator = 2;
 		displayName = "Militia Advisor";
 		vehicleClass = "OPTRE_Ins_Man_ER_class";
 		icon = "iconManLeader";
@@ -10772,6 +11449,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Medic";
 		attendant = 1;
 		icon = "iconManMedic";
@@ -10786,6 +11465,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Radio Operator";
 		backpack = "OPTRE_ANPRC_521_URF";
 		weapons[] = {"OPTRE_M7","Throw","Put"};
@@ -10798,6 +11479,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		author = "Article 2 Studios";
 		displayName = "Pilot";
 		weapons[] = {"OPTRE_M6G_SF","Throw","Put"};
@@ -10810,6 +11493,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Rifleman (M7)";
 		weapons[] = {"OPTRE_M7","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M7","Throw","Put"};
@@ -10821,6 +11506,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Rifleman (MA5)";
 		weapons[] = {"OPTRE_MA5A","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_MA5A","Throw","Put"};
@@ -10832,6 +11519,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Rifleman (BR55)";
 		weapons[] = {"OPTRE_BR55HB_ScopedRifle","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_BR55HB_ScopedRifle","Throw","Put"};
@@ -10843,6 +11532,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Rifleman (AT)";
 		backpack = "OPTRE_B_TacticalPack_blk_M41";
 		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
@@ -10856,6 +11547,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Rifleman (Light)";
 		linkedItems[] = {"OPTRE_Ins_URF_Armor1","H_Booniehat_khk","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
 		respawnLinkedItems[] = {"OPTRE_Ins_URF_Armor1","H_Booniehat_khk","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGoggles"};
@@ -10869,6 +11562,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "AT Specialist";
 		backpack = "OPTRE_B_TacticalPack_blk_M41G";
 		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
@@ -10882,6 +11577,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "AA Specialist";
 		backpack = "OPTRE_B_TacticalPack_blk_M41G";
 		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
@@ -10895,6 +11592,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Engineer";
 		engineer = 1;
 		backpack = "OPTRE_B_TacticalPack_blk_Demo";
@@ -10909,6 +11608,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Breacher";
 		weapons[] = {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] = {"OPTRE_m45","Throw","Put","OPTRE_M6G_SF"};
@@ -10920,6 +11621,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Squad Leader";
 		weapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
@@ -10932,6 +11635,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Grenadier";
 		weapons[] = {"OPTRE_MA5AGL","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_MA5AGL","Throw","Put"};
@@ -10943,6 +11648,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Grenadier M319";
 		weapons[] = {"OPTRE_M319","Throw","Put","OPTRE_M6G_SF"};
 		respawnWeapons[] = {"OPTRE_M319","Throw","Put","OPTRE_M6G_SF"};
@@ -10954,6 +11661,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Autorifleman";
 		backpack = "OPTRE_B_TacticalPack_blk_M73";
 		weapons[] = {"OPTRE_M73","Throw","Put"};
@@ -10967,6 +11676,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Assistant Autorifleman";
 		backpack = "OPTRE_B_TacticalPack_blk_M73";
 		weapons[] = {"OPTRE_MA5A","Throw","Put"};
@@ -10979,6 +11690,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Designated Marksman";
 		weapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6G_SF","Throw","Put"};
@@ -10990,6 +11703,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Sniper";
 		weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
@@ -11001,6 +11716,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Observer";
 		Items[] = {"OPTRE_Biofoam","Item_Laserdesignator"};
 		RespawnItems[] = {"OPTRE_Biofoam","Item_Laserdesignator"};
@@ -11014,6 +11731,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Crewman";
 		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
@@ -11027,6 +11746,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Demolitions";
 		engineer = 1;
 		backpack = "OPTRE_B_TacticalPack_blk_Demo";
@@ -11041,6 +11762,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "UAV Operator";
 		backpack = "O_UAV_01_backpack_F";
 		uavHacker = 1;
@@ -11054,6 +11777,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Unarmed";
 		weapons[] = {"Throw","Put"};
 		respawnWeapons[] = {"Throw","Put"};
@@ -11065,6 +11790,8 @@ class CfgVehicles
 		dlc = "OPTRE";
 		scope = 2;
 		scopeCurator = 2;
+        editorCategory = "MEU_URF";
+        editorsubCategory = "MEU_Men";
 		displayName = "Officer";
 		linkedItems[] = {"OPTRE_Ins_URF_Armor1","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
 		respawnLinkedItems[] = {"OPTRE_Ins_URF_Armor1","H_beret_blk","ItemMap","ItemCompass","ItemWatch","ItemRadio","OPTRE_NVG"};
@@ -11073,6 +11800,402 @@ class CfgVehicles
 		magazines[] = {"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke"};
 		respawnMagazines[] = {"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_M2_Smoke"};
 		icon = "iconManOfficer";
+	};
+// BattleJumper URA
+    class MEU_URA_BJ_Officer: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Officer";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_SL: O_Soldier_SL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Squad Leader";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_TL: O_Soldier_TL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA";
+		backpack = "OPTRE_UNSC_Rucksack";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Team Leader";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_Rifleman: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_GL: O_Soldier_GL_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Grenadier";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_MA32GL","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","OPTRE_32rnd_762x51_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_Medic: O_Medic_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Corpsman";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		attendant = 1;
+		backpack = "OPTRE_UNSC_Rucksack_Medic_Filled";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_Marksman: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "marksman";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M295_BMR","OPTRE_M6G","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		respawnMagazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green"};
+		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_RTO: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "RTO Operator";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		backpack = "OPTRE_ANPRC_521_URF";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class LM_OPCAN_URA_BJ_Sniper: O_Soldier_M_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Sniper";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_SRS99D_SC_LS","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_4Rnd_145x114_APFSDS_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_AutoRifleman: O_Soldier_AR_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "AutoRifleman";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_M73_AC","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M73_AC","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_200Rnd_95x40_Box_Tracer","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_Crewman: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Crewman";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		respawnWeapons[] = {"OPTRE_M7","OPTRE_M6G_SF","Throw","Put"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_48Rnd_5x23mm_Mag_FMJ","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_Rifleman_AT: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AT)";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT","OPTRE_M41_Twin_HEAT","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class MEU_URA_BJ_Rifleman_AA: O_Soldier_LAT_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Rifleman (AA)";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		backpack = "OPTRE_UNSC_Rucksack_M41";
+		weapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		respawnWeapons[] = {"Throw","Put","OPTRE_M41_SSR"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		respawnMagazines[] = {"OPTRE_M41_Twin_HEAT_G","OPTRE_M41_Twin_HEAT_G","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag","Chemlight_green","Chemlight_green","OPTRE_M9_Frag","OPTRE_M9_Frag"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_Breacher: O_Soldier_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Breacher";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+	class MEU_URA_BJ_Engineer: O_Engineer_F
+	{
+		author = "J.Burgess";
+		faction = "LM_OPCAN_URA_BJ";
+		backpack = "OPTRE_UNSC_Rucksack_Heavy_Demo";
+		engineer = 1;
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+        editorCategory = "MEU_URA_BJ";
+        editorsubCategory = "MEU_Men";
+		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
+		displayName = "Engineer";
+		uniformClass = "LM_OPCAN_Battlejumper_Uni";
+		weapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		respawnWeapons[] = {"OPTRE_M45","Throw","Put","OPTRE_M6G_SF"};
+		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		RespawnItems[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+		magazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		respawnMagazines[] = {"OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug","OPTRE_6Rnd_8Gauge_Pellet","OPTRE_6Rnd_8Gauge_Slug"};
+		linkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+		respawnLinkedItems[] = {"LM_OPCAN_URB_UP_Shemagh","LM_OPCAN_Battlejumper_VEST","LM_OPCAN_TH56","ItemMap","ItemCompass","ItemWatch","ItemRadio"};
+	};
+    class LM_OPCAN_M92_BOLT_URA: B_SAM_System_01_F
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		side = 0;
+        editorCategory = "MEU_URA";
+		displayName = "M92 Bolt SAM";
+		faction = "MEU_Insurrectionist";
+		hiddenSelections[] = {"camo1","Camo2"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\OPF\URA\VEH\BOLT_URA.paa"};
+		textureList[] = {"INS",1};
+		class TextureSources
+		{
+			class INS
+			{
+				displayName = "INS";
+				author = "$STR_A3_Bohemia_Interactive";
+				textures[] = {"LM_OPCAN3.0\OPF\URA\VEH\BOLT_URA.paa"};
+			};
+		};
+	};
+    class LM_OPCAN_M48_Buzz_URA: B_AAA_System_01_F
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		side = 0;
+		displayName = "M48 Buzzsaw CIWS";
+		faction = "MEU_Insurrectionist";
+        editorCategory = "MEU_URA";
+		hiddenSelections[] = {"camo1","Camo2"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\OPF\URA\VEH\BUZZ_URA_G.paa","LM_OPCAN3.0\OPF\URA\VEH\BUZZ_URA_B.paa"};
+		textureList[] = {"Green",1};
+		class TextureSources
+		{
+			class Green
+			{
+				displayName = "Green";
+				author = "$STR_A3_Bohemia_Interactive";
+				textures[] = {"LM_OPCAN3.0\OPF\URA\VEH\BUZZ_URA_G.paa","LM_OPCAN3.0\OPF\URA\VEH\BUZZ_URA_B.paa"};
+			};
+		};
+	};
+    class LM_OPCAN_M350_INS_WDL: B_MBT_01_cannon_F
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		side = 0;
+		displayName = "M350 Recluse";
+		crew = "O_Soldier_F";
+		faction = "MEU_Insurrectionist";
+        editorCategory = "MEU_URA";
+		armor = 1200;
+		armorStructural = 6;
+		hiddenSelections[] = {"camo1","Camo2","CamoNet"};
+		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\OPF\URA\VEH\Recluse_B_INS.paa","LM_OPCAN3.0\OPF\URA\VEH\Recluse_T_INS.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+		textureList[] = {"Woodland",1};
+		class TextureSources
+		{
+			class Woodland
+			{
+				displayName = "Woodland";
+				author = "$STR_A3_Bohemia_Interactive";
+				textures[] = {"LM_OPCAN3.0\OPF\URA\VEH\Recluse_B_INS.paa","LM_OPCAN3.0\OPF\URA\VEH\Recluse_T_INS.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+				factions[] = {"LM_OPCAN_URA","CIV_F"};
+			};
+		};
 	};
     //end ins units
     /*flud
