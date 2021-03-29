@@ -42,6 +42,9 @@ class CfgVehicles
     class B_SAM_System_01_F;
     class B_MBT_01_cannon_F;
     class O_T_VTOL_02_infantry_dynamicLoadout_F;
+    class O_LSV_02_unarmed_F;
+    class O_LSV_02_armed_F;
+    class O_LSV_02_AT_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -1659,6 +1662,570 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_Mechanized";
     };
+    class MEU_Kajman_Koslovic : O_Heli_Attack_02_dynamicLoadout_F
+    {
+        crewCrashProtection = 0.001;
+		crewExplosionProtection = 0.001;
+        armor = 250;
+        damageResistance = 0.01555;
+		scope = 2;
+        scopecurator = 2;
+		displayName = "[1st MEU] Mi-48 Kajman";
+        editorCategory = "MEU_Koslovic_Wdl";
+		editorSubcategory = "MEU_sub_rot";
+		crewVulnerable = 0;
+        transportSoldier = 13;
+        tf_hasLRradio = 1;
+        tf_isolatedAmount = 0.65;
+        tf_range = 120000;
+        side = 0;
+        crew = "LM_OPCAN_KOS_Crewman4";
+        ace_fastroping_enabled = 1;
+        ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
+        hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\Vehicles\Kajman_02_body1_black_CO.paa","\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
+        ace_cargo_space = 4;
+        ace_cargo_hasCargo = 1;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 4;
+                };
+            };
+        };
+        class TextureSources
+        {
+            class UNSC
+            {
+                displayName = "KOS";
+                author = "Mark";
+                textures[] = {"first_meu_aux\data\vehicles\Kajman_02_body1_black_CO.paa","\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
+                faction = "MEU_Insurrectionist";
+            };
+        };
+        textureList[] = {"UNSC",1};
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 13;
+			};
+		};
+		class TransportMagazines
+		{
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 100);
+            mag_xx(30rnd_556x45_mag_AP, 100);
+            mag_xx(30rnd_65x39_mag_AP, 100);
+            mag_xx(30rnd_65x39_mag_msbs_AP, 100);
+            mag_xx(1Rnd_HE_MEU_shell, 50);
+            mag_xx(3Rnd_HE_MEU_shell, 50);
+            mag_xx(1Rnd_HEDP_MEU_shell, 50);
+            mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 135);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,100);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
+            mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 100);
+            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 100);
+            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 100);
+            mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 100);
+            mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 10);
+            mag_xx(OPTRE_1Rnd_50x137_HEAT, 10)
+            mag_xx(M41_Twin_HEAT_WireGuided, 10);
+            mag_xx(M41_Twin_HEAT_HeatSeeking, 10);
+		};
+		class TransportWeapons
+		{
+			weap_xx(OPTRE_MA5BGL, 2);
+            weap_xx(OPTRE_BR55, 2);
+            weap_xx(OPTRE_M45, 2);
+            weap_xx(OPTRE_M7, 4);
+            weap_xx(OPTRE_M393_DMR, 2);
+            weap_xx(OPTRE_SRS99D, 2);
+            weap_xx(M250HMG, 2);
+            weap_xx(OPTRE_M73, 2);
+		};
+		class TransportItems
+		{
+            item_xx(ACE_elasticBandage, 100);
+		    item_xx(ACE_packingBandage, 80);
+		    item_xx(ACE_plasmaIV_500, 40);
+		    item_xx(MEU_Biofoam_Light, 40);
+		    item_xx(MEU_Medigel_Light, 40);
+		    item_xx(MEU_PlasmaIV, 20);
+		    item_xx(MEU_compat_Ibuprofen, 40);
+		    item_xx(MEU_Emergency_MedKit, 10);
+		    item_xx(ACE_epinephrine, 80);
+		    item_xx(ACE_tourniquet, 80);
+		    item_xx(ACE_quikclot, 80);
+		    item_xx(ACE_morphine, 80);
+		    item_xx(ACE_plasmaIV, 40);
+		    item_xx(ACE_Banana, 5);
+		    item_xx(ACE_splint, 80);
+		};
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine"};
+		class HitPoints
+		{
+			class HitHull
+			{
+				armor = 999;
+				visual = "camo1";
+				minimalHit = 0.05;
+				depends = "Total";
+				radius = 0.01;
+			};
+			class HitFuel
+			{
+				armor = 4;
+				radius = 0.125;
+				minimalHit = 0.05;
+				explosionShielding = 4;
+			};
+			class HitAvionics
+			{
+				armor = 3;
+				radius = 0.4;
+				minimalHit = 0.15;
+				explosionShielding = 3;
+				visual = "podsvit pristroju";
+			};
+			class HitEngine1
+			{
+				armor = 6;
+				radius = 0.35;
+				name = "engine_1_hit";
+				explosionShielding = 6;
+				minimalHit = 0.1;
+				visual = "motor";
+				passThrough = 1;
+				convexComponent = "engine_1_hit";
+				material = 51;
+			};
+			class HitEngine2: HitEngine1
+			{
+				name = "engine_2_hit";
+				convexComponent = "engine_2_hit";
+			};
+			class HitEngine
+			{
+				armor = 999;
+				radius = 0.05;
+				minimalHit = 1;
+				visual = "camo2";
+				depends = "0.5 * (HitEngine1 + HitEngine2)";
+			};
+			class HitHRotor
+			{
+				armor = 2.6;
+				radius = 0.4;
+				minimalHit = 0.1;
+				explosionShielding = 4;
+			};
+			class HitVRotor
+			{
+				armor = 2.6;
+				radius = 0.4;
+				minimalHit = 0.1;
+				explosionShielding = 4;
+			};
+			class HitGlass1
+			{
+				name = "glass1";
+				visual = "glass1";
+				radius = 0.2;
+				armor = 4.5;
+				explosionShielding = 4;
+				minimalHit = 0.05;
+			};
+			class HitGlass2: HitGlass1
+			{
+				name = "glass2";
+				visual = "glass2";
+				radius = 0.35;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass4: HitGlass1
+			{
+				name = "glass4";
+				visual = "glass4";
+				radius = 0.22;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass7: HitGlass1
+			{
+				name = "glass7";
+				visual = "glass7";
+				radius = 0.35;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass5: HitGlass1
+			{
+				name = "glass5";
+				visual = "glass5";
+				radius = 0.25;
+				armor = 9;
+				explosionShielding = 4;
+				minimalHit = 0.05;
+			};
+			class HitGlass3: HitGlass1
+			{
+				name = "glass3";
+				visual = "glass3";
+				radius = 0.34;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass6: HitGlass1
+			{
+				name = "glass6";
+				visual = "glass6";
+				radius = 0.18;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass8: HitGlass1
+			{
+				name = "glass8";
+				visual = "glass8";
+				radius = 0.34;
+				armor = 6;
+				explosionShielding = 3;
+				minimalHit = 0.05;
+			};
+			class HitGlass9: HitGlass1
+			{
+				name = "glass9";
+				visual = "glass9";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass10: HitGlass1
+			{
+				name = "glass10";
+				visual = "glass10";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass11: HitGlass1
+			{
+				name = "glass11";
+				visual = "glass11";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass12: HitGlass1
+			{
+				name = "glass12";
+				visual = "glass12";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass13: HitGlass1
+			{
+				name = "glass13";
+				visual = "glass13";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass14: HitGlass1
+			{
+				name = "glass14";
+				visual = "glass14";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+			class HitGlass15: HitGlass1
+			{
+				name = "glass15";
+				visual = "glass15";
+				radius = 0.24;
+				armor = 1.6;
+				explosionShielding = 2;
+				minimalHit = 0.05;
+			};
+		};
+		class AnimationSources
+		{
+			class HitGlass1
+			{
+				source = "Hit";
+				hitpoint = "HitGlass1";
+				raw = 1;
+			};
+			class HitGlass2: HitGlass1
+			{
+				hitpoint = "HitGlass2";
+			};
+			class HitGlass3: HitGlass1
+			{
+				hitpoint = "HitGlass3";
+			};
+			class HitGlass4: HitGlass1
+			{
+				hitpoint = "HitGlass4";
+			};
+			class HitGlass5: HitGlass1
+			{
+				hitpoint = "HitGlass5";
+			};
+			class HitGlass6: HitGlass1
+			{
+				hitpoint = "HitGlass6";
+			};
+			class HitGlass7: HitGlass1
+			{
+				hitpoint = "HitGlass7";
+			};
+			class HitGlass8: HitGlass1
+			{
+				hitpoint = "HitGlass8";
+			};
+			class HitGlass9: HitGlass1
+			{
+				hitpoint = "HitGlass9";
+			};
+			class HitGlass10: HitGlass1
+			{
+				hitpoint = "HitGlass10";
+			};
+			class HitGlass11: HitGlass1
+			{
+				hitpoint = "HitGlass11";
+			};
+			class HitGlass12: HitGlass1
+			{
+				hitpoint = "HitGlass12";
+			};
+			class HitGlass13: HitGlass1
+			{
+				hitpoint = "HitGlass13";
+			};
+			class HitGlass14: HitGlass1
+			{
+				hitpoint = "HitGlass14";
+			};
+			class Gatling
+			{
+				source = "revolving";
+				weapon = "gatling_30mm";
+			};
+			class Muzzle_flash
+			{
+				source = "ammorandom";
+				weapon = "gatling_30mm";
+			};
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "rockets_Skyfire";
+			};
+			class Hide
+			{
+				source = "user";
+				animPeriod = 0;
+				initPhase = 0;
+			};
+			class door_L
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class door_R
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class door_L_pop
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class door_R_pop
+			{
+				source = "door";
+				animPeriod = 1;
+				initPhase = 0;
+			};
+			class HideWeapons
+			{
+				source = "user";
+				animPeriod = 1e-06;
+				initPhase = 0;
+			};
+		};
+		class UserActions
+		{
+			class OpenRdoor
+			{
+				displayName = "Open Right Door";
+				position = "door_R";
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_R"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_R"",1];";
+			};
+			class CloseRdoor
+			{
+				displayName = "Close Right Door";
+				position = "door_R";
+				radius = 1.8;
+				animPeriod = 2;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_R"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_R"",0];";
+			};
+			class OpenLdoor
+			{
+				displayName = "Open Left Door";
+				position = "door_L";
+				radius = 1.8;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_L"" < 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_L"",1];";
+			};
+			class CloseLdoor
+			{
+				displayName = "Close Left Door";
+				position = "door_L";
+				radius = 1.8;
+				onlyForplayer = 0;
+				condition = "this animationPhase ""door_L"" > 0.5 AND Alive(this) AND driver this != player AND gunner this != player AND false";
+				statement = "this animateDoor [""door_L"",0];";
+			};
+		};
+		enableManualFire = 1;
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				isCopilot = 0;
+				startEngine = 0;
+				minElev = -30;
+				maxElev = 20;
+				initElev = 15;
+				minTurn = -120;
+				maxTurn = 120;
+				initTurn = 0;
+				weapons[] = {"gatling_30mm","FIR_9K121","Laserdesignator_mounted"};
+				magazines[] = {"250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","250Rnd_30mm_APDS_shells_Tracer_Green","250Rnd_30mm_HE_shells_Tracer_Green","Laserbatteries","FIR_APKWS_M282_P_38rnd_M","FIR_9K121_P_8rnd_M","FIR_9K121_P_8rnd_M"};
+				canEject = 0;
+				maxHorizontalRotSpeed = 1.8;
+				maxVerticalRotSpeed = 1.5;
+			};
+		};
+    };
+    class MEU_Ratt_Koslovic: O_LSV_02_unarmed_F 
+	{ 
+		author = "Romeo"; 
+		side = 0; 
+		faction = "LM_OPCAN_KOS"; 
+		displayName = "[1stMEU] Ratt (Koslovic)"; 
+		scope = 2; 
+		scopeCurator = 2; 
+		scopeArsenal = 2; 
+        crew = "LM_OPCAN_KOS_Crewman4";
+        editorCategory = "MEU_Koslovic_wdl"; 
+		editorsubCategory = "MEU_sub_Motorised"; 
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};  
+		textureList[] = {"KOS",1}; 
+		class TransportMagazines{}; 
+		class TransportItems{}; 
+		class TransportWeapons{}; 
+		class TextureSources 
+		{ 
+			class KOS 
+			{ 
+				displayName = "Koslovics"; 
+				textures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
+	}; 
+	class MEU_Ratt_Koslovic_HMG: O_LSV_02_armed_F 
+	{ 
+		author = "Romeo"; 
+		side = 0; 
+		faction = "LM_OPCAN_KOS"; 
+		displayName = "[1stMEU] Ratt HMG (Koslovic)"; 
+		scope = 2; 
+		scopeCurator = 2; 
+		scopeArsenal = 2;
+        crew = "LM_OPCAN_KOS_Crewman4";
+        editorCategory = "MEU_Koslovic_wdl"; 
+		editorsubCategory = "MEU_sub_Motorised"; 
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+		textureList[] = {"KOS",1}; 
+		class TransportMagazines{}; 
+		class TransportItems{}; 
+		class TransportWeapons{}; 
+		class TextureSources 
+		{ 
+			class KOS 
+			{ 
+				displayName = "Koslovics"; 
+				textures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
+	}; 
+	class MEU_Ratt_Koslovic_AT: O_LSV_02_AT_F 
+	{ 
+		author = "J.Burgess"; 
+		side = 0; 
+		faction = "LM_OPCAN_KOS"; 
+		displayName = "[1stMEU] Ratt AT (Koslovic)"; 
+		scope = 2; 
+		scopeCurator = 2; 
+		scopeArsenal = 2; 
+        crew = "LM_OPCAN_KOS_Crewman4";
+        editorCategory = "MEU_Koslovic_wdl"; 
+		editorsubCategory = "MEU_sub_Motorised"; 
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+		textureList[] = {"KOS",1}; 
+		class TransportMagazines{}; 
+		class TransportItems{}; 
+		class TransportWeapons{}; 
+		class TextureSources 
+		{ 
+			class KOS 
+			{ 
+				displayName = "Koslovics"; 
+				textures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
+	}; 
     class MEU_Armata_Koslovic: O_T_MBT_04_command_F 
     { 
         side = 0; 
