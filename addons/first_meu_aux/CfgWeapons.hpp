@@ -18672,7 +18672,7 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 			"MEU_C168_Muzzle",
 			"MEU_Fury_Muzzle",
 			"MEU_Bubble_Muzzle",
-			"MEU_M3_CS_Muzzle"
+			//"MEU_M3_CS_Muzzle"
 		};
 		class MEU_C7_Muzzle : ThrowMuzzle
 		{
