@@ -2837,7 +2837,7 @@
         editorsubCategory = "MEU_Men";
 		identityTypes[] = {"LanguageENG_F","NoGlassesï»¿","Head_NATO"};
 		displayName = "AutoRifleman";
-		uniformClass = "LM_OPCAN_URA_Uni";
+		uniformClass = "LM_OPCAN_URA_Uni_D";
 		weapons[] = {"OPTRE_M73_AC","OPTRE_M6G_SF","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M73_AC","OPTRE_M6G_SF","Throw","Put"};
 		Items[] = {"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};

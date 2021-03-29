@@ -6478,9 +6478,9 @@ class CfgVehicles
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
          editorsubCategory = "MEU_sub_Motorised";
-	 displayName = "[1stMEU] M640 Bison IFV";
-	 weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
-         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
+	     displayName = "[1stMEU] M640 Bison IFV";
+	     weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
+         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles"};
          faction = "MEU_UNSC";
 	 side = 1;
 	};
@@ -6491,11 +6491,71 @@ class CfgVehicles
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
          editorsubCategory = "MEU_sub_Motorised";
-	 displayName = "[1stMEU] M640 Bison MGS";
-	 weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
-         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
+	     displayName = "[1stMEU] M640 Bison MGS";
+	     weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
+         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles",,"OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
          faction = "MEU_UNSC";
 	 side = 1;
+	};
+    class MEU_M412_IFV_URA_DES: OPTRE_M412_IFV_UNSC
+	{
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        crew = "LM_OPCAN_URA_Crewman_D";
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_sub_Motorised";
+	    displayName = "[1stMEU] M640 Bison IFV";
+	    weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
+        magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles",};
+        faction = "MEU_UNSC";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_tan_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_tan_CO.paa"};
+	};
+	class MEU_M413_MGS_URA_DES: OPTRE_M413_MGS_UNSC
+	{
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        crew = "LM_OPCAN_URA_Crewman_D";
+        editorCategory = "MEU_URA_D";
+        editorsubCategory = "MEU_sub_Motorised";
+	    displayName = "[1stMEU] M640 Bison MGS";
+	    weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
+        magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
+        faction = "MEU_UNSC";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_tan_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_tan_CO.paa"};
+	};
+    class MEU_M412_IFV_URA_WDL: OPTRE_M412_IFV_UNSC
+	{
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        crew = "LM_OPCAN_URA_Crewman";
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_sub_Motorised";
+	    displayName = "[1stMEU] M640 Bison IFV";
+	    weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
+        magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
+        faction = "MEU_UNSC";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_CO.paa"};
+	};
+	class MEU_M413_MGS_URA_WDL: OPTRE_M413_MGS_UNSC
+	{
+        scope = 2;
+        scopeCurator = 2;
+        side = 0;
+        crew = "LM_OPCAN_URA_Crewman";
+        editorCategory = "MEU_URA";
+        editorsubCategory = "MEU_sub_Motorised";
+	    displayName = "[1stMEU] M640 Bison MGS";
+	    weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
+        magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
+        faction = "MEU_UNSC";
+        hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_CO.paa"};
 	};
     //end ins units
     /*flud
