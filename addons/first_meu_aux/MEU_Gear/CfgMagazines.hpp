@@ -66,8 +66,6 @@ class CfgMagazines
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     class OPTRE_16Rnd_127x40_Mag_NARQ;
-    class OPTRE_20Rnd_86x70_Mag_JHP;
-    class OPTRE_20Rnd_86x70_Mag_AP; 
     
     /*class CBRN_IEDLandSmall_Type1_Remote_Mag;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
