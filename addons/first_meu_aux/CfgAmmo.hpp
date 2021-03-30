@@ -33,6 +33,7 @@ class CfgAmmo
 	class OPTRE_B_95x40_Ball;
 	class OPTRE_B_127x40_Ball;
     class BulletBase;
+    class B_556x45_Ball;
 	
 	//Miscelaneous Classes
 	class SensorTemplateIR;
@@ -53,7 +54,13 @@ class CfgAmmo
 		};
 	};
     // end codename LMAO
-	
+	//stukasmg
+    class MEU_556_ammo : B_556x45_Ball
+    {
+        caliber = 2;
+        hit = 10;
+    };
+    //
     // throwable stuff dont forget the ace funtion numb nuts
     class MEU_c7_remote_ammo_thrown : ACE_SatchelCharge_Remote_Ammo_Thrown
     {

@@ -66,6 +66,7 @@ class CfgMagazines
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     class OPTRE_16Rnd_127x40_Mag_NARQ;
+    
     /*class CBRN_IEDLandSmall_Type1_Remote_Mag;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type1;
@@ -89,6 +90,7 @@ class CfgMagazines
 		ammo = "hemicalBarrel_CS_Ammo";
         triggerWhenDestroyed = 1;
     };*/
+    
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
 	{
 		dlc = "OPTRE";
@@ -1961,6 +1963,20 @@ class CfgMagazines
           displayName = "16 Rnd NARQ ";
           displayNameShort = "10mm NARQ";
           count = 16;
+    };
+    class MEU_200rnd_556_Mag : OPTRE_200Rnd_95x40_Box
+    {
+		scope = 2;
+		scopeArsenal = 2;
+		ace_isbelt = 1;
+		tracersEvery = 4;
+		lastRoundsTracer = 5;
+		count = 200;
+		displayname = "200Rnd 5.56x45mm Box Magazine";
+		descriptionShort = "200 Round Box Magazine<br>5.56";
+		mass = 70.5;
+		initspeed = 1100;
+        ammo = "MEU_556_ammo";
     };
 };
 class CfgMagazineWells

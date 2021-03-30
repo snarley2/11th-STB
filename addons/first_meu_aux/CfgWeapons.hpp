@@ -21094,6 +21094,10 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 		Eye = "OPTRE_EYE_HUD_AmmoCount_LMG";
 		HUD_BulletInARows = 4;
 		HUD_TotalPosibleBullet = 400;
+        magazines[] = 
+		{
+			"MEU_200rnd_556_Mag",
+		};
 		class GunParticles
 		{
 			class EffectShotCloud
@@ -21123,22 +21127,5 @@ class Pilot_Recruit: 1MEU_BASE_Pilot_Armor
 				compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};
 			};
 		};
-		magazines[] = 
-		{
-			"OPTRE_100Rnd_762x51_Box",
-			"OPTRE_100Rnd_762x51_Box_AP",
-			"OPTRE_100Rnd_762x51_Box_JHP",
-			"OPTRE_100Rnd_762x51_Box_Tracer",
-			"OPTRE_100Rnd_762x51_Box_APT",
-			"OPTRE_100Rnd_762x51_Box_JHPT",
-			"OPTRE_100Rnd_762x51_Box_Tracer_Yellow",
-			"OPTRE_400Rnd_762x51_Box",
-			"OPTRE_400Rnd_762x51_Box_AP",
-			"OPTRE_400Rnd_762x51_Box_JHP",
-			"OPTRE_400Rnd_762x51_Box_Tracer",
-			"OPTRE_400Rnd_762x51_Box_APT",
-			"OPTRE_400Rnd_762x51_Box_JHPT",
-		};
-		magazineWell[] = {};
     };
 };
