@@ -5,6 +5,7 @@ class CfgVehicles
     #include "\first_meu_aux\MEU_Vehicles\CfgBackpacks.hpp"
     #include "\first_meu_aux\MEU_Vehicles\CfgObjects.hpp"
     #include "\first_meu_aux\MEU_Vehicles\CfgUniforms.hpp"
+    #include "\first_meu_aux\MEU_Vehicles\CfgUnits.hpp"
     
     //Base Arma Vehicle Classes
 	class Helicopter_Base_H;

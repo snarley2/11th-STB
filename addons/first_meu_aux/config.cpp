@@ -14,7 +14,6 @@
 #include "\first_meu_aux\MEU_Misc\Cfgloadingscreens.hpp"
 #include "\first_meu_aux\MEU_Misc\CfgWorlds.hpp"
 //units
-#include "\first_meu_aux\MEU_Units\CfgUnits.hpp"
 #include "\first_meu_aux\MEU_Units\CfgGroups.hpp"
 //oops
 #include "\first_meu_aux\Functions\CfgFunctions.hpp"
