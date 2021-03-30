@@ -136,14 +136,14 @@ class CfgWeapons
     class FullAutoSlow;
     class FullAutoFast; 
     
-    #include "CfgPraeCoHelm.hpp"
-    #include "CfgPraeCoArmor.hpp"
-    #include "CfgCentCoArmor.hpp"
-    #include "CfgCentCoHelm.hpp"
-    #include "CfgPegArmor.hpp"
-    #include "CfgPegHelm.hpp"
-    #include "CfgVulkHelm.hpp"
-    #include "CfgVulkArmor.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgPraeCoHelm.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgPraeCoArmor.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgCentCoArmor.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgCentCoHelm.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgPegArmor.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgPegHelm.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgVulkHelm.hpp"
+    #include "\first_meu_aux\MEU_Gear\CfgVulkArmor.hpp"
     
 	
     /*// Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
@@ -824,7 +824,7 @@ class CfgWeapons
 			"OPTRE_60Rnd_5x23mm_Mag_NARQT"
 		};
 	};
-	
+    
     class MEU_M7v2: OPTRE_M7
     {
         baseweapon = "MEU_M7v2";

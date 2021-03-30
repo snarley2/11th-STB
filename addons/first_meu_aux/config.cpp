@@ -1,18 +1,24 @@
 #define item_xx(a,b) class _xx_##a {name = a; count = b;}
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
-#include "CfgVehicles.hpp"
-#include "CfgWeapons.hpp"
-#include "CfgAmmo.hpp"
-#include "CfgEventHandlers.hpp"
-#include "CfgGroups.hpp"
-#include "CfgMagazines.hpp"
-#include "Cfgtreatment.hpp"
-#include "Cfgtreatmentactions.hpp"
-#include "CfgFunctions.hpp"
-#include "Cfgloadingscreens.hpp"
-#include "CfgGlasses.hpp"
-#include "CfgWorlds.hpp"
+//gear
+#include "\first_meu_aux\MEU_Vehicles\CfgVehicles.hpp"
+#include "\first_meu_aux\MEU_Gear\CfgWeapons.hpp"
+#include "\first_meu_aux\MEU_Gear\CfgAmmo.hpp"
+#include "\first_meu_aux\MEU_Gear\CfgEventHandlers.hpp"
+#include "\first_meu_aux\MEU_Gear\CfgMagazines.hpp"
+#include "\first_meu_aux\MEU_Gear\CfgGlasses.hpp"
+//misc
+#include "\first_meu_aux\MEU_Misc\Cfgtreatment.hpp"
+#include "\first_meu_aux\MEU_Misc\Cfgtreatmentactions.hpp"
+#include "\first_meu_aux\MEU_Misc\Cfgloadingscreens.hpp"
+#include "\first_meu_aux\MEU_Misc\CfgWorlds.hpp"
+//units
+#include "\first_meu_aux\MEU_Units\CfgUnits.hpp"
+#include "\first_meu_aux\MEU_Units\CfgGroups.hpp"
+//oops
+#include "\first_meu_aux\Functions\CfgFunctions.hpp"
+
 class cfgPatches
 {
     class first_meu_aux

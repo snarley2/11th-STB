@@ -1,11 +1,10 @@
 class CfgVehicles
 {
-    #include "CfgSupplyPods.hpp"
-    #include "CfgMedication.hpp"
-    #include "CfgBackpacks.hpp"
-    #include "CfgObjects.hpp"
-    #include "CfgUnits.hpp"
-    #include "CfgUniforms.hpp"
+    #include "\first_meu_aux\MEU_Vehicles\CfgSupplyPods.hpp"
+    #include "\first_meu_aux\MEU_Vehicles\CfgMedication.hpp"
+    #include "\first_meu_aux\MEU_Vehicles\CfgBackpacks.hpp"
+    #include "\first_meu_aux\MEU_Vehicles\CfgObjects.hpp"
+    #include "\first_meu_aux\MEU_Vehicles\CfgUniforms.hpp"
     
     //Base Arma Vehicle Classes
 	class Helicopter_Base_H;
@@ -154,6 +153,7 @@ class CfgVehicles
         ace_dragging_canCarry = 1;
         ace_dragging_carryPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo)
         ace_dragging_carryDirection = 0;
+        mass = 40;
         class TransportMagazines
         {	
         mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
@@ -4352,6 +4352,8 @@ class CfgVehicles
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
+        weapons[] += {"CMFlareLauncher","FIR_AIM9X","FIR_AIM9X"};
+		magazines[] += {"FIR_AIM9X_P_F23A_3rnd_M","FIR_AIM9X_P_F23A_3rnd_M"};
         class ACE_Cargo
         {
             class Cargo

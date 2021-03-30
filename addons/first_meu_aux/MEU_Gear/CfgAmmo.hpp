@@ -8,6 +8,7 @@ class CfgAmmo
 	class B_30mm_APFSDS;
     class OPTRE_SpLaserAmmo;
     class OPTRE_25x130mm_Slug;
+    class ACE_Gatling_30mm_Sub_CM51;
 	
 	//Explosives
 	class G_40mm_HE;
@@ -38,6 +39,11 @@ class CfgAmmo
 	//Miscelaneous Classes
 	class SensorTemplateIR;
 	
+    class MEU_CAS_ammo : ACE_Gatling_30mm_Sub_CM51
+    {
+        initSpeed = 900;
+        caliber = 3;
+    };
     // code name LMAO
 	class Optre_ammo_Missile_Cruise_01: ammo_Missile_CruiseBase
 	{

@@ -66,6 +66,7 @@ class CfgMagazines
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     class OPTRE_16Rnd_127x40_Mag_NARQ;
+    class OPTRE_2000Rnd_20mm_HEIAP;
     
     /*class CBRN_IEDLandSmall_Type1_Remote_Mag;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
@@ -90,6 +91,12 @@ class CfgMagazines
 		ammo = "hemicalBarrel_CS_Ammo";
         triggerWhenDestroyed = 1;
     };*/
+    
+    class MEU_1000Rnd_Gatling_30mm_Plane_CAS_mag : OPTRE_2000Rnd_20mm_HEIAP
+    {
+        ammo = "MEU_CAS_ammo";
+        tracersEvery = 3;
+    };
     
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag
 	{
