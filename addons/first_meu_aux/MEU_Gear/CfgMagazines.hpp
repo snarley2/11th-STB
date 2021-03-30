@@ -92,10 +92,13 @@ class CfgMagazines
         triggerWhenDestroyed = 1;
     };*/
     
-    class MEU_1000Rnd_Gatling_30mm_Plane_CAS_mag : OPTRE_2000Rnd_20mm_HEIAP
+    class MEU_2000Rnd_Gatling_30mm_Plane_CAS_mag : OPTRE_2000Rnd_20mm_HEIAP
     {
         ammo = "MEU_CAS_ammo";
         tracersEvery = 3;
+        displayname = "2000rnd 30mm";
+		displaynameshort = "2000rnd 30mm";
+        descriptionshort = "2000rnd 30mm";
     };
     
 	class OPTRE_60Rnd_762x51_Mag: 20Rnd_762x51_Mag

@@ -3203,4 +3203,59 @@ class CfgWeapons
 			};
 		};
     };
+    class OPTRE_GUA23A: M134_minigun
+	{
+		displayName = "GAU-23/A Heavy Autocannon";
+		descriptionShort = "20mm";
+		magazines[] = {"MEU_1000Rnd_Gatling_30mm_Plane_CAS_mag"};
+		holdsterAnimValue = 0;
+		ballisticsComputer = 4;
+		canLock = 1;
+		cursor = "EmptyCursor";
+		cursorAim = "OPTRE_GAU23";
+		nameSound = "cannon";
+		shotFromTurret = 0;
+		muzzlePos = "Usti hlavne1R";
+		muzzleEnd = "konec hlavne1R";
+		selectionFireAnim = "Usti hlavne1R";
+		autoFire = 1;
+		reloadTime = 0.1;
+		class GunParticles
+		{
+			class Effect
+			{
+				effectName = "MachineGun2";
+				positionName = "konec hlavne1R";
+				directionName = "Usti hlavne1R";
+			};
+		};
+		modes[] = {"LowROF"};
+		class LowROF: Mode_FullAuto
+		{
+			displayName = "$STR_A3_CFGWEAPONS_CANNON_30MM";
+			reloadTime = 0.1;
+			sounds[] = {"StandardSound"};
+			class StandardSound
+			{
+				begin1[] = {"A3\Sounds_F\weapons\30mm\30mm_st_01",1,1,2000};
+				soundBegin[] = {"begin1",1};
+			};
+			soundContinuous = 0;
+			flash = "gunfire";
+			flashSize = 0.1;
+			recoil = "Empty";
+			aiDispersionCoefX = 8;
+			aiDispersionCoefY = 8;
+			ffMagnitude = 0.5;
+			ffFrequency = 11;
+			ffCount = 6;
+			minRange = 50;
+			minRangeProbab = 0.6;
+			midRange = 800;
+			midRangeProbab = 0.6;
+			maxRange = 1800;
+			dispersion = 0.005;
+			showToPlayer = 1;
+		};
+	};
 };

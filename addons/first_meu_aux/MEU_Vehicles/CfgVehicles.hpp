@@ -4352,8 +4352,8 @@ class CfgVehicles
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
-        weapons[] += {"CMFlareLauncher","FIR_AIM9X","FIR_AIM9X"};
-		magazines[] += {"FIR_AIM9X_P_F23A_3rnd_M","FIR_AIM9X_P_F23A_3rnd_M"};
+        weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
         class ACE_Cargo
         {
             class Cargo
