@@ -66,6 +66,8 @@ class CfgMagazines
     class OPTRE_25x130mm_Slug;
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     class OPTRE_16Rnd_127x40_Mag_NARQ;
+    class OPTRE_20Rnd_86x70_Mag_JHP;
+    class OPTRE_20Rnd_86x70_Mag_AP; 
     
     /*class CBRN_IEDLandSmall_Type1_Remote_Mag;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
@@ -1958,11 +1960,12 @@ class CfgMagazines
 	};
     class meu_sas_narq_mag : OPTRE_16Rnd_127x40_Mag_NARQ
     {
-      author = "1st MEU Stewka";
-          scope = 2;
-          displayName = "16 Rnd NARQ ";
-          displayNameShort = "10mm NARQ";
-          count = 16;
+        author = "1st MEU Stewka";
+        scope = 2;
+        displayName = "16 Rnd NARQ ";
+        displayNameShort = "10mm NARQ";
+        count = 16;
+        tracersEvery = 2;
     };
     class MEU_200rnd_556_Mag : OPTRE_200Rnd_95x40_Box
     {
@@ -1974,7 +1977,7 @@ class CfgMagazines
 		count = 200;
 		displayname = "200Rnd 5.56x45mm Box Magazine";
 		descriptionShort = "200 Round Box Magazine<br>5.56";
-		mass = 70.5;
+		mass = 47;
 		initspeed = 1100;
         ammo = "MEU_556_ammo";
     };
