@@ -6,6 +6,7 @@ class CfgVehicles
     #include "CfgObjects.hpp"
     #include "CfgUnits.hpp"
     #include "CfgUniforms.hpp"
+    
     //Base Arma Vehicle Classes
 	class Helicopter_Base_H;
 	class B_APC_Tracked_01_base_F;
