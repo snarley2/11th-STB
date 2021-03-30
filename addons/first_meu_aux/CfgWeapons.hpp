@@ -48,6 +48,7 @@ class CfgWeapons
     class Grenadelauncher;
     class ThrowMuzzle;
 	class HMG_127;
+	class LMG_03_base_F;
 	class HMG_127_APC;
 	class GMG_40mm;
 	class LMG_coax;
@@ -939,21 +940,21 @@ class CfgWeapons
 	{
 		displayName = "M247X General Purpose Machine Gun";
 		magazines[] = 
-			{
-				"OPTRE_100Rnd_762x51_Box",
-				"OPTRE_100Rnd_762x51_Box_AP",
-				"OPTRE_100Rnd_762x51_Box_JHP",
-				"OPTRE_100Rnd_762x51_Box_Tracer",
-				"OPTRE_100Rnd_762x51_Box_APT",
-				"OPTRE_100Rnd_762x51_Box_JHPT",
-				"OPTRE_100Rnd_762x51_Box_Tracer_Yellow",
-				"OPTRE_400Rnd_762x51_Box",
-				"OPTRE_400Rnd_762x51_Box_AP",
-				"OPTRE_400Rnd_762x51_Box_JHP",
-				"OPTRE_400Rnd_762x51_Box_Tracer",
-				"OPTRE_400Rnd_762x51_Box_APT",
-				"OPTRE_400Rnd_762x51_Box_JHPT",
-			};
+		{
+			"OPTRE_100Rnd_762x51_Box",
+			"OPTRE_100Rnd_762x51_Box_AP",
+			"OPTRE_100Rnd_762x51_Box_JHP",
+			"OPTRE_100Rnd_762x51_Box_Tracer",
+			"OPTRE_100Rnd_762x51_Box_APT",
+			"OPTRE_100Rnd_762x51_Box_JHPT",
+			"OPTRE_100Rnd_762x51_Box_Tracer_Yellow",
+			"OPTRE_400Rnd_762x51_Box",
+			"OPTRE_400Rnd_762x51_Box_AP",
+			"OPTRE_400Rnd_762x51_Box_JHP",
+			"OPTRE_400Rnd_762x51_Box_Tracer",
+			"OPTRE_400Rnd_762x51_Box_APT",
+			"OPTRE_400Rnd_762x51_Box_JHPT",
+		};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class CowsSlot: CowsSlot
@@ -3146,213 +3147,60 @@ class CfgWeapons
 		magazineWell[] = {"MEU_Railgun_Slug"};
 		modelOptics = "-";
 	};
-    class MEU_M75 : OPTRE_M73
+	
+    class MEU_M75 : LMG_03_base_F
     {
         author = "Mark";
 		scope = 2;
 		scopeArsenal = 2;
         scopeCurator = 2;
-        baseWeapon = "OPTRE_M73";
-        displayName = "[1stMEU] Field Modded M75";
-        class MEU_FullAutoFast: FullAutoFast
-        {
-            sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType
+        baseWeapon = "MEU_M75";
+		displayName = "[1stMEU] Field Modded M75";
+		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\MG\data\anim\OPTRE_M73_handanim.rtm","Spartan_ManSkeleton","\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\M73_1_Spartan.rtm"};
+		model = "\OPTRE_Weapons\MG\M73.p3d";
+		descriptionShort = "UNSC Light Machine Gun";
+		picture = "\OPTRE_weapons\MG\icons\M73_1.paa";        
+		reloadAction = "GestureReloadM200";
+		recoil = "recoil_lim";
+		cursor = "OPTRE_M73";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\MachineGun\MG_IRON.paa";
+		ODST_1 = "OPTRE_ODST_HUD_AmmoCount_LMG";
+		Glasses = "OPTRE_GLASS_HUD_AmmoCount_LMG";
+		Eye = "OPTRE_EYE_HUD_AmmoCount_LMG";
+		HUD_BulletInARows = 4;
+		HUD_TotalPosibleBullet = 400;
+        magazines[] = 
+		{
+			"MEU_200rnd_556_Mag",
+		};
+		class GunParticles
+		{
+			class EffectShotCloud
 			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
 			};
-			class StandardSound: BaseSoundModeType
+		};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 100;
+			class MuzzleSlot: MuzzleSlot
 			{
-				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
-				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
-				soundBegin[] = {"begin1",0.34,"begin2",0.33};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_trees",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_forest",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_interior",1.9952624,1,1200};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_meadows",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_houses",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
+				compatibleitems[] = {"muzzle_snds_65_TI_blk_F","OPTRE_MA5Suppressor"};
 			};
-			class SilencedSound: BaseSoundModeType
+			class CowsSlot: CowsSlot
 			{
-				begin1[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_short_01",0.8912509,1,200};
-				begin2[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_short_02",0.8912509,1,200};
-				begin3[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_short_03",0.8912509,1,200};
-				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin1",0.34};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_trees",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_forest",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_interior",1.9952624,1,1200};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_meadows",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_houses",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
+				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","OPTRE_M73_SmartLink","OPTRE_BR45_Scope"};
 			};
-            burst = 1;
-            burstRangeMax = -1;
-            canShootInWater = 1;
-            dispersion = 0.00073;
-            displayName = "Full";
-            ffCount = 1;
-            ffFrequency = 11;
-            ffMagnitude = 0.5;
-            reloadTime = 0.075;
-        };
-        class MEU_FullAutoSlow: FullAutoSlow 
-        {
-            sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType
+			class PointerSlot: PointerSlot
 			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+				compatibleitems[] = {};
 			};
-			class StandardSound: BaseSoundModeType
+			class UnderBarrelSlot: UnderBarrelSlot
 			{
-				begin1[] = {"\OPTRE_Weapons\MG\data\sounds\M73_1.wss",1.0,1,2000};
-				begin2[] = {"\OPTRE_Weapons\MG\data\sounds\M73_2.wss",1.0,1,2000};
-				soundBegin[] = {"begin1",0.34,"begin2",0.33};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_trees",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_forest",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_interior",1.9952624,1,1200};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_meadows",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_houses",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
+				compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};
 			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_short_01",0.8912509,1,200};
-				begin2[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_short_02",0.8912509,1,200};
-				begin3[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_short_03",0.8912509,1,200};
-				soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin1",0.34};
-				class SoundTails
-				{
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_trees",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_forest",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_interior",1.9952624,1,1200};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_meadows",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\Silencer_Mk200_tail_houses",1.0,1,1800};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
-			};
-            autoFire = 1;
-            burst = 1;
-            burstRangeMax = -1;
-            canShootInWater = 1;
-            displayName = "Full";
-            ffCount = 1;
-            ffFrequency = 11;
-            ffMagnitude = 0.5;
-            reloadTime = 0.15;
-        };
-        maxZeroing = 1000;
-        modes[] = {"FullAutoFast","FullAutoSlow"};
+		};
     };
 };
