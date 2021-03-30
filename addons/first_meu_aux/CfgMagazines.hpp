@@ -1976,6 +1976,7 @@ class CfgMagazines
 		lastRoundsTracer = 5;
 		count = 200;
 		displayname = "200Rnd 5.56x45mm Box Magazine";
+        displaynameshort = "200Rnd 5.56x45mm";
 		descriptionShort = "200 Round Box Magazine<br>5.56";
 		mass = 47;
 		initspeed = 1100;
