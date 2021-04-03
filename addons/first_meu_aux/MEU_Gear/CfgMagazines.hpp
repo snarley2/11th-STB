@@ -1990,6 +1990,20 @@ class CfgMagazines
 		initspeed = 1100;
         ammo = "MEU_556_ammo";
     };
+	class MEU_200rnd_556_Mag_Tracer : OPTRE_200Rnd_95x40_Box
+    {
+		scope = 2;
+		scopeArsenal = 2;
+		ace_isbelt = 1;
+		tracersEvery = 1;
+		count = 200;
+		displayname = "200Rnd 5.56x45mm Tracer Box Magazine";
+        displaynameshort = "200Rnd 5.56x45mm";
+		descriptionShort = "200 Round Box Magazine<br>5.56";
+		mass = 47;
+		initspeed = 1100;
+        ammo = "MEU_556_ammo";
+    };
 };
 class CfgMagazineWells
 {

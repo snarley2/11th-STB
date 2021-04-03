@@ -25,7 +25,9 @@ if (
                 (_x isKindOf "B_APC_Tracked_01_AA_F") OR
 				(_x isKindOf "Land_Device_slingloadable_F") OR
                 (_x isKindOf "B_APC_Tracked_01_CRV_F") OR
-                (_x isKindOf "B_T_APC_Tracked_01_CRV_F") OR
+				(_x isKindOf "B_T_APC_Tracked_01_CRV_F") OR
+				(_x isKindOf "APC_Wheeled_02_base_v2_F") OR
+				(_x isKindOf "MEU_Leopard") OR
                 (_x isKindOf "B_Lifeboat") OR
 				(_x isKindOf "LM_OPCAN_MGS_AR_DES") OR
 				(_x isKindOf "LM_OPCAN_MGS_AR_MIX") OR

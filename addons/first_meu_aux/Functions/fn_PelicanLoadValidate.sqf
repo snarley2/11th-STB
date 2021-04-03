@@ -104,6 +104,11 @@ switch true do {
 		_veh attachTo [_pelican,[0.0430558,-4.81432,-0.456545]];
 		_loaded = true;
     };
+	case (_veh isKindOf "APC_Wheeled_02_base_v2_F" or _veh isKindOf "MEU_Leopard"):
+    {
+		_veh attachTo [_pelican,[0.0430558,-4.81432,-0.456545]];
+		_loaded = true;
+    };
     case (_veh isKindOf "B_Lifeboat"):
     {
 		_veh attachTo [_pelican,[0.0181665,-3.41999,0.530018]];

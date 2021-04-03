@@ -155,59 +155,60 @@ class CfgVehicles
         ace_dragging_carryPosition[] = {0, 1.2, 0};  // Offset of the model from the body while dragging (same as attachTo)
         ace_dragging_carryDirection = 0;
         mass = 40;
+
         class TransportMagazines
         {	
-        mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
-		mag_xx(30rnd_556x45_mag_AP, 20);
-		mag_xx(30rnd_65x39_mag_AP, 20);
-		mag_xx(30rnd_65x39_mag_msbs_AP, 20);
-		mag_xx(1Rnd_HE_MEU_shell, 15);
-		mag_xx(3Rnd_HE_MEU_shell, 10);
-		mag_xx(1Rnd_HEDP_MEU_shell, 10);
-        mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
-        mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
-        mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
-        mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 20);
-        mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 20);
-		mag_xx(OPTRE_6Rnd_8Gauge_Pellets, 10);
-        mag_xx(OPTRE_6Rnd_8Gauge_Slugs, 10);
-        mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
-        mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
-		mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
-        mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 20);
-        mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag, 10);
-        mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 2);
-        mag_xx(OPTRE_4Rnd_145x114_HVAP_Mag, 10);
-        mag_xx(OPTRE_100Rnd_127x99_M250HMG, 10);
-		mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
-        mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
-        mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
-        mag_xx(OPTRE_1Rnd_50x137_HE, 4);
-        mag_xx(OPTRE_1Rnd_50x137_HEAT, 4);
-        mag_xx(OPTRE_1Rnd_50x137_PEN, 4);
-        mag_xx(OPTRE_1Rnd_50x137_THERMO, 4);
-		mag_xx(M41_Twin_HEAT, 4);
-		mag_xx(M41_Twin_HEAP, 4);
-        mag_xx(M41_Twin_HEAT_WireGuided, 4);
-        mag_xx(M41_Twin_HEAT_HeatSeeking, 4);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+			mag_xx(30rnd_556x45_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_AP, 20);
+			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
+			mag_xx(1Rnd_HE_MEU_shell, 15);
+			mag_xx(3Rnd_HE_MEU_shell, 10);
+			mag_xx(1Rnd_HEDP_MEU_shell, 10);
+			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
+			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+			mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 20);
+			mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 20);
+			mag_xx(OPTRE_6Rnd_8Gauge_Pellets, 10);
+			mag_xx(OPTRE_6Rnd_8Gauge_Slugs, 10);
+			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+			mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
+			mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
+			mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 20);
+			mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag, 10);
+			mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 2);
+			mag_xx(OPTRE_4Rnd_145x114_HVAP_Mag, 10);
+			mag_xx(OPTRE_100Rnd_127x99_M250HMG, 10);
+			mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
+			mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
+			mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
+			mag_xx(OPTRE_1Rnd_50x137_HE, 4);
+			mag_xx(OPTRE_1Rnd_50x137_HEAT, 4);
+			mag_xx(OPTRE_1Rnd_50x137_PEN, 4);
+			mag_xx(OPTRE_1Rnd_50x137_THERMO, 4);
+			mag_xx(M41_Twin_HEAT, 4);
+			mag_xx(M41_Twin_HEAP, 4);
+			mag_xx(M41_Twin_HEAT_WireGuided, 4);
+			mag_xx(M41_Twin_HEAT_HeatSeeking, 4);
         };
         class TransportItems
         {
-        item_xx(ACE_elasticBandage, 20);
-		item_xx(ACE_packingBandage, 60);
-		item_xx(ACE_plasmaIV_500, 30);
-		item_xx(MEU_Biofoam_Light, 20);
-		item_xx(MEU_Medigel_Light, 20);
-		item_xx(MEU_PlasmaIV, 20);
-		item_xx(MEU_compat_Ibuprofen, 40);
-		item_xx(MEU_Emergency_MedKit, 10);
-		item_xx(ACE_epinephrine, 20);
-		item_xx(ACE_tourniquet, 16);
-		item_xx(ACE_quikclot, 40);
-		item_xx(ACE_morphine, 10);
-		item_xx(ACE_plasmaIV, 30);
-		item_xx(ACE_Banana, 5);
-		item_xx(ACE_splint, 10);
+			item_xx(ACE_elasticBandage, 20);
+			item_xx(ACE_packingBandage, 60);
+			item_xx(ACE_plasmaIV_500, 30);
+			item_xx(MEU_Biofoam_Light, 20);
+			item_xx(MEU_Medigel_Light, 20);
+			item_xx(MEU_PlasmaIV, 20);
+			item_xx(MEU_compat_Ibuprofen, 40);
+			item_xx(MEU_Emergency_MedKit, 10);
+			item_xx(ACE_epinephrine, 20);
+			item_xx(ACE_tourniquet, 16);
+			item_xx(ACE_quikclot, 40);
+			item_xx(ACE_morphine, 10);
+			item_xx(ACE_plasmaIV, 30);
+			item_xx(ACE_Banana, 5);
+			item_xx(ACE_splint, 10);
         };
     };
     //
@@ -267,55 +268,49 @@ class CfgVehicles
 				count = 13;
 			};
 		};
+		
 		class TransportMagazines
 		{
-			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 100);
-            mag_xx(30rnd_556x45_mag_AP, 100);
-            mag_xx(30rnd_65x39_mag_AP, 100);
-            mag_xx(30rnd_65x39_mag_msbs_AP, 100);
-            mag_xx(1Rnd_HE_MEU_shell, 50);
-            mag_xx(3Rnd_HE_MEU_shell, 50);
-            mag_xx(1Rnd_HEDP_MEU_shell, 50);
-            mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 135);
-            mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,100);
-            mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 100);
-            mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 100);
-            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 100);
-            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 100);
-            mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 100);
-            mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 10);
-            mag_xx(OPTRE_1Rnd_50x137_HEAT, 10)
-            mag_xx(M41_Twin_HEAT_WireGuided, 10);
-            mag_xx(M41_Twin_HEAT_HeatSeeking, 10);
+			mag_xx(OPTRE_60Rnd_762x51_Mag_JHP, 20);
+            mag_xx(30rnd_556x45_mag_AP, 20);
+            mag_xx(30rnd_65x39_mag_AP, 20);
+            mag_xx(30rnd_65x39_mag_msbs_AP, 20);
+            mag_xx(1Rnd_HE_MEU_shell, 15);
+            mag_xx(3Rnd_HE_MEU_shell, 15);
+            mag_xx(1Rnd_HEDP_MEU_shell, 15);
+            mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 40);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
+            mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 20);
+            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
+            mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 10);
+            mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 2);
+            mag_xx(OPTRE_1Rnd_50x137_HEAT, 10);
+            mag_xx(M41_Twin_HEAT_WireGuided, 4);
+            mag_xx(M41_Twin_HEAT_HeatSeeking, 2);
 		};
 		class TransportWeapons
 		{
 			weap_xx(OPTRE_MA5BGL, 2);
             weap_xx(OPTRE_BR55, 2);
-            weap_xx(OPTRE_M45, 2);
-            weap_xx(OPTRE_M7, 4);
             weap_xx(OPTRE_M393_DMR, 2);
-            weap_xx(OPTRE_SRS99D, 2);
-            weap_xx(M250HMG, 2);
-            weap_xx(OPTRE_M73, 2);
 		};
 		class TransportItems
 		{
-            item_xx(ACE_elasticBandage, 100);
-		    item_xx(ACE_packingBandage, 80);
+            item_xx(ACE_elasticBandage, 40);
+		    item_xx(ACE_packingBandage, 40);
 		    item_xx(ACE_plasmaIV_500, 40);
 		    item_xx(MEU_Biofoam_Light, 40);
 		    item_xx(MEU_Medigel_Light, 40);
 		    item_xx(MEU_PlasmaIV, 20);
 		    item_xx(MEU_compat_Ibuprofen, 40);
 		    item_xx(MEU_Emergency_MedKit, 10);
-		    item_xx(ACE_epinephrine, 80);
-		    item_xx(ACE_tourniquet, 80);
-		    item_xx(ACE_quikclot, 80);
-		    item_xx(ACE_morphine, 80);
+		    item_xx(ACE_epinephrine, 20);
+		    item_xx(ACE_tourniquet, 10);
+		    item_xx(ACE_quikclot, 40);
+		    item_xx(ACE_morphine, 10);
 		    item_xx(ACE_plasmaIV, 40);
 		    item_xx(ACE_Banana, 5);
-		    item_xx(ACE_splint, 80);
+		    item_xx(ACE_splint, 20);
 		};
 		weapons[] = {"CMFlareLauncher"};
 		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine","192Rnd_CMFlare_Chaff_Magazine"};
@@ -1014,7 +1009,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Hound-920 LAW [WIP]";
+        displayName = "[1stMEU] Hound-920 LAV [WIP]";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -1240,6 +1235,10 @@ class CfgVehicles
 	};
 	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
     {
+		enginePower = 1500;
+		peakTorque = 6000;
+		idleRPM = 1000;
+		redRPM = 3000;
 		crewExplosionProtection = 0.5;
 		crewCrashProtection = 0.5;
 		ace_cargo_space = 8;
@@ -1429,6 +1428,10 @@ class CfgVehicles
 	
     class B_T_APC_Tracked_01_CRV_F: B_APC_Tracked_01_CRV_F
     {
+		enginePower = 1500;
+		peakTorque = 6000;
+		idleRPM = 1000;
+		redRPM = 3000;
 		crewCrashProtection = 0.5;
 		crewExplosionProtection = 0.5;
 		ace_cargo_space = 8;
@@ -2670,6 +2673,15 @@ class CfgVehicles
 		};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_APC_Wheeled_02_rcws_v2_F.jpg";
 		_generalMacro = "O_APC_Wheeled_02_rcws_v2_F";
+		class TextureSources 
+		{ 
+			class UNSC_Camo
+			{ 
+				displayName = "UNSC"; 
+				textures[] = {"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_Turret.paa"}; 
+				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
+			}; 
+		}; 
 		hiddenSelectionsTextures[] = 
 		{
 			"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa",
@@ -6386,8 +6398,8 @@ class CfgVehicles
 		maxOmega = 800;
 		peakTorque = 80000;
 		maxSpeed = 60;
-		torqueCurve[] = {{0,0},{"(3000/4000)","(2650/2850)"},{"(3200/4000)","(2800/2850)"},{"(3400/4000)","(2850/2850)"},{"(3600/4000)","(2800/2850)"},{"(3800/4000)","(2750/2850)"},{"(4000/4000)","(2600/2850)"},{"(4000/4000)","(2350/2850)"}};
 		thrustDelay = 0.01;
+		torqueCurve[] = {{0.291667,0.540541},{0.416667,0.675676},{0.583333,0.810811},{0.666667,0.891892},{0.75,0.972973},{0.833333,1.02703},{0.916667,1},{1,0.945946}};
 		clutchStrength = 500.0;
 		fuelCapacity = 20000;
 		brakeIdleSpeed = 1.78;
