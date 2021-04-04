@@ -790,7 +790,7 @@ class CfgWeapons
             magazines[] = {"MEU_Bubble_Mag"}; 
 			class EventHandlers
 			{
-				fired = "_script = _this execVM 'first_meu_aux\Functions\Bubbleshield_throw.sqf'; waitUntil { scriptDone _script }; ";
+				fired = "(_this # 6) call MEU_fnc_Bubbleshield_throw;";
 			};
         };
     };

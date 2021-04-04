@@ -638,3 +638,11 @@ class Extended_PreInit_EventHandlers
         init = "call compile preprocessFileLineNumbers 'first_meu_aux\XEH_preInit.sqf'";
     };
 };
+
+class Extended_PostInit_EventHandlers
+{
+    class MEU_post_init_event
+	{
+        init = "call compile preprocessFileLineNumbers 'first_meu_aux\XEH_postInit.sqf'";
+    };
+};

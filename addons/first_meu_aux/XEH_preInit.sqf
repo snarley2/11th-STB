@@ -1,4 +1,22 @@
 [
+	"MEU_Bubble_Deploy_Time",
+	"SLIDER",
+	["Deploy time (seconds)", "Time after throwing grenade before bubble appears"],
+	["1st MEU Aux Mod", "Bubble Shield"],
+	[0, 10, 5, 1],
+	true
+] call CBA_fnc_addSetting;
+
+[
+	"MEU_Bubble_Duration",
+	"SLIDER",
+	"Duration (seconds)",
+	["1st MEU Aux Mod", "Bubble Shield"],
+	[0, 600, 180, 0],
+	true
+] call CBA_fnc_addSetting;
+
+[
 	"MEU_HEV_Explosion_Enabled",
 	"CHECKBOX",
 	"Enabled",
