@@ -765,7 +765,7 @@ class 1MEU_Base_CH252_Helmet: 1stMEU_Base_CH252D_Helmet
         scopeArsenal = 1; 
         hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252_MAR_H_CO","optre_unsc_units\army\data\helmet_visor_ca"}; 
     };
-    class MEU_Mar_Helm_L_dp : 1MEU_Base_CH252_Helmet 
+    class MEU_Mar_Helm_base_dp : 1MEU_Base_CH252_Helmet 
 	{ 
 		scopeArsenal = 1; 
 		scope = 1; 
