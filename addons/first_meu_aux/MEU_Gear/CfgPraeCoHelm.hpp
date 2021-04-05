@@ -1070,7 +1070,15 @@
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Silver_3HQ_Ender.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
-    
+    class Praetor_Helmet_Cursed_3R_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\3rdPlt\ODST_H3_Silver_3HQ_Cursed.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+    };
+
 //Start 3rd Platoon Broke-Ass Shit
     class Praetor_Helmet_Black_31_broken : Praetor_Helmet_Base_Broken
     {
