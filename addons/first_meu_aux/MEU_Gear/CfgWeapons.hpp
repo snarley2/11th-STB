@@ -79,7 +79,7 @@ class CfgWeapons
     class OPTRE_MA5C;
     class OPTRE_MA5CGL;
     class OPTRE_FC_Railgun;
-		
+    class OPTRE_M6C;
 	//Medical
 	class InventoryFirstAidKitItem_Base_F;
 	class MedikitItem;
@@ -3262,7 +3262,21 @@ class CfgWeapons
 		magazineWell[] = {"MEU_Railgun_Slug"};
 		modelOptics = "-";
 	};
-	
+    class MEU_Railgun_Auto: OPTRE_FC_Railgun
+	{
+		author = "Romeo";
+		scope = 1;
+        scopeCurator = 1;
+        scopeArsenal = 1;
+		baseWeapon = "MEU_Railgun_Auto";
+		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_FC_Weapons\Railgun\data\anim\Railgun_HandAnim.rtm","Spartan_ManSkeleton","\OPTRE_FC_Weapons\Railgun\data\anim\Railgun_HandAnim_Spartan.rtm"};
+		model = "\OPTRE_FC_Weapons\Railgun\Railgun.p3d";
+		displayName = "[1stMEU] ARC-920 Automatic";
+		descriptionShort = "Compact-Channel Linear Accelerator Weapon";
+		magazines[] = {"MEU_Railgun_Slug_Auto"};
+		magazineWell[] = {"MEU_Railgun_Slug_Auto"};
+		modelOptics = "-";
+	};
     class MEU_M75 : LMG_03_base_F
     {
         author = "Mark";

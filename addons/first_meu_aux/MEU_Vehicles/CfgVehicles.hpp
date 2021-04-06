@@ -1107,8 +1107,8 @@ class CfgVehicles
 			{
 				body = "mainTurret";
 				gun = "mainGun";
-				weapons[] = {"MEU_Railgun","Laserdesignator_mounted","SmokeLauncher"};
-				magazines[] = {"MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","MEU_Railgun_Slug","Laserbatteries"};
+				weapons[] = {"MEU_Railgun_auto","Laserdesignator_mounted","SmokeLauncher"};
+				magazines[] = {"MEU_Railgun_Slug_Auto","MEU_Railgun_Slug_Auto","MEU_Railgun_Slug_Auto","MEU_Railgun_Slug_Auto","MEU_Railgun_Slug_Auto","MEU_Railgun_Slug_Auto","MEU_Railgun_Slug_Auto"};
 
 			};
         };

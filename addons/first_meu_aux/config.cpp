@@ -394,7 +394,9 @@ class cfgPatches
 			"LM_OPCAN_M18AR_GL",
             "optre_hgun_SAS10_F",
             "OPTRE_FC_Railgun",
-            "OPTRE_GUA23A"
+            "OPTRE_GUA23A",
+            "MEU_Automag",
+            "OPTRE_M6C"
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 

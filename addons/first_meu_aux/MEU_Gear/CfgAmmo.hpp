@@ -203,6 +203,33 @@ class CfgAmmo
 		CraterEffects = "HEShellCrater";
 		CraterWaterEffects = "ImpactEffectsWaterHE";
 		ExplosionEffects = "HEShellExplosion";
+    };
+    class MEU_16x65mm_Auto: BulletBase
+	{
+		airFriction = -1e-05;
+		coefGravity = 0;
+		caliber = 750;
+        explosive = 0.2;
+		indirectHitRange = 2;
+		indirectHit = 25;
+		hit = 250;
+		typicalSpeed = 3890;
+        sideAirFriction = 0;
+		simulation = "shotSubmunitions";
+		suppressionRadiusBulletClose = 100;
+		suppressionRadiusHit = 100;
+		timeToLive = 10;
+		tracerStartTime = 0;
+		supersonicCrackNear[] = {"A3\sounds_f\weapons\hits\sscrack1",1.0,1,40};
+		supersonicCrackFar[] = {"A3\sounds_f\weapons\hits\sscrack2",1.0,1,100};
+		visibleFire = 100;
+		visibleFireTime = 300;
+		CraterEffects = "HEShellCrater";
+		CraterWaterEffects = "ImpactEffectsWaterHE";
+		ExplosionEffects = "HEShellExplosion";
+        model="\A3\Weapons_f\Data\bullettracer\tracer_red";
+	    tracerScale=1;
+	    tracerEndTime=10;
 	};
 	// CBRN Munitions
 	/*class CS_Grenade: Sh_82mm_AMOS

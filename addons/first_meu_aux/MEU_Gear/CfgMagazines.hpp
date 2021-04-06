@@ -1978,6 +1978,20 @@ class CfgMagazines
 		nameSound = "cannon";
 		tracersEvery = 1;
 	};
+    class MEU_Railgun_Slug_Auto: CA_Magazine
+	{
+		ammo = "MEU_16x65mm_Auto";
+		displayName = "16x65mm Slug";
+		count = 50;
+		initSpeed = 3915;
+		scope = 2;
+		scopeArsenal = 2;
+		model = "\A3\weapons_F\ammo\mag_univ.p3d";
+		picture = "\A3\Weapons_F\Data\UI\M_battery_CA.paa";
+        mass = 25;
+		nameSound = "cannon";
+		tracersEvery = 1;
+	};
     class meu_sas_narq_mag : OPTRE_16Rnd_127x40_Mag_NARQ
     {
         author = "1st MEU Stewka";
