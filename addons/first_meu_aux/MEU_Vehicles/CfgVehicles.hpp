@@ -223,7 +223,7 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
 		editorSubcategory = "MEU_sub_rot";
         tf_hasLRradio = 1;
-        tf_isolatedAmount = 0.65;
+        tf_isolatedAmount = 0.85;
         tf_range = 120000;
         side = 1;
         crew = "VES_Rifleman_MA5B_MAR";
@@ -239,8 +239,7 @@ class CfgVehicles
             };
         };
     };
-    //class MEU_GL_Hornet : 
-    //{};
+    
     class MEU_KajMoney : O_Heli_Attack_02_dynamicLoadout_F
     {
         crewCrashProtection = 0.001;
