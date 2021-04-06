@@ -748,6 +748,7 @@ class CfgWeapons
 			"MEU_C168_Muzzle",
 			"MEU_Fury_Muzzle",
 			"MEU_Bubble_Muzzle",
+            "MEU_PrimedHE_Muzzle",
 			//"MEU_M3_CS_Muzzle"
 		};
 		class MEU_C7_Muzzle : ThrowMuzzle
@@ -792,6 +793,11 @@ class CfgWeapons
 			{
 				fired = "(_this # 6) call MEU_fnc_Bubbleshield_throw;";
 			};
+        };
+        class MEU_PrimedHE_Muzzle : ThrowMuzzle
+        {
+            reloadtime = 0;
+            magazines[] = {"MEU_PrimedHE_throwable_Mag"};
         };
     };
 	class OPTRE_M7: OPTRE_SubMachineGun_Base

@@ -63,6 +63,7 @@ class CfgVehicles
     //class OPTRE_Longsword_Bomb;
     class OPTRE_M412_IFV_UNSC;
     class OPTRE_M413_MGS_UNSC;
+    class OPTRE_Falconagl_02;
 
 	//Base FZ Classes
 	class VES_AV22_Sparrowhawk_Base;
@@ -213,8 +214,33 @@ class CfgVehicles
 			item_xx(ACE_splint, 10);
         };
     };
-    //
-	
+	class MEU_GL_Falcon : OPTRE_Falconagl_02
+    {
+        scope = 2;
+        scopecurator = 2;
+		displayName = "[1st MEU] GL Falcon";
+        faction = "MEU_UNSC";
+        editorCategory = "MEU_cat_A";
+		editorSubcategory = "MEU_sub_rot";
+        tf_hasLRradio = 1;
+        tf_isolatedAmount = 0.65;
+        tf_range = 120000;
+        side = 1;
+        crew = "VES_Rifleman_MA5B_MAR";
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class MEU_Speedbag
+                {
+                    type = "MEU_Speedbag";
+                    amount = 2;
+                };
+            };
+        };
+    };
+    //class MEU_GL_Hornet : 
+    //{};
     class MEU_KajMoney : O_Heli_Attack_02_dynamicLoadout_F
     {
         crewCrashProtection = 0.001;

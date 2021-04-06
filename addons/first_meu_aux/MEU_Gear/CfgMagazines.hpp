@@ -1057,7 +1057,19 @@ class CfgMagazines
         descriptionShort = "M3 CS Grenade";
 		displayNameShort = "CS Grenade";
     };*/
-	
+	class MEU_PrimedHE_throwable_Mag : OPTRE_M9_Frag
+    {
+        author = "1st MEU Mark";
+        scope = 2;
+        scopeArsenal = 2;
+        displayName = "[1st MEU] Primable 319";
+		ammo = "MEU_319_ammo_thrown";
+        model = "OPTRE_weapons\gl\mag_he.p3d";
+		mass = 5;
+        descriptionShort = "Primed 319";
+		displayNameShort = "319 Primed";
+    };
+    
 	class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
     {
         author = "1st MEU Mark";
