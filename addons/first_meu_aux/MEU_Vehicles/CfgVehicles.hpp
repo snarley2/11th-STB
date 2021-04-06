@@ -183,6 +183,7 @@ class CfgVehicles
 			mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
 			mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
 			mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
+            mag_xx(200Rnd_556x45_Box_Tracer_Red_F, 10);
 			mag_xx(OPTRE_1Rnd_50x137_HE, 4);
 			mag_xx(OPTRE_1Rnd_50x137_HEAT, 4);
 			mag_xx(OPTRE_1Rnd_50x137_PEN, 4);
@@ -191,6 +192,7 @@ class CfgVehicles
 			mag_xx(M41_Twin_HEAP, 4);
 			mag_xx(M41_Twin_HEAT_WireGuided, 4);
 			mag_xx(M41_Twin_HEAT_HeatSeeking, 4);
+            mag_xx(ACE_SpareBarrel,10);
         };
         class TransportItems
         {

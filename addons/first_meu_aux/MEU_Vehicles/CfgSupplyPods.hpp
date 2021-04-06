@@ -307,16 +307,19 @@ class OPTRE_Ammo_Supplypod_Autorifles: OPTRE_Ammo_SupplyPod_Empty
 		mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
         mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
         mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
+        mag_xx(200Rnd_556x45_Box_Tracer_Red_F, 10);
+        mag_xx(ACE_SpareBarrel,10);
     };
 	class TransportWeapons
 	{
-		weap_xx(M250HMG, 2);
-        weap_xx(OPTRE_M73, 2);
+		weap_xx(M250HMG, 1);
+        weap_xx(OPTRE_M73, 1);
+        weap_xx(MEU_M75, 1);
 	};
 	class TransportItems
 	{
 		item_xx(optic_hamr, 2);
-        item_xx(optre_m72_smartlink, 2);
+        item_xx(optre_m73_smartlink, 2);
 	};
 };
 // Cricket Launcher
