@@ -6,6 +6,7 @@
         scopeArsenal = 2;
         author = "1st MEU Mark";
         weaponPoolAvailable = 1;
+        optreHUDStyle = "ODST_1";
         subItems[]=
 		{
 			"ItemcTabHCam"
