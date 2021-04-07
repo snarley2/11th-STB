@@ -366,7 +366,7 @@ class 1MEU_Base_CH252_Helmet: 1stMEU_Base_CH252D_Helmet
         scopeCurator = 2; 
         scopeArsenal = 2; 
 		author = "1st MEU Mark"; 
-		displayName = "[1stMEU] 1-2 CH252 Light Helmet (Marine)"; 
+		displayName = "[1stMEU] 2-2 CH252 Light Helmet (Marine)"; 
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\2ndplt\Marine\22_CH252_MAR_L_CO.paa","optre_unsc_units\army\data\helmet_visor_ca"}; 
     }; 
     class Marine_Helmet_22M : 1MEU_Base_CH252_Helmet 

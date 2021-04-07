@@ -120,6 +120,27 @@
 		displayName = "[1stMEU] 5-1 ECH252 (SR) RTO Helmet (Marine Gold)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
 	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 Helmet (Marine)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_R1_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Marine)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 (SR) RTO Helmet (Marine)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
     
 //Marine DP
     class MEU_Mar_Sealed_V_CH252_MAR_L_CO_A_dp : MEU_Mar_MOS_Helm_Sealed_Base
@@ -206,6 +227,24 @@
         scopeArsenal = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
 	};
+    class MEU_Mar_Sealed_V_CH252_MAR_L_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_R1_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_MAR_R2_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_MAR_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
     
 //Desert
     class MEU_Mar_Sealed_V_CH252_DES_L_CO_A : MEU_Mar_MOS_Helm_Sealed_Base
@@ -278,6 +317,27 @@
 		displayName = "[1stMEU] 5-1 ECH252 RTO Helmet (Desert Silver)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_R_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
 	};
+    class MEU_Mar_Sealed_V_CH252_DES_L_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 Helmet (Desert)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_DES_R1_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Desert)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_DES_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 (SR) RTO Helmet (Desert)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
     
 //Desert DP
     class MEU_Mar_Sealed_V_CH252_DES_L_CO_A_dp : MEU_Mar_MOS_Helm_Sealed_Base
@@ -339,6 +399,24 @@
         scope = 1;
 		scopeArsenal = 1;
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_R_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_DES_L_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_DES_R1_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_DES_R2_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_DES_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
 	};
     
 //Evolved
@@ -462,6 +540,27 @@
 		displayName = "[1stMEU] 5-1 ECH252 (SR) RTO Helmet (Snow Gold)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
 	};
+    class MEU_Mar_Sealed_V_CH252_SNO_L_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 Helmet (Snow)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_SNO_R1_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Snow)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};SNO
+    class MEU_Mar_Sealed_V_CH252_SNO_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 (SR) RTO Helmet (Snow)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
     
 //Snow DP
     class MEU_Mar_Sealed_V_CH252_SNO_L_CO_A_dp : MEU_Mar_MOS_Helm_Sealed_Base
@@ -530,7 +629,25 @@
         scopeArsenal = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
 	};
-    
+    class MEU_Mar_Sealed_V_CH252_SNO_L_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_SNO_R1_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_SNO_R2_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+
 //Urban
     class MEU_Mar_Sealed_V_CH252_URB_L_CO_A : MEU_Mar_MOS_Helm_Sealed_Base
 	{
@@ -602,6 +719,27 @@
 		displayName = "[1stMEU] 5-1 ECH252 (SR) RTO Helmet (Urban Gold)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
 	};
+    class MEU_Mar_Sealed_V_CH252_URB_L_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 Helmet (Urban)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_URB_R1_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Urban)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};SNO
+    class MEU_Mar_Sealed_V_CH252_URB_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 (SR) RTO Helmet (Urban)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
     
 //Urban DP
     class MEU_Mar_Sealed_V_CH252_URB_L_CO_A_dp : MEU_Mar_MOS_Helm_Sealed_Base
@@ -663,6 +801,24 @@
         scope = 1;
           scopeArsenal = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_URB_L_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_URB_R1_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_URB_R2_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
 	};
     
 //Woodland
@@ -736,6 +892,27 @@
 		displayName = "[1stMEU] 5-1 ECH252 (SR) RTO Helmet (Woodland Gold)";
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252_GLD_V_CO"};
 	};
+    class MEU_Mar_Sealed_V_CH252_WDL_L_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 Helmet (Urban)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_WDL_R1_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Urban)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};SNO
+    class MEU_Mar_Sealed_V_CH252_WDL_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[1stMEU] 5-3 CH252 (SR) RTO Helmet (Urban)";
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
     
 //Woodland DP
     class MEU_Mar_Sealed_V_CH252_WDL_L_CO_A_dp : MEU_Mar_MOS_Helm_Sealed_Base
@@ -797,6 +974,24 @@
         scope = 1;
         scopeArsenal = 1;
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_R2_CO_H.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
+	};
+    class MEU_Mar_Sealed_V_CH252_WDL_L_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_L_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_WDL_R1_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
+	};
+    class MEU_Mar_Sealed_V_CH252_WDL_R2_CO_F_dp : MEU_Mar_MOS_Helm_Sealed_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_R2_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
 	};
     
 //Beret
