@@ -158,60 +158,58 @@ class CfgVehicles
         mass = 40;
 
         class TransportMagazines
-        {	
-			mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
-			mag_xx(30rnd_556x45_mag_AP, 20);
-			mag_xx(30rnd_65x39_mag_AP, 20);
-			mag_xx(30rnd_65x39_mag_msbs_AP, 20);
-			mag_xx(1Rnd_HE_MEU_shell, 15);
-			mag_xx(3Rnd_HE_MEU_shell, 10);
-			mag_xx(1Rnd_HEDP_MEU_shell, 10);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
-			mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
-			mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
-			mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 20);
-			mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 20);
-			mag_xx(OPTRE_6Rnd_8Gauge_Pellets, 10);
-			mag_xx(OPTRE_6Rnd_8Gauge_Slugs, 10);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
-			mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
-			mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
-			mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 20);
-			mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag, 10);
-			mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 2);
-			mag_xx(OPTRE_4Rnd_145x114_HVAP_Mag, 10);
-			mag_xx(OPTRE_100Rnd_127x99_M250HMG, 10);
-			mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
-			mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
-			mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
+        {    
+            mag_xx(OPTRE_60Rnd_762x51_Mag_AP, 20);
+            mag_xx(30rnd_556x45_mag_AP, 20);
+            mag_xx(30rnd_65x39_mag_AP, 20);
+            mag_xx(30rnd_65x39_mag_msbs_AP, 20);
+            mag_xx(1Rnd_HEDP_MEU_shell, 10);
+            mag_xx(3Rnd_HE_MEU_shell, 10);
+            mag_xx(3Rnd_Smoke_Grenade_shell, 10);
+            mag_xx(OPTRE_36Rnd_95x40_Mag_HPSAP, 20);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
+            mag_xx(OPTRE_20Rnd_86x70_Mag_AP, 20);
+            mag_xx(OPTRE_12Rnd_8Gauge_Pellets, 20);
+            mag_xx(OPTRE_12Rnd_8Gauge_Slugs, 20);
+            mag_xx(OPTRE_60Rnd_5x23mm_Mag_FMJ, 20);
+            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_AP, 20);
+            mag_xx(OPTRE_15Rnd_DMR_762x51_Mag_JHP, 20);
+            mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag, 20);
+            mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag, 10);
+            mag_xx(OPTRE_4Rnd_145x114_Mag_NARQ, 2);
+            mag_xx(OPTRE_4Rnd_145x114_HVAP_Mag, 10);
+            mag_xx(OPTRE_100Rnd_127x99_M250HMG, 10);
+            mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
+            mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
+            mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
             mag_xx(200Rnd_556x45_Box_Tracer_Red_F, 10);
-			mag_xx(OPTRE_1Rnd_50x137_HE, 4);
-			mag_xx(OPTRE_1Rnd_50x137_HEAT, 4);
-			mag_xx(OPTRE_1Rnd_50x137_PEN, 4);
-			mag_xx(OPTRE_1Rnd_50x137_THERMO, 4);
-			mag_xx(M41_Twin_HEAT, 4);
-			mag_xx(M41_Twin_HEAP, 4);
-			mag_xx(M41_Twin_HEAT_WireGuided, 4);
-			mag_xx(M41_Twin_HEAT_HeatSeeking, 4);
+            mag_xx(OPTRE_1Rnd_50x137_HE, 2);
+            mag_xx(OPTRE_1Rnd_50x137_HEAT, 2);
+            mag_xx(OPTRE_1Rnd_50x137_PEN, 1);
+            mag_xx(OPTRE_1Rnd_50x137_THERMO, 1);
+            mag_xx(M41_Twin_HEAT, 2);
+            mag_xx(M41_Twin_HEAP, 2);
+            mag_xx(M41_Twin_HEAT_WireGuided, 2);
+            mag_xx(M41_Twin_HEAT_HeatSeeking, 2);
             mag_xx(ACE_SpareBarrel,10);
         };
         class TransportItems
         {
-			item_xx(ACE_elasticBandage, 20);
-			item_xx(ACE_packingBandage, 60);
-			item_xx(ACE_plasmaIV_500, 30);
-			item_xx(MEU_Biofoam_Light, 20);
-			item_xx(MEU_Medigel_Light, 20);
-			item_xx(MEU_PlasmaIV, 20);
-			item_xx(MEU_compat_Ibuprofen, 40);
-			item_xx(MEU_Emergency_MedKit, 10);
-			item_xx(ACE_epinephrine, 20);
-			item_xx(ACE_tourniquet, 16);
-			item_xx(ACE_quikclot, 40);
-			item_xx(ACE_morphine, 10);
-			item_xx(ACE_plasmaIV, 30);
-			item_xx(ACE_Banana, 5);
-			item_xx(ACE_splint, 10);
+            item_xx(ACE_elasticBandage, 60);
+            item_xx(ACE_packingBandage, 60);
+            item_xx(ACE_plasmaIV_500, 10);
+            item_xx(MEU_Biofoam_Light, 40);
+            item_xx(MEU_Medigel_Light, 40);
+            item_xx(MEU_PlasmaIV, 10);
+            item_xx(MEU_compat_Ibuprofen, 40);
+            item_xx(MEU_Emergency_MedKit, 2);
+            item_xx(ACE_epinephrine, 20);
+            item_xx(ACE_tourniquet, 16);
+            item_xx(ACE_quikclot, 40);
+            item_xx(ACE_morphine, 10);
+            item_xx(ACE_plasmaIV, 10);
+            item_xx(ACE_Banana, 5);
+            item_xx(ACE_splint, 10);
         };
     };
 	class MEU_GL_Falcon : OPTRE_Falconagl_02
@@ -4389,6 +4387,47 @@ class CfgVehicles
         backRotorForceCoef = 2;
         mainRotorSpeed=6;
         backRotorSpeed=7;
+        hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        class textureSources
+        {
+            class colorgreen
+            {
+                displayName = "Green";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colortan
+            {
+                displayName = "Desert";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorblack
+            {
+                displayName = "Black";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorwhite
+            {
+                displayName = "Snow";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorinnie
+            {
+                displayName = "Innie";
+                author = "Article 2 Studios";
+                textures[] = {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
+                factions[] = {"OPTRE_Ins"};
+            };
+        };
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -4675,6 +4714,47 @@ class CfgVehicles
         backRotorForceCoef = 2;
         mainRotorSpeed=6;
         backRotorSpeed=7;
+        hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        class textureSources
+        {
+            class colorgreen
+            {
+                displayName = "Green";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colortan
+            {
+                displayName = "Desert";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorblack
+            {
+                displayName = "Black";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorwhite
+            {
+                displayName = "Snow";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorinnie
+            {
+                displayName = "Innie";
+                author = "Article 2 Studios";
+                textures[] = {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
+                factions[] = {"OPTRE_Ins"};
+            };
+        };
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -4788,6 +4868,47 @@ class CfgVehicles
         backRotorForceCoef = 2;
         mainRotorSpeed=6;
         backRotorSpeed=7;
+        hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        class textureSources
+        {
+            class colorgreen
+            {
+                displayName = "Green";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colortan
+            {
+                displayName = "Desert";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorblack
+            {
+                displayName = "Black";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorwhite
+            {
+                displayName = "Snow";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorinnie
+            {
+                displayName = "Innie";
+                author = "Article 2 Studios";
+                textures[] = {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
+                factions[] = {"OPTRE_Ins"};
+            };
+        };
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -4901,6 +5022,47 @@ class CfgVehicles
         backRotorForceCoef = 2;
         mainRotorSpeed=6;
         backRotorSpeed=7;
+        hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        class textureSources
+        {
+            class colorgreen
+            {
+                displayName = "Green";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colortan
+            {
+                displayName = "Desert";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorblack
+            {
+                displayName = "Black";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorwhite
+            {
+                displayName = "Snow";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorinnie
+            {
+                displayName = "Innie";
+                author = "Article 2 Studios";
+                textures[] = {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
+                factions[] = {"OPTRE_Ins"};
+            };
+        };
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -5014,6 +5176,47 @@ class CfgVehicles
         backRotorForceCoef = 2;
         mainRotorSpeed=6;
         backRotorSpeed=7;
+        hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        class textureSources
+        {
+            class colorgreen
+            {
+                displayName = "Green";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colortan
+            {
+                displayName = "Desert";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorblack
+            {
+                displayName = "Black";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorwhite
+            {
+                displayName = "Snow";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class colorinnie
+            {
+                displayName = "Innie";
+                author = "Article 2 Studios";
+                textures[] = {"optre_vehicles\hornet\data\hornet_hull_innie_co.paa"};
+                factions[] = {"OPTRE_Ins"};
+            };
+        };
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
