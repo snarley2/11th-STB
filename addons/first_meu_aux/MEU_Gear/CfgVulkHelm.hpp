@@ -553,7 +553,7 @@
 		scopeArsenal = 2;
 		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Snow)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_SNO_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};SNO
+	};
     class MEU_Mar_Sealed_V_CH252_SNO_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
 	{
 		scope = 2;
@@ -732,7 +732,7 @@
 		scopeArsenal = 2;
 		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Urban)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_URB_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};SNO
+	};
     class MEU_Mar_Sealed_V_CH252_URB_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
 	{
 		scope = 2;
@@ -905,7 +905,7 @@
 		scopeArsenal = 2;
 		displayName = "[1stMEU] 5-3 CH252 RTO Helmet (Urban)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\5thPlt\Helmets\V_CH252_WDL_R1_CO_F.paa","V_FZ_Armor\Data\Helmets\V_CH252_SLV_V_CO"};
-	};SNO
+	};
     class MEU_Mar_Sealed_V_CH252_WDL_R2_CO_F : MEU_Mar_MOS_Helm_Sealed_Base
 	{
 		scope = 2;
