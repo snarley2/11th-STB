@@ -4,11 +4,15 @@ _loaded = false;
 	
 switch true do {
 		
-	case (_veh isKindOf "OPTRE_M808B_base"):
-	{
-		_veh attachTo [_pelican,[-0,-7.6,-0.935527]];
-		_veh setDir 180; 
-		_loaded = true; 
+	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2") : {
+		_veh attachTo [_pelican,[0,-7.2, -0.37105]];
+		_veh setDir 180;
+		_loaded = true;
+	};
+		case (_veh isKindOf "OPTRE_M808S") : {
+		_veh attachTo [_pelican,[0,-7.2, -3]];
+		_veh setDir 180;
+		_loaded = true;
 	};
 	case (_veh isKindOf "OPTRE_M12A1_LRV" or _veh isKindOf "OPTRE_M12_LRV" or _veh isKindOf "OPTRE_M12G1_LRV" or _veh isKindOf "OPTRE_M12R_AA" or _veh isKindOf "OPTRE_M12_FAV_APC" or _veh isKindOf "OPTRE_M12_FAV"):
 	{
@@ -104,9 +108,14 @@ switch true do {
 		_veh attachTo [_pelican,[0.0430558,-4.81432,-0.456545]];
 		_loaded = true;
     };
-	case (_veh isKindOf "APC_Wheeled_02_base_v2_F" or _veh isKindOf "MEU_Leopard"):
+	case (_veh isKindOf "APC_Wheeled_02_base_v2_F" or _veh isKindOf "MEU_Leopard"or _veh isKindOf "MEU_Leopard_Medical_APC"):
     {
 		_veh attachTo [_pelican,[0.0430558,-4.81432,-0.456545]];
+		_loaded = true;
+    };
+	case ( _veh isKindOf "MEU_Leopard"or _veh isKindOf "MEU_Leopard_Medical_APC"):
+    {
+		_veh attachTo [_pelican,[0.0430558,-3.81432,0]];
 		_loaded = true;
     };
     case (_veh isKindOf "B_Lifeboat"):
