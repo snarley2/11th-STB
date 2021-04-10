@@ -156,17 +156,17 @@ class CfgAmmo
     class MEU_319_ammo_thrown : GrenadeHand
     {
         scope = 1;
-        hit = 2000;
-        indirectHit = 1500;
+        hit = 16;
+        indirectHit = 10;
+        indirectHitRange = 2;
         defaultMagazine = "MEU_PrimedHE_throwable_Mag";
         model = "OPTRE_weapons\gl\mag_he.p3d";
-		indirectHitRange = 2;
         ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
-        ace_frag_metal = 700;  // Amount of metal being fragmented (grams) - information below
-        ace_frag_charge = 80;  // Amount of explosive filler (grams) - information below
-        ace_frag_gurney_c = 2830;  // Gurney velocity constant for explosive type - information below
-        ace_frag_gurney_k = 1/2;  // Gurney shape factor - information below
-        ace_frag_classes[] = {"ACE_frag_large"};  // Type of fragments - information below
+        ace_frag_metal = 1000;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_charge = 1000;  // Amount of explosive filler (grams) - information below
+        ace_frag_gurney_c = 5000;  // Gurney velocity constant for explosive type - information below
+        ace_frag_gurney_k = 3/5;  // Gurney shape factor - information below
+        ace_frag_classes[] = {"ACE_frag_medium_HD"};  // Type of fragments - information below
         ace_frag_skip = 0;  // (Optional) Skip fragmentation for this ammo type (0-disabled, 1-enabled) - information below
         ace_frag_force = 1;  // (Optional) Force fragmentation system (0-disabled, 1-enabled) - information below
     };
