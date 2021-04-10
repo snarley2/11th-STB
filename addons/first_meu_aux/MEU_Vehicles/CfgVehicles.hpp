@@ -4389,7 +4389,61 @@ class CfgVehicles
         backRotorSpeed=7;
         hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
         hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
-        class textureSources
+        class Turrets : Turrets
+		{
+			class CargoTurret_01 : CargoTurret
+			{
+				gunnerAction = "passenger_bench_1";
+				gunnerCompartments = "Compartment1";
+				memoryPointsGetInGunner = "pos_cargo_r";
+				memoryPointsGetInGunnerDir = "pos_cargo_r_dir";
+				gunnerName = "Passenger 1R";
+				proxyIndex = 1;
+				maxElev = 30;
+				minElev = -30;
+				maxTurn = 90;
+				minTurn = -90;
+				isPersonTurret = 1;
+				ejectDeadGunner = 1;
+				enabledByAnimationSource = "";
+				memoryPointGunnerOptics = "";
+			};
+			class CargoTurret_02 : CargoTurret_01
+			{
+				gunnerCompartments = "Compartment2";
+				memoryPointsGetInGunner = "pos_cargo_l";
+				memoryPointsGetInGunnerDir = "pos_cargo_l_dir";
+				gunnerName = "Passenger 1L";
+				proxyIndex = 2;
+			};
+			class CargoTurret_03 : CargoTurret_01
+			{
+				gunnerName = "Passenger 2R";
+				proxyIndex = 3;
+			};
+			class CargoTurret_04 : CargoTurret_02
+			{
+				gunnerName = "Passenger 2L";
+				proxyIndex = 4;
+			};
+			class CargoTurret_05 : CargoTurret_01
+			{
+				gunnerAction = "passenger_flatground_4_vehicle_passenger_stand_1";
+				gunnerInAction = "vehicle_passenger_stand_1_passenger_flatground_4";
+				gunnerName = "Passenger 3R";
+				proxyIndex = 5;
+				allowLauncherout=1;
+			};
+			class CargoTurret_06 : CargoTurret_02
+			{
+				gunnerAction = "passenger_flatground_4_vehicle_passenger_stand_1";
+				gunnerInAction = "vehicle_passenger_stand_1_passenger_flatground_4";
+				gunnerName = "Passenger 3L";
+				proxyIndex = 6;
+				allowLauncherout=1;
+			};
+		};
+		class textureSources
         {
             class colorgreen
             {

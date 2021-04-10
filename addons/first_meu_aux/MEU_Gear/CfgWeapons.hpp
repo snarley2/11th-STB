@@ -3000,6 +3000,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		displayname = "M41 SSR MAV/AW SPNKr";
 		descriptionshort = "Surface-to-Surface Rocket Medium Anti-Vehicle/Assault Weapon";
+		cursor= "OPTRE_M41R";
 		magazines[] =
 		{
 			"M41_Twin_HEAT_WireGuided",
@@ -3009,26 +3010,7 @@ class CfgWeapons
 		};
 		magazineWell[] = {};
 	};	
-	
-    class meu_gunner_launcher : OPAEX_M41_Launcher
-    {
-        
-        author = "1st MEU Mark";
-		scope = 2;
-		scopeArsenal = 2;
-        type = 1;
-        primaryweapon = 10;
-		displayname = "M41 SPNKr Side Gunner";
-		descriptionshort = "Gunner qual go brrrrr";
-		magazines[] =
-		{
-			"M41_Twin_HEAT_WireGuided",
-			"M41_Twin_HEAT_HeatSeeking",
-			"M41_Twin_HEAT",
-			"M41_Twin_HEAP"
-		};
-    };
-    
+   
     class OPTRE_M319 : OPTRE_Rifle_Base
     {
         magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
