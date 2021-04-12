@@ -3259,6 +3259,304 @@ class CfgWeapons
 		magazineWell[] = {"MEU_Railgun_Slug_Auto"};
 		modelOptics = "-";
 	};
+    class MEU_Automag: OPTRE_M6C
+    {
+        author = "Romeo";
+        scope = 0;
+        scopeCurator = 0;
+        scopeArsenal = 0;
+        displayname = "[1stMEU] Automag";
+        baseWeapon = "MEU_Automag";
+        picture = "\OPTRE_weapons\pistol\icons\pistol_a.paa";
+		magazines[] = {"16Rnd_10mm_Ball"};
+		magazineWell[] = {"optre_sas10_mag"};
+		ODST_1 = "OPTRE_ODST_HUD_AmmoCount_PistolODST";
+		Glasses = "OPTRE_GLASS_HUD_AmmoCount_PistolODST";
+		Eye = "OPTRE_EYE_HUD_AmmoCount_PistolSmart";
+        reloadAction = "GestureReloadPistol";
+        recoil = "recoil_pistol_sas10";
+		modes[] = {"Single","FullAuto"};
+		HUD_BulletInARows = 1;
+		HUD_TotalPosibleBullet = 16;
+        class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 30;
+			holsterScale = 0.85;
+			class CowsSlot: CowsSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				compatibleItems[] = {"optic_aco_grn","optic_aco","optic_holosight_blk_f","optic_yorris","optic_aco_smg","optic_aco_grn_smg","optic_holosight_smg_blk_f","optic_mrd_black","optre_m393_eotech","optre_m7_sight","optre_m6c_scope"};
+				iconPosition[] = {0.4,0.6};
+				iconScale = 0.15;
+			};
+			class MuzzleSlot: MuzzleSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				compatibleItems[] = {"OPTRE_M6C_compensator","OPTRE_M6_silencer"};
+				iconPosition[] = {0.35,0.6};
+				iconScale = 0.3;
+			};
+			class PointerSlot: PointerSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
+				compatibleItems[] = {"optre_m6g_flashlight","acc_flashlight_pistol"};
+				iconPosition[] = {0.35,0.6};
+				iconScale = 0.3;
+			};
+		};
+		class Single: Mode_SemiAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.5,1,2000};
+				soundBegin[] = {"begin1",1};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_interior",1.5848932,1,1200};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_trees",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_forest",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_meadows",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_houses",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+				begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_tail_interior",1.0,1,400};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_trees",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\silencer_Vermin_tail_forest",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_meadows",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_houses",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
+			reloadTime = 0.066;
+			dispersion = 0.0013;
+            recoil = "recoil_pistol_zubr";
+			recoilProne = "recoil_single_prone_pdw";
+			minRange = 2;
+			minRangeProbab = 0.3;
+			midRange = 50;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.05;
+		};
+		class FullAuto: Mode_FullAuto
+		{
+			sounds[] = {"StandardSound","SilencedSound"};
+			class BaseSoundModeType
+			{
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] = {"closure1",0.5,"closure2",0.5};
+			};
+			class StandardSound: BaseSoundModeType
+			{
+				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.0,1,2000};
+				soundBegin[] = {"begin1",1};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_interior",1.5848932,1,1200};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_trees",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_forest",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_meadows",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_houses",1.0,1,1200};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
+			class SilencedSound: BaseSoundModeType
+			{
+				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+				begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
+				soundBegin[] = {"begin1",0.5,"begin2",0.5};
+				class SoundTails
+				{
+					class TailInterior
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_tail_interior",1.0,1,400};
+						frequency = 1;
+						volume = "interior";
+					};
+					class TailTrees
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_trees",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
+					};
+					class TailForest
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\silencer_Vermin_tail_forest",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
+					};
+					class TailMeadows
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_meadows",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
+					};
+					class TailHouses
+					{
+						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_houses",1.0,1,400};
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
+					};
+				};
+			};
+			reloadTime = 0.05;
+			dispersion = 0.002;
+			recoil = "recoil_auto_pdw";
+			recoilProne = "recoil_auto_prone_pdw";
+			minRange = 2;
+			minRangeProbab = 0.3;
+			midRange = 50;
+			midRangeProbab = 0.7;
+			maxRange = 400;
+			maxRangeProbab = 0.05;
+		};
+		class close: FullAuto
+		{
+			burst = 10;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.05;
+			midRange = 30;
+			midRangeProbab = 0.7;
+			maxRange = 50;
+			maxRangeProbab = 0.04;
+			showToPlayer = 0;
+		};
+		class short: close
+		{
+			burst = 8;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 50;
+			minRangeProbab = 0.05;
+			midRange = 150;
+			midRangeProbab = 0.7;
+			maxRange = 300;
+			maxRangeProbab = 0.04;
+		};
+		class medium: close
+		{
+			burst = 5;
+			aiRateOfFire = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 200;
+			minRangeProbab = 0.05;
+			midRange = 400;
+			midRangeProbab = 0.6;
+			maxRange = 600;
+			maxRangeProbab = 0.1;
+		};
+		class far: close
+		{
+			burst = 3;
+			aiRateOfFire = 6;
+			aiRateOfFireDistance = 700;
+			minRange = 350;
+			minRangeProbab = 0.04;
+			midRange = 550;
+			midRangeProbab = 0.5;
+			maxRange = 700;
+			maxRangeProbab = 0.01;
+		};
+		aiDispersionCoefY = 10;
+		aiDispersionCoefX = 10;
+		inertia = 0.1;
+		aimTransitionSpeed = 1.5;
+		dexterity = 1.7;
+		initSpeed = 490;
+		maxZeroing = 50;
+	};
     class MEU_M75 : LMG_03_base_F
     {
         author = "Mark";

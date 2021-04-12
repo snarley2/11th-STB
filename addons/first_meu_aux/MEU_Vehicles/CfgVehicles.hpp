@@ -1709,6 +1709,7 @@ class CfgVehicles
         tf_isolatedAmount = 0.65;
         tf_range = 120000;
         side = 0;
+        faction = "MEU_Insurrectionist";
         crew = "LM_OPCAN_KOS_Crewman4";
         ace_fastroping_enabled = 1;
         ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
@@ -2176,7 +2177,7 @@ class CfgVehicles
 	{ 
 		author = "Romeo"; 
 		side = 0; 
-		faction = "LM_OPCAN_KOS"; 
+		faction = "MEU_Insurrectionist"; 
 		displayName = "[1stMEU] Ratt (Koslovic)"; 
 		scope = 2; 
 		scopeCurator = 2; 
@@ -2204,7 +2205,7 @@ class CfgVehicles
 	{ 
 		author = "Romeo"; 
 		side = 0; 
-		faction = "LM_OPCAN_KOS"; 
+		faction = "MEU_Insurrectionist"; 
 		displayName = "[1stMEU] Ratt HMG (Koslovic)"; 
 		scope = 2; 
 		scopeCurator = 2; 
@@ -2232,7 +2233,7 @@ class CfgVehicles
 	{ 
 		author = "J.Burgess"; 
 		side = 0; 
-		faction = "LM_OPCAN_KOS"; 
+		faction = "MEU_Insurrectionist"; 
 		displayName = "[1stMEU] Ratt AT (Koslovic)"; 
 		scope = 2; 
 		scopeCurator = 2; 
@@ -2306,7 +2307,7 @@ class CfgVehicles
     { 
         author = "Romeo"; 
 		side = 0; 
-		faction = "LM_OPCAN_KOS"; 
+		faction = "MEU_Insurrectionist"; 
 		displayName = "[1stMEU] Kazan (Koslovic)"; 
 		scope = 2; 
 		scopeCurator = 2; 
@@ -2341,7 +2342,7 @@ class CfgVehicles
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
         ace_cargo_size = 10;
-        faction = "LM_OPCAN_KOS";
+        faction = "MEU_Insurrectionist";
         side = 0;
 		editorCategory = "MEU_Koslovic_Wdl";
 		editorsubCategory = "MEU_sub_Motorised";
