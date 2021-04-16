@@ -4474,6 +4474,20 @@ class CfgVehicles
                 textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
+            class colorred
+            {
+                displayName = "Red";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class coloriron
+            {
+                displayName = "Iron";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
             class colorinnie
             {
                 displayName = "Innie";
@@ -4482,7 +4496,7 @@ class CfgVehicles
                 factions[] = {"OPTRE_Ins"};
             };
         };
-        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1,"colorred",1,"coloriron",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -4801,6 +4815,20 @@ class CfgVehicles
                 textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
+            class colorred
+            {
+                displayName = "Red";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class coloriron
+            {
+                displayName = "Iron";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
             class colorinnie
             {
                 displayName = "Innie";
@@ -4809,7 +4837,7 @@ class CfgVehicles
                 factions[] = {"OPTRE_Ins"};
             };
         };
-        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1,"colorred",1,"coloriron",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -4955,6 +4983,20 @@ class CfgVehicles
                 textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
+            class colorred
+            {
+                displayName = "Red";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class coloriron
+            {
+                displayName = "Iron";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
             class colorinnie
             {
                 displayName = "Innie";
@@ -4963,7 +5005,7 @@ class CfgVehicles
                 factions[] = {"OPTRE_Ins"};
             };
         };
-        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1,"colorred",1,"coloriron",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -5109,6 +5151,20 @@ class CfgVehicles
                 textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
+            class colorred
+            {
+                displayName = "Red";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class coloriron
+            {
+                displayName = "Iron";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
             class colorinnie
             {
                 displayName = "Innie";
@@ -5117,7 +5173,7 @@ class CfgVehicles
                 factions[] = {"OPTRE_Ins"};
             };
         };
-        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1,"colorred",1,"coloriron",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
@@ -5263,6 +5319,20 @@ class CfgVehicles
                 textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
+            class colorred
+            {
+                displayName = "Red";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
+            class coloriron
+            {
+                displayName = "Iron";
+                author = "Article 2 Studios";
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                factions[] = {"OPTRE_UNSC"};
+            };
             class colorinnie
             {
                 displayName = "Innie";
@@ -5271,7 +5341,7 @@ class CfgVehicles
                 factions[] = {"OPTRE_Ins"};
             };
         };
-        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1};
+        textureList[] = {"colorgreen",1,"colorblack",1,"colortan",1,"colorsnow",1,"colorred",1,"coloriron",1};
         //flightmodelsbrrrrtime
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
