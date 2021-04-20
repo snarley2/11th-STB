@@ -307,7 +307,7 @@ class OPTRE_Ammo_Supplypod_Autorifles: OPTRE_Ammo_SupplyPod_Empty
 		mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
         mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
         mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
-        mag_xx(200Rnd_556x45_Box_Tracer_Red_F, 10);
+        mag_xx(MEU_200Rnd_556_Mag_Tracer, 10);
         mag_xx(ACE_SpareBarrel,10);
     };
 	class TransportWeapons

@@ -182,7 +182,7 @@ class CfgVehicles
             mag_xx(OPTRE_100Rnd_127x99_HE_M250HMG, 10);
             mag_xx(OPTRE_200Rnd_95x40_Box_HPSAP, 10);
             mag_xx(OPTRE_200Rnd_95x40_Box_JHP, 10);
-            mag_xx(200Rnd_556x45_Box_Tracer_Red_F, 10);
+            mag_xx(MEU_200Rnd_556_Mag_Tracer, 10);
             mag_xx(OPTRE_1Rnd_50x137_HE, 2);
             mag_xx(OPTRE_1Rnd_50x137_HEAT, 2);
             mag_xx(OPTRE_1Rnd_50x137_PEN, 1);
