@@ -3282,14 +3282,32 @@ class CfgWeapons
         scopeArsenal = 2;
         baseWeapon = "MarkHatesHisLife";
         displayname = "[1st MEU] MA4CQC + RCR 205";
+        hiddenSelections[] = {"camo1","camo2"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Weapons\MA4\V_MA4_CO.paa","\A3\Weapons_F_Exp\Rifles\ARX\Data\arifle_ARX_blk_02_F_co"};
         magazines[] = {"OPTRE_10Rnd_86x70_Mag","OPTRE_10Rnd_86x70_Mag_Tracer","OPTRE_10Rnd_86x70_Mag_AP","OPTRE_10Rnd_86x70_Mag_APT","OPTRE_10Rnd_86x70_Mag_JHP","OPTRE_10Rnd_86x70_Mag_JHPT","OPTRE_10Rnd_86x70_Mag_SS","OPTRE_10Rnd_86x70_Mag_FS","OPTRE_10Rnd_86x70_Mag_FST","OPTRE_20Rnd_86x70_Mag","OPTRE_20Rnd_86x70_Mag_Tracer","OPTRE_20Rnd_86x70_Mag_AP","OPTRE_20Rnd_86x70_Mag_APT","OPTRE_20Rnd_86x70_Mag_JHP","OPTRE_20Rnd_86x70_Mag_JHPT","OPTRE_20Rnd_86x70_Mag_SS"};
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class pointerSlot : PointerSlot
+            {
+                compatibleitems[] = 
+                {
+                    "OPTRE_M12_Laser",
+                    "OPTRE_BMR_Laser",
+                    "OPTRE_M45_Flashlight",
+                    "OPTRE_M45_Flashlight_Red",
+                    "ACE_Pointer_IR",
+                    "ACE_ACC_Pointer_Green",
+                    "ACC_Flashlight"
+                };
+            };
+        };        
         class Secondary : srifle_GM6_ghex_F
         {
             displayname ="Rifle Caliber Railgun";
             displaynameshort ="RCR205";
             magazines[] = {"10Rnd_50BW_Mag_F","5Rnd_127x108_Mag","5Rnd_127x108_APDS_Mag"};
         };
-    }
+    };
     class MEU_M75 : LMG_03_base_F
     {
         author = "Mark";
