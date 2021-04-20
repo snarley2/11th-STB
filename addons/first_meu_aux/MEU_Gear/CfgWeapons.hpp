@@ -31,55 +31,7 @@ class CfgWeapons
 	class VES_CH252A;
 	class VES_CH252D_dp;
 	
-    //Weapons
-	class OPTRE_Rifle_Base;
-	class OPTRE_LongRifle_Base;
-	class OPTRE_Handgun_Base;
-	class OPTRE_SubMachineGun_Base;
-    class OPTRE_M7S;
-	class OPTRE_M73;
-	class OPTRE_BR55;
-	class OPTRE_BR55HB_Scope;
-	class OPTRE_UnguidedLauncher_Base;
-	class autocannon_40mm_CTWS;
-	class gatling_30mm;
-    class VES_M7_I;
-    class UGL_F;
-    class Grenadelauncher;
-    class ThrowMuzzle;
-	class HMG_127;
-	class LMG_03_base_F;
-	class HMG_127_APC;
-	class GMG_40mm;
-	class LMG_coax;
-	class M134_minigun;
-	class autocannon_Base_F;
-	class MGun;
-	class GMG_F;
-	class autocannon_35mm;
-	class cannon_120mm;
-	class mortar_155mm_AMOS;
-	class weapon_ShipCannon_120mm;
-	class arifle_MSBS65_black_F;
-	class arifle_MSBS65_GL_black_F;
-	class arifle_MSBS65_Mark_black_F;
-	class arifle_MSBS65_UBS_black_F;
-    class arifle_MX_Black_F;
-    class arifle_MX_GL_Black_F;
-    class arifle_CTAR_blk_F;
-    class arifle_CTAR_GL_blk_F;
-    class arifle_CTARS_blk_F;
-    class arifle_Mk20_F;
-    class arifle_Mk20C_F;
-    class arifle_Mk20_GL_F;
-    class OPTRE_M6_Laser;
-    class OPTRE_M68_GAUSS;
-    class OPTRE_M45;
-    class OPTRE_MA32;
-    class OPTRE_MA5C;
-    class OPTRE_MA5CGL;
-    class OPTRE_FC_Railgun;
-    class OPTRE_M6C;
+    
 	//Medical
 	class InventoryFirstAidKitItem_Base_F;
 	class MedikitItem;
@@ -115,7 +67,59 @@ class CfgWeapons
     class H_HelmetO_ViperSP_ghex_F;
     class U_O_V_Soldier_Viper_F;
 
-	
+	//Weapons
+    class optre_hgun_sas10_F;
+	class OPTRE_Rifle_Base;
+	class OPTRE_LongRifle_Base;
+	class OPTRE_Handgun_Base;
+	class OPTRE_SubMachineGun_Base;
+    class OPTRE_M7S;
+	class OPTRE_M73;
+	class OPTRE_BR55;
+	class OPTRE_BR55HB_Scope;
+	class OPTRE_UnguidedLauncher_Base;
+	class autocannon_40mm_CTWS;
+	class gatling_30mm;
+    class VES_M7_I;
+    class UGL_F;
+    class Grenadelauncher;
+    class ThrowMuzzle;
+	class LMG_03_base_F;
+	class HMG_127;
+	class HMG_127_APC;
+	class GMG_40mm;
+	class LMG_coax;
+	class M134_minigun;
+	class autocannon_Base_F;
+	class MGun;
+	class GMG_F;
+	class autocannon_35mm;
+	class cannon_120mm;
+	class mortar_155mm_AMOS;
+	class weapon_ShipCannon_120mm;
+	class arifle_MSBS65_black_F;
+	class arifle_MSBS65_GL_black_F;
+	class arifle_MSBS65_Mark_black_F;
+	class arifle_MSBS65_UBS_black_F;
+    class arifle_MX_Black_F;
+    class arifle_MX_GL_Black_F;
+    class arifle_CTAR_blk_F;
+    class arifle_CTAR_GL_blk_F;
+    class arifle_CTARS_blk_F;
+    class arifle_Mk20_F;
+    class arifle_Mk20C_F;
+    class arifle_Mk20_GL_F;
+    class OPTRE_M6_Laser;
+    class OPTRE_M68_GAUSS;
+    class OPTRE_M45;
+    class OPTRE_MA32;
+    class OPTRE_MA5C;
+    class OPTRE_MA5CGL;
+    class OPTRE_FC_Railgun;
+    class OPTRE_M6C;
+    class OPTRE_M28A2;
+    class srifle_GM6_ghex_F;
+    
 	//Miscelaneous Classes
 	class ItemcTabHCam;
 	class v_rebreatherB;
@@ -144,7 +148,6 @@ class CfgWeapons
     #include "\first_meu_aux\MEU_Gear\CfgPegHelm.hpp"
     #include "\first_meu_aux\MEU_Gear\CfgVulkHelm.hpp"
     #include "\first_meu_aux\MEU_Gear\CfgVulkArmor.hpp"
-    
 	
     /*// Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
@@ -3259,304 +3262,34 @@ class CfgWeapons
 		magazineWell[] = {"MEU_Railgun_Slug_Auto"};
 		modelOptics = "-";
 	};
-    class MEU_Automag: OPTRE_M6C
+    class MEU_Automag: optre_hgun_sas10_F
     {
-        author = "Romeo";
-        scope = 0;
-        scopeCurator = 0;
-        scopeArsenal = 0;
+        author = "Romeo & Mark";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
         displayname = "[1stMEU] Automag";
         baseWeapon = "MEU_Automag";
+        model = "\OPTRE_Weapons\Pistol\m6c.p3d";
         picture = "\OPTRE_weapons\pistol\icons\pistol_a.paa";
-		magazines[] = {"16Rnd_10mm_Ball"};
-		magazineWell[] = {"optre_sas10_mag"};
-		ODST_1 = "OPTRE_ODST_HUD_AmmoCount_PistolODST";
-		Glasses = "OPTRE_GLASS_HUD_AmmoCount_PistolODST";
-		Eye = "OPTRE_EYE_HUD_AmmoCount_PistolSmart";
-        reloadAction = "GestureReloadPistol";
-        recoil = "recoil_pistol_sas10";
-		modes[] = {"Single","FullAuto"};
-		HUD_BulletInARows = 1;
-		HUD_TotalPosibleBullet = 16;
-        class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 30;
-			holsterScale = 0.85;
-			class CowsSlot: CowsSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {"optic_aco_grn","optic_aco","optic_holosight_blk_f","optic_yorris","optic_aco_smg","optic_aco_grn_smg","optic_holosight_smg_blk_f","optic_mrd_black","optre_m393_eotech","optre_m7_sight","optre_m6c_scope"};
-				iconPosition[] = {0.4,0.6};
-				iconScale = 0.15;
-			};
-			class MuzzleSlot: MuzzleSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {"OPTRE_M6C_compensator","OPTRE_M6_silencer"};
-				iconPosition[] = {0.35,0.6};
-				iconScale = 0.3;
-			};
-			class PointerSlot: PointerSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\SIDE";
-				compatibleItems[] = {"optre_m6g_flashlight","acc_flashlight_pistol"};
-				iconPosition[] = {0.35,0.6};
-				iconScale = 0.3;
-			};
-		};
-		class Single: Mode_SemiAuto
-		{
-			sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.5,1,2000};
-				soundBegin[] = {"begin1",1};
-				class SoundTails
-				{
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_interior",1.5848932,1,1200};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_trees",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_forest",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_meadows",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_houses",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
-				begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
-				class SoundTails
-				{
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_tail_interior",1.0,1,400};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_trees",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\silencer_Vermin_tail_forest",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_meadows",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_houses",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
-			};
-			reloadTime = 0.066;
-			dispersion = 0.0013;
-            recoil = "recoil_pistol_zubr";
-			recoilProne = "recoil_single_prone_pdw";
-			minRange = 2;
-			minRangeProbab = 0.3;
-			midRange = 50;
-			midRangeProbab = 0.7;
-			maxRange = 400;
-			maxRangeProbab = 0.05;
-		};
-		class FullAuto: Mode_FullAuto
-		{
-			sounds[] = {"StandardSound","SilencedSound"};
-			class BaseSoundModeType
-			{
-				weaponSoundEffect = "DefaultRifle";
-				closure1[] = {};
-				closure2[] = {};
-				soundClosure[] = {"closure1",0.5,"closure2",0.5};
-			};
-			class StandardSound: BaseSoundModeType
-			{
-				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\SMG_1.ogg",1.0,1,2000};
-				soundBegin[] = {"begin1",1};
-				class SoundTails
-				{
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_interior",1.5848932,1,1200};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_trees",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_forest",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_meadows",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Vermin_tail_houses",1.0,1,1200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
-			};
-			class SilencedSound: BaseSoundModeType
-			{
-				begin1[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
-				begin2[] = {"\OPTRE_Weapons\SMG\Data\sounds\Silenced_1.wss",1.0,1,600};
-				soundBegin[] = {"begin1",0.5,"begin2",0.5};
-				class SoundTails
-				{
-					class TailInterior
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_tail_interior",1.0,1,400};
-						frequency = 1;
-						volume = "interior";
-					};
-					class TailTrees
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_trees",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*trees";
-					};
-					class TailForest
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\silencer_Vermin_tail_forest",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*forest";
-					};
-					class TailMeadows
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_meadows",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					};
-					class TailHouses
-					{
-						sound[] = {"A3\Sounds_F\arsenal\weapons\SMG\Vermin\Silencer_Vermin_Tail_houses",1.0,1,400};
-						frequency = 1;
-						volume = "(1-interior/1.4)*houses";
-					};
-				};
-			};
-			reloadTime = 0.05;
-			dispersion = 0.002;
-			recoil = "recoil_auto_pdw";
-			recoilProne = "recoil_auto_prone_pdw";
-			minRange = 2;
-			minRangeProbab = 0.3;
-			midRange = 50;
-			midRangeProbab = 0.7;
-			maxRange = 400;
-			maxRangeProbab = 0.05;
-		};
-		class close: FullAuto
-		{
-			burst = 10;
-			aiRateOfFire = 0.5;
-			aiRateOfFireDistance = 50;
-			minRange = 0;
-			minRangeProbab = 0.05;
-			midRange = 30;
-			midRangeProbab = 0.7;
-			maxRange = 50;
-			maxRangeProbab = 0.04;
-			showToPlayer = 0;
-		};
-		class short: close
-		{
-			burst = 8;
-			aiRateOfFire = 2;
-			aiRateOfFireDistance = 300;
-			minRange = 50;
-			minRangeProbab = 0.05;
-			midRange = 150;
-			midRangeProbab = 0.7;
-			maxRange = 300;
-			maxRangeProbab = 0.04;
-		};
-		class medium: close
-		{
-			burst = 5;
-			aiRateOfFire = 4;
-			aiRateOfFireDistance = 600;
-			minRange = 200;
-			minRangeProbab = 0.05;
-			midRange = 400;
-			midRangeProbab = 0.6;
-			maxRange = 600;
-			maxRangeProbab = 0.1;
-		};
-		class far: close
-		{
-			burst = 3;
-			aiRateOfFire = 6;
-			aiRateOfFireDistance = 700;
-			minRange = 350;
-			minRangeProbab = 0.04;
-			midRange = 550;
-			midRangeProbab = 0.5;
-			maxRange = 700;
-			maxRangeProbab = 0.01;
-		};
-		aiDispersionCoefY = 10;
-		aiDispersionCoefX = 10;
-		inertia = 0.1;
-		aimTransitionSpeed = 1.5;
-		dexterity = 1.7;
-		initSpeed = 490;
-		maxZeroing = 50;
+		magazines[] += {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_AP_Mag","32Rnd_10mm_Ball"};
 	};
+    class MarkHatesHisLife: OPTRE_M28A2
+    {
+        author = "Mark";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        baseWeapon = "MarkHatesHisLife";
+        displayname = "[1st MEU] MA4CQC + RCR 205";
+        magazines[] = {"OPTRE_10Rnd_86x70_Mag","OPTRE_10Rnd_86x70_Mag_Tracer","OPTRE_10Rnd_86x70_Mag_AP","OPTRE_10Rnd_86x70_Mag_APT","OPTRE_10Rnd_86x70_Mag_JHP","OPTRE_10Rnd_86x70_Mag_JHPT","OPTRE_10Rnd_86x70_Mag_SS","OPTRE_10Rnd_86x70_Mag_FS","OPTRE_10Rnd_86x70_Mag_FST","OPTRE_20Rnd_86x70_Mag","OPTRE_20Rnd_86x70_Mag_Tracer","OPTRE_20Rnd_86x70_Mag_AP","OPTRE_20Rnd_86x70_Mag_APT","OPTRE_20Rnd_86x70_Mag_JHP","OPTRE_20Rnd_86x70_Mag_JHPT","OPTRE_20Rnd_86x70_Mag_SS"};
+        class Secondary : srifle_GM6_ghex_F
+        {
+            displayname ="Rifle Caliber Railgun";
+            displaynameshort ="RCR205";
+            magazines[] = {"10Rnd_50BW_Mag_F","5Rnd_127x108_Mag","5Rnd_127x108_APDS_Mag"};
+        };
+    }
     class MEU_M75 : LMG_03_base_F
     {
         author = "Mark";
@@ -3670,4 +3403,5 @@ class CfgWeapons
 			};
 		};
 	};
+
 };

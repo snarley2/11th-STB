@@ -67,6 +67,7 @@ class CfgMagazines
     class OPTRE_3Rnd_ALIM_Gauss_Slugs;
     class OPTRE_16Rnd_127x40_Mag_NARQ;
     class OPTRE_2000Rnd_20mm_HEIAP;
+    class 16Rnd_10mm_Ball;
     
     /*class CBRN_IEDLandSmall_Type1_Remote_Mag;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
@@ -91,7 +92,13 @@ class CfgMagazines
 		ammo = "hemicalBarrel_CS_Ammo";
         triggerWhenDestroyed = 1;
     };*/
-    
+    class 32Rnd_10mm_Ball : 16Rnd_10mm_Ball
+    {
+        scope = 2;
+        scopearsenal = 2;
+        displayname = "32rnd M6 Auto Ball Mag"
+        count = 32;  
+    };
     class MEU_2000Rnd_Gatling_30mm_Plane_CAS_mag : OPTRE_2000Rnd_20mm_HEIAP
     {
         ammo = "MEU_CAS_ammo";
