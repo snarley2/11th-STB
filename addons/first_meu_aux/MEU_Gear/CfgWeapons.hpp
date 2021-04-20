@@ -25,13 +25,13 @@ class CfgWeapons
 	class LM_OPCAN_CGC;
 	class LM_OPCAN_Beret_CGC;
     class LM_OPCAN_Vest_ODST_Red;
-	
+
 	//Zulu Armor
 	class VES_M52A_URB_Security_A;
 	class VES_CH252A;
 	class VES_CH252D_dp;
-	
-    
+
+
 	//Medical
 	class InventoryFirstAidKitItem_Base_F;
 	class MedikitItem;
@@ -41,7 +41,7 @@ class CfgWeapons
     class OPTRE_Medigel;
     class ACE_tourniquet;
     class ACE_Epinephrine;
-	
+
 	//Generic Classes
     class ItemCore;
 	class HeadgearItem;
@@ -119,7 +119,7 @@ class CfgWeapons
     class OPTRE_M6C;
     class OPTRE_M28A2;
     class srifle_GM6_ghex_F;
-    
+
 	//Miscelaneous Classes
 	class ItemcTabHCam;
 	class v_rebreatherB;
@@ -138,8 +138,8 @@ class CfgWeapons
     class LM_OPCAN_BRW_Shemagh;
     class plp_ctf_SafetyBarrelBlue;
     class FullAutoSlow;
-    class FullAutoFast; 
-    
+    class FullAutoFast;
+
     #include "\first_meu_aux\MEU_Gear\CfgPraeCoHelm.hpp"
     #include "\first_meu_aux\MEU_Gear\CfgPraeCoArmor.hpp"
     #include "\first_meu_aux\MEU_Gear\CfgCentCoArmor.hpp"
@@ -148,11 +148,11 @@ class CfgWeapons
     #include "\first_meu_aux\MEU_Gear\CfgPegHelm.hpp"
     #include "\first_meu_aux\MEU_Gear\CfgVulkHelm.hpp"
     #include "\first_meu_aux\MEU_Gear\CfgVulkArmor.hpp"
-	
+
     /*// Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
 	{
-        author = "Romeo" 
+        author = "Romeo"
 		scope = 2;
 		scopeCurator = 2;
         armor = 50;
@@ -199,7 +199,7 @@ class CfgWeapons
     };
     class ChemicalBarrel_AS: plp_ctf_SafetyBarrelBlue
 	{
-        author = "Romeo" 
+        author = "Romeo"
 		scope = 2;
 		scopeCurator = 2;
         armor = 50;
@@ -341,11 +341,11 @@ class CfgWeapons
 			mass = 2;
         };
     };
-	class MEU_tourniquet : ACE_tourniquet 
+	class MEU_tourniquet : ACE_tourniquet
     {
         scope = 1;
-        displayName = " [P] Armor Patch"; 
-        class ItemInfo: CBA_MiscItem_ItemInfo 
+        displayName = " [P] Armor Patch";
+        class ItemInfo: CBA_MiscItem_ItemInfo
         {
             mass = 0.5;
         };
@@ -361,7 +361,7 @@ class CfgWeapons
 			mass = 2;
         };
 	};
-	
+
 // Medical Items End
 // BDU Start
 
@@ -383,7 +383,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-    
+
     class Centurion_BDU : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -402,7 +402,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-		
+
 	class Centurion_BDU_Urban_Evolved : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -421,7 +421,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Desert : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -440,7 +440,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Snow : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -459,7 +459,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Woodland : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -478,7 +478,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Pegasus_Pilot_Uniform : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -498,7 +498,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Rolled : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -517,7 +517,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-		
+
 	class Centurion_BDU_Urban_Evolved_Rolled : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -536,7 +536,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Desert_Rolled : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -555,7 +555,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Snow_Rolled : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -574,7 +574,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Woodland_Rolled : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -593,7 +593,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Pegasus_Pilot_Uniform_Rolled : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -613,7 +613,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Short : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -632,7 +632,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-		
+
 	class Centurion_BDU_Urban_Evolved_Short : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -651,7 +651,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Desert_Short : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -670,7 +670,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Snow_Short : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -689,7 +689,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Centurion_BDU_Woodland_Short : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -708,7 +708,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 	class Pegasus_Pilot_Uniform_Short : U_B_CombatUniform_mcam
     {
         author = "1st MEU Oneill";
@@ -728,7 +728,7 @@ class CfgWeapons
 			mass = 40;
         };
     };
-	
+
 // BDU End
     // Friden Vipers
 	class MEU_Viper_Helmet_Friden: H_HelmetO_ViperSP_ghex_F
@@ -743,7 +743,7 @@ class CfgWeapons
     // Weapons Start
     class Throw : Grenadelauncher
 	{
-		muzzles[] += 
+		muzzles[] +=
 		{
 			"MEU_C7_Muzzle",
 			"MEU_C12_Muzzle",
@@ -791,7 +791,7 @@ class CfgWeapons
         class MEU_Bubble_Muzzle : ThrowMuzzle
         {
             reloadtime = 0;
-            magazines[] = {"MEU_Bubble_Mag"}; 
+            magazines[] = {"MEU_Bubble_Mag"};
 			class EventHandlers
 			{
 				fired = "(_this # 6) call MEU_fnc_Bubbleshield_throw;";
@@ -833,7 +833,7 @@ class CfgWeapons
 			"OPTRE_60Rnd_5x23mm_Mag_NARQT"
 		};
 	};
-    
+
     class MEU_M7v2: OPTRE_M7
     {
         baseweapon = "MEU_M7v2";
@@ -865,10 +865,10 @@ class CfgWeapons
             };
 		};
     };
-	
+
 	class OPTRE_M301X: UGL_F
 	{
-		magazines[] = 
+		magazines[] =
 		{
 			"UGL_8Gauge_Pellet",
 			"UGL_8Gauge_Slug",
@@ -908,10 +908,10 @@ class CfgWeapons
 			"3Rnd_HE_MEU_shell"
 		};
 	};
-	
+
 	class OPTRE_M319s: OPTRE_Handgun_Base
 	{
-		magazines[] = 
+		magazines[] =
 		{
 			"UGL_FlareWhite_F",
 			"UGL_FlareGreen_F",
@@ -944,11 +944,11 @@ class CfgWeapons
 			"M319_Smoke_Red"
 		};
 	};
-		
+
 	class OPTRE_M247: OPTRE_M73
 	{
 		displayName = "M247X General Purpose Machine Gun";
-		magazines[] = 
+		magazines[] =
 		{
 			"OPTRE_100Rnd_762x51_Box",
 			"OPTRE_100Rnd_762x51_Box_AP",
@@ -1033,7 +1033,7 @@ class CfgWeapons
 			};
 		};
 	};
-    
+
 	class M250HMG: OPTRE_M247
 	{
 		dlc = "1STMEUAUX";
@@ -1222,16 +1222,16 @@ class CfgWeapons
 			dispersion = 0.0030;
 		};
 	};
-	
+
 	class OPTRE_BR55HB: OPTRE_Rifle_Base
 	{
-		modes[] = 
+		modes[] =
 		{
 			"Single",
 			"Burst"
 		};
 	};
-	
+
 	class OPTRE_BR45_Scope: OPTRE_BR55HB_Scope
 	{
 		class ItemInfo: InventoryOpticsItem_Base_F
@@ -1281,7 +1281,7 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 	class OPTRE_M392_DMR: OPTRE_LongRifle_Base
 	{
 		magazines[]=
@@ -1307,26 +1307,26 @@ class CfgWeapons
 			"OPTRE_15Rnd_DMR_762x51_Mag_FST"
 		};
 		magazineWell[] = {};
-		
-		modes[] = 
+
+		modes[] =
 		{
 			"Single"
 		};
 	};
-	
+
 	class OPTRE_M393_DMR: OPTRE_M392_DMR
 	{
 		displayName = "M393X DMR";
 	};
-	
+
 	class OPTRE_M393S_DMR: OPTRE_M393_DMR
 	{
 		displayName	= "M393X/S DMR";
 	};
-	
+
 	class OPTRE_M295_BMR: OPTRE_M393_DMR
     {
-        magazines[] = 
+        magazines[] =
 		{
 			"OPTRE_15Rnd_762x51_Mag",
 			"OPTRE_15Rnd_762x51_Mag_Tracer",
@@ -1357,23 +1357,23 @@ class CfgWeapons
 			"OPTRE_15Rnd_DMR_762x51_Mag_FST"
 		};
 		magazineWell[] = {};
-		
-		modes[] = 
+
+		modes[] =
 		{
 			"Single",
 			"FullAuto"
 		};
     };
-    
+
     class OPTRE_CR77: OPTRE_M393_DMR
     {
-        modes[] = 
+        modes[] =
 		{
 			"Single",
 			"FullAuto"
 		};
     };
-	
+
 	class LM_OPCAN_AR0M37: arifle_MSBS65_black_F
     {
         picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_black_F_ca.paa";
@@ -1381,7 +1381,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -1449,7 +1449,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -1458,7 +1458,7 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_AR0M37_GL: arifle_MSBS65_GL_black_F
     {
         picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_GL_black_F_ca.paa";
@@ -1466,7 +1466,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -1534,7 +1534,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -1543,7 +1543,7 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_AR0M37_SHT: arifle_MSBS65_UBS_black_F
     {
         picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_UBS_black_F_ca.paa";
@@ -1551,7 +1551,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -1619,7 +1619,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -1628,7 +1628,7 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_DMR0M37: arifle_MSBS65_Mark_black_F
     {
 		picture = "a3\Weapons_F_Enoch\Rifles\MSBS\Data\UI\icon_arifle_MSBS65_Mark_black_F_ca.paa";
@@ -1636,7 +1636,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -1704,7 +1704,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -1713,14 +1713,14 @@ class CfgWeapons
             };
         };
     };
-    
+
     class LM_OPCAN_ARMX: arifle_MX_Black_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -1788,7 +1788,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -1797,14 +1797,14 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_ARMX_GL: arifle_MX_GL_Black_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -1872,7 +1872,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -1881,14 +1881,14 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_CTAR: arifle_CTAR_blk_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -1956,7 +1956,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -1965,14 +1965,14 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_CTAR_GL: arifle_CTAR_GL_blk_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2040,7 +2040,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2049,14 +2049,14 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_CTAR_SAW: arifle_CTARS_blk_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2124,7 +2124,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2133,14 +2133,14 @@ class CfgWeapons
             };
         };
     };
-	
+
     class LM_OPCAN_M18AR: arifle_Mk20_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2208,7 +2208,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2217,14 +2217,14 @@ class CfgWeapons
             };
         };
     };
-	
+
 	class LM_OPCAN_M18AR_C: arifle_Mk20C_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2292,7 +2292,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2301,14 +2301,14 @@ class CfgWeapons
             };
         };
     };
-	
+
 	class LM_OPCAN_M18AR_GL: arifle_Mk20_GL_F
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2376,7 +2376,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2391,7 +2391,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2409,7 +2409,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2475,12 +2475,12 @@ class CfgWeapons
                     "OPTRE_M393_ACOG_v2",
                     "OPTRE_M393_EOTECH_v2",
                     "OPTRE_M12_Optic"
-                    
+
                 };
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2496,7 +2496,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2565,7 +2565,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2575,14 +2575,14 @@ class CfgWeapons
             };
         };
     };
-    
+
     class OPTRE_SRS99D : OPTRE_LongRifle_Base
     {
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2654,7 +2654,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2669,7 +2669,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2737,7 +2737,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2752,7 +2752,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2820,7 +2820,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2835,7 +2835,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2903,7 +2903,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -2918,7 +2918,7 @@ class CfgWeapons
         {
             class MuzzleSlot: MuzzleSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "muzzle_snds_b",
                     "muzzle_snds_h_mg_blk_f",
@@ -2986,7 +2986,7 @@ class CfgWeapons
             };
             class PointerSlot: PointerSlot
             {
-                compatibleitems[] = 
+                compatibleitems[] =
                 {
                     "acc_pointer_ir",
                     "acc_flashlight",
@@ -3012,17 +3012,17 @@ class CfgWeapons
 			"M41_Twin_HEAP"
 		};
 		magazineWell[] = {};
-	};	
-   
+	};
+
     class OPTRE_M319 : OPTRE_Rifle_Base
     {
         magazines[] = {"UGL_8Gauge_Pellet","UGL_8Gauge_Slug","UGL_8Gauge_Beanbag","UGL_FlareBlue_F","3Rnd_UGL_8Gauge_Pellet","3Rnd_UGL_8Gauge_Slug","3Rnd_UGL_8Gauge_Beanbag","3Rnd_UGL_FlareBlue_F","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","3Rnd_HE_Grenade_shell","3Rnd_UGL_FlareWhite_F","3Rnd_UGL_FlareGreen_F","3Rnd_UGL_FlareRed_F","3Rnd_UGL_FlareYellow_F","3Rnd_Smoke_Grenade_shell","3Rnd_SmokeRed_Grenade_shell","3Rnd_SmokeGreen_Grenade_shell","3Rnd_SmokeYellow_Grenade_shell","3Rnd_SmokePurple_Grenade_shell","3Rnd_SmokeBlue_Grenade_shell","3Rnd_SmokeOrange_Grenade_shell","1Rnd_HE_MEU_shell","1Rnd_HEDP_MEU_shell","3Rnd_HE_MEU_shell"};
     };
-	
+
 	class M247_APC: LMG_coax
 	{
 		displayName = "M247 7.62mm GPMG";
-		magazines[] = 
+		magazines[] =
 		{
 			"OPTRE_100Rnd_762x51_Box",
 			"OPTRE_100Rnd_762x51_Box_AP",
@@ -3044,11 +3044,11 @@ class CfgWeapons
 			reloadTime = 0.07;
 		};
 	};
-	
+
 	class M250_APC: HMG_127_APC
 	{
 		displayName = "M250 12.7mm HMG";
-		magazines[] = 
+		magazines[] =
 		{
 			"OPTRE_400Rnd_127x99_M250HMG",
 			"OPTRE_400Rnd_127x99_HE_M250HMG"
@@ -3059,11 +3059,11 @@ class CfgWeapons
 			reloadTime = 0.09;
 		};
 	};
-	
+
 	class MG460_APC: GMG_40mm
 	{
 		displayName = "MG460 40mm AGL";
-		magazines[] = 
+		magazines[] =
 		{
 			"40Rnd_HEDP_Belt"
 		};
@@ -3073,7 +3073,7 @@ class CfgWeapons
 			reloadTime = 0.35;
 		};
 	};
-	
+
 	class M1024_30mm: autocannon_40mm_CTWS
 	{
 		displayName = "M1024 ASW/AC 30mm ALA Cannon";
@@ -3082,7 +3082,7 @@ class CfgWeapons
 		{
 			displayName = "M1024 ASW/AC 30mm ALA Cannon";
 			reloadTime = 0.25;
-			magazines[] = 
+			magazines[] =
 			{
 				"80Rnd_30mm_HEAT",
 			};
@@ -3091,19 +3091,19 @@ class CfgWeapons
 		{
 			displayName = "M1024 ASW/AC 30mm ALA Cannon";
 			reloadTime = 0.25;
-			magazines[] = 
+			magazines[] =
 			{
 				"60Rnd_30mm_APFSDS",
 			};
 		};
 	};
-	
+
 	class M512_90mm: cannon_120mm
 	{
 		magazinereloadTime = 4.0;
 		displayName = "M512 Smoothbore High-Velocity Cannon";
 		descriptionShort = "90mm";
-		magazines[] = 
+		magazines[] =
 		{
 			"60Rnd_90mm_APBC",
 			"30Rnd_90mm_SAPHE",
@@ -3125,7 +3125,7 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
 	class M910_Point_Defense_Cannon: autocannon_35mm
 	{
 		displayName = "M910 ASW/AC 50mm";
@@ -3139,12 +3139,12 @@ class CfgWeapons
 		muzzlePos = "Usti hlavne1R";
 		muzzleEnd = "konec hlavne1R";
 		selectionFireAnim = "Usti hlavne1R";
-		magazines[] = 
+		magazines[] =
 		{
 			"20Rnd_50mm_HEAT"
 		};
 		magazinereloadTime = 6.0;
-		modes[] = {"Point_Defense", "close_range", "short_range", "medium_range", "long_range"}; 
+		modes[] = {"Point_Defense", "close_range", "short_range", "medium_range", "long_range"};
 		class Point_Defense: CannonCore
 		{
 			displayName = "M910 ASW/AC 50mm";
@@ -3231,7 +3231,7 @@ class CfgWeapons
 			};
 		};
 	};
-	
+
     class MEU_Railgun: OPTRE_FC_Railgun
 	{
 		author = "Romeo";
@@ -3276,7 +3276,7 @@ class CfgWeapons
 	};
     class MarkHatesHisLife: OPTRE_M28A2
     {
-        author = "Mark";
+        author = "Mark & Stuka";
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -3301,7 +3301,7 @@ class CfgWeapons
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\MG\data\anim\OPTRE_M73_handanim.rtm","Spartan_ManSkeleton","\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\M73_1_Spartan.rtm"};
 		model = "\OPTRE_Weapons\MG\M73.p3d";
 		descriptionShort = "UNSC Light Machine Gun";
-		picture = "\OPTRE_weapons\MG\icons\M73_1.paa";        
+		picture = "\OPTRE_weapons\MG\icons\M73_1.paa";
 		reloadAction = "GestureReloadM200";
 		recoil = "recoil_lim";
 		cursor = "OPTRE_M73";
@@ -3312,7 +3312,7 @@ class CfgWeapons
 		HUD_BulletInARows = 4;
 		HUD_TotalPosibleBullet = 200;
 		magazineWell[] = {};
-        magazines[] = 
+        magazines[] =
 		{
 			"MEU_200rnd_556_Mag",
 			"MEU_200rnd_556_Mag_Tracer"

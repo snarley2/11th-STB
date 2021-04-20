@@ -9,7 +9,7 @@ class CfgAmmo
     class OPTRE_SpLaserAmmo;
     class OPTRE_25x130mm_Slug;
     class ACE_Gatling_30mm_Sub_CM51;
-	
+
 	//Explosives
 	class G_40mm_HE;
 	class Sh_82mm_AMOS;
@@ -23,12 +23,12 @@ class CfgAmmo
     class Sh_82mm_AMOS_Chem_Type0;*/
 	class IEDUrbanSmall_Remote_Ammo;
     class GrenadeHand;
-	
+
 	//Shotguns
 	class B_12Gauge_Pellets_Submunition;
 	class B_12Gauge_Pellets_Submunition_Deploy;
 	class B_12Gauge_Slug;
-	
+
 	//Rifles
 	class OPTRE_B_5x23_Caseless;
 	class OPTRE_B_762x51_Ball;
@@ -36,10 +36,10 @@ class CfgAmmo
 	class OPTRE_B_127x40_Ball;
     class BulletBase;
     class B_556x45_Ball;
-	
+
 	//Miscelaneous Classes
 	class SensorTemplateIR;
-	
+
     class MEU_CAS_ammo : ACE_Gatling_30mm_Sub_CM51
     {
         initSpeed = 900;
@@ -54,8 +54,8 @@ class CfgAmmo
 		flightProfiles[] = {"TopDown"};
 		class TopDown
 		{
-			ascendHeight = 1600;
-			descendDistance = 3200;
+			ascendHeight = 4000;
+			descendDistance = 8000;
 			minDistance = 800;
 			ascendAngle = 20;
 		};
@@ -123,7 +123,7 @@ class CfgAmmo
         hit = 9500;
 		indirectHit = 9000;
 		indirectHitRange = 10;
-		defaultMagazine = "MEU_C168_Mag"; 
+		defaultMagazine = "MEU_C168_Mag";
 		model = "\OPTRE_Weapons\charges\m168g.p3d";
         timeToLive = 15;
         fuseDistance = 0;
@@ -141,7 +141,7 @@ class CfgAmmo
         hit = 10000;
 		indirectHit = 10000;
 		indirectHitRange = 500;
-		defaultMagazine = "MEU_Fury_Mag"; 
+		defaultMagazine = "MEU_Fury_Mag";
 		model = "\OPTRE_weapons\backpacks\fury.p3d";
         timeToLive = 15;
         fuseDistance = 0;
@@ -273,7 +273,7 @@ class CfgAmmo
 		aiAmmoUsageFlags = "64 + 128";
 		CraterEffects = "";
 	};
-	
+
 	class M3_CS: SmokeShell
 	{
 		model = "\OPTRE_Weapons\explosives\m2_smk_grenade.p3d";
@@ -351,21 +351,21 @@ class CfgAmmo
 		hit = 18;
 		typicalSpeed = 340;
 	};
-	
+
 	class OPTRE_B_762x51_JHP: OPTRE_B_762x51_Ball
 	{
 		caliber = 0.4;
 		hit = 18;
 		typicalSpeed = 860;
 	};
-	
+
 	class OPTRE_B_95x40_JHP: OPTRE_B_95x40_Ball
 	{
 		caliber = .75;
 		hit = 20;
 		typicalSpeed = 1000;
 	};
-	
+
 	class MEU_B_8Gauge_Pellet: B_12Gauge_Pellets_Submunition
 	{
 		submunitionAmmo = "MEU_B_8Gauge_Pellet_Submunition";
@@ -384,7 +384,7 @@ class CfgAmmo
 		caliber = 4;
 		hit = 12;
 	};
-	
+
 	class OPTRE_B_8Gauge_Incendiary_Submunition: B_12Gauge_Pellets_Submunition_Deploy
 	{
 		caliber = 4;
@@ -397,7 +397,7 @@ class CfgAmmo
 		tracerStartTime = 0;
 		tracerScale = 0.75;
 	};
-	
+
 	class OPTRE_B_762x51_DMR_AP: OPTRE_B_762x51_Ball
 	{
 		caliber	= 4;
@@ -435,7 +435,7 @@ class CfgAmmo
 		timeToLive = 30;
         fuseDistance = 6;
 	};
-	
+
 	class MEU_40mm_HEDP: MEU_40mm_HE
 	{
 		hit = 180;
@@ -446,9 +446,9 @@ class CfgAmmo
         timeToLive = 30;
         fuseDistance = 4;
 	};
-	
+
 	class MEU_40mm_9bang : MEU_40mm_HE
-    {		
+    {
 		hit = 0;
 		indirectHit = 0;
 		indirectHitRange = 0;
@@ -470,7 +470,7 @@ class CfgAmmo
         ace_flashbang_Interval = 0.05;
         model = QPATHTOF(models\ACE_CTS_9bang_thrown.p3d);
     };
-	
+
 	class M41_Rocket_HEAT_WireGuided: M_Titan_AT
 	{
 		model = "OPTRE_weapons\rockets\M41_rocket.p3d";
@@ -563,7 +563,7 @@ class CfgAmmo
 			attackProfiles[] = {"WIRE"};
 		};
 	};
-	
+
 	class M41_Rocket_HEAT_HeatSeeking: M41_Rocket_HEAT_WireGuided
 	{
 		hit = 600;
@@ -607,7 +607,7 @@ class CfgAmmo
 			attackProfiles[] = {"DIR"};
 		};
 	};
-	
+
 	class M41_Rocket_HEAT_Unguided: M41_Rocket_HEAT_WireGuided
 	{
 		allowAgainstInfantry = 1;
@@ -627,7 +627,7 @@ class CfgAmmo
 			enabled = 0;
 		};
 	};
-	
+
 	class M41_Rocket_HEAP_Unguided: M41_Rocket_HEAT_WireGuided
 	{
 		allowAgainstInfantry = 1;
@@ -647,7 +647,7 @@ class CfgAmmo
 			enabled = 0;
 		};
 	};
-	
+
 	class M1024_30mm_HEAT: B_30mm_MP
 	{
 		hit = 100;
@@ -656,7 +656,7 @@ class CfgAmmo
 		caliber = 5;
 		typicalSpeed = 1200;
 	};
-		
+
 	class M1024_30mm_APFSDS: B_30mm_APFSDS
 	{
 		hit = 200;
@@ -665,14 +665,14 @@ class CfgAmmo
 		caliber = 10;
 		typicalSpeed = 1500;
 	};
-	
+
 	class 90mm_APBC: Sh_105mm_APFSDS_T_Green
 	{
 		caliber = 26;
 		hit = 600;
 		typicalSpeed = 2600;
 	};
-	
+
 	class 90mm_SAPHE: Sh_105mm_HEAT_MP
 	{
 		hit = 300;
@@ -682,7 +682,7 @@ class CfgAmmo
 		explosive = 1.0;
 		typicalSpeed = 2000;
 	};
-	
+
 	class 90mm_HEAT: Sh_105mm_HEAT_MP
 	{
 		hit = 600;
@@ -692,7 +692,7 @@ class CfgAmmo
 		explosive = 0.75;
 		typicalSpeed = 2000;
 	};
-	
+
 	class M910_50mm_HEAT: B_30mm_MP
 	{
 		hit = 200;
