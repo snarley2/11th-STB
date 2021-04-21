@@ -118,7 +118,6 @@ class CfgWeapons
     class OPTRE_FC_Railgun;
     class OPTRE_M6C;
     class OPTRE_M28A2;
-    class srifle_GM6_ghex_F;
 
 	//Miscelaneous Classes
 	class ItemcTabHCam;
@@ -3281,7 +3280,7 @@ class CfgWeapons
         picture = "\OPTRE_weapons\pistol\icons\pistol_a.paa";
 		magazines[] += {"OPTRE_8Rnd_127x40_Mag","OPTRE_8Rnd_127x40_Mag_Tracer","OPTRE_8Rnd_127x40_AP_Mag","32Rnd_10mm_Ball"};
 	};
-    class MarkHatesHisLife: OPTRE_M28A2
+    class MEU_MarkHatesHisLife: OPTRE_M28A2
     {
         author = "Mark & Stuka";
         scope = 2;
@@ -3308,111 +3307,11 @@ class CfgWeapons
                 };
             };
         };        
-        class Secondary : srifle_GM6_ghex_F
+        class Secondary : OPTRE_SRS99D
         {
             displayname ="Rifle Caliber Railgun";
             displaynameshort ="RCR205";
-            magazines[] = {"10Rnd_50BW_Mag_F","5Rnd_127x108_Mag","5Rnd_127x108_APDS_Mag"};
-            class Single: Mode_SemiAuto
-            {
-                sounds[] = {"StandardSound","SilencedSound"};
-                class BaseSoundModeType
-                {
-				    weaponSoundEffect = "DefaultRifle";
-				    closure1[] = {};
-				    closure2[] = {};
-				    soundClosure[] = {"closure1",0.5,"closure2",0.5};
-                };
-                class StandardSound: BaseSoundModeType
-                {
-                    begin1[] = {"\OPTRE_Weapons\Sniper\Data\sounds\SRS99_1.wss",5.0,1,3000};
-				    begin2[] = {"\OPTRE_Weapons\Sniper\Data\sounds\SRS99_2.wss",5.0,1,3000};
-				    soundBegin[] = {"begin1",0.34,"begin2",0.33};
-                    class SoundTails
-				    {
-					   class TailForest
-					   {
-						  sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_forest",1.0,1,2200};
-						  frequency = 1;
-						  volume = "(1-interior/1.4)*forest";
-					   };
-					   class TailHouses
-					   {
-						  sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_houses",1.0,1,2200};
-						  frequency = 1;
-						  volume = "(1-interior/1.4)*houses";
-					   };
-					   class TailInterior
-					   {
-						  sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_interior",1.9952624,1,2200};
-						  frequency = 1;
-						  volume = "interior";
-					   };
-					   class TailMeadows
-					   {
-						  sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_meadows",1.0,1,2200};
-						frequency = 1;
-						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					   };
-					   class TailTrees
-					   {
-						  sound[] = {"A3\Sounds_F\arsenal\weapons\LongRangeRifles\GM6_Lynx\GM6_tail_trees",1.0,1,2200};
-						  frequency = 1;
-						  volume = "(1-interior/1.4)*trees";
-					   };
-				    };
-                };
-                class SilencedSound: BaseSoundModeType
-                {
-				    begin1[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_01",1.0,1,300};
-				    begin2[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_02",1.0,1,300};
-				    begin3[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_short_03",1.0,1,300};
-				    soundBegin[] = {"begin1",0.33,"begin2",0.33,"begin3",0.34};
-				    class SoundTails
-				    {
-					   class TailInterior
-					   {
-						  sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_interior",1.0,1,300};
-						  frequency = 1;
-						  volume = "interior";
-					   };
-					   class TailTrees
-					   {
-						  sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_trees",1.0,1,300};
-						  frequency = 1;
-						  volume = "(1-interior/1.4)*trees";
-					   };
-					   class TailForest
-					   {
-						  sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_forest",1.0,1,300};
-						  frequency = 1;
-						  volume = "(1-interior/1.4)*forest";
-					   };
-					   class TailMeadows
-					   {
-						  sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_meadows",1.0,1,300};
-						  frequency = 1;
-						  volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
-					   };
-					   class TailHouses
-					   {
-						  sound[] = {"A3\Sounds_F_Mark\arsenal\weapons\LongRangeRifles\DMR_05_Cyrus\silencer_DMR_05_tail_houses",1.0,1,300};
-						  frequency = 1;
-						  volume = "(1-interior/1.4)*houses";
-					   };
-				    };
-                };
-                reloadTime = 0.35;
-                dispersion = 0.00015;
-                recoil = "recoil_single_gm6";
-                recoilProne = "recoil_single_gm6";
-                minRange = 2;
-                minRangeProbab = 0.25;
-                midRange = 800;
-                midRangeProbab = 0.75;
-                maxRange = 2000;
-                maxRangeProbab = 0.25;
-            };
+            magazines[] = {"10Rnd_50BW_Mag_F","5Rnd_127x108_Mag","5Rnd_127x108_APDS_Mag","ACE_5Rnd_127x99_Mag","ACE_5Rnd_127x99_AMAX_Mag","ACE_5Rnd_127x99_API_Mag"};
         };
     };
     class MEU_M75 : LMG_03_base_F
