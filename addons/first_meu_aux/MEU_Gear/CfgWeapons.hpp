@@ -941,7 +941,14 @@ class CfgWeapons
 			"M319_Smoke",
 			"M319_Smoke_Orange",
 			"M319_Smoke_Green",
-			"M319_Smoke_Red"
+			"M319_Smoke_Red",
+			"OPAEX_3Rnd_SmokeBlue_Grenade_shell",
+			"OPAEX_3Rnd_SmokeGreen_Grenade_shell",
+			"OPAEX_3Rnd_SmokeOrange_Grenade_shell",
+			"OPAEX_3Rnd_SmokePurple_Grenade_shell",
+			"OPAEX_3Rnd_SmokeRed_Grenade_shell",
+			"OPAEX_3Rnd_SmokeYellow_Grenade_shell",
+			"OPAEX_3Rnd_Smoke_Grenade_shell"
 		};
 	};
 
