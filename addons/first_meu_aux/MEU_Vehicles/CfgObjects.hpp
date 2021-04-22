@@ -1,7 +1,6 @@
     class OPTRE_CTF_Flag_Base;
     class House_F;
     class House;
-    class OPTRE_holo_corvette;
     
     class 1stMEU_CTF_Flag_3HQ : OPTRE_CTF_Flag_Base
     {
