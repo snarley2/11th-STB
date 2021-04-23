@@ -39,7 +39,11 @@ class CfgAmmo
 
 	//Miscelaneous Classes
 	class SensorTemplateIR;
-
+	class B_762x51_Ball;
+	class OPTRE_FC_Bolt_Base: B_762x51_Ball
+	{
+		ACE_damageType = "plasma";
+	};
     class MEU_CAS_ammo : ACE_Gatling_30mm_Sub_CM51
     {
         initSpeed = 900;

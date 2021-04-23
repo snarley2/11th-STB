@@ -59,8 +59,89 @@ class ACE_Medical_Treatment
     };
     class Bandaging 
     {
+		class Ace_packingbandage
+		{
+			class plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaMinor: plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaMedium: plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaLarge: plasma
+			{
+				effectiveness = 0;
+			};
+		};
+		class ElasticBandage
+		{
+			class plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaMinor: plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaMedium: plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaLarge: plasma
+			{
+				effectiveness = 0;
+			};
+		};
+		class QuikClot
+		{
+			class plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaMinor: plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaMedium: plasma
+			{
+				effectiveness = 0;
+			};
+			class plasmaLarge: plasma
+			{
+				effectiveness = 0;
+			};
+		};
         class MEU_Biofoam: OPTRE_Biofoam
         {
+			class plasma {
+                effectiveness = 3;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMinor : plasma {
+                effectiveness = 2;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMedium : plasma {
+                effectiveness = 1;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaLarge : plasma {
+                effectiveness = 2;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
             class Abrasion {
                 effectiveness = 1;
                 reopeningChance = 1;
@@ -88,7 +169,7 @@ class ACE_Medical_Treatment
                 effectiveness = 2;
             };
             class AvulsionsLarge: Avulsions {
-                effectiveness = 2;
+                effectiveness = 1;
             };
 
             class Contusion: Abrasion {
@@ -145,50 +226,74 @@ class ACE_Medical_Treatment
             };
 
             class velocityWound: Abrasion {
-                effectiveness = 4;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 900;
                 reopeningMaxDelay = 1200;
             };
             class velocityWoundMinor: velocityWound {};
             class velocityWoundMedium: velocityWound {
-                effectiveness = 3;
+                effectiveness = 2;
             };
             class velocityWoundLarge: velocityWound {
-                effectiveness = 2;
+                effectiveness = 1;
             };
 
             class punctureWound: Abrasion {
-                effectiveness = 5;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 900;
                 reopeningMaxDelay = 3000;
             };
             class punctureWoundMinor: punctureWound {};
             class punctureWoundMedium: punctureWound {
-                effectiveness = 4;
+                effectiveness = 2;
             };
             class punctureWoundLarge: punctureWound {
-                effectiveness = 3;
+                effectiveness = 1;
             };
         };
         class FirstAidKit : MEU_Biofoam
         {};
         class MEU_Medigel: OPTRE_Medigel
         {
-            class Abrasion {
-                effectiveness = 6;
+            class plasma {
+                effectiveness = 3;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMinor : plasma {
+                effectiveness = 3;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMedium : plasma {
+                effectiveness = 2;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaLarge : plasma {
+                effectiveness = 1;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class Abrasion {
+                effectiveness = 4;
                 reopeningChance = 1;
                 reopeningMinDelay = 600;
                 reopeningMaxDelay = 900;
             };
             class AbrasionMinor: Abrasion {};
             class AbrasionMedium: Abrasion {
-                effectiveness = 5;
+                effectiveness = 3;
                 reopeningChance = 1;
             };
             class AbrasionLarge: Abrasion {
-                effectiveness = 3;
+                effectiveness = 2;
                 reopeningChance = 1;
             };
 
@@ -239,23 +344,23 @@ class ACE_Medical_Treatment
             };
 
             class Cut: Abrasion {
-                effectiveness = 6;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 300;
                 reopeningMaxDelay = 600;
             };
             class CutMinor: Cut {};
             class CutMedium: Cut {
-                effectiveness = 5;
+                effectiveness = 2;
                 reopeningChance = 1;
             };
             class CutLarge: Cut {
-                effectiveness = 3;
+                effectiveness = 2;
                 reopeningChance = 1;
             };
 
             class Laceration: Abrasion {
-                effectiveness = 4;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 300;
                 reopeningMaxDelay = 900;
@@ -280,7 +385,7 @@ class ACE_Medical_Treatment
                 effectiveness = 0.5;
             };
             class velocityWoundLarge: velocityWound {
-                effectiveness = 0.25;
+                effectiveness = 0.5;
             };
 
             class punctureWound: Abrasion {
@@ -300,6 +405,30 @@ class ACE_Medical_Treatment
 		
 		class MEU_Biofoam_Light: OPTRE_Biofoam
         {
+			class plasma {
+                effectiveness = 3;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMinor : plasma {
+                effectiveness = 2;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMedium : plasma {
+                effectiveness = 1;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaLarge : plasma {
+                effectiveness = 2;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
             class Abrasion {
                 effectiveness = 1;
                 reopeningChance = 1;
@@ -327,7 +456,7 @@ class ACE_Medical_Treatment
                 effectiveness = 2;
             };
             class AvulsionsLarge: Avulsions {
-                effectiveness = 2;
+                effectiveness = 1;
             };
 
             class Contusion: Abrasion {
@@ -384,48 +513,72 @@ class ACE_Medical_Treatment
             };
 
             class velocityWound: Abrasion {
-                effectiveness = 4;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 900;
                 reopeningMaxDelay = 1200;
             };
             class velocityWoundMinor: velocityWound {};
             class velocityWoundMedium: velocityWound {
-                effectiveness = 3;
+                effectiveness = 2;
             };
             class velocityWoundLarge: velocityWound {
-                effectiveness = 2;
+                effectiveness = 1;
             };
 
             class punctureWound: Abrasion {
-                effectiveness = 5;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 900;
                 reopeningMaxDelay = 3000;
             };
             class punctureWoundMinor: punctureWound {};
             class punctureWoundMedium: punctureWound {
-                effectiveness = 4;
+                effectiveness = 2;
             };
             class punctureWoundLarge: punctureWound {
-                effectiveness = 3;
+                effectiveness = 1;
             };
         };
         class MEU_Medigel_Light: OPTRE_Medigel
          {
-            class Abrasion {
-                effectiveness = 6;
+            class plasma {
+                effectiveness = 3;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMinor : plasma {
+                effectiveness = 3;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMedium : plasma {
+                effectiveness = 2;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaLarge : plasma {
+                effectiveness = 1;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class Abrasion {
+                effectiveness = 4;
                 reopeningChance = 1;
                 reopeningMinDelay = 600;
                 reopeningMaxDelay = 900;
             };
             class AbrasionMinor: Abrasion {};
             class AbrasionMedium: Abrasion {
-                effectiveness = 5;
+                effectiveness = 3;
                 reopeningChance = 1;
             };
             class AbrasionLarge: Abrasion {
-                effectiveness = 3;
+                effectiveness = 2;
                 reopeningChance = 1;
             };
 
@@ -476,23 +629,23 @@ class ACE_Medical_Treatment
             };
 
             class Cut: Abrasion {
-                effectiveness = 6;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 300;
                 reopeningMaxDelay = 600;
             };
             class CutMinor: Cut {};
             class CutMedium: Cut {
-                effectiveness = 5;
+                effectiveness = 2;
                 reopeningChance = 1;
             };
             class CutLarge: Cut {
-                effectiveness = 3;
+                effectiveness = 2;
                 reopeningChance = 1;
             };
 
             class Laceration: Abrasion {
-                effectiveness = 4;
+                effectiveness = 3;
                 reopeningChance = 1;
                 reopeningMinDelay = 300;
                 reopeningMaxDelay = 900;
@@ -517,7 +670,7 @@ class ACE_Medical_Treatment
                 effectiveness = 0.5;
             };
             class velocityWoundLarge: velocityWound {
-                effectiveness = 0.25;
+                effectiveness = 0.5;
             };
 
             class punctureWound: Abrasion {
@@ -536,6 +689,30 @@ class ACE_Medical_Treatment
         };
 		class MEU_Emergency_MedKit: OPTRE_Biofoam
          {
+			 class plasma {
+                effectiveness = 6;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMinor : plasma {
+                effectiveness = 6;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaMedium : plasma {
+                effectiveness = 6;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
+			class plasmaLarge : plasma {
+                effectiveness = 6;
+                reopeningChance = 1;
+                reopeningMinDelay = 600;
+                reopeningMaxDelay = 900;
+            };
             class Abrasion {
                 effectiveness = 20;
                 reopeningChance = 1;

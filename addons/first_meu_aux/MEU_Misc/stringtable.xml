@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Key ID="STR_ACE_Medical_Damage_plasma">
+	<English>Plasma</English>
+</Key>
+<Key ID="STR_ACE_Medical_Damage_plasma_Minor">
+	<English>Minor Plasma Burn</English>
+</Key>
+<Key ID="STR_ACE_Medical_Damage_plasma_Medium">
+	<English>Medium Plasma Burn</English>
+</Key>
+<Key ID="STR_ACE_Medical_Damage_plasma_Large">
+	<English>Large Plasma Burn</English>
+</Key>
+

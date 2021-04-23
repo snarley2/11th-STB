@@ -13,6 +13,7 @@
 #include "\first_meu_aux\MEU_Misc\Cfgtreatmentactions.hpp"
 #include "\first_meu_aux\MEU_Misc\Cfgloadingscreens.hpp"
 #include "\first_meu_aux\MEU_Misc\CfgWorlds.hpp"
+#include "\first_meu_aux\MEU_Misc\CfgACEInjuries.hpp"
 //units
 #include "\first_meu_aux\MEU_Units\CfgGroups.hpp"
 //oops
