@@ -30,6 +30,10 @@ class CfgFunctions
 			{
                 file = "first_meu_aux\Functions\fn_medkit.sqf";
 			};
+			class biomed
+			{
+                file = "first_meu_aux\Functions\fn_biomed.sqf";
+			};
 			class thrusterforward
 			{
                 file = "first_meu_aux\Functions\fn_thrusterforward.sqf";
