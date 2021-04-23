@@ -119,7 +119,7 @@ class ACE_Medical_Treatment
         class MEU_Biofoam: OPTRE_Biofoam
         {
 			class plasma {
-                effectiveness = 3;
+                effectiveness = 1;
                 reopeningChance = 1;
                 reopeningMinDelay = 600;
                 reopeningMaxDelay = 900;
@@ -137,7 +137,7 @@ class ACE_Medical_Treatment
                 reopeningMaxDelay = 900;
             };
 			class plasmaLarge : plasma {
-                effectiveness = 2;
+                effectiveness = 1;
                 reopeningChance = 1;
                 reopeningMinDelay = 600;
                 reopeningMaxDelay = 900;
@@ -406,7 +406,7 @@ class ACE_Medical_Treatment
 		class MEU_Biofoam_Light: OPTRE_Biofoam
         {
 			class plasma {
-                effectiveness = 3;
+                effectiveness = 1;
                 reopeningChance = 1;
                 reopeningMinDelay = 600;
                 reopeningMaxDelay = 900;
@@ -424,7 +424,7 @@ class ACE_Medical_Treatment
                 reopeningMaxDelay = 900;
             };
 			class plasmaLarge : plasma {
-                effectiveness = 2;
+                effectiveness = 1;
                 reopeningChance = 1;
                 reopeningMinDelay = 600;
                 reopeningMaxDelay = 900;
