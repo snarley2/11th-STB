@@ -755,7 +755,7 @@ class CfgAmmo
     class MEU_Rocket_V1 : OPTRE_50x137_PEN
     {
         caliber = 20;
-        hit = 4000;
+        hit = 3500;
         indirectHit = 0;
         indirectHitRange = 0;
         explosive = 0;
