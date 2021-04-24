@@ -59,7 +59,7 @@ class ACE_Medical_Treatment
     };
     class Bandaging 
     {
-		class Ace_packingbandage
+		class PackingBandage
 		{
 			class plasma
 			{
