@@ -23,6 +23,7 @@ class CfgAmmo
     class Sh_82mm_AMOS_Chem_Type0;*/
 	class IEDUrbanSmall_Remote_Ammo;
     class GrenadeHand;
+    class OPTRE_50x137_PEN;
 
 	//Shotguns
 	class B_12Gauge_Pellets_Submunition;
@@ -751,4 +752,22 @@ class CfgAmmo
 		indirectHit = 0;
 		indirectHitRange = 0;
 	};
+    class MEU_Rocket_V1 : OPTRE_50x137_PEN
+    {
+        caliber = 20;
+        hit = 4000;
+        indirectHit = 0;
+        indirectHitRange = 0;
+        explosive = 0;
+        fuseDistance = 0;
+        initTime = 0;
+        thrust = 1800;
+        thrustTime = 0.1;
+        maxSpeed = 1200;
+        timeToLive = 30;
+        allowAgainstInfantry = 0;
+        airFriction = 0.01;
+        sideAirFriction = 0.0001;
+        defaultMagazine = "MEU_HopperRocket_V3";
+    };
 };

@@ -118,6 +118,8 @@ class CfgWeapons
     class OPTRE_FC_Railgun;
     class OPTRE_M6C;
     class OPTRE_M28A2;
+    class OPTRE_M48_PAW;
+    class launch_MRAWS_green_F;
 
 	//Miscelaneous Classes
 	class ItemcTabHCam;
@@ -3427,5 +3429,24 @@ class CfgWeapons
 			};
 		};
 	};
-
+    class MEU_Hopper_v1 : OPTRE_M48_PAW
+    {
+        author = "Mark";
+		scope = 2;
+		scopeArsenal = 2;
+        scopeCurator = 2;
+        baseWeapon = "MEU_Hopper_v1";
+		displayName = "[1stMEU][WIP-NOT_FOR_USE_WITHOUT_APPROVAL] Hopper Launcher V1";
+        magazines[] = {"MEU_HopperRocket_V1","MEU_HopperRocket_V3"};
+    };
+    class MEU_Hopper_v2 : launch_MRAWS_green_F
+    {
+        author = "Mark";
+		scope = 2;
+		scopeArsenal = 2;
+        scopeCurator = 2;
+        baseWeapon = "MEU_Hopper_v2";
+		displayName = "[1stMEU][WIP-NOT_FOR_USE_WITHOUT_APPROVAL] Hopper Launcher V2";
+        magazines[] = {"MEU_HopperRocket_V2","MEU_HopperRocket_V3"};
+    };
 };
