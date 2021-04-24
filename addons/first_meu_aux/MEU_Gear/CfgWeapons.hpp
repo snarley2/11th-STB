@@ -3323,7 +3323,7 @@ class CfgWeapons
 		scopeArsenal = 2;
         scopeCurator = 2;
         baseWeapon = "MEU_M75";
-		displayName = "[1stMEU] M75 SAW";
+		displayName = "[1stMEU] M75 LMG";
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\MG\data\anim\OPTRE_M73_handanim.rtm","Spartan_ManSkeleton","\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\M73_1_Spartan.rtm"};
 		model = "\OPTRE_Weapons\MG\M73.p3d";
 		descriptionShort = "UNSC Light Machine Gun";
