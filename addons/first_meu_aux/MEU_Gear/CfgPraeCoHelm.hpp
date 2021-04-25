@@ -1583,6 +1583,17 @@
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Blue_43.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
+    class Praetorian_Helmet_43TL_Kenobi: 1stMEU_Base_CH252D_Helmet
+	{
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		displayName = "[1stMEU] 4-3B CH252D Helmet (Kenobi)";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Blue_43_Kenobi.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
+	};
     class Praetorian_Helmet_41SL: 1stMEU_Base_CH252D_Helmet
 	{
         scope = 2;
@@ -1670,17 +1681,6 @@
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Purple_4HQ_Rave.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
-	};
-    class Praetorian_Helmet_4R: 1stMEU_Base_CH252D_Helmet
-	{
-        scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		displayName = "[1stMEU] 4-R CH252D Helmet (Kenobi)";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Purple_4HQ_Kenobi.paa","first_meu_aux\data\MISC\VISR_ODST_NAV.paa"};
 	};
     
 //Start 4th Platoon DP
@@ -1804,6 +1804,14 @@
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Blue_43.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
     };
+    class Praetorian_Helmet_43TL_Kenobi_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Blue_43_Kenobi.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
+    };
     class Praetorian_Helmet_41SL_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
@@ -1867,14 +1875,6 @@
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Purple_4HQ_Rave.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
-    };
-    class Praetorian_Helmet_4R_dp : 1stMEU_Base_CH252D_Helmet_dp
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-		hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Purple_4HQ_Kenobi.paa","first_meu_aux\data\MISC\VISR_ODST_CLR.paa"};
     };
     
     //Start 4th Platoon Broke-Ass Shit
@@ -2253,6 +2253,31 @@
 			};
 		};
     };
+    class Praetor_Helmet_43TL_Kenobi_broken : Praetor_Helmet_Base_Broken
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Blue_43_Kenobi.paa"};
+        idd = 8000;
+		duration = 99999;
+		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
+		class Objects{};
+		class controls
+		{
+			class RscPicture_120: OPTRE_HUD_RscPicture
+			{
+				idc = 1;
+				text = "first_meu_aux\Data\misc\hud_cracked.paa";
+				x = "-0.000156274 * safezoneW + safezoneX";
+				y = "-0.00599999 * safezoneH + safezoneY";
+				w = "1.00031 * safezoneW";
+				h = "1.012 * safezoneH";
+				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
+			};
+		};
+    };
     class Praetor_Helmet_42SL_broken : Praetor_Helmet_Base_Broken
     {
         scope = 1;
@@ -2410,31 +2435,6 @@
         hiddenSelections[] = {"camo"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Purple_4HQ_Rave.paa"};
-        idd = 8000;
-		duration = 99999;
-		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
-		class Objects{};
-		class controls
-		{
-			class RscPicture_120: OPTRE_HUD_RscPicture
-			{
-				idc = 1;
-				text = "first_meu_aux\Data\misc\hud_cracked.paa";
-				x = "-0.000156274 * safezoneW + safezoneX";
-				y = "-0.00599999 * safezoneH + safezoneY";
-				w = "1.00031 * safezoneW";
-				h = "1.012 * safezoneH";
-				onLoad = "(_this select 0) ctrlSetTextColor OPTRE_Hud_ColorScheme_Frame;";
-			};
-		};
-    };
-    class Praetor_Helmet_4R_broken : Praetor_Helmet_Base_Broken
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        hiddenSelections[] = {"camo"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\Data\4thPlt\ODST_H3_Purple_4HQ_Kenobi.paa"};
         idd = 8000;
 		duration = 99999;
 		onLoad = "_this spawn OPTRE_fnc_HudLoad_ODST2;";
