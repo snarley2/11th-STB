@@ -768,11 +768,11 @@ class CfgAmmo
         allowAgainstInfantry = 0;
         airFriction = 0.01;
         sideAirFriction = 0.0001;
-        defaultMagazine = "MEU_HopperRocket_V3";
+        defaultMagazine = "MEU_HopperRocket_V1";
     };
     class MEU_Rocket_V2 : R_MRAAWS_HE_F
     {
-        hit = 2800;
-        defaultMagazine = "MEU_HopperRocket_V4";
+        hit = 3000;
+        defaultMagazine = "MEU_HopperRocket_V2";
     };
 };

@@ -3437,7 +3437,7 @@ class CfgWeapons
         scopeCurator = 2;
         baseWeapon = "MEU_Hopper_v1";
 		displayName = "[1stMEU][WIP] Hopper Launcher V1";
-        magazines[] = {"MEU_HopperRocket_V1","MEU_HopperRocket_V3","MEU_HopperRocket_V4"};
+        magazines[] = {"MEU_HopperRocket_V1","MEU_HopperRocket_V2"};
     };
     class MEU_Hopper_v2 : launch_MRAWS_green_F
     {
@@ -3447,6 +3447,6 @@ class CfgWeapons
         scopeCurator = 2;
         baseWeapon = "MEU_Hopper_v2";
 		displayName = "[1stMEU][WIP] Hopper Launcher V2";
-        magazines[] = {"MEU_HopperRocket_V2","MEU_HopperRocket_V3","MEU_HopperRocket_V4"};
+        magazines[] = {"MEU_HopperRocket_V1","MEU_HopperRocket_V2"};
     };
 };

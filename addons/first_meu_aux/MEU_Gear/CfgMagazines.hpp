@@ -2039,25 +2039,7 @@ class CfgMagazines
 		initspeed = 1100;
         ammo = "MEU_556_ammo";
     };
-    class MEU_HopperRocket_V1 : OPTRE_1Rnd_50x137_PEN
-    {
-        author = "Mark";
-		scope = 2;
-		scopeArsenal = 2;
-        displayname = "Hopper Rocket V1";
-		displaynameshort = "Rocket V1";
-		descriptionShort = "Cricket Pen Type";
-    };
-    class MEU_HopperRocket_V2 : MRAWS_HEAT_F
-    {
-        author = "Mark";
-		scope = 2;
-		scopeArsenal = 2;
-        displayname = "Hopper Rocket V2";
-		displaynameshort = "Rocket V2";
-		descriptionShort = "MAWS Type";
-    };
-    class MEU_HopperRocket_V3 : MEU_HopperRocket_V1
+   class MEU_HopperRocket_V1 : OPTRE_1Rnd_50x137_PEN
     {
         author = "Mark";
 		scope = 2;
@@ -2070,7 +2052,7 @@ class CfgMagazines
         count = 1;
         ammo = "MEU_Rocket_V1";
     };
-    class MEU_HopperRocket_V4 : MRAWS_HEAT_F
+    class MEU_HopperRocket_V2 : MRAWS_HEAT_F
     {
         author = "Mark";
 		scope = 2;
