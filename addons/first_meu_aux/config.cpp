@@ -397,7 +397,10 @@ class cfgPatches
             "OPTRE_FC_Railgun",
             "OPTRE_GUA23A",
             "MEU_Automag",
-            "OPTRE_M6C"
+            "OPTRE_M6C",
+            "MEU_Hopper",
+            "MEU_Hopper_v2_Loaded",
+            "MEU_Hopper_v2_Used"
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 

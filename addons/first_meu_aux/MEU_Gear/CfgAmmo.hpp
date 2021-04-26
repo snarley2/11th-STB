@@ -754,7 +754,9 @@ class CfgAmmo
 	};
     class MEU_Rocket_V2 : R_MRAAWS_HE_F
     {
-        hit = 3000;
+        hit = 2000;
+        indirectHit = 1500;
+		indirectHitRange = 1;
         defaultMagazine = "MEU_HopperRocket_V2";
     };
 };

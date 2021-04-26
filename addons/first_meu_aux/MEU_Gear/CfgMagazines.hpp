@@ -2049,6 +2049,7 @@ class CfgMagazines
 		descriptionShort = "MAWS Type Heavy Damage";
         count = 1;
         ammo = "MEU_Rocket_V2";
+        mass = 10;
     };
 };
 class CfgMagazineWells

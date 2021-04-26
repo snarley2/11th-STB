@@ -3438,8 +3438,12 @@ class CfgWeapons
         model = "first_meu_aux\Data\Misc\Hopper\.p3d";
         baseWeapon = "MEU_Hopper_v2_Loaded";
         magazines[] = {"MEU_HopperRocket_V2"};
+        handAnim[] = {};
         class EventHandlers {
             fired = "_this call CBA_fnc_firedDisposable";
+        };
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 20;
         };
     };
     class MEU_Hopper_v2_Loaded : MEU_Hopper
@@ -3451,6 +3455,9 @@ class CfgWeapons
         baseWeapon = "MEU_Hopper_v2_Loaded";
 		displayName = "[1stMEU][WIP] Hopper Launcher V2";
         magazines[] = {"CBA_FakeLauncherMagazine"};
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 30;
+        };
     };
     class MEU_Hopper_v2_Used : MEU_Hopper_v2_Loaded
     {
@@ -3460,5 +3467,8 @@ class CfgWeapons
         scopeCurator = 1;
         baseWeapon = "MEU_Hopper_v2_Loaded";
         magazines[] = {"CBA_FakeLauncherMagazine"};
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 20;
+        };
     };
 };
