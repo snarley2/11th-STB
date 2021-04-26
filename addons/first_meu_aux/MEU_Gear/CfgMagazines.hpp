@@ -2070,6 +2070,17 @@ class CfgMagazines
         count = 1;
         ammo = "MEU_Rocket_V1";
     };
+    class MEU_HopperRocket_V4 : MRAWS_HEAT_F
+    {
+        author = "Mark";
+		scope = 2;
+		scopeArsenal = 2;
+        displayname = "Hopper Rocket V4";
+		displaynameshort = "Rocket V4";
+		descriptionShort = "MAWS Type Heavy Damage";
+        count = 1;
+        ammo = "MEU_Rocket_V2";
+    };
 };
 class CfgMagazineWells
 {
