@@ -6079,7 +6079,7 @@
 			}; 
         }; 
     }; 
-    class Prae4R: 1MEU_BASE_M52D_Armor 
+    /*class Prae4R: 1MEU_BASE_M52D_Armor 
 	{ 
 		author = "1st MEU Oneill"; 
 		displayName = "[1stMEU] M52D 4-R (Kenobi)"; 
@@ -6182,7 +6182,7 @@
 				"CustomKit_Scorch" 
 			}; 
         }; 
-    }; 
+    };*/
     class M52DGinger:1MEU_BASE_M52D_Armor 
 	{ 
         author = "1st MEU Ginger"; 
