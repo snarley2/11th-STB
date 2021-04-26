@@ -3429,24 +3429,36 @@ class CfgWeapons
 			};
 		};
 	};
-    class MEU_Hopper_v1 : OPTRE_M48_PAW
+    class MEU_Hopper :  launch_MRAWS_green_F
     {
         author = "Mark";
-		scope = 2;
-		scopeArsenal = 2;
-        scopeCurator = 2;
-        baseWeapon = "MEU_Hopper_v1";
-		displayName = "[1stMEU][WIP] Hopper Launcher V1";
-        magazines[] = {"MEU_HopperRocket_V1","MEU_HopperRocket_V2"};
+		scope = 1;
+		scopeArsenal = 1;
+        scopeCurator = 1;
+        model = "first_meu_aux\Data\Misc\Hopper\.p3d";
+        baseWeapon = "MEU_Hopper_v2_Loaded";
+        magazines[] = {"MEU_HopperRocket_V2"};
+        class EventHandlers {
+            fired = "_this call CBA_fnc_firedDisposable";
+        };
     };
-    class MEU_Hopper_v2 : launch_MRAWS_green_F
+    class MEU_Hopper_v2_Loaded : MEU_Hopper
     {
         author = "Mark";
 		scope = 2;
 		scopeArsenal = 2;
         scopeCurator = 2;
-        baseWeapon = "MEU_Hopper_v2";
+        baseWeapon = "MEU_Hopper_v2_Loaded";
 		displayName = "[1stMEU][WIP] Hopper Launcher V2";
-        magazines[] = {"MEU_HopperRocket_V1","MEU_HopperRocket_V2"};
+        magazines[] = {"CBA_FakeLauncherMagazine"};
+    };
+    class MEU_Hopper_v2_Used : MEU_Hopper_v2_Loaded
+    {
+        author = "Mark";
+		scope = 1;
+		scopeArsenal = 1;
+        scopeCurator = 1;
+        baseWeapon = "MEU_Hopper_v2_Loaded";
+        magazines[] = {"CBA_FakeLauncherMagazine"};
     };
 };

@@ -752,24 +752,6 @@ class CfgAmmo
 		indirectHit = 0;
 		indirectHitRange = 0;
 	};
-    class MEU_Rocket_V1 : OPTRE_50x137_PEN
-    {
-        caliber = 20;
-        hit = 3500;
-        indirectHit = 0;
-        indirectHitRange = 0;
-        explosive = 0;
-        fuseDistance = 0;
-        initTime = 0;
-        thrust = 1800;
-        thrustTime = 0.1;
-        maxSpeed = 1200;
-        timeToLive = 30;
-        allowAgainstInfantry = 0;
-        airFriction = 0.01;
-        sideAirFriction = 0.0001;
-        defaultMagazine = "MEU_HopperRocket_V1";
-    };
     class MEU_Rocket_V2 : R_MRAAWS_HE_F
     {
         hit = 3000;

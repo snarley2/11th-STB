@@ -634,6 +634,10 @@ class CfgEditorSubcategories
 	};
 };
 
+class CBA_DisposableLaunchers {
+    MEU_Hopper[] = {"MEU_Hopper_v2_Loaded","MEU_Hopper_v2_Used"};
+};
+
 class Extended_PreInit_EventHandlers
 {
     class MEU_pre_init_event
