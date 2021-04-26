@@ -3435,6 +3435,9 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
         scopeCurator = 1;
+        displayName = "[1stMEU] Hopper Launcher BASE";
+        displaynameshort = "Hopper Launcher BASE";
+		descriptionShort = "Hopper Launcher BASE";
         model = "first_meu_aux\Data\Misc\Hopper\ATDisposable.p3d";
         baseWeapon = "MEU_Hopper_v2_Loaded";
         magazines[] = {"MEU_HopperRocket_V2"};
@@ -3455,6 +3458,8 @@ class CfgWeapons
         scopeCurator = 2;
         baseWeapon = "MEU_Hopper_v2_Loaded";
 		displayName = "[1stMEU][WIP] Hopper Launcher V2";
+        displaynameshort = "Hopper Launcher V2";
+		descriptionShort = "Hopper Launcher V2";
         magazines[] = {"CBA_FakeLauncherMagazine"};
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 30;
@@ -3479,6 +3484,8 @@ class CfgWeapons
 		scopeArsenal = 2;
         scopeCurator = 2;
 		displayName = "[1stMEU] Hopper Launcher V1";
+        displaynameshort = "Hopper Launcher V1";
+		descriptionShort = "Hopper Launcher V1";
         magazines[] = {"MEU_HopperRocket_V3"};
         model = "first_meu_aux\Data\Misc\Hopper\ATDisposable.p3d";
         baseWeapon = "MEU_Hopper_v3";
