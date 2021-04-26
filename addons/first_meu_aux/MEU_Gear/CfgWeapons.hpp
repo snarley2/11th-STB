@@ -3472,4 +3472,19 @@ class CfgWeapons
             mass = 20;
         };
     };
+     class MEU_Hopper_v3 : MEU_Hopper
+    {
+        author = "Mark";
+		scope = 2;
+		scopeArsenal = 2;
+        scopeCurator = 2;
+		displayName = "[1stMEU] Hopper Launcher V1";
+        magazines[] = {"MEU_HopperRocket_V3"};
+        model = "first_meu_aux\Data\Misc\Hopper\ATDisposable.p3d";
+        baseWeapon = "MEU_Hopper_v3";
+        handAnim[] = {};
+        class WeaponSlotsInfo: WeaponSlotsInfo {
+            mass = 25;
+        };
+    };
 };

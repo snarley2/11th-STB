@@ -400,7 +400,8 @@ class cfgPatches
             "OPTRE_M6C",
             "MEU_Hopper",
             "MEU_Hopper_v2_Loaded",
-            "MEU_Hopper_v2_Used"
+            "MEU_Hopper_v2_Used",
+            "MEU_Hopper_v3"
         };
         requiredVersion = 0.1;
 		requiredAddons[] = 
@@ -439,7 +440,8 @@ class cfgPatches
             "NSM_patch_main",
             "NSM_patch_particle_effects",
             "V_FZ_Vehicles",
-            "task_force_radio"
+            "task_force_radio",
+            "cba_disposable"
         };
     };
 };
