@@ -37,6 +37,7 @@ class CfgAmmo
 	class OPTRE_B_127x40_Ball;
     class BulletBase;
     class B_556x45_Ball;
+	class R_MRAAWS_HE_F;
 
 	//Miscelaneous Classes
 	class SensorTemplateIR;

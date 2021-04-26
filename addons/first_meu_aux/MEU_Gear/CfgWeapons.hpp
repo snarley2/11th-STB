@@ -3435,7 +3435,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
         scopeCurator = 1;
-        model = "first_meu_aux\Data\Misc\Hopper\.p3d";
+        model = "first_meu_aux\Data\Misc\Hopper\ATDisposable.p3d";
         baseWeapon = "MEU_Hopper_v2_Loaded";
         magazines[] = {"MEU_HopperRocket_V2"};
         handAnim[] = {};
@@ -3444,8 +3444,9 @@ class CfgWeapons
         };
         class WeaponSlotsInfo: WeaponSlotsInfo {
             mass = 20;
-        };
+		};
     };
+
     class MEU_Hopper_v2_Loaded : MEU_Hopper
     {
         author = "Mark";
