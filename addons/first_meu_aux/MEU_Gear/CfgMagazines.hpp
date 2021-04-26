@@ -2051,15 +2051,6 @@ class CfgMagazines
         ammo = "MEU_Rocket_V2";
         mass = 10;
     };
-    class MEU_HopperRocket_V3 : MEU_HopperRocket_V2
-    {
-        author = "Mark";
-		scope = 2;
-		scopeArsenal = 2;
-        displayname = "Hopper Rocket V1";
-		displaynameshort = "Hopper Rocket V1";
-        mass = 300;
-    };
 };
 class CfgMagazineWells
 {
