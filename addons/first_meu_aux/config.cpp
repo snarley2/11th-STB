@@ -329,6 +329,7 @@ class cfgPatches
             "Land_ModularOutPostBuildingQuarters",
             "Land_OPTRE_fusion_coil",
             "MEU_AWACS",
+            "VES_MQ221_URF",
             /*"ChemicalBarrel_NA",
             "ChemicalBarrel_AS",
             "ChemicalBarrel_CS"*/

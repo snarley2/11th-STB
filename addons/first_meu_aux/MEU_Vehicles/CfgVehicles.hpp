@@ -46,6 +46,16 @@ class CfgVehicles
     class O_LSV_02_unarmed_F;
     class O_LSV_02_armed_F;
     class O_LSV_02_AT_F;
+    class B_T_UAV_03_dynamicLoadout_F;
+    class B_Plane_CAS_01_dynamicLoadout_F;
+    class B_Heli_Attack_01_Dynamicloadout_F;
+    class B_APC_Tracked_01_AA_F;
+    class B_APC_Wheeled_01_cannon_F;
+    class I_MRAP_03_F;
+    class I_MRAP_03_gmg_F;
+    class O_T_LSV_02_armed_F;
+    class O_T_LSV_02_unarmed_F;
+    class O_T_LSV_02_AT_F;
 		
 	//Base Optre Classes
 	class OPTRE_falcon_base;
@@ -60,10 +70,17 @@ class CfgVehicles
 	class OPTRE_Corvette_M910_Turret;
     class OPTRE_M274_ATV;
     class Land_optre_milcrate_h3_long;
-    //class OPTRE_Longsword_Bomb;
     class OPTRE_M412_IFV_UNSC;
     class OPTRE_M413_MGS_UNSC;
     class OPTRE_Falconagl_02;
+    class OPTRE_M12_LRV;
+    class OPTRE_M12_FAV;
+    class OPTRE_M12A1_LRV;
+    class OPTRE_M813_TT;
+    class OPTRE_archer_system_base;
+    class OPTRE_M12R_AA;
+    class OPTRE_M914_RV;
+
 
 	//Base FZ Classes
 	class VES_AV22_Sparrowhawk_Base;
@@ -77,6 +94,7 @@ class CfgVehicles
     class VES_M12A1_LRV;
     class VES_M12_LRV;
     class VES_M12G1_LRV;
+    class VES_M12_APC_Base;
     
     //flud
     //class JMM_O_IMarineMU;
@@ -7058,6 +7076,233 @@ class CfgVehicles
         hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
         hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_CO.paa"};
 	};
+    // URF
+    class VES_MQ221_URF : B_T_UAV_03_dynamicLoadout_F
+    {
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class VES_UH144_A_URF : OPTRE_UNSC_Falcon
+    {
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class VES_UH144_URF : OPTRE_UNSC_Falcon
+    {
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_pelican_unarmed_ins : OPTRE_Pelican_F
+    {
+        displayname = "D77H-TCI Pelican"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_pelican_Armed_ins : OPTRE_Pelican_Armed
+    {
+        displayname = "D77H-TCI/AV Pelican"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class VES_M813_TT_URF : OPTRE_M813_TT
+    {
+        displayname = "M813 TT Warthog"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class VES_M12A1_LRV_URF : OPTRE_M12A1_LRV
+    {
+        displayname = "M12A1 ATGM Warthog"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class VES_M12_LRV_URF : OPTRE_M12_LRV
+    {
+        displayname = "M12 LAAG Warthog"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class VES_M12_URF : OPTRE_M12_FAV
+    {
+        displayname = "M12 Scout Warthog"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class VES_M12_APC_URF : VES_M12_APC
+    {
+        displayname = "M12 APC Warthog"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_M274_ATV_ins : OPTRE_M274_ATV
+    {
+        displayname = "M274 Mongoose"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_Corvette_Archer_system_ins : OPTRE_archer_system_base
+    {
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_Corvette_M910_Turret_INS : OPTRE_Corvette_M910_Turret
+    {
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_Static_AA_ins : OPTRE_Static_AA
+    {
+        displayname = "M79 AA Turret"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_Static_ATGM_ins : OPTRE_Static_ATGM
+    {
+        displayname = "M39 Rocket Turret"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_Static_M41_ins : OPTRE_Static_M41
+    {
+        displayname = "M41 LAAG Turret"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    class OPTRE_Static_FG75 : StaticMGWeapon
+    {
+        displayname = "FG75 Field Gun"
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URF";
+    };
+    //ER
+    class OPTRE_VTOLI_02 : O_T_VTOL_02_infantry_dynamicLoadout_F
+    {
+        displayname = "AVD-99IT Wyvern"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_VTOLV_02 : O_T_VTOL_02_infantry_dynamicLoadout_F
+    {
+        displayname = "AVD-99VT Wyvern"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_gladius_02 : B_Plane_CAS_01_dynamicLoadout_F
+    {
+        displayname = "A84L-Gladius"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_gladius_02L : B_Plane_CAS_01_dynamicLoadout_F
+    {
+        displayname = "A84L-Gladius"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_raven_02 : B_Heli_Attack_01_Dynamicloadout_F
+    {
+        displayname = "RAH-94 Raven"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+
+    class OPTRE_Tarantula_02 : B_APC_Tracked_01_AA_F
+    {
+        displayname = "M705AA Tarantula"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_Ferret_02 : B_APC_Wheeled_01_cannon_F
+    {
+        displayname = "M620 Ferret"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_Salamander_02 : I_MRAP_03_F
+    {
+        displayname = "M201 Salamander"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_Salamanderagl_02 : I_MRAP_03_gmg_F
+    {
+        displayname = "M220 Salamander"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_Armed_Puma_02 : O_T_LSV_02_armed_F
+    {
+        displayname = "M7 MG Puma"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_unarmed_Puma_02 : O_T_LSV_02_unarmed_F
+    {
+        displayname = "M7 Puma"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    class OPTRE_AT_Puma_02 : O_T_LSV_02_AT_F
+    {
+        displayname = "M7 AT Puma"
+        crew = "OPTRE_Ins_ER_Guerilla_AR";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_ER";
+    };
+    // URA
+    class OPTRE_M12R_AA_ins : OPTRE_M12R_AA
+    {
+        displayname = "M12R AA Warthog"
+        crew = "LM_OPCAN_URA_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URA";
+    };
+    class OPTRE_M12A1_LRV_ins : OPTRE_M12A1_LRV
+    {
+        displayname = "M12A1 ATGM Warthog"
+        crew = "LM_OPCAN_URA_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URA";
+    };
+    class OPTRE_M12_LRV_ins : OPTRE_M12_LRV
+    {
+        displayname = "M12 LAAG Warthog"
+        crew = "LM_OPCAN_URA_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URA";
+    };
+    class OPTRE_M914_RV_ins : OPTRE_M914_RV
+    {
+        displayname = "M914 Scout Warthog"
+        crew = "LM_OPCAN_URA_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URA";
+    };
+    class OPTRE_M12_FAV_APC : OPTRE_M12_FAV
+    {
+        displayname = "M12 APC Warthog"
+        crew = "LM_OPCAN_URA_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URA";
+    };
+    class OPTRE_M12_FAV_ins : OPTRE_M12_FAV
+    {
+        displayname = "M12 FAV Warthog"
+        crew = "LM_OPCAN_URA_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_URA";
+    };
     //end ins units
     /*flud
     class MEU_IMarineMU : JMM_O_IMarineMU
