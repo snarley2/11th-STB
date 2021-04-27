@@ -120,6 +120,7 @@ class CfgWeapons
     class OPTRE_M28A2;
     class OPTRE_M48_PAW;
     class launch_MRAWS_green_F;
+	class missiles_ASRAAM;
 
 	//Miscelaneous Classes
 	class ItemcTabHCam;
@@ -3477,4 +3478,8 @@ class CfgWeapons
             mass = 20;
         };
     };
+	class OPTRE_M79_MLRS : missiles_ASRAAM
+	{
+	reloadtime=5;	
+	};
 };
