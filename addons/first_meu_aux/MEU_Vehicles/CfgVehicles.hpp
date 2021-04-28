@@ -72,7 +72,6 @@ class CfgVehicles
     class Land_optre_milcrate_h3_long;
     class OPTRE_M412_IFV_UNSC;
     class OPTRE_M413_MGS_UNSC;
-    class OPTRE_Falconagl_02;
     class OPTRE_M12_LRV;
     class OPTRE_M12_FAV;
     class OPTRE_M12A1_LRV;
@@ -230,32 +229,6 @@ class CfgVehicles
             item_xx(ACE_splint, 10);
         };
     };
-	class MEU_GL_Falcon : OPTRE_Falconagl_02
-    {
-        scope = 2;
-        scopecurator = 2;
-		displayName = "[1st MEU] GL Falcon";
-        faction = "MEU_UNSC";
-        editorCategory = "MEU_cat_A";
-		editorSubcategory = "MEU_sub_rot";
-        tf_hasLRradio = 1;
-        tf_isolatedAmount = 0.85;
-        tf_range = 120000;
-        side = 1;
-        crew = "VES_Rifleman_MA5B_MAR";
-        class ACE_Cargo
-        {
-            class Cargo
-            {
-                class MEU_Speedbag
-                {
-                    type = "MEU_Speedbag";
-                    amount = 2;
-                };
-            };
-        };
-    };
-    
     class MEU_KajMoney : O_Heli_Attack_02_dynamicLoadout_F
     {
         crewCrashProtection = 0.001;
@@ -7092,7 +7065,7 @@ class CfgVehicles
         faction = "MEU_Insurrectionist"
         editorCategory = "MEU_URF";
     };
-    class OPTRE_pelican_unarmed_ins : OPTRE_Pelican_F
+    class OPTRE_pelican_unarmed_ins : OPTRE_Pelican_f
     {
         displayname = "D77H-TCI Pelican"
         faction = "MEU_Insurrectionist"
@@ -7191,7 +7164,7 @@ class CfgVehicles
     };
     class OPTRE_gladius_02 : B_Plane_CAS_01_dynamicLoadout_F
     {
-        displayname = "A84L-Gladius"
+        displayname = "A84-Gladius"
         crew = "OPTRE_Ins_ER_Guerilla_AR";
         faction = "MEU_Insurrectionist"
         editorCategory = "MEU_ER";
@@ -7302,6 +7275,69 @@ class CfgVehicles
         crew = "LM_OPCAN_URA_Crewman";
         faction = "MEU_Insurrectionist"
         editorCategory = "MEU_URA";
+    };
+    // Friden
+    class LM_OPCAN_D77_U_FRI : OPTRE_Pelican_unarmed
+    {
+        displayname = "D77-TC Pelican"
+        crew = "LM_OPCAN_FRI_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_Friden";
+    };
+    class LM_OPCAN_D77_A_FRI : OPTRE_Pelican_armed
+    {
+        displayname = "D77-TC/AV Pelican"
+        crew = "LM_OPCAN_FRI_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_Friden";
+        editorSubCategory = "MEU_sub_rot";
+    };
+    class LM_OPCAN_D77_U_SU : OPTRE_Pelican_unarmed
+    {
+        displayname = "D77-TC Pelican"
+        crew = "LM_OPCAN_FRI_Crewman_WDL";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_Friden_wdl";
+        editorSubCategory = "MEU_sub_rot";
+    };
+    class LM_OPCAN_D77_A_SU : OPTRE_Pelican_armed
+    {
+        displayname = "D77-TC/AV Pelican"
+        crew = "LM_OPCAN_FRI_Crewman_WDL";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_Friden_wdl";
+        editorSubCategory = "MEU_sub_rot";
+    };
+    class LM_OPCAN_UH101_FRI : B_Heli_Attack_01_Dynamicloadout_F
+    {
+        displayname = "UH-101 Eagle"
+        crew = "LM_OPCAN_FRI_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_Friden";
+        editorSubCategory = "MEU_sub_rot";
+    };
+    class LM_OPCAN_UH101_SU : B_Heli_Attack_01_Dynamicloadout_F
+    {
+        displayname = "UH-101 Eagle"
+        crew = "LM_OPCAN_FRI_Crewman_WDL";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_Friden_wdl";
+        editorSubCategory = "MEU_sub_rot";
+    };
+    // SU
+    class OPTRE_falconagl_02 : OPTRE_UNSC_falcon
+    {
+        displayname = "UH-144AGL Falcon"
+        crew = "LM_OPCAN_SU_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_SU";
+    };
+    class OPTRE_scorpionins_02 : OPTRE_M808B_UNSC
+    {
+        displayname = "M808B Scorpion"
+        crew = "LM_OPCAN_SU_Crewman";
+        faction = "MEU_Insurrectionist"
+        editorCategory = "MEU_SU";
     };
     //end ins units
     /*flud

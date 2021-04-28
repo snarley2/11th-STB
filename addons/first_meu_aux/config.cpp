@@ -604,7 +604,7 @@ class CfgEditorSubcategories
 	};
     class MEU_sub_rot
     {
-		displayName = "Air Vehicles";
+		displayName = "Helicopters";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
