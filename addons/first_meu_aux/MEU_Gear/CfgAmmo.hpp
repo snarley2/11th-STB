@@ -168,7 +168,7 @@ class CfgAmmo
         defaultMagazine = "MEU_PrimedHE_throwable_Mag";
         model = "OPTRE_weapons\gl\mag_he.p3d";
         ace_frag_enabled = 1;  // Enable fragmentation (0-disabled, 1-enabled)
-        ace_frag_metal = 1000;  // Amount of metal being fragmented (grams) - information below
+        ace_frag_metal = 10000;  // Amount of metal being fragmented (grams) - information below
         ace_frag_charge = 1000;  // Amount of explosive filler (grams) - information below
         ace_frag_gurney_c = 5000;  // Gurney velocity constant for explosive type - information below
         ace_frag_gurney_k = 3/5;  // Gurney shape factor - information below
@@ -755,9 +755,7 @@ class CfgAmmo
 	};
     class MEU_Rocket_V2 : R_MRAAWS_HE_F
     {
-        hit = 2000;
-        indirectHit = 1500;
-		indirectHitRange = 1;
+        hit = 1500;
         defaultMagazine = "MEU_HopperRocket_V2";
     };
 };
