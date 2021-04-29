@@ -3450,7 +3450,6 @@ class CfgWeapons
             mass = 20;
 		};
     };
-
     class MEU_Hopper_v2_Loaded : MEU_Hopper
     {
         author = "Mark";

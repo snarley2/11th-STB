@@ -1077,6 +1077,7 @@ class CfgMagazines
 		mass = 5;
         descriptionShort = "Primed 319";
 		displayNameShort = "319 Primed";
+        initSpeed = 20;
     };
     
 	class MEU_c7_remote_throwable_Mag : OPTRE_M9_Frag
@@ -2054,6 +2055,13 @@ class CfgMagazines
 };
 class CfgMagazineWells
 {
+    class MEU_HopperRocket_V2
+    {
+        MEU_Magazines[]=
+        {
+            "MEU_HopperRocket_V2",
+        };
+    };
     class optre_sas10_mag
     {
         OPTRE_Magazines[] = {"8Rnd_10mm_EXP","16Rnd_10mm_Ball","16Rnd_10mm_AP","32Rnd_10mm_Ball","meu_sas_narq_mag"};
