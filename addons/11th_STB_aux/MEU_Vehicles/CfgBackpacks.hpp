@@ -22,7 +22,7 @@
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] ODST Reconnaissance Jumpack";
+        displayName = "[11th] ODST Reconnaissance Jumpack";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -53,7 +53,7 @@
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Pararescue Jumpack";
+        displayName = "[11th] Pararescue Jumpack";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -84,7 +84,7 @@
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Reconnaissance RTO/NCO Jumpack";
+        displayName = "[11th] Centurion Reconnaissance RTO/NCO Jumpack";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -115,7 +115,7 @@
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Reconnaissance Jumpack";
+        displayName = "[11th] Centurion Reconnaissance Jumpack";
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		model="\OPTRE_weapons\backpacks\jetpack.p3d";
 		NSM_jumppack_is_jumppack = 1;
@@ -138,14 +138,14 @@
 		scope = 1;
 		scopeCurator = 1;
         scopeArsenal = 1;
-        displayName = "[1stMEU] Test Pack";
+        displayName = "[11th] Test Pack";
         NSM_jumppack_jump_types[] = {{"Forward Jump",{12,20,50,0,0,0}},{"Short Jump",{25,7,20,0,1,1}},{"Full Power",{30,5,1,0,1,0}}};
     };
 	
 	class MEU_Parachute : B_parachute
     {
         author = "1st MEU Mark";
-        displayName = "[1stMEU] Parachute";
+        displayName = "[11th] Parachute";
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -158,7 +158,7 @@
     class stukasbackpack : B_RadioBag_01_black_F
     {
         author = "1st MEU Mark";
-        displayName = "[1stMEU] [JTAC] Radio Pack";
+        displayName = "[11th] [JTAC] Radio Pack";
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -174,7 +174,7 @@
 	 
 	class MEU_Zeus_Pack : OPTRE_ANPRC_521_Black
     {
-        displayName = "[1stMEU] Zeus LR";
+        displayName = "[11th] Zeus LR";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -187,7 +187,7 @@
 	
     class Praetor_LR_backpack_big: OPTRE_ANPRC_521_Black
     {
-        displayName = "[1stMEU] ODST LR Rucksack";
+        displayName = "[11th] ODST LR Rucksack";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -203,7 +203,7 @@
     
 	class Praetor_LR_backpack: OPTRE_ANPRC_515
     {
-        displayName = "[1stMEU] ODST NCO Rucksack";
+        displayName = "[11th] ODST NCO Rucksack";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -219,7 +219,7 @@
 	
 	class MEU_ANPRC_515: OPTRE_ANPRC_515
     {
-        displayName = "[1stMEU] AN/PRC-515";
+        displayName = "[11th] AN/PRC-515";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -232,7 +232,7 @@
 	
 	class MEU_ILCS_ANPRC_515: OPTRE_ANPRC_515
     {
-        displayName = "[1stMEU] ILCS AN/PRC-515";
+        displayName = "[11th] ILCS AN/PRC-515";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -246,7 +246,7 @@
 	
 	class MEU_ILCS_Recon: OPTRE_ILCS_Rucksack_Black
     {
-        displayName = "[1stMEU] ILCS Recon";
+        displayName = "[11th] ILCS Recon";
 		picture = "\OPTRE_weapons\backpacks\icons\como_pack.paa";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -265,7 +265,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] AN/PRC-521 (Marine)";
+		displayName = "[11th] AN/PRC-521 (Marine)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa","first_meu_aux\data\misc\packs\common_pack_mar_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
@@ -284,7 +284,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] AN/PRC-521 (Woodland)";
+		displayName = "[11th] AN/PRC-521 (Woodland)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa","first_meu_aux\data\misc\packs\common_pack_wdl_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
@@ -303,7 +303,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] AN/PRC-521 (Arctic)";
+		displayName = "[11th] AN/PRC-521 (Arctic)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa","first_meu_aux\data\misc\packs\common_pack_arc_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
@@ -322,7 +322,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] AN/PRC-521 (Desert)";
+		displayName = "[11th] AN/PRC-521 (Desert)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa","first_meu_aux\data\misc\packs\common_pack_des_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
@@ -341,7 +341,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] AN/PRC-521 (Evolved/Urban)";
+		displayName = "[11th] AN/PRC-521 (Evolved/Urban)";
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_evourb_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
@@ -360,7 +360,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] ILCS AN/PRC-521";
+		displayName = "[11th] ILCS AN/PRC-521";
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_prae_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
@@ -381,7 +381,7 @@
 		scopeArsenal = 1;
 		scopeCurator = 1;
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
+        displayName = "[11th] ODST Trooper Heavy Rucksack";
         maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
@@ -391,7 +391,7 @@
 	class uplinkpack : MEU_Prae_Ruck_Base_Heavy
     {
         author = "1st MEU Mark";
-        displayName = "[1stMEU] ODST Uplink Rucksack";
+        displayName = "[11th] ODST Uplink Rucksack";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -412,7 +412,7 @@
 	class MEU_Prae_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ODST Trooper Rucksack";
+        displayName = "[11th] ODST Trooper Rucksack";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -425,7 +425,7 @@
 	class MEU_Prae_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ODST Trooper Heavy Rucksack";
+        displayName = "[11th] ODST Trooper Heavy Rucksack";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -438,7 +438,7 @@
 	class MEU_Prae_Corpsman_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ODST Corpsman Rucksack";
+        displayName = "[11th] ODST Corpsman Rucksack";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -456,7 +456,7 @@
 	class MEU_Prae_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ODST Corpsman Heavy Rucksack";
+        displayName = "[11th] ODST Corpsman Heavy Rucksack";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -475,7 +475,7 @@
 	class MEU_ILCS_Ruck : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ILCS Rucksack";
+        displayName = "[11th] ILCS Rucksack";
         maximumLoad = 200;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
@@ -485,7 +485,7 @@
 	class MEU_ILCS_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ILCS Heavy Rucksack";
+        displayName = "[11th] ILCS Heavy Rucksack";
         maximumLoad = 350;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
@@ -495,7 +495,7 @@
 	class MEU_ILCS_Corpsman_Ruck : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ILCS Corpsman Rucksack";
+        displayName = "[11th] ILCS Corpsman Rucksack";
 		tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -510,7 +510,7 @@
 	class MEU_ILCS_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
-        displayName = "[1stMEU] ILCS Heavy Corpsman Rucksack";
+        displayName = "[11th] ILCS Heavy Corpsman Rucksack";
 		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
@@ -526,7 +526,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Basic Rucksack (Desert)";
+		displayName = "[11th] UNSC Basic Rucksack (Desert)";
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
@@ -539,7 +539,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Heavy Rucksack (Desert)";
+		displayName = "[11th] UNSC Heavy Rucksack (Desert)";
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
@@ -552,7 +552,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Corpsman Rucksack (Desert)";
+		displayName = "[11th] UNSC Corpsman Rucksack (Desert)";
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
@@ -565,7 +565,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Basic Rucksack (Arctic)";
+		displayName = "[11th] UNSC Basic Rucksack (Arctic)";
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
@@ -578,7 +578,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Heavy Rucksack (Arctic)";
+		displayName = "[11th] UNSC Heavy Rucksack (Arctic)";
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
@@ -591,7 +591,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Corpsman Rucksack (Arctic)";
+		displayName = "[11th] UNSC Corpsman Rucksack (Arctic)";
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
@@ -604,7 +604,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Basic Rucksack (Woodland)";
+		displayName = "[11th] UNSC Basic Rucksack (Woodland)";
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
@@ -617,7 +617,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Heavy Rucksack (Woodland)";
+		displayName = "[11th] UNSC Heavy Rucksack (Woodland)";
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
@@ -630,7 +630,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Corpsman Rucksack (Woodland)";
+		displayName = "[11th] UNSC Corpsman Rucksack (Woodland)";
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
@@ -643,7 +643,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Basic Rucksack (Evolved/Urban)";
+		displayName = "[11th] UNSC Basic Rucksack (Evolved/Urban)";
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
@@ -656,7 +656,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Heavy Rucksack (Evolved/Urban)";
+		displayName = "[11th] UNSC Heavy Rucksack (Evolved/Urban)";
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
@@ -669,7 +669,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Corpsman Rucksack (Evolved/Urban)";
+		displayName = "[11th] UNSC Corpsman Rucksack (Evolved/Urban)";
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
@@ -682,7 +682,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Basic Rucksack (Marine)";
+		displayName = "[11th] UNSC Basic Rucksack (Marine)";
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
@@ -695,7 +695,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Heavy Rucksack (Marine)";
+		displayName = "[11th] UNSC Heavy Rucksack (Marine)";
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
@@ -708,7 +708,7 @@
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] UNSC Corpsman Rucksack (Marine)";
+		displayName = "[11th] UNSC Corpsman Rucksack (Marine)";
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};

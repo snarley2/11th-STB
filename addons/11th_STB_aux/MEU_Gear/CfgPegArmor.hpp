@@ -6,7 +6,7 @@
 		scopeCurator = 1;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (BASE)";
+		displayName = "[11th] Pilot Body Armor (BASE)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -203,7 +203,7 @@
 		scopeCurator = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (Recruit)";
+		displayName = "[11th] Pilot Body Armor (Recruit)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -316,7 +316,7 @@
 		scopeCurator = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (WO1)";
+		displayName = "[11th] Pilot Body Armor (WO1)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -427,7 +427,7 @@
 		scopeCurator = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (WO2)";
+		displayName = "[11th] Pilot Body Armor (WO2)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -536,7 +536,7 @@
 		scopeCurator = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (CWO3)";
+		displayName = "[11th] Pilot Body Armor (CWO3)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -641,7 +641,7 @@
 		scopeCurator = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (CWO4)";
+		displayName = "[11th] Pilot Body Armor (CWO4)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -742,7 +742,7 @@
 		scopeCurator = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (CWO5)";
+		displayName = "[11th] Pilot Body Armor (CWO5)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -837,7 +837,7 @@
 		scopeCurator = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] Pilot Body Armor (Officer)";
+		displayName = "[11th] Pilot Body Armor (Officer)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -927,7 +927,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] [JTAC] Pegasus Plate Carrier";
+		displayName = "[11th] [JTAC] Pegasus Plate Carrier";
         hiddenSelections[] = 
 		{
 			"camo",

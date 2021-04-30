@@ -34,7 +34,7 @@ class RscDisplayMain: RscStandardDisplay //this class changes the insignia on th
 		delete BackgroundSpotlight;
 		class Logo: RscActivePicture //this class changes the insignia on the top
 		{
-			text = "\first_meu_aux\Data\LoadingScreens\1stMEUInsignia.paa";
+			text = "\11th_STB_aux\Data\LoadingScreens\1stMEUInsignia.paa";
 			
 		};
 	};
@@ -59,7 +59,7 @@ class RscDisplayMain: RscStandardDisplay //this class changes the insignia on th
             y = SafeZoneY;
             h = SafeZoneH;
             w = SafeZoneW;
-            text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+            text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
         };
     };
 };
@@ -75,7 +75,7 @@ class RscDisplayLoading {
 					y = SafeZoneY;
 					h = SafeZoneH;
 					w = SafeZoneW;
-					text = "\first_meu_aux\data\loadingscreens\startImage.jpg";
+					text = "\11th_STB_aux\data\loadingscreens\startImage.jpg";
 				};
 			};
 		};
@@ -88,7 +88,7 @@ class RscDisplayLoading {
 					y = SafeZoneY;
 					h = SafeZoneH;
 					w = SafeZoneW;
-					text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+					text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
 				};
 			};
 		};
@@ -101,7 +101,7 @@ class RscDisplayLoading {
 					y = SafeZoneY;
 					h = SafeZoneH;
 					w = SafeZoneW;
-					text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+					text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
 				};
 			};
 		};
@@ -114,7 +114,7 @@ class RscDisplayLoading {
 					y = SafeZoneY;
 					h = SafeZoneH;
 					w = SafeZoneW;
-					text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+					text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
 				};
 			};
 		};
@@ -126,7 +126,7 @@ class RscDisplayLoading {
 					y = SafeZoneY;
 					h = SafeZoneH;
 					w = SafeZoneW;
-					text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+					text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
 				};
 			};
 		};
@@ -141,7 +141,7 @@ class RscDisplayLoadMission : RscStandardDisplay {
 			y = SafeZoneY;
 			h = SafeZoneH;
 			w = SafeZoneW;
-			text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+			text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
 		};
 	};
 };
@@ -154,7 +154,7 @@ class RscDisplayStart : RscStandardDisplay {
 			y = SafeZoneY;
 			h = SafeZoneH;
 			w = SafeZoneW;
-			text = "\first_meu_aux\data\loadingscreens\startImage.jpg";
+			text = "\11th_STB_aux\data\loadingscreens\startImage.jpg";
 		};
 	};
 };
@@ -167,7 +167,7 @@ class RscDisplayMPPlayers;
 			y = SafeZoneY;
 			h = SafeZoneH;
 			w = SafeZoneW;
-			text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+			text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
 		};
 	};
 
@@ -179,7 +179,7 @@ class RscDisplayClient : RscStandardDisplay {
 			y = SafeZoneY;
 			h = SafeZoneH;
 			w = SafeZoneW;
-			text = "\first_meu_aux\data\loadingscreens\mainMenu.jpg";
+			text = "\11th_STB_aux\data\loadingscreens\mainMenu.jpg";
 		};
 	};
 };

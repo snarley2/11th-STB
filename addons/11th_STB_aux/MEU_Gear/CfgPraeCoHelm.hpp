@@ -11,7 +11,7 @@
 		ace_hearing_lowerVolume = 0.25;
         ace_overlayDirt = "A3\Ui_f\data\igui\rsctitles\HealthTextures\dust_upper_ca.paa";
         ace_overlayCracked = "first_meu_aux\Data\misc\hud_cracked.paa";
-		displayName = "[1stMEU] CH252D Helmet";
+		displayName = "[11th] CH252D Helmet";
 		picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
@@ -56,7 +56,7 @@
         weaponPoolAvailable = 1;
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-		displayName = "[1stMEU] CH252D Helmet";
+		displayName = "[11th] CH252D Helmet";
 		picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
@@ -105,7 +105,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] CH252D Helmet";
+		displayName = "[11th] CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -117,7 +117,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] CH252D Ride Along Helmet";
+		displayName = "[11th] CH252D Ride Along Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -133,7 +133,7 @@
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.9;
 		weaponPoolAvailable = 1;
-		displayName = "[1stMEU] CH252D Soundproof Helmet";
+		displayName = "[11th] CH252D Soundproof Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -144,7 +144,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] CH252D Helmet (Corpsman)";
+		displayName = "[11th] CH252D Helmet (Corpsman)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -155,7 +155,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] CH252D Helmet (Blue)";
+		displayName = "[11th] CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -166,7 +166,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] CH252D Helmet (Yellow)";
+		displayName = "[11th] CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -178,7 +178,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] CH252D Helmet (Silver)";
+		displayName = "[11th] CH252D Helmet (Silver)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -190,7 +190,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] CH252D Helmet (Purple)";
+		displayName = "[11th] CH252D Helmet (Purple)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -201,7 +201,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] CH252D Helmet (Red)";
+		displayName = "[11th] CH252D Helmet (Red)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -413,7 +413,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] D-6 CH252D Helmet (Oneill)";
+		displayName = "[11th] D-6 CH252D Helmet (Oneill)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -427,7 +427,7 @@
         tf_isolatedAmount = 0.85;
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.9;
-		displayName = "[1stMEU] D-5 CH252D Helmet (Mark Weathered)";
+		displayName = "[11th] D-5 CH252D Helmet (Mark Weathered)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -441,7 +441,7 @@
         tf_isolatedAmount = 0.85;
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.9;
-		displayName = "[1stMEU] D-5 CH252D Helmet (Mark)";
+		displayName = "[11th] D-5 CH252D Helmet (Mark)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -452,7 +452,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] D-R CH252D Helmet (Dimitri)";
+		displayName = "[11th] D-R CH252D Helmet (Dimitri)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -463,7 +463,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] D-M CH252D Helmet (FloodedMac)";
+		displayName = "[11th] D-M CH252D Helmet (FloodedMac)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -646,7 +646,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] 3-1 CH252D Helmet";
+		displayName = "[11th] 3-1 CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -658,7 +658,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] 3-2 CH252D Helmet";
+		displayName = "[11th] 3-2 CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -670,7 +670,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] 3-3 CH252D Helmet";
+		displayName = "[11th] 3-3 CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -682,7 +682,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 3-1 CH252D (RTO)";
+		displayName = "[11th] 3-1 CH252D (RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -694,7 +694,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 3-2 CH252D (RTO)";
+		displayName = "[11th] 3-2 CH252D (RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -706,7 +706,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 3-3 CH252D (RTO)";
+		displayName = "[11th] 3-3 CH252D (RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -718,7 +718,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 3-1 CH252D (SR RTO)";
+		displayName = "[11th] 3-1 CH252D (SR RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -730,7 +730,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 3-2 CH252D (SR RTO)";
+		displayName = "[11th] 3-2 CH252D (SR RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -742,7 +742,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 3-3 CH252D (SR RTO)";
+		displayName = "[11th] 3-3 CH252D (SR RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -754,7 +754,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Romeo";
-		displayName = "[1stMEU] 3-1 CH252D Helmet (Corpsman)";
+		displayName = "[11th] 3-1 CH252D Helmet (Corpsman)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -766,7 +766,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Romeo";
-		displayName = "[1stMEU] 3-2 CH252D Helmet (Corpsman)";
+		displayName = "[11th] 3-2 CH252D Helmet (Corpsman)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -778,7 +778,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Romeo";
-		displayName = "[1stMEU] 3-3 CH252D Helmet (Corpsman)";
+		displayName = "[11th] 3-3 CH252D Helmet (Corpsman)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -790,7 +790,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] 3-1 CH252D Helmet (Blue)";
+		displayName = "[11th] 3-1 CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -802,7 +802,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] 3-2 CH252D Helmet (Blue)";
+		displayName = "[11th] 3-2 CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -814,7 +814,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill"; 
-		displayName = "[1stMEU] 3-3 CH252D Helmet (Blue)";
+		displayName = "[11th] 3-3 CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -826,7 +826,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] 3-1 CH252D Helmet (Yellow)";
+		displayName = "[11th] 3-1 CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -838,7 +838,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] 3-2 CH252D Helmet (Yellow)";
+		displayName = "[11th] 3-2 CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -850,7 +850,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Oneill";
-		displayName = "[1stMEU] 3-3 CH252D Helmet (Yellow)";
+		displayName = "[11th] 3-3 CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -861,7 +861,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 3-6 CH252D Helmet (Silent)";
+		displayName = "[11th] 3-6 CH252D Helmet (Silent)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -872,7 +872,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] 3-7 CH252D Helmet (Indigo)";
+        displayName = "[11th] 3-7 CH252D Helmet (Indigo)";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo","camo2"};
         hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -883,7 +883,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 3-M CH252D Helmet (Ender)";
+		displayName = "[11th] 3-M CH252D Helmet (Ender)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -894,7 +894,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 3-R CH252D Helmet (Cursed)";
+		displayName = "[11th] 3-R CH252D Helmet (Cursed)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1417,7 +1417,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-1 CH252D Helmet";
+		displayName = "[11th] 4-1 CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1428,7 +1428,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-2 CH252D Helmet";
+		displayName = "[11th] 4-2 CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1439,7 +1439,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-3 CH252D Helmet";
+		displayName = "[11th] 4-3 CH252D Helmet";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1451,7 +1451,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 4-1 CH252D (RTO)";
+		displayName = "[11th] 4-1 CH252D (RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1463,7 +1463,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 4-2 CH252D (RTO)";
+		displayName = "[11th] 4-2 CH252D (RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1475,7 +1475,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 4-3 CH252D (RTO)";
+		displayName = "[11th] 4-3 CH252D (RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1487,7 +1487,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 4-1 CH252D (SR RTO)";
+		displayName = "[11th] 4-1 CH252D (SR RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1499,7 +1499,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 4-2 CH252D (SR RTO)";
+		displayName = "[11th] 4-2 CH252D (SR RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1511,7 +1511,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1stMEU Mark";
-		displayName = "[1stMEU] 4-3 CH252D (SR RTO)";
+		displayName = "[11th] 4-3 CH252D (SR RTO)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1522,7 +1522,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-1 CH252D Helmet (Corpsman)";
+		displayName = "[11th] 4-1 CH252D Helmet (Corpsman)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1533,7 +1533,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-2 CH252D Helmet (Corpsman)";
+		displayName = "[11th] 4-2 CH252D Helmet (Corpsman)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1544,7 +1544,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-3 CH252D Helmet (Corpsman)";
+		displayName = "[11th] 4-3 CH252D Helmet (Corpsman)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1555,7 +1555,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-1 CH252D Helmet (Blue)";
+		displayName = "[11th] 4-1 CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1566,7 +1566,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-2 CH252D Helmet (Blue)";
+		displayName = "[11th] 4-2 CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1577,7 +1577,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-3 CH252D Helmet (Blue)";
+		displayName = "[11th] 4-3 CH252D Helmet (Blue)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1588,7 +1588,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-3B CH252D Helmet (Kenobi)";
+		displayName = "[11th] 4-3B CH252D Helmet (Kenobi)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1599,7 +1599,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-1 CH252D Helmet (Yellow)";
+		displayName = "[11th] 4-1 CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1610,7 +1610,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-2 CH252D Helmet (Bjorn)";
+		displayName = "[11th] 4-2 CH252D Helmet (Bjorn)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1621,7 +1621,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-2 CH252D Helmet (Yellow)";
+		displayName = "[11th] 4-2 CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1632,7 +1632,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-3 CH252D Helmet (Mutt)";
+		displayName = "[11th] 4-3 CH252D Helmet (Mutt)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1643,7 +1643,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-3 CH252D Helmet (Yellow)";
+		displayName = "[11th] 4-3 CH252D Helmet (Yellow)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1654,7 +1654,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-6 CH252D Helmet (Romeo)";
+		displayName = "[11th] 4-6 CH252D Helmet (Romeo)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1665,7 +1665,7 @@
         scope = 1;
         scopeCurator = 1;
         scopeArsenal = 1;
-		displayName = "[1stMEU] 4-7 CH252D Helmet (TBD)";
+		displayName = "[11th] 4-7 CH252D Helmet (TBD)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -1676,7 +1676,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] 4-M CH252D Helmet (Rave)";
+		displayName = "[11th] 4-M CH252D Helmet (Rave)";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2460,7 +2460,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Hokage";
+		displayName = "[11th] Hokage";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2510,7 +2510,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] Beret (4th Plt)";
+		displayName = "[11th] Beret (4th Plt)";
         weaponPoolAvailable = 1;
 		subItems[]=
 		{

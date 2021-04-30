@@ -283,7 +283,7 @@
         destrType = "DestructBuilding";
         editorCategory = "MEU_Objects";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\NerveAgentBarrel_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\misc\NerveAgentBarrel_co.paa"};
         class EventHandlers
         {
             //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
@@ -337,7 +337,7 @@
         destrType = "DestructBuilding";
         editorCategory = "MEU_Objects";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\AsphyxiantBarrel_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\misc\AsphyxiantBarrel_co.paa"};
         class EventHandlers
         {
             //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
@@ -393,7 +393,7 @@
         destrType = "DestructBuilding";
         editorCategory = "MEU_Objects";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\CrowdSuppressentBarrel_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\misc\CrowdSuppressentBarrel_co.paa"};
         class EventHandlers
         {
             //Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";

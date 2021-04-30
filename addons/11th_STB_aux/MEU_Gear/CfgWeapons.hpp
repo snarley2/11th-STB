@@ -142,14 +142,14 @@ class CfgWeapons
     class FullAutoSlow;
     class FullAutoFast;
 
-    #include "\first_meu_aux\MEU_Gear\CfgPraeCoHelm.hpp"
-    #include "\first_meu_aux\MEU_Gear\CfgPraeCoArmor.hpp"
-    #include "\first_meu_aux\MEU_Gear\CfgCentCoArmor.hpp"
-    #include "\first_meu_aux\MEU_Gear\CfgCentCoHelm.hpp"
-    #include "\first_meu_aux\MEU_Gear\CfgPegArmor.hpp"
-    #include "\first_meu_aux\MEU_Gear\CfgPegHelm.hpp"
-    #include "\first_meu_aux\MEU_Gear\CfgVulkHelm.hpp"
-    #include "\first_meu_aux\MEU_Gear\CfgVulkArmor.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgPraeCoHelm.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgPraeCoArmor.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgCentCoArmor.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgCentCoHelm.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgPegArmor.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgPegHelm.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgVulkHelm.hpp"
+    #include "\11th_STB_aux\MEU_Gear\CfgVulkArmor.hpp"
 
     /*// Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
@@ -167,7 +167,7 @@ class CfgWeapons
         CBRN_isPlacedExplosive = 1;
 		displayName = "Chemical Barrel (Nerve Agent)";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\NerveAgentBarrel_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\misc\NerveAgentBarrel_co.paa"};
         class DestructionEffects
         {
             class Light1
@@ -216,7 +216,7 @@ class CfgWeapons
         destrType = "DestructBuilding";
         editorCategory = "MEU_Objects";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\misc\AsphyxiantBarrel_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\misc\AsphyxiantBarrel_co.paa"};
         class EventHandlers
         {
             Killed = "(_this select 0) spawn {sleep (random 0.5); _pos = getPosATL _this; _this setVelocity [0,0,2]; sleep (random 0.3); _explo = ""OPTRE_Exp_Hydrogen_Small"" createVehicle _pos; };";
@@ -314,7 +314,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[C] Optican Medigel";
-		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
+		picture = "\11th_STB_aux\data\misc\icons\medigel_icon.paa";
 		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
@@ -336,7 +336,7 @@ class CfgWeapons
     {
         scope = 2;
         displayName = "[1st MEU] Optican Medigel";
-		picture = "\first_meu_aux\data\misc\icons\medigel_icon.paa";
+		picture = "\11th_STB_aux\data\misc\icons\medigel_icon.paa";
 		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
@@ -356,7 +356,7 @@ class CfgWeapons
 	{
 		scope = 2;
         displayName = "[1st MEU] Flex Seal";
-		picture = "\first_meu_aux\data\misc\icons\flex_seal_icon.paa";
+		picture = "\11th_STB_aux\data\misc\icons\flex_seal_icon.paa";
 		model = "\OPTRE_Weapons\items\Medigel.p3d";
         class ItemInfo: ItemInfo
 		{
@@ -373,7 +373,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Praetorian Combat Uniform";
+		displayName = "[11th] Praetorian Combat Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = "4 + 8";
 		class ItemInfo: UniformItem
@@ -392,7 +392,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform";
+        displayName = "[11th] Centurion Combat Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
@@ -411,7 +411,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform (Urban/Evolved)";
+        displayName = "[11th] Centurion Combat Uniform (Urban/Evolved)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
@@ -430,7 +430,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform (Desert)";
+        displayName = "[11th] Centurion Combat Uniform (Desert)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
@@ -449,7 +449,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform (Snow)";
+        displayName = "[11th] Centurion Combat Uniform (Snow)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
@@ -468,7 +468,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform (Woodland)";
+        displayName = "[11th] Centurion Combat Uniform (Woodland)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = "4 + 8";
         class ItemInfo: UniformItem
@@ -487,7 +487,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Pegasus Pilot Uniform";
+        displayName = "[11th] Pegasus Pilot Uniform";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = "4 + 8";
 		ACE_GForceCoef = 0.1;
@@ -507,7 +507,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves";
+        displayName = "[11th] Centurion Combat Uniform Rolled Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -526,7 +526,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Urban/Evolved)";
+        displayName = "[11th] Centurion Combat Uniform Rolled Sleeves (Urban/Evolved)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -545,7 +545,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Desert)";
+        displayName = "[11th] Centurion Combat Uniform Rolled Sleeves (Desert)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -564,7 +564,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Snow)";
+        displayName = "[11th] Centurion Combat Uniform Rolled Sleeves (Snow)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -583,7 +583,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Rolled Sleeves (Woodland)";
+        displayName = "[11th] Centurion Combat Uniform Rolled Sleeves (Woodland)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -602,7 +602,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Pegasus Pilot Uniform Rolled Sleeves";
+        displayName = "[11th] Pegasus Pilot Uniform Rolled Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
 		ACE_GForceCoef = 0.1;
@@ -622,7 +622,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves";
+        displayName = "[11th] Centurion Combat Uniform Short Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -641,7 +641,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Urban/Evolved)";
+        displayName = "[11th] Centurion Combat Uniform Short Sleeves (Urban/Evolved)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -660,7 +660,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Desert)";
+        displayName = "[11th] Centurion Combat Uniform Short Sleeves (Desert)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -679,7 +679,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Snow)";
+        displayName = "[11th] Centurion Combat Uniform Short Sleeves (Snow)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -698,7 +698,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Centurion Combat Uniform Short Sleeves (Woodland)";
+        displayName = "[11th] Centurion Combat Uniform Short Sleeves (Woodland)";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
         class ItemInfo: UniformItem
@@ -717,7 +717,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Pegasus Pilot Uniform Short Sleeves";
+        displayName = "[11th] Pegasus Pilot Uniform Short Sleeves";
 		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
         CBRN_protectionLevel = 8;
 		ACE_GForceCoef = 0.1;
@@ -740,7 +740,7 @@ class CfgWeapons
         scopeArsenal = 2;
         scopeCurator = 2;
 		displayName = "[RIE] Special Purpose Helmet (Friden)";
-		hiddenSelectionsTextures[] = {"\first_meu_aux\Data\opfor\Viper_Helmet_Friden_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\Data\opfor\Viper_Helmet_Friden_co.paa"};
 	};
     // Weapons Start
     class Throw : Grenadelauncher
@@ -844,7 +844,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
 		scopeArsenal = 2;
-        displayName = "[1stMEU] M7X-T2";
+        displayName = "[11th] M7X-T2";
         magazineReloadTime = 2.0;
         reloadAction = "";
         class LinkedItems
@@ -1046,13 +1046,13 @@ class CfgWeapons
 	class M250HMG: OPTRE_M247
 	{
 		dlc = "1STMEUAUX";
-		author = "[1stMEU] Oneill";
+		author = "[11th] Oneill";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\MG\data\anim\OPTRE_M247_handanim.rtm","Spartan_ManSkeleton","\OPTRE_Weapons\MG\data\anim\M247_Spartan.rtm"};
 		model = "\OPTRE_Weapons\MG\M247.p3d";
-		displayName = "[1stMEU] M250 Heavy Machine Gun";
+		displayName = "[11th] M250 Heavy Machine Gun";
 		descriptionShort = "UNSC Heavy Machine Gun (man portable)";
 		magazines[] = {"OPTRE_100Rnd_127x99_M250HMG", "OPTRE_100Rnd_127x99_HE_M250HMG", "OPTRE_100Rnd_127x99_Tracer_M250HMG", "OPTRE_100Rnd_127x99_Tracer_HE_M250HMG"};
 		recoil = "recoil_trg21";
@@ -3250,7 +3250,7 @@ class CfgWeapons
 		baseWeapon = "MEU_Railgun";
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_FC_Weapons\Railgun\data\anim\Railgun_HandAnim.rtm","Spartan_ManSkeleton","\OPTRE_FC_Weapons\Railgun\data\anim\Railgun_HandAnim_Spartan.rtm"};
 		model = "\OPTRE_FC_Weapons\Railgun\Railgun.p3d";
-		displayName = "[1stMEU] ARC-920";
+		displayName = "[11th] ARC-920";
 		descriptionShort = "Compact-Channel Linear Accelerator Weapon";
 		magazines[] = {"MEU_Railgun_Slug"};
 		magazineWell[] = {"MEU_Railgun_Slug"};
@@ -3265,7 +3265,7 @@ class CfgWeapons
 		baseWeapon = "MEU_Railgun_Auto";
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_FC_Weapons\Railgun\data\anim\Railgun_HandAnim.rtm","Spartan_ManSkeleton","\OPTRE_FC_Weapons\Railgun\data\anim\Railgun_HandAnim_Spartan.rtm"};
 		model = "\OPTRE_FC_Weapons\Railgun\Railgun.p3d";
-		displayName = "[1stMEU] ARC-920 Automatic";
+		displayName = "[11th] ARC-920 Automatic";
 		descriptionShort = "Compact-Channel Linear Accelerator Weapon";
 		magazines[] = {"MEU_Railgun_Slug_Auto"};
 		magazineWell[] = {"MEU_Railgun_Slug_Auto"};
@@ -3277,7 +3277,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayname = "[1stMEU] M6C Automag";
+        displayname = "[11th] M6C Automag";
         baseWeapon = "MEU_Automag";
         model = "\OPTRE_Weapons\Pistol\m6c.p3d";
         picture = "\OPTRE_weapons\pistol\icons\pistol_a.paa";
@@ -3324,7 +3324,7 @@ class CfgWeapons
 		scopeArsenal = 2;
         scopeCurator = 2;
         baseWeapon = "MEU_M75";
-		displayName = "[1stMEU] M75";
+		displayName = "[11th] M75";
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\MG\data\anim\OPTRE_M73_handanim.rtm","Spartan_ManSkeleton","\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\M73_1_Spartan.rtm"};
 		model = "\OPTRE_Weapons\MG\M73.p3d";
 		descriptionShort = "UNSC Light Machine Gun";
@@ -3436,7 +3436,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
         scopeCurator = 1;
-        displayName = "[1stMEU] Hopper Launcher BASE";
+        displayName = "[11th] Hopper Launcher BASE";
         displaynameshort = "Hopper Launcher BASE";
 		descriptionShort = "Hopper Launcher BASE";
         model = "first_meu_aux\Data\Misc\Hopper\ATDisposable.p3d";
@@ -3457,7 +3457,7 @@ class CfgWeapons
 		scopeArsenal = 2;
         scopeCurator = 2;
         baseWeapon = "MEU_Hopper_v2_Loaded";
-		displayName = "[1stMEU][WIP] Hopper Launcher V2";
+		displayName = "[11th][WIP] Hopper Launcher V2";
         displaynameshort = "Hopper Launcher V2";
 		descriptionShort = "Hopper Launcher V2";
         magazines[] = {"CBA_FakeLauncherMagazine"};

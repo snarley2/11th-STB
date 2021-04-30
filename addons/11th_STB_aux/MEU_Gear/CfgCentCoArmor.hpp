@@ -6,7 +6,7 @@
 		scopeCurator = 1;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Body Armor (BASE)";
+		displayName = "[11th] M52A Body Armor (BASE)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -207,7 +207,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman";
+		displayName = "[11th] M52A AutoRifleman";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -306,7 +306,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman (Desert)";
+		displayName = "[11th] M52A AutoRifleman (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -324,7 +324,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman (Evolved)";
+		displayName = "[11th] M52A AutoRifleman (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -342,7 +342,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman (Snow)";
+		displayName = "[11th] M52A AutoRifleman (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -360,7 +360,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman (Urban)";
+		displayName = "[11th] M52A AutoRifleman (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -378,7 +378,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman (Woodland)";
+		displayName = "[11th] M52A AutoRifleman (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -396,7 +396,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman NCO";
+		displayName = "[11th] M52A AutoRifleman NCO";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -493,7 +493,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman NCO (Desert)";
+		displayName = "[11th] M52A AutoRifleman NCO (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -511,7 +511,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman NCO (Evolved)";
+		displayName = "[11th] M52A AutoRifleman NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -529,7 +529,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman NCO (Snow)";
+		displayName = "[11th] M52A AutoRifleman NCO (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -547,7 +547,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman NCO (Urban)";
+		displayName = "[11th] M52A AutoRifleman NCO (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -565,7 +565,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A AutoRifleman NCO (Woodland)";
+		displayName = "[11th] M52A AutoRifleman NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -584,7 +584,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher";
+		displayName = "[11th] M52A Breacher";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -681,7 +681,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher (Desert)";
+		displayName = "[11th] M52A Breacher (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -699,7 +699,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher (Evolved)";
+		displayName = "[11th] M52A Breacher (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -717,7 +717,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher (Snow)";
+		displayName = "[11th] M52A Breacher (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -735,7 +735,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher (Urban)";
+		displayName = "[11th] M52A Breacher (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -753,7 +753,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher (Woodland)";
+		displayName = "[11th] M52A Breacher (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -771,7 +771,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher NCO";
+		displayName = "[11th] M52A Breacher NCO";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -866,7 +866,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher NCO (Desert)";
+		displayName = "[11th] M52A Breacher NCO (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -884,7 +884,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher NCO (Evolved)";
+		displayName = "[11th] M52A Breacher NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -902,7 +902,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher NCO (Snow)";
+		displayName = "[11th] M52A Breacher NCO (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -920,7 +920,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher NCO (Urban)";
+		displayName = "[11th] M52A Breacher NCO (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -938,7 +938,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Breacher NCO (Woodland)";
+		displayName = "[11th] M52A Breacher NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -957,7 +957,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman";
+		displayName = "[11th] M52A Corpsman";
         hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
@@ -1054,7 +1054,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman (Desert)";
+		displayName = "[11th] M52A Corpsman (Desert)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -1072,7 +1072,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman (Evolved)";
+		displayName = "[11th] M52A Corpsman (Evolved)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -1090,7 +1090,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman (Snow)";
+		displayName = "[11th] M52A Corpsman (Snow)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -1108,7 +1108,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman (Urban)";
+		displayName = "[11th] M52A Corpsman (Urban)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -1126,7 +1126,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman (Woodland)";
+		displayName = "[11th] M52A Corpsman (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -1144,7 +1144,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman NCO";
+		displayName = "[11th] M52A Corpsman NCO";
         hiddenSelections[] = 
         {
             "camo",
@@ -1239,7 +1239,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman NCO (Desert)";
+		displayName = "[11th] M52A Corpsman NCO (Desert)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -1257,7 +1257,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman NCO (Evolved)";
+		displayName = "[11th] M52A Corpsman NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -1275,7 +1275,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman NCO (Snow)";
+		displayName = "[11th] M52A Corpsman NCO (Snow)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -1293,7 +1293,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman NCO (Urban)";
+		displayName = "[11th] M52A Corpsman NCO (Urban)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -1311,7 +1311,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Corpsman NCO (Woodland)";
+		displayName = "[11th] M52A Corpsman NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -1330,7 +1330,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier";
+		displayName = "[11th] M52A Grenadier";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -1431,7 +1431,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier (Desert)";
+		displayName = "[11th] M52A Grenadier (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -1449,7 +1449,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier (Evolved)";
+		displayName = "[11th] M52A Grenadier (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -1467,7 +1467,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier (Snow)";
+		displayName = "[11th] M52A Grenadier (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -1485,7 +1485,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier (Urban)";
+		displayName = "[11th] M52A Grenadier (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -1503,7 +1503,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier (Woodland)";
+		displayName = "[11th] M52A Grenadier (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -1521,7 +1521,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier NCO";
+		displayName = "[11th] M52A Grenadier NCO";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -1620,7 +1620,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier NCO (Desert)";
+		displayName = "[11th] M52A Grenadier NCO (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -1638,7 +1638,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier NCO (Evolved)";
+		displayName = "[11th] M52A Grenadier NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -1656,7 +1656,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier NCO (Snow)";
+		displayName = "[11th] M52A Grenadier NCO (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -1674,7 +1674,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier NCO (Urban)";
+		displayName = "[11th] M52A Grenadier NCO (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -1692,7 +1692,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Grenadier NCO (Woodland)";
+		displayName = "[11th] M52A Grenadier NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -1711,7 +1711,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman";
+		displayName = "[11th] M52A Marksman";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -1814,7 +1814,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman (Desert)";
+		displayName = "[11th] M52A Marksman (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -1832,7 +1832,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman (Evolved)";
+		displayName = "[11th] M52A Marksman (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -1850,7 +1850,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman (Snow)";
+		displayName = "[11th] M52A Marksman (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -1868,7 +1868,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman (Urban)";
+		displayName = "[11th] M52A Marksman (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -1886,7 +1886,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman (Woodland)";
+		displayName = "[11th] M52A Marksman (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -1904,7 +1904,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman NCO";
+		displayName = "[11th] M52A Marksman NCO";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -2005,7 +2005,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman NCO (Desert)";
+		displayName = "[11th] M52A Marksman NCO (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -2023,7 +2023,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman NCO (Evolved)";
+		displayName = "[11th] M52A Marksman NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -2041,7 +2041,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman NCO (Snow)";
+		displayName = "[11th] M52A Marksman NCO (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -2059,7 +2059,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman NCO (Urban)";
+		displayName = "[11th] M52A Marksman NCO (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -2077,7 +2077,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Marksman NCO (Woodland)";
+		displayName = "[11th] M52A Marksman NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -2096,7 +2096,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman";
+		displayName = "[11th] M52A Rifleman";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -2197,7 +2197,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman (Desert)";
+		displayName = "[11th] M52A Rifleman (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -2215,7 +2215,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman (Evolved)";
+		displayName = "[11th] M52A Rifleman (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -2233,7 +2233,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman (Snow)";
+		displayName = "[11th] M52A Rifleman (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -2251,7 +2251,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman (Urban)";
+		displayName = "[11th] M52A Rifleman (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -2269,7 +2269,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman (Woodland)";
+		displayName = "[11th] M52A Rifleman (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -2287,7 +2287,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman NCO";
+		displayName = "[11th] M52A Rifleman NCO";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -2386,7 +2386,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman NCO (Desert)";
+		displayName = "[11th] M52A Rifleman NCO (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -2404,7 +2404,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman NCO (Evolved)";
+		displayName = "[11th] M52A Rifleman NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -2422,7 +2422,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman NCO (Snow)";
+		displayName = "[11th] M52A Rifleman NCO (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -2440,7 +2440,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman NCO (Urban)";
+		displayName = "[11th] M52A Rifleman NCO (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -2458,7 +2458,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Rifleman NCO (Woodland)";
+		displayName = "[11th] M52A Rifleman NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -2477,7 +2477,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO";
+		displayName = "[11th] M52A RTO";
         hiddenSelections[] = 
         {
             "camo",
@@ -2576,7 +2576,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO (Desert)";
+		displayName = "[11th] M52A RTO (Desert)";
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -2594,7 +2594,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO (Evolved)";
+		displayName = "[11th] M52A RTO (Evolved)";
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -2612,7 +2612,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO (Snow)";
+		displayName = "[11th] M52A RTO (Snow)";
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -2630,7 +2630,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO (Urban)";
+		displayName = "[11th] M52A RTO (Urban)";
         hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -2648,7 +2648,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO (Woodland)";
+		displayName = "[11th] M52A RTO (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -2666,7 +2666,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO NCO";
+		displayName = "[11th] M52A RTO NCO";
         hiddenSelections[] = 
         {
             "camo",
@@ -2763,7 +2763,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO NCO (Desert)";
+		displayName = "[11th] M52A RTO NCO (Desert)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -2781,7 +2781,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO NCO (Evolved)";
+		displayName = "[11th] M52A RTO NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -2799,7 +2799,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO NCO (Snow)";
+		displayName = "[11th] M52A RTO NCO (Snow)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -2817,7 +2817,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO NCO (Urban)";
+		displayName = "[11th] M52A RTO NCO (Urban)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -2835,7 +2835,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A RTO NCO (Woodland)";
+		displayName = "[11th] M52A RTO NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
         {
             "V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -2854,7 +2854,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper";
+		displayName = "[11th] M52A Sniper";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -2955,7 +2955,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper (Desert)";
+		displayName = "[11th] M52A Sniper (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -2973,7 +2973,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper (Evolved)";
+		displayName = "[11th] M52A Sniper (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -2991,7 +2991,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper (Snow)";
+		displayName = "[11th] M52A Sniper (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -3009,7 +3009,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper (Urban)";
+		displayName = "[11th] M52A Sniper (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -3027,7 +3027,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper (Woodland)";
+		displayName = "[11th] M52A Sniper (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -3045,7 +3045,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper NCO";
+		displayName = "[11th] M52A Sniper NCO";
 		hiddenSelections[] = 
 		{
 			"camo",
@@ -3144,7 +3144,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper NCO (Desert)";
+		displayName = "[11th] M52A Sniper NCO (Desert)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_DES_CO",
@@ -3162,7 +3162,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper NCO (Evolved)";
+		displayName = "[11th] M52A Sniper NCO (Evolved)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_CEA_CO",
@@ -3180,7 +3180,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper NCO (Snow)";
+		displayName = "[11th] M52A Sniper NCO (Snow)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_SNO_CO",
@@ -3198,7 +3198,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper NCO (Urban)";
+		displayName = "[11th] M52A Sniper NCO (Urban)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
@@ -3216,7 +3216,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52A Sniper NCO (Woodland)";
+		displayName = "[11th] M52A Sniper NCO (Woodland)";
 		hiddenSelectionsTextures[] = 
 		{
 			"V_FZ_Armor\Data\Vests\V_M52_V_WDL_CO",
@@ -3235,7 +3235,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "Rave & Ginger";
-		displayName = "[1stMEU] M52A Training (Red)";
+		displayName = "[11th] M52A Training (Red)";
 		hiddenSelectionsTextures[] = 
 		{
 			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_RED_CO.paa",
@@ -3252,7 +3252,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "Rave & Ginger";
-		displayName = "[1stMEU] M52A Training (Blue)";
+		displayName = "[11th] M52A Training (Blue)";
 		hiddenSelectionsTextures[] = 
 		{
 			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_BLU_CO.paa",
@@ -3269,7 +3269,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "Rave & Ginger";
-		displayName = "[1stMEU] M52A Training (Green)";
+		displayName = "[11th] M52A Training (Green)";
 		hiddenSelectionsTextures[] = 
 		{
 			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_GRE_CO.paa",
@@ -3286,7 +3286,7 @@
         scopeArsenal = 2;
 		dlc = "1st MEU";
 		author = "Rave & Ginger";
-		displayName = "[1stMEU] M52A Training (Purple)";
+		displayName = "[11th] M52A Training (Purple)";
 		hiddenSelectionsTextures[] = 
 		{
 			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_PUR_CO.paa",

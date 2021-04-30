@@ -13,7 +13,7 @@
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-        displayName = "[1stMEU] Pegasus Helmet";
+        displayName = "[11th] Pegasus Helmet";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -36,7 +36,7 @@
 		};
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
-        displayName = "[1stMEU] Pegasus Helmet Depo";
+        displayName = "[11th] Pegasus Helmet Depo";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Pegasus.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -55,7 +55,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
         weaponPoolAvailable = 1;
-		displayName = "[1stMEU] [JTAC] Pegasus VX-19";
+		displayName = "[11th] [JTAC] Pegasus VX-19";
         ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.60;
         optreVarietys[] = {"_dp","","_broken"};
@@ -67,13 +67,13 @@
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\first_meu_aux\data\pegasus\h3_pilothelmet_BK.paa",
-			"\first_meu_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"
+			"\11th_STB_aux\data\pegasus\h3_pilothelmet_BK.paa",
+			"\11th_STB_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"
 		};
         class ItemInfo: ItemInfo
 		{
             hiddenSelections[] = {"camo","camo2"};
-			hiddenSelectionsTextures[] = {"\first_meu_aux\data\pegasus\h3_pilothelmet_BK.paa","\first_meu_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"};
+			hiddenSelectionsTextures[] = {"\11th_STB_aux\data\pegasus\h3_pilothelmet_BK.paa","\11th_STB_aux\data\pegasus\h3_pilothelmet_visor_CO.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Face
@@ -112,7 +112,7 @@
     {
 		
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] 0-6 MAG CO (Siffy)";
+		displayName = "[11th] 0-6 MAG CO (Siffy)";
         optreVarietys[] = {"_dp","","_broken"};
 		optreHUDStyle = "ODST_1";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
@@ -125,7 +125,7 @@
     };
     class peg_Five : Peg_Base
     {
-        displayName = "[1stMEU] 0-5 Squadron XO (Butch)";
+        displayName = "[11th] 0-5 Squadron XO (Butch)";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_5.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		class ItemInfo: ItemInfo
@@ -136,7 +136,7 @@
     };
     class peg_flight : Peg_Base
     {
-        displayName = "[1stMEU] Pegasus Flight Commander";
+        displayName = "[11th] Pegasus Flight Commander";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		class ItemInfo: ItemInfo
@@ -151,7 +151,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP1";
+        displayName = "[11th] Pegasus Helmet DP1";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_6.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
         class ItemInfo: ItemInfo
@@ -164,7 +164,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP13";
+        displayName = "[11th] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Pegasus_5.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -177,7 +177,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP2";
+        displayName = "[11th] Pegasus Helmet DP2";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_FC.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
         class ItemInfo: ItemInfo
@@ -213,7 +213,7 @@
 //1st Flight
     class peg_1stFC : Peg_Base
     {
-        displayName = "[1stMEU] 1-6 Commmander (Torres)";
+        displayName = "[11th] 1-6 Commmander (Torres)";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_1stFC.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		class ItemInfo: ItemInfo
@@ -224,7 +224,7 @@
     };
     class Peg_Helios : Peg_Base
     {
-        displayName = "[1stMEU] 1-1 VX-16 Helios";
+        displayName = "[11th] 1-1 VX-16 Helios";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -236,7 +236,7 @@
     };
     class Peg_Helios_section : Peg_Base
     {
-        displayName = "[1stMEU] 1-1 VX-16 Helios SL";
+        displayName = "[11th] 1-1 VX-16 Helios SL";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -248,7 +248,7 @@
     };
     class Peg_Axios : Peg_Base
     {
-        displayName = "[1stMEU] 1-2 VX-16 Axios";
+        displayName = "[11th] 1-2 VX-16 Axios";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -260,7 +260,7 @@
     };
     class Peg_Axios_section : Peg_Base
     {
-        displayName = "[1stMEU] 1-2 VX-16 Axios SL";
+        displayName = "[11th] 1-2 VX-16 Axios SL";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -272,7 +272,7 @@
     };
     class Peg_ilithios : Peg_Base
     {
-        displayName = "[1stMEU] 1-3 VX-16 Ilithios";
+        displayName = "[11th] 1-3 VX-16 Ilithios";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -284,7 +284,7 @@
     };
     class Peg_ilithios_section : Peg_Base
     {
-        displayName = "[1stMEU] 1-3 VX-16 Ilithios SL";
+        displayName = "[11th] 1-3 VX-16 Ilithios SL";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
@@ -296,7 +296,7 @@
     };
     class peg_chaotic : Peg_Base
     {
-        displayName = "[1stMEU] 1-3 VX-16 Ilithios (Chaotic)";
+        displayName = "[11th] 1-3 VX-16 Ilithios (Chaotic)";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Chaotic.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		class ItemInfo: ItemInfo
@@ -311,7 +311,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP13";
+        displayName = "[11th] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_1stFC.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -324,7 +324,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP8";
+        displayName = "[11th] Pegasus Helmet DP8";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -337,7 +337,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP4";
+        displayName = "[11th] Pegasus Helmet DP4";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Helios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
         class ItemInfo: ItemInfo
@@ -350,7 +350,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP7";
+        displayName = "[11th] Pegasus Helmet DP7";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -363,7 +363,7 @@
     {
         scopeArsenal = 1;
         scope = 11;
-        displayName = "[1stMEU] Pegasus Helmet DP3";
+        displayName = "[11th] Pegasus Helmet DP3";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Axios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
         class ItemInfo: ItemInfo
@@ -376,7 +376,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP10";
+        displayName = "[11th] Pegasus Helmet DP10";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -389,7 +389,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP6";
+        displayName = "[11th] Pegasus Helmet DP6";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Ilithios.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
         class ItemInfo: ItemInfo
@@ -402,7 +402,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP13";
+        displayName = "[11th] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_Chaotic.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -466,7 +466,7 @@
 //2nd Flight
     class peg_2ndFC : Peg_Base
     {
-        displayName = "[1stMEU] 2-6 Flight Commander";
+        displayName = "[11th] 2-6 Flight Commander";
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_2ndFC.paa","optre_unsc_units\army\data\facemask_gray_skull_co.paa"};
 		class ItemInfo: ItemInfo
@@ -481,7 +481,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP13";
+        displayName = "[11th] Pegasus Helmet DP13";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\pegasus\helm_black_CO_2ndFC.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -503,7 +503,7 @@
 //3rd Flight
     class Peg_Iron : Peg_Base
     {
-        displayName = "[1stMEU] 3-6 VX-16 (Iron)";
+        displayName = "[11th] 3-6 VX-16 (Iron)";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Iron.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
@@ -519,7 +519,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Helmet DP1";
+        displayName = "[11th] Pegasus Helmet DP1";
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Iron.paa","optre_unsc_units\army\data\facemask_gray_co.paa"};
         class ItemInfo: ItemInfo
@@ -541,7 +541,7 @@
 //Deck Officers
     class Peg_Deck1 : Peg_Base
     {
-        displayName = "[1stMEU] 1-0 VX-16 Prometheus";
+        displayName = "[11th] 1-0 VX-16 Prometheus";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
@@ -553,7 +553,7 @@
     };
     class Peg_Deck2 : Peg_Base
     {
-        displayName = "[1stMEU] 2-0 VX-16 Prometheus";
+        displayName = "[11th] 2-0 VX-16 Prometheus";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_up"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
@@ -569,7 +569,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
+        displayName = "[11th] Pegasus Deck Officer Helmet DP";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
@@ -583,7 +583,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
+        displayName = "[11th] Pegasus Deck Officer Helmet DP";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2","attach_visor_down"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
@@ -598,7 +598,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
+        displayName = "[11th] Pegasus Deck Officer Helmet DP";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
@@ -607,7 +607,7 @@
     {
         scopeArsenal = 1;
         scope = 1;
-        displayName = "[1stMEU] Pegasus Deck Officer Helmet DP";
+        displayName = "[11th] Pegasus Deck Officer Helmet DP";
         optreVarietys[] = {"_dp","","_broken"};
         hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pegasus\helm_black_CO_Prometheus.paa","attach_face_mask"};
@@ -621,7 +621,7 @@
         scopeArsenal = 2;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Dino)";
+		displayName = "[11th] CH252A Helmet (Dino)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_Dino","V_FZ_Armor\Data\Helmets\V_CH252A_GLD_V_CO.paa"};
@@ -634,7 +634,7 @@
         scopeArsenal = 2;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Pararescue Blue)";
+		displayName = "[11th] CH252A Helmet (Pararescue Blue)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_BLU_V_CO.paa"};
@@ -647,7 +647,7 @@
         scopeArsenal = 2;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Pararescue Silver)";
+		displayName = "[11th] CH252A Helmet (Pararescue Silver)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_SLV_V_CO.paa"};
@@ -660,7 +660,7 @@
         scopeArsenal = 2;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Pararescue Gold)";
+		displayName = "[11th] CH252A Helmet (Pararescue Gold)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_GLD_V_CO.paa"};
@@ -675,7 +675,7 @@
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Dino)";
+		displayName = "[11th] CH252A Helmet (Dino)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_Dino","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
@@ -688,7 +688,7 @@
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Pararescue Blue)";
+		displayName = "[11th] CH252A Helmet (Pararescue Blue)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
@@ -701,7 +701,7 @@
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Pararescue Silver)";
+		displayName = "[11th] CH252A Helmet (Pararescue Silver)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};
@@ -714,7 +714,7 @@
 		scopeCurator = 1;
 		weaponPoolAvailable = 1;
 		author = "Rave";
-		displayName = "[1stMEU] CH252A Helmet (Pararescue Gold)";
+		displayName = "[11th] CH252A Helmet (Pararescue Gold)";
 		model = "\OPTRE_UNSC_Units\Army\aa_helmet";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Pararescue\V_CH252A_DEF_CO_ParaRescue.paa","V_FZ_Armor\Data\Helmets\V_CH252A_CLR_V_CA.paa"};

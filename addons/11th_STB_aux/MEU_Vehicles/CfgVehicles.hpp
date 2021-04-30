@@ -1,11 +1,11 @@
 class CfgVehicles
 {
-    #include "\first_meu_aux\MEU_Vehicles\CfgSupplyPods.hpp"
-    #include "\first_meu_aux\MEU_Vehicles\CfgMedication.hpp"
-    #include "\first_meu_aux\MEU_Vehicles\CfgBackpacks.hpp"
-    #include "\first_meu_aux\MEU_Vehicles\CfgObjects.hpp"
-    #include "\first_meu_aux\MEU_Vehicles\CfgUniforms.hpp"
-    #include "\first_meu_aux\MEU_Vehicles\CfgUnits.hpp"
+    #include "\11th_STB_aux\MEU_Vehicles\CfgSupplyPods.hpp"
+    #include "\11th_STB_aux\MEU_Vehicles\CfgMedication.hpp"
+    #include "\11th_STB_aux\MEU_Vehicles\CfgBackpacks.hpp"
+    #include "\11th_STB_aux\MEU_Vehicles\CfgObjects.hpp"
+    #include "\11th_STB_aux\MEU_Vehicles\CfgUniforms.hpp"
+    #include "\11th_STB_aux\MEU_Vehicles\CfgUnits.hpp"
     
     //Base Arma Vehicle Classes
 	class Helicopter_Base_H;
@@ -711,7 +711,7 @@ class CfgVehicles
         scopeArsenal = 2;
         dlc = "1stMEU";
         author = "Oneill";
-        displayName = "[1stMEU] M808B Scorpion";
+        displayName = "[11th] M808B Scorpion";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -834,7 +834,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] APC-76 Honeybadger";
+        displayName = "[11th] APC-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -915,7 +915,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] IFV-76 Honeybadger";
+        displayName = "[11th] IFV-76 Honeybadger";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -1025,7 +1025,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Hound-920 LAV [WIP]";
+        displayName = "[11th] Hound-920 LAV [WIP]";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -1120,7 +1120,7 @@ class CfgVehicles
 		author = "Romeo";
 		side = 1;
 		faction = "MEU_Insurrectionists";
-		displayName = "[1stMEU] MGS-32 Timberwolf";
+		displayName = "[11th] MGS-32 Timberwolf";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -1151,7 +1151,7 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_Mechanized";
 		side = 1;
 		faction = "MEU_UNSC";
-		displayName = "[1stMEU] MK12 Chipmunk-A";
+		displayName = "[11th] MK12 Chipmunk-A";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
@@ -1178,7 +1178,7 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_Mechanized";
 		side = 1;
 		faction = "MEU_UNSC";
-		displayName = "[1stMEU] MK12 Chipmunk-T";
+		displayName = "[11th] MK12 Chipmunk-T";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
@@ -1205,7 +1205,7 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_Mechanized";
 		side = 1;
 		faction = "MEU_UNSC";
-		displayName = "[1stMEU] MK12 Chipmunk-C";
+		displayName = "[11th] MK12 Chipmunk-C";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
@@ -1232,7 +1232,7 @@ class CfgVehicles
         editorsubCategory = "MEU_sub_Mechanized";
 		side = 1;
 		faction = "MEU_UNSC";
-		displayName = "[1stMEU] MK12 Chipmunk-R";
+		displayName = "[11th] MK12 Chipmunk-R";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
@@ -1650,7 +1650,7 @@ class CfgVehicles
 	
 	class Vulkan_Repair_APC: B_APC_Tracked_01_CRV_F
     {
-        displayname = "[1stMEU] Namer APC (Desert)";	
+        displayname = "[11th] Namer APC (Desert)";	
 		crewCrashProtection = 0.5;
 		crewExplosionProtection = 0.5;
         ace_repair_canRepair = 1; 
@@ -1670,7 +1670,7 @@ class CfgVehicles
     {
 		crewCrashProtection = 0.5;
 		crewExplosionProtection = 0.5;
-        displayname = "[1stMEU] Namer APC (Jungle)";
+        displayname = "[11th] Namer APC (Jungle)";
         ace_repair_canRepair = 1;
         scope = 2;
 		scopeCurator = 2;
@@ -2169,7 +2169,7 @@ class CfgVehicles
 		author = "Romeo"; 
 		side = 0; 
 		faction = "MEU_Insurrectionist"; 
-		displayName = "[1stMEU] Ratt"; 
+		displayName = "[11th] Ratt"; 
 		scope = 2; 
 		scopeCurator = 2; 
 		scopeArsenal = 2; 
@@ -2197,7 +2197,7 @@ class CfgVehicles
 		author = "Romeo"; 
 		side = 0; 
 		faction = "MEU_Insurrectionist"; 
-		displayName = "[1stMEU] Ratt HMG"; 
+		displayName = "[11th] Ratt HMG"; 
 		scope = 2; 
 		scopeCurator = 2; 
 		scopeArsenal = 2;
@@ -2225,7 +2225,7 @@ class CfgVehicles
 		author = "J.Burgess"; 
 		side = 0; 
 		faction = "MEU_Insurrectionist"; 
-		displayName = "[1stMEU] Ratt AT"; 
+		displayName = "[11th] Ratt AT"; 
 		scope = 2; 
 		scopeCurator = 2; 
 		scopeArsenal = 2; 
@@ -2251,7 +2251,7 @@ class CfgVehicles
     class MEU_Armata_Koslovic: O_T_MBT_04_command_F 
     { 
         side = 0; 
-        displayName = "[1stMEU] Armata"; 
+        displayName = "[11th] Armata"; 
         scope = 2; 
 		scopeCurator = 2; 
         scopeArsenal = 2; 
@@ -2267,7 +2267,7 @@ class CfgVehicles
         author = "Romeo";
         cargoProxyIndexes[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
         crew = "LM_OPCAN_KOS_Crewman";
-        displayName = "[1stMEU] Ural Transport";
+        displayName = "[11th] Ural Transport";
         faction = "MEU_Insurrectionist";
         getInProxyOrder[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_kuz_Koslovic_co.paa","first_meu_aux\data\vehicles\truck_02_int_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
@@ -2284,7 +2284,7 @@ class CfgVehicles
     {
         author = "Romeo";
         crew = "LM_OPCAN_KOS_Crewman";
-        displayName = "[1stMEU] Ural MLRS";
+        displayName = "[11th] Ural MLRS";
         faction = "MEU_Insurrectionist";
         scope = 2;
         scopeCurator = 2;
@@ -2299,7 +2299,7 @@ class CfgVehicles
         author = "Romeo"; 
 		side = 0; 
 		faction = "MEU_Insurrectionist"; 
-		displayName = "[1stMEU] Kazan"; 
+		displayName = "[11th] Kazan"; 
 		scope = 2; 
 		scopeCurator = 2; 
 		scopeArsenal = 2; 
@@ -2324,7 +2324,7 @@ class CfgVehicles
 	};
     class MEU_Galkin_Koslovic: O_MRAP_02_HMG_F
 	{
-		displayName = "[1stMEU] Galkin";
+		displayName = "[11th] Galkin";
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
@@ -2414,7 +2414,7 @@ class CfgVehicles
     class MEU_Otakar_Koslovic: O_APC_Wheeled_02_rcws_v2_F
     {
         crew = "LM_OPCAN_KOS_Crewman";
-        displayName = "[1stMEU] Otokar IFV";
+        displayName = "[11th] Otokar IFV";
         faction = "MEU_Insurrectionist";
         hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
         scope = 2;
@@ -2437,7 +2437,7 @@ class CfgVehicles
     class MEU_Otakar_Koslovic_Unarmed: O_APC_Wheeled_02_rcws_v2_F
     {
         crew = "LM_OPCAN_KOS_Crewman";
-        displayName = "[1stMEU] Otokar APC";
+        displayName = "[11th] Otokar APC";
         faction = "MEU_Insurrectionist";
         hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
         scope = 2;
@@ -2468,7 +2468,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         faction = "MEU_Insurrectionist";
-        displayName = "[1stMEU] Arkhangelsk";
+        displayName = "[11th] Arkhangelsk";
         hiddenSelections[] = {"camo1","camo2","camo3","camo4","CamoNet"};
         hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_scorcher_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
         maxFordingDepth = -1.25;
@@ -2481,14 +2481,14 @@ class CfgVehicles
     class MEU_Hyena_Friden: B_UGV_01_rcws_F
     {
         author = "Romeo";
-        displayname = "[1stMEU] Hyena";
+        displayname = "[11th] Hyena";
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
         crew = "B_UAV_AI";
         faction = "MEU_Insurrectionist";
         side = 0;
-        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\UGV_01_ext_Friden_co.paa","\first_meu_aux\data\vehicles\UGV_01_int_Friden_co.paa","\first_meu_aux\data\vehicles\Turret_Friden.paa"};
+        hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\UGV_01_ext_Friden_co.paa","\11th_STB_aux\data\vehicles\UGV_01_int_Friden_co.paa","\11th_STB_aux\data\vehicles\Turret_Friden.paa"};
         editorCategory = "MEU_Friden";
     };
 	class MEU_Leopard: APC_Wheeled_02_base_v2_F
@@ -2585,7 +2585,7 @@ class CfgVehicles
 	class MEU_Leopard_APC: MEU_Leopard
 	{
 		author = "1st MEU Oneill";
-		displayname = "[1stMEU] Leopard APC";
+		displayname = "[11th] Leopard APC";
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
@@ -2627,7 +2627,7 @@ class CfgVehicles
 	class MEU_Leopard_Medical_APC: MEU_Leopard
 	{
 		author = "1st MEU Oneill";
-		displayname = "[1stMEU] Leopard Medical APC";
+		displayname = "[11th] Leopard Medical APC";
         scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
@@ -2718,7 +2718,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] M12 AP Warthog";
+        displayName = "[11th] M12 AP Warthog";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -2733,7 +2733,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		forceInGarage = 1;
-		displayName = "[1stMEU] M813 TT Warthog";
+		displayName = "[11th] M813 TT Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
         
@@ -2743,7 +2743,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		forceInGarage = 1;
-		displayName = "[1stMEU] M12A1 AT Warthog";
+		displayName = "[11th] M12A1 AT Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
         
@@ -2753,7 +2753,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		forceInGarage = 1;
-		displayName = "[1stMEU] M12 FAV Warthog";
+		displayName = "[11th] M12 FAV Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
         
@@ -2763,7 +2763,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		forceInGarage = 1;
-		displayName = "[1stMEU] M12G1 FAV Warthog";
+		displayName = "[11th] M12G1 FAV Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
         
@@ -2773,7 +2773,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		forceInGarage = 1;
-		displayName = "[1stMEU] M12 LAAG Warthog";
+		displayName = "[11th] M12 LAAG Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
         
@@ -2785,10 +2785,10 @@ class CfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        displayName = "[1stMEU] Felix";
+        displayName = "[11th] Felix";
         faction = "MEU_Insurrectionist";
         hiddenSelections[] = {"camo"};
-        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Heli_Light_03_base_friden_CO.paa"};
+        hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\Heli_Light_03_base_friden_CO.paa"};
         side = 0;
         transportSoldier = 4;
         editorCategory = "MEU_Friden";
@@ -2801,10 +2801,10 @@ class CfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCruator = 2;
-        displayName = "[1stMEU] Arthur";
+        displayName = "[11th] Arthur";
         faction = "MEU_Insurrectionist";
         hiddenSelections[] = {"camo1","camo2","camo3"};
-        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Arthur_Body_1.paa","\first_meu_aux\data\vehicles\Arthur_Body_2.paa","\first_meu_aux\data\vehicles\Arthur_Body_3.paa"};
+        hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\Arthur_Body_1.paa","\11th_STB_aux\data\vehicles\Arthur_Body_2.paa","\11th_STB_aux\data\vehicles\Arthur_Body_3.paa"};
         side = 0;
         editorCategory = "MEU_Friden";
         editorsubCategory = "MEU_sub_rot";
@@ -2816,11 +2816,11 @@ class CfgVehicles
         scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
-        displayName = "[1stMEU] Wasp";
+        displayName = "[11th] Wasp";
         side = 0;
         faction = "MEU_Insurrectionist";
         hiddenSelections[]= {"camo1","camo2"};
-        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\plane_buzzard_body_01_co.paa","\first_meu_aux\data\vehicles\plane_buzzard_body_02_co.paa"};
+        hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\plane_buzzard_body_01_co.paa","\11th_STB_aux\data\vehicles\plane_buzzard_body_02_co.paa"};
         editorCategory = "MEU_Friden";
         editorsubCategory = "MEU_sub_fix";
     };
@@ -2831,16 +2831,16 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Witherwing";
+        displayName = "[11th] Witherwing";
         side = 0;
         faction = "MEU_Insurrectionist";
-        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Witherwing_01_co.paa","\first_meu_aux\data\vehicles\Witherwing_02_co.paa"};
+        hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\Witherwing_01_co.paa","\11th_STB_aux\data\vehicles\Witherwing_02_co.paa"};
         editorCategory = "MEU_Friden";
         editorsubCategory = "MEU_sub_fix";
     };
     class MEU_Ansaldo_Friden: O_MRAP_02_HMG_F
 	{
-		displayName = "[1stMEU] Ansaldo";
+		displayName = "[11th] Ansaldo";
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
@@ -2934,7 +2934,7 @@ class CfgVehicles
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] FV510 Warrior";
+		displayName = "[11th] FV510 Warrior";
 		faction = "MEU_UNSC";
 		crew = "VES_Rifleman_MA5B_MAR";
 		side = 1;
@@ -2942,7 +2942,7 @@ class CfgVehicles
 		editorsubCategory = "MEU_sub_Mechanized";
 		vehicleClass = "APCs";
 		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\APC_Tracked_03_Ext_olive_CO.paa","\first_meu_aux\data\vehicles\APC_Tracked_03_Ext2_olive_CO.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\APC_Tracked_03_Ext_olive_CO.paa","\11th_STB_aux\data\vehicles\APC_Tracked_03_Ext2_olive_CO.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
         class TransportMagazines
 		{
             delete _xx_1Rnd_HE_Grenade_shell;
@@ -3018,7 +3018,7 @@ class CfgVehicles
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] FV510 Warrior (Katie)";
+		displayName = "[11th] FV510 Warrior (Katie)";
 		faction = "MEU_UNSC";
 		crew = "VES_Rifleman_MA5B_MAR";
 		side = 1;
@@ -3026,7 +3026,7 @@ class CfgVehicles
 		editorsubCategory = "MEU_sub_Mechanized";
 		vehicleClass = "APCs";
 		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\APC_Tracked_03_Ext_olive_CO.paa","\first_meu_aux\data\vehicles\APC_Tracked_03_Ext2_olive_Katie_CO.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\APC_Tracked_03_Ext_olive_CO.paa","\11th_STB_aux\data\vehicles\APC_Tracked_03_Ext2_olive_Katie_CO.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
         class TransportMagazines
 		{
             delete _xx_1Rnd_HE_Grenade_shell;
@@ -3072,7 +3072,7 @@ class CfgVehicles
 		author = "Romeo";
 		scope = 2;
 		scopeCurator = 2;
-		displayName = "[1stMEU] Champion";
+		displayName = "[11th] Champion";
 		faction = "MEU_Insurrectionist";
 		crew = "LM_OPCAN_FRI_Rifleman";
 		side = 0;
@@ -3080,7 +3080,7 @@ class CfgVehicles
 		editorsubCategory = "MEU_sub_Mechanized";
 		vehicleClass = "APCs";
 		hiddenSelections[] = {"camo1","camo2","CamoNet","CamoSlat"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Champion_FRI_Back_co.paa","\first_meu_aux\data\vehicles\Champion_FRI_Front_co.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\Champion_FRI_Back_co.paa","\11th_STB_aux\data\vehicles\Champion_FRI_Front_co.paa","a3\Armor_F\Data\camonet_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
         class TransportMagazines
 		{
             delete _xx_1Rnd_HE_Grenade_shell;
@@ -3158,7 +3158,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] Raptor IFV";
+		displayName = "[11th] Raptor IFV";
 		picture = "\A3\armor_f_gamma\APC_Wheeled_03\Data\UI\APC_Wheeled_03_CA.paa";
 		faction = "MEU_Insurrectionist";
         crew = "LM_OPCAN_FRI_Rifleman";
@@ -3167,7 +3167,7 @@ class CfgVehicles
 		editorsubCategory = "MEU_sub_Motorised";
         vehicleClass = "APCs";
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4",};
-        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Raptor_01_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_02_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_Turret_co.paa","\first_meu_aux\data\vehicles\Raptor_03_Ext_co.paa"};
+        hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\Raptor_01_Ext_co.paa","\11th_STB_aux\data\vehicles\Raptor_02_Ext_co.paa","\11th_STB_aux\data\vehicles\Raptor_Turret_co.paa","\11th_STB_aux\data\vehicles\Raptor_03_Ext_co.paa"};
         class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -3247,7 +3247,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Raptor APC";
+        displayName = "[11th] Raptor APC";
         crew = "LM_OPCAN_FRI_Rifleman";
 		class EventHandlers: EventHandlers
 		{
@@ -3258,7 +3258,7 @@ class CfgVehicles
         editorCategory = "MEU_Friden";
 		editorsubCategory = "MEU_sub_Motorised";
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4"};
-        hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Raptor_01_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_02_Ext_co.paa","\first_meu_aux\data\vehicles\Raptor_03_Ext_co.paa"};
+        hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\Raptor_01_Ext_co.paa","\11th_STB_aux\data\vehicles\Raptor_02_Ext_co.paa","\11th_STB_aux\data\vehicles\Raptor_03_Ext_co.paa"};
         class Turrets{};
 		threat[] = {0,0,0};
         class TransportMagazines
@@ -3308,7 +3308,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Tusk";
+        displayName = "[11th] Tusk";
         side = 0;
 		crew = "LM_OPCAN_FRI_Rifleman";
 		faction = "MEU_Insurrectionist";
@@ -3317,7 +3317,7 @@ class CfgVehicles
         editorCategory = "MEU_Friden";
 		editorsubCategory = "MEU_sub_arm";
 		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
-		hiddenSelectionsTextures[] = {"\first_meu_aux\data\vehicles\Tusk_Ext01_co.paa","\first_meu_aux\data\vehicles\Tusk_Ext02_co.paa","\first_meu_aux\data\vehicles\Tusk_RCWS_co.paa"};
+		hiddenSelectionsTextures[] = {"\11th_STB_aux\data\vehicles\Tusk_Ext01_co.paa","\11th_STB_aux\data\vehicles\Tusk_Ext02_co.paa","\11th_STB_aux\data\vehicles\Tusk_RCWS_co.paa"};
         class Turrets: Turrets
 		{
             class MainTurret: MainTurret
@@ -3347,7 +3347,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M274-M Gungoose [WIP]";
+		displayName = "[11th] M274-M Gungoose [WIP]";
 		faction = "MEU_UNSC";
         ace_cargo_size = 10;
         side = 1;
@@ -3395,7 +3395,7 @@ class CfgVehicles
 		crew = "B_UAV_AI";
 		armor = 250;
 		vehicleClass = "OPTRE_UNSC_corvette_class";
-		displayName = "[1stMEU] M910 Point Defense Gun";
+		displayName = "[11th] M910 Point Defense Gun";
 		model = "\OPTRE_Corvette\weapons\pointdefense\turret.p3d";
 		author = "Article 2 Studios";
 		icon = "iconCrateWpns";
@@ -3549,7 +3549,7 @@ class CfgVehicles
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] M910 Point Defense Cannon";
+        displayName = "[11th] M910 Point Defense Cannon";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -3564,7 +3564,7 @@ class CfgVehicles
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] M910 Point Defense Cannon (inverted)";
+        displayName = "[11th] M910 Point Defense Cannon (inverted)";
         tf_hasLRradio = 1;
 		tf_isolatedAmount = 0.65;
 		tf_range = 120000;
@@ -3764,7 +3764,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		scopeArsenal = 2;
         airBrakeFrictionCoef = 50;
-        displayName = "[1stMEU] Pegasus Wyvern";
+        displayName = "[11th] Pegasus Wyvern";
         armor = 350;
         damageResistance = 0.00555;
         tf_range = 120000;
@@ -3880,7 +3880,7 @@ class CfgVehicles
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] Pegasus Blackfish";
+        displayName = "[11th] Pegasus Blackfish";
         armor = 1250;
         damageResistance = 0.00055;
         tf_range = 120000;
@@ -6739,7 +6739,7 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
-		displayName = "[1stMEU] M313 HRV Elephant";
+		displayName = "[11th] M313 HRV Elephant";
 		enginePower = 8000;
 		maxOmega = 800;
 		peakTorque = 80000;
@@ -6840,7 +6840,7 @@ class CfgVehicles
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
          editorsubCategory = "MEU_sub_Motorised";
-	     displayName = "[1stMEU] M640 Bison IFV";
+	     displayName = "[11th] M640 Bison IFV";
 	     weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
          magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles"};
          faction = "MEU_UNSC";
@@ -6918,7 +6918,7 @@ class CfgVehicles
          scopeCurator = 2;
          editorCategory = "MEU_cat_A";
          editorsubCategory = "MEU_sub_Motorised";
-	     displayName = "[1stMEU] M640 Bison MGS";
+	     displayName = "[11th] M640 Bison MGS";
 	     weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
          magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles",,"OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
          faction = "MEU_UNSC";
@@ -6997,7 +6997,7 @@ class CfgVehicles
         crew = "LM_OPCAN_URA_Crewman_D";
         editorCategory = "MEU_URA_D";
         editorsubCategory = "MEU_sub_Motorised";
-	    displayName = "[1stMEU] M640 Bison IFV";
+	    displayName = "[11th] M640 Bison IFV";
 	    weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles",};
         faction = "MEU_UNSC";
@@ -7012,7 +7012,7 @@ class CfgVehicles
         crew = "LM_OPCAN_URA_Crewman_D";
         editorCategory = "MEU_URA_D";
         editorsubCategory = "MEU_sub_Motorised";
-	    displayName = "[1stMEU] M640 Bison MGS";
+	    displayName = "[11th] M640 Bison MGS";
 	    weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
         faction = "MEU_UNSC";
@@ -7027,7 +7027,7 @@ class CfgVehicles
         crew = "LM_OPCAN_URA_Crewman";
         editorCategory = "MEU_URA";
         editorsubCategory = "MEU_sub_Motorised";
-	    displayName = "[1stMEU] M640 Bison IFV";
+	    displayName = "[11th] M640 Bison IFV";
 	    weapons[] = {"OPTRE_M230","OPTRE_missiles_C2GMLS"};
         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
         faction = "MEU_UNSC";
@@ -7042,7 +7042,7 @@ class CfgVehicles
         crew = "LM_OPCAN_URA_Crewman";
         editorCategory = "MEU_URA";
         editorsubCategory = "MEU_sub_Motorised";
-	    displayName = "[1stMEU] M640 Bison MGS";
+	    displayName = "[11th] M640 Bison MGS";
 	    weapons[] = {"OPTRE_90mm_M556","OPTRE_missiles_C2GMLS","OPTRE_M41_LAAG"};
         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
         faction = "MEU_UNSC";

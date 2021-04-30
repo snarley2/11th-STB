@@ -551,7 +551,7 @@ class CfgMagazines
     class OPTRE_100Rnd_127x99_M250HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";
-        author = "[1stMEU] Oneill";
+        author = "[11th] Oneill";
         ace_isbelt = 1;
 		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname = "100Rnd 12.7x99mm Box Magazine";
@@ -569,7 +569,7 @@ class CfgMagazines
 	class OPTRE_100Rnd_127x99_HE_M250HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";
-        author = "[1stMEU] Oneill";
+        author = "[11th] Oneill";
         ace_isbelt = 1;
 		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname = "100Rnd 12.7x99mm HE Box Magazine";
@@ -587,7 +587,7 @@ class CfgMagazines
 	class OPTRE_100Rnd_127x99_TRACER_M250HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";
-        author = "[1stMEU] Oneill";
+        author = "[11th] Oneill";
         ace_isbelt = 1;
 		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname = "100Rnd 12.7x99mm Tracer Box Magazine";
@@ -605,7 +605,7 @@ class CfgMagazines
 	class OPTRE_100Rnd_127x99_TRACER_HE_M250HMG: OPTRE_100Rnd_762x51_Box
 	{
 		dlc = "OPTRE";
-        author = "[1stMEU] Oneill";
+        author = "[11th] Oneill";
         ace_isbelt = 1;
 		model = "\OPTRE_Weapons\MG\magazine_1.p3d";
 		displayname = "100Rnd 12.7x99mm Tracer HE Box Magazine";

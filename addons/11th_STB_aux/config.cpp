@@ -2,22 +2,22 @@
 #define mag_xx(a,b) class _xx_##a {magazine = a; count = b;}
 #define weap_xx(a,b) class _xx_##a {weapon = a; count = b;}
 //gear
-#include "\first_meu_aux\MEU_Vehicles\CfgVehicles.hpp"
-#include "\first_meu_aux\MEU_Gear\CfgWeapons.hpp"
-#include "\first_meu_aux\MEU_Gear\CfgAmmo.hpp"
-#include "\first_meu_aux\MEU_Gear\CfgEventHandlers.hpp"
-#include "\first_meu_aux\MEU_Gear\CfgMagazines.hpp"
-#include "\first_meu_aux\MEU_Gear\CfgGlasses.hpp"
+#include "\11th_STB_aux\MEU_Vehicles\CfgVehicles.hpp"
+#include "\11th_STB_aux\MEU_Gear\CfgWeapons.hpp"
+#include "\11th_STB_aux\MEU_Gear\CfgAmmo.hpp"
+#include "\11th_STB_aux\MEU_Gear\CfgEventHandlers.hpp"
+#include "\11th_STB_aux\MEU_Gear\CfgMagazines.hpp"
+#include "\11th_STB_aux\MEU_Gear\CfgGlasses.hpp"
 //misc
-#include "\first_meu_aux\MEU_Misc\Cfgtreatment.hpp"
-#include "\first_meu_aux\MEU_Misc\Cfgtreatmentactions.hpp"
-#include "\first_meu_aux\MEU_Misc\Cfgloadingscreens.hpp"
-#include "\first_meu_aux\MEU_Misc\CfgWorlds.hpp"
-#include "\first_meu_aux\MEU_Misc\CfgACEInjuries.hpp"
+#include "\11th_STB_aux\MEU_Misc\Cfgtreatment.hpp"
+#include "\11th_STB_aux\MEU_Misc\Cfgtreatmentactions.hpp"
+#include "\11th_STB_aux\MEU_Misc\Cfgloadingscreens.hpp"
+#include "\11th_STB_aux\MEU_Misc\CfgWorlds.hpp"
+#include "\11th_STB_aux\MEU_Misc\CfgACEInjuries.hpp"
 //units
-#include "\first_meu_aux\MEU_Units\CfgGroups.hpp"
+#include "\11th_STB_aux\MEU_Units\CfgGroups.hpp"
 //oops
-#include "\first_meu_aux\Functions\CfgFunctions.hpp"
+#include "\11th_STB_aux\Functions\CfgFunctions.hpp"
 
 class cfgPatches
 {
@@ -469,103 +469,103 @@ class CfgEditorCategories
 {
     class MEU_cat_A
     {   
-        displayName = "[1stMEU] UNSC";
+        displayName = "[11th] UNSC";
         scopeCurator = 2;
         scopeeditor = 2;
     };
 	class MEU_Objects
     {   
-        displayName = "[1stMEU] Objects";
+        displayName = "[11th] Objects";
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_URF
     {
-        displayName = "[1stMEU] United Rebel Front"
+        displayName = "[11th] United Rebel Front"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_ER
     {
-        displayName = "[1stMEU] Eridanus Rebels"
+        displayName = "[11th] Eridanus Rebels"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_URF_BJ_WDL
     {
-        displayName = "[1stMEU] URF Battlejumpers (Woodland)"
+        displayName = "[11th] URF Battlejumpers (Woodland)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_URF_BJ_URB
     {
-        displayName = "[1stMEU] URF Battlejumpers (Urban)"
+        displayName = "[11th] URF Battlejumpers (Urban)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_Friden
     {
-        displayName = "[1stMEU] Fridens"
+        displayName = "[11th] Fridens"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_Friden_Des
     {
-        displayName = "[1stMEU] Fridens (Desert)"
+        displayName = "[11th] Fridens (Desert)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_Friden_Wdl
     {
-        displayName = "[1stMEU] Fridens (Woodland)"
+        displayName = "[11th] Fridens (Woodland)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_Koslovic_Jun
     {
-        displayName = "[1stMEU] Koslovic (Jungle)"
+        displayName = "[11th] Koslovic (Jungle)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_Koslovic_Swa
     {
-        displayName = "[1stMEU] Koslovic (Swamp)"
+        displayName = "[11th] Koslovic (Swamp)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_Koslovic_Wdl
     {
-        displayName = "[1stMEU] Koslovic"
+        displayName = "[11th] Koslovic"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_Koslovic_Ard
     {
-        displayName = "[1stMEU] Koslovic (Arid)"
+        displayName = "[11th] Koslovic (Arid)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_URA_BJ
     {
-        displayName = "[1stMEU] URA Battlejumpers"
+        displayName = "[11th] URA Battlejumpers"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_URA
     {
-        displayName = "[1stMEU] United Rebel Alliance (Woodland)"
+        displayName = "[11th] United Rebel Alliance (Woodland)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_URA_D
     {
-        displayName = "[1stMEU] United Rebel Alliance (Desert)"
+        displayName = "[11th] United Rebel Alliance (Desert)"
         scopeCurator = 2;
         scopeeditor = 2;
     };
     class MEU_SU
     {
-        displayName = "[1stMEU] Seccesionist Union"
+        displayName = "[11th] Seccesionist Union"
         scopeCurator = 2;
         scopeeditor = 2;
     };

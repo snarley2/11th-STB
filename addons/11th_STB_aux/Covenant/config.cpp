@@ -50,7 +50,7 @@ class CfgFactionClasses
 {
 	class MEU_Covenant
 	{
-		displayName="[1stMEU] Covenant";
+		displayName="[11th] Covenant";
 		author="1st MEU Seven";
 		priority=1;
 		side=0;
@@ -61,7 +61,7 @@ class CfgEditorCategories
 {
 	class MEU_cat_Cov
 	{
-		displayName="[1stMEU] Covenant";
+		displayName="[11th] Covenant";
         scopeCurator = 2;
         scopeeditor = 2;
 	};
@@ -721,7 +721,7 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Combat Skin";
+		displayName="[11th]Sangheili Combat Skin";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -738,7 +738,7 @@ class cfgWeapons
 	{
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Minor)";
+		displayName="[11th]Sangheili Armor (Minor)";
 		model="\OPTRE_FC_Units\Elite\Elite_Armor.p3d";
 		hiddenSelections[]=
 		{
@@ -904,7 +904,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Major)";
+		displayName="[11th]Sangheili Armor (Major)";
 		hiddenSelectionsTextures[]=
 		{
 			"optre_fc_units\elite\data\major_body_armor_co.paa",
@@ -981,7 +981,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Ranger)";
+		displayName="[11th]Sangheili Armor (Ranger)";
 		hiddenSelectionsTextures[]=
 		{
 			"optre_fc_units\elite\data\SpecOps_body_armor_co.paa",
@@ -1001,7 +1001,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Ultra)";
+		displayName="[11th]Sangheili Armor (Ultra)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1140,7 +1140,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Zealot)";
+		displayName="[11th]Sangheili Armor (Zealot)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1222,7 +1222,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Field Marshal)";
+		displayName="[11th]Sangheili Armor (Field Marshal)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1304,7 +1304,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Honor Guard)";
+		displayName="[11th]Sangheili Armor (Honor Guard)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1394,7 +1394,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Armor (Honor Guard Ultra)";
+		displayName="[11th]Sangheili Armor (Honor Guard Ultra)";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1543,7 +1543,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (Minor)";
+		displayName="[11th]Sangheili Helmet (Minor)";
 		model="\OPTRE_FC_Units\Elite\Minor_Helmet.p3d";
 		picture="\OPTRE_FC_Units\Elite\data\Elite_Minor_Helmet_i_CA.paa";
 		hiddenSelections[]=
@@ -1590,7 +1590,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (Major)";
+		displayName="[11th]Sangheili Helmet (Major)";
 		hiddenSelectionsTextures[]=
 		{
 			"optre_fc_units\elite\data\major_helmet_co.paa"
@@ -1623,7 +1623,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (SpecOps)";
+		displayName="[11th]Sangheili Helmet (SpecOps)";
 		hiddenSelectionsTextures[]=
 		{
 			"optre_fc_units\elite\data\SpecOps_helmet_co.paa"
@@ -1641,7 +1641,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (Ultra)";
+		displayName="[11th]Sangheili Helmet (Ultra)";
 		model="\OPTRE_FC_Units\Elite\Ultra_Helmet.p3d";
 		picture="\OPTRE_FC_Units\Elite\data\Elite_Ultra_Helmet_i_CA.paa";
 		hiddenSelections[]=
@@ -1687,7 +1687,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (Zealot)";
+		displayName="[11th]Sangheili Helmet (Zealot)";
 		model="\OPTRE_FC_Units\Elite\Zealot_Helmet.p3d";
 		hiddenSelections[]=
 		{
@@ -1731,7 +1731,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (Field Marshal)";
+		displayName="[11th]Sangheili Helmet (Field Marshal)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1759,7 +1759,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (Honor Guard)";
+		displayName="[11th]Sangheili Helmet (Honor Guard)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1799,7 +1799,7 @@ class cfgWeapons
 		
 		scope=2;
 		author="1st MEU Seven";
-		displayName="[1stMEU]Sangheili Helmet (Honor Guard Ultra)";
+		displayName="[11th]Sangheili Helmet (Honor Guard Ultra)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -1860,7 +1860,7 @@ class CfgGroups
 		side = 0;
         class MEU_Sangheili_Spacer
         {
-            name = "[1stMEU] Covenant";
+            name = "[11th] Covenant";
             class MEU_Sangheili_groups
             {
                 name = "Sangheili";

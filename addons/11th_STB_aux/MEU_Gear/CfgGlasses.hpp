@@ -12,7 +12,7 @@ class CfgGlasses
     {
         scope = 2;
         scopeArsenal = 2;
-        displayname = "[1stMEU] Praetorian Shemagh (Olive) (Mark)";
+        displayname = "[11th] Praetorian Shemagh (Olive) (Mark)";
         ACE_Resistance = 2;
         ACE_Protection = 1;
         ace_overlay = "first_meu_aux\Data\misc\hud_mork.paa";
@@ -28,7 +28,7 @@ class CfgGlasses
     // CBRN Shemaghs
     class ODST_Shemagh_Olive : LM_OPCAN_UP_Shemagh
 	{
-        displayName = "[1stMEU] Praetorian Shemagh (Olive)";
+        displayName = "[11th] Praetorian Shemagh (Olive)";
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
@@ -43,7 +43,7 @@ class CfgGlasses
     };
     class ODST_Shemagh_Urban : LM_OPCAN_URB_UP_Shemagh
     {
-        displayName = "[1stMEU] Praetorian Shemagh (Urban)";
+        displayName = "[11th] Praetorian Shemagh (Urban)";
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;   
@@ -58,7 +58,7 @@ class CfgGlasses
 	};
     class ODST_Shemagh_Tan : LM_OPCAN_DES_UP_Shemagh
     {
-        displayName = "[1stMEU] Praetorian Shemagh (Tan)";
+        displayName = "[11th] Praetorian Shemagh (Tan)";
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;    
@@ -73,7 +73,7 @@ class CfgGlasses
     };
     class ODST_Shemagh_Brown : LM_OPCAN_BRW_UP_Shemagh
     {
-        displayName = "[1stMEU] Praetorian Shemagh (Brown)";
+        displayName = "[11th] Praetorian Shemagh (Brown)";
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;
@@ -88,7 +88,7 @@ class CfgGlasses
     };
     class JTAC_Bala : VES_HUD_Balaclava_Gray
     {
-        displayName = "[1stMEU] [JTAC] Balaclava";
+        displayName = "[11th] [JTAC] Balaclava";
 		scope = 2;
         scopeArsenal = 2;
         scopeCurator = 2;

@@ -104,7 +104,7 @@ class CfgWeapons
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] BJ Ballistic Undersuit";
+		displayName = "[11th] BJ Ballistic Undersuit";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -122,7 +122,7 @@ class CfgWeapons
 		scope=2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName="[1stMEU] BJ Armor Plating (Woodland)";
+		displayName="[11th] BJ Armor Plating (Woodland)";
 		model="\OPTRE_Ins_Units\BJ\armor.p3d";
 		class ItemInfo: VestItem
 		{
@@ -180,7 +180,7 @@ class CfgWeapons
 	};
 	class MEU_Ins_BJ_Armor_URB: MEU_Ins_BJ_Armor
 	{
-		displayName="[1stMEU] BJ Armor Plating (Urban)";
+		displayName="[11th] BJ Armor Plating (Urban)";
 		model="\OPTRE_Ins_Units\BJ\armor_urb.p3d";
 		class ItemInfo: ItemInfo
 		{
@@ -194,7 +194,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName="[1stMEU] BJ Helmet (Woodland)";
+		displayName="[11th] BJ Helmet (Woodland)";
 		model="\OPTRE_Ins_Units\BJ\helmet.p3d";
 		class ItemInfo: HeadgearItem
 		{
@@ -227,7 +227,7 @@ class CfgWeapons
 	};
 	class MEU_Ins_BJ_Helmet_URB: MEU_Ins_BJ_Helmet
 	{
-		displayName="[1stMEU] BJ Helmet (Urban)";
+		displayName="[11th] BJ Helmet (Urban)";
 		model="\OPTRE_Ins_Units\BJ\helmet_urb.p3d";
 		class ItemInfo: ItemInfo
 		{
@@ -242,7 +242,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] URF Fatigues";
+        displayName = "[11th] URF Fatigues";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
         class ItemInfo: UniformItem
         {
@@ -259,7 +259,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName="[1stMEU] URF Ballistic Armor";
+		displayName="[11th] URF Ballistic Armor";
 		model="\OPTRE_Ins_Units\URF\armor.p3d";
 		class ItemInfo: VestItem
 		{
@@ -321,7 +321,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName="[1stMEU] URF Helmet";
+		displayName="[11th] URF Helmet";
 		model="\OPTRE_Ins_Units\URF\helmet.p3d";
 		hiddenSelections[]=
 		{
@@ -370,7 +370,7 @@ class CfgWeapons
 	};
 	class MEU_Ins_URF_Helmet_Gog: MEU_Ins_URF_Helmet
 	{
-		displayName="[1stMEU] URF Helmet (Goggles)";
+		displayName="[11th] URF Helmet (Goggles)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -387,7 +387,7 @@ class CfgWeapons
 	};
 	class MEU_Ins_URF_Helmet_Bal: MEU_Ins_URF_Helmet
 	{
-		displayName="[1stMEU] URF Helmet (Balaclava)";
+		displayName="[11th] URF Helmet (Balaclava)";
 		hiddenSelections[]=
 		{
 			"camo",
@@ -404,7 +404,7 @@ class CfgWeapons
 	};
 	class MEU_Ins_URF_Helmet_Combo: MEU_Ins_URF_Helmet
 	{
-		displayName="[1stMEU] URF Helmet (Balaclava / Goggles)";
+		displayName="[11th] URF Helmet (Balaclava / Goggles)";
 		hiddenSelections[]=
 		{"camo"};
 		class ItemInfo: ItemInfo
@@ -421,7 +421,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-        displayName = "[1stMEU] CDF Fatigues (Woodland)";
+        displayName = "[11th] CDF Fatigues (Woodland)";
 		picture="\A3\characters_f_beta\data\ui\icon_U_IR_CrewUniform_rucamo_ca.paa";
         model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         class ItemInfo: UniformItem
@@ -435,7 +435,7 @@ class CfgWeapons
     };
 	class MEU_Ins_CDF_Combat_Uniform_Rolled: MEU_Ins_CDF_Combat_Uniform
 	{
-		displayName="[1stMEU] CDF Fatigues (Woodland)(Rolled)";
+		displayName="[11th] CDF Fatigues (Woodland)(Rolled)";
 		picture="\A3\characters_f_beta\data\ui\icon_U_IR_CrewUniform_rucamo_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		class ItemInfo: ItemInfo
@@ -445,7 +445,7 @@ class CfgWeapons
 	};
     class MEU_Ins_CDF_Combat_Uniform_D : MEU_Ins_CDF_Combat_Uniform
     {
-        displayName = "[1stMEU] CDF Fatigues (Desert)";
+        displayName = "[11th] CDF Fatigues (Desert)";
 		picture="\A3\characters_f_beta\data\ui\icon_U_IR_CrewUniform_rucamo_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
         class ItemInfo: ItemInfo
@@ -455,7 +455,7 @@ class CfgWeapons
     };
 	class MEU_Ins_CDF_Combat_Uniform_Rolled_D: MEU_Ins_CDF_Combat_Uniform
 	{
-		displayName="[1stMEU] CDF Fatigues (Desert)(Rolled)";
+		displayName="[11th] CDF Fatigues (Desert)(Rolled)";
 		picture="\A3\characters_f_beta\data\ui\icon_U_IR_CrewUniform_rucamo_ca.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
 		class ItemInfo: ItemInfo
@@ -470,7 +470,7 @@ class CfgWeapons
 		scope=2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName="[1stMEU] CDF ACTV Vest";
+		displayName="[11th] CDF ACTV Vest";
 		picture="\A3\characters_f\Data\UI\icon_V_BandollierB_CA.paa";
 		model="\LM_OPCAN3.0\BLU\CGC\V\ACTV";
 		class ItemInfo: VestItem
@@ -528,7 +528,7 @@ class CfgWeapons
 	};
 	class MEU_Ins_CDF_VEST_UP: MEU_Ins_CDF_VEST
 	{
-		displayName="[1stMEU] CDF ACTV Vest (Pads)";
+		displayName="[11th] CDF ACTV Vest (Pads)";
 		picture="\A3\characters_f\Data\UI\icon_V_BandollierB_CA.paa";
 		model="\LM_OPCAN3.0\BLU\CGC\V\ACTV_UP";
 		class ItemInfo: ItemInfo
@@ -543,7 +543,7 @@ class CfgWeapons
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName="[1stMEU] CDF CH-230";
+		displayName="[11th] CDF CH-230";
 		picture="\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
 		model="\LM_OPCAN3.0\BLU\CGC\H\CH230";
 		hiddenSelections[]={"Camo"};
@@ -579,38 +579,38 @@ class CfgWeapons
     
     class MEU_Ins_CDF_CH230_CAM: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (Camo)";
+		displayName="[11th] CDF CH-230 (Camo)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSN.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MD: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (Medic)";
+		displayName="[11th] CDF CH-230 (Medic)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMD.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MG: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (Dakka)";
+		displayName="[11th] CDF CH-230 (Dakka)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMG.paa"};
 	};
 	class MEU_Ins_CDF_CH230_SL: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (Born)";
+		displayName="[11th] CDF CH-230 (Born)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSL.paa"};
 	};
 	class MEU_Ins_CDF_CH230_PR: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (Preacher)";
+		displayName="[11th] CDF CH-230 (Preacher)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coCH.paa"};
 	};
     //Cig start
 	class MEU_Ins_CDF_CH230_CIG: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (w/ Cigs)";
+		displayName="[11th] CDF CH-230 (w/ Cigs)";
 		model="\LM_OPCAN3.0\BLU\CGC\H\CH230_Cig";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_co.paa"};
@@ -622,38 +622,38 @@ class CfgWeapons
     
     class MEU_Ins_CDF_CH230_CAM_CIG: MEU_Ins_CDF_CH230_CIG
 	{
-		displayName="[1stMEU] CDF CH-230 (Camo w/ Cigs)";
+		displayName="[11th] CDF CH-230 (Camo w/ Cigs)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSN.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MD_CIG: MEU_Ins_CDF_CH230_CIG
 	{
-		displayName="[1stMEU] CDF CH-230 (Medic w/ Cigs)";
+		displayName="[11th] CDF CH-230 (Medic w/ Cigs)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMD.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MG_CIG: MEU_Ins_CDF_CH230_CIG
 	{
-		displayName="[1stMEU] CDF CH-230 (Dakka w/ Cigs)";
+		displayName="[11th] CDF CH-230 (Dakka w/ Cigs)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMG.paa"};
 	};
 	class MEU_Ins_CDF_CH230_SL_CIG: MEU_Ins_CDF_CH230_CIG
 	{
-		displayName="[1stMEU] CDF CH-230 (Born w/ Cigs)";
+		displayName="[11th] CDF CH-230 (Born w/ Cigs)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSL.paa"};
 	};
 	class MEU_Ins_CDF_CH230_PR_CIG: MEU_Ins_CDF_CH230_CIG
 	{
-		displayName="[1stMEU] CDF CH-230 (Preacher w/ Cigs)";
+		displayName="[11th] CDF CH-230 (Preacher w/ Cigs)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coCH.paa"};
 	};
     //bullet start
 	class MEU_Ins_CDF_CH230_Bull: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (w/ Bullets)";
+		displayName="[11th] CDF CH-230 (w/ Bullets)";
 		model="\LM_OPCAN3.0\BLU\CGC\H\CH230_Bull";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_co.paa"};
@@ -665,38 +665,38 @@ class CfgWeapons
     
     class MEU_Ins_CDF_CH230_CAM_Bull: MEU_Ins_CDF_CH230_Bull
 	{
-		displayName="[1stMEU] CDF CH-230 (Camo w/ Bullets)";
+		displayName="[11th] CDF CH-230 (Camo w/ Bullets)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSN.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MD_Bull: MEU_Ins_CDF_CH230_Bull
 	{
-		displayName="[1stMEU] CDF CH-230 (Medic w/ Bullets)";
+		displayName="[11th] CDF CH-230 (Medic w/ Bullets)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMD.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MG_Bull: MEU_Ins_CDF_CH230_Bull
 	{
-		displayName="[1stMEU] CDF CH-230 (Dakka w/ Bullets)";
+		displayName="[11th] CDF CH-230 (Dakka w/ Bullets)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMG.paa"};
 	};
 	class MEU_Ins_CDF_CH230_SL_Bull: MEU_Ins_CDF_CH230_Bull
 	{
-		displayName="[1stMEU] CDF CH-230 (Born w/ Bullets)";
+		displayName="[11th] CDF CH-230 (Born w/ Bullets)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSL.paa"};
 	};
 	class MEU_Ins_CDF_CH230_PR_Bull: MEU_Ins_CDF_CH230_Bull
 	{
-		displayName="[1stMEU] CDF CH-230 (Preacher w/ Bullets)";
+		displayName="[11th] CDF CH-230 (Preacher w/ Bullets)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coCH.paa"};
 	};
     //Combo Start
 	class MEU_Ins_CDF_CH230_Combo: MEU_Ins_CDF_CH230
 	{
-		displayName="[1stMEU] CDF CH-230 (w/ Combo)";
+		displayName="[11th] CDF CH-230 (w/ Combo)";
 		model="\LM_OPCAN3.0\BLU\CGC\H\CH230_Combo";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_co.paa"};
@@ -708,31 +708,31 @@ class CfgWeapons
     
     class MEU_Ins_CDF_CH230_CAM_Combo: MEU_Ins_CDF_CH230_Combo
 	{
-		displayName="[1stMEU] CDF CH-230 (Camo w/ Combo)";
+		displayName="[11th] CDF CH-230 (Camo w/ Combo)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSN.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MD_Combo: MEU_Ins_CDF_CH230_Combo
 	{
-		displayName="[1stMEU] CDF CH-230 (Medic w/ Combo)";
+		displayName="[11th] CDF CH-230 (Medic w/ Combo)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMD.paa"};
 	};
 	class MEU_Ins_CDF_CH230_MG_Combo: MEU_Ins_CDF_CH230_Combo
 	{
-		displayName="[1stMEU] CDF CH-230 (Dakka w/ Combo)";
+		displayName="[11th] CDF CH-230 (Dakka w/ Combo)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coMG.paa"};
 	};
 	class MEU_Ins_CDF_CH230_SL_Combo: MEU_Ins_CDF_CH230_Combo
 	{
-		displayName="[1stMEU] CDF CH-230 (Born w/ Combo)";
+		displayName="[11th] CDF CH-230 (Born w/ Combo)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coSL.paa"};
 	};
 	class MEU_Ins_CDF_CH230_PR_Combo: MEU_Ins_CDF_CH230_Combo
 	{
-		displayName="[1stMEU] CDF CH-230 (Preacher w/ Combo)";
+		displayName="[11th] CDF CH-230 (Preacher w/ Combo)";
 		hiddenSelections[]={"Camo"};
 		hiddenSelectionsTextures[]={"\LM_OPCAN3.0\BLU\CGC\H\CH230_coCH.paa"};
 	};

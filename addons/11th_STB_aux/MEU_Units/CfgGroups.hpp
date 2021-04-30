@@ -6,7 +6,7 @@ class CfgGroups
 		side = 0; 
         class MEU_Zeus_Spacer 
         { 
-            name = "[1stMEU] OPFOR";    
+            name = "[11th] OPFOR";    
 //United Rebel Front		 
 			class OPTRE_Ins_URF 
             { 

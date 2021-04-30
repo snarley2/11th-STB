@@ -6,7 +6,7 @@
 		scopeCurator = 1;
 		dlc = "1st MEU";
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D Body Armor (BASE)";
+		displayName = "[11th] M52D Body Armor (BASE)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 
 		{
@@ -222,7 +222,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D AutoRifleman";
+		displayName = "[11th] M52D AutoRifleman";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -332,7 +332,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D AutoRifleman (Blue)";
+		displayName = "[11th] M52D AutoRifleman (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -435,7 +435,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D AutoRifleman (Yellow)";
+		displayName = "[11th] M52D AutoRifleman (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -537,7 +537,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D AutoRifleman (Silver)";
+		displayName = "[11th] M52D AutoRifleman (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -639,7 +639,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D AutoRifleman (Purple)";
+		displayName = "[11th] M52D AutoRifleman (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -740,7 +740,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D AutoRifleman (Red)";
+		displayName = "[11th] M52D AutoRifleman (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -843,7 +843,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SHTGN)";
+		displayName = "[11th] M52D Breacher (SHTGN)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -951,7 +951,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SHTGN) (Blue)";
+		displayName = "[11th] M52D Breacher (SHTGN) (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1054,7 +1054,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SHTGN) (Yellow)";
+		displayName = "[11th] M52D Breacher (SHTGN) (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1156,7 +1156,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SHTGN) (Silver)";
+		displayName = "[11th] M52D Breacher (SHTGN) (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1258,7 +1258,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SHTGN) (Purple)";
+		displayName = "[11th] M52D Breacher (SHTGN) (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1359,7 +1359,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SHTGN) (Red)";
+		displayName = "[11th] M52D Breacher (SHTGN) (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1462,7 +1462,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SMG)";
+		displayName = "[11th] M52D Breacher (SMG)";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -1570,7 +1570,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SMG) (Blue)";
+		displayName = "[11th] M52D Breacher (SMG) (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1673,7 +1673,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SMG) (Yellow)";
+		displayName = "[11th] M52D Breacher (SMG) (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1775,7 +1775,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SMG) (Silver)";
+		displayName = "[11th] M52D Breacher (SMG) (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1877,7 +1877,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SMG) (Purple)";
+		displayName = "[11th] M52D Breacher (SMG) (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -1978,7 +1978,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Breacher (SMG) (Red)";
+		displayName = "[11th] M52D Breacher (SMG) (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -2079,7 +2079,7 @@
     	class M52DCorpsman: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D Corpsman";
+		displayName = "[11th] M52D Corpsman";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -2185,7 +2185,7 @@
 	class M52DPlatoonCorpsmanSilver: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D Corpsman Leadership (Silver)";
+		displayName = "[11th] M52D Corpsman Leadership (Silver)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -2287,7 +2287,7 @@
 	class M52DPlatoonCorpsmanPurple: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D Corpsman Leadership (Purple)";
+		displayName = "[11th] M52D Corpsman Leadership (Purple)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -2389,7 +2389,7 @@
     	class M52DCompanyCorpsman: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D Corpsman Leadership (Red)";
+		displayName = "[11th] M52D Corpsman Leadership (Red)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -2495,7 +2495,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Grenadier";
+		displayName = "[11th] M52D Grenadier";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -2608,7 +2608,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Grenadier (Blue)";
+		displayName = "[11th] M52D Grenadier (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -2714,7 +2714,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Grenadier (Yellow)";
+		displayName = "[11th] M52D Grenadier (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -2818,7 +2818,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Grenadier (Silver)";
+		displayName = "[11th] M52D Grenadier (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -2922,7 +2922,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Grenadier (Purple)";
+		displayName = "[11th] M52D Grenadier (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3025,7 +3025,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Grenadier (Red)";
+		displayName = "[11th] M52D Grenadier (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3130,7 +3130,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Marksman";
+		displayName = "[11th] M52D Marksman";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -3236,7 +3236,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Marksman (Blue)";
+		displayName = "[11th] M52D Marksman (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3341,7 +3341,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Marksman (Yellow)";
+		displayName = "[11th] M52D Marksman (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3444,7 +3444,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Marksman (Silver)";
+		displayName = "[11th] M52D Marksman (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3548,7 +3548,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Marksman (Purple)";
+		displayName = "[11th] M52D Marksman (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3651,7 +3651,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Marksman (Red)";
+		displayName = "[11th] M52D Marksman (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3756,7 +3756,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Rifleman";
+		displayName = "[11th] M52D Rifleman";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -3866,7 +3866,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Rifleman (Blue)";
+		displayName = "[11th] M52D Rifleman (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -3973,7 +3973,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Rifleman (Yellow)";
+		displayName = "[11th] M52D Rifleman (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -4079,7 +4079,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Rifleman (Silver)";
+		displayName = "[11th] M52D Rifleman (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -4185,7 +4185,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Rifleman (Purple)";
+		displayName = "[11th] M52D Rifleman (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -4292,7 +4292,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Rifleman (Red)";
+		displayName = "[11th] M52D Rifleman (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -4399,7 +4399,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D RTO";
+		displayName = "[11th] M52D RTO";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -4503,7 +4503,7 @@
 	class M52DRTOSilver: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D RTO Leadership (Silver)";
+		displayName = "[11th] M52D RTO Leadership (Silver)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -4607,7 +4607,7 @@
 	class M52DRTOPurple: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D RTO Leadership (Purple)";
+		displayName = "[11th] M52D RTO Leadership (Purple)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -4711,7 +4711,7 @@
     class M52DRTORed: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D RTO Leadership (Red)";
+		displayName = "[11th] M52D RTO Leadership (Red)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -4819,7 +4819,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Sniper";
+		displayName = "[11th] M52D Sniper";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -4929,7 +4929,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Sniper (Blue)";
+		displayName = "[11th] M52D Sniper (Blue)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -5034,7 +5034,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Sniper (Yellow)";
+		displayName = "[11th] M52D Sniper (Yellow)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -5138,7 +5138,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Sniper (Silver)";
+		displayName = "[11th] M52D Sniper (Silver)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -5242,7 +5242,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Sniper (Purple)";
+		displayName = "[11th] M52D Sniper (Purple)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -5345,7 +5345,7 @@
         scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Sniper (Red)";
+		displayName = "[11th] M52D Sniper (Red)";
 		hiddenSelections[] = 	
 		{
 			"camo",
@@ -5448,7 +5448,7 @@
     class Prae36: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Oneill";
-		displayName="[1stMEU] M52D D-6 (Oneill)";
+		displayName="[11th] M52D D-6 (Oneill)";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -5553,7 +5553,7 @@
     class Prae37: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Mark";
-		displayName="[1stMEU] M52D D-5 (Mark)";
+		displayName="[11th] M52D D-5 (Mark)";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
@@ -5661,7 +5661,7 @@
     class Prae3R: 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Oneill";
-		displayName = "[1stMEU] M52D D-R (Dimitri)";
+		displayName = "[11th] M52D D-R (Dimitri)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -5765,7 +5765,7 @@
     class Prae3M : 1MEU_BASE_M52D_Armor
 	{
 		author = "1st MEU Mark";
-		displayName = "[1stMEU] M52D D-M (FloodedMac)";
+		displayName = "[11th] M52D D-M (FloodedMac)";
 		scope = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -5869,7 +5869,7 @@
     class Prae46: 1MEU_BASE_M52D_Armor 
 	{ 
 		author="Romeo"; 
-		displayName="[1stMEU] M52D 4-6 (Romeo)"; 
+		displayName="[11th] M52D 4-6 (Romeo)"; 
 		scope = 2; 
         scopeCurator = 2; 
         scopeArsenal = 2; 
@@ -5977,7 +5977,7 @@
     class Prae4M : 1MEU_BASE_M52D_Armor 
 	{ 
 		author = "Romeo"; 
-		displayName = "[1stMEU] M52D 4-M (Rave)"; 
+		displayName = "[11th] M52D 4-M (Rave)"; 
 		scope = 2; 
         scopeCurator = 2; 
 		scopeArsenal = 2; 
@@ -6082,7 +6082,7 @@
     /*class Prae4R: 1MEU_BASE_M52D_Armor 
 	{ 
 		author = "1st MEU Oneill"; 
-		displayName = "[1stMEU] M52D 4-R (Kenobi)"; 
+		displayName = "[11th] M52D 4-R (Kenobi)"; 
 		scope = 2; 
 		scopeArsenal = 2; 
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
@@ -6189,7 +6189,7 @@
         scope = 2; 
         scopeCurator = 2; 
         scopeArsenal = 2; 
-		displayName = "[1stMEU] M52D 4-1 (Ginger)"; 
+		displayName = "[11th] M52D 4-1 (Ginger)"; 
 		hiddenSelections[] = 	 
 		{ 
 			"camo", 
@@ -6295,7 +6295,7 @@
 		author = "1stMEU Oneill";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[1stMEU] M52D Recon";
+		displayName = "[11th] M52D Recon";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -6416,7 +6416,7 @@
     class Hokage: 1MEU_BASE_M52D_Armor
 	{
 		author="1st MEU Oneill";
-		displayName="[1stMEU] Hokage";
+		displayName="[11th] Hokage";
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
