@@ -240,7 +240,7 @@
         tf_range = 120000;
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\como_pack_black_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\como_pack_black_co.paa"};
         maximumLoad = 250;
     };
 	
@@ -266,7 +266,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[11th] AN/PRC-521 (Marine)";
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa","first_meu_aux\data\misc\packs\common_pack_mar_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_mar_co.paa","11th_STB_aux\data\misc\packs\common_pack_mar_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -285,7 +285,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[11th] AN/PRC-521 (Woodland)";
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa","first_meu_aux\data\misc\packs\common_pack_wdl_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_wdl_co.paa","11th_STB_aux\data\misc\packs\common_pack_wdl_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -304,7 +304,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[11th] AN/PRC-521 (Arctic)";
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa","first_meu_aux\data\misc\packs\common_pack_arc_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_arc_co.paa","11th_STB_aux\data\misc\packs\common_pack_arc_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -323,7 +323,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[11th] AN/PRC-521 (Desert)";
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa","first_meu_aux\data\misc\packs\common_pack_des_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_des_co.paa","11th_STB_aux\data\misc\packs\common_pack_des_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -342,7 +342,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[11th] AN/PRC-521 (Evolved/Urban)";
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_evourb_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","11th_STB_aux\data\misc\packs\common_pack_evourb_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -361,7 +361,7 @@
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "[11th] ILCS AN/PRC-521";
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","first_meu_aux\data\misc\packs\common_pack_prae_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_evourb_co.paa","11th_STB_aux\data\misc\packs\common_pack_prae_co.paa"};
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -385,7 +385,7 @@
         maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\ruck_black_co.paa"};
     };
     
 	class uplinkpack : MEU_Prae_Ruck_Base_Heavy
@@ -419,7 +419,7 @@
         maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\ruck_black_co.paa"};
     };
 	
 	class MEU_Prae_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
@@ -432,7 +432,7 @@
         maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\ruck_black_co.paa"};
     };
     
 	class MEU_Prae_Corpsman_Ruck_Base : OPTRE_ILCS_Rucksack_Heavy
@@ -449,7 +449,7 @@
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\ruck_black_co.paa"};
 		maximumLoad = 1;
     };
 	
@@ -463,7 +463,7 @@
 		maximumLoad = 1;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\ruck_black_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\ruck_black_co.paa"};
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
@@ -479,7 +479,7 @@
         maximumLoad = 200;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
     };
 	
 	class MEU_ILCS_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
@@ -489,7 +489,7 @@
         maximumLoad = 350;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
     };
     
 	class MEU_ILCS_Corpsman_Ruck : OPTRE_ILCS_Rucksack_Heavy
@@ -503,7 +503,7 @@
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
 		maximumLoad = 300;
     };
 	
@@ -514,7 +514,7 @@
 		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\prae_ruck_black_CO.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
     };
 	
 //	Praetorian Back Packs End
@@ -530,7 +530,7 @@
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
 	};
 	
     class MEU_Desert_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
@@ -543,7 +543,7 @@
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
 	};
 	
     class MEU_Desert_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
@@ -556,7 +556,7 @@
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_des_co.paa"};
 	};
 	
     class MEU_Arctic_Rucksack_Soft: OPTRE_UNSC_Rucksack
@@ -569,7 +569,7 @@
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
 	};
 	
     class MEU_Arctic_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
@@ -582,7 +582,7 @@
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
 	};
 	
     class MEU_Arctic_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
@@ -595,7 +595,7 @@
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_arc_co.paa"};
 	};
 	
     class MEU_Woodland_Rucksack_Soft: OPTRE_UNSC_Rucksack
@@ -608,7 +608,7 @@
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
 	};
 	
     class MEU_Woodland_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
@@ -621,7 +621,7 @@
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
 	};
 	
     class MEU_Woodland_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
@@ -634,7 +634,7 @@
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_wdl_co.paa"};
 	};
 	
     class MEU_EvoUrb_Rucksack_Soft: OPTRE_UNSC_Rucksack
@@ -647,7 +647,7 @@
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
 	};
 	
     class MEU_EvoUrb_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
@@ -660,7 +660,7 @@
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
 	};
 	
     class MEU_EvoUrb_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
@@ -673,7 +673,7 @@
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_evourb_co.paa"};
 	};
 	
     class MEU_Marine_Rucksack_Soft: OPTRE_UNSC_Rucksack
@@ -686,7 +686,7 @@
         maximumLoad = 100;
 		mass = 40;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
 	};
 	
     class MEU_Marine_Rucksack_Soft_Heavy: OPTRE_UNSC_Rucksack_Heavy
@@ -699,7 +699,7 @@
         maximumLoad = 250;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Medic","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
 	};
 	
     class MEU_Marine_Rucksack_Soft_Medical: OPTRE_UNSC_Rucksack_Medic
@@ -712,7 +712,7 @@
         maximumLoad = 300;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
-		hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\Soft_Backpack_mar_co.paa"};
 	};
 
 //	End Centurion Backpacks		

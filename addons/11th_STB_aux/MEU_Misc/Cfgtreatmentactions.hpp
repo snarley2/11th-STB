@@ -133,7 +133,7 @@ class ACE_Medical_Treatment_Actions
         allowedSelections[] = {"Head"};
 		items[] = {"MEU_Suit_Sealant"};
 		category = "medication";
-		callbackSuccess = "_this execVM 'first_meu_aux\Functions\fn_flexseal.sqf'";
+		callbackSuccess = "_this execVM '11th_STB_aux\Functions\fn_flexseal.sqf'";
 	};
     class FirstAidKit : MEU_Biofoam
     {

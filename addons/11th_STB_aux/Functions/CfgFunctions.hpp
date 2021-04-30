@@ -6,11 +6,11 @@ class CfgFunctions
 		{
             class PelicanLoadValidate
             {
-                file = "first_meu_aux\Functions\fn_PelicanLoadValidate.sqf";
+                file = "11th_STB_aux\Functions\fn_PelicanLoadValidate.sqf";
             };
             class PelicanUnLoadValidate
             {
-                file = "first_meu_aux\Functions\fn_PelicanUnLoadValidate.sqf";
+                file = "11th_STB_aux\Functions\fn_PelicanUnLoadValidate.sqf";
             };
         };
     };
@@ -20,58 +20,58 @@ class CfgFunctions
         {
             class fn_meuPainReduce
             {
-                file = "first_meu_aux\Functions\fn_meuPainReduce.sqf";
+                file = "11th_STB_aux\Functions\fn_meuPainReduce.sqf";
             };
             class fn_meuPainReduceLocal
             {
-                file = "first_meu_aux\Functions\fn_meuPainReduceLocal.sqf";
+                file = "11th_STB_aux\Functions\fn_meuPainReduceLocal.sqf";
             };
 			class medkit
 			{
-                file = "first_meu_aux\Functions\fn_medkit.sqf";
+                file = "11th_STB_aux\Functions\fn_medkit.sqf";
 			};
 			class biomed
 			{
-                file = "first_meu_aux\Functions\fn_biomed.sqf";
+                file = "11th_STB_aux\Functions\fn_biomed.sqf";
 			};
 			class thrusterforward
 			{
-                file = "first_meu_aux\Functions\fn_thrusterforward.sqf";
+                file = "11th_STB_aux\Functions\fn_thrusterforward.sqf";
 			};
 			class thrusterback
 			{
-                file = "first_meu_aux\Functions\fn_thrusterback.sqf";
+                file = "11th_STB_aux\Functions\fn_thrusterback.sqf";
 			};
 			class thrusterleft
 			{
-                file = "first_meu_aux\Functions\fn_thrusterleft.sqf";
+                file = "11th_STB_aux\Functions\fn_thrusterleft.sqf";
 			};
 			class thrusterright
 			{
-                file = "first_meu_aux\Functions\fn_thrusterright.sqf";
+                file = "11th_STB_aux\Functions\fn_thrusterright.sqf";
 			};
 			class Bubbleshield_throw
 			{
-                file = "first_meu_aux\Functions\Bubbleshield_throw.sqf";
+                file = "11th_STB_aux\Functions\Bubbleshield_throw.sqf";
 			};
 			class flexseal
 			{
-                file = "first_meu_aux\Functions\fn_flexseal.sqf";
+                file = "11th_STB_aux\Functions\fn_flexseal.sqf";
 			};
 			
         };
         class fnc_tourniquetRemove
         {
-                file = "first_meu_aux\Functions\fn_MEU_tourniquetRemove.sqf";
+                file = "11th_STB_aux\Functions\fn_MEU_tourniquetRemove.sqf";
         };
         class fnc_necktourniquet
         {
-                file = "first_meu_aux\Functions\fn_necktourniquet.sqf";
+                file = "11th_STB_aux\Functions\fn_necktourniquet.sqf";
         };
         tag = "MEU";
 		class afterburner_functions
 		{
-			file = "first_meu_aux\functions\afterburnerMk1";
+			file = "11th_STB_aux\functions\afterburnerMk1";
 			class Afterburners_Disengage;
 			class Afterburners_Engage;
 		};
@@ -79,7 +79,7 @@ class CfgFunctions
 		{
 			class keybinds
 			{
-				file = "first_meu_aux\functions\keybinds.sqf";
+				file = "11th_STB_aux\functions\keybinds.sqf";
 				postInit = 1;
 			};
 		};
@@ -87,11 +87,11 @@ class CfgFunctions
 		{
 			class get_config_attribute
 			{
-				file = "first_meu_aux\functions\utility\get_config\get_config_attribute.sqf";
+				file = "11th_STB_aux\functions\utility\get_config\get_config_attribute.sqf";
 			};
 			class integer_to_boolean
 			{
-				file = "first_meu_aux\functions\utility\get_config\integer_to_boolean.sqf";
+				file = "11th_STB_aux\functions\utility\get_config\integer_to_boolean.sqf";
 			};
 		};
 
@@ -99,7 +99,7 @@ class CfgFunctions
 		{
 			class HEVAdjust
 			{
-				file = "first_meu_aux\functions\HEV\fn_HEVAdjust.sqf";
+				file = "11th_STB_aux\functions\HEV\fn_HEVAdjust.sqf";
 			};
 		};
     };
@@ -110,17 +110,17 @@ class CfgFunctions
 		{
 			class HEVChuteDeploy
 			{
-				file = "first_meu_aux\functions\HEV\fn_HEVChuteDeploy.sqf";
+				file = "11th_STB_aux\functions\HEV\fn_HEVChuteDeploy.sqf";
 			};
 
 			class HEVDoor
 			{
-				file = "first_meu_aux\functions\HEV\fn_HEVDoor.sqf";
+				file = "11th_STB_aux\functions\HEV\fn_HEVDoor.sqf";
 			};
 
 			class HEVHandleLanding
 			{
-				file = "first_meu_aux\functions\HEV\fn_HEVHandleLanding.sqf";
+				file = "11th_STB_aux\functions\HEV\fn_HEVHandleLanding.sqf";
 			};
 		};
 
@@ -128,7 +128,7 @@ class CfgFunctions
 		{
 			class HEVRoom
 			{
-				file = "first_meu_aux\functions\MenuFunctions\fn_HEVRoom.sqf";
+				file = "11th_STB_aux\functions\MenuFunctions\fn_HEVRoom.sqf";
 			};
 		};
 	};
