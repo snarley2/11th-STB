@@ -251,7 +251,7 @@ class CfgVehicles
         ace_fastroping_enabled = 1;
         ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
         hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Vehicles\Kashmoney_body1_co.paa","11th_STB_aux\data\Vehicles\Kashmoney_body2_co.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\Vehicles\Kashmoney_body1_co.paa","first_meu_aux\data\Vehicles\Kashmoney_body2_co.paa"};
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
         class ACE_Cargo
@@ -271,7 +271,7 @@ class CfgVehicles
             {
                 displayName = "UNSC";
                 author = "Mark";
-                textures[] = {"11th_STB_aux\data\vehicles\Kashmoney_body1_co.paa","11th_STB_aux\data\vehicles\Kashmoney_body2_co.paa"};
+                textures[] = {"first_meu_aux\data\vehicles\Kashmoney_body1_co.paa","first_meu_aux\data\vehicles\Kashmoney_body2_co.paa"};
                 faction = "MEU_UNSC";
             };
         };
@@ -1034,7 +1034,7 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet","CamoSlat"};
-        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\VEH\AFV_MC_B.paa","LM_OPCAN3.0\BLU\UNSC\VEH\AFV_MC_E.paa","LM_OPCAN3.0\BLU\UNSC\VEH\AFV_MC_G.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","11th_STB_aux\Data\Vehicles\cage_Black_CO.paa"};
+        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\VEH\AFV_MC_B.paa","LM_OPCAN3.0\BLU\UNSC\VEH\AFV_MC_E.paa","LM_OPCAN3.0\BLU\UNSC\VEH\AFV_MC_G.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","first_meu_aux\Data\Vehicles\cage_Black_CO.paa"};
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_WIP";
         visionMode[] = {"Normal","TI","NVG"};
@@ -1129,14 +1129,14 @@ class CfgVehicles
         editorCategory = "MEU_cat_A";
         editorsubCategory = "MEU_sub_Motorised";
         hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","CamoNet","CamoSlat"};
-        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_B.paa","LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_G.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","11th_STB_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa","11th_STB_aux\data\vehicles\afv_commander_tow_Timberwolf_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","11th_STB_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa"};
+        hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_B.paa","LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_G.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","first_meu_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa","first_meu_aux\data\vehicles\afv_commander_tow_Timberwolf_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","first_meu_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa"};
 		textureList[] = {"Marines",1};
 		class TextureSources
 		{
 			class Marines
 			{
 				displayName = "UNSCMC";
-				textures[] = {"LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_B.paa","LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_G.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","11th_STB_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa","11th_STB_aux\data\vehicles\afv_commander_tow_Timberwolf_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","11th_STB_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa"};
+				textures[] = {"LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_B.paa","LM_OPCAN3.0\BLU\UNSC\VEH\MGS_MC_G.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","first_meu_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa","first_meu_aux\data\vehicles\afv_commander_tow_Timberwolf_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","first_meu_aux\data\vehicles\afv_wheeled_01_Timberwolf_EXT3_CO.paa"};
 				factions[] = {"LM_OPCAN_UNSC_MC"};
 			};
 		};
@@ -1154,14 +1154,14 @@ class CfgVehicles
 		displayName = "[11th] MK12 Chipmunk-A";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
 			class UNSC_Camo
 			{
 				displayName = "UNSC";
 				author = "Romeo";
-				textures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 				faction = "MEU_UNSC";
 			};
 		};
@@ -1181,14 +1181,14 @@ class CfgVehicles
 		displayName = "[11th] MK12 Chipmunk-T";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 		class TextureSources
 		{
 			class UNSC_Camo
 			{
 				displayName = "UNSC";
 				author = "Romeo";
-				textures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_AT_AA_Rust_CO.paa"};
 				faction = "MEU_UNSC";
 			};
 		};
@@ -1208,14 +1208,14 @@ class CfgVehicles
 		displayName = "[11th] MK12 Chipmunk-C";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
 		class TextureSources
 		{
 			class UNSC_Camo
 			{
 				displayName = "UNSC";
 				author = "Romeo";
-				textures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Cannon_Rust_CO.paa"};
 				faction = "MEU_UNSC";
 			};
 		};
@@ -1235,14 +1235,14 @@ class CfgVehicles
 		displayName = "[11th] MK12 Chipmunk-R";
 		crew = "VES_Rifleman_MA5B_MAR";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
 		class TextureSources
 		{
 			class UNSC_Camo
 			{
 				displayName = "UNSC";
 				author = "Romeo";
-				textures[] = {"11th_STB_aux\data\vehicles\LT_01_Main_Rust_CO.paa","11th_STB_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
+				textures[] = {"first_meu_aux\data\vehicles\LT_01_Main_Rust_CO.paa","first_meu_aux\data\vehicles\LT_01_Radar_Rust_CO.paa"};
 				faction = "MEU_UNSC";
 			};
 		};
@@ -1705,7 +1705,7 @@ class CfgVehicles
         ace_fastroping_enabled = 1;
         ace_fastroping_ropeOrigins[] = {"ropeOriginLeft", "ropeOriginRight"};
         hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Vehicles\Kajman_02_body1_black_CO.paa","\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\Vehicles\Kajman_02_body1_black_CO.paa","\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
         class ACE_Cargo
@@ -1725,7 +1725,7 @@ class CfgVehicles
             {
                 displayName = "KOS";
                 author = "Mark";
-                textures[] = {"11th_STB_aux\data\vehicles\Kajman_02_body1_black_CO.paa","\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
+                textures[] = {"first_meu_aux\data\vehicles\Kajman_02_body1_black_CO.paa","\A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
                 faction = "MEU_Insurrectionist";
             };
         };
@@ -2177,7 +2177,7 @@ class CfgVehicles
         editorCategory = "MEU_Koslovic_wdl"; 
 		editorsubCategory = "MEU_sub_Motorised"; 
 		hiddenSelections[] = {"Camo1","Camo2","Camo3"}; 
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\LSV_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};  
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};  
 		textureList[] = {"KOS",1}; 
 		class TransportMagazines{}; 
 		class TransportItems{}; 
@@ -2187,7 +2187,7 @@ class CfgVehicles
 			class KOS 
 			{ 
 				displayName = "Koslovics"; 
-				textures[] = {"11th_STB_aux\data\vehicles\LSV_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
@@ -2205,7 +2205,7 @@ class CfgVehicles
         editorCategory = "MEU_Koslovic_wdl"; 
 		editorsubCategory = "MEU_sub_Motorised"; 
 		hiddenSelections[] = {"Camo1","Camo2","Camo3"}; 
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\LSV_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
 		textureList[] = {"KOS",1}; 
 		class TransportMagazines{}; 
 		class TransportItems{}; 
@@ -2215,7 +2215,7 @@ class CfgVehicles
 			class KOS 
 			{ 
 				displayName = "Koslovics"; 
-				textures[] = {"11th_STB_aux\data\vehicles\LSV_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
@@ -2233,7 +2233,7 @@ class CfgVehicles
         editorCategory = "MEU_Koslovic_wdl"; 
 		editorsubCategory = "MEU_sub_Motorised"; 
 		hiddenSelections[] = {"Camo1","Camo2","Camo3"}; 
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\LSV_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
 		textureList[] = {"KOS",1}; 
 		class TransportMagazines{}; 
 		class TransportItems{}; 
@@ -2243,7 +2243,7 @@ class CfgVehicles
 			class KOS 
 			{ 
 				displayName = "Koslovics"; 
-				textures[] = {"11th_STB_aux\data\vehicles\LSV_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\LSV_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\LSV_03_Koslovic_CO.paaa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
@@ -2260,7 +2260,7 @@ class CfgVehicles
         editorCategory = "MEU_Koslovic_Wdl"; 
         editorsubCategory = "MEU_sub_arm"; 
         hiddenSelections[] = {"Camo1","Camo2","CamoNet"}; 
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\MBT_04_exterior_Koslovic_1_CO.paa","11th_STB_aux\data\vehicles\MBT_04_exterior_Koslovic_2_CO.paa"}; 
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_04_exterior_Koslovic_1_CO.paa","first_meu_aux\data\vehicles\MBT_04_exterior_Koslovic_2_CO.paa"}; 
     };
     class MEU_Ural_Transport_Koslovic : O_Truck_02_covered_F
     {
@@ -2270,7 +2270,7 @@ class CfgVehicles
         displayName = "[11th] Ural Transport";
         faction = "MEU_Insurrectionist";
         getInProxyOrder[] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","11th_STB_aux\data\vehicles\Truck_02_kuz_Koslovic_co.paa","11th_STB_aux\data\vehicles\truck_02_int_Koslovic_co.paa","11th_STB_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_kuz_Koslovic_co.paa","first_meu_aux\data\vehicles\truck_02_int_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
         scope = 2;
         side = 0;
         editorCategory = "MEU_Koslovic_Wdl";
@@ -2291,7 +2291,7 @@ class CfgVehicles
         side = 0;
         class SimpleObject {};
         typicalCargo[] = {"LM_OPCAN_KOS_Crewman","LM_OPCAN_KOS_Crewman"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","11th_STB_aux\data\vehicles\truck_02_int_Koslovic_co.paa","11th_STB_aux\data\vehicles\Truck_02_MRL_Koslovic_CO","11th_STB_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Truck_02_kab_Koslovic_co.paa","first_meu_aux\data\vehicles\truck_02_int_Koslovic_co.paa","first_meu_aux\data\vehicles\Truck_02_MRL_Koslovic_CO","first_meu_aux\data\vehicles\Truck_02_chassis_Koslovic_CO"};
         editorCategory = "MEU_Koslovic_Wdl"; 
     };
     class MEU_Kazan_Koslovic: O_MBT_02_cannon_F 
@@ -2306,7 +2306,7 @@ class CfgVehicles
         editorCategory = "MEU_Koslovic_Wdl"; 
         editorsubCategory = "MEU_sub_arm"; 
 		hiddenSelections[] = {"camo1","camo2","camo3"}; 
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MBT_02_turret_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MBT_02_Koslovic_CO.paa"}; 
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_turret_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa"}; 
 		crew = "LM_OPCAN_KOS_Crewman"; 
 		textureList[] = {"KOS",1}; 
 		class TransportMagazines{}; 
@@ -2317,7 +2317,7 @@ class CfgVehicles
 			class KOS 
 			{ 
 				displayName = "Koslovics"; 
-				textures[] = {"11th_STB_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MBT_02_turret_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MBT_02_Koslovic_CO.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_turret_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
@@ -2406,17 +2406,17 @@ class CfgVehicles
 			{
 				displayName = "KOS";
 				author = "Romeo";
-				textures[] = {"11th_STB_aux\data\vehicles\MRAP_02_ext_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MRAP_02_ext_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+				textures[] = {"first_meu_aux\data\vehicles\MRAP_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\MRAP_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
 			};
 		};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\MRAP_02_ext_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MRAP_02_ext_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MRAP_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\MRAP_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
 	}; 
     class MEU_Otakar_Koslovic: O_APC_Wheeled_02_rcws_v2_F
     {
         crew = "LM_OPCAN_KOS_Crewman";
         displayName = "[11th] Otokar IFV";
         faction = "MEU_Insurrectionist";
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
         scope = 2;
         scopeCurator = 2;
         side = 0;
@@ -2429,7 +2429,7 @@ class CfgVehicles
 			class KOS_Camo
 			{ 
 				displayName = "Koslovics"; 
-				textures[] = {"11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\Turret_Koslovic_CO.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
@@ -2439,7 +2439,7 @@ class CfgVehicles
         crew = "LM_OPCAN_KOS_Crewman";
         displayName = "[11th] Otokar APC";
         faction = "MEU_Insurrectionist";
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
         scope = 2;
         scopeCurator = 2;
         side = 0;
@@ -2456,7 +2456,7 @@ class CfgVehicles
 			class KOS_Camo
 			{ 
 				displayName = "Koslovics"; 
-				textures[] = {"11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","11th_STB_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\Turret_Koslovic_CO.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\APC_Wheeled_02_ext_01_Koslovic_CO.paa","first_meu_aux\data\vehicles\APC_Wheeled_02_ext_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
@@ -2470,7 +2470,7 @@ class CfgVehicles
         faction = "MEU_Insurrectionist";
         displayName = "[11th] Arkhangelsk";
         hiddenSelections[] = {"camo1","camo2","camo3","camo4","CamoNet"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MBT_02_scorcher_Koslovic_CO.paa","11th_STB_aux\data\vehicles\MBT_02_Koslovic_CO.paa","11th_STB_aux\data\vehicles\Turret_Koslovic_CO.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\MBT_02_body_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_scorcher_Koslovic_CO.paa","first_meu_aux\data\vehicles\MBT_02_Koslovic_CO.paa","first_meu_aux\data\vehicles\Turret_Koslovic_CO.paa"};
         maxFordingDepth = -1.25;
         side = 0;
         textureList[] = {"KOS_Camo",1};
@@ -2606,15 +2606,15 @@ class CfgVehicles
 			class UNSC_Camo
 			{ 
 				displayName = "UNSC"; 
-				textures[] = {"11th_STB_aux\data\vehicles\Leopard_01_Ext_co.paa","11th_STB_aux\data\vehicles\Leopard_02_Ext_co.paa","11th_STB_aux\data\vehicles\Leopard_Turret.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_Turret.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\data\vehicles\Leopard_01_Ext_co.paa",
-			"11th_STB_aux\data\vehicles\Leopard_02_Ext_co.paa",
-			"11th_STB_aux\data\vehicles\Leopard_Turret.paa",
+			"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_Turret.paa",
 		};
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
@@ -2695,15 +2695,15 @@ class CfgVehicles
 			class UNSC_Camo
 			{ 
 				displayName = "UNSC"; 
-				textures[] = {"11th_STB_aux\data\vehicles\Leopard_01_Ext_co.paa","11th_STB_aux\data\vehicles\Leopard_02_Ext_co.paa","11th_STB_aux\data\vehicles\Leopard_Turret.paa"}; 
+				textures[] = {"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa","first_meu_aux\data\vehicles\Leopard_Turret.paa"}; 
 				factions[] = {"BLU_F","BLU_G_F","OPF_F","OPF_G_F","IND_F","IND_G_F","CIV_F"}; 
 			}; 
 		}; 
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\data\vehicles\Leopard_01_Ext_co.paa",
-			"11th_STB_aux\data\vehicles\Leopard_02_Ext_co.paa",
-			"11th_STB_aux\data\vehicles\Leopard_Turret.paa",
+			"first_meu_aux\data\vehicles\Leopard_01_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_02_Ext_co.paa",
+			"first_meu_aux\data\vehicles\Leopard_Turret.paa",
 		};
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
 		typicalCargo[] = {"OPTRE_UNSC_Marine_Soldier_Rifleman_AR"};
@@ -2922,11 +2922,11 @@ class CfgVehicles
 			{
 				displayName = "Friden";
 				author = "Romeo";
-				textures[] = {"11th_STB_aux\data\vehicles\Ansaldo_FRI_Front_co.paa","11th_STB_aux\data\vehicles\Ansaldo_FRI_Back_co.paa","11th_STB_aux\data\vehicles\Turret_Friden.paa"};
+				textures[] = {"first_meu_aux\data\vehicles\Ansaldo_FRI_Front_co.paa","first_meu_aux\data\vehicles\Ansaldo_FRI_Back_co.paa","first_meu_aux\data\vehicles\Turret_Friden.paa"};
 				factions[] = {"OPF_F_ARC"};
 			};
         };
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\vehicles\Ansaldo_FRI_Front_co.paa","11th_STB_aux\data\vehicles\Ansaldo_FRI_Back_co.paa","11th_STB_aux\data\vehicles\Turret_Friden.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\data\vehicles\Ansaldo_FRI_Front_co.paa","first_meu_aux\data\vehicles\Ansaldo_FRI_Back_co.paa","first_meu_aux\data\vehicles\Turret_Friden.paa"};
     };
         
     class MEU_Warrior_WDL: I_APC_tracked_03_cannon_F
@@ -3853,7 +3853,7 @@ class CfgVehicles
 				displayName = "UNSC Wyvern Class";
 				author = "1stMEU";
 				factions[] = {"MEU_UNSC"};
-				textures[] = {"11th_STB_aux\data\pegasus\vic\VTOL_02_EXT01_grey_CO.paa","11th_STB_aux\data\pegasus\vic\VTOL_02_EXT02_grey_CO.paa","11th_STB_aux\data\pegasus\vic\VTOL_02_EXT03_L_grey_CO.paa","11th_STB_aux\data\pegasus\vic\VTOL_02_EXT03_R_grey_CO.paa"};
+				textures[] = {"first_meu_aux\data\pegasus\vic\VTOL_02_EXT01_grey_CO.paa","first_meu_aux\data\pegasus\vic\VTOL_02_EXT02_grey_CO.paa","first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_L_grey_CO.paa","first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_R_grey_CO.paa"};
 			};
 		};
         hiddenSelections[] ={
@@ -3864,10 +3864,10 @@ class CfgVehicles
 		};
         hiddenSelectionsTextures[] = 
 		{
-		"11th_STB_aux\data\pegasus\vic\VTOL_02_EXT01_grey_CO.paa",
-		"11th_STB_aux\data\pegasus\vic\VTOL_02_EXT02_grey_CO.paa", 
-		"11th_STB_aux\data\pegasus\vic\VTOL_02_EXT03_L_grey_CO.paa",
-		"11th_STB_aux\data\pegasus\vic\VTOL_02_EXT03_R_grey_CO.paa"
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT01_grey_CO.paa",
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT02_grey_CO.paa", 
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_L_grey_CO.paa",
+		"first_meu_aux\data\pegasus\vic\VTOL_02_EXT03_R_grey_CO.paa"
 		};
     };
 	
@@ -3907,10 +3907,10 @@ class CfgVehicles
 		};
         hiddenSelectionsTextures[] = 
 		{
-		"11th_STB_aux\data\pegasus\vic\esp_blackfish_1.paa",
-		"11th_STB_aux\data\pegasus\vic\esp_blackfish_2_ala31.paa", 
-		"11th_STB_aux\data\pegasus\vic\esp_blackfish_3.paa",
-		"11th_STB_aux\data\pegasus\vic\esp_blackfish_4.paa"
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_1.paa",
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_2_ala31.paa", 
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_3.paa",
+		"first_meu_aux\data\pegasus\vic\esp_blackfish_4.paa"
 		};
         class useractions
         {
@@ -4197,7 +4197,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
                 };
             };
             class Peg_CWO3
@@ -4206,7 +4206,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
                 };
             };
             class Peg_CWO4
@@ -4215,7 +4215,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
                 };
             };
             class Peg_Torres
@@ -4224,7 +4224,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
                 };
             };
             class Peg_Chaotic
@@ -4233,7 +4233,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
                 };
             };
             class Peg_Bloodbath
@@ -4242,7 +4242,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
                 };
             };
         };
@@ -4284,32 +4284,32 @@ class CfgVehicles
                     {
                         condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
                         displayName="CWO2";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
                     };
                     class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
                     {
                         displayName="CWO3";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
                     };
                     class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
                     {
                         displayName="CWO4";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
                     };
                     class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
                     {
                         displayName="Torres";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
                     };
                     class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
                     {
                         displayName="Chaotic";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
                     };
                     class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
                     {
                         displayName="Bloodbath";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
                     };
                 };
                 class stockdivider
@@ -4441,42 +4441,42 @@ class CfgVehicles
             {
                 displayName = "Green";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colortan
             {
                 displayName = "Desert";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorblack
             {
                 displayName = "Black";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorwhite
             {
                 displayName = "Snow";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorred
             {
                 displayName = "Red";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class coloriron
             {
                 displayName = "Iron";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorinnie
@@ -4782,42 +4782,42 @@ class CfgVehicles
             {
                 displayName = "Green";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colortan
             {
                 displayName = "Desert";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorblack
             {
                 displayName = "Black";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorwhite
             {
                 displayName = "Snow";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorred
             {
                 displayName = "Red";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class coloriron
             {
                 displayName = "Iron";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorinnie
@@ -4950,42 +4950,42 @@ class CfgVehicles
             {
                 displayName = "Green";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colortan
             {
                 displayName = "Desert";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorblack
             {
                 displayName = "Black";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorwhite
             {
                 displayName = "Snow";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorred
             {
                 displayName = "Red";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class coloriron
             {
                 displayName = "Iron";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorinnie
@@ -5118,42 +5118,42 @@ class CfgVehicles
             {
                 displayName = "Green";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colortan
             {
                 displayName = "Desert";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorblack
             {
                 displayName = "Black";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorwhite
             {
                 displayName = "Snow";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorred
             {
                 displayName = "Red";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class coloriron
             {
                 displayName = "Iron";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorinnie
@@ -5286,42 +5286,42 @@ class CfgVehicles
             {
                 displayName = "Green";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_green_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colortan
             {
                 displayName = "Desert";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_desert_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorblack
             {
                 displayName = "Black";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_black_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorwhite
             {
                 displayName = "Snow";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_snow_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorred
             {
                 displayName = "Red";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_red_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class coloriron
             {
                 displayName = "Iron";
                 author = "Article 2 Studios";
-                textures[] = {"11th_STB_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
+                textures[] = {"first_meu_aux\data\pegasus\vic\hornet_hull_iron_co.paa"};
                 factions[] = {"OPTRE_UNSC"};
             };
             class colorinnie
@@ -5891,7 +5891,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
                 };
             };
             class Peg_CWO3
@@ -5900,7 +5900,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
                 };
             };
             class Peg_CWO4
@@ -5909,7 +5909,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
                 };
             };
             class Peg_Torres
@@ -5918,7 +5918,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
                 };
             };
             class Peg_Chaotic
@@ -5927,7 +5927,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
                 };
             };
             class Peg_Bloodbath
@@ -5936,7 +5936,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
                 };
             };
         };
@@ -5978,32 +5978,32 @@ class CfgVehicles
                     {
                         condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
                         displayName="CWO2";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
                     };
                     class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
                     {
                         displayName="CWO3";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
                     };
                     class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
                     {
                         displayName="CWO4";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
                     };
                     class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
                     {
                         displayName="Torres";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
                     };
                     class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
                     {
                         displayName="Chaotic";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
                     };
                     class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
                     {
                         displayName="Bloodbath";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
                     };
                 };
                 class stockdivider
@@ -6414,7 +6414,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa"
                 };
             };
             class Peg_CWO3
@@ -6423,7 +6423,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa"
                 };
             };
             class Peg_CWO4
@@ -6432,7 +6432,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa"
                 };
             };
             class Peg_Torres
@@ -6441,7 +6441,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa"
                 };
             };
             class Peg_Chaotic
@@ -6450,7 +6450,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa"
                 };
             };
             class Peg_Bloodbath
@@ -6459,7 +6459,7 @@ class CfgVehicles
                 author="Chaotic";
                 textures[]=
                 {
-                    "11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                    "first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
                 };
             };
         };
@@ -6501,32 +6501,32 @@ class CfgVehicles
                     {
                         condition="!(isNull objectParent player) && (driver (vehicle player)==player)";
                         displayName="CWO2";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO2.paa']";
                     };
                     class 1stMEU_Style_CWO3: 1stMEU_NoseArt_None
                     {
                         displayName="CWO3";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO3.paa']";
                     };
                     class 1stMEU_NoseArt_CWO4: 1stMEU_NoseArt_None
                     {
                         displayName="CWO4";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_CWO4.paa']";
                     };
                     class 1stMEU_NoseArt_Torres: 1stMEU_NoseArt_None
                     {
                         displayName="Torres";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Torres.paa']";
                     };
                     class 1stMEU_NoseArt_Chaotic: 1stMEU_NoseArt_None
                     {
                         displayName="Chaotic";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_OD3_Chaotic.paa']";
                     };
                     class 1stMEU_NoseArt_Bloodbath: 1stMEU_NoseArt_None
                     {
                         displayName="Bloodbath";
-                        statement="_target setObjectTextureGlobal [0, '11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
+                        statement="_target setObjectTextureGlobal [0, 'first_meu_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa']";
                     };
                 };
                 class stockdivider
@@ -7002,7 +7002,7 @@ class CfgVehicles
         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles",};
         faction = "MEU_UNSC";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Vehicles\Bison_URA_Body_tan_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_Misc_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_90mm_tan_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_tan_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_tan_CO.paa"};
 	};
 	class MEU_M413_MGS_URA_DES: OPTRE_M413_MGS_UNSC
 	{
@@ -7017,7 +7017,7 @@ class CfgVehicles
         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
         faction = "MEU_UNSC";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Vehicles\Bison_URA_Body_tan_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_Misc_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_90mm_tan_CO.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_tan_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_tan_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_tan_CO.paa"};
 	};
     class MEU_M412_IFV_URA_WDL: OPTRE_M412_IFV_UNSC
 	{
@@ -7032,7 +7032,7 @@ class CfgVehicles
         magazines[] = {"OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_HE","OPTRE_100Rnd_50mm_APFSDS","OPTRE_100Rnd_50mm_APFSDS","OPTRE_2Rnd_C2GMLS_missiles"};
         faction = "MEU_UNSC";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Vehicles\Bison_URA_Body_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_Misc_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_90mm_CO.paa"};
+		hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_CO.paa"};
 	};
 	class MEU_M413_MGS_URA_WDL: OPTRE_M413_MGS_UNSC
 	{
@@ -7047,7 +7047,7 @@ class CfgVehicles
         magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_2Rnd_C2GMLS_missiles","OPTRE_1000Rnd_127x99_M41","OPTRE_1000Rnd_127x99_M41"};
         faction = "MEU_UNSC";
         hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4","Camo5","Camo6","Camo7"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Vehicles\Bison_URA_Body_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_Misc_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","11th_STB_aux\Data\Vehicles\Bison_URA_90mm_CO.paa"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Vehicles\Bison_URA_Body_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_Misc_CO.paa","OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa","OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa","OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa","first_meu_aux\Data\Vehicles\Bison_URA_90mm_CO.paa"};
 	};
     // URF
     class VES_MQ221_URF : B_T_UAV_03_dynamicLoadout_F

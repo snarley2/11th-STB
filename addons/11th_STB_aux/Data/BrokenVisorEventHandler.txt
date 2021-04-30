@@ -11,6 +11,6 @@ then
 _helmet = (headgear _dude);   
 _dude addHeadgear (_helmet + "_broken") ;
 _id = clientOwner;
-[] remoteExec ["11th_STB_aux\Functions\brokenhud.sqf", _id];
+[] remoteExec ["first_meu_aux\Functions\brokenhud.sqf", _id];
 };   
 }]; 

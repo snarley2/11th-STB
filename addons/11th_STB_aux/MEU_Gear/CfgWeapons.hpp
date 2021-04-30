@@ -144,12 +144,9 @@ class CfgWeapons
 
     #include "\11th_STB_aux\MEU_Gear\CfgPraeCoHelm.hpp"
     #include "\11th_STB_aux\MEU_Gear\CfgPraeCoArmor.hpp"
-    #include "\11th_STB_aux\MEU_Gear\CfgCentCoArmor.hpp"
-    #include "\11th_STB_aux\MEU_Gear\CfgCentCoHelm.hpp"
+    #include "\11th_STB_aux\MEU_Gear\TrainingArmor.hpp"
     #include "\11th_STB_aux\MEU_Gear\CfgPegArmor.hpp"
     #include "\11th_STB_aux\MEU_Gear\CfgPegHelm.hpp"
-    #include "\11th_STB_aux\MEU_Gear\CfgVulkHelm.hpp"
-    #include "\11th_STB_aux\MEU_Gear\CfgVulkArmor.hpp"
 
     /*// Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
@@ -787,7 +784,7 @@ class CfgWeapons
 			magazines[] = {"MEU_M3_CS_Mag"};
 			class EventHandlers
 			{
-				fired = "_this execVM '11th_STB_aux\Functions\CS_Grenade.sqf'";
+				fired = "_this execVM 'first_meu_aux\Functions\CS_Grenade.sqf'";
 			};
 		};*/
         class MEU_Bubble_Muzzle : ThrowMuzzle
@@ -3292,7 +3289,7 @@ class CfgWeapons
         baseWeapon = "MarkHatesHisLife";
         displayname = "[1st MEU] MA4CQC + RCR 205";
         hiddenSelections[] = {"camo1","camo2"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Weapons\MA4\V_MA4_CO.paa","\A3\Weapons_F_Exp\Rifles\ARX\Data\arifle_ARX_blk_02_F_co"};
+        hiddenSelectionsTextures[] = {"first_meu_aux\Data\Weapons\MA4\V_MA4_CO.paa","\A3\Weapons_F_Exp\Rifles\ARX\Data\arifle_ARX_blk_02_F_co"};
         magazines[] = {"OPTRE_10Rnd_86x70_Mag","OPTRE_10Rnd_86x70_Mag_Tracer","OPTRE_10Rnd_86x70_Mag_AP","OPTRE_10Rnd_86x70_Mag_APT","OPTRE_10Rnd_86x70_Mag_JHP","OPTRE_10Rnd_86x70_Mag_JHPT","OPTRE_10Rnd_86x70_Mag_SS","OPTRE_10Rnd_86x70_Mag_FS","OPTRE_10Rnd_86x70_Mag_FST","OPTRE_20Rnd_86x70_Mag","OPTRE_20Rnd_86x70_Mag_Tracer","OPTRE_20Rnd_86x70_Mag_AP","OPTRE_20Rnd_86x70_Mag_APT","OPTRE_20Rnd_86x70_Mag_JHP","OPTRE_20Rnd_86x70_Mag_JHPT","OPTRE_20Rnd_86x70_Mag_SS"};
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
@@ -3439,7 +3436,7 @@ class CfgWeapons
         displayName = "[11th] Hopper Launcher BASE";
         displaynameshort = "Hopper Launcher BASE";
 		descriptionShort = "Hopper Launcher BASE";
-        model = "11th_STB_aux\Data\Misc\Hopper\ATDisposable.p3d";
+        model = "first_meu_aux\Data\Misc\Hopper\ATDisposable.p3d";
         baseWeapon = "MEU_Hopper_v2_Loaded";
         magazines[] = {"MEU_HopperRocket_V2"};
         handAnim[] = {};
