@@ -292,7 +292,7 @@ class CfgAmmo
 		indirectHit = 0;
 		indirectHitRange = 0;
 		defaultMagazine = "MEU_Bubble_Mag";
-		model = "first_meu_aux\Data\Misc\Starry Night\bubbleshield.p3d";
+		model = "11th_STB_aux\Data\Misc\Starry Night\bubbleshield.p3d";
 		explosive = 0;
 		explosionType = "";
 		mineModelDisabled = "\OPTRE_FC_Weapons\PlasmaGrenade\plasmagrenade.p3d";

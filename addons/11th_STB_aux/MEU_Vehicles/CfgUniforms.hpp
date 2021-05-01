@@ -212,7 +212,7 @@
 	{
 		uniformclass = "Praetorian_BDU";
         hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa","first_meu_aux\data\misc\uniforms\V_BDU_Urban_CO.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\uniforms\V_BDU_Urban_CO.paa","11th_STB_aux\data\misc\uniforms\V_BDU_Urban_CO.paa"};
 	};
 	
 	class BDU_V_Centurion_Slim: 1stMEU_BDU

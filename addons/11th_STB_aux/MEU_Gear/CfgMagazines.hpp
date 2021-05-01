@@ -1172,7 +1172,7 @@ class CfgMagazines
 		type = "2* 256";
 		allowedSlots[] = {901,701};
 		ammo = "MEU_Bubbleshield_Ammo";
-		model = "first_meu_aux\Data\Misc\Starry Night\bubbleshield.p3d";
+		model = "11th_STB_aux\Data\Misc\Starry Night\bubbleshield.p3d";
 		mass = 15;
 		count = 1;
 		sound[] = {"A3\sounds_f\dummysound",0.000316228,1,10};
