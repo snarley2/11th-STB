@@ -1,8 +1,8 @@
 name = "@First MEU Aux";
-picture = "first_meu_aux\Data\MEU.jpg";
-logo = "first_meu_aux\Data\1stModDevInsig.paa";
-logoSmall = "first_meu_aux\Data\1stModDevInsig_small.paa";
-logoOver = "first_meu_aux\Data\1stModDevInsig_small.paa";
+picture = "11th_STB_aux\Data\MEU.jpg";
+logo = "11th_STB_aux\Data\1stModDevInsig.paa";
+logoSmall = "11th_STB_aux\Data\1stModDevInsig_small.paa";
+logoOver = "11th_STB_aux\Data\1stModDevInsig_small.paa";
 description = "Fuck Us huh?";
 tooltipOwned="1st MEU";
 hideName = 0;
