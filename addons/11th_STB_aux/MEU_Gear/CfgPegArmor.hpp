@@ -68,17 +68,17 @@
 		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_wdl";
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\Data\Vests\V_M52_V_URB_CO",
-			"11th_STB_aux\Data\Vests\V_M52_URB_CO",
-			"11th_STB_aux\Data\Vests\V_M52_L_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
 		hiddenSelectionsMaterials[] = 
 		{
-			"11th_STB_aux\Data\Vests\Materials\V_M52_V.rvmat",
-			"11th_STB_aux\Data\Vests\Materials\V_M52.rvmat",
-			"11th_STB_aux\Data\Vests\Materials\V_M52_L.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52_V.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat",
 			"",
 			""
 		};
@@ -920,7 +920,7 @@
 		};
 	};
 //JTAC Armor
-    class MEU_JTAC_Vest : 1MEU_BASE_Pilot_Armor
+    class MEU_JTAC_Vest : MEU_M52A_NCO_Marksman_URB
     {
         scope = 2;
         scopeCurator = 2;
@@ -969,9 +969,9 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-            "11th_STB_aux\Data\Vests\V_M52_V_URB_CO",
-			"11th_STB_aux\Data\Vests\V_M52_URB_CO",
-			"11th_STB_aux\Data\Vests\V_M52_L_URB_CO",
+            "V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};

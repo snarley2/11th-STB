@@ -10,7 +10,7 @@ class RscTitles //part of the background
 		{
 			class BackgroundNoise: RscPicture //part of the background
 			{
-				text = "11th_STB_aux\Data\LoadingScreens\MEUPIC1.paa";
+				text = "first_meu_aux\Data\LoadingScreens\MEUPIC1.paa";
 			};
 		};
 	class brokenhud : SplashNoise	//part of the background
@@ -18,7 +18,7 @@ class RscTitles //part of the background
 			duration=100000000
 			class BackgroundNoise: RscPicture //part of the background
 			{
-				text = "11th_STB_aux\Data\Misc\crackedhud.paa";
+				text = "first_meu_aux\Data\Misc\crackedhud.paa";
 			};
 		};
 };	

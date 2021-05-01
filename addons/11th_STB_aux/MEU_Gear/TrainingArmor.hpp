@@ -68,17 +68,17 @@
 		picture = "\OPTRE_UNSC_Units\Army\icons\Army_vest_des";
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\Data\Vests\V_M52_V_MAR_CO",
-			"11th_STB_aux\Data\Vests\V_M52_MAR_CO",
-			"11th_STB_aux\Data\Vests\V_M52_L_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
 		hiddenSelectionsMaterials[] = 
 		{
-			"11th_STB_aux\Data\Vests\Materials\V_M52_V.rvmat",
-			"11th_STB_aux\Data\Vests\Materials\V_M52.rvmat",
-			"11th_STB_aux\Data\Vests\Materials\V_M52_L.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52_V.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52.rvmat",
+			"V_FZ_Armor\Data\Vests\Materials\V_M52_L.rvmat",
 			"",
 			""
 		};
@@ -251,9 +251,9 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\Data\Vests\V_M52_V_MAR_CO",
-			"11th_STB_aux\Data\Vests\V_M52_MAR_CO",
-			"11th_STB_aux\Data\Vests\V_M52_L_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_V_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_MAR_CO",
+			"V_FZ_Armor\Data\Vests\V_M52_L_MAR_CO",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
@@ -312,9 +312,9 @@
 		displayName = "[1stMEU] M52A Training (Red)";
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_V_RED_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_A_RED_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_L_RED_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_RED_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_A_RED_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_RED_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
@@ -329,9 +329,9 @@
 		displayName = "[1stMEU] M52A Training (Blue)";
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_V_BLU_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_A_BLU_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_L_BLU_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_BLU_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_A_BLU_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_BLU_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
@@ -346,9 +346,9 @@
 		displayName = "[1stMEU] M52A Training (Green)";
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_V_GRE_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_A_GRE_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_L_GRE_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_GRE_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_A_GRE_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_GRE_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};
@@ -363,9 +363,9 @@
 		displayName = "[1stMEU] M52A Training (Purple)";
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_V_PUR_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_A_PUR_CO.paa",
-			"11th_STB_aux\Data\TrainingArmor\MEU_M52_L_PUR_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_V_PUR_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_A_PUR_CO.paa",
+			"first_meu_aux\Data\TrainingArmor\MEU_M52_L_PUR_CO.paa",
 			"optre_unsc_units\army\data\ghillie_woodland_co",
 			"optre_unsc_units\army\data\odst_armor_co"
 		};

@@ -21,7 +21,7 @@
 
 class cfgPatches
 {
-    class 11th_STB_aux
+    class first_meu_aux
     {
 		units[] = 
 		{
@@ -413,7 +413,7 @@ class cfgPatches
 			"OPTRE_Weapons",
             "OPTRE_ACE_Compat",
             "OPTRE_FC_ACE_Compat",
-            "11th_STB_aux",
+            "V_FZ_Armor",
 			"OPTRE_Core",
 			"OPTRE_Misc",
 			"OPTRE_Misc_Crates",
@@ -648,7 +648,7 @@ class Extended_PreInit_EventHandlers
 {
     class MEU_pre_init_event
 	{
-        init = "call compile preprocessFileLineNumbers '11th_STB_aux\XEH_preInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'first_meu_aux\XEH_preInit.sqf'";
     };
 };
 
@@ -656,6 +656,6 @@ class Extended_PostInit_EventHandlers
 {
     class MEU_post_init_event
 	{
-        init = "call compile preprocessFileLineNumbers '11th_STB_aux\XEH_postInit.sqf'";
+        init = "call compile preprocessFileLineNumbers 'first_meu_aux\XEH_postInit.sqf'";
     };
 };
