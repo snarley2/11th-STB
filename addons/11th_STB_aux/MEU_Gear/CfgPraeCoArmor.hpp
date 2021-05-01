@@ -273,11 +273,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		subItems[] =
 		{
@@ -381,11 +381,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -483,11 +483,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -585,11 +585,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -687,11 +687,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -788,11 +788,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -893,11 +893,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		subItems[] =
 		{
@@ -1000,11 +1000,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1102,11 +1102,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1204,11 +1204,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1306,11 +1306,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1407,11 +1407,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1512,11 +1512,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		subItems[] =
 		{
@@ -1619,11 +1619,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1721,11 +1721,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1823,11 +1823,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -1925,11 +1925,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2026,11 +2026,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2132,11 +2132,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2236,11 +2236,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2338,11 +2338,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
         class ItemInfo: ItemInfo
 		{
@@ -2440,11 +2440,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2547,11 +2547,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		subItems[] =
 		{
@@ -2658,11 +2658,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2763,11 +2763,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2867,11 +2867,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -2971,11 +2971,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3074,11 +3074,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3181,11 +3181,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3286,11 +3286,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3390,11 +3390,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3493,11 +3493,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3597,11 +3597,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3700,11 +3700,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3809,11 +3809,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -3917,11 +3917,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4023,11 +4023,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4129,11 +4129,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4236,11 +4236,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4342,11 +4342,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4450,11 +4450,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4555,11 +4555,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4659,11 +4659,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
         class ItemInfo: ItemInfo
 		{
@@ -4763,11 +4763,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -4870,11 +4870,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		subItems[] =
 		{
@@ -4979,11 +4979,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Blue.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5083,11 +5083,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5187,11 +5187,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Silver.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5291,11 +5291,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5394,11 +5394,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5500,11 +5500,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
        
         class ItemInfo: ItemInfo
@@ -5607,11 +5607,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ_Mark.paa"
+			"11th_STB_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ_Mark.paa"
 		};
         
         class ItemInfo: ItemInfo
@@ -5713,11 +5713,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -5817,11 +5817,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
+			"11th_STB_aux\Data\3rdPlt\ODST_HR_Black_Red_CHQ.paa"
 		};
         class ItemInfo: ItemInfo
 		{
@@ -5923,11 +5923,11 @@
 		}; 
 		hiddenSelectionsTextures[] =  
 		{ 
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"first_meu_aux\Data\4thPlt\ODST_HR_Black_Purple3.paa" 
+			"11th_STB_aux\Data\4thPlt\ODST_HR_Black_Purple3.paa" 
 		}; 
          
         class ItemInfo: ItemInfo 
@@ -6030,11 +6030,11 @@
 		}; 
 		hiddenSelectionsTextures[] =  
 		{ 
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"first_meu_aux\Data\4thPlt\ODST_HR_Black_Purple2.paa" 
+			"11th_STB_aux\Data\4thPlt\ODST_HR_Black_Purple2.paa" 
 		}; 
         class ItemInfo: ItemInfo 
 		{ 
@@ -6134,11 +6134,11 @@
 		}; 
 		hiddenSelectionsTextures[] =  
 		{ 
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"first_meu_aux\data\4thPlt\ODST_HR_Black_Purple1.paa" 
+			"11th_STB_aux\data\4thPlt\ODST_HR_Black_Purple1.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -6239,11 +6239,11 @@
 		}; 
 		hiddenSelectionsTextures[] =  
 		{ 
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa" 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black_Yellow.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -6361,11 +6361,11 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"first_meu_aux\data\3rdPlt\ODST_HR_Black.paa"
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -6468,9 +6468,9 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"first_meu_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"first_meu_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
 			"optre_unsc_units\army\data\ghillie_desert_co.paa",
 			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
 		};

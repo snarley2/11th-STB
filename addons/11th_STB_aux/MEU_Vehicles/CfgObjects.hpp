@@ -8,7 +8,7 @@
         scopeCurator = 2;
         displayName ="3rd Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_whiteODST3HQ_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_whiteODST3HQ_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
@@ -19,7 +19,7 @@
         scopeCurator = 2;
         displayName ="3rd Plt 3-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST31_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_redODST31_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
@@ -30,7 +30,7 @@
         scopeCurator = 2;
         displayName ="3rd Plt 3-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST32_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_blueODST32_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
@@ -41,7 +41,7 @@
         scopeCurator = 2;
         displayName ="3rd Plt 3-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST33_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_greenODST33_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -52,7 +52,7 @@
         scopeCurator = 2;
         displayName ="4th Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_purpleODST4HQ_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_purpleODST4HQ_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
@@ -63,7 +63,7 @@
         scopeCurator = 2;
         displayName ="4th Plt 4-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_redODST41_co"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_redODST41_co"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
@@ -74,7 +74,7 @@
         scopeCurator = 2;
         displayName ="4th Plt 4-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blueODST42_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_blueODST42_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     }; 
@@ -85,7 +85,7 @@
         scopeCurator = 2;
         displayName ="4th Plt 4-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_greenODST43_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_greenODST43_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -96,7 +96,7 @@
         scopeCurator = 2;
         displayName ="1st MEU CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_red1stmeu_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_red1stmeu_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -107,7 +107,7 @@
         scopeCurator = 2;
         displayName ="1st Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow1stplt_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_yellow1stplt_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -118,7 +118,7 @@
         scopeCurator = 2;
         displayName ="1st Plt 1-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_red11_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_red11_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -129,7 +129,7 @@
         scopeCurator = 2;
         displayName ="1st Plt 1-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_blue12_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_blue12_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -140,7 +140,7 @@
         scopeCurator = 2;
         displayName ="1st Plt 1-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_green13_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_green13_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -152,7 +152,7 @@
         scopeCurator = 2;
         displayName ="2nd Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_yellow2ndplt_co.paa"};
         editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -164,7 +164,7 @@
         scopeCurator = 2;
         displayName ="2nd Plt 2-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2-1_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_yellow2-1_co.paa"};
         editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -176,7 +176,7 @@
         scopeCurator = 2;
         displayName ="2nd Plt 2-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2-2_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_yellow2-2_co.paa"};
         editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -188,7 +188,7 @@
         scopeCurator = 2;
         displayName ="2nd Plt 2-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_yellow2-3_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_yellow2-3_co.paa"};
         editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -200,7 +200,7 @@
         scopeCurator = 2;
         displayName ="5th Plt 5-1 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_hammer_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_hammer_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -212,7 +212,7 @@
         scopeCurator = 2;
         displayName ="5th Plt 5-2 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_anvil_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_anvil_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -224,7 +224,7 @@
         scopeCurator = 2;
         displayName ="5th Plt 5-3 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_forge_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_forge_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -236,7 +236,7 @@
         scopeCurator = 2;
         displayName ="5th Plt 5-Mike CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_guardian_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_guardian_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -248,7 +248,7 @@
         scopeCurator = 2;
         displayName ="5th Plt 5-0 CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_gladius_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_gladius_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -259,7 +259,7 @@
         scopeCurator = 2;
         displayName ="5th Plt HQ CTF Flag";
         hiddenSelections[] = {"camo1"};
-        hiddenSelectionsTextures[] = {"first_meu_aux\data\Misc\flag_guidon_vulcanhq_co.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Misc\flag_guidon_vulcanhq_co.paa"};
 		editorCategory = "MEU_Objects";
         editorSubcategory = "Flags";
     };
@@ -484,7 +484,7 @@
         scope = 2;
         scopeCurator = 2;
         displayName = "Logey's Cereal Box";
-        model = "first_meu_aux\data\logeyBOX.p3d";
+        model = "11th_STB_aux\data\logeyBOX.p3d";
    };
     class Land_LargeLandingPad_Snow: House_F
 	{
