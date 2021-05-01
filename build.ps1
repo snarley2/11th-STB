@@ -1,7 +1,7 @@
 param ([String[]] $only)
 
 # Create folders
-$buildPath = '.\build\@First MEU Aux Mod\addons'
+$buildPath = '.\build\@11th_STB_aux\addons'
 New-Item $buildPath -ItemType Directory -Force
 
 $buildPath = Resolve-Path $buildPath
@@ -13,7 +13,7 @@ function Build-Addon
 {
     param ([string] $addonFolder)
     $addonPath = Resolve-Path ".\Addons\$addonFolder"
-    & "$addonBuilder" $addonPath $buildPath -prefix="first_meu_aux" -clear -include="$includePath"
+    & "$addonBuilder" $addonPath $buildPath -prefix="11th_STB_aux" -clear -include="$includePath"
 }
 
 if ($PSBoundParameters.ContainsKey('only'))
@@ -31,4 +31,4 @@ else
     }
 }
 
-Copy-Item -Path ".\addons\first_meu_aux\mod.cpp" -Destination ".\build\@First MEU Aux Mod"
+Copy-Item -Path ".\addons\@11th_STB_aux\mod.cpp" -Destination ".\build\@11th STB Aux Mod"

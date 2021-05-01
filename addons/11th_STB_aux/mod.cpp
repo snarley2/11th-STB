@@ -1,10 +1,10 @@
-name = "@First MEU Aux";
+name = "@11th STB Aux";
 picture = "11th_STB_aux\Data\MEU.jpg";
 logo = "11th_STB_aux\Data\1stModDevInsig.paa";
 logoSmall = "11th_STB_aux\Data\1stModDevInsig_small.paa";
 logoOver = "11th_STB_aux\Data\1stModDevInsig_small.paa";
 description = "Fuck Us huh?";
-tooltipOwned="1st MEU";
+tooltipOwned="11th MEU";
 hideName = 0;
 hidePicture = 0;
 author = "Hobnob & Chatter & Chaotic & Kestrel & NSM (Namenai) & Oneill & Mark & Romeo"
