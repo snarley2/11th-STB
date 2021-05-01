@@ -920,7 +920,7 @@
 		};
 	};
 //JTAC Armor
-    class MEU_JTAC_Vest : MEU_M52A_NCO_Marksman_URB
+    class MEU_JTAC_Vest : 1MEU_BASE_Pilot_Armor
     {
         scope = 2;
         scopeCurator = 2;

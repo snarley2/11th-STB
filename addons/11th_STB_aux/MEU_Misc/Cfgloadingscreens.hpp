@@ -34,7 +34,7 @@ class RscDisplayMain: RscStandardDisplay //this class changes the insignia on th
 		delete BackgroundSpotlight;
 		class Logo: RscActivePicture //this class changes the insignia on the top
 		{
-			text = "\11th_STB_aux\Data\LoadingScreens\1stMEUInsignia.paa";
+			text = "\11th_STB_aux\Data\LoadingScreens\11thbackground.paa";
 			
 		};
 	};

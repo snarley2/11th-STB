@@ -21,7 +21,7 @@
 
 class cfgPatches
 {
-    class first_meu_aux
+    class 11th_STB_aux
     {
 		units[] = 
 		{
