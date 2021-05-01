@@ -240,7 +240,7 @@
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\3rdPlt\ODST_H3_color_green.paa","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\3rdPlt\ODST_H3_Black_HM.paa","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
     };
     class Praetor_Helmet_Blue_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
@@ -280,7 +280,7 @@
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\4thPlt\ODST_H3_Black_Red.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\3rdPlt\ODST_H3_Black_Red.paa","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA.paa"};
     };
     
  //Start Base Broke-Ass Shit

@@ -146,7 +146,7 @@ class CfgWeapons
     #include "\11th_STB_aux\MEU_Gear\CfgPraeCoArmor.hpp"
     #include "\11th_STB_aux\MEU_Gear\TrainingArmor.hpp"
     #include "\11th_STB_aux\MEU_Gear\CfgPegArmor.hpp"
-    #include "\11th_STB_aux\MEU_Gear\CfgPegHelm.hpp"
+    #include "\11th_STB_aux\MEU_Gear\11thhelms.hpp"
 
     /*// Start of Chemical Barrels | 0 = CS | 1 = AS | 2 = NA
     class ChemicalBarrel_NA: plp_ctf_SafetyBarrelBlue
