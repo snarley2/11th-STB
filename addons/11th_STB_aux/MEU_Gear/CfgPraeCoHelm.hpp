@@ -2525,3 +2525,244 @@
         visionMode[] = {"Normal","TI","NVG"};
         thermalMode[] = {0,1,2,3,4,5};
     };
+//Hades helmets
+    class Hades_Helmet_HQSSGT: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades HQ SSGT";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\HQ_Staff_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_HQCpl: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades HQ cpl";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\HQ_Corporal","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_HQslotted: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades HQ Slotted";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\HQ_Slotted","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_HQSGT: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades HQ SGT";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\HQ_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_11SSGT: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-1 SSGT";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-1_Staff_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_11SGT: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-1 SGT";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-1_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_11Cpl: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-1 Cpl";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-1_Corporal","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_11slotted: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-1 slotted";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-1_Slotted","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_12SSGT: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-2 SSGT";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-2_Staff_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };    
+    class Hades_Helmet_12SGT: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-2 SGT";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-2_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_12Cpl: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-2 Cpl";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-2_Corporal","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_12slotted: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Snarley";
+		displayName = "[11th] CH252D Hades 1-2 slotted";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades\1-2_Slotted","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+    };
+    class Hades_Helmet_HQSSGT_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\HQ_Staff_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_HQSGT_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\HQ_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_HQCpl_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\HQ_Corporal","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_HQslotted_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\HQ_Slotted","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_11SSGT_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-1_Staff_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_11SGT_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-1_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_11Cpl_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-1_Corporal","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_11slotted_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-1_slotted","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_12SSGT_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-2_Staff_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_12SGT_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-2_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_12Cpl_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-2_Corporal","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_12slotted_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades\1-2_slotted","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
