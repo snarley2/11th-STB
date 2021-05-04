@@ -2531,7 +2531,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades HQ SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2543,7 +2543,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades HQ cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2555,7 +2555,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades HQ Slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2567,7 +2567,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades HQ SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2579,7 +2579,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-1 SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2591,7 +2591,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-1 SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2603,7 +2603,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-1 Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2615,7 +2615,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-1 slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2627,7 +2627,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-2 SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2639,7 +2639,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-2 SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2651,7 +2651,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-2 Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
@@ -2663,7 +2663,7 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
+		author = "Snarley";
 		displayName = "[11th] CH252D Hades 1-2 slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};

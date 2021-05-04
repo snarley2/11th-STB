@@ -423,6 +423,103 @@
 				"AP_Rounds",
 				"AP_SG",
 				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
+		};
+	};
+	class Pilot_CWO5: 1MEU_BASE_Pilot_Armor 
+	{	
+		scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[11th] Pilot Body Armor (CWO5)";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_MGThigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Rounds",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Thigh",
+			"AP_Frag",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_ODST",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"AP_Thigh",
+				"AP_Frag",
 				"APO_AR",
 				"APO_BR",
 				"APO_SMG",
@@ -431,21 +528,93 @@
 			};
 		};
 	};
-	class Pilot_Icarus: MEU_M52A_Rifleman
-	{
+	class Pilot_Officer: 1MEU_BASE_Pilot_Armor 
+	{	
 		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		dlc = "!st MEU";
-		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] Pilot Body Armor (Base)";
-		hiddenSelectionsTextures[] = 
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		dlc = "1st MEU";
+		author = "1st MEU Oneill";
+		displayName = "[11th] Pilot Body Armor (Officer)";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 
 		{
-			"V_FZ_Armor\Data\Vests\V_M52_V_URB_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_URB_CO",
-			"V_FZ_Armor\Data\Vests\V_M52_L_URB_CO",
-			"optre_unsc_units\army\data\ghillie_woodland_co",
-			"optre_unsc_units\army\data\odst_armor_co"
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"A_Ghillie",
+			"A_ODST",
+			"A_ShinArmorLeft",
+			"A_ShinArmorRight",
+			"A_TacPad",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_MGThigh",
+			"AP_Rounds",
+			"AP_SMG",
+			"AP_Sniper",
+			"AP_Frag",
+			"APO_AR",
+			"APO_BR",
+			"APO_Knife",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		class ItemInfo: ItemInfo 
+		{
+			hiddenSelections[] = 
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_Ghillie",
+				"A_ODST",
+				"A_ShinArmorLeft",
+				"A_ShinArmorRight",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTLeft",
+				"AS_ODSTRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_Canteen",
+				"AP_GL",
+				"AP_MGThigh",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_Sniper",
+				"AP_Frag",
+				"APO_AR",
+				"APO_BR",
+				"APO_Knife",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			};
 		};
 	};
 //JTAC Armor
