@@ -4,6 +4,7 @@ class CfgAmmo
 	class ammo_Missile_CruiseBase;
 	class Sh_105mm_APFSDS_T_Green;
 	class Sh_105mm_HEAT_MP;
+    class B_35mm_AA_Tracer_Red;
 	class B_30mm_MP;
 	class B_30mm_APFSDS;
     class OPTRE_SpLaserAmmo;
@@ -758,4 +759,17 @@ class CfgAmmo
         hit = 1500;
         defaultMagazine = "MEU_HopperRocket_V2";
     };
+    
+	class OPTRE_B_20mm_HEIAP: B_35mm_AA_Tracer_Red
+	{
+		airlock = 1;
+		hit = 100;
+		indirectHit = 10;
+		indirectHitRange = 0.5;
+		caliber = 4;
+		explosive = 5;
+		tracerScale = 1;
+		tracerStartTime = 0.005;
+		tracerEndTime = 10;
+	};
 };

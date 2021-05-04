@@ -365,7 +365,8 @@ class cfgPatches
             "MEU_B_8Gauge_Pellet_Submunition",
             "OPTRE_FC_BubbleShield_Ammo",
             "MEU_16x65mm_Slug",
-            "MEU_HEV_Landing_Explosive"
+            "MEU_HEV_Landing_Explosive",
+            "OPTRE_B_20mm_HEIAP"
         };
 		weapons[] = 
 		{

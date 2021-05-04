@@ -1864,7 +1864,7 @@ class CfgMagazines
 		scope = 2;
 		displayName = "80Rnd 30mm APFSDS Belt ";
 		displayNameShort = "30mm APFSDS";
-		ammo = "M1024_30mm_APFSDS";
+    ammo = "M1024_30mm_APFSDS";
 		count = 60;
 		initSpeed = 1400;
 		maxLeadSpeed = 83.3333;
