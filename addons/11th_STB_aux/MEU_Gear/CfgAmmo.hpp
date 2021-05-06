@@ -767,7 +767,7 @@ class CfgAmmo
 		indirectHit = 10;
 		indirectHitRange = 0.5;
 		caliber = 4;
-		explosive = 5;
+		explosive = 7;
 		tracerScale = 1;
 		tracerStartTime = 0.005;
 		tracerEndTime = 10;

@@ -6412,41 +6412,54 @@
 			};
 		};
 	};
-//Hokage
-    class Hokage: 1MEU_BASE_M52D_Armor
-	{
-		author="1st MEU Oneill";
-		displayName="[11th] Hokage";
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
-		hiddenSelections[] = 
-		{
-			"camo",
+//Hades classes
+    class Hades_Base_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Base"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
             "camo2",
             "camo3",
             "camo4",
             "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
             "A_KneesMarLeft",
             "A_KneesMarRight",
-            "A_Ghillie",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
             "AS_LargeLeft",
             "AS_LargeRight",
             "AS_MediumLeft",
             "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
             "AS_ODSTLeft",
             "AS_ODSTRight",
-            "AS_ODSTCQBLeft",
+            "AS_ODSTSniperLeft",
             "AS_ODSTSniperRight",
             "AS_SmallLeft",
             "AS_SmallRight",
             "AP_AR",
             "AP_BR",
             "AP_Canteen",
+            "AP_GL",
             "AP_Knife",
             "AP_MGThigh",
-            "AP_GL",
             "AP_AR",
             "AP_Pack",
             "AP_Pistol",
@@ -6454,55 +6467,75 @@
             "AP_SG",
             "AP_SMG",
             "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
             "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
             "APO_Sniper",
             "CustomKit_Scorch"
-		};
-		hiddenSelectionsMaterials[] = 
-		{
-			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
-			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
-			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
-			"",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
-			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_armor_color_Red.paa"
-		};
-        class ItemInfo: ItemInfo
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			hiddenSelections[] = 
-			{
-			"camo",
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
             "camo2",
             "camo3",
             "camo4",
             "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
             "A_KneesMarLeft",
             "A_KneesMarRight",
-            "A_Ghillie",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
             "AS_LargeLeft",
             "AS_LargeRight",
             "AS_MediumLeft",
             "AS_MediumRight",
-            "AS_ODSTLeft",
-            "AS_ODSTRight",
             "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
             "AS_ODSTSniperRight",
             "AS_SmallLeft",
             "AS_SmallRight",
             "AP_AR",
             "AP_BR",
             "AP_Canteen",
+            "AP_GL",
             "AP_Knife",
             "AP_MGThigh",
-            "AP_GL",
             "AP_AR",
             "AP_Pack",
             "AP_Pistol",
@@ -6510,9 +6543,2537 @@
             "AP_SG",
             "AP_SMG",
             "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
             "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
             "APO_Sniper",
             "CustomKit_Scorch"
-			};
-		};
-    };
+			}; 
+		}; 
+	}; 
+
+    class Hades_Rifleman_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Rifleman"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            //"AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            //"AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_Corpsman_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Corpsman"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            //"AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_RTO_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST RTO"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            //"AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_Shotgun_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Shotgun"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            //"AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            //"AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            //"AP_Smoke",
+            //"APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_SMG_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST SMG"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            //"AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_Marksman_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Marksman"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_Ghillie",
+				"A_TacPad",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_SMG",
+				"APO_Sniper",
+				"CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_Sniper_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Sniper"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"A_KneesMarLeft",
+				"A_KneesMarRight",
+				"A_TacPad",
+				"A_Ghillie",
+				"AS_LargeLeft",
+				"AS_LargeRight",
+				"AS_MediumLeft",
+				"AS_MediumRight",
+				"AS_ODSTCQBLeft",
+				"AS_ODSTCQBRight",
+				"AS_ODSTSniperLeft",
+				"AS_ODSTSniperRight",
+				"AS_SmallLeft",
+				"AS_SmallRight",
+				"AP_AR",
+				"AP_BR",
+				"AP_GL",
+				"AP_Knife",
+				"AP_MGThigh",
+				"AP_AR",
+				"AP_Pack",
+				"AP_Rounds",
+				"AP_SG",
+				"AP_SMG",
+				"AP_Sniper",
+				"AP_Frag",
+				"AP_Smoke",
+				"APO_AR",
+				"APO_BR",
+				"APO_SMG",
+				"CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_GL_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Grenadier"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            //"AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            //"AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            //"AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_SL_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST SL"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            //"AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            //"AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            //"AP_Knife",
+            "AP_MGThigh",
+            //"AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	};
+    class Hades_Ghillie_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Ghillie"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            //"A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            //"AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            //"APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	};
+    class Hades_AutoRifleman_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST AutoRifleman"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            //"AP_AR",
+            "AP_BR",
+            //"AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            //"AP_MGThigh",
+            //"AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+//personal vests
+    class Hades_Snarley_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Snarley"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            //"AP_Canteen",
+            "AP_GL",
+            //"AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            //"AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_SnarleyF_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST SnarleyF"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            //"A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            //"AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            //"APO_Sniper",
+            //"CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_Weiss_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Weiss"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+            //"A_ShinArmorLeft",
+            //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            //"AS_ODSTRight",
+            //"AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_Tuff_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Tuff"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            //"AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            //"AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 
+    class Hades_Ash_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Ash"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            //"AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            //"AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            //"AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            //"AP_GL",
+            //"AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            //"APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	};
+    class Hades_Sandman_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Sandman"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            //"AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            //"AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	};
+    class Hades_Dragon_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Dragon"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+		}; 
+		class ItemInfo: ItemInfo 
+		{ 
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
+			hiddenSelections[] = 	 
+			{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            //"AS_ODSTCQBLeft",
+            //"AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            //"AP_AR",
+            "AP_BR",
+            //"AP_Canteen",
+            "AP_GL",
+            //"AP_Knife",
+            //"AP_MGThigh",
+            //"AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            //"AP_Thigh",
+            //"AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			}; 
+		}; 
+	}; 

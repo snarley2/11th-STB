@@ -9,18 +9,15 @@ class OPTRE_Ammo_SupplyPod_NEWACE_Medical: OPTRE_Ammo_SupplyPod_Empty
 	displayName = "[UNSC] Supply Pod (New ACE Medical)";
 	class TransportItems
 	{
-		item_xx(ACE_elasticBandage, 100);
-		item_xx(ACE_packingBandage, 80);
 		item_xx(ACE_plasmaIV_500, 40);
-		item_xx(MEU_Biofoam_Light, 40);
-		item_xx(MEU_Medigel_Light, 40);
+		item_xx(MEU_Biofoam_Light, 150);
+		item_xx(MEU_Medigel_Light, 150);
 		item_xx(MEU_PlasmaIV, 20);
-		item_xx(MEU_compat_Ibuprofen, 40);
+		item_xx(MEU_compat_Ibuprofen, 80);
 		item_xx(MEU_Emergency_MedKit, 10);
-		item_xx(ACE_epinephrine, 80);
+		item_xx(ACE_epinephrine, 20);
 		item_xx(ACE_tourniquet, 80);
-		item_xx(ACE_quikclot, 80);
-		item_xx(ACE_morphine, 80);
+		item_xx(ACE_morphine, 10);
 		item_xx(ACE_plasmaIV, 40);
 		item_xx(ACE_Banana, 5);
 		item_xx(ACE_splint, 80);
