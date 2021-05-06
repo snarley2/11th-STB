@@ -140,7 +140,7 @@ class 11_Icarus_Test2_dp : 11_Pilot_Base
         model = "\OPTRE_UNSC_Units\Army\aa_helmet_dp.p3d"
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"OPTRE_UNSC_UNITS\Army\Data\aa_helmet.rvmat"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Icarus_H\Icarus_Leader.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Icarus_H\Icarus_Leadership.paa"};
     };
  class 11_Icarus_Test4_dp : 11_Pilot_Base
     {

@@ -763,11 +763,11 @@ class CfgAmmo
 	class OPTRE_B_20mm_HEIAP: B_35mm_AA_Tracer_Red
 	{
 		airlock = 1;
-		hit = 100;
-		indirectHit = 10;
-		indirectHitRange = 0.5;
+		hit = 125;
+		indirectHit = 35;
+		indirectHitRange = 4;
 		caliber = 4;
-		explosive = 7;
+		explosive = 2;
 		tracerScale = 1;
 		tracerStartTime = 0.005;
 		tracerEndTime = 10;
