@@ -764,10 +764,10 @@ class CfgAmmo
 	{
 		airlock = 1;
 		hit = 125;
-		indirectHit = 35;
+		indirectHit = 15;
 		indirectHitRange = 4;
 		caliber = 4;
-		explosive = 2;
+		explosive = 0.5;
 		tracerScale = 1;
 		tracerStartTime = 0.005;
 		tracerEndTime = 10;

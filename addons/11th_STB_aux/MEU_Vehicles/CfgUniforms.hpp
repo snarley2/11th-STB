@@ -353,4 +353,10 @@
 		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa","LM_OPCAN3.0\BLU\UNSC\U\UNSC-A-BLK.paa"};
 	};
 	
-//  End Uniforms
+// Hades Unifroms
+	class BDU_V_Hades_Urban_Evolved_Slim: 1stMEU_BDU
+	{
+		uniformclass = "Hades_BDU_Urban_Evolved";
+        hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_UNI\STB_BDU_Black_CO.paa","11th_STB_aux\data\Hades_UNI\STB_BDU_Black_CO.paa"};
+	};

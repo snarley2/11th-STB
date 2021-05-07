@@ -2531,156 +2531,168 @@
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades HQ CO";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_BLK.paa"};
     };
     class Hades_Helmet_HQSSGT: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades HQ SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
     };
     class Hades_Helmet_HQCpl: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
-		displayName = "[11th] CH252D Hades HQ cpl";
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] CH252D Hades HQ Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Corporal","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
     };
     class Hades_Helmet_HQslotted: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades HQ Slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Slotted","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+};
+    class Hades_Helmet_HQWeiss: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] CH252D Hades Weiss";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
     };
     class Hades_Helmet_HQSGT: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades HQ SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
     };
     class Hades_Helmet_11SSGT: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-1 SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Staff_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
     };
     class Hades_Helmet_11SGT: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-1 SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
     };
     class Hades_Helmet_11Cpl: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-1 Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Corporal","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
     };
     class Hades_Helmet_11slotted: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-1 slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Slotted","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
     };
     class Hades_Helmet_12SSGT: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-2 SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Staff_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
     };    
     class Hades_Helmet_12SGT: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-2 SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Sergeant","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
     };
     class Hades_Helmet_12Cpl: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-2 Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Corporal","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
     };
     class Hades_Helmet_12slotted: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
-		author = "Snarley";
+		author = "Tom(s) & Jerry(s)";
 		displayName = "[11th] CH252D Hades 1-2 slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Slotted","11th_STB_aux\data\MISC\VISR_ODST_NAV.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
     };
     class Hades_Helmet_HQCO_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
@@ -2721,6 +2733,14 @@
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\HQ_Slotted","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Hades_Helmet_Weiss_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
     };
     class Hades_Helmet_11SSGT_dp : 1stMEU_Base_CH252D_Helmet_dp
     {

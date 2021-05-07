@@ -142,7 +142,7 @@ class CfgWeapons
     class plp_ctf_SafetyBarrelBlue;
     class FullAutoSlow;
     class FullAutoFast;
-    
+        
     #include "\11th_STB_aux\MEU_Gear\CfgPraeCoHelm.hpp"
     #include "\11th_STB_aux\MEU_Gear\CfgPraeCoArmor.hpp"
     #include "\11th_STB_aux\MEU_Gear\TrainingArmor.hpp"
@@ -3542,4 +3542,22 @@ class CfgWeapons
 	{
 	reloadtime=5;	
 	};
+    	class Hades_BDU_Urban_Evolved : U_B_CombatUniform_mcam
+    {
+        author = "1st MEU Oneill";
+        scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+        displayName = "[11th] Hades ODST Uni";
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+        CBRN_protectionLevel = "4 + 8";
+        class ItemInfo: UniformItem
+        {
+			uniformClass = "BDU_V_Hades_Urban_Evolved_Slim";
+			containerClass = "Supply100";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+        };
+    };
 };
