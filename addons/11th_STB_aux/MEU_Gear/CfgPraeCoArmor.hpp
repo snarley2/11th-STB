@@ -6829,9 +6829,9 @@
     class Hades_Corpsman_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Corpsman"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -9133,7 +9133,7 @@
             "AP_Thigh",
             "AP_Frag",
             //"AP_Smoke",
-            //"APO_AR",
+            "APO_AR",
             "APO_BR",
             //"APO_Knife",
             //"APO_SMG",
@@ -9273,7 +9273,7 @@
             "AP_Thigh",
             "AP_Frag",
             //"AP_Smoke",
-            "APO_AR",
+            //"APO_AR",
             "APO_BR",
             //"APO_Knife",
             //"APO_SMG",
@@ -9413,8 +9413,8 @@
             "AP_Thigh",
             "AP_Frag",
             //"AP_Smoke",
-            //"APO_AR",
-            "APO_BR",
+            "APO_AR",
+            //"APO_BR",
             //"APO_Knife",
             //"APO_SMG",
             "APO_Sniper",
@@ -9468,7 +9468,7 @@ class Icarus_Pilot_Officer : 1MEU_BASE_M52D_Armor
 			"AP_BR",
 			"AP_Canteen",
 			"AP_GL",
-			"AP_Knife",
+			//"AP_Knife",
 			"AP_MGThigh",
             "AP_Thigh",
 			"AP_AR",
@@ -9557,7 +9557,7 @@ class Icarus_Pilot_Officer : 1MEU_BASE_M52D_Armor
             "APO_BR",
             //"APO_Knife",
             //"APO_SMG",
-            "APO_Sniper",
+            //"APO_Sniper",
             "CustomKit_Scorch"
 			};
 		};

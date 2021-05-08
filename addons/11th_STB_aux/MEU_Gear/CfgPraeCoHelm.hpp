@@ -2856,7 +2856,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_HR.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Hades_Helmet_HQCO_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
@@ -3000,7 +3000,7 @@
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Hades_Leadership.paa","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\Hades_V\VISR_ODST_CLR.paa"};
     };
 	class Hades_Recon_Helmet: OPTRE_UNSC_Recon_Helmet
 	{
