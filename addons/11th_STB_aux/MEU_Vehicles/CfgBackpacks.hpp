@@ -256,7 +256,7 @@
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		model = "\A3\weapons_f\empty";
-        maximumLoad = 0;
+        maximumLoad = 250;
     };
 	
 	class MEU_Marine_ANPRC_521: OPTRE_ANPRC_521_Green

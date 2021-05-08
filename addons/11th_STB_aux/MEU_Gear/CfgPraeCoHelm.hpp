@@ -98,6 +98,110 @@
 		allowedFacewear[] = {};
 	};
     
+	class ODST_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
+    {
+        dlc = "1st MEU";
+		author = "Tom(s) & Jerry(s)";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+        weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[11th] Hades Recon helmet";
+		picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_co.paa"};
+		hiddenSelectionsMaterials[] = {"OPTRE_UNSC_Units\Army\recon_helmet.p3d"};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 30;
+			uniformModel = "OPTRE_UNSC_Units\Army\recon_helmet_dp.p3d";
+			picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
+			hiddenSelections[] = {"camo","camo2"};
+			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_co.paa"};
+			hiddenSelectionsMaterials[] = {"OPTRE_USNC_Units\Army\recon_helmet.p3d"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		allowedFacewear[] = {};
+	};
+    
+	class ODST_Recon_Helmet_dp: OPTRE_UNSC_Recon_Helmet_dp
+    {
+        dlc = "1st MEU";
+		author = "Tom(s) & Jerry(s)";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+        weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "[11th] Recon helmet";
+		picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
+		hiddenSelectionsMaterials[] = {"OPTRE_UNSC_Units\Army\recon_helmet.p3d"};
+		class ItemInfo: HeadgearItem
+		{
+			mass = 30;
+			uniformModel = "OPTRE_UNSC_Units\Army\recon_helmet_dp.p3d";
+			picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
+			hiddenSelections[] = {"camo","camo2"};
+			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
+			hiddenSelectionsMaterials[] = {"OPTRE_USNC_Units\Army\recon_helmet.p3d"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+		subItems[]=
+		{
+			"ItemcTabHCam"
+		};
+		allowedFacewear[] = {};
+	};
+    
 //Start Base Helmet
     class Praetor_Helmet_Black: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2532,7 +2636,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades HQ CO";
+		displayName = "[11th] ODST HQ CO";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2544,7 +2648,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades HQ SSGT";
+		displayName = "[11th] ODST HQ SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2556,7 +2660,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades HQ Cpl";
+		displayName = "[11th] ODST HQ Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2568,31 +2672,19 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades HQ Slotted";
+		displayName = "[11th] ODST HQ Slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
 };
-    class Hades_Helmet_HQWeiss: 1stMEU_Base_CH252D_Helmet
-	{
-		scope = 2;
-        scopeCurator = 2;
-        scopeArsenal = 2;
-		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades Weiss";
-		optreVarietys[] = {"_dp","","_broken"};
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
-    };
     class Hades_Helmet_HQSGT: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades HQ SGT";
+		displayName = "[11th] ODST HQ SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2604,7 +2696,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-1 SSGT";
+		displayName = "[11th] ODST 1-1 SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2616,7 +2708,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-1 SGT";
+		displayName = "[11th] ODST 1-1 SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2628,7 +2720,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-1 Cpl";
+		displayName = "[11th] ODST 1-1 Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2640,7 +2732,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-1 slotted";
+		displayName = "[11th] ODST 1-1 slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2652,7 +2744,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-2 SSGT";
+		displayName = "[11th] ODST 1-2 SSGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2664,7 +2756,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-2 SGT";
+		displayName = "[11th] ODST 1-2 SGT";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2676,7 +2768,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-2 Cpl";
+		displayName = "[11th] ODST 1-2 Cpl";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2688,11 +2780,83 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] CH252D Hades 1-2 slotted";
+		displayName = "[11th] ODST 1-2 slotted";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+    };
+    class Icarus_Helmet_Cadet: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] ODST Icarus Cadet";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Slotted.paa","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+    };
+    class Icarus_Helmet_Pilot: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] ODST Icarus Pilot";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Cadet.paa","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+    };
+    class Icarus_Helmet_Flightleader: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] ODST Icarus Flightleader";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_WO.paa","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+    };
+    class Icarus_Helmet_Squadronleader: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] ODST Icarus Squadronleader";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+    };
+    class Icarus_Helmet_Officer: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] ODST Icarus Officer";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\Hades_V\VISR_ODST_BLK.paa"};
+    };
+    class Hades_Helmet_Slim: 1stMEU_Base_CH252D_Helmet
+	{
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] ODST 1-1 Slim";
+		optreVarietys[] = {"_dp","","_broken"};
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_HR.paa"};
     };
     class Hades_Helmet_HQCO_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
@@ -2733,14 +2897,6 @@
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\HQ_Slotted","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
-    };
-    class Hades_Helmet_Weiss_dp : 1stMEU_Base_CH252D_Helmet_dp
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
     };
     class Hades_Helmet_11SSGT_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
@@ -2805,4 +2961,74 @@
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
         hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\1-2_slotted","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Icarus_Helmet_Cadet_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Icarus_Slotted.paa","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Icarus_Helmet_Pilot_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Icarus_Cadet.paa","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Icarus_Helmet_Flightleader_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Icarus_WO","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Icarus_Helmet_Squadronleader_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Icarus_Leadership","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+    class Icarus_Helmet_Officer_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Hades_Leadership.paa","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+	class Hades_Recon_Helmet: OPTRE_UNSC_Recon_Helmet
+	{
+		dlc = "OPTRE";
+		scope = 2;
+        scopeCurator = 2;
+        scopeArsenal = 2;
+		author = "Tom(s) & Jerry(s)";
+		displayName = "[11th] Hades Recon";
+		picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon.paa";
+		hiddenSelections[] = {"camo","camo2"};
+		model = "\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_co.paa"};
+		hiddenSelectionsMaterials[] = {"OPTRE_UNSC_Units\Army\recon_helmet.p3d"};
+    };
+        class Hades_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"OPTRE_UNSC_Units\Army\recon_helmet.p3d"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
+    };
+    class Hades_Helmet_Slim_dp : 1stMEU_Base_CH252D_Helmet_dp
+    {
+        scope = 1;
+        scopeArsenal = 1;
+        hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\1-1_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
     };

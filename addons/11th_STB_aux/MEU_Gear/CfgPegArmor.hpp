@@ -196,7 +196,7 @@
 	};
     
 //Pilot Armor
-    class Pilot_Recruit: 1MEU_BASE_Pilot_Armor 
+    /*class Pilot_Recruit: 1MEU_BASE_Pilot_Armor 
 	{	
 		scope = 2;
 		scopeArsenal = 2;
@@ -406,4 +406,4 @@
 			"CustomKit_Scorch"
             };
         };
-    };
+    };*/

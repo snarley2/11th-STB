@@ -10,6 +10,8 @@ class CfgWeapons
 	class OPTRE_UNSC_M52A_Armor_Base;
     class OPTRE_FC_VX19_Helmet;
 	class OPTRE_HUD_RscPicture;
+    class OPTRE_UNSC_Recon_Helmet;
+    class OPTRE_UNSC_Recon_Helmet_dp;
 
 	//OPCAN Armor
 	class LM_OPCAN_CH252D_H3_dp;

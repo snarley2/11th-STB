@@ -2727,6 +2727,7 @@ class CfgVehicles
 		side = 1;
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
+
     };
     class MEU_M813_TT: VES_M813_TT
 	{
@@ -2736,7 +2737,6 @@ class CfgVehicles
 		displayName = "[11th] M813 TT Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
-        
 	};
     class MEU_M12A1_AT: VES_M12A1_LRV
 	{
@@ -2746,7 +2746,6 @@ class CfgVehicles
 		displayName = "[11th] M12A1 AT Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
-        
 	};
     class MEU_M12_Unarmed: VES_M12
 	{
@@ -2756,7 +2755,8 @@ class CfgVehicles
 		displayName = "[11th] M12 FAV Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
-        
+        hiddenSelectionstextures[] = {"OPTRE_Vehicles\Warthog\data\warthog_black_co.paa"};
+
 	};
     class MEU_M12G1_Gauss: VES_M12G1_LRV
 	{
@@ -2766,7 +2766,6 @@ class CfgVehicles
 		displayName = "[11th] M12G1 FAV Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
         editorCategory = "MEU_cat_A";
-        
     };
     class MEU_M12_LAAG: VES_M12_LRV
 	{
@@ -2775,8 +2774,7 @@ class CfgVehicles
 		forceInGarage = 1;
 		displayName = "[11th] M12 LAAG Warthog";
 		crew = "OPTRE_UNSC_Marine_Soldier_Rifleman_AR";
-        editorCategory = "MEU_cat_A";
-        
+        editorCategory = "MEU_cat_A";        
     };
     class MEU_Felix_Rotary_Friden : I_Heli_light_03_F
     {
@@ -3950,6 +3948,7 @@ class CfgVehicles
         tf_range = 120000;
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
+        hiddenSelectionstextures[] = {"OPTRE_Vehicles\Falcon\data\falcon_hull_night_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_night_co.paa","optre_vehicles\falcon\data\falcon_wingtips_night_co.paa","optre_vehicles\falcon\data\falcon_skid_night_co.paa"};
         class ACE_Cargo
         {
             class Cargo
@@ -4074,6 +4073,7 @@ class CfgVehicles
         crewVulnerable = 0;
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
+        hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
         class ACE_Cargo
         {
             class Cargo
@@ -4245,6 +4245,15 @@ class CfgVehicles
                     "11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
                 };
             };
+            class Peg_Black
+            {
+            displayName="Black";
+            author="chaotic"
+            textures[]=
+            {
+                "OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"                 
+                };
+            };
         };
         class ACE_SelfActions: ACE_SelfActions
         {
@@ -4380,7 +4389,7 @@ class CfgVehicles
         mainRotorSpeed=6;
         backRotorSpeed=7;
         hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
-        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_black_co.paa"};
         class Turrets : Turrets
 		{
 			class CargoTurret_01 : CargoTurret
@@ -4659,6 +4668,7 @@ class CfgVehicles
         tf_range = 120000;
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
+        hiddenSelectionstextures[] = {"OPTRE_Vehicles\Falcon\data\falcon_hull_night_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_night_co.paa","optre_vehicles\falcon\data\falcon_wingtips_night_co.paa","optre_vehicles\falcon\data\falcon_skid_night_co.paa"};
         class ACE_Cargo
         {
             class Cargo
@@ -4775,7 +4785,7 @@ class CfgVehicles
         mainRotorSpeed=6;
         backRotorSpeed=7;
         hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
-        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_black_co.paa"};
         class textureSources
         {
             class colorgreen
@@ -4943,7 +4953,7 @@ class CfgVehicles
         mainRotorSpeed=6;
         backRotorSpeed=7;
         hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
-        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_black_co.paa"};
         class textureSources
         {
             class colorgreen
@@ -5111,7 +5121,7 @@ class CfgVehicles
         mainRotorSpeed=6;
         backRotorSpeed=7;
         hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
-        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_black_co.paa"};
         class textureSources
         {
             class colorgreen
@@ -5279,7 +5289,7 @@ class CfgVehicles
         mainRotorSpeed=6;
         backRotorSpeed=7;
         hiddenSelections[] = {"camo1","clan","clan_text","insignia"};
-        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_green_co.paa"};
+        hiddenSelectionsTextures[] = {"optre_vehicles\hornet\data\hornet_hull_black_co.paa"};
         class textureSources
         {
             class colorgreen
@@ -5441,6 +5451,7 @@ class CfgVehicles
         fuelCapacity = 200;
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
+        hiddenSelectionstextures[] = {"OPTRE_Vehicles\Falcon\data\falcon_hull_night_CO.paa","optre_vehicles\falcon\data\falcon_hullextra_night_co.paa","optre_vehicles\falcon\data\falcon_wingtips_night_co.paa","optre_vehicles\falcon\data\falcon_skid_night_co.paa"};
         class ACE_Cargo
         {
             class Cargo
@@ -5547,6 +5558,8 @@ class CfgVehicles
         tf_range = 120000;
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
+        hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
+
         class ACE_Cargo
         {
             class Cargo
@@ -5939,6 +5952,15 @@ class CfgVehicles
                     "11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
                 };
             };
+            class Peg_Black
+            {
+            displayName="Black";
+            author="chaotic"
+            textures[]=
+            {
+                "OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"                 
+                };
+            };
         };
         class ACE_SelfActions: ACE_SelfActions
         {
@@ -6069,6 +6091,8 @@ class CfgVehicles
         tf_range = 120000;
         ace_cargo_space = 4;
         ace_cargo_hasCargo = 1;
+        hiddenSelectionsTextures[] = {"OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"};
+
         class ACE_Cargo
         {
             class Cargo
@@ -6460,6 +6484,15 @@ class CfgVehicles
                 textures[]=
                 {
                     "11th_STB_aux\Data\Pegasus\vic\P_BLK_Bloodbath.paa"
+                };
+            };
+            class Peg_Black
+            {
+            displayName="Black";
+            author="chaotic"
+            textures[]=
+            {
+                "OPTRE_Vehicles\Pelican\data\PelicanExterior_black_CO.paa"                 
                 };
             };
         };

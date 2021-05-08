@@ -6292,10 +6292,10 @@
 //Recon
     class M52DRecon: 1MEU_BASE_M52D_Armor
     {
-		author = "1stMEU Oneill";
+		author = "Tom(s) & Jerry(s)";
 		scope = 2;
         scopeArsenal = 2;
-		displayName = "[11th] M52D Recon";
+		displayName = "[11th] ODST Recruit";
 		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
 		hiddenSelections[] = 	
 		{
@@ -6372,43 +6372,60 @@
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
 			hiddenSelections[] = 	
 			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				"A_KneesMarLeft",
-				"A_KneesMarRight",
-				"A_Ghillie",
-				"AS_LargeLeft",
-				"AS_LargeRight",
-				"AS_MediumLeft",
-				"AS_MediumRight",
-				"AS_ODSTCQBLeft",
-				"AS_ODSTCQBRight",
-				"AS_ODSTSniperLeft",
-				"AS_ODSTSniperRight",
-				"AS_ODSTLeft",
-				"AS_ODSTRight",
-				"AS_SmallLeft",
-				"AS_SmallRight",
-				"AP_AR",
-				"AP_BR",
-				"AP_Canteen",
-				"AP_GL",
-				"AP_Knife",
-				"AP_MGThigh",
-				"AP_AR",
-				"AP_Pack",
-				"AP_Pistol",
-				"AP_Rounds",
-				"AP_SG",
-				"AP_Sniper",
-				"APO_AR",
-				"APO_BR",
-				"APO_SMG",
-				"APO_Sniper",
-				"CustomKit_Scorch"
+	        "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            "A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
 			};
 		};
 	};
@@ -6416,9 +6433,9 @@
     class Hades_Base_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Base"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -6565,9 +6582,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_Base_Armor : Hades_Base_Armor
     {
@@ -6579,9 +6596,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_Base_Armor : Hades_Base_Armor
     {
@@ -6591,11 +6608,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 Base"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_Base_Armor : Hades_Base_Armor
     {
@@ -6614,9 +6631,9 @@
     class Hades_Rifleman_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Rifleman"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -6763,9 +6780,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_Rifleman_Armor : Hades_Rifleman_Armor
     {
@@ -6777,9 +6794,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_Rifleman_Armor : Hades_Rifleman_Armor
     {
@@ -6789,11 +6806,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 Rifleman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_Rifleman_Armor : Hades_Rifleman_Armor
     {
@@ -6961,9 +6978,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_Corpsman_Armor : Hades_Corpsman_Armor
     {
@@ -6975,9 +6992,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_Corpsman_Armor : Hades_Corpsman_Armor
     {
@@ -6987,11 +7004,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 Corpsman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_Corpsman_Armor : Hades_Corpsman_Armor
     {
@@ -7011,9 +7028,9 @@
     class Hades_RTO_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST RTO"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -7160,9 +7177,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_RTO_Armor : Hades_RTO_Armor
     {
@@ -7174,9 +7191,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_RTO_Armor : Hades_RTO_Armor
     {
@@ -7186,11 +7203,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 RTO"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_RTO_Armor : Hades_RTO_Armor
     {
@@ -7209,9 +7226,9 @@
     class Hades_SG_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Shotgun"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -7358,9 +7375,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_SG_Armor : Hades_SG_Armor
     {
@@ -7372,9 +7389,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_SG_Armor : Hades_SG_Armor
     {
@@ -7384,11 +7401,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 Shotgun"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_SG_Armor : Hades_SG_Armor
     {
@@ -7407,9 +7424,9 @@
     class Hades_SMG_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST SMG"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -7546,12 +7563,68 @@
 			}; 
 		}; 
 	}; 
-    class Hades_Marksman_Armor :1MEU_BASE_M52D_Armor 
-	{ 
+    class HadesHQ_SMG_Armor : Hades_SMG_Armor
+    {
         author = "Tom(s) & Jerry(s)"; 
         scope = 2; 
         scopeCurator = 2; 
         scopeArsenal = 2; 
+		displayName = "[11th] ODST HQ SMG"; 
+		hiddenSelectionsTextures[] = {			
+            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
+    };
+    class Hades11_SMG_Armor : Hades_SMG_Armor
+    {
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST 1-1 SMG"; 
+		hiddenSelectionsTextures[] = {			
+            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
+    };
+    class Hades12_SMG_Armor : Hades_SMG_Armor
+    {
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST 1-2 SMG"; 
+		hiddenSelectionsTextures[] = {			
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
+    };
+    class Hades13_SMG_Armor : Hades_SMG_Armor
+    {
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST 1-3 SMG"; 
+		hiddenSelectionsTextures[] = {			
+            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+    };
+    class Hades_Marksman_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Marksman"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -7680,9 +7753,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_Marksman_Armor : Hades_Marksman_Armor
     {
@@ -7692,11 +7765,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-1 Marksman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_Marksman_Armor : Hades_Marksman_Armor
     {
@@ -7708,9 +7781,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_Marksman_Armor : Hades_Marksman_Armor
     {
@@ -7729,9 +7802,9 @@
     class Hades_Sniper_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Sniper"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -7860,9 +7933,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_Sniper_Armor : Hades_Sniper_Armor
     {
@@ -7874,9 +7947,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_Sniper_Armor : Hades_Sniper_Armor
     {
@@ -7886,11 +7959,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 Sniper"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_Sniper_Armor : Hades_Sniper_Armor
     {
@@ -7909,9 +7982,9 @@
     class Hades_GL_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Grenadier"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -8058,9 +8131,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_GL_Armor : Hades_GL_Armor
     {
@@ -8072,9 +8145,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_GL_Armor : Hades_GL_Armor
     {
@@ -8084,11 +8157,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 Grenadier"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_GL_Armor : Hades_GL_Armor
     {
@@ -8107,9 +8180,9 @@
     class Hades_SL_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST SL"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -8256,9 +8329,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_SL_Armor : Hades_SL_Armor
     {
@@ -8270,9 +8343,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_SL_Armor : Hades_SL_Armor
     {
@@ -8282,11 +8355,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 SL"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_SL_Armor : Hades_SL_Armor
     {
@@ -8306,9 +8379,9 @@
     class Hades_Ghillie_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST Ghillie"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -8449,9 +8522,9 @@
     class Hades_AutoRifleman_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
+        scope = 1; 
+        scopeCurator = 1; 
+        scopeArsenal = 1; 
 		displayName = "[11th] ODST AutoRifleman"; 
 		hiddenSelections[] = 	 
 		{ 
@@ -8598,9 +8671,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
     };
     class Hades11_AutoRifleman_Armor : Hades_AutoRifleman_Armor
     {
@@ -8612,9 +8685,9 @@
 		hiddenSelectionsTextures[] = {			
             "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
     };
     class Hades12_AutoRifleman_Armor : Hades_AutoRifleman_Armor
     {
@@ -8624,11 +8697,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-2 AutoRifleman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
     };
     class Hades13_AutoRifleman_Armor : Hades_AutoRifleman_Armor
     {
@@ -8644,230 +8717,86 @@
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
 			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
     };
+    class Hades_GYSGT_Armor :1MEU_BASE_M52D_Armor 
+	{ 
+        author = "Tom(s) & Jerry(s)"; 
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST HQ GySgt"; 
+		hiddenSelections[] = 	 
+		{ 
+            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_Ghillie",
+            "A_KneesLeft",
+            "A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            "A_ODST",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_TacPad",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+            "AS_BaseLeft",
+            "AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            "AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            "AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            "APO_Knife",
+            "APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+		}; 
+		hiddenSelectionsMaterials[] =  
+		{ 
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
+			"", 
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
+		}; 
+		hiddenSelectionsTextures[] =  
+		{ 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
 
-//personal vests
-    class Hades_Snarley_Armor :1MEU_BASE_M52D_Armor 
-	{ 
-        author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
-		displayName = "[11th] ODST Snarley"; 
-		hiddenSelections[] = 	 
-		{ 
-            "camo",
-            "camo2",
-            "camo3",
-            "camo4",
-            "camo5",
-            "A_Base",
-            "A_ChestArmor",
-            "A_Ghillie",
-            "A_KneesLeft",
-            "A_KneesRight",
-            "A_KneesMarLeft",
-            "A_KneesMarRight",
-            "A_ODST",
-            "A_ShinArmorLeft",
-            "A_ShinArmorRight",
-            "A_TacPad",
-            "A_ThighArmorLeft",
-            "A_ThighArmorRight",
-            "AS_BaseLeft",
-            "AS_BaseRight",
-            "AS_LargeLeft",
-            "AS_LargeRight",
-            "AS_MediumLeft",
-            "AS_MediumRight",
-            "AS_ODSTCQBLeft",
-            "AS_ODSTCQBRight",
-            "AS_ODSTLeft",
-            "AS_ODSTRight",
-            "AS_ODSTSniperLeft",
-            "AS_ODSTSniperRight",
-            "AS_SmallLeft",
-            "AS_SmallRight",
-            "AP_AR",
-            "AP_BR",
-            "AP_Canteen",
-            "AP_GL",
-            "AP_Knife",
-            "AP_MGThigh",
-            "AP_AR",
-            "AP_Pack",
-            "AP_Pistol",
-            "AP_Rounds",
-            "AP_SG",
-            "AP_SMG",
-            "AP_Sniper",
-            "AP_Thigh",
-            "AP_Frag",
-            "AP_Smoke",
-            "APO_AR",
-            "APO_BR",
-            "APO_Knife",
-            "APO_SMG",
-            "APO_Sniper",
-            "CustomKit_Scorch"
-		}; 
-		hiddenSelectionsMaterials[] =  
-		{ 
-			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
-			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
-			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
-			"", 
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
-		}; 
-		hiddenSelectionsTextures[] =  
-		{ 
-			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
-			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
-		class ItemInfo: ItemInfo 
-		{ 
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
-			hiddenSelections[] = 	 
-			{ 
-            "camo",
-            "camo2",
-            "camo3",
-            "camo4",
-            "camo5",
-            //"A_Base",
-            //"A_ChestArmor",
-            "A_Ghillie",
-            //"A_KneesLeft",
-            //"A_KneesRight",
-            "A_KneesMarLeft",
-            "A_KneesMarRight",
-            //"A_ODST",
-           //"A_ShinArmorLeft",
-           //"A_ShinArmorRight",
-            //"A_TacPad",
-            //"A_ThighArmorLeft",
-            //"A_ThighArmorRight",
-            //"AS_BaseLeft",
-            //"AS_BaseRight",
-            "AS_LargeLeft",
-            "AS_LargeRight",
-            "AS_MediumLeft",
-            "AS_MediumRight",
-            "AS_ODSTCQBLeft",
-            "AS_ODSTCQBRight",
-            "AS_ODSTLeft",
-            "AS_ODSTRight",
-            "AS_ODSTSniperLeft",
-            //"AS_ODSTSniperRight",
-            "AS_SmallLeft",
-            //"AS_SmallRight",
-            "AP_AR",
-            "AP_BR",
-            //"AP_Canteen",
-            "AP_GL",
-            //"AP_Knife",
-            "AP_MGThigh",
-            "AP_AR",
-            "AP_Pack",
-            //"AP_Pistol",
-            "AP_Rounds",
-            "AP_SG",
-            //"AP_SMG",
-            "AP_Sniper",
-            "AP_Thigh",
-            "AP_Frag",
-            "AP_Smoke",
-            "APO_AR",
-            "APO_BR",
-            "APO_Knife",
-            "APO_SMG",
-            "APO_Sniper",
-            "CustomKit_Scorch"
-			}; 
-		}; 
-	}; 
-    class Hades_Weiss_Armor :1MEU_BASE_M52D_Armor 
-	{ 
-        author = "Tom(s) & Jerry(s)"; 
-        scope = 2; 
-        scopeCurator = 2; 
-        scopeArsenal = 2; 
-		displayName = "[11th] ODST Weiss"; 
-		hiddenSelections[] = 	 
-		{ 
-            "camo",
-            "camo2",
-            "camo3",
-            "camo4",
-            "camo5",
-            "A_Base",
-            "A_ChestArmor",
-            "A_Ghillie",
-            "A_KneesLeft",
-            "A_KneesRight",
-            "A_KneesMarLeft",
-            "A_KneesMarRight",
-            "A_ODST",
-            "A_ShinArmorLeft",
-            "A_ShinArmorRight",
-            "A_TacPad",
-            "A_ThighArmorLeft",
-            "A_ThighArmorRight",
-            "AS_BaseLeft",
-            "AS_BaseRight",
-            "AS_LargeLeft",
-            "AS_LargeRight",
-            "AS_MediumLeft",
-            "AS_MediumRight",
-            "AS_ODSTCQBLeft",
-            "AS_ODSTCQBRight",
-            "AS_ODSTLeft",
-            "AS_ODSTRight",
-            "AS_ODSTSniperLeft",
-            "AS_ODSTSniperRight",
-            "AS_SmallLeft",
-            "AS_SmallRight",
-            "AP_AR",
-            "AP_BR",
-            "AP_Canteen",
-            "AP_GL",
-            "AP_Knife",
-            "AP_MGThigh",
-            "AP_AR",
-            "AP_Pack",
-            "AP_Pistol",
-            "AP_Rounds",
-            "AP_SG",
-            "AP_SMG",
-            "AP_Sniper",
-            "AP_Thigh",
-            "AP_Frag",
-            "AP_Smoke",
-            "APO_AR",
-            "APO_BR",
-            "APO_Knife",
-            "APO_SMG",
-            "APO_Sniper",
-            "CustomKit_Scorch"
-		}; 
-		hiddenSelectionsMaterials[] =  
-		{ 
-			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
-			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
-			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
-			"", 
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
-		}; 
-		hiddenSelectionsTextures[] =  
-		{ 
-			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
-			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
 		class ItemInfo: ItemInfo 
 		{ 
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
@@ -8930,13 +8859,13 @@
 			}; 
 		}; 
 	}; 
-    class Hades_Tuff_Armor :1MEU_BASE_M52D_Armor 
+    class Hades_CO_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
         scope = 2; 
         scopeCurator = 2; 
         scopeArsenal = 2; 
-		displayName = "[11th] ODST Tuff"; 
+		displayName = "[11th] ODST HQ CO"; 
 		hiddenSelections[] = 	 
 		{ 
             "camo",
@@ -9006,10 +8935,10 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
+		
 		class ItemInfo: ItemInfo 
 		{ 
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
@@ -9072,6 +9001,708 @@
 			}; 
 		}; 
 	}; 
+// Icarus 
+    class Icarus_Cadet_Armor : 1MEU_BASE_M52D_Armor
+    {
+		author = "Tom(s) & Jerry(s)";
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Icarus Cadet";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_ODST",
+            "A_KneesLeft",
+            "A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+			"A_Ghillie",
+            "A_TacPad",
+            "AS_BaseLeft",
+            "AS_BaseLight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+            "AP_Thigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+            "AP_SMG",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\Hades_L\Icarus_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"11th_STB_aux\data\Hades_HS\Icarus_Torso_addons.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            //"APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			};
+		};
+	};
+    class Icarus_WO_Armor : 1MEU_BASE_M52D_Armor
+    {
+		author = "Tom(s) & Jerry(s)";
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Icarus WO";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_ODST",
+            "A_KneesLeft",
+            "A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+			"A_Ghillie",
+            "A_TacPad",
+            "AS_BaseLeft",
+            "AS_BaseLight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+            "AP_Thigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+            "AP_SMG",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\Hades_L\Icarus_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"11th_STB_aux\data\Hades_HS\Icarus_Torso_addons.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            //"AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			};
+		};
+	};
+    class Icarus_Leadership_Armor : 1MEU_BASE_M52D_Armor
+    {
+		author = "Tom(s) & Jerry(s)";
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Icarus Leadership";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_ODST",
+            "A_KneesLeft",
+            "A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+			"A_Ghillie",
+            "A_TacPad",
+            "AS_BaseLeft",
+            "AS_BaseLight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+            "AP_Thigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+            "AP_SMG",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\Hades_L\Icarus_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"11th_STB_aux\data\Hades_HS\Icarus_Torso_addons.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            "AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            //"AS_SmallLeft",
+            //"AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            //"APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			};
+		};
+	};
+class Icarus_Pilot_Officer : 1MEU_BASE_M52D_Armor
+    {
+		author = "Tom(s) & Jerry(s)";
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Icarus Officer";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_ODST",
+            "A_KneesLeft",
+            "A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+			"A_Ghillie",
+            "A_TacPad",
+            "AS_BaseLeft",
+            "AS_BaseLight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+            "AP_Thigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+            "AP_SMG",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\Hades_L\Icarus_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"11th_STB_aux\data\Hades_HS\Icarus_Torso_addons.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            "AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            //"AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            //"AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            "APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			};
+		};
+	};
+    class Icarus_Field_Armor : 1MEU_BASE_M52D_Armor
+    {
+		author = "Tom(s) & Jerry(s)";
+        scope = 2; 
+        scopeCurator = 2; 
+        scopeArsenal = 2; 
+		displayName = "[11th] ODST Icarus Field Armor";
+		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
+		hiddenSelections[] = 	
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+            "A_Base",
+            "A_ChestArmor",
+            "A_ODST",
+            "A_KneesLeft",
+            "A_KneesRight",
+			"A_KneesMarLeft",
+			"A_KneesMarRight",
+            "A_ShinArmorLeft",
+            "A_ShinArmorRight",
+            "A_ThighArmorLeft",
+            "A_ThighArmorRight",
+			"A_Ghillie",
+            "A_TacPad",
+            "AS_BaseLeft",
+            "AS_BaseLight",
+			"AS_LargeLeft",
+			"AS_LargeRight",
+			"AS_MediumLeft",
+			"AS_MediumRight",
+			"AS_ODSTCQBLeft",
+			"AS_ODSTCQBRight",
+			"AS_ODSTSniperLeft",
+			"AS_ODSTSniperRight",
+			"AS_ODSTLeft",
+			"AS_ODSTRight",
+			"AS_SmallLeft",
+			"AS_SmallRight",
+			"AP_AR",
+			"AP_BR",
+			"AP_Canteen",
+			"AP_GL",
+			"AP_Knife",
+			"AP_MGThigh",
+            "AP_Thigh",
+			"AP_AR",
+			"AP_Pack",
+			"AP_Pistol",
+			"AP_Rounds",
+			"AP_SG",
+            "AP_SMG",
+			"AP_Sniper",
+			"APO_AR",
+			"APO_BR",
+			"APO_SMG",
+			"APO_Sniper",
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsMaterials[] = 
+		{
+			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat",
+			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat",
+			"",
+			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
+			"11th_STB_aux\data\Hades_L\Icarus_Legs.paa",
+			"optre_unsc_units\army\data\ghillie_desert_co.paa",
+			"11th_STB_aux\data\Hades_HS\Icarus_Torso_addons.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
+			hiddenSelections[] = 	
+			{
+				            "camo",
+            "camo2",
+            "camo3",
+            "camo4",
+            "camo5",
+            //"A_Base",
+            //"A_ChestArmor",
+            "A_Ghillie",
+            //"A_KneesLeft",
+            //"A_KneesRight",
+            "A_KneesMarLeft",
+            "A_KneesMarRight",
+            //"A_ODST",
+           //"A_ShinArmorLeft",
+           //"A_ShinArmorRight",
+            //"A_TacPad",
+            //"A_ThighArmorLeft",
+            //"A_ThighArmorRight",
+            //"AS_BaseLeft",
+            //"AS_BaseRight",
+            "AS_LargeLeft",
+            "AS_LargeRight",
+            "AS_MediumLeft",
+            "AS_MediumRight",
+            "AS_ODSTCQBLeft",
+            "AS_ODSTCQBRight",
+            //"AS_ODSTLeft",
+            //"AS_ODSTRight",
+            "AS_ODSTSniperLeft",
+            "AS_ODSTSniperRight",
+            "AS_SmallLeft",
+            "AS_SmallRight",
+            "AP_AR",
+            "AP_BR",
+            "AP_Canteen",
+            "AP_GL",
+            "AP_Knife",
+            "AP_MGThigh",
+            "AP_AR",
+            "AP_Pack",
+            //"AP_Pistol",
+            "AP_Rounds",
+            "AP_SG",
+            "AP_SMG",
+            "AP_Sniper",
+            "AP_Thigh",
+            "AP_Frag",
+            //"AP_Smoke",
+            //"APO_AR",
+            "APO_BR",
+            //"APO_Knife",
+            //"APO_SMG",
+            "APO_Sniper",
+            "CustomKit_Scorch"
+			};
+		};
+	};
+//personal vests
     class Hades_Ash_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
@@ -9148,10 +9779,10 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
+
 		class ItemInfo: ItemInfo 
 		{ 
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
@@ -9290,10 +9921,10 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
+
 		class ItemInfo: ItemInfo 
 		{ 
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
@@ -9434,8 +10065,8 @@
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
+
 		class ItemInfo: ItemInfo 
 		{ 
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
@@ -9574,10 +10205,10 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
+
 		class ItemInfo: ItemInfo 
 		{ 
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
@@ -9716,10 +10347,10 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
+
 		class ItemInfo: ItemInfo 
 		{ 
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 

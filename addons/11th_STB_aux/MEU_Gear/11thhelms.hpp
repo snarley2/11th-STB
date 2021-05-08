@@ -41,7 +41,7 @@ class 11_Pilot_Base : VES_CH252A
     };
     allowedFacewear[] = {};
 };
-class 11_Icarus_Base : 11_Pilot_Base
+/*class 11_Icarus_Base : 11_Pilot_Base
 {
     scope = 2;
     scopeCurator = 2;
@@ -150,4 +150,4 @@ class 11_Icarus_Test2_dp : 11_Pilot_Base
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"OPTRE_UNSC_UNITS\Army\Data\aa_helmet.rvmat"};
         hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Icarus_H\Icarus_Helm_Trial.paa"};
-    };
+    };*/
