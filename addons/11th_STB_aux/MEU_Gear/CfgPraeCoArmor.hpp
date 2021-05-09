@@ -9703,7 +9703,7 @@ class Icarus_Pilot_Officer : 1MEU_BASE_M52D_Armor
 		};
 	};
 //personal vests
-    class Hades_Ash_Armor :1MEU_BASE_M52D_Armor 
+    /*class Hades_Ash_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
         scope = 2; 
@@ -10412,4 +10412,4 @@ class Icarus_Pilot_Officer : 1MEU_BASE_M52D_Armor
             "CustomKit_Scorch"
 			}; 
 		}; 
-	};
+	};*/

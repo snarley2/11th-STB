@@ -246,7 +246,7 @@
 	
 	class MEU_ILCS_Recon: OPTRE_ILCS_Rucksack_Black
     {
-        displayName = "[11th] ILCS Recon";
+        displayName = "[11th] Invisible LR";
 		picture = "\OPTRE_weapons\backpacks\icons\como_pack.paa";
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
@@ -255,6 +255,14 @@
         tf_range = 120000;
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
+		model = "\A3\weapons_f\empty";
+        maximumLoad = 250;
+    };
+		
+        class MEU_ILCS : OPTRE_ILCS_Rucksack_Black
+    {
+        displayName = "[11th] Invisible Pack";
+		picture = "\OPTRE_weapons\backpacks\icons\como_pack.paa";
 		model = "\A3\weapons_f\empty";
         maximumLoad = 250;
     };

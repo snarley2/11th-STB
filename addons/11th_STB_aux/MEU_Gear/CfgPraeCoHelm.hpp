@@ -2652,7 +2652,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_TeA.paa"};
     };
     class Hades_Helmet_HQCpl: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2664,7 +2664,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Hades_Helmet_HQslotted: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2676,7 +2676,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
 };
     class Hades_Helmet_HQSGT: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2688,7 +2688,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\HQ_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_TEA.paa"};
     };
     class Hades_Helmet_11SSGT: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2700,7 +2700,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_TEA.paa"};
     };
     class Hades_Helmet_11SGT: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2712,7 +2712,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_TEA.paa"};
     };
     class Hades_Helmet_11Cpl: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2724,7 +2724,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Hades_Helmet_11slotted: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2736,7 +2736,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Hades_Helmet_12SSGT: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2748,7 +2748,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Staff_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_TEA.paa"};
     };    
     class Hades_Helmet_12SGT: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2760,7 +2760,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_TEA.paa"};
     };
     class Hades_Helmet_12Cpl: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2772,7 +2772,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Corporal","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Hades_Helmet_12slotted: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2784,7 +2784,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-2_Slotted","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Icarus_Helmet_Cadet: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2796,7 +2796,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Slotted.paa","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Slotted.paa","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Icarus_Helmet_Pilot: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2808,7 +2808,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Cadet.paa","11th_STB_aux\data\Hades_V\VISR_ODST_STB.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Cadet.paa","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
     class Icarus_Helmet_Flightleader: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2820,7 +2820,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_WO.paa","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_WO.paa","11th_STB_aux\data\Hades_V\VISR_ODST_TEA.paa"};
     };
     class Icarus_Helmet_Squadronleader: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2832,7 +2832,7 @@
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\Hades_V\VISR_ODST_GLD.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\Hades_V\VISR_ODST_TEA.paa"};
     };
     class Icarus_Helmet_Officer: 1stMEU_Base_CH252D_Helmet
 	{
@@ -2846,18 +2846,19 @@
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\Hades_V\VISR_ODST_BLK.paa"};
     };
-    class Hades_Helmet_Slim: 1stMEU_Base_CH252D_Helmet
+   class Hades_Helmet_Recruit: 1stMEU_Base_CH252D_Helmet
 	{
 		scope = 2;
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] ODST 1-1 Slim";
+		displayName = "[11th] ODST Recruit";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_H\1-1_Sergeant","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\3rdPlt\ODST_H3_Black.paa","11th_STB_aux\data\Hades_V\VISR_ODST_SLV2.paa"};
     };
+
     class Hades_Helmet_HQCO_dp : 1stMEU_Base_CH252D_Helmet_dp
     {
         scope = 1;
@@ -3000,7 +3001,15 @@
         scopeArsenal = 1;
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\Hades_V\VISR_ODST_CLR.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\Icarus_Leadership.paa","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
+    };
+   class Hades_Helmet_Recruit_dp: 1stMEU_Base_CH252D_Helmet_dp
+	{
+		scope = 1;
+        scopeCurator = 1;
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\3rdPlt\ODST_H3_Black.paa","11th_STB_aux\data\MISC\VISR_ODST_CLR.paa"};
     };
 	class Hades_Recon_Helmet: OPTRE_UNSC_Recon_Helmet
 	{
@@ -3023,12 +3032,4 @@
         hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"OPTRE_UNSC_Units\Army\recon_helmet.p3d"};
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
-    };
-    class Hades_Helmet_Slim_dp : 1stMEU_Base_CH252D_Helmet_dp
-    {
-        scope = 1;
-        scopeArsenal = 1;
-        hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\Data\Hades_H\1-1_Sergeant","11th_STB_aux\data\misc\VISR_ODST_CLR.paa"};
     };
