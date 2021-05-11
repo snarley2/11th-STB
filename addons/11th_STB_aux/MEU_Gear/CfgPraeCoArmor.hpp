@@ -6361,12 +6361,12 @@
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa",
-			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa",
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa",
-			"optre_unsc_units\army\data\ghillie_desert_co.paa",
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa"
-		};
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
+			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa"
+        };
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
@@ -6506,9 +6506,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -6622,11 +6622,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 Base"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa"};
     };
     class Hades_Rifleman_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -6704,9 +6704,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -6820,11 +6820,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 Rifleman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+  			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa"};
     };
     class Hades_Corpsman_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -6902,9 +6902,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -6980,7 +6980,7 @@
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
 			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_Corpsman_Torso_addons.paa"};
     };
     class Hades11_Corpsman_Armor : Hades_Corpsman_Armor
     {
@@ -6994,7 +6994,7 @@
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
 			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_Corpsman_Torso_addons.paa" };
     };
     class Hades12_Corpsman_Armor : Hades_Corpsman_Armor
     {
@@ -7008,7 +7008,7 @@
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
 			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_Corpsman_Torso_addons.paa" };
     };
     class Hades13_Corpsman_Armor : Hades_Corpsman_Armor
     {
@@ -7018,11 +7018,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 Corpsman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
 
     class Hades_RTO_Armor :1MEU_BASE_M52D_Armor 
@@ -7101,9 +7101,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -7179,7 +7179,7 @@
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
 			"11th_STB_aux\data\Hades_L\Hades_HQ_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\Hades_HS\Hades_HQ_Torso_addons.paa"};
+			"11th_STB_aux\data\Hades_HS\Hades_HQ_RTO_Torso_addons.paa"};
     };
     class Hades11_RTO_Armor : Hades_RTO_Armor
     {
@@ -7193,7 +7193,7 @@
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
 			"11th_STB_aux\data\Hades_L\Hades_1-1_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\Hades_HS\Hades_1-1_Torso_addons.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-1_RTO_Torso_addons.paa" };
     };
     class Hades12_RTO_Armor : Hades_RTO_Armor
     {
@@ -7207,7 +7207,7 @@
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
 			"11th_STB_aux\data\Hades_L\Hades_1-2_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\Hades_HS\Hades_1-2_Torso_addons.paa" };
+			"11th_STB_aux\data\Hades_HS\Hades_1-2_RTO_Torso_addons.paa" };
     };
     class Hades13_RTO_Armor : Hades_RTO_Armor
     {
@@ -7217,11 +7217,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 RTO"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
     class Hades_SG_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -7299,9 +7299,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -7415,11 +7415,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 Shotgun"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
     class Hades_SMG_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -7613,11 +7613,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 SMG"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
     class Hades_Marksman_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -7695,9 +7695,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -7793,11 +7793,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 Marksman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
     class Hades_Sniper_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -7875,9 +7875,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -7973,11 +7973,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 Sniper"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
     class Hades_GL_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -8055,9 +8055,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -8171,11 +8171,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 Grenadier"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
     class Hades_SL_Armor :1MEU_BASE_M52D_Armor 
 	{ 
@@ -8253,9 +8253,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -8369,156 +8369,13 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 SL"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
-			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
-    };
-
-    class Hades_Ghillie_Armor :1MEU_BASE_M52D_Armor 
-	{ 
-        author = "Tom(s) & Jerry(s)"; 
-        scope = 1; 
-        scopeCurator = 1; 
-        scopeArsenal = 1; 
-		displayName = "[11th] ODST Ghillie"; 
-		hiddenSelections[] = 	 
-		{ 
-            "camo",
-            "camo2",
-            "camo3",
-            "camo4",
-            "camo5",
-            "A_Base",
-            "A_ChestArmor",
-            "A_Ghillie",
-            "A_KneesLeft",
-            "A_KneesRight",
-            "A_KneesMarLeft",
-            "A_KneesMarRight",
-            "A_ODST",
-            "A_ShinArmorLeft",
-            "A_ShinArmorRight",
-            "A_TacPad",
-            "A_ThighArmorLeft",
-            "A_ThighArmorRight",
-            "AS_BaseLeft",
-            "AS_BaseRight",
-            "AS_LargeLeft",
-            "AS_LargeRight",
-            "AS_MediumLeft",
-            "AS_MediumRight",
-            "AS_ODSTCQBLeft",
-            "AS_ODSTCQBRight",
-            "AS_ODSTLeft",
-            "AS_ODSTRight",
-            "AS_ODSTSniperLeft",
-            "AS_ODSTSniperRight",
-            "AS_SmallLeft",
-            "AS_SmallRight",
-            "AP_AR",
-            "AP_BR",
-            "AP_Canteen",
-            "AP_GL",
-            "AP_Knife",
-            "AP_MGThigh",
-            "AP_AR",
-            "AP_Pack",
-            "AP_Pistol",
-            "AP_Rounds",
-            "AP_SG",
-            "AP_SMG",
-            "AP_Sniper",
-            "AP_Thigh",
-            "AP_Frag",
-            "AP_Smoke",
-            "APO_AR",
-            "APO_BR",
-            "APO_Knife",
-            "APO_SMG",
-            "APO_Sniper",
-            "CustomKit_Scorch"
-		}; 
-		hiddenSelectionsMaterials[] =  
-		{ 
-			"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat", 
-			"LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat", 
-			"LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat", 
-			"", 
-			"LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat" 
-		}; 
-		hiddenSelectionsTextures[] =  
-		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
-		}; 
-		class ItemInfo: ItemInfo 
-		{ 
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d"; 
-			hiddenSelections[] = 	 
-			{ 
-            "camo",
-            "camo2",
-            "camo3",
-            "camo4",
-            "camo5",
-            //"A_Base",
-            //"A_ChestArmor",
-            //"A_Ghillie",
-            //"A_KneesLeft",
-            //"A_KneesRight",
-            "A_KneesMarLeft",
-            "A_KneesMarRight",
-            //"A_ODST",
-           //"A_ShinArmorLeft",
-           //"A_ShinArmorRight",
-            //"A_TacPad",
-            //"A_ThighArmorLeft",
-            //"A_ThighArmorRight",
-            //"AS_BaseLeft",
-            //"AS_BaseRight",
-            "AS_LargeLeft",
-            "AS_LargeRight",
-            "AS_MediumLeft",
-            "AS_MediumRight",
-            "AS_ODSTCQBLeft",
-            "AS_ODSTCQBRight",
-            "AS_ODSTLeft",
-            "AS_ODSTRight",
-            "AS_ODSTSniperLeft",
-            "AS_ODSTSniperRight",
-            "AS_SmallLeft",
-            "AS_SmallRight",
-            "AP_AR",
-            "AP_BR",
-            //"AP_Canteen",
-            "AP_GL",
-            "AP_Knife",
-            "AP_MGThigh",
-            "AP_AR",
-            "AP_Pack",
-            //"AP_Pistol",
-            "AP_Rounds",
-            "AP_SG",
-            "AP_SMG",
-            "AP_Sniper",
-            "AP_Thigh",
-            "AP_Frag",
-            "AP_Smoke",
-            "APO_AR",
-            "APO_BR",
-            //"APO_Knife",
-            "APO_SMG",
-            //"APO_Sniper",
-            "CustomKit_Scorch"
-			}; 
-		}; 
-	};
-
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
+    };
+    
     class Hades_AutoRifleman_Armor :1MEU_BASE_M52D_Armor 
 	{ 
         author = "Tom(s) & Jerry(s)"; 
@@ -8595,9 +8452,9 @@
 		{ 
 			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" 
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" 
 		}; 
 		class ItemInfo: ItemInfo 
 		{ 
@@ -8711,11 +8568,11 @@
         scopeArsenal = 2; 
 		displayName = "[11th] ODST 1-3 AutoRifleman"; 
 		hiddenSelectionsTextures[] = {			
-            "11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
+			"11th_STB_aux\data\misc\Armor\V\vest_odst_co.paa", 
 			"11th_STB_aux\data\misc\Armor\A\armor_odst_co.paa", 
-			"11th_STB_aux\data\misc\Armor\L\ODST_H3_Legs.paa", 
+			"11th_STB_aux\data\Hades_L\Recruit_Legs.paa", 
 			"optre_unsc_units\army\data\ghillie_desert_co.paa", 
-			"11th_STB_aux\data\3rdPlt\ODST_HR_Black.paa" };
+			"11th_STB_aux\data\Hades_HS\Recruit_Torso_addons.paa" };
     };
     class Hades_GYSGT_Armor :1MEU_BASE_M52D_Armor 
 	{ 

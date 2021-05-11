@@ -487,7 +487,7 @@
         maximumLoad = 200;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_Backpacks\ODST_Rucksack.paa"};
     };
 	
 	class MEU_ILCS_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
@@ -497,7 +497,7 @@
         maximumLoad = 350;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
-        hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
+        hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_Backpacks\ODST_Rucksack.paa"};
     };
     
 	class MEU_ILCS_Corpsman_Ruck : OPTRE_ILCS_Rucksack_Heavy
@@ -511,19 +511,19 @@
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_hasLRradio = 1;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
-		maximumLoad = 300;
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_Backpacks\ODST_Medical_Rucksack.paa"};
+		maximumLoad = 400;
     };
 	
-	class MEU_ILCS_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
+	/*class MEU_ILCS_Corpsman_Ruck_Heavy : OPTRE_ILCS_Rucksack_Heavy
     {
         author = "1st MEU Oneill";
         displayName = "[11th] ILCS Heavy Corpsman Rucksack";
 		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"11th_STB_aux\data\misc\packs\prae_ruck_black_CO.paa"};
-    };
+		hiddenSelectionsTextures[] = {"11th_STB_aux\data\Hades_Backpacks\ODST_Medical_Rucksack.paa"};
+    };*/
 	
 //	Praetorian Back Packs End
 // 	Centuron Back Packs
