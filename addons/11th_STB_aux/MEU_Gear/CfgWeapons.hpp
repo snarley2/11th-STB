@@ -123,7 +123,8 @@ class CfgWeapons
     class OPTRE_M48_PAW;
     class launch_MRAWS_green_F;
 	class missiles_ASRAAM;
-    
+    class OPTRE_missiles_ASGM2;
+    class missiles_titan;
 
 	//Miscelaneous Classes
 	class ItemcTabHCam;
@@ -3562,4 +3563,27 @@ class CfgWeapons
 			mass = 40;
         };
     };
+    class Icarus_missiles_C2GMLS: OPTRE_missiles_ASGM2
+	{
+		displayName = "Class-2 Guided Munitions Launch System";
+		descriptionShort = "AA";
+		magazines[] = {"Icarus_4Rnd_C2GMLS_missiles"};
+		maxRange = 4000;
+		weaponLockDelay = 2;
+		cursor = "EmptyCursor";
+		cursorAim = "OPTRE_C2GMLS";
+	};
+    class Icarus_missiles_Jackknife: missiles_titan
+	{
+		displayName = "AGM-502 'Jack Knife' Laser Guided";
+		descriptionShort = "AGM-502";
+		magazines[] = {"OPTRE_1Rnd_Jackknife_missile","OPTRE_2Rnd_Jackknife_missile","OPTRE_3Rnd_Jackknife_missile","OPTRE_4Rnd_Jackknife_missile","Icarus_8rnd_Jackknife_missile" };
+		maxRange = 10000;
+		missileLockMinDistance = 25;
+		missileLockCone = 5;
+		weaponLockSystem = 8;
+		weaponLockDelay = .1;
+		cursor = "EmptyCursor";
+		cursorAim = "OPTRE_AGM502";
+	};
 };

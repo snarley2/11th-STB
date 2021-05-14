@@ -10,6 +10,8 @@ class CfgAmmo
     class OPTRE_SpLaserAmmo;
     class OPTRE_25x130mm_Slug;
     class ACE_Gatling_30mm_Sub_CM51;
+    class OPTRE_M_ASGM2_AA;
+
 
 	//Explosives
 	class G_40mm_HE;
@@ -771,5 +773,28 @@ class CfgAmmo
 		tracerScale = 1;
 		tracerStartTime = 0.005;
 		tracerEndTime = 10;
+	};
+   class Icarus_M_C2GMLS_AA: OPTRE_M_ASGM2_AA
+	{
+		model = "OPTRE_weapons\Aircraft\ASGM2_missile_fly.p3d";
+		hit = 2000;
+		indirectHit = 70;
+		indirectHitRange = 7;
+		allowAgainstInfantry = 1;
+	    missileLockMinDistance = 25;
+		airLock = 2;
+		irLock = 1;
+	};
+    class Icarus_M_Jackknife_LGM: M_Titan_AT
+	{
+		model = "OPTRE_weapons\Aircraft\Jackknife_missile_fly.p3d";
+		hit = 2200;
+		indirectHit = 100;
+		indirectHitRange = 10;
+		missileLockCone = 5;
+		explosive = 1;
+        airlock = 1;
+		irLock = 1;
+		laserLock = 1;
 	};
 };

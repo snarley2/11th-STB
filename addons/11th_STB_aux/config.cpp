@@ -279,6 +279,7 @@ class cfgPatches
             "VES_AV14_AGM",
             "VES_AV14_Rockets",
             "VES_AV14",
+			"Icarus_AV14",
             "VES_UH144",
             "VES_D77HTCI_A",
             "VES_D77HTCI",
@@ -366,7 +367,9 @@ class cfgPatches
             "OPTRE_FC_BubbleShield_Ammo",
             "MEU_16x65mm_Slug",
             "MEU_HEV_Landing_Explosive",
-            "OPTRE_B_20mm_HEIAP"
+            "OPTRE_B_20mm_HEIAP",
+            "Icarus_M_C2GMLS_AA",
+            "Icarus_M_Jackknife_LGM"
         };
 		weapons[] = 
 		{

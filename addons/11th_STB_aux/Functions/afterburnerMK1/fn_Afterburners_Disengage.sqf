@@ -1,7 +1,7 @@
 private _vehicle = vehicle player;
 private _boostStatus = _vehicle getvariable ["OPTRE_Thruster_EngagedStatus",false];
 
-private _MEUBurnList=["VES_D77HTCIS","VES_D77HTCIS_A","VES_D77HTCI_A","VES_D77HTCI","VES_AV14_AIM","VES_AV14_AGM","VES_AV14_Rockets","VES_AV14","VES_AV22_Sparrowhawk","VES_AV22A_Sparrowhawk","VES_AV22B_Sparrowhawk","VES_AV22C_Sparrowhawk","VES_UH144S","VES_UH144S_A","VES_UH144","VES_UH144_A"];
+private _MEUBurnList=["VES_D77HTCIS","VES_D77HTCIS_A","VES_D77HTCI_A","VES_D77HTCI","VES_AV14_AIM","VES_AV14_AGM","VES_AV14_Rockets","VES_AV14","VES_AV22_Sparrowhawk","VES_AV22A_Sparrowhawk","VES_AV22B_Sparrowhawk","VES_AV22C_Sparrowhawk","VES_UH144S","VES_UH144S_A","VES_UH144","VES_UH144_A", "Icarus_AV14"];
 
 if ((driver _vehicle != player) OR _boostStatus OR !(isEngineOn _vehicle) OR (isTouchingGround _vehicle) OR (_MEUBurnList findIf {_x isEqualTo typeOf _vehicle} < 0)) exitWith{};
 

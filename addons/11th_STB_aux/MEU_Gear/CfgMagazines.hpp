@@ -70,6 +70,8 @@ class CfgMagazines
     class 16Rnd_10mm_Ball;
     class OPTRE_1Rnd_50x137_PEN;
     class MRAWS_HEAT_F; 
+    class OPTRE_6Rnd_ASGM2_rockets;
+    class OPTRE_1Rnd_Jackknife_missile;
     
     /*class CBRN_IEDLandSmall_Type1_Remote_Mag;
     class CBRN_1Rnd_82mm_Mo_Chemical_Type0;
@@ -2052,6 +2054,24 @@ class CfgMagazines
         ammo = "MEU_Rocket_V2";
         mass = 10;
     };
+    class Icarus_4Rnd_C2GMLS_missiles: OPTRE_6Rnd_ASGM2_rockets
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		displayName = "4Rnd Class-2 Self-Guided Missiles";
+		displayNameShort = "4Rnd Class-2 GMLS";
+        ammo = "Icarus_M_C2GMLS_AA";
+		count = 4;
+	};
+    class Icarus_8Rnd_Jackknife_missile: OPTRE_1Rnd_Jackknife_missile
+	{
+		dlc = "OPTRE";
+		scope = 2;
+		displayName = "8Rnd AGM-502 'Jack Knife' Laser Guided Missile";
+		displayNameShort = "8Rnd Laser Guided";
+        ammo = "Icarus_M_Jackknife_LGM"
+		count = 8;
+	};
 };
 class CfgMagazineWells
 {
