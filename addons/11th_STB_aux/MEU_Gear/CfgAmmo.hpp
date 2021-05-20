@@ -10,7 +10,8 @@ class CfgAmmo
     class OPTRE_SpLaserAmmo;
     class OPTRE_25x130mm_Slug;
     class ACE_Gatling_30mm_Sub_CM51;
-    class OPTRE_M_ASGM2_AA;
+	class M_Zephyr;
+	class M_Air_AA;
 
 
 	//Explosives
@@ -766,13 +767,24 @@ class CfgAmmo
 	{
 		airlock = 1;
 		hit = 125;
-		indirectHit = 15;
-		indirectHitRange = 4;
+		indirectHit = 25;
+		indirectHitRange = 3;
 		caliber = 4;
 		explosive = 0.5;
 		tracerScale = 1;
 		tracerStartTime = 0.005;
 		tracerEndTime = 10;
+	};
+    class OPTRE_M_ASGM2_AA: M_Air_AA
+	{
+		model = "OPTRE_weapons\Aircraft\ASGM2_missile_fly.p3d";
+		hit = 2200;
+		indirectHit = 40;
+		indirectHitRange = 5;
+		allowAgainstInfantry = 1;
+		explosive = 1;
+		airLock = 2;
+		irLock = 1;
 	};
    class Icarus_M_C2GMLS_AA: OPTRE_M_ASGM2_AA
 	{

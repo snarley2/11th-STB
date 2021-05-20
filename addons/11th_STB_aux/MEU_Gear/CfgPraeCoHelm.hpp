@@ -2804,7 +2804,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] ODST Icarus Pilot";
+		displayName = "[11th] ODST Icarus WO";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2816,7 +2816,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] ODST Icarus Flightleader";
+		displayName = "[11th] ODST Icarus CWO3";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -2828,7 +2828,7 @@
         scopeCurator = 2;
         scopeArsenal = 2;
 		author = "Tom(s) & Jerry(s)";
-		displayName = "[11th] ODST Icarus Squadronleader";
+		displayName = "[11th] ODST Icarus Flightleader";
 		optreVarietys[] = {"_dp","","_broken"};
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};

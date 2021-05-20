@@ -369,7 +369,8 @@ class cfgPatches
             "MEU_HEV_Landing_Explosive",
             "OPTRE_B_20mm_HEIAP",
             "Icarus_M_C2GMLS_AA",
-            "Icarus_M_Jackknife_LGM"
+            "Icarus_M_Jackknife_LGM",
+			"OPTRE_M_ASGM2_AA"
         };
 		weapons[] = 
 		{
